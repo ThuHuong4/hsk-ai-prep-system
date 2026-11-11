@@ -1,0 +1,51 @@
+.public-layout { display: flex; flex-direction: column; min-height: 100vh; }
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-2) var(--space-4);
+  padding: var(--space-2) var(--space-4);
+  background: var(--color-surface);
+  border-bottom: 1px solid var(--color-border);
+}
+.site-header__brand { font-size: 1.1rem; font-weight: 700; color: var(--color-primary); text-decoration: none; }
+.site-header__actions { display: flex; gap: var(--space-2); margin-left: auto; }
+.site-header__nav { display: flex; gap: var(--space-1); order: 3; width: 100%; }
+.site-header__nav a {
+  display: inline-flex;
+  align-items: center;
+  min-height: var(--tap-size);
+  padding: 0 var(--space-3);
+  border-radius: var(--radius);
+  color: inherit;
+  text-decoration: none;
+}
+.site-header__nav a.active { background: var(--color-primary-soft); color: var(--color-primary); font-weight: 600; }
+
+.public-layout__main {
+  flex: 1;
+  width: 100%;
+  max-width: var(--content-width);
+  margin: 0 auto;
+  padding: var(--space-4);
+}
+
+.site-footer {
+  padding: var(--space-4);
+  border-top: 1px solid var(--color-border);
+  background: var(--color-surface);
+  color: var(--color-muted);
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .site-header__nav { order: 0; width: auto; }
+  .public-layout__main { padding: var(--space-6) var(--space-5); }
+}
+/* Trang chủ Xianglingo: bỏ giới hạn bề rộng và lề của khung nội dung */
+.public-layout__main.public-layout__main--full { max-width: none; padding: 0; }

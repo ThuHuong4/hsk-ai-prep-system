@@ -1,0 +1,462 @@
+/* Trang chủ công khai Xianglingo – chuyển từ bản mô phỏng đã duyệt. Mọi quy tắc nằm trong .xl để không ảnh hưởng trang khác. */
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=Noto+Serif+SC:wght@600;700&display=swap");
+@property --ang { syntax: "<angle>"; inherits: false; initial-value: 0deg; }
+/* Trung hoà style chung của global.css bên trong .xl */
+.xl button{min-height:0;padding:0;border:0;border-radius:0;background:none;color:inherit;cursor:pointer}
+.xl h1,.xl h2,.xl h3{margin:0}
+.xl{--bg: #F2F7F7; --bg-2: #E9F2F2; --surface: #FFFFFF; --surface-2: #EEF6F5; --line: #D9E7E6; --line-2: #C3D8D6; --ink: #14243D; --ink-2: #4A5A72; --ink-3: #73839A; --teal: #16B2AA; --teal-ink: #0A7C77; --btn: #0E8F89; --btn-sh: #0A6863; --on-btn: #FFFFFF; --teal-soft: #D6F2EF; --exam: #2F4F9A; --exam-sh: #20386F; --on-exam: #FFFFFF; --exam-soft: #E1E8F7; --coral: #EF6F57; --coral-ink: #B5432D; --coral-soft: #FDE4DD; --cream: #FFF3DE; --band: #FFF5E6; --band-line: #F6E2BF; --good: #118656; --good-soft: #DCF3E7; --bad: #C63A2C; --bad-soft: #FCE5E1; --warn: #995A08; --warn-soft: #FCEFD6; --scene: #0F1A2E; --scene-2: #16243D; --scene-line: rgba(140,190,210,.10); --scene-ink: #EAF4F7; --foot: #0D1626; --foot-ink: #DDE7F0; --grad: linear-gradient(120deg,#2CD3C9 0%,#8BE6C9 32%,#FFD99B 66%,#FF8A72 100%); --shadow-sm: 0 1px 2px rgba(20,36,61,.06),0 4px 14px -6px rgba(20,36,61,.14); --shadow: 0 2px 6px rgba(20,36,61,.05),0 18px 40px -16px rgba(20,36,61,.22); --focus: #FF8A72; --f-display: "Baloo 2","Be Vietnam Pro",system-ui,sans-serif; --f-body: "Be Vietnam Pro",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; --f-hz: "Noto Serif SC","Songti SC","SimSun",serif;}
+@media (prefers-color-scheme: dark){
+.xl{--bg: #0D1422; --bg-2: #111A2B; --surface: #152035; --surface-2: #1A2740; --line: #24334C; --line-2: #2F4260; --ink: #EDF3F7; --ink-2: #AEBBCE; --ink-3: #8190A8; --teal: #2CD3C9; --teal-ink: #5EE0D7; --btn: #2CC9BF; --btn-sh: #178F88; --on-btn: #04221F; --teal-soft: #123A40; --exam: #8DA5FF; --exam-sh: #5069C2; --on-exam: #0B1530; --exam-soft: #1C2850; --coral: #FF8A72; --coral-ink: #FFA08B; --coral-soft: #3A2224; --cream: #2A2619; --band: #141E31; --band-line: #22314B; --good: #4FD69C; --good-soft: #123528; --bad: #FF7E70; --bad-soft: #3F1D1D; --warn: #F4B860; --warn-soft: #352812; --scene: #0A1120; --scene-2: #111C31; --scene-line: rgba(140,190,210,.08); --scene-ink: #EAF4F7; --foot: #080E19; --foot-ink: #C9D5E2; --shadow-sm: 0 1px 2px rgba(0,0,0,.3),0 4px 14px -6px rgba(0,0,0,.5); --shadow: 0 2px 6px rgba(0,0,0,.25),0 22px 44px -18px rgba(0,0,0,.7); color-scheme: dark;}
+}
+.xl *,
+.xl ::before,
+.xl ::after{box-sizing: border-box;}
+.xl [hidden]{display: none !important;}
+.xl{scroll-behavior: smooth; scroll-padding-top: 88px;}
+.xl{background: var(--bg); color: var(--ink); font-family: var(--f-body); font-size: 16px; line-height: 1.6; -webkit-font-smoothing: antialiased;}
+.xl h1,
+.xl h2{font-family: var(--f-display); line-height: 1.1; margin: 0px; text-wrap: balance; letter-spacing: -0.01em; font-weight: 800;}
+.xl p{margin: 0px;}
+.xl a{color: var(--teal-ink);}
+.xl img{max-width: 100%; display: block;}
+.xl button{font: inherit; color: inherit;}
+.xl :focus-visible{outline: 3px solid var(--focus); outline-offset: 3px; border-radius: 12px;}
+.xl .hz{font-family: var(--f-hz); font-weight: 700;}
+.xl .wrap{width: 100%; max-width: 1200px; margin: 0px auto; padding-left: max(20px,env(safe-area-inset-left,0px)); padding-right: max(20px,env(safe-area-inset-right,0px));}
+.xl .eyebrow{font-size: 12.5px; font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase; color: var(--teal-ink);}
+.xl .ico{width: 20px; height: 20px; flex: 0 0 auto; stroke: currentcolor; fill: none; stroke-width: 2.1; stroke-linecap: round; stroke-linejoin: round;}
+.xl .btn{--b: var(--btn); --bs: var(--btn-sh); --bt: var(--on-btn); position: relative; display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-height: 52px; padding: 0px 26px; border-radius: 18px; border: 0px; background: var(--b); color: var(--bt); font-weight: 800; font-size: 16px; letter-spacing: 0.01em; text-decoration: none; cursor: pointer; box-shadow: 0 5px 0 var(--bs); transition: transform 0.15s, box-shadow 0.15s, filter 0.15s; white-space: nowrap;}
+.xl .btn::after{content: ""; position: absolute; inset: 0px; border-radius: inherit; background: linear-gradient(rgba(255, 255, 255, 0.22), rgba(255, 255, 255, 0) 55%); pointer-events: none;}
+.xl .btn:hover{transform: translateY(-2px); box-shadow: 0 7px 0 var(--bs); filter: brightness(1.05);}
+.xl .btn:active{transform: translateY(4px); box-shadow: 0 1px 0 var(--bs);}
+.xl .btn.exam{--b: var(--exam); --bs: var(--exam-sh); --bt: var(--on-exam);}
+.xl .btn.plain{--b: var(--surface); --bs: var(--line-2); --bt: var(--ink); box-shadow: 0 4px 0 var(--line-2),inset 0 0 0 2px var(--line-2);}
+.xl .btn.plain:hover{box-shadow: 0 6px 0 var(--line-2),inset 0 0 0 2px var(--line-2);}
+.xl .btn.plain:active{box-shadow: 0 1px 0 var(--line-2),inset 0 0 0 2px var(--line-2);}
+.xl .gline{position: relative; display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 44px; padding: 0px 20px; border-radius: 14px; font-weight: 800; font-size: 14.5px; text-decoration: none; color: var(--ink); border: 2px solid transparent; background: linear-gradient(var(--bg),var(--bg)) padding-box,conic-gradient(from var(--ang),#2CD3C9,#8BE6C9,#FFD99B,#FF8A72,#2CD3C9) border-box; transition: transform 0.15s, box-shadow 0.2s;}
+.xl .gline:hover{transform: translateY(-2px); box-shadow: rgba(44, 211, 201, 0.65) 0px 8px 22px -10px;}
+.xl .gline:active{transform: translateY(1px);}
+html.motion-ok .xl .gline{animation: 6s linear 0s infinite normal none running spinang;}
+.xl .stamp{width: 62px; height: 62px; border-radius: 14px; background: rgb(227, 83, 60); color: rgb(255, 243, 222); display: flex; align-items: center; justify-content: center; font-family: var(--f-hz); font-size: 34px; font-weight: 700; box-shadow: rgba(227, 83, 60, 0.8) 0px 14px 24px -10px, rgba(255, 243, 222, 0.55) 0px 0px 0px 3px inset;}
+.xl .mm{position: absolute; width: 54px; height: 54px; border-radius: 50%; display: flex; align-items: center; justify-content: center;}
+.xl .mm .ico{width: 24px; height: 24px; stroke-width: 2.6;}
+.xl .mm.done{background: rgb(44, 211, 201); color: rgb(5, 50, 47); box-shadow: rgb(23, 143, 136) 0px 6px 0px, rgba(44, 211, 201, 0.5) 0px 0px 24px;}
+.xl .mm.now{background: rgb(255, 138, 114); color: rgb(255, 255, 255); box-shadow: rgb(201, 85, 63) 0px 6px 0px, rgba(255, 138, 114, 0.18) 0px 0px 0px 8px;}
+.xl .words{display: grid; grid-template-columns: repeat(3, minmax(0px, 1fr)); gap: 10px; margin-top: 18px;}
+@media (prefers-color-scheme: dark){
+.xl :root:not([data-theme="light"]) .stat.fire{color: rgb(244, 184, 96);}
+}
+@media (max-width: 720px){
+.xl .stamp{width: 50px; height: 50px; font-size: 28px;}
+}
+@media (max-width: 460px){
+.xl .words{grid-template-columns: 1fr 1fr 1fr;}
+}
+html.motion-ok .xl .enter{animation: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) 0s 1 normal both running enter;}
+html.motion-ok .xl .enter.d2{animation-delay: 0.08s;}
+@supports (animation-timeline: view()){
+html.motion-ok .xl .reveal{animation-duration: auto; animation-timing-function: linear; animation-delay: 0s; animation-iteration-count: 1; animation-direction: normal; animation-fill-mode: both; animation-play-state: running; animation-name: rise; animation-timeline: view(); animation-range: entry entry 55%;}
+}
+html:not(.motion-ok) .xl *,
+html:not(.motion-ok) .xl ::before,
+html:not(.motion-ok) .xl ::after{transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; animation-iteration-count: 1 !important;}
+html:not(.motion-ok) .xl{scroll-behavior: auto;}
+.xl{--ground: #C9F0EB; --blob: #E2F6F3; --paper: #FFFFFF;}
+@media (prefers-color-scheme: dark){
+.xl{--ground: #123A40; --blob: #13283A; --paper: #18263D;}
+}
+.xl .btn-xl{min-height: 56px; width: min(340px, 100%); font-size: 15.5px; letter-spacing: 0.08em; text-transform: uppercase; border-radius: 18px;}
+.xl .btn-xl.plain{color: var(--teal-ink);}
+.xl .h-hero{background: var(--surface); border-bottom: 1px solid var(--line);}
+.xl .h-hero-grid{display: grid; grid-template-columns: minmax(0px, 1fr) minmax(0px, 1fr); gap: 56px; align-items: center; padding-block: 56px 64px;}
+.xl .h-copy{display: flex; flex-direction: column; align-items: center; text-align: center; gap: 34px;}
+.xl .h-copy h1{font-size: clamp(32px, 3.6vw, 46px); line-height: 1.18; color: var(--ink); max-width: 14em;}
+.xl .h-btns{display: flex; flex-direction: column; gap: 14px; width: 100%; align-items: center;}
+.xl .h-art{position: relative; aspect-ratio: 1 / 1; max-width: 500px; width: 100%; justify-self: center;}
+.xl .h-blob{position: absolute; inset: 10% 8% 6%; border-radius: 46% 54% 50% 50% / 52% 46% 54% 48%; background: var(--blob);}
+.xl .xiang-main{position: absolute; left: 50%; bottom: 6%; width: 64%; transform: translateX(-50%); filter: drop-shadow(rgba(20, 36, 61, 0.18) 0px 22px 18px); transition: transform 0.6s cubic-bezier(0.2, 0.8, 0.2, 1);}
+html.motion-ok .xl .xiang-main{animation: 4.8s ease-in-out 0s infinite normal none running bob;}
+.xl .fl{position: absolute; will-change: transform; transition: transform 0.6s cubic-bezier(0.2, 0.8, 0.2, 1);}
+.xl .f1{left: 4%; top: 8%;}
+.xl .f2{right: 6%; top: 2%;}
+.xl .f3{left: 0px; top: 42%;}
+.xl .f3 .in{transform: rotate(-10deg);}
+.xl .f4{right: 2%; top: 44%;}
+.xl .f4 .in{transform: rotate(8deg);}
+.xl .f5{right: 14%; bottom: 8%;}
+.xl .f5 .in{transform: rotate(10deg);}
+.xl .f6{left: 8%; bottom: 6%;}
+.xl .f6 .in{transform: rotate(-8deg);}
+.xl .f7{left: 40%; top: 0px;}
+.xl .dot{position: absolute; width: 12px; height: 12px; border-radius: 50%; opacity: 0.8;}
+.xl .bubble-w{display: inline-block; background: var(--paper); border-radius: 18px 18px 18px 6px; padding: 10px 16px; font-size: 22px; box-shadow: var(--shadow); color: var(--ink);}
+.xl .tile-hz{display: flex; align-items: center; justify-content: center; width: 62px; height: 62px; border-radius: 18px; font-family: var(--f-hz); font-weight: 700; font-size: 32px; box-shadow: rgba(0, 0, 0, 0.14) 0px 6px 0px, rgba(20, 36, 61, 0.35) 0px 16px 24px -12px;}
+.xl .t-teal{background: rgb(44, 211, 201); color: rgb(5, 50, 47);}
+.xl .t-cream{background: rgb(255, 231, 184); color: rgb(122, 74, 16);}
+.xl .flame-chip{display: flex; align-items: center; justify-content: center; width: 52px; height: 52px; border-radius: 50%; background: rgb(255, 178, 62); color: rgb(255, 255, 255); box-shadow: rgb(210, 129, 12) 0px 5px 0px;}
+.xl .flame-chip .ico{width: 28px; height: 28px; fill: rgb(255, 255, 255); stroke: rgb(255, 255, 255);}
+.xl .h-levels{border-top: 1px solid var(--line); background: var(--surface);}
+.xl .h-levels .wrap{display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 8px 28px; min-height: 76px; padding-block: 12px;}
+.xl .lv-link{display: inline-flex; align-items: center; gap: 10px; color: var(--ink-2); text-decoration: none; font-weight: 800; font-size: 14.5px; letter-spacing: 0.06em; padding: 8px 10px; border-radius: 12px; transition: background 0.15s, color 0.15s;}
+.xl .lv-link:hover{background: var(--surface-2); color: var(--ink);}
+.xl .lv-ic{width: 34px; height: 34px; border-radius: 10px; background: var(--c); color: rgb(255, 255, 255); display: inline-flex; align-items: center; justify-content: center; font-family: var(--f-hz); font-weight: 700; font-size: 18px; box-shadow: rgba(0, 0, 0, 0.18) 0px 3px 0px;}
+.xl .lv-note{font-size: 13.5px; color: var(--ink-3); font-weight: 600;}
+.xl .feat{padding-block: 88px; background: var(--surface);}
+.xl .feat.alt{background: var(--bg);}
+.xl .feat-grid{display: grid; grid-template-columns: minmax(0px, 1fr) minmax(0px, 1fr); gap: 64px; align-items: center; max-width: 1040px;}
+.xl .feat-grid.rev .feat-copy{order: 2;}
+.xl .feat-copy h2{font-size: clamp(32px, 3.8vw, 48px); color: var(--teal-ink); line-height: 1.12;}
+.xl .feat-copy p{margin-top: 16px; font-size: 19px; color: var(--ink-2); max-width: 30em;}
+.xl .feat-art{position: relative; min-height: 340px; display: flex; align-items: center; justify-content: center;}
+.xl .s-abs{position: absolute; right: 12%; top: 6%; transform: rotate(10deg);}
+.xl .phone{position: relative; z-index: 1; width: 250px; border-radius: 34px; background: var(--paper); border: 8px solid rgb(255, 217, 155); padding: 18px 16px 20px; box-shadow: var(--shadow);}
+.xl .ph-bar{display: flex; align-items: center; gap: 8px; font-size: 12px; font-weight: 800; color: var(--ink-3);}
+.xl .ph-prog{flex: 1 1 0%; height: 10px; border-radius: 999px; background: var(--surface-2); overflow: hidden;}
+.xl .ph-prog i{display: block; height: 100%; background: var(--grad); border-radius: 999px;}
+.xl .ph-lamp{display: flex; align-items: center; gap: 2px; color: var(--good);}
+.xl .ph-q{margin-top: 14px; font-weight: 800; font-size: 14px;}
+.xl .ph-word{display: flex; align-items: baseline; gap: 8px; margin: 8px 0px 12px;}
+.xl .ph-word .hz{font-size: 36px;}
+.xl .ph-word small{color: var(--teal-ink); font-weight: 700;}
+.xl .ph-opts{display: grid; grid-template-columns: 1fr 1fr; gap: 8px;}
+.xl .ph-opts span{border-radius: 12px; border: 2px solid var(--line-2); box-shadow: 0 3px 0 var(--line-2); padding: 8px; text-align: center; font-weight: 700; font-size: 12.5px;}
+.xl .ph-opts span.on{border-color: var(--teal); background: var(--teal-soft); box-shadow: 0 3px 0 var(--teal);}
+.xl .ph-btn{margin-top: 14px; border-radius: 12px; background: var(--btn); color: var(--on-btn); text-align: center; font-weight: 800; font-size: 12.5px; letter-spacing: 0.08em; padding: 10px; box-shadow: 0 4px 0 var(--btn-sh);}
+.xl .peek-l{position: absolute; z-index: 2; left: 2%; bottom: -6px; width: 170px; transform: rotate(-8deg); filter: drop-shadow(rgba(20, 36, 61, 0.2) 0px 12px 14px);}
+.xl .streak{position: relative; z-index: 1; width: 300px; border-radius: 24px; background: var(--paper); padding: 18px; box-shadow: var(--shadow);}
+.xl .st-top{display: flex; align-items: center; gap: 12px;}
+.xl .st-top b{display: block; font-family: var(--f-display); font-size: 24px; line-height: 1.1;}
+.xl .st-top small{color: var(--ink-3); font-size: 12px;}
+.xl .st-flame{width: 52px; height: 52px; border-radius: 16px; background: rgb(255, 178, 62); display: flex; align-items: center; justify-content: center; box-shadow: rgb(210, 129, 12) 0px 4px 0px;}
+.xl .st-flame .ico{width: 28px; height: 28px; fill: rgb(255, 255, 255); stroke: rgb(255, 255, 255);}
+.xl .st-week{display: flex; justify-content: space-between; margin-top: 16px;}
+.xl .st-week i{width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-style: normal; font-size: 11px; font-weight: 800; background: var(--surface-2); color: var(--ink-3);}
+.xl .st-week i.on{background: rgb(255, 178, 62); color: rgb(255, 255, 255);}
+.xl .st-week i.today{box-shadow: rgb(255, 178, 62) 0px 0px 0px 2px inset; color: rgb(210, 129, 12); background: none;}
+.xl .st-lamps{display: flex; gap: 4px; margin-top: 14px; padding-top: 12px; border-top: 1px solid var(--line);}
+.xl .st-lamps svg{width: 28px; height: 28px;}
+.xl .st-lamps svg.off{opacity: 0.25; filter: grayscale(1);}
+.xl .path-mini{position: absolute; right: 2%; top: 4%; display: flex; align-items: center; gap: 6px; transform: rotate(6deg);}
+.xl .path-mini .mm{position: static; width: 44px; height: 44px;}
+.xl .path-mini .ln{width: 22px; height: 5px; border-radius: 3px; background: var(--line-2);}
+.xl .h-cta{position: relative; background: var(--surface); padding-top: 88px; overflow: hidden;}
+.xl .h-cta h2{font-size: clamp(32px, 4vw, 52px); color: var(--teal-ink);}
+.xl .cta-stage{position: relative; height: 360px; margin-top: 20px; max-width: 1440px; margin-inline: auto;}
+.xl .ground{position: absolute; left: 0px; right: 0px; bottom: 0px; width: 100%; height: 220px;}
+.xl .cta-x{position: absolute; left: 50%; bottom: 30px; width: 250px; transform: translateX(-50%); filter: drop-shadow(rgba(20, 36, 61, 0.2) 0px 18px 16px);}
+html.motion-ok .xl .cta-x{animation: 4.8s ease-in-out 0s infinite normal none running bob;}
+.xl .c1{left: 22%; top: 18%;}
+.xl .c2{left: 31%; top: 44%;}
+.xl .c2 .in{transform: rotate(-12deg);}
+.xl .c3{right: 30%; top: 40%;}
+.xl .c3 .in{transform: rotate(12deg);}
+.xl .c4{right: 21%; top: 14%;}
+.xl .c4 .in{transform: rotate(8deg);}
+.xl .c5{left: 12%; bottom: 42%;}
+.xl .c6{right: 10%; bottom: 40%;}
+.xl .c6 .in{transform: rotate(10deg);}
+.xl .c7{left: 40%; top: 2%;}
+@media (max-width: 900px){
+.xl .h-hero-grid{grid-template-columns: 1fr; gap: 20px; padding-block: 20px 40px;}
+.xl .h-art{max-width: 380px;}
+.xl .feat-grid,
+.xl .feat-grid.rev{grid-template-columns: 1fr; gap: 28px;}
+.xl .feat-grid .feat-copy,
+.xl .feat-grid.rev .feat-copy{order: 0; text-align: center;}
+.xl .feat-copy p{margin-inline: auto;}
+.xl .feat{padding-block: 56px;}
+}
+@media (max-width: 520px){
+.xl .h-copy{gap: 22px;}
+.xl .h-copy h1{font-size: 30px;}
+.xl .lv-note{display: none;}
+.xl .h-levels .wrap{gap: 4px 10px;}
+.xl .lv-link{font-size: 13px; padding: 6px;}
+.xl .feat-art{transform: scale(0.88); min-height: 300px;}
+.xl .peek-l{width: 130px; left: -2%;}
+.xl .cta-stage{height: 280px;}
+.xl .cta-x{width: 190px;}
+.xl .c5,
+.xl .c6,
+.xl .c7{display: none;}
+.xl .c1{left: 6%;}
+.xl .c4{right: 6%;}
+.xl .c2{left: 14%;}
+.xl .c3{right: 12%;}
+.xl .tile-hz{width: 50px; height: 50px; font-size: 26px;}
+}
+.xl{--sky1: #DDF4F1; --sky2: #FFF4E0; --hill1: #9ADBC2; --hill2: #7CCDB0; --grass1: #8FD9A8; --grass2: #79CC97; --soil: #D7A673; --soil2: #C08E5C; --sun: #FFC56E; --cloud: #FFFFFF;}
+@media (prefers-color-scheme: dark){
+.xl{--sky1: #0F1C30; --sky2: #1C2C44; --hill1: #1D4A4A; --hill2: #17403F; --grass1: #22574A; --grass2: #1C4B40; --soil: #6B4B33; --soil2: #5A3E2A; --sun: #FFE7B8; --cloud: rgba(255,255,255,.14);}
+}
+.xl .sprout{position: absolute; left: var(--x); bottom: 0px; display: flex; flex-direction: column; align-items: center; transform-origin: 50% 100%; transform: scale(0) translateY(10px); transition: transform 0.45s cubic-bezier(0.3, 1.6, 0.5, 1);}
+.xl .sprout.up{transform: none;}
+.xl .sprout b{position: relative; display: flex; align-items: center; justify-content: center; width: 46px; height: 46px; border-radius: 14px; background: rgb(255, 243, 222); color: rgb(122, 74, 16); font-size: 24px; box-shadow: rgb(227, 199, 154) 0px 4px 0px;}
+.xl .sprout b::before,
+.xl .sprout b::after{content: ""; position: absolute; top: -14px; width: 16px; height: 12px; background: rgb(79, 191, 122); border-radius: 12px 0px;}
+.xl .sprout b::before{left: 8px; transform: rotate(-12deg);}
+.xl .sprout b::after{right: 8px; border-radius: 0px 12px; transform: rotate(12deg);}
+.xl .sprout small{margin-top: 4px; font-size: 10.5px; font-weight: 800; letter-spacing: 0.06em; color: rgb(62, 42, 22); background: rgba(255, 243, 222, 0.85); padding: 0px 6px; border-radius: 6px;}
+.xl .ox{position: absolute; left: var(--ox,2%); bottom: 9%; display: flex; align-items: flex-end; transition: left 0.18s linear;}
+.xl .ox img{width: 112px; filter: drop-shadow(rgba(0, 0, 0, 0.2) 0px 10px 8px); margin-left: -14px;}
+.xl .plow{margin-bottom: 6px;}
+.xl .dust{position: absolute; bottom: 10%; width: 12px; height: 12px; border-radius: 50%; background: rgba(215, 166, 115, 0.6); opacity: 0;}
+.xl .ox .dust{bottom: 2px;}
+.xl .d1{left: 30px;}
+.xl .d2{left: 52px; animation-delay: 0.3s !important;}
+.xl .night{position: relative; width: 100%; max-width: 480px; aspect-ratio: 4 / 3.3; border-radius: 32px; overflow: hidden; background: repeating-linear-gradient(180deg,transparent 0 35px,color-mix(in srgb,var(--teal) 14%,transparent) 35px 36px),var(--paper); box-shadow: var(--shadow); touch-action: none; cursor: none;}
+.xl .night::before{content: ""; position: absolute; left: 44px; top: 0px; bottom: 0px; width: 2px; background: color-mix(in srgb,var(--coral) 35%,transparent);}
+.xl .glowspot{position: absolute; inset: 0px; background: radial-gradient(70px 70px at calc(var(--x) - 8px) calc(var(--y) - 8px),color-mix(in srgb,var(--teal) 16%,transparent),transparent 100%); pointer-events: none;}
+.xl .words{position: absolute; inset: 8% 6% 30% 14%; display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px;}
+.xl .wd{display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px; border-radius: 18px; border: 2px solid transparent; background: transparent; color: var(--ink); opacity: 0.32; filter: blur(1.2px); cursor: none; transition: opacity 0.25s, background 0.25s, transform 0.25s, border-color 0.25s, filter 0.25s;}
+.xl .wd b{font-size: 30px; line-height: 1.1;}
+.xl .wd small{font-size: 11.5px; font-weight: 700; color: var(--teal-ink); opacity: 0; transition: opacity 0.25s; text-align: center;}
+.xl .wd.lit{opacity: 1; filter: none; background: var(--teal-soft); border-color: var(--teal); transform: scale(1.06);}
+.xl .wd.lit small{opacity: 1;}
+.xl .wd:focus-visible{outline: 3px solid var(--focus); outline-offset: 2px;}
+.xl .carry{position: absolute; left: var(--x); top: var(--y); transform: translate(-8%, -4%); pointer-events: none; filter: drop-shadow(rgba(20, 36, 61, 0.25) 0px 10px 12px); transition: left 0.08s linear, top 0.08s linear;}
+.xl .night-x{position: absolute; left: 0px; right: 0px; bottom: 0px; display: flex; align-items: flex-end; justify-content: flex-end; gap: 8px; padding: 0px 0px 0px 16px; pointer-events: none;}
+.xl .night-x img{width: 120px; margin-bottom: -26px; flex: 0 0 auto;}
+.xl .nb{margin-bottom: 22px; max-width: 62%; background: var(--surface-2); color: var(--ink); border-radius: 16px 16px 4px; padding: 10px 12px; font-size: 13.5px; font-weight: 600; line-height: 1.45; box-shadow: rgba(0, 0, 0, 0.6) 0px 10px 24px -10px;}
+@media (hover: none){
+.xl .night,
+.xl .wd{cursor: pointer;}
+}
+@media (max-width: 520px){
+.xl .wd b{font-size: 24px;}
+.xl .night-x img{width: 96px;}
+.xl .nb{font-size: 12.5px;}
+.xl .ox img{width: 104px;}
+.xl .plow{width: 76px;}
+.xl .sprout b{width: 38px; height: 38px; font-size: 20px;}
+}
+.xl .h-art .xiang-main{pointer-events: auto; cursor: pointer;}
+html.motion-ok .xl .xiang-main.hop{animation: 0.6s cubic-bezier(0.3, 1.5, 0.5, 1) 0s 1 normal none running hop;}
+.xl .h-art{pointer-events: none;}
+.xl .bird{position: absolute; top: 22%; left: -40px; width: 22px; height: 10px; opacity: 0;}
+.xl .bird::before,
+.xl .bird::after{content: ""; position: absolute; top: 0px; width: 11px; height: 8px; border-top: 2.5px solid var(--ink-2); border-radius: 50% 50% 0px 0px;}
+.xl .bird::before{left: 0px;}
+.xl .bird::after{right: 0px;}
+.xl .sprout.up b{transition: transform 0.2s;}
+.xl{--sky-a: #FDEBD2; --sky-b: #DDF3EF; --mt1: #A9D8CF; --mt2: #7DC4AE; --mist: #EAF7F3; --paddy: #9BD88C; --paddy2: #87CC7A; --water: #BDE7EF; --soil: #E3C096; --soil-d: #9C6A3E; --g3: #5DBB78; --bam: #6DBF86; --bam-node: #4E9E67; --bam-leaf: #4FAE6E; --sunc: #FFC56E; --stars-o: 0;}
+@media (prefers-color-scheme: dark){
+.xl{--sky-a: #0B1426; --sky-b: #18324A; --mt1: #1F4050; --mt2: #1B3B3A; --mist: #132A3A; --paddy: #22513F; --paddy2: #1C4636; --water: #1E4C5C; --soil: #6E4E35; --soil-d: #3C281A; --g3: #183F31; --bam: #2D6C4C; --bam-node: #1F5038; --bam-leaf: #245D41; --sunc: #FFE7B8; --stars-o: 1;}
+}
+.xl .pl-sec{position: relative; padding-block: 0px; background: var(--bg);}
+.xl .pl-sticky{display: block;}
+.xl .pl-wrap{width: 100%;}
+.xl .pl-scene{position: relative; width: 100%; height: min(78vh, 720px); min-height: 400px; border-radius: 0px; overflow: hidden; background: linear-gradient(180deg,var(--sky-a),var(--sky-b) 62%); box-shadow: none; isolation: isolate;}
+.xl .pl-sky{position: absolute; inset: 0px;}
+.xl .pl-stars{position: absolute; inset: 0px 0px 50%; opacity: var(--stars-o); background-image: radial-gradient(1.5px 1.5px at 12% 20%, rgb(255, 255, 255), transparent), radial-gradient(1.5px 1.5px at 30% 12%, rgb(255, 255, 255), transparent), radial-gradient(1px 1px at 46% 28%, rgb(255, 255, 255), transparent), radial-gradient(1.5px 1.5px at 64% 10%, rgb(255, 255, 255), transparent), radial-gradient(1px 1px at 78% 26%, rgb(255, 255, 255), transparent), radial-gradient(1.5px 1.5px at 90% 14%, rgb(255, 255, 255), transparent), radial-gradient(1px 1px at 22% 36%, rgb(255, 255, 255), transparent);}
+.xl .pl-sun{position: absolute; right: 13%; top: 14%; width: clamp(70px, 8vw, 110px); aspect-ratio: 1 / 1; border-radius: 50%; background: var(--sunc); box-shadow: 0 0 0 14px color-mix(in srgb,var(--sunc) 22%,transparent),0 0 80px 30px color-mix(in srgb,var(--sunc) 30%,transparent); will-change: transform;}
+.xl .pl-cloud{position: absolute; height: 26px; border-radius: 999px; background: var(--cloud);}
+.xl .pl-cloud::before{content: ""; position: absolute; left: 20%; top: -16px; width: 44%; height: 34px; border-radius: 999px; background: inherit;}
+.xl .k1{left: 8%; top: 16%; width: 140px;}
+.xl .k2{left: 42%; top: 9%; width: 100px;}
+.xl .k3{left: 66%; top: 30%; width: 80px; opacity: 0.7;}
+html.motion-ok .xl .pl-cloud{animation: 22s linear 0s infinite alternate none running cloudmove;}
+html.motion-ok .xl .k2{animation-duration: 30s;}
+html.motion-ok .xl .k3{animation-duration: 26s;}
+.xl .pl-sky .bird{top: 24%;}
+html.motion-ok .xl .pl-scene .bird{animation: 11s linear 0s infinite normal none running fly;}
+html.motion-ok .xl .pl-scene .bird.b2{animation-delay: -5.5s; top: 32%;}
+.xl .pl-layer{position: absolute; will-change: transform;}
+.xl .mt-far{left: -6%; width: 112%; bottom: 30%; height: 52%;}
+.xl .mt-mid{left: -6%; width: 112%; bottom: 25%; height: 36%;}
+.xl .pl-paddy{position: absolute; left: 0px; right: 0px; bottom: 22%; height: 12%; background: repeating-linear-gradient(90deg,var(--paddy) 0 16px,var(--paddy2) 16px 20px); border-top: 3px solid color-mix(in srgb,var(--paddy2) 80%,#000 0%);}
+.xl .pl-water{position: absolute; left: 0px; right: 0px; top: -3px; height: 42%; background: var(--water); overflow: hidden; border-bottom: 3px solid color-mix(in srgb,var(--paddy2) 70%,transparent);}
+.xl .pl-water i{position: absolute; top: 35%; height: 3px; width: 70px; border-radius: 3px; background: rgba(255, 255, 255, 0.65);}
+.xl .pl-water i:nth-child(1){left: 12%;}
+.xl .pl-water i:nth-child(2){left: 48%; top: 60%; width: 50px;}
+.xl .pl-water i:nth-child(3){left: 78%; width: 90px;}
+html.motion-ok .xl .pl-water i{animation: 3.6s ease-in-out 0s infinite normal none running shimmer;}
+html.motion-ok .xl .pl-water i:nth-child(2){animation-delay: -1.2s;}
+html.motion-ok .xl .pl-water i:nth-child(3){animation-delay: -2.4s;}
+.xl .pl-row{position: absolute; left: 0px; right: 0px; bottom: 9%; height: 14%; background: linear-gradient(180deg,color-mix(in srgb,var(--soil) 85%,#fff 15%),var(--soil)); border-top: 3px solid color-mix(in srgb,var(--soil) 70%,#000 10%);}
+.xl .pl-done{position: absolute; left: 0px; top: 0px; bottom: 0px; width: 0px; background: repeating-linear-gradient(180deg,var(--soil-d) 0 7px,color-mix(in srgb,var(--soil-d) 80%,#000) 7px 10px); border-radius: 0px 12px 12px 0px; box-shadow: inset -6px 0 0 color-mix(in srgb,var(--soil-d) 70%,#000);}
+.xl .pl-sprouts{position: absolute; left: 0px; right: 0px; bottom: 14%; height: 0px; z-index: 2;}
+.xl .pl-scene .sprout b{width: clamp(44px, 5.6vw, 74px); height: clamp(44px, 5.6vw, 74px); font-size: clamp(22px, 2.9vw, 38px); border-radius: 20px; box-shadow: rgb(227, 199, 154) 0px 6px 0px, rgba(0, 0, 0, 0.35) 0px 14px 20px -8px;}
+.xl .pl-scene .sprout b::before,
+.xl .pl-scene .sprout b::after{top: -18px; width: 22px; height: 16px;}
+.xl .pl-scene .sprout small{font-size: 12px; margin-top: 6px; padding: 1px 8px;}
+.xl .pl-ox{left: 0px; bottom: 7%; z-index: 3;}
+.xl .pl-ox img{width: clamp(110px, 15vw, 210px); margin-left: -20px;}
+.xl .pl-ox .plow{width: clamp(70px, 10vw, 140px); height: auto; margin-bottom: 12px;}
+html.motion-ok .xl .pl-scene.walking .pl-ox img{animation: 0.32s ease-in-out 0s infinite alternate none running step;}
+html.motion-ok .xl .pl-scene.walking .dust{animation: 0.8s ease-out 0s infinite normal none running puff;}
+html.motion-ok .xl .pl-scene .sprout.up b::before{animation: 2.6s ease-in-out 0s infinite normal none running leafL; transform-origin: 100% 100%;}
+html.motion-ok .xl .pl-scene .sprout.up b::after{animation: 2.6s ease-in-out 0s infinite normal none running leafR; transform-origin: 0px 100%;}
+.xl .pl-bamboo{bottom: 5%; height: 72%; width: auto; aspect-ratio: 160 / 420; z-index: 4;}
+.xl .bl{left: -7%;}
+.xl .br{right: -3%; height: 84%; bottom: 3%;}
+.xl .pl-ground{position: absolute; left: 0px; right: 0px; bottom: 0px; height: 10%; background: var(--g3);}
+.xl .pl-front{left: -6%; width: 112%; bottom: -2px; height: 10%; z-index: 5;}
+@media (max-width: 720px){
+.xl .pl-sec{padding-block: 0px;}
+.xl .pl-scene{border-radius: 0px; height: min(70dvh, 540px); min-height: 380px;}
+.xl .pl-scene .sprout b{width: 36px; height: 36px; font-size: 19px; border-radius: 12px; box-shadow: rgb(227, 199, 154) 0px 4px 0px;}
+.xl .pl-scene .sprout b::before,
+.xl .pl-scene .sprout b::after{top: -12px; width: 14px; height: 10px;}
+.xl .pl-scene .sprout b::before{left: 5px;}
+.xl .pl-scene .sprout b::after{right: 5px;}
+.xl .pl-scene .sprout small{font-size: 9.5px; padding: 0px 4px;}
+.xl .pl-ox img{width: 96px; margin-left: -12px;}
+.xl .pl-ox .plow{width: 56px;}
+.xl .pl-sun{width: 56px;}
+.xl .bl{display: none;}
+.xl .br{right: -18%; height: 60%;}
+.xl .k3{display: none;}
+}
+.xl .exam-art{position: relative; width: min(420px, 100%); aspect-ratio: 1 / 0.92;}
+.xl .ex-clock{position: absolute; left: 2%; top: 0px; width: 78px; height: 78px; filter: drop-shadow(rgba(20, 36, 61, 0.18) 0px 8px 12px);}
+html.motion-ok .xl .ex-clock .hand-m{animation: 6s steps(12) 0s infinite normal none running tick; transform-origin: 40px 40px;}
+.xl .ex-head{position: absolute; left: 50%; top: 12%; width: 78%; transform: translateX(-50%);}
+.xl .ex-head img{width: 100%; filter: drop-shadow(rgba(20, 36, 61, 0.18) 0px 14px 14px);}
+.xl .ex-phones{position: absolute; inset: 0px; width: 100%; height: 100%;}
+html.motion-ok .xl .ex-head{animation: 3.6s ease-in-out 0s infinite normal none running nod; transform-origin: 50% 100%;}
+.xl .ex-desk{position: absolute; left: 0px; right: 0px; bottom: 0px; height: 34%; border-radius: 22px; background: linear-gradient(rgb(201, 143, 87), rgb(168, 107, 52)); box-shadow: rgb(139, 90, 43) 0px 10px 0px, rgba(20, 36, 61, 0.4) 0px 24px 30px -14px;}
+.xl .ex-paper{position: absolute; left: 18%; top: -14%; width: 46%; height: 92%; border-radius: 10px; background: var(--paper); box-shadow: rgba(0, 0, 0, 0.35) 0px 8px 16px -8px; transform: rotate(-4deg); padding: 10px 12px; display: flex; flex-direction: column; gap: 6px;}
+.xl .ex-paper .hz{font-size: 13px; color: var(--ink-3);}
+.xl .ex-paper i{display: block; height: 5px; border-radius: 3px; background: var(--line-2); width: 86%;}
+.xl .ex-paper i.s{width: 56%;}
+.xl .ex-paper .bub{display: grid; grid-template-columns: repeat(4, 14px); gap: 6px; margin-top: 2px;}
+.xl .ex-paper .bub b{width: 14px; height: 14px; border-radius: 50%; border: 2px solid var(--line-2);}
+.xl .ex-paper .bub b.f{background: rgb(47, 79, 154); border-color: rgb(47, 79, 154);}
+.xl .ex-pencil{position: absolute; right: 8%; top: 6%; width: 120px; transform: rotate(-18deg);}
+.xl .ex-seal{position: absolute; right: 2%; top: 8%; transform: rotate(10deg);}
+@media (max-width: 520px){
+.xl .ex-clock{width: 58px; height: 58px;}
+.xl .ex-paper .bub{grid-template-columns: repeat(4, 11px); gap: 4px;}
+.xl .ex-paper .bub b{width: 11px; height: 11px;}
+.xl .ex-pencil{width: 90px;}
+}
+.xl .h-note{font-size: 14px; color: var(--ink-3); margin-top: 2px;}
+.xl .h-note a{font-weight: 700;}
+.xl .fx-btn{margin-top: 24px;}
+@media (max-width: 900px){
+.xl .fx-btn{margin-inline: auto;}
+}
+.xl .pk-grid{display: grid; grid-template-columns: repeat(4, minmax(0px, 1fr)); gap: 18px; margin-top: 40px;}
+.xl .pk-card{position: relative; display: flex; flex-direction: column; gap: 12px; padding: 22px; border-radius: 26px; background: var(--surface); box-shadow: var(--shadow-sm); border: 2px solid transparent; transition: transform 0.16s, box-shadow 0.16s, border-color 0.16s;}
+.xl .pk-card:hover{transform: translateY(-4px); box-shadow: var(--shadow); border-color: var(--c);}
+.xl .pk-top{display: flex; align-items: center; gap: 12px;}
+.xl .pk-top .lv-ic{width: 52px; height: 52px; border-radius: 16px; font-size: 28px;}
+@media (max-width: 1000px){
+.xl .pk-grid{grid-template-columns: repeat(2, minmax(0px, 1fr));}
+}
+@media (max-width: 560px){
+.xl .pk-grid{grid-template-columns: 1fr;}
+}
+.xl [tabindex="-1"]:focus{outline: none;}
+.xl .h-exams{padding-block: 72px; background: var(--bg);}
+.xl .hx-head{display: flex; justify-content: space-between; align-items: flex-end; gap: 16px; flex-wrap: wrap;}
+.xl .hx-head h2{font-size: clamp(30px, 3.6vw, 44px); margin-top: 6px;}
+.xl .h-exams .pk-grid{margin-top: 28px;}
+.xl a.pk-card{text-decoration: none; color: var(--ink); background: radial-gradient(120% 90% at 100% 0%,color-mix(in srgb,var(--c) 22%,transparent),transparent 55%),var(--surface); border-bottom: 5px solid var(--c);}
+.xl .pk-card .pk-top{position: relative;}
+.xl .cat-go{margin-left: auto; width: 40px; height: 40px; border-radius: 50%; background: var(--c); color: rgb(255, 255, 255); display: flex; align-items: center; justify-content: center; transition: transform 0.18s;}
+.xl a.pk-card:hover .cat-go{transform: translateX(4px);}
+.xl .pk-grid{gap: 20px;}
+.xl a.pk-card.cat{padding: 26px 24px 22px; gap: 6px; border-radius: 28px;}
+.xl .cat .pk-top{margin-bottom: 14px;}
+.xl .cat .lv-ic{width: 56px; height: 56px; border-radius: 18px; font-size: 30px;}
+.xl .cat-go{width: 44px; height: 44px;}
+.xl .cat-lv{font-family: var(--f-display); font-size: 34px; line-height: 1.05;}
+.xl .cat-main{font-size: 17px; font-weight: 700; color: var(--ink);}
+.xl .cat-sk{font-size: 15px; color: var(--ink-2);}
+.xl .cat-count{margin-top: 14px; padding-top: 14px; border-top: 1px solid var(--line); font-size: 14px; font-weight: 700; color: var(--ink-2);}
+.xl .cat-count em{font-style: normal; font-weight: 500; color: var(--ink-3);}
+@media (max-width: 1100px){
+.xl .pk-grid{grid-template-columns: repeat(2, minmax(0px, 1fr));}
+}
+@media (max-width: 560px){
+.xl .pk-grid{grid-template-columns: 1fr;}
+}
+@media (prefers-color-scheme: dark){
+.xl :root:not([data-theme="light"]) .terr{background: linear-gradient(rgb(36, 87, 74), rgb(28, 75, 64)); box-shadow: rgb(22, 60, 51) 0px -8px 0px inset;}
+.xl :root:not([data-theme="light"]) .terr-h{color: rgb(205, 239, 224);}
+.xl :root:not([data-theme="light"]) .terr.lk{background: rgb(42, 47, 58); box-shadow: rgb(34, 38, 47) 0px -8px 0px inset;}
+}
+.xl .b2{--s1: #CFE6FF; --s2: #E8F4FF; --m1: #9FD8C9; --m2: #7FC9B6; --h1: #94CBE0; --h2: #7DBBD2; --sun2: #FFE08A; --tg1: #B7E6DA; --tg2: #9BD9C9; --tb: #6FBFA9; --acc: #2B7FD4;}
+@media (prefers-color-scheme: dark){
+.xl :root:not([data-theme="light"]) .biome{--s1: #14243B; --s2: #1A2E48; --m1: #1E4A43; --m2: #173C36; --h1: #1F3A50; --h2: #193246; --tg1: #24574A; --tg2: #1D4B40; --tb: #143A31;}
+.xl :root:not([data-theme="light"]) .b3{--m1: #4A4022; --m2: #3D351C; --tg1: #5A4D27; --tg2: #4C4121; --tb: #392F15;}
+}
+@media (prefers-color-scheme: dark){
+.xl :root:not([data-theme="light"]) .pi.soil{background: rgb(74, 60, 42); box-shadow: rgb(94, 76, 53) 0px 0px 0px 1.5px inset;}
+.xl :root:not([data-theme="light"]) .pi.sprt{background: rgb(31, 74, 54); box-shadow: rgb(46, 107, 78) 0px 0px 0px 1.5px inset;}
+.xl :root:not([data-theme="light"]) .pi.rice{background: rgb(74, 61, 22); box-shadow: rgb(107, 87, 32) 0px 0px 0px 1.5px inset;}
+.xl :root:not([data-theme="light"]) .pi.rv svg{stroke: rgb(242, 179, 107);}
+}
+@media (prefers-color-scheme: dark){
+.xl :root:not([data-theme="light"]) .map{--lk1: #3A3A3F; --lk2: #2A2A2F; --soil1: #8A6A45; --soil2: #755636; --soil3: #5A3F24; --grass: #2E6B4E; --grass2: #2B5E47; --water: #24536B; --water2: #1D4559;}
+.xl :root:not([data-theme="light"]) .node2.done .top{background: radial-gradient(120% 90% at 30% 20%, rgb(63, 127, 87), rgb(47, 107, 71)); box-shadow: rgb(34, 81, 58) 0px 9px 0px;}
+}
+@media (prefers-color-scheme: dark){
+.xl :root:not([data-theme="light"]) .node2.done.big .top{background: radial-gradient(120% 90% at 30% 20%, rgb(185, 138, 42), rgb(143, 106, 30)); box-shadow: rgb(101, 74, 18) 0px 9px 0px;}
+}
+.xl body.map-on .demo{display: none;}
+@keyframes spinang { 
+  100% { --ang: 360deg; }
+}
+@keyframes bob { 
+  0%, 100% { translate: 0px; }
+  50% { translate: 0px -8px; }
+}
+@keyframes enter { 
+  0% { transform: translateY(18px); }
+  100% { transform: none; }
+}
+@keyframes rise { 
+  0% { transform: translateY(42px) scale(0.98); }
+  100% { transform: none; }
+}
+@keyframes cloudmove { 
+  100% { translate: 40px; }
+}
+@keyframes step { 
+  0% { transform: translateY(0px) rotate(-2deg); }
+  100% { transform: translateY(-6px) rotate(2deg); }
+}
+@keyframes puff { 
+  0% { opacity: 0.8; transform: scale(0.5); }
+  100% { opacity: 0; transform: scale(1.8) translate(-14px, -10px); }
+}
+@keyframes hop { 
+  0% { translate: 0px; }
+  40% { translate: 0px -38px; }
+  70% { translate: 0px 4px; }
+  100% { translate: 0px; }
+}
+@keyframes leafL { 
+  0%, 100% { transform: rotate(-12deg); }
+  50% { transform: rotate(-26deg); }
+}
+@keyframes leafR { 
+  0%, 100% { transform: rotate(12deg); }
+  50% { transform: rotate(26deg); }
+}
+@keyframes fly { 
+  0% { left: -40px; opacity: 0; }
+  8% { opacity: 0.7; }
+  50% { translate: 0px -14px; }
+  92% { opacity: 0.7; }
+  100% { left: 105%; opacity: 0; }
+}
+@keyframes shimmer { 
+  0%, 100% { opacity: 0.25; translate: 0px; }
+  50% { opacity: 0.85; translate: 24px; }
+}
+@keyframes tick { 
+  100% { transform: rotate(360deg); }
+}
+@keyframes nod { 
+  0%, 100% { rotate: 0deg; }
+  50% { rotate: -2.5deg; }
+}
+@keyframes shimmer { 
+  60%, 100% { translate: 120%; }
+}
+.xl .moo{position:absolute;left:56%;top:20%;z-index:3;background:var(--paper);color:var(--ink);border-radius:18px 18px 18px 6px;padding:8px 14px;font-weight:800;box-shadow:var(--shadow);white-space:nowrap;font-size:15px}
+.xl .moo .hz{color:var(--coral-ink)}
