@@ -1,0 +1,63 @@
+/* Huy hiệu danh hiệu (7 bậc) + hộp chúc mừng lên bậc */
+.rk { --rk: 96px; --c1: #c99a66; --c2: #f0d9b5; --bg1: #e9f7f2; --bg2: #c9ece3; --glow: transparent;
+  position: relative; display: inline-grid; place-items: center; width: var(--rk); height: var(--rk); flex: none; border-radius: 50%; isolation: isolate; }
+.rk__ring { position: absolute; inset: 0; border-radius: 50%; background: conic-gradient(from 0deg, var(--c1), var(--c2), var(--c1), var(--c2), var(--c1));
+  box-shadow: 0 0 0 calc(var(--rk) * .02) rgba(255,255,255,.5) inset, 0 calc(var(--rk) * .05) calc(var(--rk) * .12) rgba(0,0,0,.18), 0 0 calc(var(--rk) * .28) var(--glow); }
+.rk__ring::after { content: ""; position: absolute; inset: 0; border-radius: 50%;
+  background: conic-gradient(from 0deg, transparent 0 70%, rgba(255,255,255,.85) 78%, transparent 86% 100%); mix-blend-mode: overlay; }
+.rk__disc { position: relative; z-index: 1; width: 84%; height: 84%; border-radius: 50%; overflow: hidden; display: grid; place-items: end center;
+  background: radial-gradient(circle at 50% 35%, var(--bg1), var(--bg2)); box-shadow: inset 0 2px 6px rgba(0,0,0,.18); }
+.rk__disc img { width: var(--fig, 78%); height: auto; margin-bottom: -6%; user-select: none; filter: drop-shadow(0 2px 2px rgba(0,0,0,.15)); }
+.rk__star { position: absolute; z-index: 2; color: #fff6c9; font-size: calc(var(--rk) * .16); line-height: 1; text-shadow: 0 0 6px #ffd54a, 0 0 2px #fff; }
+.rk__star--0 { top: 2%; right: 8%; } .rk__star--1 { bottom: 6%; left: 2%; font-size: calc(var(--rk) * .11); }
+.rk__star--2 { top: 14%; left: -2%; font-size: calc(var(--rk) * .1); } .rk__star--3 { bottom: -2%; right: 14%; font-size: calc(var(--rk) * .13); }
+.rk__lock { position: absolute; z-index: 3; right: -2%; bottom: -2%; width: 34%; height: 34%; border-radius: 50%; display: grid; place-items: center;
+  background: #5c6670; color: #fff; box-shadow: 0 0 0 2px #fff; }
+.rk__lock svg { width: 58%; height: 58%; fill: none; stroke: currentColor; stroke-width: 2.4; stroke-linecap: round; stroke-linejoin: round; }
+
+/* Theo bậc: gỗ → đồng → bạc → vàng; Xiang lớn dần */
+.rk--1 { --c1: #a8794c; --c2: #e6c79c; --bg1: #f1fbf3; --bg2: #cfeccf; --fig: 62%; }
+.rk--2 { --c1: #b98a57; --c2: #f3dcb4; --bg1: #f4fbe9; --bg2: #d6efb8; --fig: 68%; }
+.rk--3 { --c1: #9b5a2e; --c2: #eaa874; --bg1: #fdf3e6; --bg2: #f3d6b0; --fig: 74%; }
+.rk--4 { --c1: #8d4a22; --c2: #f4b886; --bg1: #fff1df; --bg2: #e9c58f; --fig: 78%; --glow: rgba(234,168,116,.35); }
+.rk--5 { --c1: #8d9aa8; --c2: #f4f8fb; --bg1: #eef5fb; --bg2: #c9d9e8; --fig: 80%; --glow: rgba(180,205,230,.55); }
+.rk--6 { --c1: #3f9f97; --c2: #e3fbf7; --bg1: #e8fbf7; --bg2: #a9e3da; --fig: 82%; --glow: rgba(90,200,190,.55); }
+.rk--7 { --c1: #b8800f; --c2: #ffe9a3; --bg1: #fff7d6; --bg2: #f6c955; --fig: 84%; --glow: rgba(255,200,60,.75); }
+.rk--7 .rk__disc img { filter: sepia(.85) saturate(2.4) hue-rotate(-8deg) brightness(1.08) drop-shadow(0 0 6px rgba(255,214,90,.9)); }
+
+.rk.is-locked .rk__ring, .rk.is-locked .rk__disc { filter: grayscale(1); opacity: .45; }
+
+@media (prefers-reduced-motion: no-preference) {
+  .rk:not(.is-still):not(.is-locked) .rk__ring::after { animation: rk-spin 3.2s linear infinite; }
+  .rk:not(.is-still):not(.is-locked) .rk__star { animation: rk-twinkle 1.8s ease-in-out infinite; }
+  .rk:not(.is-still) .rk__star--1 { animation-delay: .5s; } .rk:not(.is-still) .rk__star--2 { animation-delay: .9s; } .rk:not(.is-still) .rk__star--3 { animation-delay: 1.3s; }
+  .rk--7:not(.is-still):not(.is-locked) .rk__ring { animation: rk-halo 2.4s ease-in-out infinite; }
+}
+@keyframes rk-spin { to { transform: rotate(360deg); } }
+@keyframes rk-twinkle { 0%, 100% { opacity: .25; transform: scale(.6) rotate(0deg); } 50% { opacity: 1; transform: scale(1.15) rotate(25deg); } }
+@keyframes rk-halo { 0%, 100% { box-shadow: 0 0 0 2px rgba(255,255,255,.5) inset, 0 6px 14px rgba(0,0,0,.18), 0 0 18px var(--glow); }
+  50% { box-shadow: 0 0 0 2px rgba(255,255,255,.5) inset, 0 6px 14px rgba(0,0,0,.18), 0 0 42px var(--glow); } }
+
+/* Hộp chúc mừng lên bậc */
+.lvup { position: fixed; inset: 0; z-index: 80; display: grid; place-items: center; padding: 16px; background: rgba(8, 18, 28, .62); overflow: hidden; }
+.lvup__box { position: relative; z-index: 1; width: min(420px, 100%); padding: 28px 24px 22px; border-radius: 28px; text-align: center;
+  background: var(--surface, #fff); color: var(--ink, #1d2731); box-shadow: 0 24px 70px rgba(0,0,0,.35); }
+.lvup__badge { display: flex; justify-content: center; margin-top: -86px; margin-bottom: 8px; }
+.lvup__eyebrow { margin: 0; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; font-size: 12.5px; color: var(--coral-ink, #c4532f); }
+.lvup h2 { margin: 6px 0 6px; font: 800 24px/1.25 var(--f-display, system-ui); }
+.lvup h2 span { color: var(--teal-ink, #157a73); }
+.lvup__sub { margin: 0 0 18px; color: var(--ink-2, #4a5560); font-size: 15px; }
+.lvup__btn { min-height: 48px; padding: 0 30px; border: 0; border-radius: 16px; background: var(--teal, #2a958e); color: #fff; font: 800 16px var(--f-body, system-ui);
+  cursor: pointer; box-shadow: 0 4px 0 var(--teal-ink, #157a73); }
+.lvup__btn:active { transform: translateY(3px); box-shadow: 0 1px 0 var(--teal-ink, #157a73); }
+.lvup__confetti { position: absolute; inset: 0; pointer-events: none; }
+.lvup__confetti i { position: absolute; top: -20px; width: 9px; height: 14px; border-radius: 2px; opacity: 0; }
+@media (prefers-reduced-motion: no-preference) {
+  .lvup__box { animation: lv-pop .5s cubic-bezier(.2, 1.4, .4, 1) both; }
+  .lvup__badge .rk { animation: lv-badge .9s cubic-bezier(.2, 1.5, .4, 1) .15s both; }
+  .lvup__confetti i { animation: lv-fall linear infinite; }
+}
+@keyframes lv-pop { from { opacity: 0; transform: translateY(30px) scale(.9); } to { opacity: 1; transform: none; } }
+@keyframes lv-badge { from { opacity: 0; transform: scale(.3) rotate(-25deg); } to { opacity: 1; transform: none; } }
+@keyframes lv-fall { 0% { opacity: 1; transform: translateY(0) rotate(0); } 100% { opacity: .9; transform: translateY(110vh) rotate(720deg); } }
+.lvup__zh { margin: 4px 0 0; font: 800 34px/1.1 "Noto Serif SC", "Noto Sans SC", serif; color: var(--teal-ink, #157a73); letter-spacing: .08em; }

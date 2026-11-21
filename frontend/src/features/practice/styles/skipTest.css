@@ -1,0 +1,25 @@
+/* Kiểm tra vượt thửa */
+.sk .sl-tag { display: inline-flex; align-items: center; gap: 6px; }
+.sk-dots { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 14px; }
+.xc .sk-dot { width: 34px; height: 34px; border-radius: 10px; border: 1px solid var(--line); background: var(--surface); color: var(--ink-2);
+  font: inherit; font-weight: 800; font-size: 14px; cursor: pointer; }
+.xc .sk-dot.is-done { background: var(--teal-soft); border-color: color-mix(in srgb, var(--teal) 40%, transparent); color: var(--teal-ink); }
+.xc .sk-dot.is-on { outline: 2px solid var(--teal); outline-offset: 2px; }
+.sk-foot { justify-content: space-between !important; }
+.sk-review { list-style: none; margin: 8px 0 0; padding: 0; width: 100%; max-width: 560px; display: flex; flex-direction: column; gap: 8px; text-align: left; }
+.sk-review li { display: flex; gap: 12px; padding: 12px 14px; border-radius: 14px; background: var(--surface); border: 1px solid var(--line); }
+.sk-review li.is-bad { border-color: color-mix(in srgb, var(--bad) 35%, transparent); }
+.sk-review__mark { display: inline-grid; place-items: center; flex: none; width: 26px; height: 26px; border-radius: 50%; font-weight: 900;
+  background: var(--good-soft); color: var(--good); }
+.sk-review li.is-bad .sk-review__mark { background: var(--bad-soft); color: var(--bad); }
+.sk-review p { margin: 0 0 2px; font-size: 14.5px; color: var(--ink-2); }
+.sk-review strong img { max-height: 48px; vertical-align: middle; }
+.sk-review__q { color: var(--ink) !important; }
+.sk-review__note { font-size: 13.5px !important; color: var(--ink-3) !important; }
+.sk-review li > div { flex: 1; min-width: 0; }
+.xc .xx-open.sk-ask { display: inline-flex; align-items: center; gap: 8px; width: auto; height: 36px; margin-top: 8px; padding: 0 14px 0 4px;
+  border: 1px solid color-mix(in srgb, var(--teal) 40%, transparent); border-radius: 999px; background: var(--teal-soft); color: var(--teal-ink);
+  font: inherit; font-size: 14px; font-weight: 800; cursor: pointer; }
+.xc .xx-open.sk-ask img { width: 28px; height: 28px; border-radius: 50%; object-fit: cover; }
+.xc .xx-open.sk-ask:hover { border-color: var(--teal); }
+.sk-chat { margin-top: 8px; }

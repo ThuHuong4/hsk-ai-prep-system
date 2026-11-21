@@ -1,34 +1,46 @@
 from sqlalchemy import text
 from sqlalchemy.orm import Session
 
+from app.core.auth_config import AUTH_TOKEN_TTL_MINUTES
+from app.modules.auth.repositories._cols import token_columns
+
+# Quy ước trong nguoi_dung: token_bam có giá trị và gui_luc có giá trị = token còn dùng được;
+# token_bam có giá trị nhưng gui_luc NULL = token đã được dùng.
+
 
 def find_account_token_for_update(db: Session, bam_token: bytes, muc_dich: str) -> dict | None:
+    token_col, sent_col = token_columns(muc_dich)
     row = db.execute(
-        text("""
-            SELECT ma_xac_thuc, ma_nguoi_dung, het_han_luc, da_dung_luc
-            FROM ma_xac_thuc_tai_khoan
-            WHERE bam_token = :bam_token AND muc_dich = :muc_dich
+        text(f"""
+            SELECT id,
+                   {sent_col} IS NULL AS da_dung,
+                   ({sent_col} + INTERVAL :ttl MINUTE) <= NOW() AS da_het_han
+            FROM nguoi_dung
+            WHERE {token_col} = :bam_token
             FOR UPDATE
         """),
-        {"bam_token": bam_token, "muc_dich": muc_dich},
+        {"bam_token": bam_token.hex(), "ttl": AUTH_TOKEN_TTL_MINUTES},
     ).mappings().first()
     if row is None:
         return None
+    da_dung = bool(row["da_dung"])
+    return {
+        "ma_xac_thuc": row["id"],      # Giữ khóa cũ cho service: chính là id người dùng
+        "ma_nguoi_dung": row["id"],
+        "da_dung_luc": True if da_dung else None,
+        "da_het_han": (not da_dung) and bool(row["da_het_han"]),
+        "muc_dich": muc_dich,
+    }
 
-    # Lấy giờ MySQL bằng câu lệnh riêng, sau khi đã có khóa
-    now = db.execute(text("SELECT NOW(3)")).scalar_one()
-    record = dict(row)
-    record["da_het_han"] = record["het_han_luc"] <= now
-    return record
 
-
-def mark_token_used(db: Session, ma_xac_thuc: int) -> bool:
+def mark_token_used(db: Session, ma_xac_thuc: int, muc_dich: str) -> bool:
+    token_col, sent_col = token_columns(muc_dich)
     result = db.execute(
-        text("""
-            UPDATE ma_xac_thuc_tai_khoan
-            SET da_dung_luc = NOW(3)
-            WHERE ma_xac_thuc = :ma_xac_thuc AND da_dung_luc IS NULL
+        text(f"""
+            UPDATE nguoi_dung
+            SET {sent_col} = NULL
+            WHERE id = :id AND {token_col} IS NOT NULL AND {sent_col} IS NOT NULL
         """),
-        {"ma_xac_thuc": ma_xac_thuc},
+        {"id": ma_xac_thuc},
     )
     return result.rowcount == 1

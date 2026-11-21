@@ -1,0 +1,27 @@
+/* Thẻ Bắt đầu cấp / Vượt chặng trên bản đồ Ôn luyện */
+.xc .lt-card { display: flex; align-items: center; gap: 14px; margin: 18px auto 0; max-width: 640px; padding: 16px 18px;
+  border-radius: 18px; background: var(--surface); border: 1px solid var(--line); box-shadow: var(--shadow-sm); }
+.xc .lt-card--start { margin-top: 28px; }
+.xc .lt-ico { flex: none; display: grid; place-items: center; width: 42px; height: 42px; border-radius: 14px;
+  background: var(--teal-soft); color: var(--teal-ink); }
+.xc .lt-card--start .lt-ico { background: var(--surface-2); color: var(--ink-2); }
+.xc .lt-card.is-done .lt-ico { background: var(--good-soft, var(--teal-soft)); color: var(--good, var(--teal-ink)); }
+.xc .lt-body { flex: 1; min-width: 0; }
+.xc .lt-body h2 { margin: 0 0 4px; font-size: 17px; color: var(--ink); }
+.xc .lt-body p { margin: 0; font-size: 14.5px; color: var(--ink-2); line-height: 1.5; }
+.xc .lt-body .lt-why { margin-top: 4px; font-size: 13.5px; color: var(--ink-3); }
+.xc .sp-tab.is-locked b { color: var(--ink-3); }
+.lt-dialog { position: fixed; inset: 0; z-index: 60; display: grid; place-items: center; padding: 16px; background: rgba(15, 23, 30, .45); }
+.lt-dialog__box { width: 100%; max-width: 440px; padding: 22px; border-radius: 20px; background: var(--surface); color: var(--ink);
+  box-shadow: var(--shadow-lg, 0 20px 50px rgba(0, 0, 0, .25)); }
+.lt-dialog__box h2 { margin: 0 0 10px; font-size: 19px; }
+.lt-dialog__box ul { margin: 0 0 18px; padding-left: 20px; color: var(--ink-2); font-size: 14.5px; line-height: 1.6; }
+.lt-dialog__acts { display: flex; justify-content: flex-end; gap: 8px; }
+@media (max-width: 560px) {
+  .xc .lt-card { flex-wrap: wrap; }
+  .xc .lt-card .xc-btn { width: 100%; }
+}
+/* Cấp đang khóa: chỉ nút Vượt cấp */
+.xc .lt-jump { display: flex; justify-content: center; margin: 22px auto 4px; }
+.xc .lt-jump__btn { display: inline-flex; align-items: center; gap: 8px; min-width: 180px; justify-content: center; }
+.xc .lt-jump--end { margin: 26px auto 8px; }

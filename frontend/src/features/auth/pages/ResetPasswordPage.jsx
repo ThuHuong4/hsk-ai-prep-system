@@ -1,6 +1,8 @@
 import { useRef, useState } from "react";
 
 import { resetPassword } from "../api/resetPassword.js";
+import AuthCard, { Notice } from "../components/AuthCard.jsx";
+import AuthField from "../components/AuthField.jsx";
 import { validatePassword } from "../utils/passwordPolicy.js";
 
 const TOKEN_ERROR_CODES = ["TOKEN_KHONG_HOP_LE", "TOKEN_HET_HAN", "TOKEN_DA_DUNG"];
@@ -52,75 +54,50 @@ export default function ResetPasswordPage({ token, onGoLogin, onGoForgotPassword
 
   const goButtons = (
     <>
-      <button type="button" onClick={onGoForgotPassword}>Yêu cầu liên kết mới</button>
-      <button type="button" onClick={onGoLogin}>Đến trang đăng nhập</button>
+      <button className="btn block" type="button" onClick={onGoForgotPassword}>Yêu cầu liên kết mới</button>
+      <button className="btn plain block" type="button" onClick={onGoLogin}>Đến trang đăng nhập</button>
     </>
   );
 
   if (!token) {
     return (
-      <div>
-        <h1>Đặt lại mật khẩu</h1>
-        <p role="alert">Liên kết đặt lại mật khẩu không hợp lệ hoặc bị thiếu mã.</p>
+      <AuthCard title="Đặt lại mật khẩu">
+        <Notice kind="bad">Liên kết đặt lại mật khẩu không hợp lệ hoặc bị thiếu mã.</Notice>
         {goButtons}
-      </div>
+      </AuthCard>
     );
   }
 
   if (doneMessage) {
     return (
-      <div>
-        <h1>Đặt lại mật khẩu</h1>
-        <p role="status">{doneMessage}</p>
-        <button type="button" onClick={onGoLogin}>Đăng nhập</button>
-      </div>
+      <AuthCard title="Đã đặt mật khẩu mới">
+        <Notice kind="ok">{doneMessage}</Notice>
+        <button className="btn block" type="button" onClick={onGoLogin}>Đăng nhập</button>
+      </AuthCard>
     );
   }
 
   if (TOKEN_ERROR_CODES.includes(errorCode)) {
     return (
-      <div>
-        <h1>Đặt lại mật khẩu</h1>
-        <p role="alert">{error}</p>
+      <AuthCard title="Đặt lại mật khẩu">
+        <Notice kind="bad">{error}</Notice>
         {goButtons}
-      </div>
+      </AuthCard>
     );
   }
 
   return (
-    <form onSubmit={handleSubmit} noValidate>
-      <h1>Đặt mật khẩu mới</h1>
-
-      <label htmlFor="reset-password">Mật khẩu mới</label>
-      <input
-        id="reset-password"
-        type="password"
-        autoComplete="new-password"
-        value={password}
-        onChange={(e) => setPassword(e.target.value)}
-        disabled={submitting}
-        maxLength={128}
-        required
-      />
-      <small>Từ 8 đến 128 ký tự, có ít nhất 1 chữ cái và 1 chữ số.</small>
-
-      <label htmlFor="reset-confirm-password">Nhập lại mật khẩu mới</label>
-      <input
-        id="reset-confirm-password"
-        type="password"
-        autoComplete="new-password"
-        value={confirmPassword}
-        onChange={(e) => setConfirmPassword(e.target.value)}
-        disabled={submitting}
-        maxLength={128}
-        required
-      />
-
-      {error && <p role="alert">{error}</p>}
-
-      <button type="submit" disabled={submitting}>
-        {submitting ? "Đang lưu..." : "Đặt mật khẩu mới"}
-      </button>
-    </form>
+    <AuthCard title="Đặt mật khẩu mới" lead="Chọn mật khẩu mới cho tài khoản Xianglingo của bạn.">
+      {error && <Notice kind="bad">{error}</Notice>}
+      <form onSubmit={handleSubmit} noValidate>
+        <AuthField id="reset-password" label="Mật khẩu mới" icon="i-key" password autoComplete="new-password" placeholder="Ít nhất 8 ký tự"
+          maxLength={128} value={password} onChange={(e) => setPassword(e.target.value)} disabled={submitting} describedBy="reset-rule">
+          <p className="hint" id="reset-rule">Từ 8 đến 128 ký tự, có ít nhất 1 chữ cái và 1 chữ số.</p>
+        </AuthField>
+        <AuthField id="reset-confirm-password" label="Nhập lại mật khẩu mới" icon="i-key" type="password" autoComplete="new-password"
+          placeholder="Nhập lại mật khẩu" maxLength={128} value={confirmPassword} onChange={(e) => setConfirmPassword(e.target.value)} disabled={submitting} />
+        <button className="btn coral block" type="submit" disabled={submitting}>{submitting ? "Đang lưu..." : "Đặt mật khẩu mới"}</button>
+      </form>
+    </AuthCard>
   );
 }

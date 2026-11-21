@@ -67,7 +67,7 @@ def link_google_account(db: Session, identity: dict, password: str, dia_chi_ip: 
         db.commit()
     except IntegrityError as error:
         db.rollback()
-        if is_duplicate_key(error, "uq_nd_google_sub"):
+        if is_duplicate_key(error, "uq_nguoi_dung_google"):
             raise GoogleAlreadyLinkedError() from error  # Google này vừa được gắn ở request khác
         raise  # Lỗi ràng buộc khác: báo đúng nguyên nhân
     except Exception:
@@ -80,4 +80,5 @@ def link_google_account(db: Session, identity: dict, password: str, dia_chi_ip: 
         "ho_ten": user["ho_ten"],
         "email": user["email"],
         "vai_tro": user["vai_tro"],
+        "email_da_xac_minh": True,  # Vừa gắn Google: email đã được Google xác minh
     }

@@ -49,3 +49,7 @@
 }
 /* Trang chủ Xianglingo: bỏ giới hạn bề rộng và lề của khung nội dung */
 .public-layout__main.public-layout__main--full { max-width: none; padding: 0; }
+
+/* Nền khu công khai theo bộ màu mô phỏng, đổi theo chế độ sáng/tối của máy (giống thanh trên) */
+.public-layout { background: #E4E1DB; color: #1D2731; }
+html[data-theme="dark"] .public-layout{ background: #0D1422; color: #EDF3F7; }

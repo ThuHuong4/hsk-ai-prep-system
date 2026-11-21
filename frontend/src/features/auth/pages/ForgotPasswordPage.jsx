@@ -1,6 +1,8 @@
 import { useEffect, useRef, useState } from "react";
 
 import { requestPasswordReset } from "../api/requestPasswordReset.js";
+import AuthCard, { Notice } from "../components/AuthCard.jsx";
+import AuthField from "../components/AuthField.jsx";
 
 const EMAIL_PATTERN = /^[^@\s]+@[^@\s]+\.[^@\s]+$/;
 // Khớp AUTH_RESEND_MIN_SECONDS của backend; backend vẫn là nơi quyết định cuối cùng
@@ -47,36 +49,22 @@ export default function ForgotPasswordPage({ onGoLogin }) {
     }
   }
 
-  let submitLabel = "Gửi hướng dẫn đặt lại mật khẩu";
+  let submitLabel = "Gửi liên kết đặt lại mật khẩu";
   if (submitting) submitLabel = "Đang gửi...";
-  else if (cooldown > 0) submitLabel = `Gửi lại (${cooldown}s)`;
+  else if (cooldown > 0) submitLabel = `Gửi lại sau ${cooldown}s`;
 
   return (
-    <form onSubmit={handleSubmit} noValidate>
-      <h1>Quên mật khẩu</h1>
-      <p>Nhập email đã đăng ký để nhận liên kết đặt lại mật khẩu.</p>
-
-      <label htmlFor="forgot-email">Email</label>
-      <input
-        id="forgot-email"
-        type="email"
-        autoComplete="email"
-        value={email}
-        onChange={(e) => setEmail(e.target.value)}
-        disabled={submitting}
-        maxLength={255}
-        required
-      />
-
-      {error && <p role="alert">{error}</p>}
-      {message && <p role="status">{message}</p>}
-
-      <button type="submit" disabled={submitting || cooldown > 0}>
-        {submitLabel}
-      </button>
-      <button type="button" onClick={onGoLogin} disabled={submitting}>
-        Quay lại đăng nhập
-      </button>
-    </form>
+    <AuthCard title="Quên mật khẩu?" lead="Nhập email đã đăng ký, Xiang sẽ gửi liên kết để bạn đặt mật khẩu mới.">
+      {error && <Notice kind="bad">{error}</Notice>}
+      {message && <Notice kind="ok">{message}</Notice>}
+      <form onSubmit={handleSubmit} noValidate>
+        <AuthField id="forgot-email" label="Email" icon="i-mail" type="email" inputMode="email" autoComplete="email"
+          placeholder="ban@example.com" maxLength={255} value={email} onChange={(e) => setEmail(e.target.value)} disabled={submitting} />
+        <button className="btn block" type="submit" disabled={submitting || cooldown > 0}>{submitLabel}</button>
+      </form>
+      <p className="ac-alt" style={{ marginTop: 18 }}>
+        Nhớ ra rồi? <button type="button" className="link" onClick={onGoLogin} disabled={submitting}>Quay lại đăng nhập</button>
+      </p>
+    </AuthCard>
   );
 }

@@ -1,0 +1,42 @@
+/* Nút nổi Lên/Xuống (vòng tiến độ cuộn) — dùng trong khung .xg và trang công khai */
+.snav { --sn-bg: var(--surface, var(--color-surface, #fff)); --sn-line: var(--line, var(--color-border, #d2cdc4));
+  --sn-ink: var(--ink, var(--color-text, #1d2731)); --sn-hi: var(--teal, var(--color-primary, #2a958e));
+  position: fixed; z-index: 45; right: 20px; bottom: 24px; display: flex; flex-direction: column; align-items: center; gap: 10px;
+  animation: snav-in .25s ease-out; }
+@keyframes snav-in { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: none; } }
+
+.snav button { position: relative; display: grid; place-items: center; padding: 0; border: 0; border-radius: 50%; cursor: pointer;
+  color: var(--sn-ink); background: color-mix(in srgb, var(--sn-bg) 82%, transparent);
+  -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px);
+  box-shadow: 0 0 0 1px var(--sn-line), 0 8px 24px rgba(0, 0, 0, .16); transition: transform .15s, box-shadow .15s, color .15s; }
+.snav button:hover { transform: translateY(-2px); color: var(--sn-hi); box-shadow: 0 0 0 1px var(--sn-hi), 0 12px 28px rgba(0, 0, 0, .2); }
+.snav button:active { transform: scale(.94); }
+.snav button:focus-visible { outline: 3px solid color-mix(in srgb, var(--sn-hi) 45%, transparent); outline-offset: 3px; }
+.snav svg path { fill: none; stroke: currentColor; stroke-width: 2.4; stroke-linecap: round; stroke-linejoin: round; }
+
+
+.snav__main { width: 52px; height: 52px; }
+.snav__ring { position: absolute; inset: 2px; width: 48px; height: 48px; transform: rotate(-90deg); }
+.snav__track { fill: none; stroke: var(--sn-line); stroke-width: 3; }
+.snav__bar { fill: none; stroke: var(--sn-hi); stroke-width: 3; stroke-linecap: round; transition: stroke-dashoffset .12s linear; }
+.snav__arrow { position: relative; width: 22px; height: 22px; transition: transform .25s; }
+.snav__arrow.is-up { transform: rotate(180deg); }
+
+/* Nhãn khi rê chuột (máy tính) */
+@media (hover: hover) {
+  .snav button::after { content: attr(data-tip); position: absolute; right: calc(100% + 10px); top: 50%; transform: translate(6px, -50%);
+    padding: 5px 10px; border-radius: 8px; background: var(--sn-ink); color: var(--sn-bg); font: 700 12.5px/1.2 var(--f-body, system-ui);
+    white-space: nowrap; opacity: 0; pointer-events: none; transition: opacity .15s, transform .15s; }
+  .snav button:hover::after, .snav button:focus-visible::after { opacity: 1; transform: translate(0, -50%); }
+}
+@media (max-width: 960px) {
+  .snav { right: 14px; bottom: 18px; }
+  .snav--raised { bottom: calc(80px + env(safe-area-inset-bottom, 0px)); } /* trên thanh tab đáy của Học viên */
+}
+@media (prefers-reduced-motion: reduce) { .snav, .snav button, .snav__arrow, .snav__bar { animation: none; transition: none; } }
+@media print { .snav { display: none; } }
+
+/* Nút Quay lại ở góc trên bên trái trang công khai (khung Học viên/GV/QT dùng xg-icon-btn trên thanh trên) */
+.pub-back { display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px; margin-bottom: 12px; padding: 0;
+  border: 1px solid var(--color-border, #d2cdc4); border-radius: 50%; background: var(--color-surface, #fff); color: inherit; cursor: pointer; }
+.pub-back:hover { color: var(--color-primary, #2a958e); border-color: currentColor; }

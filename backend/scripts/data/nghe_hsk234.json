@@ -1,0 +1,1809 @@
+{
+ "phien_ban": "1.0",
+ "ten": "Bộ luyện nghe HSK 2 3 4 theo thửa",
+ "tong_so_cau": 45,
+ "co_audio": false,
+ "phan_cap": "de_xuat_chua_tham_dinh",
+ "he_hsk": "6_cap_truyen_thong",
+ "nguon": [
+  {
+   "id": "S0",
+   "mo_ta": "Câu hỏi và lời thoại soạn mới có hỗ trợ ChatGPT cho Xianglingo",
+   "ngay": "2026-11-20",
+   "pham_vi": "Toàn bộ 45 câu, đáp án, giải thích và pinyin"
+  },
+  {
+   "id": "S1",
+   "mo_ta": "ChineseTest HSK 2 sample paper, chỉ tham khảo phạm vi và dạng hoạt động nghe, không chép câu hỏi/âm thanh",
+   "url": "https://www.chinesetest.cn/userfiles/file/HSK2.pdf",
+   "ngay_truy_cap": "2026-11-20"
+  },
+  {
+   "id": "S2",
+   "mo_ta": "ChineseTest HSK 3 sample paper, chỉ tham khảo phạm vi và dạng hoạt động nghe, không chép câu hỏi/âm thanh",
+   "url": "https://www.chinesetest.cn/userfiles/file/HSK3.pdf",
+   "ngay_truy_cap": "2026-11-20"
+  },
+  {
+   "id": "S3",
+   "mo_ta": "ChineseTest HSK 4 sample paper, chỉ tham khảo phạm vi và dạng hoạt động nghe, không chép câu hỏi/âm thanh",
+   "url": "https://www.chinesetest.cn/userfiles/file/HSK4.pdf",
+   "ngay_truy_cap": "2026-11-20"
+  }
+ ],
+ "thua": [
+  {
+   "ma_thua": "H2_NGHE_T01",
+   "cap_hsk": 2,
+   "thu_tu": 1,
+   "ten_thua": "Sinh hoạt và thời gian",
+   "muc_tieu": "Nhận biết giờ giấc, hoạt động, người thực hiện và thay đổi kế hoạch",
+   "ky_nang": "nghe",
+   "bai_luyen": [
+    {
+     "ma_bai": "H2_NGHE_T01_B01",
+     "ten_bai": "Sinh hoạt và thời gian",
+     "thu_tu": 1,
+     "cau_hoi": [
+      {
+       "ma_cau": "H2_NGHE_T01_C01",
+       "thu_tu": 1,
+       "dang": "nghe_chon_mot_dap_an",
+       "loi_thoai": "女：你每天几点起床？男：七点。可是今天我六点半就起床了。",
+       "cau_hoi_zh": "男的今天几点起床？",
+       "cau_hoi_vi": "Hôm nay người nam thức dậy lúc mấy giờ？",
+       "phuong_an": [
+        {
+         "ky_hieu": "A",
+         "noi_dung_zh": "六点",
+         "pinyin": "liù diǎn",
+         "nghia_vi": "sáu giờ"
+        },
+        {
+         "ky_hieu": "B",
+         "noi_dung_zh": "六点半",
+         "pinyin": "liù diǎn bàn",
+         "nghia_vi": "sáu giờ rưỡi"
+        },
+        {
+         "ky_hieu": "C",
+         "noi_dung_zh": "七点",
+         "pinyin": "qī diǎn",
+         "nghia_vi": "bảy giờ"
+        }
+       ],
+       "dap_an_dung": "B",
+       "giai_thich_vi": "Hôm nay anh ấy dậy lúc 六点半, sớm hơn giờ thường lệ là 七点.",
+       "diem_toi_da": 1,
+       "audio_path": null,
+       "ten_tep_audio_goi_y": "H2_NGHE_T01_C01.mp3",
+       "nguon_id": "S0"
+      },
+      {
+       "ma_cau": "H2_NGHE_T01_C02",
+       "thu_tu": 2,
+       "dang": "nghe_chon_mot_dap_an",
+       "loi_thoai": "男：你姐姐在家吗？女：不在。她去学校了。我妈妈在家。",
+       "cau_hoi_zh": "谁在家？",
+       "cau_hoi_vi": "Ai đang ở nhà？",
+       "phuong_an": [
+        {
+         "ky_hieu": "A",
+         "noi_dung_zh": "姐姐",
+         "pinyin": "jiějie",
+         "nghia_vi": "chị gái"
+        },
+        {
+         "ky_hieu": "B",
+         "noi_dung_zh": "爸爸",
+         "pinyin": "bàba",
+         "nghia_vi": "bố"
+        },
+        {
+         "ky_hieu": "C",
+         "noi_dung_zh": "妈妈",
+         "pinyin": "māma",
+         "nghia_vi": "mẹ"
+        }
+       ],
+       "dap_an_dung": "C",
+       "giai_thich_vi": "Chị gái đi học; người nữ nói mẹ đang ở nhà.",
+       "diem_toi_da": 1,
+       "audio_path": null,
+       "ten_tep_audio_goi_y": "H2_NGHE_T01_C02.mp3",
+       "nguon_id": "S0"
+      },
+      {
+       "ma_cau": "H2_NGHE_T01_C03",
+       "thu_tu": 3,
+       "dang": "nghe_chon_mot_dap_an",
+       "loi_thoai": "女：你晚上看电视吗？男：不看。我晚上要学习汉语。",
+       "cau_hoi_zh": "男的晚上要做什么？",
+       "cau_hoi_vi": "Buổi tối người nam định làm gì？",
+       "phuong_an": [
+        {
+         "ky_hieu": "A",
+         "noi_dung_zh": "学习汉语",
+         "pinyin": "xuéxí Hànyǔ",
+         "nghia_vi": "học tiếng Trung"
+        },
+        {
+         "ky_hieu": "B",
+         "noi_dung_zh": "看电视",
+         "pinyin": "kàn diànshì",
+         "nghia_vi": "xem tivi"
+        },
+        {
+         "ky_hieu": "C",
+         "noi_dung_zh": "打篮球",
+         "pinyin": "dǎ lánqiú",
+         "nghia_vi": "chơi bóng rổ"
+        }
+       ],
+       "dap_an_dung": "A",
+       "giai_thich_vi": "Anh ấy phủ định việc xem tivi và nói buổi tối sẽ học tiếng Trung.",
+       "diem_toi_da": 1,
+       "audio_path": null,
+       "ten_tep_audio_goi_y": "H2_NGHE_T01_C03.mp3",
+       "nguon_id": "S0"
+      },
+      {
+       "ma_cau": "H2_NGHE_T01_C04",
+       "thu_tu": 4,
+       "dang": "nghe_chon_mot_dap_an",
+       "loi_thoai": "男：我们星期六去游泳，好吗？女：星期六我要工作，星期天可以。男：好，那就星期天去。",
+       "cau_hoi_zh": "他们什么时候去游泳？",
+       "cau_hoi_vi": "Họ thống nhất đi bơi khi nào？",
+       "phuong_an": [
+        {
+         "ky_hieu": "A",
+         "noi_dung_zh": "星期五",
+         "pinyin": "xīngqī wǔ",
+         "nghia_vi": "thứ Sáu"
+        },
+        {
+         "ky_hieu": "B",
+         "noi_dung_zh": "星期六",
+         "pinyin": "xīngqī liù",
+         "nghia_vi": "thứ Bảy"
+        },
+        {
+         "ky_hieu": "C",
+         "noi_dung_zh": "星期天",
+         "pinyin": "xīngqī tiān",
+         "nghia_vi": "Chủ nhật"
+        }
+       ],
+       "dap_an_dung": "C",
+       "giai_thich_vi": "Thứ Bảy là đề xuất ban đầu; hai người chốt Chủ nhật vì người nữ phải làm việc thứ Bảy.",
+       "diem_toi_da": 1,
+       "audio_path": null,
+       "ten_tep_audio_goi_y": "H2_NGHE_T01_C04.mp3",
+       "nguon_id": "S0"
+      },
+      {
+       "ma_cau": "H2_NGHE_T01_C05",
+       "thu_tu": 5,
+       "dang": "nghe_chon_mot_dap_an",
+       "loi_thoai": "女：这是你的手机吗？男：不是。我的手机是黑色的，这个白色的是我弟弟的。",
+       "cau_hoi_zh": "白色的手机是谁的？",
+       "cau_hoi_vi": "Điện thoại màu trắng của ai？",
+       "phuong_an": [
+        {
+         "ky_hieu": "A",
+         "noi_dung_zh": "男的",
+         "pinyin": "nán de",
+         "nghia_vi": "người nam"
+        },
+        {
+         "ky_hieu": "B",
+         "noi_dung_zh": "男的弟弟",
+         "pinyin": "nán de dìdi",
+         "nghia_vi": "em trai người nam"
+        },
+        {
+         "ky_hieu": "C",
+         "noi_dung_zh": "女的",
+         "pinyin": "nǚ de",
+         "nghia_vi": "người nữ"
+        }
+       ],
+       "dap_an_dung": "B",
+       "giai_thich_vi": "Điện thoại của người nam màu đen; điện thoại màu trắng thuộc về em trai anh ấy.",
+       "diem_toi_da": 1,
+       "audio_path": null,
+       "ten_tep_audio_goi_y": "H2_NGHE_T01_C05.mp3",
+       "nguon_id": "S0"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "ma_thua": "H2_NGHE_T02",
+   "cap_hsk": 2,
+   "thu_tu": 2,
+   "ten_thua": "Mua sắm và ăn uống",
+   "muc_tieu": "Nghe giá tiền, số lượng, lựa chọn đồ ăn và đặc điểm đồ vật",
+   "ky_nang": "nghe",
+   "bai_luyen": [
+    {
+     "ma_bai": "H2_NGHE_T02_B01",
+     "ten_bai": "Mua sắm và ăn uống",
+     "thu_tu": 1,
+     "cau_hoi": [
+      {
+       "ma_cau": "H2_NGHE_T02_C01",
+       "thu_tu": 1,
+       "dang": "nghe_chon_mot_dap_an",
+       "loi_thoai": "男：苹果多少钱一斤？女：五块钱。男：我要两斤。",
+       "cau_hoi_zh": "男的要付多少钱？",
+       "cau_hoi_vi": "Người nam cần trả bao nhiêu tiền？",
+       "phuong_an": [
+        {
+         "ky_hieu": "A",
+         "noi_dung_zh": "五块",
+         "pinyin": "wǔ kuài",
+         "nghia_vi": "năm tệ"
+        },
+        {
+         "ky_hieu": "B",
+         "noi_dung_zh": "十块",
+         "pinyin": "shí kuài",
+         "nghia_vi": "mười tệ"
+        },
+        {
+         "ky_hieu": "C",
+         "noi_dung_zh": "十五块",
+         "pinyin": "shíwǔ kuài",
+         "nghia_vi": "mười lăm tệ"
+        }
+       ],
+       "dap_an_dung": "B",
+       "giai_thich_vi": "Một cân giá 5 tệ, mua 2 cân nên trả 10 tệ. 斤 là đơn vị cân Trung Quốc, bằng 500 g.",
+       "diem_toi_da": 1,
+       "audio_path": null,
+       "ten_tep_audio_goi_y": "H2_NGHE_T02_C01.mp3",
+       "nguon_id": "S0"
+      },
+      {
+       "ma_cau": "H2_NGHE_T02_C02",
+       "thu_tu": 2,
+       "dang": "nghe_chon_mot_dap_an",
+       "loi_thoai": "女：你想吃面条还是米饭？男：米饭吧。我中午已经吃过面条了。",
+       "cau_hoi_zh": "男的现在想吃什么？",
+       "cau_hoi_vi": "Bây giờ người nam muốn ăn gì？",
+       "phuong_an": [
+        {
+         "ky_hieu": "A",
+         "noi_dung_zh": "面条",
+         "pinyin": "miàntiáo",
+         "nghia_vi": "mì"
+        },
+        {
+         "ky_hieu": "B",
+         "noi_dung_zh": "水果",
+         "pinyin": "shuǐguǒ",
+         "nghia_vi": "trái cây"
+        },
+        {
+         "ky_hieu": "C",
+         "noi_dung_zh": "米饭",
+         "pinyin": "mǐfàn",
+         "nghia_vi": "cơm"
+        }
+       ],
+       "dap_an_dung": "C",
+       "giai_thich_vi": "Mì là món đã ăn buổi trưa; hiện tại anh ấy chọn cơm.",
+       "diem_toi_da": 1,
+       "audio_path": null,
+       "ten_tep_audio_goi_y": "H2_NGHE_T02_C02.mp3",
+       "nguon_id": "S0"
+      },
+      {
+       "ma_cau": "H2_NGHE_T02_C03",
+       "thu_tu": 3,
+       "dang": "nghe_chon_mot_dap_an",
+       "loi_thoai": "男：这件红色的衣服怎么样？女：颜色很好，但是太小了。我想看看大一点儿的。",
+       "cau_hoi_zh": "女的觉得这件衣服怎么样？",
+       "cau_hoi_vi": "Người nữ thấy chiếc áo này thế nào？",
+       "phuong_an": [
+        {
+         "ky_hieu": "A",
+         "noi_dung_zh": "太小了",
+         "pinyin": "tài xiǎo le",
+         "nghia_vi": "quá nhỏ"
+        },
+        {
+         "ky_hieu": "B",
+         "noi_dung_zh": "太贵了",
+         "pinyin": "tài guì le",
+         "nghia_vi": "quá đắt"
+        },
+        {
+         "ky_hieu": "C",
+         "noi_dung_zh": "太大了",
+         "pinyin": "tài dà le",
+         "nghia_vi": "quá lớn"
+        }
+       ],
+       "dap_an_dung": "A",
+       "giai_thich_vi": "Cô ấy thích màu áo nhưng nói áo 太小了, nghĩa là quá nhỏ.",
+       "diem_toi_da": 1,
+       "audio_path": null,
+       "ten_tep_audio_goi_y": "H2_NGHE_T02_C03.mp3",
+       "nguon_id": "S0"
+      },
+      {
+       "ma_cau": "H2_NGHE_T02_C04",
+       "thu_tu": 4,
+       "dang": "nghe_chon_mot_dap_an",
+       "loi_thoai": "女：你要喝什么？男：我想喝茶。女：对不起，今天没有茶。男：那给我一杯水吧。",
+       "cau_hoi_zh": "男的最后要了什么？",
+       "cau_hoi_vi": "Cuối cùng người nam chọn đồ uống nào？",
+       "phuong_an": [
+        {
+         "ky_hieu": "A",
+         "noi_dung_zh": "茶",
+         "pinyin": "chá",
+         "nghia_vi": "trà"
+        },
+        {
+         "ky_hieu": "B",
+         "noi_dung_zh": "牛奶",
+         "pinyin": "niúnǎi",
+         "nghia_vi": "sữa bò"
+        },
+        {
+         "ky_hieu": "C",
+         "noi_dung_zh": "水",
+         "pinyin": "shuǐ",
+         "nghia_vi": "nước"
+        }
+       ],
+       "dap_an_dung": "C",
+       "giai_thich_vi": "Trà là lựa chọn ban đầu; vì hết trà nên anh ấy đổi sang nước.",
+       "diem_toi_da": 1,
+       "audio_path": null,
+       "ten_tep_audio_goi_y": "H2_NGHE_T02_C04.mp3",
+       "nguon_id": "S0"
+      },
+      {
+       "ma_cau": "H2_NGHE_T02_C05",
+       "thu_tu": 5,
+       "dang": "nghe_chon_mot_dap_an",
+       "loi_thoai": "男：你买了几个杯子？女：三个。一个给爸爸，一个给妈妈，还有一个我自己用。",
+       "cau_hoi_zh": "女的给自己买了几个杯子？",
+       "cau_hoi_vi": "Người nữ mua cho bản thân mấy chiếc cốc？",
+       "phuong_an": [
+        {
+         "ky_hieu": "A",
+         "noi_dung_zh": "一个",
+         "pinyin": "yí ge",
+         "nghia_vi": "một chiếc"
+        },
+        {
+         "ky_hieu": "B",
+         "noi_dung_zh": "两个",
+         "pinyin": "liǎng ge",
+         "nghia_vi": "hai chiếc"
+        },
+        {
+         "ky_hieu": "C",
+         "noi_dung_zh": "三个",
+         "pinyin": "sān ge",
+         "nghia_vi": "ba chiếc"
+        }
+       ],
+       "dap_an_dung": "A",
+       "giai_thich_vi": "Tổng cộng mua ba cốc, nhưng chỉ một chiếc dành cho bản thân.",
+       "diem_toi_da": 1,
+       "audio_path": null,
+       "ten_tep_audio_goi_y": "H2_NGHE_T02_C05.mp3",
+       "nguon_id": "S0"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "ma_thua": "H2_NGHE_T03",
+   "cap_hsk": 2,
+   "thu_tu": 3,
+   "ten_thua": "Đi lại và gặp gỡ",
+   "muc_tieu": "Nghe địa điểm, phương tiện, khoảng thời gian và điểm hẹn",
+   "ky_nang": "nghe",
+   "bai_luyen": [
+    {
+     "ma_bai": "H2_NGHE_T03_B01",
+     "ten_bai": "Đi lại và gặp gỡ",
+     "thu_tu": 1,
+     "cau_hoi": [
+      {
+       "ma_cau": "H2_NGHE_T03_C01",
+       "thu_tu": 1,
+       "dang": "nghe_chon_mot_dap_an",
+       "loi_thoai": "女：你家离学校远吗？男：不远，走路十分钟就到了。",
+       "cau_hoi_zh": "男的从家走到学校要多长时间？",
+       "cau_hoi_vi": "Đi bộ từ nhà đến trường mất bao lâu？",
+       "phuong_an": [
+        {
+         "ky_hieu": "A",
+         "noi_dung_zh": "五分钟",
+         "pinyin": "wǔ fēnzhōng",
+         "nghia_vi": "năm phút"
+        },
+        {
+         "ky_hieu": "B",
+         "noi_dung_zh": "十分钟",
+         "pinyin": "shí fēnzhōng",
+         "nghia_vi": "mười phút"
+        },
+        {
+         "ky_hieu": "C",
+         "noi_dung_zh": "半个小时",
+         "pinyin": "bàn ge xiǎoshí",
+         "nghia_vi": "nửa giờ"
+        }
+       ],
+       "dap_an_dung": "B",
+       "giai_thich_vi": "Người nam nói đi bộ 十分钟, tức mười phút.",
+       "diem_toi_da": 1,
+       "audio_path": null,
+       "ten_tep_audio_goi_y": "H2_NGHE_T03_C01.mp3",
+       "nguon_id": "S0"
+      },
+      {
+       "ma_cau": "H2_NGHE_T03_C02",
+       "thu_tu": 2,
+       "dang": "nghe_chon_mot_dap_an",
+       "loi_thoai": "男：外面下雨了，我们坐公共汽车去吧。女：好，不骑自行车了。",
+       "cau_hoi_zh": "他们怎么去？",
+       "cau_hoi_vi": "Họ chọn phương tiện gì？",
+       "phuong_an": [
+        {
+         "ky_hieu": "A",
+         "noi_dung_zh": "骑自行车",
+         "pinyin": "qí zìxíngchē",
+         "nghia_vi": "đi xe đạp"
+        },
+        {
+         "ky_hieu": "B",
+         "noi_dung_zh": "坐出租车",
+         "pinyin": "zuò chūzūchē",
+         "nghia_vi": "đi taxi"
+        },
+        {
+         "ky_hieu": "C",
+         "noi_dung_zh": "坐公共汽车",
+         "pinyin": "zuò gōnggòng qìchē",
+         "nghia_vi": "đi xe buýt"
+        }
+       ],
+       "dap_an_dung": "C",
+       "giai_thich_vi": "Vì trời mưa, hai người thống nhất đi xe buýt và không đi xe đạp nữa.",
+       "diem_toi_da": 1,
+       "audio_path": null,
+       "ten_tep_audio_goi_y": "H2_NGHE_T03_C02.mp3",
+       "nguon_id": "S0"
+      },
+      {
+       "ma_cau": "H2_NGHE_T03_C03",
+       "thu_tu": 3,
+       "dang": "nghe_chon_mot_dap_an",
+       "loi_thoai": "女：请问，医院在哪儿？男：在商店的左边，学校的对面。",
+       "cau_hoi_zh": "医院在哪儿？",
+       "cau_hoi_vi": "Bệnh viện ở đâu？",
+       "phuong_an": [
+        {
+         "ky_hieu": "A",
+         "noi_dung_zh": "商店的右边",
+         "pinyin": "shāngdiàn de yòubian",
+         "nghia_vi": "bên phải cửa hàng"
+        },
+        {
+         "ky_hieu": "B",
+         "noi_dung_zh": "学校的里面",
+         "pinyin": "xuéxiào de lǐmian",
+         "nghia_vi": "bên trong trường"
+        },
+        {
+         "ky_hieu": "C",
+         "noi_dung_zh": "学校的对面",
+         "pinyin": "xuéxiào de duìmiàn",
+         "nghia_vi": "đối diện trường"
+        }
+       ],
+       "dap_an_dung": "C",
+       "giai_thich_vi": "Người nam nêu hai vị trí: bên trái cửa hàng và đối diện trường học; chỉ phương án C phù hợp.",
+       "diem_toi_da": 1,
+       "audio_path": null,
+       "ten_tep_audio_goi_y": "H2_NGHE_T03_C03.mp3",
+       "nguon_id": "S0"
+      },
+      {
+       "ma_cau": "H2_NGHE_T03_C04",
+       "thu_tu": 4,
+       "dang": "nghe_chon_mot_dap_an",
+       "loi_thoai": "男：我们三点在学校门口见。女：我三点还有课，四点可以吗？男：可以。",
+       "cau_hoi_zh": "他们最后约好几点见面？",
+       "cau_hoi_vi": "Cuối cùng họ hẹn gặp lúc mấy giờ？",
+       "phuong_an": [
+        {
+         "ky_hieu": "A",
+         "noi_dung_zh": "三点",
+         "pinyin": "sān diǎn",
+         "nghia_vi": "ba giờ"
+        },
+        {
+         "ky_hieu": "B",
+         "noi_dung_zh": "四点",
+         "pinyin": "sì diǎn",
+         "nghia_vi": "bốn giờ"
+        },
+        {
+         "ky_hieu": "C",
+         "noi_dung_zh": "五点",
+         "pinyin": "wǔ diǎn",
+         "nghia_vi": "năm giờ"
+        }
+       ],
+       "dap_an_dung": "B",
+       "giai_thich_vi": "Ba giờ là thời gian ban đầu; sau đó hai người đổi sang bốn giờ.",
+       "diem_toi_da": 1,
+       "audio_path": null,
+       "ten_tep_audio_goi_y": "H2_NGHE_T03_C04.mp3",
+       "nguon_id": "S0"
+      },
+      {
+       "ma_cau": "H2_NGHE_T03_C05",
+       "thu_tu": 5,
+       "dang": "nghe_chon_mot_dap_an",
+       "loi_thoai": "女：你是昨天来北京的吗？男：不是，我前天来的。昨天我去看朋友了。",
+       "cau_hoi_zh": "男的什么时候到北京的？",
+       "cau_hoi_vi": "Người nam đến Bắc Kinh khi nào？",
+       "phuong_an": [
+        {
+         "ky_hieu": "A",
+         "noi_dung_zh": "前天",
+         "pinyin": "qiántiān",
+         "nghia_vi": "hôm kia"
+        },
+        {
+         "ky_hieu": "B",
+         "noi_dung_zh": "昨天",
+         "pinyin": "zuótiān",
+         "nghia_vi": "hôm qua"
+        },
+        {
+         "ky_hieu": "C",
+         "noi_dung_zh": "今天",
+         "pinyin": "jīntiān",
+         "nghia_vi": "hôm nay"
+        }
+       ],
+       "dap_an_dung": "A",
+       "giai_thich_vi": "Anh ấy đến 前天, tức hôm kia; hôm qua là thời điểm đi thăm bạn.",
+       "diem_toi_da": 1,
+       "audio_path": null,
+       "ten_tep_audio_goi_y": "H2_NGHE_T03_C05.mp3",
+       "nguon_id": "S0"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "ma_thua": "H3_NGHE_T01",
+   "cap_hsk": 3,
+   "thu_tu": 1,
+   "ten_thua": "Học tập và sắp xếp công việc",
+   "muc_tieu": "Phân biệt nguyên nhân, trình tự và thời hạn qua hội thoại",
+   "ky_nang": "nghe",
+   "bai_luyen": [
+    {
+     "ma_bai": "H3_NGHE_T01_B01",
+     "ten_bai": "Học tập và sắp xếp công việc",
+     "thu_tu": 1,
+     "cau_hoi": [
+      {
+       "ma_cau": "H3_NGHE_T01_C01",
+       "thu_tu": 1,
+       "dang": "nghe_chon_mot_dap_an",
+       "loi_thoai": "男：你怎么还没去图书馆？女：我想先把作业做完，再去借书。男：那我先走了。",
+       "cau_hoi_zh": "女的现在准备先做什么？",
+       "cau_hoi_vi": "Người nữ dự định làm việc gì trước？",
+       "phuong_an": [
+        {
+         "ky_hieu": "A",
+         "noi_dung_zh": "去借书",
+         "pinyin": null,
+         "nghia_vi": null
+        },
+        {
+         "ky_hieu": "B",
+         "noi_dung_zh": "做完作业",
+         "pinyin": null,
+         "nghia_vi": null
+        },
+        {
+         "ky_hieu": "C",
+         "noi_dung_zh": "回宿舍",
+         "pinyin": null,
+         "nghia_vi": null
+        }
+       ],
+       "dap_an_dung": "B",
+       "giai_thich_vi": "Cấu trúc 先…再… cho biết cô ấy làm xong bài tập trước rồi mới đi mượn sách.",
+       "diem_toi_da": 1,
+       "audio_path": null,
+       "ten_tep_audio_goi_y": "H3_NGHE_T01_C01.mp3",
+       "nguon_id": "S0"
+      },
+      {
+       "ma_cau": "H3_NGHE_T01_C02",
+       "thu_tu": 2,
+       "dang": "nghe_chon_mot_dap_an",
+       "loi_thoai": "女：你为什么没参加昨天的比赛？男：我本来想去，可是下午突然发烧了，只好在家休息。",
+       "cau_hoi_zh": "男的为什么没参加比赛？",
+       "cau_hoi_vi": "Vì sao người nam không tham gia cuộc thi？",
+       "phuong_an": [
+        {
+         "ky_hieu": "A",
+         "noi_dung_zh": "忘了时间",
+         "pinyin": null,
+         "nghia_vi": null
+        },
+        {
+         "ky_hieu": "B",
+         "noi_dung_zh": "没有兴趣",
+         "pinyin": null,
+         "nghia_vi": null
+        },
+        {
+         "ky_hieu": "C",
+         "noi_dung_zh": "生病了",
+         "pinyin": null,
+         "nghia_vi": null
+        }
+       ],
+       "dap_an_dung": "C",
+       "giai_thich_vi": "Anh ấy đột nhiên bị sốt nên phải nghỉ ở nhà; không phải quên giờ hay không thích.",
+       "diem_toi_da": 1,
+       "audio_path": null,
+       "ten_tep_audio_goi_y": "H3_NGHE_T01_C02.mp3",
+       "nguon_id": "S0"
+      },
+      {
+       "ma_cau": "H3_NGHE_T01_C03",
+       "thu_tu": 3,
+       "dang": "nghe_chon_mot_dap_an",
+       "loi_thoai": "男：老师说作业星期五交，对吗？女：改了，星期五下午不上课，所以要星期四交。男：那我得快点儿写了。",
+       "cau_hoi_zh": "作业应该什么时候交？",
+       "cau_hoi_vi": "Bài tập cần nộp khi nào？",
+       "phuong_an": [
+        {
+         "ky_hieu": "A",
+         "noi_dung_zh": "星期四",
+         "pinyin": null,
+         "nghia_vi": null
+        },
+        {
+         "ky_hieu": "B",
+         "noi_dung_zh": "星期五",
+         "pinyin": null,
+         "nghia_vi": null
+        },
+        {
+         "ky_hieu": "C",
+         "noi_dung_zh": "星期六",
+         "pinyin": null,
+         "nghia_vi": null
+        }
+       ],
+       "dap_an_dung": "A",
+       "giai_thich_vi": "Hạn mới là thứ Năm; thứ Sáu là thông tin cũ đã được thay đổi.",
+       "diem_toi_da": 1,
+       "audio_path": null,
+       "ten_tep_audio_goi_y": "H3_NGHE_T01_C03.mp3",
+       "nguon_id": "S0"
+      },
+      {
+       "ma_cau": "H3_NGHE_T01_C04",
+       "thu_tu": 4,
+       "dang": "nghe_chon_mot_dap_an",
+       "loi_thoai": "女：这道题我不太明白，你能给我讲讲吗？男：可以，不过我要先回一个电话，五分钟以后找你。",
+       "cau_hoi_zh": "男的接下来先做什么？",
+       "cau_hoi_vi": "Người nam sẽ làm gì trước？",
+       "phuong_an": [
+        {
+         "ky_hieu": "A",
+         "noi_dung_zh": "讲题",
+         "pinyin": null,
+         "nghia_vi": null
+        },
+        {
+         "ky_hieu": "B",
+         "noi_dung_zh": "回电话",
+         "pinyin": null,
+         "nghia_vi": null
+        },
+        {
+         "ky_hieu": "C",
+         "noi_dung_zh": "吃午饭",
+         "pinyin": null,
+         "nghia_vi": null
+        }
+       ],
+       "dap_an_dung": "B",
+       "giai_thich_vi": "Anh ấy đồng ý giải thích nhưng sẽ gọi điện lại trước. 五分钟以后 là sau năm phút.",
+       "diem_toi_da": 1,
+       "audio_path": null,
+       "ten_tep_audio_goi_y": "H3_NGHE_T01_C04.mp3",
+       "nguon_id": "S0"
+      },
+      {
+       "ma_cau": "H3_NGHE_T01_C05",
+       "thu_tu": 5,
+       "dang": "nghe_chon_mot_dap_an",
+       "loi_thoai": "男：你的汉语听力怎么进步这么快？女：我每天坐公共汽车时都听汉语。听不懂的地方，晚上再听一次。",
+       "cau_hoi_zh": "女的怎么练习听力？",
+       "cau_hoi_vi": "Người nữ luyện nghe bằng cách nào？",
+       "phuong_an": [
+        {
+         "ky_hieu": "A",
+         "noi_dung_zh": "每天只看课本",
+         "pinyin": null,
+         "nghia_vi": null
+        },
+        {
+         "ky_hieu": "B",
+         "noi_dung_zh": "只在上课时听",
+         "pinyin": null,
+         "nghia_vi": null
+        },
+        {
+         "ky_hieu": "C",
+         "noi_dung_zh": "坐车时听，晚上再听不懂的地方",
+         "pinyin": null,
+         "nghia_vi": null
+        }
+       ],
+       "dap_an_dung": "C",
+       "giai_thich_vi": "Cô ấy tận dụng lúc đi xe để nghe và nghe lại phần chưa hiểu vào buổi tối.",
+       "diem_toi_da": 1,
+       "audio_path": null,
+       "ten_tep_audio_goi_y": "H3_NGHE_T01_C05.mp3",
+       "nguon_id": "S0"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "ma_thua": "H3_NGHE_T02",
+   "cap_hsk": 3,
+   "thu_tu": 2,
+   "ten_thua": "Sức khỏe và sinh hoạt",
+   "muc_tieu": "Hiểu lời khuyên, nguyên nhân và thay đổi trong thói quen",
+   "ky_nang": "nghe",
+   "bai_luyen": [
+    {
+     "ma_bai": "H3_NGHE_T02_B01",
+     "ten_bai": "Sức khỏe và sinh hoạt",
+     "thu_tu": 1,
+     "cau_hoi": [
+      {
+       "ma_cau": "H3_NGHE_T02_C01",
+       "thu_tu": 1,
+       "dang": "nghe_chon_mot_dap_an",
+       "loi_thoai": "女：你脸色不太好，是不是没睡好？男：是啊，昨天晚上一直在准备考试，十二点以后才睡。",
+       "cau_hoi_zh": "男的为什么脸色不好？",
+       "cau_hoi_vi": "Vì sao sắc mặt người nam không tốt？",
+       "phuong_an": [
+        {
+         "ky_hieu": "A",
+         "noi_dung_zh": "晚上睡得晚",
+         "pinyin": null,
+         "nghia_vi": null
+        },
+        {
+         "ky_hieu": "B",
+         "noi_dung_zh": "早上没吃饭",
+         "pinyin": null,
+         "nghia_vi": null
+        },
+        {
+         "ky_hieu": "C",
+         "noi_dung_zh": "刚跑完步",
+         "pinyin": null,
+         "nghia_vi": null
+        }
+       ],
+       "dap_an_dung": "A",
+       "giai_thich_vi": "Anh ấy ôn thi đến sau nửa đêm mới ngủ; hội thoại không nói bỏ bữa sáng hay vừa chạy bộ.",
+       "diem_toi_da": 1,
+       "audio_path": null,
+       "ten_tep_audio_goi_y": "H3_NGHE_T02_C01.mp3",
+       "nguon_id": "S0"
+      },
+      {
+       "ma_cau": "H3_NGHE_T02_C02",
+       "thu_tu": 2,
+       "dang": "nghe_chon_mot_dap_an",
+       "loi_thoai": "男：医生让我少喝咖啡，可是我工作的时候总想喝。女：你可以先换成茶，晚上就喝水。",
+       "cau_hoi_zh": "女的建议男的晚上喝什么？",
+       "cau_hoi_vi": "Người nữ khuyên buổi tối nên uống gì？",
+       "phuong_an": [
+        {
+         "ky_hieu": "A",
+         "noi_dung_zh": "咖啡",
+         "pinyin": null,
+         "nghia_vi": null
+        },
+        {
+         "ky_hieu": "B",
+         "noi_dung_zh": "水",
+         "pinyin": null,
+         "nghia_vi": null
+        },
+        {
+         "ky_hieu": "C",
+         "noi_dung_zh": "茶",
+         "pinyin": null,
+         "nghia_vi": null
+        }
+       ],
+       "dap_an_dung": "B",
+       "giai_thich_vi": "Trà là đồ uống thay thế được nhắc trước; riêng buổi tối cô ấy khuyên uống nước.",
+       "diem_toi_da": 1,
+       "audio_path": null,
+       "ten_tep_audio_goi_y": "H3_NGHE_T02_C02.mp3",
+       "nguon_id": "S0"
+      },
+      {
+       "ma_cau": "H3_NGHE_T02_C03",
+       "thu_tu": 3,
+       "dang": "nghe_chon_mot_dap_an",
+       "loi_thoai": "女：你以前不是每天跑步吗？男：是，不过最近腿疼，我改成游泳了。等好了再跑。",
+       "cau_hoi_zh": "男的最近为什么不跑步？",
+       "cau_hoi_vi": "Vì sao gần đây người nam không chạy bộ？",
+       "phuong_an": [
+        {
+         "ky_hieu": "A",
+         "noi_dung_zh": "没有时间",
+         "pinyin": null,
+         "nghia_vi": null
+        },
+        {
+         "ky_hieu": "B",
+         "noi_dung_zh": "天气太热",
+         "pinyin": null,
+         "nghia_vi": null
+        },
+        {
+         "ky_hieu": "C",
+         "noi_dung_zh": "腿疼",
+         "pinyin": null,
+         "nghia_vi": null
+        }
+       ],
+       "dap_an_dung": "C",
+       "giai_thich_vi": "Anh ấy đau chân (腿疼) nên tạm chuyển sang bơi. Không có thông tin thời tiết hoặc thiếu thời gian.",
+       "diem_toi_da": 1,
+       "audio_path": null,
+       "ten_tep_audio_goi_y": "H3_NGHE_T02_C03.mp3",
+       "nguon_id": "S0"
+      },
+      {
+       "ma_cau": "H3_NGHE_T02_C04",
+       "thu_tu": 4,
+       "dang": "nghe_chon_mot_dap_an",
+       "loi_thoai": "男：这些药怎么吃？女：一天三次，饭后吃。吃完药如果还不舒服，就再来医院看看。",
+       "cau_hoi_zh": "这些药应该什么时候吃？",
+       "cau_hoi_vi": "Thuốc cần uống vào lúc nào？",
+       "phuong_an": [
+        {
+         "ky_hieu": "A",
+         "noi_dung_zh": "饭后",
+         "pinyin": null,
+         "nghia_vi": null
+        },
+        {
+         "ky_hieu": "B",
+         "noi_dung_zh": "饭前",
+         "pinyin": null,
+         "nghia_vi": null
+        },
+        {
+         "ky_hieu": "C",
+         "noi_dung_zh": "睡觉前",
+         "pinyin": null,
+         "nghia_vi": null
+        }
+       ],
+       "dap_an_dung": "A",
+       "giai_thich_vi": "Lời hướng dẫn nói rõ 饭后吃, uống sau bữa ăn; 一天三次 là số lần mỗi ngày.",
+       "diem_toi_da": 1,
+       "audio_path": null,
+       "ten_tep_audio_goi_y": "H3_NGHE_T02_C04.mp3",
+       "nguon_id": "S0"
+      },
+      {
+       "ma_cau": "H3_NGHE_T02_C05",
+       "thu_tu": 5,
+       "dang": "nghe_chon_mot_dap_an",
+       "loi_thoai": "女：周末去爬山吗？男：我感冒还没好，想在家休息。女：那你好好休息，我们下次再一起去。",
+       "cau_hoi_zh": "关于男的，可以知道什么？",
+       "cau_hoi_vi": "Có thể biết điều gì về người nam？",
+       "phuong_an": [
+        {
+         "ky_hieu": "A",
+         "noi_dung_zh": "已经爬过山了",
+         "pinyin": null,
+         "nghia_vi": null
+        },
+        {
+         "ky_hieu": "B",
+         "noi_dung_zh": "这次不去爬山",
+         "pinyin": null,
+         "nghia_vi": null
+        },
+        {
+         "ky_hieu": "C",
+         "noi_dung_zh": "周末要去上班",
+         "pinyin": null,
+         "nghia_vi": null
+        }
+       ],
+       "dap_an_dung": "B",
+       "giai_thich_vi": "Anh ấy chưa khỏi cảm nên lần này ở nhà nghỉ; hai người để lần sau mới đi cùng.",
+       "diem_toi_da": 1,
+       "audio_path": null,
+       "ten_tep_audio_goi_y": "H3_NGHE_T02_C05.mp3",
+       "nguon_id": "S0"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "ma_thua": "H3_NGHE_T03",
+   "cap_hsk": 3,
+   "thu_tu": 3,
+   "ten_thua": "Du lịch và dịch vụ",
+   "muc_tieu": "Nghe thông tin đặt chỗ, hướng dẫn đường đi và xử lý thay đổi",
+   "ky_nang": "nghe",
+   "bai_luyen": [
+    {
+     "ma_bai": "H3_NGHE_T03_B01",
+     "ten_bai": "Du lịch và dịch vụ",
+     "thu_tu": 1,
+     "cau_hoi": [
+      {
+       "ma_cau": "H3_NGHE_T03_C01",
+       "thu_tu": 1,
+       "dang": "nghe_chon_mot_dap_an",
+       "loi_thoai": "男：我们订两晚的房间吧。女：可是星期天早上就得走，星期六晚上住一晚就够了。男：好，听你的。",
+       "cau_hoi_zh": "他们最后决定住几晚？",
+       "cau_hoi_vi": "Cuối cùng họ quyết định ở mấy đêm？",
+       "phuong_an": [
+        {
+         "ky_hieu": "A",
+         "noi_dung_zh": "两晚",
+         "pinyin": null,
+         "nghia_vi": null
+        },
+        {
+         "ky_hieu": "B",
+         "noi_dung_zh": "三晚",
+         "pinyin": null,
+         "nghia_vi": null
+        },
+        {
+         "ky_hieu": "C",
+         "noi_dung_zh": "一晚",
+         "pinyin": null,
+         "nghia_vi": null
+        }
+       ],
+       "dap_an_dung": "C",
+       "giai_thich_vi": "Ban đầu định hai đêm, nhưng vì sáng Chủ nhật đi nên chỉ cần ở tối thứ Bảy một đêm.",
+       "diem_toi_da": 1,
+       "audio_path": null,
+       "ten_tep_audio_goi_y": "H3_NGHE_T03_C01.mp3",
+       "nguon_id": "S0"
+      },
+      {
+       "ma_cau": "H3_NGHE_T03_C02",
+       "thu_tu": 2,
+       "dang": "nghe_chon_mot_dap_an",
+       "loi_thoai": "女：去博物馆应该在哪站下车？男：下一站下，然后往前走，到第二个路口右转。",
+       "cau_hoi_zh": "下车以后应该在哪个路口右转？",
+       "cau_hoi_vi": "Sau khi xuống xe cần rẽ phải ở ngã mấy？",
+       "phuong_an": [
+        {
+         "ky_hieu": "A",
+         "noi_dung_zh": "第二个路口",
+         "pinyin": null,
+         "nghia_vi": null
+        },
+        {
+         "ky_hieu": "B",
+         "noi_dung_zh": "第一个路口",
+         "pinyin": null,
+         "nghia_vi": null
+        },
+        {
+         "ky_hieu": "C",
+         "noi_dung_zh": "第三个路口",
+         "pinyin": null,
+         "nghia_vi": null
+        }
+       ],
+       "dap_an_dung": "A",
+       "giai_thich_vi": "Cần đi thẳng rồi rẽ ở 第二个路口, tức ngã thứ hai. 下一站 là trạm xuống xe, không phải ngã rẽ.",
+       "diem_toi_da": 1,
+       "audio_path": null,
+       "ten_tep_audio_goi_y": "H3_NGHE_T03_C02.mp3",
+       "nguon_id": "S0"
+      },
+      {
+       "ma_cau": "H3_NGHE_T03_C03",
+       "thu_tu": 3,
+       "dang": "nghe_chon_mot_dap_an",
+       "loi_thoai": "男：您好，我买的是靠窗的座位，怎么变了？女：对不起，换了飞机。现在只有靠走道的座位了。",
+       "cau_hoi_zh": "男的原来买的是什么座位？",
+       "cau_hoi_vi": "Ban đầu người nam mua chỗ ngồi nào？",
+       "phuong_an": [
+        {
+         "ky_hieu": "A",
+         "noi_dung_zh": "靠走道的",
+         "pinyin": null,
+         "nghia_vi": null
+        },
+        {
+         "ky_hieu": "B",
+         "noi_dung_zh": "靠窗的",
+         "pinyin": null,
+         "nghia_vi": null
+        },
+        {
+         "ky_hieu": "C",
+         "noi_dung_zh": "最后一排的",
+         "pinyin": null,
+         "nghia_vi": null
+        }
+       ],
+       "dap_an_dung": "B",
+       "giai_thich_vi": "Câu hỏi hỏi chỗ ban đầu là 靠窗, gần cửa sổ; chỗ mới là gần lối đi.",
+       "diem_toi_da": 1,
+       "audio_path": null,
+       "ten_tep_audio_goi_y": "H3_NGHE_T03_C03.mp3",
+       "nguon_id": "S0"
+      },
+      {
+       "ma_cau": "H3_NGHE_T03_C04",
+       "thu_tu": 4,
+       "dang": "nghe_chon_mot_dap_an",
+       "loi_thoai": "女：你怎么没买今天的票？男：今天的已经卖完了。我买了明天上午的，正好还能在这儿多玩一天。",
+       "cau_hoi_zh": "男的为什么买明天的票？",
+       "cau_hoi_vi": "Vì sao người nam mua vé ngày mai？",
+       "phuong_an": [
+        {
+         "ky_hieu": "A",
+         "noi_dung_zh": "今天有工作",
+         "pinyin": null,
+         "nghia_vi": null
+        },
+        {
+         "ky_hieu": "B",
+         "noi_dung_zh": "明天的更便宜",
+         "pinyin": null,
+         "nghia_vi": null
+        },
+        {
+         "ky_hieu": "C",
+         "noi_dung_zh": "今天的票卖完了",
+         "pinyin": null,
+         "nghia_vi": null
+        }
+       ],
+       "dap_an_dung": "C",
+       "giai_thich_vi": "Vé hôm nay đã bán hết. Việc chơi thêm một ngày là hệ quả, không phải thông tin về giá vé.",
+       "diem_toi_da": 1,
+       "audio_path": null,
+       "ten_tep_audio_goi_y": "H3_NGHE_T03_C04.mp3",
+       "nguon_id": "S0"
+      },
+      {
+       "ma_cau": "H3_NGHE_T03_C05",
+       "thu_tu": 5,
+       "dang": "nghe_chon_mot_dap_an",
+       "loi_thoai": "男：我的箱子还没出来，里面有我明天要用的书。女：您先留下电话和地址，找到以后我们马上联系您。",
+       "cau_hoi_zh": "女的让男的先做什么？",
+       "cau_hoi_vi": "Người nữ yêu cầu người nam làm gì trước？",
+       "phuong_an": [
+        {
+         "ky_hieu": "A",
+         "noi_dung_zh": "留下联系方式",
+         "pinyin": null,
+         "nghia_vi": null
+        },
+        {
+         "ky_hieu": "B",
+         "noi_dung_zh": "再买一个箱子",
+         "pinyin": null,
+         "nghia_vi": null
+        },
+        {
+         "ky_hieu": "C",
+         "noi_dung_zh": "自己去找书",
+         "pinyin": null,
+         "nghia_vi": null
+        }
+       ],
+       "dap_an_dung": "A",
+       "giai_thich_vi": "Cô ấy yêu cầu để lại số điện thoại và địa chỉ để liên hệ khi tìm thấy hành lý.",
+       "diem_toi_da": 1,
+       "audio_path": null,
+       "ten_tep_audio_goi_y": "H3_NGHE_T03_C05.mp3",
+       "nguon_id": "S0"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "ma_thua": "H4_NGHE_T01",
+   "cap_hsk": 4,
+   "thu_tu": 1,
+   "ten_thua": "Công việc và phối hợp",
+   "muc_tieu": "Suy luận mục đích, ưu tiên và thông tin đã thay đổi",
+   "ky_nang": "nghe",
+   "bai_luyen": [
+    {
+     "ma_bai": "H4_NGHE_T01_B01",
+     "ten_bai": "Công việc và phối hợp",
+     "thu_tu": 1,
+     "cau_hoi": [
+      {
+       "ma_cau": "H4_NGHE_T01_C01",
+       "thu_tu": 1,
+       "dang": "nghe_chon_mot_dap_an",
+       "loi_thoai": "女：这份材料下午开会就要用，现在能发给大家吗？男：内容已经检查过了，不过有两个数字还需要跟财务部确认。我确认以后马上发。",
+       "cau_hoi_zh": "男的为什么还没发材料？",
+       "cau_hoi_vi": "Vì sao người nam chưa gửi tài liệu？",
+       "phuong_an": [
+        {
+         "ky_hieu": "A",
+         "noi_dung_zh": "会议已经取消了",
+         "pinyin": null,
+         "nghia_vi": null
+        },
+        {
+         "ky_hieu": "B",
+         "noi_dung_zh": "还要确认部分数据",
+         "pinyin": null,
+         "nghia_vi": null
+        },
+        {
+         "ky_hieu": "C",
+         "noi_dung_zh": "材料的内容还没写",
+         "pinyin": null,
+         "nghia_vi": null
+        },
+        {
+         "ky_hieu": "D",
+         "noi_dung_zh": "大家都已经收到了",
+         "pinyin": null,
+         "nghia_vi": null
+        }
+       ],
+       "dap_an_dung": "B",
+       "giai_thich_vi": "Nội dung đã kiểm tra nhưng hai con số còn cần xác nhận với bộ phận tài chính; đây là trở ngại trực tiếp.",
+       "diem_toi_da": 1,
+       "audio_path": null,
+       "ten_tep_audio_goi_y": "H4_NGHE_T01_C01.mp3",
+       "nguon_id": "S0"
+      },
+      {
+       "ma_cau": "H4_NGHE_T01_C02",
+       "thu_tu": 2,
+       "dang": "nghe_chon_mot_dap_an",
+       "loi_thoai": "男：客户希望把见面时间提前到周三，你那天能参加吗？女：上午不行，我要去外地。下午三点以后可以，如果能安排在那时，我就参加。",
+       "cau_hoi_zh": "女的什么时候能参加见面？",
+       "cau_hoi_vi": "Người nữ có thể tham dự cuộc gặp lúc nào？",
+       "phuong_an": [
+        {
+         "ky_hieu": "A",
+         "noi_dung_zh": "周三上午",
+         "pinyin": null,
+         "nghia_vi": null
+        },
+        {
+         "ky_hieu": "B",
+         "noi_dung_zh": "周二下午",
+         "pinyin": null,
+         "nghia_vi": null
+        },
+        {
+         "ky_hieu": "C",
+         "noi_dung_zh": "周三下午三点以后",
+         "pinyin": null,
+         "nghia_vi": null
+        },
+        {
+         "ky_hieu": "D",
+         "noi_dung_zh": "周四上午",
+         "pinyin": null,
+         "nghia_vi": null
+        }
+       ],
+       "dap_an_dung": "C",
+       "giai_thich_vi": "Cô ấy đưa điều kiện cụ thể: thứ Tư sau ba giờ chiều. Không thể hiểu rằng cả ngày thứ Tư đều rảnh.",
+       "diem_toi_da": 1,
+       "audio_path": null,
+       "ten_tep_audio_goi_y": "H4_NGHE_T01_C02.mp3",
+       "nguon_id": "S0"
+      },
+      {
+       "ma_cau": "H4_NGHE_T01_C03",
+       "thu_tu": 3,
+       "dang": "nghe_chon_mot_dap_an",
+       "loi_thoai": "女：你刚接这个项目，要不要先把以前的报告都看完？男：报告我会看，但我想先了解客户最关心什么，免得花很多时间做了不需要的内容。",
+       "cau_hoi_zh": "男的打算首先做什么？",
+       "cau_hoi_vi": "Người nam định làm gì trước tiên？",
+       "phuong_an": [
+        {
+         "ky_hieu": "A",
+         "noi_dung_zh": "了解客户的需要",
+         "pinyin": null,
+         "nghia_vi": null
+        },
+        {
+         "ky_hieu": "B",
+         "noi_dung_zh": "写完所有报告",
+         "pinyin": null,
+         "nghia_vi": null
+        },
+        {
+         "ky_hieu": "C",
+         "noi_dung_zh": "重新安排同事的工作",
+         "pinyin": null,
+         "nghia_vi": null
+        },
+        {
+         "ky_hieu": "D",
+         "noi_dung_zh": "取消这个项目",
+         "pinyin": null,
+         "nghia_vi": null
+        }
+       ],
+       "dap_an_dung": "A",
+       "giai_thich_vi": "Anh ấy muốn xác định nhu cầu khách hàng trước để tránh làm nội dung không cần thiết; không hề từ chối đọc báo cáo.",
+       "diem_toi_da": 1,
+       "audio_path": null,
+       "ten_tep_audio_goi_y": "H4_NGHE_T01_C03.mp3",
+       "nguon_id": "S0"
+      },
+      {
+       "ma_cau": "H4_NGHE_T01_C04",
+       "thu_tu": 4,
+       "dang": "nghe_chon_mot_dap_an",
+       "loi_thoai": "男：小林，你今天怎么还没下班？女：明天的活动增加了二十个人，我得把座位重新安排一下。其他事情上午就准备好了。",
+       "cau_hoi_zh": "女的留下来的主要原因是什么？",
+       "cau_hoi_vi": "Lý do chính người nữ ở lại làm việc là gì？",
+       "phuong_an": [
+        {
+         "ky_hieu": "A",
+         "noi_dung_zh": "上午没有来上班",
+         "pinyin": null,
+         "nghia_vi": null
+        },
+        {
+         "ky_hieu": "B",
+         "noi_dung_zh": "活动时间改变了",
+         "pinyin": null,
+         "nghia_vi": null
+        },
+        {
+         "ky_hieu": "C",
+         "noi_dung_zh": "所有准备都没完成",
+         "pinyin": null,
+         "nghia_vi": null
+        },
+        {
+         "ky_hieu": "D",
+         "noi_dung_zh": "参加人数增加了",
+         "pinyin": null,
+         "nghia_vi": null
+        }
+       ],
+       "dap_an_dung": "D",
+       "giai_thich_vi": "Số người tăng thêm 20 làm cô ấy phải sắp xếp lại chỗ ngồi; các việc khác đã xong từ buổi sáng.",
+       "diem_toi_da": 1,
+       "audio_path": null,
+       "ten_tep_audio_goi_y": "H4_NGHE_T01_C04.mp3",
+       "nguon_id": "S0"
+      },
+      {
+       "ma_cau": "H4_NGHE_T01_C05",
+       "thu_tu": 5,
+       "dang": "nghe_chon_mot_dap_an",
+       "loi_thoai": "女：这次你不直接告诉新同事怎么做吗？男：我想先让他试一试。遇到问题时我再提醒他，这样他以后自己处理事情会更有信心。",
+       "cau_hoi_zh": "男的主要想帮助新同事提高什么？",
+       "cau_hoi_vi": "Người nam chủ yếu muốn giúp đồng nghiệp mới cải thiện điều gì？",
+       "phuong_an": [
+        {
+         "ky_hieu": "A",
+         "noi_dung_zh": "说外语的速度",
+         "pinyin": null,
+         "nghia_vi": null
+        },
+        {
+         "ky_hieu": "B",
+         "noi_dung_zh": "独立处理问题的信心",
+         "pinyin": null,
+         "nghia_vi": null
+        },
+        {
+         "ky_hieu": "C",
+         "noi_dung_zh": "参加会议的次数",
+         "pinyin": null,
+         "nghia_vi": null
+        },
+        {
+         "ky_hieu": "D",
+         "noi_dung_zh": "写字的速度",
+         "pinyin": null,
+         "nghia_vi": null
+        }
+       ],
+       "dap_an_dung": "B",
+       "giai_thich_vi": "Cho tự thử trước rồi hỗ trợ khi cần nhằm tăng tự tin khi tự xử lý công việc, chứ không phải bỏ mặc đồng nghiệp.",
+       "diem_toi_da": 1,
+       "audio_path": null,
+       "ten_tep_audio_goi_y": "H4_NGHE_T01_C05.mp3",
+       "nguon_id": "S0"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "ma_thua": "H4_NGHE_T02",
+   "cap_hsk": 4,
+   "thu_tu": 2,
+   "ten_thua": "Lựa chọn và lập kế hoạch",
+   "muc_tieu": "Phân biệt ý định ban đầu với quyết định cuối và nguyên nhân",
+   "ky_nang": "nghe",
+   "bai_luyen": [
+    {
+     "ma_bai": "H4_NGHE_T02_B01",
+     "ten_bai": "Lựa chọn và lập kế hoạch",
+     "thu_tu": 1,
+     "cau_hoi": [
+      {
+       "ma_cau": "H4_NGHE_T02_C01",
+       "thu_tu": 1,
+       "dang": "nghe_chon_mot_dap_an",
+       "loi_thoai": "男：这家旅馆离景点近，就是晚上可能有点儿吵。女：我们每天都要早起，还是选安静一点儿的吧。远一点儿没关系，坐车也方便。",
+       "cau_hoi_zh": "女的选择旅馆时更重视什么？",
+       "cau_hoi_vi": "Khi chọn chỗ ở, người nữ coi trọng điều gì hơn？",
+       "phuong_an": [
+        {
+         "ky_hieu": "A",
+         "noi_dung_zh": "离景点最近",
+         "pinyin": null,
+         "nghia_vi": null
+        },
+        {
+         "ky_hieu": "B",
+         "noi_dung_zh": "价格最低",
+         "pinyin": null,
+         "nghia_vi": null
+        },
+        {
+         "ky_hieu": "C",
+         "noi_dung_zh": "环境安静",
+         "pinyin": null,
+         "nghia_vi": null
+        },
+        {
+         "ky_hieu": "D",
+         "noi_dung_zh": "房间最大",
+         "pinyin": null,
+         "nghia_vi": null
+        }
+       ],
+       "dap_an_dung": "C",
+       "giai_thich_vi": "Cô ấy ưu tiên yên tĩnh vì phải dậy sớm; có thể chấp nhận ở xa hơn nếu đi lại thuận tiện.",
+       "diem_toi_da": 1,
+       "audio_path": null,
+       "ten_tep_audio_goi_y": "H4_NGHE_T02_C01.mp3",
+       "nguon_id": "S0"
+      },
+      {
+       "ma_cau": "H4_NGHE_T02_C02",
+       "thu_tu": 2,
+       "dang": "nghe_chon_mot_dap_an",
+       "loi_thoai": "女：你准备换手机了吗？男：原来想换，但修理店说只要换个电池就能继续用。我先修好它，把钱留着买学习资料。",
+       "cau_hoi_zh": "男的最后决定怎么做？",
+       "cau_hoi_vi": "Cuối cùng người nam quyết định thế nào？",
+       "phuong_an": [
+        {
+         "ky_hieu": "A",
+         "noi_dung_zh": "修好旧手机继续用",
+         "pinyin": null,
+         "nghia_vi": null
+        },
+        {
+         "ky_hieu": "B",
+         "noi_dung_zh": "马上买新手机",
+         "pinyin": null,
+         "nghia_vi": null
+        },
+        {
+         "ky_hieu": "C",
+         "noi_dung_zh": "不再买学习资料",
+         "pinyin": null,
+         "nghia_vi": null
+        },
+        {
+         "ky_hieu": "D",
+         "noi_dung_zh": "把手机送给别人",
+         "pinyin": null,
+         "nghia_vi": null
+        }
+       ],
+       "dap_an_dung": "A",
+       "giai_thich_vi": "Ý định mua máy mới đã đổi sau khi biết chỉ cần thay pin; anh ấy giữ tiền để mua tài liệu học.",
+       "diem_toi_da": 1,
+       "audio_path": null,
+       "ten_tep_audio_goi_y": "H4_NGHE_T02_C02.mp3",
+       "nguon_id": "S0"
+      },
+      {
+       "ma_cau": "H4_NGHE_T02_C03",
+       "thu_tu": 3,
+       "dang": "nghe_chon_mot_dap_an",
+       "loi_thoai": "男：周末的票我买好了，咱们按原来的计划出发。女：可是天气预报说那天会有大雨。男：那先看看票能不能改到下周吧，安全更重要。",
+       "cau_hoi_zh": "听到天气预报后，男的准备做什么？",
+       "cau_hoi_vi": "Sau khi biết dự báo thời tiết, người nam định làm gì？",
+       "phuong_an": [
+        {
+         "ky_hieu": "A",
+         "noi_dung_zh": "不看天气就出发",
+         "pinyin": null,
+         "nghia_vi": null
+        },
+        {
+         "ky_hieu": "B",
+         "noi_dung_zh": "马上再买一张票",
+         "pinyin": null,
+         "nghia_vi": null
+        },
+        {
+         "ky_hieu": "C",
+         "noi_dung_zh": "把出发时间提前一天",
+         "pinyin": null,
+         "nghia_vi": null
+        },
+        {
+         "ky_hieu": "D",
+         "noi_dung_zh": "了解能不能改票",
+         "pinyin": null,
+         "nghia_vi": null
+        }
+       ],
+       "dap_an_dung": "D",
+       "giai_thich_vi": "Anh ấy muốn kiểm tra khả năng đổi vé sang tuần sau vì ưu tiên an toàn. Chưa có thông tin đã đổi vé thành công.",
+       "diem_toi_da": 1,
+       "audio_path": null,
+       "ten_tep_audio_goi_y": "H4_NGHE_T02_C03.mp3",
+       "nguon_id": "S0"
+      },
+      {
+       "ma_cau": "H4_NGHE_T02_C04",
+       "thu_tu": 4,
+       "dang": "nghe_chon_mot_dap_an",
+       "loi_thoai": "女：这两门课时间一样，你选哪门？男：我对历史更有兴趣，不过下个月工作上要用到电脑设计，所以这次先选设计课。",
+       "cau_hoi_zh": "男的这次选择设计课的主要原因是什么？",
+       "cau_hoi_vi": "Lý do chính người nam chọn khóa thiết kế lần này là gì？",
+       "phuong_an": [
+        {
+         "ky_hieu": "A",
+         "noi_dung_zh": "历史课已经结束了",
+         "pinyin": null,
+         "nghia_vi": null
+        },
+        {
+         "ky_hieu": "B",
+         "noi_dung_zh": "工作上需要",
+         "pinyin": null,
+         "nghia_vi": null
+        },
+        {
+         "ky_hieu": "C",
+         "noi_dung_zh": "设计课不用交钱",
+         "pinyin": null,
+         "nghia_vi": null
+        },
+        {
+         "ky_hieu": "D",
+         "noi_dung_zh": "朋友都选了这门课",
+         "pinyin": null,
+         "nghia_vi": null
+        }
+       ],
+       "dap_an_dung": "B",
+       "giai_thich_vi": "Dù thích lịch sử hơn, anh ấy ưu tiên nhu cầu công việc sắp tới. Sở thích và lý do quyết định cần phân biệt.",
+       "diem_toi_da": 1,
+       "audio_path": null,
+       "ten_tep_audio_goi_y": "H4_NGHE_T02_C04.mp3",
+       "nguon_id": "S0"
+      },
+      {
+       "ma_cau": "H4_NGHE_T02_C05",
+       "thu_tu": 5,
+       "dang": "nghe_chon_mot_dap_an",
+       "loi_thoai": "男：你每天都去那家远一点儿的超市，不觉得麻烦吗？女：我不是每天去。我每周买一次，东西新鲜，价格也合适，多走一点儿路我能接受。",
+       "cau_hoi_zh": "关于女的，哪项是正确的？",
+       "cau_hoi_vi": "Thông tin nào đúng về người nữ？",
+       "phuong_an": [
+        {
+         "ky_hieu": "A",
+         "noi_dung_zh": "每天都去超市",
+         "pinyin": null,
+         "nghia_vi": null
+        },
+        {
+         "ky_hieu": "B",
+         "noi_dung_zh": "只关心价格",
+         "pinyin": null,
+         "nghia_vi": null
+        },
+        {
+         "ky_hieu": "C",
+         "noi_dung_zh": "愿意为合适的商品多走一点儿路",
+         "pinyin": null,
+         "nghia_vi": null
+        },
+        {
+         "ky_hieu": "D",
+         "noi_dung_zh": "不喜欢新鲜的东西",
+         "pinyin": null,
+         "nghia_vi": null
+        }
+       ],
+       "dap_an_dung": "C",
+       "giai_thich_vi": "Cô ấy đi mỗi tuần một lần và chấp nhận đi xa hơn để mua hàng tươi với giá phù hợp; tiền không phải yếu tố duy nhất.",
+       "diem_toi_da": 1,
+       "audio_path": null,
+       "ten_tep_audio_goi_y": "H4_NGHE_T02_C05.mp3",
+       "nguon_id": "S0"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "ma_thua": "H4_NGHE_T03",
+   "cap_hsk": 4,
+   "thu_tu": 3,
+   "ten_thua": "Quan điểm và cách giải quyết vấn đề",
+   "muc_tieu": "Hiểu thông điệp, thái độ và quan hệ nguyên nhân kết quả",
+   "ky_nang": "nghe",
+   "bai_luyen": [
+    {
+     "ma_bai": "H4_NGHE_T03_B01",
+     "ten_bai": "Quan điểm và cách giải quyết vấn đề",
+     "thu_tu": 1,
+     "cau_hoi": [
+      {
+       "ma_cau": "H4_NGHE_T03_C01",
+       "thu_tu": 1,
+       "dang": "nghe_chon_mot_dap_an",
+       "loi_thoai": "我以前学新词时，总想一天记住很多，结果过几天就忘了。后来我每天只学少一点儿，但会用它们写几句话，再定期复习。虽然每天学得少了，真正记住的词却多了。",
+       "cau_hoi_zh": "这段话主要说明什么？",
+       "cau_hoi_vi": "Thông điệp chính của đoạn nghe là gì？",
+       "phuong_an": [
+        {
+         "ky_hieu": "A",
+         "noi_dung_zh": "复习和使用有助于记住新词",
+         "pinyin": null,
+         "nghia_vi": null
+        },
+        {
+         "ky_hieu": "B",
+         "noi_dung_zh": "一天必须记住很多词",
+         "pinyin": null,
+         "nghia_vi": null
+        },
+        {
+         "ky_hieu": "C",
+         "noi_dung_zh": "写句子会让人忘记新词",
+         "pinyin": null,
+         "nghia_vi": null
+        },
+        {
+         "ky_hieu": "D",
+         "noi_dung_zh": "学新词不需要计划",
+         "pinyin": null,
+         "nghia_vi": null
+        }
+       ],
+       "dap_an_dung": "A",
+       "giai_thich_vi": "Người nói đối chiếu học dồn rồi quên với học ít, sử dụng và ôn đều; thông điệp nằm ở hiệu quả của cách học sau.",
+       "diem_toi_da": 1,
+       "audio_path": null,
+       "ten_tep_audio_goi_y": "H4_NGHE_T03_C01.mp3",
+       "nguon_id": "S0"
+      },
+      {
+       "ma_cau": "H4_NGHE_T03_C02",
+       "thu_tu": 2,
+       "dang": "nghe_chon_mot_dap_an",
+       "loi_thoai": "女：你不是说不想参加这次演讲比赛吗？男：是，我担心自己说不好。老师建议我把它当成一次练习，不要只看最后的名次。我觉得有道理，所以报名了。",
+       "cau_hoi_zh": "男的对这次比赛的看法发生了什么变化？",
+       "cau_hoi_vi": "Quan điểm của người nam về cuộc thi đã thay đổi thế nào？",
+       "phuong_an": [
+        {
+         "ky_hieu": "A",
+         "noi_dung_zh": "从想得第一变成不想参加",
+         "pinyin": null,
+         "nghia_vi": null
+        },
+        {
+         "ky_hieu": "B",
+         "noi_dung_zh": "从担心表现变成愿意借机会练习",
+         "pinyin": null,
+         "nghia_vi": null
+        },
+        {
+         "ky_hieu": "C",
+         "noi_dung_zh": "从喜欢演讲变成讨厌演讲",
+         "pinyin": null,
+         "nghia_vi": null
+        },
+        {
+         "ky_hieu": "D",
+         "noi_dung_zh": "从准备报名变成决定退出",
+         "pinyin": null,
+         "nghia_vi": null
+        }
+       ],
+       "dap_an_dung": "B",
+       "giai_thich_vi": "Anh ấy ban đầu sợ nói không tốt; sau lời khuyên thì xem đây là cơ hội luyện tập và đăng ký, không phải chắc chắn sẽ đạt hạng cao.",
+       "diem_toi_da": 1,
+       "audio_path": null,
+       "ten_tep_audio_goi_y": "H4_NGHE_T03_C02.mp3",
+       "nguon_id": "S0"
+      },
+      {
+       "ma_cau": "H4_NGHE_T03_C03",
+       "thu_tu": 3,
+       "dang": "nghe_chon_mot_dap_an",
+       "loi_thoai": "商店门口新放了几个分类垃圾桶。刚开始，有些顾客不知道怎么用。工作人员没有责怪他们，而是在旁边放了图片说明。一周以后，放错垃圾的人明显少了。",
+       "cau_hoi_zh": "放错垃圾的人减少，主要是因为什么？",
+       "cau_hoi_vi": "Vì sao số người bỏ rác sai giảm？",
+       "phuong_an": [
+        {
+         "ky_hieu": "A",
+         "noi_dung_zh": "顾客不能进商店了",
+         "pinyin": null,
+         "nghia_vi": null
+        },
+        {
+         "ky_hieu": "B",
+         "noi_dung_zh": "垃圾桶被拿走了",
+         "pinyin": null,
+         "nghia_vi": null
+        },
+        {
+         "ky_hieu": "C",
+         "noi_dung_zh": "工作人员批评了所有人",
+         "pinyin": null,
+         "nghia_vi": null
+        },
+        {
+         "ky_hieu": "D",
+         "noi_dung_zh": "图片帮助顾客了解分类方法",
+         "pinyin": null,
+         "nghia_vi": null
+        }
+       ],
+       "dap_an_dung": "D",
+       "giai_thich_vi": "Thay đổi được nêu là thêm hướng dẫn bằng hình; không có chuyện cấm khách, bỏ thùng hoặc phê bình tất cả mọi người.",
+       "diem_toi_da": 1,
+       "audio_path": null,
+       "ten_tep_audio_goi_y": "H4_NGHE_T03_C03.mp3",
+       "nguon_id": "S0"
+      },
+      {
+       "ma_cau": "H4_NGHE_T03_C04",
+       "thu_tu": 4,
+       "dang": "nghe_chon_mot_dap_an",
+       "loi_thoai": "男：这家餐厅评价很高，怎么客人还不多？女：它刚开不久，很多人还不知道。老板准备先让附近的居民来体验，再根据他们的意见调整菜单。",
+       "cau_hoi_zh": "老板准备先做什么？",
+       "cau_hoi_vi": "Chủ nhà hàng dự định làm gì trước？",
+       "phuong_an": [
+        {
+         "ky_hieu": "A",
+         "noi_dung_zh": "马上提高所有菜的价格",
+         "pinyin": null,
+         "nghia_vi": null
+        },
+        {
+         "ky_hieu": "B",
+         "noi_dung_zh": "停止听取顾客意见",
+         "pinyin": null,
+         "nghia_vi": null
+        },
+        {
+         "ky_hieu": "C",
+         "noi_dung_zh": "请附近居民来体验",
+         "pinyin": null,
+         "nghia_vi": null
+        },
+        {
+         "ky_hieu": "D",
+         "noi_dung_zh": "换到更远的地方",
+         "pinyin": null,
+         "nghia_vi": null
+        }
+       ],
+       "dap_an_dung": "C",
+       "giai_thich_vi": "Chủ quán định mời cư dân gần đó trải nghiệm trước, sau đó mới điều chỉnh thực đơn theo phản hồi.",
+       "diem_toi_da": 1,
+       "audio_path": null,
+       "ten_tep_audio_goi_y": "H4_NGHE_T03_C04.mp3",
+       "nguon_id": "S0"
+      },
+      {
+       "ma_cau": "H4_NGHE_T03_C05",
+       "thu_tu": 5,
+       "dang": "nghe_chon_mot_dap_an",
+       "loi_thoai": "这次旅行最让我满意的不是去了多少景点，而是我们没有把每天排得太满。遇到喜欢的地方，可以多待一会儿，也有时间和当地人聊天。对我来说，旅行不一定要赶着完成一张长长的清单。",
+       "cau_hoi_zh": "说话人更喜欢怎样的旅行？",
+       "cau_hoi_vi": "Người nói thích kiểu du lịch nào hơn？",
+       "phuong_an": [
+        {
+         "ky_hieu": "A",
+         "noi_dung_zh": "每天看最多的景点",
+         "pinyin": null,
+         "nghia_vi": null
+        },
+        {
+         "ky_hieu": "B",
+         "noi_dung_zh": "留出时间慢慢体验",
+         "pinyin": null,
+         "nghia_vi": null
+        },
+        {
+         "ky_hieu": "C",
+         "noi_dung_zh": "完全不做任何准备",
+         "pinyin": null,
+         "nghia_vi": null
+        },
+        {
+         "ky_hieu": "D",
+         "noi_dung_zh": "只在旅馆里休息",
+         "pinyin": null,
+         "nghia_vi": null
+        }
+       ],
+       "dap_an_dung": "B",
+       "giai_thich_vi": "Người nói thích lịch trình vừa phải để trải nghiệm và trò chuyện; không đồng nghĩa với không chuẩn bị hoặc chỉ ở khách sạn.",
+       "diem_toi_da": 1,
+       "audio_path": null,
+       "ten_tep_audio_goi_y": "H4_NGHE_T03_C05.mp3",
+       "nguon_id": "S0"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

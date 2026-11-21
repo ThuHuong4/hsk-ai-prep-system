@@ -1,0 +1,2638 @@
+{
+ "cap": "HSK1",
+ "ky_nang": "doc",
+ "thua": [
+  {
+   "ten": "Ăn uống và mua sắm",
+   "muc_tieu": "Đọc hiểu câu ngắn về gọi món, đồ uống và mua bán",
+   "bai": [
+    {
+     "ten": "Gọi món",
+     "cau": [
+      {
+       "dang": "chon_mot",
+       "noi_dung": "我 想 （　） 米饭。",
+       "pinyin": "Wǒ xiǎng _ mǐfàn.",
+       "dich_nghia": "Tôi muốn ăn cơm.",
+       "giai_thich": "吃 + 米饭 = ăn cơm.",
+       "phuong_an": [
+        {
+         "noi_dung": "吃 [chī]",
+         "la_dap_an_dung": true
+        },
+        {
+         "noi_dung": "喝 [hē]",
+         "la_dap_an_dung": false
+        },
+        {
+         "noi_dung": "看 [kàn]",
+         "la_dap_an_dung": false
+        }
+       ]
+      },
+      {
+       "dang": "chon_mot",
+       "noi_dung": "你 （　） 茶 吗？",
+       "pinyin": "Nǐ _ chá ma?",
+       "dich_nghia": "Bạn uống trà không?",
+       "giai_thich": "喝 dùng với đồ uống như 茶 (trà).",
+       "phuong_an": [
+        {
+         "noi_dung": "吃 [chī]",
+         "la_dap_an_dung": false
+        },
+        {
+         "noi_dung": "喝 [hē]",
+         "la_dap_an_dung": true
+        },
+        {
+         "noi_dung": "写 [xiě]",
+         "la_dap_an_dung": false
+        }
+       ]
+      },
+      {
+       "dang": "chon_mot",
+       "noi_dung": "我 想 买 一 个 （　）。",
+       "pinyin": "Wǒ xiǎng mǎi yí ge _.",
+       "dich_nghia": "Tôi muốn mua một cái cốc.",
+       "giai_thich": "一个杯子 = một cái cốc; không nói 一个米饭 hay 一个天气.",
+       "phuong_an": [
+        {
+         "noi_dung": "米饭 [mǐfàn]",
+         "la_dap_an_dung": false
+        },
+        {
+         "noi_dung": "天气 [tiānqì]",
+         "la_dap_an_dung": false
+        },
+        {
+         "noi_dung": "杯子 [bēizi]",
+         "la_dap_an_dung": true
+        }
+       ]
+      },
+      {
+       "dang": "chon_mot",
+       "noi_dung": "我 很 （　） 吃 苹果。",
+       "pinyin": "Wǒ hěn _ chī píngguǒ.",
+       "dich_nghia": "Tôi rất thích ăn táo.",
+       "giai_thich": "喜欢 + động từ = thích làm gì.",
+       "phuong_an": [
+        {
+         "noi_dung": "喜欢 [xǐhuan]",
+         "la_dap_an_dung": true
+        },
+        {
+         "noi_dung": "认识 [rènshi]",
+         "la_dap_an_dung": false
+        },
+        {
+         "noi_dung": "叫 [jiào]",
+         "la_dap_an_dung": false
+        }
+       ]
+      },
+      {
+       "dang": "chon_mot",
+       "noi_dung": "我们 去 （　） 吃 饭。",
+       "pinyin": "Wǒmen qù _ chī fàn.",
+       "dich_nghia": "Chúng tôi đi nhà hàng ăn cơm.",
+       "giai_thich": "饭店 (nhà hàng) là nơi ăn cơm.",
+       "phuong_an": [
+        {
+         "noi_dung": "电影 [diànyǐng]",
+         "la_dap_an_dung": false
+        },
+        {
+         "noi_dung": "饭店 [fàndiàn]",
+         "la_dap_an_dung": true
+        },
+        {
+         "noi_dung": "天气 [tiānqì]",
+         "la_dap_an_dung": false
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "ten": "Mua bán",
+     "cau": [
+      {
+       "dang": "chon_mot",
+       "noi_dung": "这 个 杯子 （　） 钱？",
+       "pinyin": "Zhè ge bēizi _ qián?",
+       "dich_nghia": "Cái cốc này bao nhiêu tiền?",
+       "giai_thich": "多少钱 = bao nhiêu tiền.",
+       "phuong_an": [
+        {
+         "noi_dung": "什么 [shénme]",
+         "la_dap_an_dung": false
+        },
+        {
+         "noi_dung": "谁 [shéi]",
+         "la_dap_an_dung": false
+        },
+        {
+         "noi_dung": "多少 [duōshao]",
+         "la_dap_an_dung": true
+        }
+       ]
+      },
+      {
+       "dang": "chon_mot",
+       "noi_dung": "这 个 杯子 二十 （　）。",
+       "pinyin": "Zhè ge bēizi èrshí _.",
+       "dich_nghia": "Cái cốc này 20 đồng.",
+       "giai_thich": "块 = đồng (đơn vị tiền).",
+       "phuong_an": [
+        {
+         "noi_dung": "块 [kuài]",
+         "la_dap_an_dung": true
+        },
+        {
+         "noi_dung": "岁 [suì]",
+         "la_dap_an_dung": false
+        },
+        {
+         "noi_dung": "个 [gè]",
+         "la_dap_an_dung": false
+        }
+       ]
+      },
+      {
+       "dang": "chon_mot",
+       "noi_dung": "我 去 商店 （　） 东西。",
+       "pinyin": "Wǒ qù shāngdiàn _ dōngxi.",
+       "dich_nghia": "Tôi đến cửa hàng mua đồ.",
+       "giai_thich": "买东西 = mua đồ.",
+       "phuong_an": [
+        {
+         "noi_dung": "喝 [hē]",
+         "la_dap_an_dung": false
+        },
+        {
+         "noi_dung": "买 [mǎi]",
+         "la_dap_an_dung": true
+        },
+        {
+         "noi_dung": "睡觉 [shuìjiào]",
+         "la_dap_an_dung": false
+        }
+       ]
+      },
+      {
+       "dang": "chon_mot",
+       "noi_dung": "这些 衣服 很 （　）。",
+       "pinyin": "Zhèxiē yīfu hěn _.",
+       "dich_nghia": "Những bộ quần áo này rất đẹp.",
+       "giai_thich": "很 + tính từ: 漂亮 (đẹp).",
+       "phuong_an": [
+        {
+         "noi_dung": "多少 [duōshao]",
+         "la_dap_an_dung": false
+        },
+        {
+         "noi_dung": "认识 [rènshi]",
+         "la_dap_an_dung": false
+        },
+        {
+         "noi_dung": "漂亮 [piàoliang]",
+         "la_dap_an_dung": true
+        }
+       ]
+      },
+      {
+       "dang": "chon_mot",
+       "noi_dung": "你 想 买 什么？",
+       "pinyin": "Nǐ xiǎng mǎi shénme?",
+       "dich_nghia": "Bạn muốn mua gì? – Tôi muốn mua táo.",
+       "giai_thich": "什么 hỏi cái gì, nên trả lời bằng đồ vật.",
+       "phuong_an": [
+        {
+         "noi_dung": "我 想 买 苹果。 [Wǒ xiǎng mǎi píngguǒ.]",
+         "la_dap_an_dung": true
+        },
+        {
+         "noi_dung": "我 在 商店。 [Wǒ zài shāngdiàn.]",
+         "la_dap_an_dung": false
+        },
+        {
+         "noi_dung": "我 很 好。 [Wǒ hěn hǎo.]",
+         "la_dap_an_dung": false
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "ten": "Hỏi và trả lời",
+     "cau": [
+      {
+       "dang": "chon_mot",
+       "noi_dung": "你 喝 什么？",
+       "pinyin": "Nǐ hē shénme?",
+       "dich_nghia": "Bạn uống gì? – Tôi uống trà.",
+       "giai_thich": "Hỏi 喝什么 thì trả lời một đồ uống.",
+       "phuong_an": [
+        {
+         "noi_dung": "我 吃 米饭。 [Wǒ chī mǐfàn.]",
+         "la_dap_an_dung": false
+        },
+        {
+         "noi_dung": "我 喝 茶。 [Wǒ hē chá.]",
+         "la_dap_an_dung": true
+        },
+        {
+         "noi_dung": "我 去 商店。 [Wǒ qù shāngdiàn.]",
+         "la_dap_an_dung": false
+        }
+       ]
+      },
+      {
+       "dang": "chon_mot",
+       "noi_dung": "苹果 多少 钱？",
+       "pinyin": "Píngguǒ duōshao qián?",
+       "dich_nghia": "Táo bao nhiêu tiền? – Mười đồng.",
+       "giai_thich": "多少钱 hỏi giá, trả lời bằng số tiền + 块.",
+       "phuong_an": [
+        {
+         "noi_dung": "十 岁。 [Shí suì.]",
+         "la_dap_an_dung": false
+        },
+        {
+         "noi_dung": "十 点。 [Shí diǎn.]",
+         "la_dap_an_dung": false
+        },
+        {
+         "noi_dung": "十 块 钱。 [Shí kuài qián.]",
+         "la_dap_an_dung": true
+        }
+       ]
+      },
+      {
+       "dang": "chon_mot",
+       "noi_dung": "你 爱 吃 水果 吗？",
+       "pinyin": "Nǐ ài chī shuǐguǒ ma?",
+       "dich_nghia": "Bạn có thích ăn hoa quả không? – Có, tôi rất thích ăn táo.",
+       "giai_thich": "爱吃 = thích ăn; câu hỏi 吗 trả lời 爱 / 不爱.",
+       "phuong_an": [
+        {
+         "noi_dung": "爱， 我 很 爱 吃 苹果。 [Ài, wǒ hěn ài chī píngguǒ.]",
+         "la_dap_an_dung": true
+        },
+        {
+         "noi_dung": "我 在 家。 [Wǒ zài jiā.]",
+         "la_dap_an_dung": false
+        },
+        {
+         "noi_dung": "我 是 学生。 [Wǒ shì xuésheng.]",
+         "la_dap_an_dung": false
+        }
+       ]
+      },
+      {
+       "dang": "chon_mot",
+       "noi_dung": "你 去 哪儿？",
+       "pinyin": "Nǐ qù nǎr?",
+       "dich_nghia": "Bạn đi đâu? – Tôi đi cửa hàng.",
+       "giai_thich": "哪儿 hỏi nơi chốn.",
+       "phuong_an": [
+        {
+         "noi_dung": "我 喝 水。 [Wǒ hē shuǐ.]",
+         "la_dap_an_dung": false
+        },
+        {
+         "noi_dung": "我 去 商店。 [Wǒ qù shāngdiàn.]",
+         "la_dap_an_dung": true
+        },
+        {
+         "noi_dung": "我 很 好。 [Wǒ hěn hǎo.]",
+         "la_dap_an_dung": false
+        }
+       ]
+      },
+      {
+       "dang": "chon_mot",
+       "noi_dung": "你 想 喝 水 吗？",
+       "pinyin": "Nǐ xiǎng hē shuǐ ma?",
+       "dich_nghia": "Bạn muốn uống nước không? – Muốn, cảm ơn.",
+       "giai_thich": "Hỏi 想…吗 thì trả lời 想 / 不想.",
+       "phuong_an": [
+        {
+         "noi_dung": "没 关系。 [Méi guānxi.]",
+         "la_dap_an_dung": false
+        },
+        {
+         "noi_dung": "我 叫 李 月。 [Wǒ jiào Lǐ Yuè.]",
+         "la_dap_an_dung": false
+        },
+        {
+         "noi_dung": "想， 谢谢。 [Xiǎng, xièxie.]",
+         "la_dap_an_dung": true
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "ten": "Hiểu câu ngắn",
+     "cau": [
+      {
+       "dang": "chon_mot",
+       "noi_dung": "我 想 喝 一 杯 茶。",
+       "pinyin": "Wǒ xiǎng hē yì bēi chá.",
+       "dich_nghia": "Tôi muốn uống một cốc trà.",
+       "giai_thich": "一杯茶 = một cốc trà.",
+       "phuong_an": [
+        {
+         "noi_dung": "Tôi muốn uống một cốc trà.",
+         "la_dap_an_dung": true
+        },
+        {
+         "noi_dung": "Tôi muốn mua một cái cốc.",
+         "la_dap_an_dung": false
+        },
+        {
+         "noi_dung": "Tôi muốn uống nước.",
+         "la_dap_an_dung": false
+        }
+       ]
+      },
+      {
+       "dang": "chon_mot",
+       "noi_dung": "她 在 商店 买 衣服。",
+       "pinyin": "Tā zài shāngdiàn mǎi yīfu.",
+       "dich_nghia": "Cô ấy mua quần áo ở cửa hàng.",
+       "giai_thich": "在 + nơi chốn + việc làm; 衣服 = quần áo.",
+       "phuong_an": [
+        {
+         "noi_dung": "Cô ấy mua táo ở cửa hàng.",
+         "la_dap_an_dung": false
+        },
+        {
+         "noi_dung": "Cô ấy mua quần áo ở cửa hàng.",
+         "la_dap_an_dung": true
+        },
+        {
+         "noi_dung": "Cô ấy ở nhà giặt quần áo.",
+         "la_dap_an_dung": false
+        }
+       ]
+      },
+      {
+       "dang": "chon_mot",
+       "noi_dung": "我 不 喜欢 吃 米饭。",
+       "pinyin": "Wǒ bù xǐhuan chī mǐfàn.",
+       "dich_nghia": "Tôi không thích ăn cơm.",
+       "giai_thich": "不喜欢 = không thích.",
+       "phuong_an": [
+        {
+         "noi_dung": "Tôi rất thích ăn cơm.",
+         "la_dap_an_dung": false
+        },
+        {
+         "noi_dung": "Tôi không thích uống trà.",
+         "la_dap_an_dung": false
+        },
+        {
+         "noi_dung": "Tôi không thích ăn cơm.",
+         "la_dap_an_dung": true
+        }
+       ]
+      },
+      {
+       "dang": "chon_mot",
+       "noi_dung": "这些 苹果 三十 块 钱。",
+       "pinyin": "Zhèxiē píngguǒ sānshí kuài qián.",
+       "dich_nghia": "Chỗ táo này 30 đồng.",
+       "giai_thich": "三十 = 30; 十三 mới là 13.",
+       "phuong_an": [
+        {
+         "noi_dung": "Chỗ táo này 30 đồng.",
+         "la_dap_an_dung": true
+        },
+        {
+         "noi_dung": "Chỗ táo này 13 đồng.",
+         "la_dap_an_dung": false
+        },
+        {
+         "noi_dung": "Tôi mua 30 quả táo.",
+         "la_dap_an_dung": false
+        }
+       ]
+      },
+      {
+       "dang": "chon_mot",
+       "noi_dung": "爸爸 在 饭店 工作。",
+       "pinyin": "Bàba zài fàndiàn gōngzuò.",
+       "dich_nghia": "Bố làm việc ở nhà hàng.",
+       "giai_thich": "工作 = làm việc, 饭店 = nhà hàng.",
+       "phuong_an": [
+        {
+         "noi_dung": "Bố ăn cơm ở nhà hàng.",
+         "la_dap_an_dung": false
+        },
+        {
+         "noi_dung": "Bố làm việc ở nhà hàng.",
+         "la_dap_an_dung": true
+        },
+        {
+         "noi_dung": "Bố làm việc ở bệnh viện.",
+         "la_dap_an_dung": false
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "cuoi_thua": [
+    {
+     "dang": "chon_mot",
+     "noi_dung": "你 想 吃 （　）？",
+     "pinyin": "Nǐ xiǎng chī _?",
+     "dich_nghia": "Bạn muốn ăn gì?",
+     "giai_thich": "吃什么 = ăn gì.",
+     "phuong_an": [
+      {
+       "noi_dung": "谁 [shéi]",
+       "la_dap_an_dung": false
+      },
+      {
+       "noi_dung": "什么 [shénme]",
+       "la_dap_an_dung": true
+      },
+      {
+       "noi_dung": "哪儿 [nǎr]",
+       "la_dap_an_dung": false
+      }
+     ]
+    },
+    {
+     "dang": "chon_mot",
+     "noi_dung": "我 去 商店 买 （　）。",
+     "pinyin": "Wǒ qù shāngdiàn mǎi _.",
+     "dich_nghia": "Tôi đến cửa hàng mua hoa quả.",
+     "giai_thich": "Ở cửa hàng mua được 水果 (hoa quả).",
+     "phuong_an": [
+      {
+       "noi_dung": "天气 [tiānqì]",
+       "la_dap_an_dung": false
+      },
+      {
+       "noi_dung": "医生 [yīshēng]",
+       "la_dap_an_dung": false
+      },
+      {
+       "noi_dung": "水果 [shuǐguǒ]",
+       "la_dap_an_dung": true
+      }
+     ]
+    },
+    {
+     "dang": "chon_mot",
+     "noi_dung": "这 个 （　） 很 漂亮。",
+     "pinyin": "Zhè ge _ hěn piàoliang.",
+     "dich_nghia": "Cái cốc này rất đẹp.",
+     "giai_thich": "个 đi với 杯子; cơm và trà không dùng 漂亮.",
+     "phuong_an": [
+      {
+       "noi_dung": "杯子 [bēizi]",
+       "la_dap_an_dung": true
+      },
+      {
+       "noi_dung": "米饭 [mǐfàn]",
+       "la_dap_an_dung": false
+      },
+      {
+       "noi_dung": "茶 [chá]",
+       "la_dap_an_dung": false
+      }
+     ]
+    },
+    {
+     "dang": "chon_mot",
+     "noi_dung": "你 喝 茶 吗？",
+     "pinyin": "Nǐ hē chá ma?",
+     "dich_nghia": "Bạn uống trà không? – Không, cảm ơn.",
+     "giai_thich": "Hỏi 喝…吗 thì trả lời 喝 / 不喝.",
+     "phuong_an": [
+      {
+       "noi_dung": "不 客气。 [Bú kèqi.]",
+       "la_dap_an_dung": false
+      },
+      {
+       "noi_dung": "不 喝， 谢谢。 [Bù hē, xièxie.]",
+       "la_dap_an_dung": true
+      },
+      {
+       "noi_dung": "我 叫 王 明。 [Wǒ jiào Wáng Míng.]",
+       "la_dap_an_dung": false
+      }
+     ]
+    },
+    {
+     "dang": "chon_mot",
+     "noi_dung": "衣服 多少 钱？",
+     "pinyin": "Yīfu duōshao qián?",
+     "dich_nghia": "Quần áo bao nhiêu tiền? – 80 đồng.",
+     "giai_thich": "多少钱 hỏi giá, trả lời bằng số tiền.",
+     "phuong_an": [
+      {
+       "noi_dung": "八 岁。 [Bā suì.]",
+       "la_dap_an_dung": false
+      },
+      {
+       "noi_dung": "八 个 人。 [Bā ge rén.]",
+       "la_dap_an_dung": false
+      },
+      {
+       "noi_dung": "八十 块。 [Bāshí kuài.]",
+       "la_dap_an_dung": true
+      }
+     ]
+    },
+    {
+     "dang": "chon_mot",
+     "noi_dung": "我 想 买 一些 苹果。",
+     "pinyin": "Wǒ xiǎng mǎi yìxiē píngguǒ.",
+     "dich_nghia": "Tôi muốn mua một ít táo.",
+     "giai_thich": "一些 = một ít, một vài.",
+     "phuong_an": [
+      {
+       "noi_dung": "Tôi muốn mua một ít táo.",
+       "la_dap_an_dung": true
+      },
+      {
+       "noi_dung": "Tôi muốn ăn một quả táo.",
+       "la_dap_an_dung": false
+      },
+      {
+       "noi_dung": "Tôi không muốn mua táo.",
+       "la_dap_an_dung": false
+      }
+     ]
+    },
+    {
+     "dang": "chon_mot",
+     "noi_dung": "我们 在 饭店 吃 饭。",
+     "pinyin": "Wǒmen zài fàndiàn chī fàn.",
+     "dich_nghia": "Chúng tôi ăn cơm ở nhà hàng.",
+     "giai_thich": "在饭店 = ở nhà hàng, 吃饭 = ăn cơm.",
+     "phuong_an": [
+      {
+       "noi_dung": "Chúng tôi làm việc ở nhà hàng.",
+       "la_dap_an_dung": false
+      },
+      {
+       "noi_dung": "Chúng tôi ăn cơm ở nhà hàng.",
+       "la_dap_an_dung": true
+      },
+      {
+       "noi_dung": "Chúng tôi ăn cơm ở nhà.",
+       "la_dap_an_dung": false
+      }
+     ]
+    },
+    {
+     "dang": "chon_mot",
+     "noi_dung": "我 （　） 一 杯 水。",
+     "pinyin": "Wǒ _ yì bēi shuǐ.",
+     "dich_nghia": "Tôi uống một cốc nước.",
+     "giai_thich": "喝 + đồ uống.",
+     "phuong_an": [
+      {
+       "noi_dung": "吃 [chī]",
+       "la_dap_an_dung": false
+      },
+      {
+       "noi_dung": "读 [dú]",
+       "la_dap_an_dung": false
+      },
+      {
+       "noi_dung": "喝 [hē]",
+       "la_dap_an_dung": true
+      }
+     ]
+    },
+    {
+     "dang": "chon_mot",
+     "noi_dung": "你 爱 喝 什么？",
+     "pinyin": "Nǐ ài hē shénme?",
+     "dich_nghia": "Bạn thích uống gì? – Tôi thích uống trà.",
+     "giai_thich": "Hỏi 爱喝什么 thì trả lời một đồ uống.",
+     "phuong_an": [
+      {
+       "noi_dung": "我 爱 喝 茶。 [Wǒ ài hē chá.]",
+       "la_dap_an_dung": true
+      },
+      {
+       "noi_dung": "我 爱 吃 菜。 [Wǒ ài chī cài.]",
+       "la_dap_an_dung": false
+      },
+      {
+       "noi_dung": "我 爱 我 妈妈。 [Wǒ ài wǒ māma.]",
+       "la_dap_an_dung": false
+      }
+     ]
+    },
+    {
+     "dang": "chon_mot",
+     "noi_dung": "商店 里 有 很 多 东西。",
+     "pinyin": "Shāngdiàn lǐ yǒu hěn duō dōngxi.",
+     "dich_nghia": "Trong cửa hàng có rất nhiều đồ.",
+     "giai_thich": "很多 = rất nhiều; 商店里 = trong cửa hàng.",
+     "phuong_an": [
+      {
+       "noi_dung": "Trong nhà có rất nhiều đồ.",
+       "la_dap_an_dung": false
+      },
+      {
+       "noi_dung": "Trong cửa hàng có rất nhiều đồ.",
+       "la_dap_an_dung": true
+      },
+      {
+       "noi_dung": "Cửa hàng có rất ít đồ.",
+       "la_dap_an_dung": false
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "ten": "Thời gian và thời tiết",
+   "muc_tieu": "Đọc hiểu câu hỏi giờ, ngày, thứ và câu nói về thời tiết",
+   "bai": [
+    {
+     "ten": "Hỏi giờ, hỏi ngày",
+     "cau": [
+      {
+       "dang": "chon_mot",
+       "noi_dung": "现在 几 （　）？",
+       "pinyin": "Xiànzài jǐ _?",
+       "dich_nghia": "Bây giờ mấy giờ?",
+       "giai_thich": "几点 hỏi giờ.",
+       "phuong_an": [
+        {
+         "noi_dung": "点 [diǎn]",
+         "la_dap_an_dung": true
+        },
+        {
+         "noi_dung": "块 [kuài]",
+         "la_dap_an_dung": false
+        },
+        {
+         "noi_dung": "岁 [suì]",
+         "la_dap_an_dung": false
+        }
+       ]
+      },
+      {
+       "dang": "chon_mot",
+       "noi_dung": "今天 星期 （　）？",
+       "pinyin": "Jīntiān xīngqī _?",
+       "dich_nghia": "Hôm nay thứ mấy?",
+       "giai_thich": "星期几 = thứ mấy.",
+       "phuong_an": [
+        {
+         "noi_dung": "谁 [shéi]",
+         "la_dap_an_dung": false
+        },
+        {
+         "noi_dung": "几 [jǐ]",
+         "la_dap_an_dung": true
+        },
+        {
+         "noi_dung": "哪儿 [nǎr]",
+         "la_dap_an_dung": false
+        }
+       ]
+      },
+      {
+       "dang": "chon_mot",
+       "noi_dung": "明天 是 几 月 几 （　）？",
+       "pinyin": "Míngtiān shì jǐ yuè jǐ _?",
+       "dich_nghia": "Ngày mai là ngày mấy tháng mấy?",
+       "giai_thich": "几月几号 = ngày mấy tháng mấy.",
+       "phuong_an": [
+        {
+         "noi_dung": "点 [diǎn]",
+         "la_dap_an_dung": false
+        },
+        {
+         "noi_dung": "个 [gè]",
+         "la_dap_an_dung": false
+        },
+        {
+         "noi_dung": "号 [hào]",
+         "la_dap_an_dung": true
+        }
+       ]
+      },
+      {
+       "dang": "chon_mot",
+       "noi_dung": "我 （　） 七 点 去 学校。",
+       "pinyin": "Wǒ _ qī diǎn qù xuéxiào.",
+       "dich_nghia": "Tôi đến trường lúc 7 giờ sáng.",
+       "giai_thich": "上午七点 = 7 giờ sáng.",
+       "phuong_an": [
+        {
+         "noi_dung": "上午 [shàngwǔ]",
+         "la_dap_an_dung": true
+        },
+        {
+         "noi_dung": "名字 [míngzi]",
+         "la_dap_an_dung": false
+        },
+        {
+         "noi_dung": "东西 [dōngxi]",
+         "la_dap_an_dung": false
+        }
+       ]
+      },
+      {
+       "dang": "chon_mot",
+       "noi_dung": "你 什么 （　） 回 家？",
+       "pinyin": "Nǐ shénme _ huí jiā?",
+       "dich_nghia": "Khi nào bạn về nhà?",
+       "giai_thich": "什么时候 = khi nào.",
+       "phuong_an": [
+        {
+         "noi_dung": "名字 [míngzi]",
+         "la_dap_an_dung": false
+        },
+        {
+         "noi_dung": "时候 [shíhou]",
+         "la_dap_an_dung": true
+        },
+        {
+         "noi_dung": "东西 [dōngxi]",
+         "la_dap_an_dung": false
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "ten": "Thời tiết",
+     "cau": [
+      {
+       "dang": "chon_mot",
+       "noi_dung": "今天 （　） 怎么样？",
+       "pinyin": "Jīntiān _ zěnmeyàng?",
+       "dich_nghia": "Hôm nay thời tiết thế nào?",
+       "giai_thich": "天气怎么样 = thời tiết thế nào.",
+       "phuong_an": [
+        {
+         "noi_dung": "时候 [shíhou]",
+         "la_dap_an_dung": false
+        },
+        {
+         "noi_dung": "名字 [míngzi]",
+         "la_dap_an_dung": false
+        },
+        {
+         "noi_dung": "天气 [tiānqì]",
+         "la_dap_an_dung": true
+        }
+       ]
+      },
+      {
+       "dang": "chon_mot",
+       "noi_dung": "今天 太 （　） 了！",
+       "pinyin": "Jīntiān tài _ le!",
+       "dich_nghia": "Hôm nay nóng quá!",
+       "giai_thich": "太 + tính từ + 了 = … quá.",
+       "phuong_an": [
+        {
+         "noi_dung": "热 [rè]",
+         "la_dap_an_dung": true
+        },
+        {
+         "noi_dung": "喝 [hē]",
+         "la_dap_an_dung": false
+        },
+        {
+         "noi_dung": "买 [mǎi]",
+         "la_dap_an_dung": false
+        }
+       ]
+      },
+      {
+       "dang": "chon_mot",
+       "noi_dung": "昨天 （　） 雨 了。",
+       "pinyin": "Zuótiān _ yǔ le.",
+       "dich_nghia": "Hôm qua trời mưa.",
+       "giai_thich": "下雨 = mưa.",
+       "phuong_an": [
+        {
+         "noi_dung": "上 [shàng]",
+         "la_dap_an_dung": false
+        },
+        {
+         "noi_dung": "下 [xià]",
+         "la_dap_an_dung": true
+        },
+        {
+         "noi_dung": "来 [lái]",
+         "la_dap_an_dung": false
+        }
+       ]
+      },
+      {
+       "dang": "chon_mot",
+       "noi_dung": "北京 今天 很 （　）。",
+       "pinyin": "Běijīng jīntiān hěn _.",
+       "dich_nghia": "Hôm nay Bắc Kinh rất lạnh.",
+       "giai_thich": "很 + tính từ: 冷 (lạnh).",
+       "phuong_an": [
+        {
+         "noi_dung": "多少 [duōshao]",
+         "la_dap_an_dung": false
+        },
+        {
+         "noi_dung": "时候 [shíhou]",
+         "la_dap_an_dung": false
+        },
+        {
+         "noi_dung": "冷 [lěng]",
+         "la_dap_an_dung": true
+        }
+       ]
+      },
+      {
+       "dang": "chon_mot",
+       "noi_dung": "明天 天气 怎么样？",
+       "pinyin": "Míngtiān tiānqì zěnmeyàng?",
+       "dich_nghia": "Thời tiết ngày mai thế nào? – Ngày mai rất nóng.",
+       "giai_thich": "Hỏi thời tiết thì trả lời nóng, lạnh, mưa…",
+       "phuong_an": [
+        {
+         "noi_dung": "明天 很 热。 [Míngtiān hěn rè.]",
+         "la_dap_an_dung": true
+        },
+        {
+         "noi_dung": "明天 星期一。 [Míngtiān xīngqīyī.]",
+         "la_dap_an_dung": false
+        },
+        {
+         "noi_dung": "明天 我 去 北京。 [Míngtiān wǒ qù Běijīng.]",
+         "la_dap_an_dung": false
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "ten": "Hỏi và trả lời",
+     "cau": [
+      {
+       "dang": "chon_mot",
+       "noi_dung": "你 几 岁 了？",
+       "pinyin": "Nǐ jǐ suì le?",
+       "dich_nghia": "Con mấy tuổi rồi? – Con 8 tuổi rồi.",
+       "giai_thich": "几岁 hỏi tuổi, trả lời bằng số + 岁.",
+       "phuong_an": [
+        {
+         "noi_dung": "八 点 了。 [Bā diǎn le.]",
+         "la_dap_an_dung": false
+        },
+        {
+         "noi_dung": "我 八 岁 了。 [Wǒ bā suì le.]",
+         "la_dap_an_dung": true
+        },
+        {
+         "noi_dung": "八 块 钱。 [Bā kuài qián.]",
+         "la_dap_an_dung": false
+        }
+       ]
+      },
+      {
+       "dang": "chon_mot",
+       "noi_dung": "现在 几 点？",
+       "pinyin": "Xiànzài jǐ diǎn?",
+       "dich_nghia": "Bây giờ mấy giờ? – 10 giờ 10 phút.",
+       "giai_thich": "几点 hỏi giờ, trả lời bằng 点 / 分.",
+       "phuong_an": [
+        {
+         "noi_dung": "十 岁。 [Shí suì.]",
+         "la_dap_an_dung": false
+        },
+        {
+         "noi_dung": "十 号。 [Shí hào.]",
+         "la_dap_an_dung": false
+        },
+        {
+         "noi_dung": "十 点 十 分。 [Shí diǎn shí fēn.]",
+         "la_dap_an_dung": true
+        }
+       ]
+      },
+      {
+       "dang": "chon_mot",
+       "noi_dung": "你 什么 时候 去 北京？",
+       "pinyin": "Nǐ shénme shíhou qù Běijīng?",
+       "dich_nghia": "Khi nào bạn đi Bắc Kinh? – Tháng sau.",
+       "giai_thich": "什么时候 hỏi thời gian.",
+       "phuong_an": [
+        {
+         "noi_dung": "下 个 月。 [Xià ge yuè.]",
+         "la_dap_an_dung": true
+        },
+        {
+         "noi_dung": "坐 飞机。 [Zuò fēijī.]",
+         "la_dap_an_dung": false
+        },
+        {
+         "noi_dung": "和 朋友。 [Hé péngyou.]",
+         "la_dap_an_dung": false
+        }
+       ]
+      },
+      {
+       "dang": "chon_mot",
+       "noi_dung": "今天 几 号？",
+       "pinyin": "Jīntiān jǐ hào?",
+       "dich_nghia": "Hôm nay ngày mấy? – Hôm nay ngày 9.",
+       "giai_thich": "几号 hỏi ngày trong tháng.",
+       "phuong_an": [
+        {
+         "noi_dung": "今天 很 热。 [Jīntiān hěn rè.]",
+         "la_dap_an_dung": false
+        },
+        {
+         "noi_dung": "今天 九 号。 [Jīntiān jiǔ hào.]",
+         "la_dap_an_dung": true
+        },
+        {
+         "noi_dung": "今天 九 点。 [Jīntiān jiǔ diǎn.]",
+         "la_dap_an_dung": false
+        }
+       ]
+      },
+      {
+       "dang": "chon_mot",
+       "noi_dung": "你 中午 在 哪儿 吃 饭？",
+       "pinyin": "Nǐ zhōngwǔ zài nǎr chī fàn?",
+       "dich_nghia": "Buổi trưa bạn ăn cơm ở đâu? – Ở trường.",
+       "giai_thich": "在哪儿 hỏi nơi chốn.",
+       "phuong_an": [
+        {
+         "noi_dung": "十二 点。 [Shí'èr diǎn.]",
+         "la_dap_an_dung": false
+        },
+        {
+         "noi_dung": "米饭。 [Mǐfàn.]",
+         "la_dap_an_dung": false
+        },
+        {
+         "noi_dung": "在 学校。 [Zài xuéxiào.]",
+         "la_dap_an_dung": true
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "ten": "Hiểu câu ngắn",
+     "cau": [
+      {
+       "dang": "chon_mot",
+       "noi_dung": "我 下午 三 点 回 家。",
+       "pinyin": "Wǒ xiàwǔ sān diǎn huí jiā.",
+       "dich_nghia": "3 giờ chiều tôi về nhà.",
+       "giai_thich": "下午 = buổi chiều, 回家 = về nhà.",
+       "phuong_an": [
+        {
+         "noi_dung": "3 giờ chiều tôi về nhà.",
+         "la_dap_an_dung": true
+        },
+        {
+         "noi_dung": "3 giờ sáng tôi về nhà.",
+         "la_dap_an_dung": false
+        },
+        {
+         "noi_dung": "3 giờ chiều tôi đi học.",
+         "la_dap_an_dung": false
+        }
+       ]
+      },
+      {
+       "dang": "chon_mot",
+       "noi_dung": "今天 星期六， 我 不 去 学校。",
+       "pinyin": "Jīntiān xīngqīliù, wǒ bú qù xuéxiào.",
+       "dich_nghia": "Hôm nay thứ Bảy, tôi không đến trường.",
+       "giai_thich": "星期六 = thứ Bảy, 不去 = không đi.",
+       "phuong_an": [
+        {
+         "noi_dung": "Hôm nay thứ Sáu, tôi đến trường.",
+         "la_dap_an_dung": false
+        },
+        {
+         "noi_dung": "Hôm nay thứ Bảy, tôi không đến trường.",
+         "la_dap_an_dung": true
+        },
+        {
+         "noi_dung": "Hôm nay thứ Bảy, tôi đi làm.",
+         "la_dap_an_dung": false
+        }
+       ]
+      },
+      {
+       "dang": "chon_mot",
+       "noi_dung": "昨天 下 雨 了， 很 冷。",
+       "pinyin": "Zuótiān xià yǔ le, hěn lěng.",
+       "dich_nghia": "Hôm qua trời mưa, rất lạnh.",
+       "giai_thich": "昨天 = hôm qua, 冷 = lạnh.",
+       "phuong_an": [
+        {
+         "noi_dung": "Hôm nay trời mưa, rất nóng.",
+         "la_dap_an_dung": false
+        },
+        {
+         "noi_dung": "Ngày mai trời mưa, rất lạnh.",
+         "la_dap_an_dung": false
+        },
+        {
+         "noi_dung": "Hôm qua trời mưa, rất lạnh.",
+         "la_dap_an_dung": true
+        }
+       ]
+      },
+      {
+       "dang": "chon_mot",
+       "noi_dung": "我 中午 十二 点 吃 饭。",
+       "pinyin": "Wǒ zhōngwǔ shí'èr diǎn chī fàn.",
+       "dich_nghia": "Tôi ăn cơm lúc 12 giờ trưa.",
+       "giai_thich": "中午十二点 = 12 giờ trưa.",
+       "phuong_an": [
+        {
+         "noi_dung": "Tôi ăn cơm lúc 12 giờ trưa.",
+         "la_dap_an_dung": true
+        },
+        {
+         "noi_dung": "Tôi đi ngủ lúc 12 giờ trưa.",
+         "la_dap_an_dung": false
+        },
+        {
+         "noi_dung": "Tôi ăn cơm lúc 2 giờ chiều.",
+         "la_dap_an_dung": false
+        }
+       ]
+      },
+      {
+       "dang": "chon_mot",
+       "noi_dung": "我 在 北京 住 了 三 年。",
+       "pinyin": "Wǒ zài Běijīng zhù le sān nián.",
+       "dich_nghia": "Tôi đã sống ở Bắc Kinh ba năm.",
+       "giai_thich": "住了三年 = đã sống ba năm; 年 = năm, 月 = tháng.",
+       "phuong_an": [
+        {
+         "noi_dung": "Tôi sẽ đến Bắc Kinh ba năm.",
+         "la_dap_an_dung": false
+        },
+        {
+         "noi_dung": "Tôi đã sống ở Bắc Kinh ba năm.",
+         "la_dap_an_dung": true
+        },
+        {
+         "noi_dung": "Tôi đã ở Bắc Kinh ba tháng.",
+         "la_dap_an_dung": false
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "cuoi_thua": [
+    {
+     "dang": "chon_mot",
+     "noi_dung": "今天 （　） 很 冷。",
+     "pinyin": "Jīntiān _ hěn lěng.",
+     "dich_nghia": "Hôm nay thời tiết rất lạnh.",
+     "giai_thich": "天气很冷 = thời tiết rất lạnh.",
+     "phuong_an": [
+      {
+       "noi_dung": "米饭 [mǐfàn]",
+       "la_dap_an_dung": false
+      },
+      {
+       "noi_dung": "天气 [tiānqì]",
+       "la_dap_an_dung": true
+      },
+      {
+       "noi_dung": "杯子 [bēizi]",
+       "la_dap_an_dung": false
+      }
+     ]
+    },
+    {
+     "dang": "chon_mot",
+     "noi_dung": "现在 是 （　） 十二 点。",
+     "pinyin": "Xiànzài shì _ shí'èr diǎn.",
+     "dich_nghia": "Bây giờ là 12 giờ trưa.",
+     "giai_thich": "中午十二点 = 12 giờ trưa.",
+     "phuong_an": [
+      {
+       "noi_dung": "星期 [xīngqī]",
+       "la_dap_an_dung": false
+      },
+      {
+       "noi_dung": "月 [yuè]",
+       "la_dap_an_dung": false
+      },
+      {
+       "noi_dung": "中午 [zhōngwǔ]",
+       "la_dap_an_dung": true
+      }
+     ]
+    },
+    {
+     "dang": "chon_mot",
+     "noi_dung": "你 几 点 （　）？",
+     "pinyin": "Nǐ jǐ diǎn _?",
+     "dich_nghia": "Bạn đi ngủ lúc mấy giờ?",
+     "giai_thich": "几点 + động từ: 几点睡觉 = mấy giờ đi ngủ.",
+     "phuong_an": [
+      {
+       "noi_dung": "睡觉 [shuìjiào]",
+       "la_dap_an_dung": true
+      },
+      {
+       "noi_dung": "名字 [míngzi]",
+       "la_dap_an_dung": false
+      },
+      {
+       "noi_dung": "衣服 [yīfu]",
+       "la_dap_an_dung": false
+      }
+     ]
+    },
+    {
+     "dang": "chon_mot",
+     "noi_dung": "今天 天气 怎么样？",
+     "pinyin": "Jīntiān tiānqì zěnmeyàng?",
+     "dich_nghia": "Thời tiết hôm nay thế nào? – Rất đẹp, không nóng lắm.",
+     "giai_thich": "Hỏi thời tiết thì trả lời về nóng, lạnh.",
+     "phuong_an": [
+      {
+       "noi_dung": "今天 星期三。 [Jīntiān xīngqīsān.]",
+       "la_dap_an_dung": false
+      },
+      {
+       "noi_dung": "很 好， 不 太 热。 [Hěn hǎo, bú tài rè.]",
+       "la_dap_an_dung": true
+      },
+      {
+       "noi_dung": "我 在 家。 [Wǒ zài jiā.]",
+       "la_dap_an_dung": false
+      }
+     ]
+    },
+    {
+     "dang": "chon_mot",
+     "noi_dung": "你 是 什么 时候 来 的？",
+     "pinyin": "Nǐ shì shénme shíhou lái de?",
+     "dich_nghia": "Bạn đến lúc nào? – Hôm qua.",
+     "giai_thich": "什么时候 hỏi thời gian, không hỏi phương tiện hay đi cùng ai.",
+     "phuong_an": [
+      {
+       "noi_dung": "坐 飞机 来 的。 [Zuò fēijī lái de.]",
+       "la_dap_an_dung": false
+      },
+      {
+       "noi_dung": "和 妈妈 来 的。 [Hé māma lái de.]",
+       "la_dap_an_dung": false
+      },
+      {
+       "noi_dung": "昨天 来 的。 [Zuótiān lái de.]",
+       "la_dap_an_dung": true
+      }
+     ]
+    },
+    {
+     "dang": "chon_mot",
+     "noi_dung": "你 女儿 几 岁？",
+     "pinyin": "Nǐ nǚ'ér jǐ suì?",
+     "dich_nghia": "Con gái bạn mấy tuổi? – Cháu 6 tuổi.",
+     "giai_thich": "几岁 hỏi tuổi.",
+     "phuong_an": [
+      {
+       "noi_dung": "她 六 岁。 [Tā liù suì.]",
+       "la_dap_an_dung": true
+      },
+      {
+       "noi_dung": "她 很 漂亮。 [Tā hěn piàoliang.]",
+       "la_dap_an_dung": false
+      },
+      {
+       "noi_dung": "她 在 学校。 [Tā zài xuéxiào.]",
+       "la_dap_an_dung": false
+      }
+     ]
+    },
+    {
+     "dang": "chon_mot",
+     "noi_dung": "下午 我 和 朋友 去 看 电影。",
+     "pinyin": "Xiàwǔ wǒ hé péngyou qù kàn diànyǐng.",
+     "dich_nghia": "Buổi chiều tôi đi xem phim với bạn.",
+     "giai_thich": "下午 = buổi chiều, 看电影 = xem phim.",
+     "phuong_an": [
+      {
+       "noi_dung": "Buổi sáng tôi đi xem phim với bạn.",
+       "la_dap_an_dung": false
+      },
+      {
+       "noi_dung": "Buổi chiều tôi đi xem phim với bạn.",
+       "la_dap_an_dung": true
+      },
+      {
+       "noi_dung": "Buổi chiều tôi đi mua sắm với bạn.",
+       "la_dap_an_dung": false
+      }
+     ]
+    },
+    {
+     "dang": "chon_mot",
+     "noi_dung": "星期天 天气 很 热。",
+     "pinyin": "Xīngqītiān tiānqì hěn rè.",
+     "dich_nghia": "Chủ nhật trời rất nóng.",
+     "giai_thich": "星期天 = Chủ nhật, 热 = nóng.",
+     "phuong_an": [
+      {
+       "noi_dung": "Chủ nhật trời rất lạnh.",
+       "la_dap_an_dung": false
+      },
+      {
+       "noi_dung": "Thứ Hai trời rất nóng.",
+       "la_dap_an_dung": false
+      },
+      {
+       "noi_dung": "Chủ nhật trời rất nóng.",
+       "la_dap_an_dung": true
+      }
+     ]
+    },
+    {
+     "dang": "chon_mot",
+     "noi_dung": "我 七 月 去 中国。",
+     "pinyin": "Wǒ qī yuè qù Zhōngguó.",
+     "dich_nghia": "Tháng 7 tôi đi Trung Quốc.",
+     "giai_thich": "七月 = tháng 7; 七号 mới là ngày 7.",
+     "phuong_an": [
+      {
+       "noi_dung": "Tháng 7 tôi đi Trung Quốc.",
+       "la_dap_an_dung": true
+      },
+      {
+       "noi_dung": "Ngày 7 tôi đi Trung Quốc.",
+       "la_dap_an_dung": false
+      },
+      {
+       "noi_dung": "Tháng 7 tôi về Việt Nam.",
+       "la_dap_an_dung": false
+      }
+     ]
+    },
+    {
+     "dang": "chon_mot",
+     "noi_dung": "明天 （　） 下 雨 吗？",
+     "pinyin": "Míngtiān _ xià yǔ ma?",
+     "dich_nghia": "Ngày mai có mưa không?",
+     "giai_thich": "会 + động từ = sẽ (dự đoán): 会下雨.",
+     "phuong_an": [
+      {
+       "noi_dung": "是 [shì]",
+       "la_dap_an_dung": false
+      },
+      {
+       "noi_dung": "会 [huì]",
+       "la_dap_an_dung": true
+      },
+      {
+       "noi_dung": "叫 [jiào]",
+       "la_dap_an_dung": false
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "ten": "Nơi chốn và đi lại",
+   "muc_tieu": "Đọc hiểu câu về vị trí, phương tiện và hỏi đường",
+   "bai": [
+    {
+     "ten": "Ở đâu",
+     "cau": [
+      {
+       "dang": "chon_mot",
+       "noi_dung": "你 家 在 （　）？",
+       "pinyin": "Nǐ jiā zài _?",
+       "dich_nghia": "Nhà bạn ở đâu?",
+       "giai_thich": "在哪儿 = ở đâu.",
+       "phuong_an": [
+        {
+         "noi_dung": "哪儿 [nǎr]",
+         "la_dap_an_dung": true
+        },
+        {
+         "noi_dung": "什么 [shénme]",
+         "la_dap_an_dung": false
+        },
+        {
+         "noi_dung": "几 [jǐ]",
+         "la_dap_an_dung": false
+        }
+       ]
+      },
+      {
+       "dang": "chon_mot",
+       "noi_dung": "我 住 （　） 北京。",
+       "pinyin": "Wǒ zhù _ Běijīng.",
+       "dich_nghia": "Tôi sống ở Bắc Kinh.",
+       "giai_thich": "住在 + nơi chốn = sống ở.",
+       "phuong_an": [
+        {
+         "noi_dung": "是 [shì]",
+         "la_dap_an_dung": false
+        },
+        {
+         "noi_dung": "在 [zài]",
+         "la_dap_an_dung": true
+        },
+        {
+         "noi_dung": "有 [yǒu]",
+         "la_dap_an_dung": false
+        }
+       ]
+      },
+      {
+       "dang": "chon_mot",
+       "noi_dung": "书 在 桌子 （　）。",
+       "pinyin": "Shū zài zhuōzi _.",
+       "dich_nghia": "Sách ở trên bàn.",
+       "giai_thich": "桌子上 = trên bàn.",
+       "phuong_an": [
+        {
+         "noi_dung": "来 [lái]",
+         "la_dap_an_dung": false
+        },
+        {
+         "noi_dung": "去 [qù]",
+         "la_dap_an_dung": false
+        },
+        {
+         "noi_dung": "上 [shàng]",
+         "la_dap_an_dung": true
+        }
+       ]
+      },
+      {
+       "dang": "chon_mot",
+       "noi_dung": "猫 在 椅子 （　）。",
+       "pinyin": "Māo zài yǐzi _.",
+       "dich_nghia": "Con mèo ở phía sau cái ghế.",
+       "giai_thich": "后面 = phía sau.",
+       "phuong_an": [
+        {
+         "noi_dung": "后面 [hòumiàn]",
+         "la_dap_an_dung": true
+        },
+        {
+         "noi_dung": "名字 [míngzi]",
+         "la_dap_an_dung": false
+        },
+        {
+         "noi_dung": "时候 [shíhou]",
+         "la_dap_an_dung": false
+        }
+       ]
+      },
+      {
+       "dang": "chon_mot",
+       "noi_dung": "医院 在 学校 （　）。",
+       "pinyin": "Yīyuàn zài xuéxiào _.",
+       "dich_nghia": "Bệnh viện ở phía trước trường học.",
+       "giai_thich": "前面 = phía trước.",
+       "phuong_an": [
+        {
+         "noi_dung": "工作 [gōngzuò]",
+         "la_dap_an_dung": false
+        },
+        {
+         "noi_dung": "前面 [qiánmiàn]",
+         "la_dap_an_dung": true
+        },
+        {
+         "noi_dung": "学习 [xuéxí]",
+         "la_dap_an_dung": false
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "ten": "Đi lại",
+     "cau": [
+      {
+       "dang": "chon_mot",
+       "noi_dung": "我 （　） 出租车 去 医院。",
+       "pinyin": "Wǒ _ chūzūchē qù yīyuàn.",
+       "dich_nghia": "Tôi đi taxi đến bệnh viện.",
+       "giai_thich": "坐 + phương tiện; 做 (làm) đọc giống nhưng khác nghĩa.",
+       "phuong_an": [
+        {
+         "noi_dung": "做 [zuò]",
+         "la_dap_an_dung": false
+        },
+        {
+         "noi_dung": "吃 [chī]",
+         "la_dap_an_dung": false
+        },
+        {
+         "noi_dung": "坐 [zuò]",
+         "la_dap_an_dung": true
+        }
+       ]
+      },
+      {
+       "dang": "chon_mot",
+       "noi_dung": "他 坐 （　） 去 北京。",
+       "pinyin": "Tā zuò _ qù Běijīng.",
+       "dich_nghia": "Anh ấy đi máy bay đến Bắc Kinh.",
+       "giai_thich": "坐飞机 = đi máy bay.",
+       "phuong_an": [
+        {
+         "noi_dung": "飞机 [fēijī]",
+         "la_dap_an_dung": true
+        },
+        {
+         "noi_dung": "电脑 [diànnǎo]",
+         "la_dap_an_dung": false
+        },
+        {
+         "noi_dung": "电视 [diànshì]",
+         "la_dap_an_dung": false
+        }
+       ]
+      },
+      {
+       "dang": "chon_mot",
+       "noi_dung": "我 明天 （　） 中国。",
+       "pinyin": "Wǒ míngtiān _ Zhōngguó.",
+       "dich_nghia": "Ngày mai tôi về Trung Quốc.",
+       "giai_thich": "回 + nơi chốn = về.",
+       "phuong_an": [
+        {
+         "noi_dung": "叫 [jiào]",
+         "la_dap_an_dung": false
+        },
+        {
+         "noi_dung": "回 [huí]",
+         "la_dap_an_dung": true
+        },
+        {
+         "noi_dung": "喝 [hē]",
+         "la_dap_an_dung": false
+        }
+       ]
+      },
+      {
+       "dang": "chon_mot",
+       "noi_dung": "你 （　） 哪儿？",
+       "pinyin": "Nǐ _ nǎr?",
+       "dich_nghia": "Bạn đi đâu?",
+       "giai_thich": "去哪儿 = đi đâu.",
+       "phuong_an": [
+        {
+         "noi_dung": "喝 [hē]",
+         "la_dap_an_dung": false
+        },
+        {
+         "noi_dung": "买 [mǎi]",
+         "la_dap_an_dung": false
+        },
+        {
+         "noi_dung": "去 [qù]",
+         "la_dap_an_dung": true
+        }
+       ]
+      },
+      {
+       "dang": "chon_mot",
+       "noi_dung": "王 老师 （　） 了 吗？",
+       "pinyin": "Wáng lǎoshī _ le ma?",
+       "dich_nghia": "Thầy Vương đến chưa?",
+       "giai_thich": "来了吗 = đến chưa.",
+       "phuong_an": [
+        {
+         "noi_dung": "来 [lái]",
+         "la_dap_an_dung": true
+        },
+        {
+         "noi_dung": "书 [shū]",
+         "la_dap_an_dung": false
+        },
+        {
+         "noi_dung": "多 [duō]",
+         "la_dap_an_dung": false
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "ten": "Hỏi và trả lời",
+     "cau": [
+      {
+       "dang": "chon_mot",
+       "noi_dung": "你 家 在 哪儿？",
+       "pinyin": "Nǐ jiā zài nǎr?",
+       "dich_nghia": "Nhà bạn ở đâu? – Ở Bắc Kinh.",
+       "giai_thich": "哪儿 hỏi nơi chốn.",
+       "phuong_an": [
+        {
+         "noi_dung": "有 四 个 人。 [Yǒu sì ge rén.]",
+         "la_dap_an_dung": false
+        },
+        {
+         "noi_dung": "在 北京。 [Zài Běijīng.]",
+         "la_dap_an_dung": true
+        },
+        {
+         "noi_dung": "我 很 好。 [Wǒ hěn hǎo.]",
+         "la_dap_an_dung": false
+        }
+       ]
+      },
+      {
+       "dang": "chon_mot",
+       "noi_dung": "你 怎么 去 学校？",
+       "pinyin": "Nǐ zěnme qù xuéxiào?",
+       "dich_nghia": "Bạn đến trường bằng cách nào? – Đi taxi.",
+       "giai_thich": "怎么去 hỏi cách đi, phương tiện.",
+       "phuong_an": [
+        {
+         "noi_dung": "上午 八 点。 [Shàngwǔ bā diǎn.]",
+         "la_dap_an_dung": false
+        },
+        {
+         "noi_dung": "和 同学 去。 [Hé tóngxué qù.]",
+         "la_dap_an_dung": false
+        },
+        {
+         "noi_dung": "坐 出租车 去。 [Zuò chūzūchē qù.]",
+         "la_dap_an_dung": true
+        }
+       ]
+      },
+      {
+       "dang": "chon_mot",
+       "noi_dung": "我 的 书 在 哪儿？",
+       "pinyin": "Wǒ de shū zài nǎr?",
+       "dich_nghia": "Sách của tôi ở đâu? – Ở trên bàn.",
+       "giai_thich": "哪儿 hỏi vị trí.",
+       "phuong_an": [
+        {
+         "noi_dung": "在 桌子 上。 [Zài zhuōzi shang.]",
+         "la_dap_an_dung": true
+        },
+        {
+         "noi_dung": "是 汉语 书。 [Shì Hànyǔ shū.]",
+         "la_dap_an_dung": false
+        },
+        {
+         "noi_dung": "很 多。 [Hěn duō.]",
+         "la_dap_an_dung": false
+        }
+       ]
+      },
+      {
+       "dang": "chon_mot",
+       "noi_dung": "这 是 哪儿？",
+       "pinyin": "Zhè shì nǎr?",
+       "dich_nghia": "Đây là đâu? – Đây là nhà tôi.",
+       "giai_thich": "哪儿 hỏi nơi chốn, trả lời bằng một địa điểm.",
+       "phuong_an": [
+        {
+         "noi_dung": "这 是 我 妈妈。 [Zhè shì wǒ māma.]",
+         "la_dap_an_dung": false
+        },
+        {
+         "noi_dung": "这 是 我 家。 [Zhè shì wǒ jiā.]",
+         "la_dap_an_dung": true
+        },
+        {
+         "noi_dung": "这 是 苹果。 [Zhè shì píngguǒ.]",
+         "la_dap_an_dung": false
+        }
+       ]
+      },
+      {
+       "dang": "chon_mot",
+       "noi_dung": "他 在 家 吗？",
+       "pinyin": "Tā zài jiā ma?",
+       "dich_nghia": "Anh ấy có ở nhà không? – Không, anh ấy đi bệnh viện rồi.",
+       "giai_thich": "Hỏi 在…吗 thì trả lời 在 / 不在.",
+       "phuong_an": [
+        {
+         "noi_dung": "他 是 医生。 [Tā shì yīshēng.]",
+         "la_dap_an_dung": false
+        },
+        {
+         "noi_dung": "他 叫 李 明。 [Tā jiào Lǐ Míng.]",
+         "la_dap_an_dung": false
+        },
+        {
+         "noi_dung": "不 在， 他 去 医院 了。 [Bú zài, tā qù yīyuàn le.]",
+         "la_dap_an_dung": true
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "ten": "Hiểu câu ngắn",
+     "cau": [
+      {
+       "dang": "chon_mot",
+       "noi_dung": "我 家 在 学校 后面。",
+       "pinyin": "Wǒ jiā zài xuéxiào hòumiàn.",
+       "dich_nghia": "Nhà tôi ở phía sau trường học.",
+       "giai_thich": "A 在 B 后面 = A ở phía sau B.",
+       "phuong_an": [
+        {
+         "noi_dung": "Nhà tôi ở phía sau trường học.",
+         "la_dap_an_dung": true
+        },
+        {
+         "noi_dung": "Nhà tôi ở phía trước trường học.",
+         "la_dap_an_dung": false
+        },
+        {
+         "noi_dung": "Trường tôi ở phía sau nhà.",
+         "la_dap_an_dung": false
+        }
+       ]
+      },
+      {
+       "dang": "chon_mot",
+       "noi_dung": "他 坐 飞机 回 中国 了。",
+       "pinyin": "Tā zuò fēijī huí Zhōngguó le.",
+       "dich_nghia": "Anh ấy đã đi máy bay về Trung Quốc.",
+       "giai_thich": "坐飞机 = đi máy bay, 回中国 = về Trung Quốc.",
+       "phuong_an": [
+        {
+         "noi_dung": "Anh ấy đã đi taxi về Trung Quốc.",
+         "la_dap_an_dung": false
+        },
+        {
+         "noi_dung": "Anh ấy đã đi máy bay về Trung Quốc.",
+         "la_dap_an_dung": true
+        },
+        {
+         "noi_dung": "Anh ấy đã đi máy bay sang Việt Nam.",
+         "la_dap_an_dung": false
+        }
+       ]
+      },
+      {
+       "dang": "chon_mot",
+       "noi_dung": "小 猫 在 椅子 上。",
+       "pinyin": "Xiǎo māo zài yǐzi shang.",
+       "dich_nghia": "Chú mèo con ở trên ghế.",
+       "giai_thich": "猫 = mèo, 椅子 = ghế, 上 = trên.",
+       "phuong_an": [
+        {
+         "noi_dung": "Chú chó con ở trên ghế.",
+         "la_dap_an_dung": false
+        },
+        {
+         "noi_dung": "Chú mèo con ở dưới bàn.",
+         "la_dap_an_dung": false
+        },
+        {
+         "noi_dung": "Chú mèo con ở trên ghế.",
+         "la_dap_an_dung": true
+        }
+       ]
+      },
+      {
+       "dang": "chon_mot",
+       "noi_dung": "商店 在 医院 前面。",
+       "pinyin": "Shāngdiàn zài yīyuàn qiánmiàn.",
+       "dich_nghia": "Cửa hàng ở phía trước bệnh viện.",
+       "giai_thich": "A 在 B 前面 = A ở phía trước B.",
+       "phuong_an": [
+        {
+         "noi_dung": "Cửa hàng ở phía trước bệnh viện.",
+         "la_dap_an_dung": true
+        },
+        {
+         "noi_dung": "Bệnh viện ở phía trước cửa hàng.",
+         "la_dap_an_dung": false
+        },
+        {
+         "noi_dung": "Cửa hàng ở phía sau bệnh viện.",
+         "la_dap_an_dung": false
+        }
+       ]
+      },
+      {
+       "dang": "chon_mot",
+       "noi_dung": "李 先生 住 在 北京。",
+       "pinyin": "Lǐ xiānsheng zhù zài Běijīng.",
+       "dich_nghia": "Ông Lý sống ở Bắc Kinh.",
+       "giai_thich": "先生 = ông, 住在 = sống ở.",
+       "phuong_an": [
+        {
+         "noi_dung": "Ông Lý làm việc ở Bắc Kinh.",
+         "la_dap_an_dung": false
+        },
+        {
+         "noi_dung": "Ông Lý sống ở Bắc Kinh.",
+         "la_dap_an_dung": true
+        },
+        {
+         "noi_dung": "Cô Lý sống ở Bắc Kinh.",
+         "la_dap_an_dung": false
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "cuoi_thua": [
+    {
+     "dang": "chon_mot",
+     "noi_dung": "我 的 杯子 在 （　）？",
+     "pinyin": "Wǒ de bēizi zài _?",
+     "dich_nghia": "Cái cốc của tôi ở đâu?",
+     "giai_thich": "在哪儿 = ở đâu.",
+     "phuong_an": [
+      {
+       "noi_dung": "谁 [shéi]",
+       "la_dap_an_dung": false
+      },
+      {
+       "noi_dung": "哪儿 [nǎr]",
+       "la_dap_an_dung": true
+      },
+      {
+       "noi_dung": "几 [jǐ]",
+       "la_dap_an_dung": false
+      }
+     ]
+    },
+    {
+     "dang": "chon_mot",
+     "noi_dung": "我们 坐 （　） 去 商店。",
+     "pinyin": "Wǒmen zuò _ qù shāngdiàn.",
+     "dich_nghia": "Chúng tôi đi taxi đến cửa hàng.",
+     "giai_thich": "坐出租车 = đi taxi.",
+     "phuong_an": [
+      {
+       "noi_dung": "米饭 [mǐfàn]",
+       "la_dap_an_dung": false
+      },
+      {
+       "noi_dung": "衣服 [yīfu]",
+       "la_dap_an_dung": false
+      },
+      {
+       "noi_dung": "出租车 [chūzūchē]",
+       "la_dap_an_dung": true
+      }
+     ]
+    },
+    {
+     "dang": "chon_mot",
+     "noi_dung": "小 狗 在 桌子 （　）。",
+     "pinyin": "Xiǎo gǒu zài zhuōzi _.",
+     "dich_nghia": "Chú chó con ở dưới bàn.",
+     "giai_thich": "桌子下 = dưới bàn.",
+     "phuong_an": [
+      {
+       "noi_dung": "下 [xià]",
+       "la_dap_an_dung": true
+      },
+      {
+       "noi_dung": "喝 [hē]",
+       "la_dap_an_dung": false
+      },
+      {
+       "noi_dung": "叫 [jiào]",
+       "la_dap_an_dung": false
+      }
+     ]
+    },
+    {
+     "dang": "chon_mot",
+     "noi_dung": "你 怎么 去 北京？",
+     "pinyin": "Nǐ zěnme qù Běijīng?",
+     "dich_nghia": "Bạn đi Bắc Kinh bằng gì? – Đi máy bay.",
+     "giai_thich": "怎么去 hỏi phương tiện, không hỏi thời gian.",
+     "phuong_an": [
+      {
+       "noi_dung": "明天 去。 [Míngtiān qù.]",
+       "la_dap_an_dung": false
+      },
+      {
+       "noi_dung": "坐 飞机 去。 [Zuò fēijī qù.]",
+       "la_dap_an_dung": true
+      },
+      {
+       "noi_dung": "北京 很 大。 [Běijīng hěn dà.]",
+       "la_dap_an_dung": false
+      }
+     ]
+    },
+    {
+     "dang": "chon_mot",
+     "noi_dung": "你 在 哪儿 工作？",
+     "pinyin": "Nǐ zài nǎr gōngzuò?",
+     "dich_nghia": "Bạn làm việc ở đâu? – Ở bệnh viện.",
+     "giai_thich": "在哪儿工作 = làm việc ở đâu.",
+     "phuong_an": [
+      {
+       "noi_dung": "坐 出租车。 [Zuò chūzūchē.]",
+       "la_dap_an_dung": false
+      },
+      {
+       "noi_dung": "很 好。 [Hěn hǎo.]",
+       "la_dap_an_dung": false
+      },
+      {
+       "noi_dung": "在 医院。 [Zài yīyuàn.]",
+       "la_dap_an_dung": true
+      }
+     ]
+    },
+    {
+     "dang": "chon_mot",
+     "noi_dung": "医院 在 商店 后面。",
+     "pinyin": "Yīyuàn zài shāngdiàn hòumiàn.",
+     "dich_nghia": "Bệnh viện ở phía sau cửa hàng.",
+     "giai_thich": "A 在 B 后面 = A ở phía sau B.",
+     "phuong_an": [
+      {
+       "noi_dung": "Bệnh viện ở phía sau cửa hàng.",
+       "la_dap_an_dung": true
+      },
+      {
+       "noi_dung": "Bệnh viện ở phía trước cửa hàng.",
+       "la_dap_an_dung": false
+      },
+      {
+       "noi_dung": "Cửa hàng ở phía sau bệnh viện.",
+       "la_dap_an_dung": false
+      }
+     ]
+    },
+    {
+     "dang": "chon_mot",
+     "noi_dung": "我 下午 回 家。",
+     "pinyin": "Wǒ xiàwǔ huí jiā.",
+     "dich_nghia": "Buổi chiều tôi về nhà.",
+     "giai_thich": "下午 = buổi chiều; 中午 = buổi trưa.",
+     "phuong_an": [
+      {
+       "noi_dung": "Buổi trưa tôi về nhà.",
+       "la_dap_an_dung": false
+      },
+      {
+       "noi_dung": "Buổi chiều tôi về nhà.",
+       "la_dap_an_dung": true
+      },
+      {
+       "noi_dung": "Buổi chiều tôi đi học.",
+       "la_dap_an_dung": false
+      }
+     ]
+    },
+    {
+     "dang": "chon_mot",
+     "noi_dung": "他 是 （　） 国 人？",
+     "pinyin": "Tā shì _ guó rén?",
+     "dich_nghia": "Anh ấy là người nước nào?",
+     "giai_thich": "哪国人 hỏi quốc tịch.",
+     "phuong_an": [
+      {
+       "noi_dung": "谁 [shéi]",
+       "la_dap_an_dung": false
+      },
+      {
+       "noi_dung": "几 [jǐ]",
+       "la_dap_an_dung": false
+      },
+      {
+       "noi_dung": "哪 [nǎ]",
+       "la_dap_an_dung": true
+      }
+     ]
+    },
+    {
+     "dang": "chon_mot",
+     "noi_dung": "你 的 猫 在 哪儿？",
+     "pinyin": "Nǐ de māo zài nǎr?",
+     "dich_nghia": "Con mèo của bạn ở đâu? – Ở trên ghế.",
+     "giai_thich": "哪儿 hỏi vị trí.",
+     "phuong_an": [
+      {
+       "noi_dung": "在 椅子 上。 [Zài yǐzi shang.]",
+       "la_dap_an_dung": true
+      },
+      {
+       "noi_dung": "很 小。 [Hěn xiǎo.]",
+       "la_dap_an_dung": false
+      },
+      {
+       "noi_dung": "是 我 的。 [Shì wǒ de.]",
+       "la_dap_an_dung": false
+      }
+     ]
+    },
+    {
+     "dang": "chon_mot",
+     "noi_dung": "前面 那 个 人 是 我 的 老师。",
+     "pinyin": "Qiánmiàn nà ge rén shì wǒ de lǎoshī.",
+     "dich_nghia": "Người phía trước kia là thầy giáo của tôi.",
+     "giai_thich": "前面 = phía trước, 老师 = thầy giáo.",
+     "phuong_an": [
+      {
+       "noi_dung": "Người phía sau kia là thầy giáo của tôi.",
+       "la_dap_an_dung": false
+      },
+      {
+       "noi_dung": "Người phía trước kia là thầy giáo của tôi.",
+       "la_dap_an_dung": true
+      },
+      {
+       "noi_dung": "Người phía trước kia là bạn học của tôi.",
+       "la_dap_an_dung": false
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "ten": "Học tập và sở thích",
+   "muc_tieu": "Đọc hiểu câu về học tiếng Hán, khả năng và sở thích",
+   "bai": [
+    {
+     "ten": "Học ở trường",
+     "cau": [
+      {
+       "dang": "chon_mot",
+       "noi_dung": "我 在 学校 学习 （　）。",
+       "pinyin": "Wǒ zài xuéxiào xuéxí _.",
+       "dich_nghia": "Tôi học tiếng Hán ở trường.",
+       "giai_thich": "学习汉语 = học tiếng Hán.",
+       "phuong_an": [
+        {
+         "noi_dung": "汉语 [Hànyǔ]",
+         "la_dap_an_dung": true
+        },
+        {
+         "noi_dung": "米饭 [mǐfàn]",
+         "la_dap_an_dung": false
+        },
+        {
+         "noi_dung": "天气 [tiānqì]",
+         "la_dap_an_dung": false
+        }
+       ]
+      },
+      {
+       "dang": "chon_mot",
+       "noi_dung": "这 个 字 怎么 （　）？",
+       "pinyin": "Zhè ge zì zěnme _?",
+       "dich_nghia": "Chữ này đọc thế nào?",
+       "giai_thich": "怎么读 = đọc thế nào.",
+       "phuong_an": [
+        {
+         "noi_dung": "喝 [hē]",
+         "la_dap_an_dung": false
+        },
+        {
+         "noi_dung": "读 [dú]",
+         "la_dap_an_dung": true
+        },
+        {
+         "noi_dung": "坐 [zuò]",
+         "la_dap_an_dung": false
+        }
+       ]
+      },
+      {
+       "dang": "chon_mot",
+       "noi_dung": "我 会 （　） 汉语。",
+       "pinyin": "Wǒ huì _ Hànyǔ.",
+       "dich_nghia": "Tôi biết nói tiếng Hán.",
+       "giai_thich": "会说汉语 = biết nói tiếng Hán.",
+       "phuong_an": [
+        {
+         "noi_dung": "喝 [hē]",
+         "la_dap_an_dung": false
+        },
+        {
+         "noi_dung": "买 [mǎi]",
+         "la_dap_an_dung": false
+        },
+        {
+         "noi_dung": "说 [shuō]",
+         "la_dap_an_dung": true
+        }
+       ]
+      },
+      {
+       "dang": "chon_mot",
+       "noi_dung": "你 （　） 写 这 个 字 吗？",
+       "pinyin": "Nǐ _ xiě zhè ge zì ma?",
+       "dich_nghia": "Bạn biết viết chữ này không?",
+       "giai_thich": "会 + động từ = biết (làm gì).",
+       "phuong_an": [
+        {
+         "noi_dung": "会 [huì]",
+         "la_dap_an_dung": true
+        },
+        {
+         "noi_dung": "是 [shì]",
+         "la_dap_an_dung": false
+        },
+        {
+         "noi_dung": "叫 [jiào]",
+         "la_dap_an_dung": false
+        }
+       ]
+      },
+      {
+       "dang": "chon_mot",
+       "noi_dung": "我 喜欢 （　） 书。",
+       "pinyin": "Wǒ xǐhuan _ shū.",
+       "dich_nghia": "Tôi thích đọc sách.",
+       "giai_thich": "看书 = đọc sách.",
+       "phuong_an": [
+        {
+         "noi_dung": "喝 [hē]",
+         "la_dap_an_dung": false
+        },
+        {
+         "noi_dung": "看 [kàn]",
+         "la_dap_an_dung": true
+        },
+        {
+         "noi_dung": "坐 [zuò]",
+         "la_dap_an_dung": false
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "ten": "Sở thích",
+     "cau": [
+      {
+       "dang": "chon_mot",
+       "noi_dung": "我 爱 看 （　）。",
+       "pinyin": "Wǒ ài kàn _.",
+       "dich_nghia": "Tôi thích xem phim.",
+       "giai_thich": "看电影 = xem phim.",
+       "phuong_an": [
+        {
+         "noi_dung": "米饭 [mǐfàn]",
+         "la_dap_an_dung": false
+        },
+        {
+         "noi_dung": "茶 [chá]",
+         "la_dap_an_dung": false
+        },
+        {
+         "noi_dung": "电影 [diànyǐng]",
+         "la_dap_an_dung": true
+        }
+       ]
+      },
+      {
+       "dang": "chon_mot",
+       "noi_dung": "他 在 家 看 （　）。",
+       "pinyin": "Tā zài jiā kàn _.",
+       "dich_nghia": "Anh ấy xem ti vi ở nhà.",
+       "giai_thich": "看 + danh từ: 看电视 = xem ti vi.",
+       "phuong_an": [
+        {
+         "noi_dung": "电视 [diànshì]",
+         "la_dap_an_dung": true
+        },
+        {
+         "noi_dung": "喝 [hē]",
+         "la_dap_an_dung": false
+        },
+        {
+         "noi_dung": "去 [qù]",
+         "la_dap_an_dung": false
+        }
+       ]
+      },
+      {
+       "dang": "chon_mot",
+       "noi_dung": "我 （　） 狗， 不 喜欢 猫。",
+       "pinyin": "Wǒ _ gǒu, bù xǐhuan māo.",
+       "dich_nghia": "Tôi thích chó, không thích mèo.",
+       "giai_thich": "Vế sau 不喜欢 nên vế trước là 喜欢.",
+       "phuong_an": [
+        {
+         "noi_dung": "认识 [rènshi]",
+         "la_dap_an_dung": false
+        },
+        {
+         "noi_dung": "喜欢 [xǐhuan]",
+         "la_dap_an_dung": true
+        },
+        {
+         "noi_dung": "叫 [jiào]",
+         "la_dap_an_dung": false
+        }
+       ]
+      },
+      {
+       "dang": "chon_mot",
+       "noi_dung": "你 喜欢 看 电影 吗？",
+       "pinyin": "Nǐ xǐhuan kàn diànyǐng ma?",
+       "dich_nghia": "Bạn có thích xem phim không? – Thích, tôi rất mê xem.",
+       "giai_thich": "Hỏi 喜欢…吗 thì trả lời 喜欢 / 不喜欢.",
+       "phuong_an": [
+        {
+         "noi_dung": "我 在 医院。 [Wǒ zài yīyuàn.]",
+         "la_dap_an_dung": false
+        },
+        {
+         "noi_dung": "我 不 会 写。 [Wǒ bú huì xiě.]",
+         "la_dap_an_dung": false
+        },
+        {
+         "noi_dung": "喜欢， 我 很 爱 看。 [Xǐhuan, wǒ hěn ài kàn.]",
+         "la_dap_an_dung": true
+        }
+       ]
+      },
+      {
+       "dang": "chon_mot",
+       "noi_dung": "你 能 来 我 家 吗？",
+       "pinyin": "Nǐ néng lái wǒ jiā ma?",
+       "dich_nghia": "Bạn có thể đến nhà tôi không? – Được, chiều tôi qua.",
+       "giai_thich": "Hỏi 能…吗 thì trả lời 能 / 不能.",
+       "phuong_an": [
+        {
+         "noi_dung": "能， 我 下午 去。 [Néng, wǒ xiàwǔ qù.]",
+         "la_dap_an_dung": true
+        },
+        {
+         "noi_dung": "我 家 很 大。 [Wǒ jiā hěn dà.]",
+         "la_dap_an_dung": false
+        },
+        {
+         "noi_dung": "他 是 我 朋友。 [Tā shì wǒ péngyou.]",
+         "la_dap_an_dung": false
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "ten": "Hỏi và trả lời",
+     "cau": [
+      {
+       "dang": "chon_mot",
+       "noi_dung": "你 会 说 汉语 吗？",
+       "pinyin": "Nǐ huì shuō Hànyǔ ma?",
+       "dich_nghia": "Bạn biết nói tiếng Hán không? – Biết, tôi học tiếng Hán ở trường.",
+       "giai_thich": "Hỏi 会…吗 thì trả lời 会 / 不会.",
+       "phuong_an": [
+        {
+         "noi_dung": "我 喜欢 喝 茶。 [Wǒ xǐhuan hē chá.]",
+         "la_dap_an_dung": false
+        },
+        {
+         "noi_dung": "会， 我 在 学校 学习 汉语。 [Huì, wǒ zài xuéxiào xuéxí Hànyǔ.]",
+         "la_dap_an_dung": true
+        },
+        {
+         "noi_dung": "我 在 家。 [Wǒ zài jiā.]",
+         "la_dap_an_dung": false
+        }
+       ]
+      },
+      {
+       "dang": "chon_mot",
+       "noi_dung": "你 在 做 什么？",
+       "pinyin": "Nǐ zài zuò shénme?",
+       "dich_nghia": "Bạn đang làm gì? – Tôi đang đọc sách.",
+       "giai_thich": "在 + động từ = đang làm gì.",
+       "phuong_an": [
+        {
+         "noi_dung": "我 很 高兴。 [Wǒ hěn gāoxìng.]",
+         "la_dap_an_dung": false
+        },
+        {
+         "noi_dung": "他 是 老师。 [Tā shì lǎoshī.]",
+         "la_dap_an_dung": false
+        },
+        {
+         "noi_dung": "我 在 看 书。 [Wǒ zài kàn shū.]",
+         "la_dap_an_dung": true
+        }
+       ]
+      },
+      {
+       "dang": "chon_mot",
+       "noi_dung": "你 的 汉语 老师 是 谁？",
+       "pinyin": "Nǐ de Hànyǔ lǎoshī shì shéi?",
+       "dich_nghia": "Giáo viên tiếng Hán của bạn là ai? – Là thầy Vương.",
+       "giai_thich": "谁 hỏi người.",
+       "phuong_an": [
+        {
+         "noi_dung": "是 王 老师。 [Shì Wáng lǎoshī.]",
+         "la_dap_an_dung": true
+        },
+        {
+         "noi_dung": "是 汉语 书。 [Shì Hànyǔ shū.]",
+         "la_dap_an_dung": false
+        },
+        {
+         "noi_dung": "在 学校。 [Zài xuéxiào.]",
+         "la_dap_an_dung": false
+        }
+       ]
+      },
+      {
+       "dang": "chon_mot",
+       "noi_dung": "你 喜欢 什么？",
+       "pinyin": "Nǐ xǐhuan shénme?",
+       "dich_nghia": "Bạn thích gì? – Tôi thích đọc sách.",
+       "giai_thich": "Hỏi 喜欢什么 thì trả lời 喜欢 + điều mình thích.",
+       "phuong_an": [
+        {
+         "noi_dung": "我 叫 王 月。 [Wǒ jiào Wáng Yuè.]",
+         "la_dap_an_dung": false
+        },
+        {
+         "noi_dung": "我 喜欢 看 书。 [Wǒ xǐhuan kàn shū.]",
+         "la_dap_an_dung": true
+        },
+        {
+         "noi_dung": "我 去 学校。 [Wǒ qù xuéxiào.]",
+         "la_dap_an_dung": false
+        }
+       ]
+      },
+      {
+       "dang": "chon_mot",
+       "noi_dung": "你 能 写 你 的 名字 吗？",
+       "pinyin": "Nǐ néng xiě nǐ de míngzi ma?",
+       "dich_nghia": "Bạn có viết được tên mình không? – Được.",
+       "giai_thich": "Hỏi 能…吗 thì trả lời 能 / 不能, không phải nói tên.",
+       "phuong_an": [
+        {
+         "noi_dung": "我 叫 李 明。 [Wǒ jiào Lǐ Míng.]",
+         "la_dap_an_dung": false
+        },
+        {
+         "noi_dung": "很 漂亮。 [Hěn piàoliang.]",
+         "la_dap_an_dung": false
+        },
+        {
+         "noi_dung": "能。 [Néng.]",
+         "la_dap_an_dung": true
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "ten": "Hiểu câu ngắn",
+     "cau": [
+      {
+       "dang": "chon_mot",
+       "noi_dung": "我 会 说 汉语， 不 会 写。",
+       "pinyin": "Wǒ huì shuō Hànyǔ, bú huì xiě.",
+       "dich_nghia": "Tôi biết nói tiếng Hán, không biết viết.",
+       "giai_thich": "会说 = biết nói, 不会写 = không biết viết.",
+       "phuong_an": [
+        {
+         "noi_dung": "Tôi biết nói tiếng Hán, không biết viết.",
+         "la_dap_an_dung": true
+        },
+        {
+         "noi_dung": "Tôi biết viết tiếng Hán, không biết nói.",
+         "la_dap_an_dung": false
+        },
+        {
+         "noi_dung": "Tôi không biết nói tiếng Hán.",
+         "la_dap_an_dung": false
+        }
+       ]
+      },
+      {
+       "dang": "chon_mot",
+       "noi_dung": "我 女儿 喜欢 看 电视。",
+       "pinyin": "Wǒ nǚ'ér xǐhuan kàn diànshì.",
+       "dich_nghia": "Con gái tôi thích xem ti vi.",
+       "giai_thich": "女儿 = con gái, 电视 = ti vi.",
+       "phuong_an": [
+        {
+         "noi_dung": "Con trai tôi thích xem ti vi.",
+         "la_dap_an_dung": false
+        },
+        {
+         "noi_dung": "Con gái tôi thích xem ti vi.",
+         "la_dap_an_dung": true
+        },
+        {
+         "noi_dung": "Con gái tôi thích xem phim.",
+         "la_dap_an_dung": false
+        }
+       ]
+      },
+      {
+       "dang": "chon_mot",
+       "noi_dung": "他 在 学校 工作， 他 是 老师。",
+       "pinyin": "Tā zài xuéxiào gōngzuò, tā shì lǎoshī.",
+       "dich_nghia": "Anh ấy làm việc ở trường, anh ấy là giáo viên.",
+       "giai_thich": "工作 = làm việc, 老师 = giáo viên.",
+       "phuong_an": [
+        {
+         "noi_dung": "Anh ấy học ở trường, anh ấy là học sinh.",
+         "la_dap_an_dung": false
+        },
+        {
+         "noi_dung": "Anh ấy làm việc ở bệnh viện, anh ấy là bác sĩ.",
+         "la_dap_an_dung": false
+        },
+        {
+         "noi_dung": "Anh ấy làm việc ở trường, anh ấy là giáo viên.",
+         "la_dap_an_dung": true
+        }
+       ]
+      },
+      {
+       "dang": "chon_mot",
+       "noi_dung": "我们 下午 去 看 电影。",
+       "pinyin": "Wǒmen xiàwǔ qù kàn diànyǐng.",
+       "dich_nghia": "Buổi chiều chúng tôi đi xem phim.",
+       "giai_thich": "下午 = buổi chiều, 看电影 = xem phim.",
+       "phuong_an": [
+        {
+         "noi_dung": "Buổi chiều chúng tôi đi xem phim.",
+         "la_dap_an_dung": true
+        },
+        {
+         "noi_dung": "Buổi sáng chúng tôi đi xem phim.",
+         "la_dap_an_dung": false
+        },
+        {
+         "noi_dung": "Buổi chiều chúng tôi ở nhà xem ti vi.",
+         "la_dap_an_dung": false
+        }
+       ]
+      },
+      {
+       "dang": "chon_mot",
+       "noi_dung": "我 的 同学 都 很 喜欢 学习 汉语。",
+       "pinyin": "Wǒ de tóngxué dōu hěn xǐhuan xuéxí Hànyǔ.",
+       "dich_nghia": "Các bạn học của tôi đều rất thích học tiếng Hán.",
+       "giai_thich": "都 = đều, 同学 = bạn học.",
+       "phuong_an": [
+        {
+         "noi_dung": "Các bạn học của tôi đều không thích học tiếng Hán.",
+         "la_dap_an_dung": false
+        },
+        {
+         "noi_dung": "Các bạn học của tôi đều rất thích học tiếng Hán.",
+         "la_dap_an_dung": true
+        },
+        {
+         "noi_dung": "Thầy giáo của tôi rất thích tiếng Hán.",
+         "la_dap_an_dung": false
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "cuoi_thua": [
+    {
+     "dang": "chon_mot",
+     "noi_dung": "我 （　） 学校 学习。",
+     "pinyin": "Wǒ _ xuéxiào xuéxí.",
+     "dich_nghia": "Tôi học ở trường.",
+     "giai_thich": "在 + nơi chốn + động từ.",
+     "phuong_an": [
+      {
+       "noi_dung": "是 [shì]",
+       "la_dap_an_dung": false
+      },
+      {
+       "noi_dung": "在 [zài]",
+       "la_dap_an_dung": true
+      },
+      {
+       "noi_dung": "有 [yǒu]",
+       "la_dap_an_dung": false
+      }
+     ]
+    },
+    {
+     "dang": "chon_mot",
+     "noi_dung": "你 会 （　） 这 个 字 吗？",
+     "pinyin": "Nǐ huì _ zhè ge zì ma?",
+     "dich_nghia": "Bạn biết viết chữ này không?",
+     "giai_thich": "写字 = viết chữ.",
+     "phuong_an": [
+      {
+       "noi_dung": "喝 [hē]",
+       "la_dap_an_dung": false
+      },
+      {
+       "noi_dung": "坐 [zuò]",
+       "la_dap_an_dung": false
+      },
+      {
+       "noi_dung": "写 [xiě]",
+       "la_dap_an_dung": true
+      }
+     ]
+    },
+    {
+     "dang": "chon_mot",
+     "noi_dung": "我 想 看 （　）。",
+     "pinyin": "Wǒ xiǎng kàn _.",
+     "dich_nghia": "Tôi muốn xem phim.",
+     "giai_thich": "看 + danh từ: 看电影.",
+     "phuong_an": [
+      {
+       "noi_dung": "电影 [diànyǐng]",
+       "la_dap_an_dung": true
+      },
+      {
+       "noi_dung": "喝 [hē]",
+       "la_dap_an_dung": false
+      },
+      {
+       "noi_dung": "去 [qù]",
+       "la_dap_an_dung": false
+      }
+     ]
+    },
+    {
+     "dang": "chon_mot",
+     "noi_dung": "你 在 做 什么？",
+     "pinyin": "Nǐ zài zuò shénme?",
+     "dich_nghia": "Bạn đang làm gì? – Tôi đang viết chữ.",
+     "giai_thich": "在做什么 = đang làm gì.",
+     "phuong_an": [
+      {
+       "noi_dung": "我 是 学生。 [Wǒ shì xuésheng.]",
+       "la_dap_an_dung": false
+      },
+      {
+       "noi_dung": "我 在 写 字。 [Wǒ zài xiě zì.]",
+       "la_dap_an_dung": true
+      },
+      {
+       "noi_dung": "我 很 好。 [Wǒ hěn hǎo.]",
+       "la_dap_an_dung": false
+      }
+     ]
+    },
+    {
+     "dang": "chon_mot",
+     "noi_dung": "你 喜欢 小 狗 吗？",
+     "pinyin": "Nǐ xǐhuan xiǎo gǒu ma?",
+     "dich_nghia": "Bạn có thích chó con không? – Rất thích.",
+     "giai_thich": "Hỏi 喜欢…吗 thì trả lời 喜欢 / 不喜欢.",
+     "phuong_an": [
+      {
+       "noi_dung": "很 冷。 [Hěn lěng.]",
+       "la_dap_an_dung": false
+      },
+      {
+       "noi_dung": "很 多 钱。 [Hěn duō qián.]",
+       "la_dap_an_dung": false
+      },
+      {
+       "noi_dung": "很 喜欢。 [Hěn xǐhuan.]",
+       "la_dap_an_dung": true
+      }
+     ]
+    },
+    {
+     "dang": "chon_mot",
+     "noi_dung": "你 想 学习 什么？",
+     "pinyin": "Nǐ xiǎng xuéxí shénme?",
+     "dich_nghia": "Bạn muốn học gì? – Tôi muốn học tiếng Hán.",
+     "giai_thich": "学习什么 = học gì.",
+     "phuong_an": [
+      {
+       "noi_dung": "我 想 学习 汉语。 [Wǒ xiǎng xuéxí Hànyǔ.]",
+       "la_dap_an_dung": true
+      },
+      {
+       "noi_dung": "我 想 喝 水。 [Wǒ xiǎng hē shuǐ.]",
+       "la_dap_an_dung": false
+      },
+      {
+       "noi_dung": "我 在 学校。 [Wǒ zài xuéxiào.]",
+       "la_dap_an_dung": false
+      }
+     ]
+    },
+    {
+     "dang": "chon_mot",
+     "noi_dung": "妈妈 在 打 电话。",
+     "pinyin": "Māma zài dǎ diànhuà.",
+     "dich_nghia": "Mẹ đang gọi điện thoại.",
+     "giai_thich": "打电话 = gọi điện thoại.",
+     "phuong_an": [
+      {
+       "noi_dung": "Mẹ đang xem ti vi.",
+       "la_dap_an_dung": false
+      },
+      {
+       "noi_dung": "Mẹ đang gọi điện thoại.",
+       "la_dap_an_dung": true
+      },
+      {
+       "noi_dung": "Mẹ đang ở nhà nấu cơm.",
+       "la_dap_an_dung": false
+      }
+     ]
+    },
+    {
+     "dang": "chon_mot",
+     "noi_dung": "他 很 喜欢 看 书， 不 喜欢 看 电视。",
+     "pinyin": "Tā hěn xǐhuan kàn shū, bù xǐhuan kàn diànshì.",
+     "dich_nghia": "Anh ấy rất thích đọc sách, không thích xem ti vi.",
+     "giai_thich": "看书 = đọc sách, 看电视 = xem ti vi.",
+     "phuong_an": [
+      {
+       "noi_dung": "Anh ấy rất thích xem ti vi, không thích đọc sách.",
+       "la_dap_an_dung": false
+      },
+      {
+       "noi_dung": "Anh ấy không thích đọc sách.",
+       "la_dap_an_dung": false
+      },
+      {
+       "noi_dung": "Anh ấy rất thích đọc sách, không thích xem ti vi.",
+       "la_dap_an_dung": true
+      }
+     ]
+    },
+    {
+     "dang": "chon_mot",
+     "noi_dung": "我 会 （　） 出租车。",
+     "pinyin": "Wǒ huì _ chūzūchē.",
+     "dich_nghia": "Tôi biết lái taxi.",
+     "giai_thich": "开车 = lái xe; 开出租车 = lái taxi.",
+     "phuong_an": [
+      {
+       "noi_dung": "开 [kāi]",
+       "la_dap_an_dung": true
+      },
+      {
+       "noi_dung": "喝 [hē]",
+       "la_dap_an_dung": false
+      },
+      {
+       "noi_dung": "读 [dú]",
+       "la_dap_an_dung": false
+      }
+     ]
+    },
+    {
+     "dang": "chon_mot",
+     "noi_dung": "这 是 我 的 汉语 书。",
+     "pinyin": "Zhè shì wǒ de Hànyǔ shū.",
+     "dich_nghia": "Đây là sách tiếng Hán của tôi.",
+     "giai_thich": "这 = đây, 汉语书 = sách tiếng Hán.",
+     "phuong_an": [
+      {
+       "noi_dung": "Đây là sách tiếng Anh của tôi.",
+       "la_dap_an_dung": false
+      },
+      {
+       "noi_dung": "Đây là sách tiếng Hán của tôi.",
+       "la_dap_an_dung": true
+      },
+      {
+       "noi_dung": "Kia là sách tiếng Hán của bạn.",
+       "la_dap_an_dung": false
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

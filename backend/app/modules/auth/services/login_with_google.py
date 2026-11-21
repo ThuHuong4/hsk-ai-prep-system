@@ -42,7 +42,7 @@ def login_with_google(db: Session, identity: dict) -> dict:
             except IntegrityError as error:
                 db.rollback()
                 # Chỉ bỏ qua khi request đồng thời đã tạo trước (trùng google_sub hoặc email)
-                if not (is_duplicate_key(error, "uq_nd_google_sub") or is_duplicate_key(error, "email")):
+                if not (is_duplicate_key(error, "uq_nguoi_dung_google") or is_duplicate_key(error, "uq_nguoi_dung_email")):
                     raise
             user = find_user_by_google_sub(db, google_sub)
             if user is None:
@@ -60,4 +60,5 @@ def login_with_google(db: Session, identity: dict) -> dict:
         "ho_ten": user["ho_ten"],
         "email": user["email"],
         "vai_tro": user["vai_tro"],
+        "email_da_xac_minh": bool(user["email_da_xac_minh"]),
     }

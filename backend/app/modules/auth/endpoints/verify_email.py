@@ -33,12 +33,12 @@ def post_verify_email(body: VerifyEmailRequest, db: Session = Depends(get_db)):
             status_code=status.HTTP_410_GONE,
             detail={
                 "ma_loi": "TOKEN_HET_HAN",
-                "thong_bao": "Liên kết xác minh đã hết hạn hoặc đã được thay bằng liên kết mới. Hãy yêu cầu gửi lại.",
+                "thong_bao": "Liên kết xác minh đã hết hạn hoặc đã được thay bằng liên kết mới. Hãy đăng nhập và bấm Gửi lại thư xác minh.",
             },
         )
     except TokenAlreadyUsedError:
         raise HTTPException(
             status_code=status.HTTP_409_CONFLICT,
-            detail={"ma_loi": "TOKEN_DA_DUNG", "thong_bao": "Email đã được xác minh trước đó. Bạn có thể đăng nhập."},
+            detail={"ma_loi": "TOKEN_DA_DUNG", "thong_bao": "Email đã được xác minh trước đó."},
         )
-    return {"message": "Xác minh email thành công. Bạn có thể đăng nhập."}
+    return {"message": "Xác minh email thành công."}

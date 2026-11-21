@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link, NavLink, Outlet, useNavigate } from "react-router-dom";
 
+import VerifyEmailBanner from "../features/auth/components/VerifyEmailBanner.jsx";
 import { useAuth } from "../features/auth/context/AuthContext.jsx";
 import "./roleLayout.css";
 
@@ -36,6 +37,7 @@ export default function RoleLayout({ roleLabel, menu, variant = "sidebar" }) {
         </span>
         <button type="button" onClick={handleLogout}>Đăng xuất</button>
       </header>
+      <VerifyEmailBanner />
 
       <div className="role-layout__body">
         <nav

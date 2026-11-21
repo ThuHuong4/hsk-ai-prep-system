@@ -1,0 +1,102 @@
+/* Khu Học viên theo bản mô phỏng Xianglingo (khung .xg--student) */
+
+.xg--student .xg-content { max-width: 1240px; }
+.xg--student .xg-nav a { min-height: 48px; }
+
+/* Thanh tab đáy trên điện thoại: 4 mục chính + Thêm (mở menu đầy đủ) */
+.xg-tabs { display: none; }
+@media (max-width: 960px) {
+  .xg--tabs .xg-menu-btn { display: none !important; }
+  .xg--tabs .xg-top__title { margin-right: auto; }
+  .xg--tabs .xg-avatar { margin-left: 0; }
+  .xg--tabs .xg-content { padding-bottom: 104px; }
+  .xg .xg-tabs { position: fixed; z-index: 50; left: 0; right: 0; bottom: 0; display: grid; grid-template-columns: repeat(5, 1fr); gap: 4px;
+    padding: 6px 6px calc(6px + env(safe-area-inset-bottom)); background: var(--side); border-top: 1px solid var(--line); }
+  .xg .xg-tabs a, .xg .xg-tabs button { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px; min-height: 56px; padding: 0;
+    border: 0; border-radius: 14px; background: none; color: var(--ink-2); text-decoration: none; font: 700 12px var(--f-body); cursor: pointer; }
+  .xg .xg-tabs .is-active { color: var(--teal-ink); background: var(--teal-soft); }
+}
+
+/* Trang chưa làm (Cá nhân, Đang phát triển…) dùng card/card-grid chung */
+.xg--student .xg-content > section:not(.xc) { display: flex; flex-direction: column; gap: 14px; }
+.xg--student .xg-content > section:not(.xc) h1 { margin: 0; font-size: 34px; line-height: 1.15; font-weight: 800; }
+.xg--student .xg-content > section:not(.xc) .muted, .xg--student .xg-content > section:not(.xc) p[role="status"] { color: var(--ink-2); margin: 0; }
+.xg--student .card-grid { display: grid; grid-template-columns: 1fr; gap: 16px; margin: 6px 0 0; padding: 0; list-style: none; }
+@media (min-width: 640px) { .xg--student .card-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+.xg--student .card { position: relative; display: flex; flex-direction: column; justify-content: center; gap: 4px; height: 100%; min-height: 96px; padding: 20px 52px 20px 22px;
+  border: 0; border-radius: 24px; background: var(--surface); color: var(--ink); text-decoration: none; box-shadow: var(--shadow); transition: transform .15s; }
+.xg--student a.card::after { content: "→"; position: absolute; right: 22px; top: 50%; transform: translateY(-50%); font-weight: 800; font-size: 20px; color: var(--teal-ink); }
+.xg--student a.card:hover { transform: translateY(-3px); }
+.xg--student .card__title { font-family: var(--f-display); font-size: 22px; font-weight: 800; margin: 0; }
+.xg--student .card .muted { font-size: 14.5px; color: var(--ink-2); }
+.xg--student .xg-content > section:not(.xc) > button { align-self: flex-start; min-height: 46px; padding: 0 22px; border-radius: 14px; border: 0;
+  background: var(--surface); color: var(--ink); font: 800 15px var(--f-body); cursor: pointer; box-shadow: 0 4px 0 var(--line-2), inset 0 0 0 2px var(--line-2); }
+
+/* ---------- Trang chủ Học viên ---------- */
+.sh-dash { display: grid; gap: 22px; grid-template-columns: 1fr; align-items: start; }
+@media (min-width: 1100px) { .sh-dash { grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr); } }
+.sh-col { display: flex; flex-direction: column; gap: 22px; min-width: 0; }
+
+.sh-scene { position: relative; overflow: hidden; isolation: isolate; border-radius: 32px; color: var(--scene-ink);
+  background: radial-gradient(70% 60% at 30% 70%, rgba(44,211,201,.26), transparent 70%), radial-gradient(40% 40% at 85% 10%, rgba(255,138,114,.18), transparent 70%),
+    linear-gradient(180deg, var(--scene-2), var(--scene)); }
+.sh-scene::before { content: ""; position: absolute; inset: 0; z-index: -1;
+  background-image: linear-gradient(var(--scene-line) 1px, transparent 1px), linear-gradient(90deg, var(--scene-line) 1px, transparent 1px); background-size: 56px 56px;
+  -webkit-mask-image: radial-gradient(80% 80% at 50% 50%, #000 40%, transparent 100%); mask-image: radial-gradient(80% 80% at 50% 50%, #000 40%, transparent 100%); }
+.sh-welcome { min-height: 250px; padding: 30px 30px 30px 236px; display: flex; flex-direction: column; justify-content: center; align-items: flex-start; gap: 8px; }
+.sh-xiang { position: absolute; left: 18px; bottom: -38px; width: 200px; filter: drop-shadow(0 24px 24px rgba(0,0,0,.45)); z-index: -1; }
+@media (prefers-reduced-motion: no-preference) { .sh-xiang { animation: sh-bob 4.8s ease-in-out infinite; } }
+@keyframes sh-bob { 0%, 100% { translate: 0 0; } 50% { translate: 0 -8px; } }
+.sh-bghz { position: absolute; right: 20px; top: -26px; z-index: -1; font-family: var(--f-hz); font-weight: 700; font-size: 160px; line-height: 1; color: transparent;
+  -webkit-text-stroke: 1.5px rgba(139,230,201,.22); pointer-events: none; }
+.sh-eyebrow { font-size: 12.5px; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; color: #8BE6C9; }
+.xc .sh-welcome h1 { color: var(--scene-ink); font-size: clamp(28px, 3.2vw, 40px); }
+.sh-welcome p { color: var(--scene-ink-2, #B9C8D8); margin-bottom: 10px !important; }
+
+.sh-duo { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.xc .sh-tile { display: flex; flex-direction: column; gap: 10px; padding: 22px; border-radius: 26px; border: 2px solid transparent; background: var(--surface);
+  color: var(--ink); text-decoration: none; box-shadow: var(--shadow); transition: transform .16s, border-color .16s; }
+.xc .sh-tile:hover { transform: translateY(-4px); }
+.sh-ti { display: inline-flex; align-items: center; justify-content: center; width: 52px; height: 52px; border-radius: 16px; }
+.sh-tile h2 { font-size: 26px; }
+.sh-tile p { font-size: 14.5px; color: var(--ink-2); }
+.sh-go { margin-top: auto; display: flex; align-items: center; gap: 6px; font-weight: 800; font-size: 14.5px; }
+.sh-go .ico { width: 18px; height: 18px; transition: transform .18s; }
+.sh-tile:hover .sh-go .ico { transform: translateX(4px); }
+.sh-tile--practice .sh-ti { background: var(--teal-soft); color: var(--teal-ink); }
+.sh-tile--practice .sh-go { color: var(--teal-ink); }
+.xc .sh-tile--practice:hover { border-color: var(--teal); }
+.sh-tile--exam .sh-ti { background: var(--exam-soft); color: var(--exam); }
+.sh-tile--exam .sh-go { color: var(--exam); }
+.xc .sh-tile--exam:hover { border-color: var(--exam); }
+
+.sh-panel { display: flex; flex-direction: column; align-items: flex-start; gap: 12px; padding: 22px; border-radius: 26px; background: var(--surface); box-shadow: var(--shadow); }
+.sh-panel > p { font-size: 15px; color: var(--ink-2); }
+.sh-panel__head { display: flex; align-items: center; gap: 10px; color: var(--teal-ink); }
+.sh-panel__head--bad { color: var(--bad); }
+.sh-panel__head h2 { font-size: 22px; }
+.xc .sh-link { color: var(--teal-ink); font-weight: 700; font-size: 14.5px; text-underline-offset: 3px; }
+.sh-hist { list-style: none; margin: 0; padding: 0; width: 100%; display: flex; flex-direction: column; gap: 8px; }
+.xc .sh-hist a { display: flex; align-items: center; gap: 12px; padding: 12px 14px; border-radius: 16px; background: var(--surface-2); color: var(--ink); text-decoration: none; }
+.sh-hist a > span:first-child { flex: 1; min-width: 0; display: flex; flex-direction: column; }
+.sh-hist b { font-size: 15px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.sh-hist small { color: var(--ink-3); font-size: 13px; }
+.sh-score { flex: 0 0 auto; font-family: var(--f-display); font-weight: 800; font-size: 24px; color: var(--coral-ink); font-variant-numeric: tabular-nums; }
+.sh-score small { font-size: 13px; color: var(--ink-3); }
+.sh-score.is-pass { color: var(--good); }
+.sh-level { border: 2px solid var(--exam-soft); }
+.sh-level h2 { font-size: 24px; }
+.sh-level .xc-eyebrow { color: var(--exam); }
+.sh-chip { display: inline-flex; align-items: center; gap: 8px; padding: 8px 14px; border-radius: 12px; border: 1.5px dashed var(--line-2); font-weight: 800; color: var(--ink-2); }
+.sh-chip .ico { width: 18px; height: 18px; }
+
+.sh-pghead { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 14px; }
+.sh-hlist .sh-score { font-size: 22px; }
+
+@media (max-width: 640px) {
+  .sh-welcome { padding: 26px 22px 170px; min-height: 0; }
+  .sh-xiang { left: auto; right: 10px; width: 150px; bottom: -30px; }
+  .sh-bghz { font-size: 110px; }
+  .sh-duo { grid-template-columns: 1fr; }
+  .xc-exam { flex-wrap: wrap; }
+}

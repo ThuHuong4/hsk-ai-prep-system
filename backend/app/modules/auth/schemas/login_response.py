@@ -6,6 +6,7 @@ class LoginUser(BaseModel):
     ho_ten: str
     email: str
     vai_tro: int
+    email_da_xac_minh: bool
 
 
 class LoginResponse(BaseModel):

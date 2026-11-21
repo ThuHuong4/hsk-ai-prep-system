@@ -46,7 +46,7 @@ def reset_password(db: Session, token: str, new_password: str) -> None:
         if user is None or user["trang_thai"] != ACTIVE or not user["mat_khau_bam"]:
             raise InvalidTokenError()
 
-        if not mark_token_used(db, record["ma_xac_thuc"]):
+        if not mark_token_used(db, record["ma_xac_thuc"], PURPOSE):
             raise TokenAlreadyUsedError()
         update_password_after_reset(db, record["ma_nguoi_dung"], new_hash)
         db.commit()

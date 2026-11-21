@@ -4,6 +4,9 @@ import { createRoot } from "react-dom/client";
 import "./styles/tokens.css";
 import "./styles/global.css";
 import App from "./app/App.jsx";
+import { applyTheme, readTheme } from "./shared/theme.js";
+
+applyTheme(readTheme());
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>

@@ -1,35 +1,23 @@
 from sqlalchemy import text
 from sqlalchemy.orm import Session
 
+from app.modules.auth.repositories._cols import token_columns
+
 
 def issue_account_token(
     db: Session,
     ma_nguoi_dung: int,
     muc_dich: str,
     bam_token: bytes,
-    ttl_minutes: int,
+    ttl_minutes: int,  # Hạn được tính khi kiểm tra: thời điểm gửi + ttl (không lưu cột hạn)
 ) -> None:
-    # Vô hiệu các token cũ chưa dùng cùng mục đích: chỉ liên kết mới nhất còn hiệu lực
+    # Ghi đè token cũ: chỉ liên kết mới nhất còn hiệu lực
+    token_col, sent_col = token_columns(muc_dich)
     db.execute(
-        text("""
-            UPDATE ma_xac_thuc_tai_khoan
-            SET het_han_luc = NOW(3)
-            WHERE ma_nguoi_dung = :ma_nguoi_dung
-              AND muc_dich = :muc_dich
-              AND da_dung_luc IS NULL
-              AND het_han_luc > NOW(3)
+        text(f"""
+            UPDATE nguoi_dung
+            SET {token_col} = :bam_token, {sent_col} = NOW()
+            WHERE id = :ma_nguoi_dung
         """),
-        {"ma_nguoi_dung": ma_nguoi_dung, "muc_dich": muc_dich},
-    )
-    db.execute(
-        text("""
-            INSERT INTO ma_xac_thuc_tai_khoan (ma_nguoi_dung, muc_dich, bam_token, het_han_luc, ngay_tao)
-            VALUES (:ma_nguoi_dung, :muc_dich, :bam_token, NOW(3) + INTERVAL :ttl_minutes MINUTE, NOW(3))
-        """),
-        {
-            "ma_nguoi_dung": ma_nguoi_dung,
-            "muc_dich": muc_dich,
-            "bam_token": bam_token,
-            "ttl_minutes": ttl_minutes,
-        },
+        {"ma_nguoi_dung": ma_nguoi_dung, "bam_token": bam_token.hex()},
     )

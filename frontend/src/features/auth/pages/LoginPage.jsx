@@ -6,7 +6,6 @@ import AuthField from "../components/AuthField.jsx";
 import AuthShell from "../components/AuthShell.jsx";
 import GoogleLinkForm from "../components/GoogleLinkForm.jsx";
 import GoogleSignInButton from "../components/GoogleSignInButton.jsx";
-import ResendVerificationButton from "../components/ResendVerificationButton.jsx";
 
 const EMAIL_PATTERN = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
 
@@ -23,7 +22,6 @@ export default function LoginPage({ onLogin, onGoForgotPassword }) {
   const [password, setPassword] = useState("");
   const [fieldErrors, setFieldErrors] = useState({});
   const [error, setError] = useState("");
-  const [needsVerification, setNeedsVerification] = useState(false);
   const [submitting, setSubmitting] = useState(false);
   const [pendingGoogleCredential, setPendingGoogleCredential] = useState("");
   const [mood, setMood] = useState("");
@@ -53,14 +51,12 @@ export default function LoginPage({ onLogin, onGoForgotPassword }) {
     submittingRef.current = true;
     setSubmitting(true);
     setError("");
-    setNeedsVerification(false);
     try {
       const data = await login(trimmedEmail, password);
       setPassword("");
       onLogin(data);
     } catch (err) {
       setError(err?.message || "Đăng nhập thất bại");
-      setNeedsVerification(err?.code === "EMAIL_CHUA_XAC_MINH");
       showSad();
     } finally {
       submittingRef.current = false;
@@ -74,7 +70,6 @@ export default function LoginPage({ onLogin, onGoForgotPassword }) {
     submittingRef.current = true;
     setSubmitting(true);
     setError("");
-    setNeedsVerification(false);
     try {
       const data = await googleLogin(credential);
       onLogin(data);
@@ -116,16 +111,9 @@ export default function LoginPage({ onLogin, onGoForgotPassword }) {
         <p className="lead">Tiếp tục hành trình HSK cùng Xiang.</p>
 
         {error && (
-          <div className={needsVerification ? "alert warn" : "alert bad"} role="alert">
+          <div className="alert bad" role="alert">
             <svg className="ico" aria-hidden="true"><use href="#i-alert" /></svg>
-            <div>
-              {error}
-              {needsVerification && (
-                <div className="xa-legacy" style={{ marginTop: 8 }}>
-                  <ResendVerificationButton email={email} />
-                </div>
-              )}
-            </div>
+            <div>{error}</div>
           </div>
         )}
 

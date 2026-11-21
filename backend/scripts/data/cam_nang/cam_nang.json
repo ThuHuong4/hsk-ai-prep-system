@@ -1,0 +1,72 @@
+[
+ {
+  "tep": "cam_nang_hsk1_nghe.pdf",
+  "ten": "Cẩm nang làm bài Nghe HSK 1",
+  "mo_ta": "Cấu trúc 4 phần Nghe HSK 1, cách làm từng phần, bẫy hay gặp, ví dụ có giải thích và kế hoạch ôn 7 ngày.",
+  "cap": "HSK1",
+  "ky_nang": "nghe"
+ },
+ {
+  "tep": "cam_nang_hsk1_doc.pdf",
+  "ten": "Cẩm nang làm bài Đọc HSK 1",
+  "mo_ta": "Cấu trúc 4 phần Đọc HSK 1, cách làm, bẫy hay gặp, ví dụ có giải thích và kế hoạch ôn 7 ngày.",
+  "cap": "HSK1",
+  "ky_nang": "doc"
+ },
+ {
+  "tep": "cam_nang_hsk2_nghe.pdf",
+  "ten": "Cẩm nang làm bài Nghe HSK 2",
+  "mo_ta": "Cấu trúc 4 phần Nghe HSK 2, cách làm, bẫy hay gặp, ví dụ có giải thích và kế hoạch ôn 7 ngày.",
+  "cap": "HSK2",
+  "ky_nang": "nghe"
+ },
+ {
+  "tep": "cam_nang_hsk2_doc.pdf",
+  "ten": "Cẩm nang làm bài Đọc HSK 2",
+  "mo_ta": "Cấu trúc 4 phần Đọc HSK 2, cách làm, bẫy hay gặp, ví dụ có giải thích và kế hoạch ôn 7 ngày.",
+  "cap": "HSK2",
+  "ky_nang": "doc"
+ },
+ {
+  "tep": "cam_nang_hsk3_nghe.pdf",
+  "ten": "Cẩm nang làm bài Nghe HSK 3",
+  "mo_ta": "Cấu trúc 4 phần Nghe HSK 3, cách làm từng phần, bẫy hay gặp, ví dụ có giải thích và kế hoạch ôn 7 ngày.",
+  "cap": "HSK3",
+  "ky_nang": "nghe"
+ },
+ {
+  "tep": "cam_nang_hsk3_doc.pdf",
+  "ten": "Cẩm nang làm bài Đọc HSK 3",
+  "mo_ta": "Cấu trúc 3 phần Đọc HSK 3, cách làm, bẫy hay gặp, ví dụ có giải thích và kế hoạch ôn 7 ngày.",
+  "cap": "HSK3",
+  "ky_nang": "doc"
+ },
+ {
+  "tep": "cam_nang_hsk3_viet.pdf",
+  "ten": "Cẩm nang làm bài Viết HSK 3",
+  "mo_ta": "Cấu trúc 2 phần Viết HSK 3: sắp xếp từ thành câu và viết chữ Hán theo pinyin; trật tự câu cơ bản, bẫy hay gặp, ví dụ.",
+  "cap": "HSK3",
+  "ky_nang": "viet"
+ },
+ {
+  "tep": "cam_nang_hsk4_nghe.pdf",
+  "ten": "Cẩm nang làm bài Nghe HSK 4",
+  "mo_ta": "Cấu trúc 3 phần Nghe HSK 4 (mỗi câu chỉ nghe một lần), cách làm, bẫy hay gặp, ví dụ và kế hoạch ôn 7 ngày.",
+  "cap": "HSK4",
+  "ky_nang": "nghe"
+ },
+ {
+  "tep": "cam_nang_hsk4_doc.pdf",
+  "ten": "Cẩm nang làm bài Đọc HSK 4",
+  "mo_ta": "Cấu trúc 3 phần Đọc HSK 4: điền từ, sắp xếp câu, đọc hiểu; cách làm, bẫy hay gặp, ví dụ và kế hoạch ôn 7 ngày.",
+  "cap": "HSK4",
+  "ky_nang": "doc"
+ },
+ {
+  "tep": "cam_nang_hsk4_viet.pdf",
+  "ten": "Cẩm nang làm bài Viết HSK 4",
+  "mo_ta": "Cấu trúc 2 phần Viết HSK 4: sắp xếp từ thành câu và nhìn tranh dùng từ cho sẵn đặt câu; mẫu câu an toàn, bẫy hay gặp, ví dụ.",
+  "cap": "HSK4",
+  "ky_nang": "viet"
+ }
+]

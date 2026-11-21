@@ -1,0 +1,663 @@
+{
+ "thua": {
+  "cap": "HSK1",
+  "ky_nang": "nghe",
+  "ten": "Hội thoại ngắn hằng ngày",
+  "muc_tieu": "Nghe hiểu hội thoại ngắn về chào hỏi, gia đình, thời gian, ăn uống và địa điểm"
+ },
+ "nguon": "Xianglingo — học liệu soạn mới có hỗ trợ ChatGPT — 19/11/2026",
+ "bai": [
+  {
+   "ten": "Chào hỏi và giới thiệu",
+   "cau": [
+    {
+     "ma": "H1_N001",
+     "tep_audio": "practice/hsk1_nghe/H1_N001.mp3",
+     "noi_dung": "Người nam tên gì?",
+     "loi_nghe": "女：你叫什么名字？\n男：我叫李明。",
+     "giai_thich": "Người nam nói 我叫李明, nghĩa là tôi tên Lý Minh.\nNghĩa phương án: 王老师 – thầy/cô Vương; 李明 – Lý Minh; 小王 – Tiểu Vương.",
+     "phuong_an": [
+      {
+       "noi_dung": "王老师 [Wáng lǎoshī]",
+       "la_dap_an_dung": false
+      },
+      {
+       "noi_dung": "李明 [Lǐ Míng]",
+       "la_dap_an_dung": true
+      },
+      {
+       "noi_dung": "小王 [Xiǎo Wáng]",
+       "la_dap_an_dung": false
+      }
+     ]
+    },
+    {
+     "ma": "H1_N002",
+     "tep_audio": "practice/hsk1_nghe/H1_N002.mp3",
+     "noi_dung": "Người nữ là ai?",
+     "loi_nghe": "男：你是老师吗？\n女：不是，我是学生。",
+     "giai_thich": "Người nữ phủ định mình là giáo viên và nói mình là học sinh.\nNghĩa phương án: 学生 – học sinh; 医生 – bác sĩ; 老师 – giáo viên.",
+     "phuong_an": [
+      {
+       "noi_dung": "学生 [xuésheng]",
+       "la_dap_an_dung": true
+      },
+      {
+       "noi_dung": "医生 [yīshēng]",
+       "la_dap_an_dung": false
+      },
+      {
+       "noi_dung": "老师 [lǎoshī]",
+       "la_dap_an_dung": false
+      }
+     ]
+    },
+    {
+     "ma": "H1_N003",
+     "tep_audio": "practice/hsk1_nghe/H1_N003.mp3",
+     "noi_dung": "Người nam là người nước nào?",
+     "loi_nghe": "女：你是哪国人？\n男：我是中国人。",
+     "giai_thich": "中国人 nghĩa là người Trung Quốc.\nNghĩa phương án: 美国 – Mỹ; 中国 – Trung Quốc; 日本 – Nhật Bản.",
+     "phuong_an": [
+      {
+       "noi_dung": "美国 [Měiguó]",
+       "la_dap_an_dung": false
+      },
+      {
+       "noi_dung": "中国 [Zhōngguó]",
+       "la_dap_an_dung": true
+      },
+      {
+       "noi_dung": "日本 [Rìběn]",
+       "la_dap_an_dung": false
+      }
+     ]
+    },
+    {
+     "ma": "H1_N004",
+     "tep_audio": "practice/hsk1_nghe/H1_N004.mp3",
+     "noi_dung": "Người nữ được nhắc đến có quan hệ gì với người nói?",
+     "loi_nghe": "男：她是谁？\n女：她是我的朋友。",
+     "giai_thich": "我的朋友 nghĩa là bạn của tôi.\nNghĩa phương án: 妈妈 – mẹ; 女儿 – con gái; 朋友 – bạn.",
+     "phuong_an": [
+      {
+       "noi_dung": "妈妈 [māma]",
+       "la_dap_an_dung": false
+      },
+      {
+       "noi_dung": "女儿 [nǚ’ér]",
+       "la_dap_an_dung": false
+      },
+      {
+       "noi_dung": "朋友 [péngyou]",
+       "la_dap_an_dung": true
+      }
+     ]
+    },
+    {
+     "ma": "H1_N005",
+     "tep_audio": "practice/hsk1_nghe/H1_N005.mp3",
+     "noi_dung": "Người nam có biết nói tiếng Trung không?",
+     "loi_nghe": "女：你会说汉语吗？\n男：会，我会说汉语。",
+     "giai_thich": "会 biểu thị biết hoặc có khả năng làm một việc.",
+     "phuong_an": [
+      {
+       "noi_dung": "Có",
+       "la_dap_an_dung": true
+      },
+      {
+       "noi_dung": "Không",
+       "la_dap_an_dung": false
+      },
+      {
+       "noi_dung": "Không được nhắc đến",
+       "la_dap_an_dung": false
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "ten": "Gia đình và số đếm",
+   "cau": [
+    {
+     "ma": "H1_N006",
+     "tep_audio": "practice/hsk1_nghe/H1_N006.mp3",
+     "noi_dung": "Gia đình người nữ có bao nhiêu người?",
+     "loi_nghe": "男：你家有几口人？\n女：我家有三口人。",
+     "giai_thich": "三口人 nghĩa là ba người trong gia đình.\nNghĩa phương án: 两口人 – hai người trong gia đình; 三口人 – ba người trong gia đình; 五口人 – năm người trong gia đình.",
+     "phuong_an": [
+      {
+       "noi_dung": "两口人 [liǎng kǒu rén]",
+       "la_dap_an_dung": false
+      },
+      {
+       "noi_dung": "三口人 [sān kǒu rén]",
+       "la_dap_an_dung": true
+      },
+      {
+       "noi_dung": "五口人 [wǔ kǒu rén]",
+       "la_dap_an_dung": false
+      }
+     ]
+    },
+    {
+     "ma": "H1_N007",
+     "tep_audio": "practice/hsk1_nghe/H1_N007.mp3",
+     "noi_dung": "Con gái người nam bao nhiêu tuổi?",
+     "loi_nghe": "女：你女儿几岁了？\n男：她今年六岁。",
+     "giai_thich": "六岁 là sáu tuổi.\nNghĩa phương án: 六岁 – sáu tuổi; 九岁 – chín tuổi; 十岁 – mười tuổi.",
+     "phuong_an": [
+      {
+       "noi_dung": "六岁 [liù suì]",
+       "la_dap_an_dung": true
+      },
+      {
+       "noi_dung": "九岁 [jiǔ suì]",
+       "la_dap_an_dung": false
+      },
+      {
+       "noi_dung": "十岁 [shí suì]",
+       "la_dap_an_dung": false
+      }
+     ]
+    },
+    {
+     "ma": "H1_N008",
+     "tep_audio": "practice/hsk1_nghe/H1_N008.mp3",
+     "noi_dung": "Người nữ có mấy quả táo?",
+     "loi_nghe": "男：你有几个苹果？\n女：我有五个苹果。",
+     "giai_thich": "五个苹果 là năm quả táo.\nNghĩa phương án: 三个 – ba quả; 四个 – bốn quả; 五个 – năm quả.",
+     "phuong_an": [
+      {
+       "noi_dung": "三个 [sān ge]",
+       "la_dap_an_dung": false
+      },
+      {
+       "noi_dung": "四个 [sì ge]",
+       "la_dap_an_dung": false
+      },
+      {
+       "noi_dung": "五个 [wǔ ge]",
+       "la_dap_an_dung": true
+      }
+     ]
+    },
+    {
+     "ma": "H1_N009",
+     "tep_audio": "practice/hsk1_nghe/H1_N009.mp3",
+     "noi_dung": "Ai là bác sĩ?",
+     "loi_nghe": "女：谁是医生？\n男：我妈妈是医生。",
+     "giai_thich": "Người nam nói mẹ mình là bác sĩ.\nNghĩa phương án: 爸爸 – bố; 妈妈 – mẹ; 儿子 – con trai.",
+     "phuong_an": [
+      {
+       "noi_dung": "爸爸 [bàba]",
+       "la_dap_an_dung": false
+      },
+      {
+       "noi_dung": "妈妈 [māma]",
+       "la_dap_an_dung": true
+      },
+      {
+       "noi_dung": "儿子 [érzi]",
+       "la_dap_an_dung": false
+      }
+     ]
+    },
+    {
+     "ma": "H1_N010",
+     "tep_audio": "practice/hsk1_nghe/H1_N010.mp3",
+     "noi_dung": "Con trai người nữ đang ở đâu?",
+     "loi_nghe": "男：你的儿子在哪儿？\n女：他在学校。",
+     "giai_thich": "在学校 nghĩa là ở trường.\nNghĩa phương án: 学校 – trường học; 医院 – bệnh viện; 商店 – cửa hàng.",
+     "phuong_an": [
+      {
+       "noi_dung": "学校 [xuéxiào]",
+       "la_dap_an_dung": true
+      },
+      {
+       "noi_dung": "医院 [yīyuàn]",
+       "la_dap_an_dung": false
+      },
+      {
+       "noi_dung": "商店 [shāngdiàn]",
+       "la_dap_an_dung": false
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "ten": "Thời gian và sinh hoạt",
+   "cau": [
+    {
+     "ma": "H1_N011",
+     "tep_audio": "practice/hsk1_nghe/H1_N011.mp3",
+     "noi_dung": "Người nam đi học lúc mấy giờ?",
+     "loi_nghe": "女：你几点去学校？\n男：我九点去学校。",
+     "giai_thich": "九点 là chín giờ.\nNghĩa phương án: 七点 – bảy giờ; 八点 – tám giờ; 九点 – chín giờ.",
+     "phuong_an": [
+      {
+       "noi_dung": "七点 [qī diǎn]",
+       "la_dap_an_dung": false
+      },
+      {
+       "noi_dung": "八点 [bā diǎn]",
+       "la_dap_an_dung": false
+      },
+      {
+       "noi_dung": "九点 [jiǔ diǎn]",
+       "la_dap_an_dung": true
+      }
+     ]
+    },
+    {
+     "ma": "H1_N012",
+     "tep_audio": "practice/hsk1_nghe/H1_N012.mp3",
+     "noi_dung": "Hôm nay là thứ mấy?",
+     "loi_nghe": "男：今天星期几？\n女：今天星期三。",
+     "giai_thich": "星期三 là thứ Tư.\nNghĩa phương án: 星期一 – thứ Hai; 星期三 – thứ Tư; 星期五 – thứ Sáu.",
+     "phuong_an": [
+      {
+       "noi_dung": "星期一 [xīngqī yī]",
+       "la_dap_an_dung": false
+      },
+      {
+       "noi_dung": "星期三 [xīngqī sān]",
+       "la_dap_an_dung": true
+      },
+      {
+       "noi_dung": "星期五 [xīngqī wǔ]",
+       "la_dap_an_dung": false
+      }
+     ]
+    },
+    {
+     "ma": "H1_N013",
+     "tep_audio": "practice/hsk1_nghe/H1_N013.mp3",
+     "noi_dung": "Khi nào người nam xem phim?",
+     "loi_nghe": "女：你什么时候看电影？\n男：我明天看电影。",
+     "giai_thich": "明天 là ngày mai.\nNghĩa phương án: 今天 – hôm nay; 昨天 – hôm qua; 明天 – ngày mai.",
+     "phuong_an": [
+      {
+       "noi_dung": "今天 [jīntiān]",
+       "la_dap_an_dung": false
+      },
+      {
+       "noi_dung": "昨天 [zuótiān]",
+       "la_dap_an_dung": false
+      },
+      {
+       "noi_dung": "明天 [míngtiān]",
+       "la_dap_an_dung": true
+      }
+     ]
+    },
+    {
+     "ma": "H1_N014",
+     "tep_audio": "practice/hsk1_nghe/H1_N014.mp3",
+     "noi_dung": "Buổi sáng người nữ làm gì?",
+     "loi_nghe": "男：你上午做什么？\n女：我上午学习汉语。",
+     "giai_thich": "学习汉语 nghĩa là học tiếng Trung.\nNghĩa phương án: 学习汉语 – học tiếng Trung; 看电视 – xem tivi; 睡觉 – ngủ.",
+     "phuong_an": [
+      {
+       "noi_dung": "学习汉语 [xuéxí Hànyǔ]",
+       "la_dap_an_dung": true
+      },
+      {
+       "noi_dung": "看电视 [kàn diànshì]",
+       "la_dap_an_dung": false
+      },
+      {
+       "noi_dung": "睡觉 [shuìjiào]",
+       "la_dap_an_dung": false
+      }
+     ]
+    },
+    {
+     "ma": "H1_N015",
+     "tep_audio": "practice/hsk1_nghe/H1_N015.mp3",
+     "noi_dung": "Người được nhắc đến đang làm gì?",
+     "loi_nghe": "女：他现在在做什么？\n男：他在看书。",
+     "giai_thich": "在看书 diễn tả đang đọc sách.\nNghĩa phương án: 吃饭 – ăn cơm; 看书 – đọc sách; 喝水 – uống nước.",
+     "phuong_an": [
+      {
+       "noi_dung": "吃饭 [chī fàn]",
+       "la_dap_an_dung": false
+      },
+      {
+       "noi_dung": "看书 [kàn shū]",
+       "la_dap_an_dung": true
+      },
+      {
+       "noi_dung": "喝水 [hē shuǐ]",
+       "la_dap_an_dung": false
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "ten": "Ăn uống và địa điểm",
+   "cau": [
+    {
+     "ma": "H1_N016",
+     "tep_audio": "practice/hsk1_nghe/H1_N016.mp3",
+     "noi_dung": "Người nữ muốn uống gì?",
+     "loi_nghe": "男：你想喝什么？\n女：我想喝茶。",
+     "giai_thich": "想喝茶 nghĩa là muốn uống trà.\nNghĩa phương án: 茶 – trà; 水 – nước; 咖啡 – cà phê.",
+     "phuong_an": [
+      {
+       "noi_dung": "茶 [chá]",
+       "la_dap_an_dung": true
+      },
+      {
+       "noi_dung": "水 [shuǐ]",
+       "la_dap_an_dung": false
+      },
+      {
+       "noi_dung": "咖啡 [kāfēi]",
+       "la_dap_an_dung": false
+      }
+     ]
+    },
+    {
+     "ma": "H1_N017",
+     "tep_audio": "practice/hsk1_nghe/H1_N017.mp3",
+     "noi_dung": "Người nam thích ăn loại quả nào?",
+     "loi_nghe": "女：你喜欢吃什么水果？\n男：我喜欢吃苹果。",
+     "giai_thich": "我喜欢吃苹果 nghĩa là tôi thích ăn táo.",
+     "phuong_an": [
+      {
+       "noi_dung": "苹果 [píngguǒ]",
+       "la_dap_an_dung": true
+      },
+      {
+       "noi_dung": "Không nhắc đến loại quả",
+       "la_dap_an_dung": false
+      },
+      {
+       "noi_dung": "Không thích ăn trái cây",
+       "la_dap_an_dung": false
+      }
+     ]
+    },
+    {
+     "ma": "H1_N018",
+     "tep_audio": "practice/hsk1_nghe/H1_N018.mp3",
+     "noi_dung": "Người nữ đi đâu?",
+     "loi_nghe": "男：你去哪儿？\n女：我去商店买东西。",
+     "giai_thich": "去商店买东西 là đi cửa hàng mua đồ.\nNghĩa phương án: 学校 – trường học; 医院 – bệnh viện; 商店 – cửa hàng.",
+     "phuong_an": [
+      {
+       "noi_dung": "学校 [xuéxiào]",
+       "la_dap_an_dung": false
+      },
+      {
+       "noi_dung": "医院 [yīyuàn]",
+       "la_dap_an_dung": false
+      },
+      {
+       "noi_dung": "商店 [shāngdiàn]",
+       "la_dap_an_dung": true
+      }
+     ]
+    },
+    {
+     "ma": "H1_N019",
+     "tep_audio": "practice/hsk1_nghe/H1_N019.mp3",
+     "noi_dung": "Quyển sách giá bao nhiêu?",
+     "loi_nghe": "女：这本书多少钱？\n男：二十块。",
+     "giai_thich": "二十 là hai mươi; 块 là đơn vị tiền trong cách nói thông dụng.\nNghĩa phương án: 十块 – mười tệ; 二十块 – hai mươi tệ; 三十块 – ba mươi tệ.",
+     "phuong_an": [
+      {
+       "noi_dung": "十块 [shí kuài]",
+       "la_dap_an_dung": false
+      },
+      {
+       "noi_dung": "二十块 [èrshí kuài]",
+       "la_dap_an_dung": true
+      },
+      {
+       "noi_dung": "三十块 [sānshí kuài]",
+       "la_dap_an_dung": false
+      }
+     ]
+    },
+    {
+     "ma": "H1_N020",
+     "tep_audio": "practice/hsk1_nghe/H1_N020.mp3",
+     "noi_dung": "Con mèo ở đâu?",
+     "loi_nghe": "男：猫在哪儿？\n女：猫在椅子下面。",
+     "giai_thich": "下面 nghĩa là phía dưới.\nNghĩa phương án: 椅子上面 – phía trên ghế; 椅子下面 – phía dưới ghế; 桌子上面 – phía trên bàn.",
+     "phuong_an": [
+      {
+       "noi_dung": "椅子上面 [yǐzi shàngmian]",
+       "la_dap_an_dung": false
+      },
+      {
+       "noi_dung": "椅子下面 [yǐzi xiàmian]",
+       "la_dap_an_dung": true
+      },
+      {
+       "noi_dung": "桌子上面 [zhuōzi shàngmian]",
+       "la_dap_an_dung": false
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "cuoi_thua": [
+  {
+   "ma": "H1_N021",
+   "tep_audio": "practice/hsk1_nghe/H1_N021.mp3",
+   "noi_dung": "Người nam tên gì?",
+   "loi_nghe": "女：你叫什么名字？\n男：我叫王明。",
+   "giai_thich": "Người nam tự giới thiệu là 王明.\nNghĩa phương án: 李明 – Lý Minh; 王明 – Vương Minh; 王老师 – thầy/cô Vương.",
+   "phuong_an": [
+    {
+     "noi_dung": "李明 [Lǐ Míng]",
+     "la_dap_an_dung": false
+    },
+    {
+     "noi_dung": "王明 [Wáng Míng]",
+     "la_dap_an_dung": true
+    },
+    {
+     "noi_dung": "王老师 [Wáng lǎoshī]",
+     "la_dap_an_dung": false
+    }
+   ]
+  },
+  {
+   "ma": "H1_N022",
+   "tep_audio": "practice/hsk1_nghe/H1_N022.mp3",
+   "noi_dung": "Gia đình người nữ có mấy người?",
+   "loi_nghe": "男：你家有几口人？\n女：有四口人。",
+   "giai_thich": "四口人 nghĩa là bốn người.\nNghĩa phương án: 三口人 – ba người trong gia đình; 五口人 – năm người trong gia đình; 四口人 – bốn người trong gia đình.",
+   "phuong_an": [
+    {
+     "noi_dung": "三口人 [sān kǒu rén]",
+     "la_dap_an_dung": false
+    },
+    {
+     "noi_dung": "五口人 [wǔ kǒu rén]",
+     "la_dap_an_dung": false
+    },
+    {
+     "noi_dung": "四口人 [sì kǒu rén]",
+     "la_dap_an_dung": true
+    }
+   ]
+  },
+  {
+   "ma": "H1_N023",
+   "tep_audio": "practice/hsk1_nghe/H1_N023.mp3",
+   "noi_dung": "Bố người nam làm nghề gì?",
+   "loi_nghe": "女：你的爸爸是老师吗？\n男：不是，他是医生。",
+   "giai_thich": "Người nam nói bố mình là bác sĩ, không phải giáo viên.\nNghĩa phương án: 医生 – bác sĩ; 老师 – giáo viên; 学生 – học sinh.",
+   "phuong_an": [
+    {
+     "noi_dung": "医生 [yīshēng]",
+     "la_dap_an_dung": true
+    },
+    {
+     "noi_dung": "老师 [lǎoshī]",
+     "la_dap_an_dung": false
+    },
+    {
+     "noi_dung": "学生 [xuésheng]",
+     "la_dap_an_dung": false
+    }
+   ]
+  },
+  {
+   "ma": "H1_N024",
+   "tep_audio": "practice/hsk1_nghe/H1_N024.mp3",
+   "noi_dung": "Ngày được nhắc đến là ngày nào?",
+   "loi_nghe": "男：今天是几月几号？\n女：今天是五月十号。",
+   "giai_thich": "五月十号 là ngày 10 tháng 5.\nNghĩa phương án: 5月1号 – ngày 1 tháng 5; 5月10号 – ngày 10 tháng 5; 10月5号 – ngày 5 tháng 10.",
+   "phuong_an": [
+    {
+     "noi_dung": "5月1号 [wǔ yuè yī hào]",
+     "la_dap_an_dung": false
+    },
+    {
+     "noi_dung": "5月10号 [wǔ yuè shí hào]",
+     "la_dap_an_dung": true
+    },
+    {
+     "noi_dung": "10月5号 [shí yuè wǔ hào]",
+     "la_dap_an_dung": false
+    }
+   ]
+  },
+  {
+   "ma": "H1_N025",
+   "tep_audio": "practice/hsk1_nghe/H1_N025.mp3",
+   "noi_dung": "Người nam ăn cơm lúc mấy giờ?",
+   "loi_nghe": "女：你几点吃饭？\n男：我十二点吃饭。",
+   "giai_thich": "十二点 là mười hai giờ.\nNghĩa phương án: 十点 – mười giờ; 十一点 – mười một giờ; 十二点 – mười hai giờ.",
+   "phuong_an": [
+    {
+     "noi_dung": "十点 [shí diǎn]",
+     "la_dap_an_dung": false
+    },
+    {
+     "noi_dung": "十一点 [shíyī diǎn]",
+     "la_dap_an_dung": false
+    },
+    {
+     "noi_dung": "十二点 [shí’èr diǎn]",
+     "la_dap_an_dung": true
+    }
+   ]
+  },
+  {
+   "ma": "H1_N026",
+   "tep_audio": "practice/hsk1_nghe/H1_N026.mp3",
+   "noi_dung": "Người nữ muốn uống gì?",
+   "loi_nghe": "男：你想喝水吗？\n女：不，我想喝茶。",
+   "giai_thich": "Người nữ từ chối nước và nói muốn uống trà.\nNghĩa phương án: 水 – nước; 茶 – trà; 咖啡 – cà phê.",
+   "phuong_an": [
+    {
+     "noi_dung": "水 [shuǐ]",
+     "la_dap_an_dung": false
+    },
+    {
+     "noi_dung": "茶 [chá]",
+     "la_dap_an_dung": true
+    },
+    {
+     "noi_dung": "咖啡 [kāfēi]",
+     "la_dap_an_dung": false
+    }
+   ]
+  },
+  {
+   "ma": "H1_N027",
+   "tep_audio": "practice/hsk1_nghe/H1_N027.mp3",
+   "noi_dung": "Người nam đến trường bằng cách nào?",
+   "loi_nghe": "女：你怎么去学校？\n男：我坐出租车去。",
+   "giai_thich": "坐出租车 nghĩa là đi taxi.\nNghĩa phương án: 坐出租车 – đi taxi; 坐飞机 – đi máy bay; 坐火车 – đi tàu hỏa.",
+   "phuong_an": [
+    {
+     "noi_dung": "坐出租车 [zuò chūzūchē]",
+     "la_dap_an_dung": true
+    },
+    {
+     "noi_dung": "坐飞机 [zuò fēijī]",
+     "la_dap_an_dung": false
+    },
+    {
+     "noi_dung": "坐火车 [zuò huǒchē]",
+     "la_dap_an_dung": false
+    }
+   ]
+  },
+  {
+   "ma": "H1_N028",
+   "tep_audio": "practice/hsk1_nghe/H1_N028.mp3",
+   "noi_dung": "Quyển sách ở đâu?",
+   "loi_nghe": "男：书在哪儿？\n女：书在桌子上。",
+   "giai_thich": "桌子上 nghĩa là trên bàn.\nNghĩa phương án: 桌子下 – dưới bàn; 椅子下 – dưới ghế; 桌子上 – trên bàn.",
+   "phuong_an": [
+    {
+     "noi_dung": "桌子下 [zhuōzi xià]",
+     "la_dap_an_dung": false
+    },
+    {
+     "noi_dung": "椅子下 [yǐzi xià]",
+     "la_dap_an_dung": false
+    },
+    {
+     "noi_dung": "桌子上 [zhuōzi shàng]",
+     "la_dap_an_dung": true
+    }
+   ]
+  },
+  {
+   "ma": "H1_N029",
+   "tep_audio": "practice/hsk1_nghe/H1_N029.mp3",
+   "noi_dung": "Người được nhắc đến đang làm gì?",
+   "loi_nghe": "女：他在看电视吗？\n男：不，他在打电话。",
+   "giai_thich": "打电话 nghĩa là gọi điện thoại.\nNghĩa phương án: 看电视 – xem tivi; 打电话 – gọi điện thoại; 看书 – đọc sách.",
+   "phuong_an": [
+    {
+     "noi_dung": "看电视 [kàn diànshì]",
+     "la_dap_an_dung": false
+    },
+    {
+     "noi_dung": "打电话 [dǎ diànhuà]",
+     "la_dap_an_dung": true
+    },
+    {
+     "noi_dung": "看书 [kàn shū]",
+     "la_dap_an_dung": false
+    }
+   ]
+  },
+  {
+   "ma": "H1_N030",
+   "tep_audio": "practice/hsk1_nghe/H1_N030.mp3",
+   "noi_dung": "Ngày mai thời tiết thế nào?",
+   "loi_nghe": "男：明天天气怎么样？\n女：明天很冷。",
+   "giai_thich": "很冷 nghĩa là rất lạnh.\nNghĩa phương án: 很热 – rất nóng; 很好 – rất tốt; 很冷 – rất lạnh.",
+   "phuong_an": [
+    {
+     "noi_dung": "很热 [hěn rè]",
+     "la_dap_an_dung": false
+    },
+    {
+     "noi_dung": "很好 [hěn hǎo]",
+     "la_dap_an_dung": false
+    },
+    {
+     "noi_dung": "很冷 [hěn lěng]",
+     "la_dap_an_dung": true
+    }
+   ]
+  }
+ ]
+}

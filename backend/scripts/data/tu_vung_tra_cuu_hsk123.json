@@ -1,0 +1,1625 @@
+{
+ "nguon": "Danh sách từ vựng HSK 2.0 (国家汉办/孔子学院总部); nghĩa và ví dụ do Xianglingo tự soạn",
+ "tu": [
+  {
+   "cap": "HSK1",
+   "chu_han": "本",
+   "pinyin": "běn",
+   "nghia": "quyển, cuốn (lượng từ cho sách)",
+   "vd_cau": "我有三本汉语书。",
+   "vd_pinyin": "Wǒ yǒu sān běn Hànyǔ shū.",
+   "vd_nghia": "Tôi có ba quyển sách tiếng Hán."
+  },
+  {
+   "cap": "HSK1",
+   "chu_han": "的",
+   "pinyin": "de",
+   "nghia": "của (trợ từ sở hữu, nối định ngữ)",
+   "vd_cau": "这是我的杯子。",
+   "vd_pinyin": "Zhè shì wǒ de bēizi.",
+   "vd_nghia": "Đây là cái cốc của tôi."
+  },
+  {
+   "cap": "HSK1",
+   "chu_han": "好",
+   "pinyin": "hǎo",
+   "nghia": "tốt, hay, khỏe",
+   "vd_cau": "今天天气很好。",
+   "vd_pinyin": "Jīntiān tiānqì hěn hǎo.",
+   "vd_nghia": "Hôm nay thời tiết rất đẹp."
+  },
+  {
+   "cap": "HSK1",
+   "chu_han": "看见",
+   "pinyin": "kànjiàn",
+   "nghia": "nhìn thấy",
+   "vd_cau": "你看见我的猫了吗？",
+   "vd_pinyin": "Nǐ kànjiàn wǒ de māo le ma?",
+   "vd_nghia": "Bạn có thấy con mèo của tôi không?"
+  },
+  {
+   "cap": "HSK1",
+   "chu_han": "了",
+   "pinyin": "le",
+   "nghia": "rồi, đã (trợ từ chỉ việc đã xảy ra)",
+   "vd_cau": "我买了一个苹果。",
+   "vd_pinyin": "Wǒ mǎi le yí ge píngguǒ.",
+   "vd_nghia": "Tôi đã mua một quả táo."
+  },
+  {
+   "cap": "HSK1",
+   "chu_han": "吗",
+   "pinyin": "ma",
+   "nghia": "không, à (trợ từ nghi vấn cuối câu)",
+   "vd_cau": "你是学生吗？",
+   "vd_pinyin": "Nǐ shì xuésheng ma?",
+   "vd_nghia": "Bạn là học sinh à?"
+  },
+  {
+   "cap": "HSK1",
+   "chu_han": "呢",
+   "pinyin": "ne",
+   "nghia": "thì sao, còn… thì sao (trợ từ cuối câu)",
+   "vd_cau": "我很好，你呢？",
+   "vd_pinyin": "Wǒ hěn hǎo, nǐ ne?",
+   "vd_nghia": "Tôi khỏe, còn bạn?"
+  },
+  {
+   "cap": "HSK1",
+   "chu_han": "喂",
+   "pinyin": "wèi",
+   "nghia": "alô (khi nghe điện thoại)",
+   "vd_cau": "喂，你好！",
+   "vd_pinyin": "Wèi, nǐ hǎo!",
+   "vd_nghia": "Alô, xin chào!"
+  },
+  {
+   "cap": "HSK1",
+   "chu_han": "些",
+   "pinyin": "xiē",
+   "nghia": "một vài, một số",
+   "vd_cau": "我想买一些水果。",
+   "vd_pinyin": "Wǒ xiǎng mǎi yìxiē shuǐguǒ.",
+   "vd_nghia": "Tôi muốn mua một ít hoa quả."
+  },
+  {
+   "cap": "HSK2",
+   "chu_han": "吧",
+   "pinyin": "ba",
+   "nghia": "nhé, đi (trợ từ đề nghị cuối câu)",
+   "vd_cau": "我们走吧。",
+   "vd_pinyin": "Wǒmen zǒu ba.",
+   "vd_nghia": "Chúng ta đi thôi."
+  },
+  {
+   "cap": "HSK2",
+   "chu_han": "得",
+   "pinyin": "de",
+   "nghia": "(trợ từ nối bổ ngữ mức độ)",
+   "vd_cau": "他跑得很快。",
+   "vd_pinyin": "Tā pǎo de hěn kuài.",
+   "vd_nghia": "Anh ấy chạy rất nhanh."
+  },
+  {
+   "cap": "HSK2",
+   "chu_han": "过",
+   "pinyin": "guo",
+   "nghia": "đã từng (trợ từ chỉ kinh nghiệm)",
+   "vd_cau": "我去过北京。",
+   "vd_pinyin": "Wǒ qù guo Běijīng.",
+   "vd_nghia": "Tôi đã từng đến Bắc Kinh."
+  },
+  {
+   "cap": "HSK2",
+   "chu_han": "还",
+   "pinyin": "hái",
+   "nghia": "vẫn, còn",
+   "vd_cau": "他还在学校。",
+   "vd_pinyin": "Tā hái zài xuéxiào.",
+   "vd_nghia": "Anh ấy vẫn ở trường."
+  },
+  {
+   "cap": "HSK2",
+   "chu_han": "就",
+   "pinyin": "jiù",
+   "nghia": "liền, ngay, thì",
+   "vd_cau": "我马上就来。",
+   "vd_pinyin": "Wǒ mǎshàng jiù lái.",
+   "vd_nghia": "Tôi đến ngay."
+  },
+  {
+   "cap": "HSK2",
+   "chu_han": "虽然",
+   "pinyin": "suīrán",
+   "nghia": "tuy, mặc dù",
+   "vd_cau": "虽然很累，但是我很高兴。",
+   "vd_pinyin": "Suīrán hěn lèi, dànshì wǒ hěn gāoxìng.",
+   "vd_nghia": "Tuy rất mệt nhưng tôi rất vui."
+  },
+  {
+   "cap": "HSK2",
+   "chu_han": "但是",
+   "pinyin": "dànshì",
+   "nghia": "nhưng",
+   "vd_cau": "这件衣服很漂亮，但是太贵了。",
+   "vd_pinyin": "Zhè jiàn yīfu hěn piàoliang, dànshì tài guì le.",
+   "vd_nghia": "Chiếc áo này rất đẹp nhưng đắt quá."
+  },
+  {
+   "cap": "HSK2",
+   "chu_han": "也",
+   "pinyin": "yě",
+   "nghia": "cũng",
+   "vd_cau": "我也喜欢喝茶。",
+   "vd_pinyin": "Wǒ yě xǐhuan hē chá.",
+   "vd_nghia": "Tôi cũng thích uống trà."
+  },
+  {
+   "cap": "HSK2",
+   "chu_han": "一下",
+   "pinyin": "yíxià",
+   "nghia": "một chút, thử (làm gì đó một lát)",
+   "vd_cau": "请等一下。",
+   "vd_pinyin": "Qǐng děng yíxià.",
+   "vd_nghia": "Xin đợi một chút."
+  },
+  {
+   "cap": "HSK2",
+   "chu_han": "因为",
+   "pinyin": "yīnwèi",
+   "nghia": "bởi vì",
+   "vd_cau": "因为下雨，我没去。",
+   "vd_pinyin": "Yīnwèi xià yǔ, wǒ méi qù.",
+   "vd_nghia": "Vì trời mưa nên tôi không đi."
+  },
+  {
+   "cap": "HSK2",
+   "chu_han": "所以",
+   "pinyin": "suǒyǐ",
+   "nghia": "cho nên, vì vậy",
+   "vd_cau": "他生病了，所以没来。",
+   "vd_pinyin": "Tā shēngbìng le, suǒyǐ méi lái.",
+   "vd_nghia": "Anh ấy bị ốm nên không đến."
+  },
+  {
+   "cap": "HSK2",
+   "chu_han": "再",
+   "pinyin": "zài",
+   "nghia": "lại, nữa (lần sau)",
+   "vd_cau": "请再说一次。",
+   "vd_pinyin": "Qǐng zài shuō yí cì.",
+   "vd_nghia": "Xin nói lại một lần nữa."
+  },
+  {
+   "cap": "HSK2",
+   "chu_han": "着",
+   "pinyin": "zhe",
+   "nghia": "đang (trợ từ chỉ trạng thái kéo dài)",
+   "vd_cau": "门开着。",
+   "vd_pinyin": "Mén kāi zhe.",
+   "vd_nghia": "Cửa đang mở."
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "阿姨",
+   "pinyin": "āyí",
+   "nghia": "cô, dì"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "啊",
+   "pinyin": "a",
+   "nghia": "à, nhé (trợ từ cảm thán)"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "爱好",
+   "pinyin": "àihào",
+   "nghia": "sở thích"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "安静",
+   "pinyin": "ānjìng",
+   "nghia": "yên tĩnh"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "把",
+   "pinyin": "bǎ",
+   "nghia": "(giới từ đưa tân ngữ lên trước động từ)"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "班",
+   "pinyin": "bān",
+   "nghia": "lớp, ca làm"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "办法",
+   "pinyin": "bànfǎ",
+   "nghia": "cách, biện pháp"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "办公室",
+   "pinyin": "bàngōngshì",
+   "nghia": "văn phòng"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "半",
+   "pinyin": "bàn",
+   "nghia": "một nửa, rưỡi"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "帮忙",
+   "pinyin": "bāngmáng",
+   "nghia": "giúp đỡ"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "包",
+   "pinyin": "bāo",
+   "nghia": "cái túi, gói"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "饱",
+   "pinyin": "bǎo",
+   "nghia": "no"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "北方",
+   "pinyin": "běifāng",
+   "nghia": "phương bắc, miền bắc"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "被",
+   "pinyin": "bèi",
+   "nghia": "bị, được (câu bị động)"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "比较",
+   "pinyin": "bǐjiào",
+   "nghia": "khá, tương đối; so sánh"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "比赛",
+   "pinyin": "bǐsài",
+   "nghia": "cuộc thi đấu"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "必须",
+   "pinyin": "bìxū",
+   "nghia": "phải, nhất định phải"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "变化",
+   "pinyin": "biànhuà",
+   "nghia": "thay đổi, biến đổi"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "表示",
+   "pinyin": "biǎoshì",
+   "nghia": "biểu thị, bày tỏ"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "表演",
+   "pinyin": "biǎoyǎn",
+   "nghia": "biểu diễn"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "别人",
+   "pinyin": "biérén",
+   "nghia": "người khác"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "才",
+   "pinyin": "cái",
+   "nghia": "mới (chỉ việc xảy ra muộn)"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "菜单",
+   "pinyin": "càidān",
+   "nghia": "thực đơn"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "参加",
+   "pinyin": "cānjiā",
+   "nghia": "tham gia"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "层",
+   "pinyin": "céng",
+   "nghia": "tầng"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "差",
+   "pinyin": "chà",
+   "nghia": "kém, thiếu"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "城市",
+   "pinyin": "chéngshì",
+   "nghia": "thành phố"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "迟到",
+   "pinyin": "chídào",
+   "nghia": "đến muộn"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "除了",
+   "pinyin": "chúle",
+   "nghia": "ngoài… ra"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "船",
+   "pinyin": "chuán",
+   "nghia": "thuyền, tàu thủy"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "词典",
+   "pinyin": "cídiǎn",
+   "nghia": "từ điển"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "打算",
+   "pinyin": "dǎsuàn",
+   "nghia": "dự định"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "带",
+   "pinyin": "dài",
+   "nghia": "mang, đem theo"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "蛋糕",
+   "pinyin": "dàngāo",
+   "nghia": "bánh ga tô, bánh ngọt"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "当然",
+   "pinyin": "dāngrán",
+   "nghia": "đương nhiên"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "地",
+   "pinyin": "de",
+   "nghia": "(trợ từ đứng trước động từ, tạo trạng ngữ)"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "地方",
+   "pinyin": "dìfang",
+   "nghia": "nơi, chỗ"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "地图",
+   "pinyin": "dìtú",
+   "nghia": "bản đồ"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "电子邮件",
+   "pinyin": "diànzǐ yóujiàn",
+   "nghia": "thư điện tử, email"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "东",
+   "pinyin": "dōng",
+   "nghia": "phía đông"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "动物",
+   "pinyin": "dòngwù",
+   "nghia": "động vật"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "短",
+   "pinyin": "duǎn",
+   "nghia": "ngắn"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "段",
+   "pinyin": "duàn",
+   "nghia": "đoạn, khúc"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "多么",
+   "pinyin": "duōme",
+   "nghia": "biết bao, thật là"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "饿",
+   "pinyin": "è",
+   "nghia": "đói"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "发",
+   "pinyin": "fā",
+   "nghia": "gửi, phát"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "发现",
+   "pinyin": "fāxiàn",
+   "nghia": "phát hiện"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "方便",
+   "pinyin": "fāngbiàn",
+   "nghia": "tiện lợi, thuận tiện"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "放",
+   "pinyin": "fàng",
+   "nghia": "đặt, để"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "放心",
+   "pinyin": "fàngxīn",
+   "nghia": "yên tâm"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "分",
+   "pinyin": "fēn",
+   "nghia": "phút; điểm; phân (tiền)"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "附近",
+   "pinyin": "fùjìn",
+   "nghia": "gần đây, lân cận"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "干净",
+   "pinyin": "gānjìng",
+   "nghia": "sạch sẽ"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "感兴趣",
+   "pinyin": "gǎn xìngqù",
+   "nghia": "cảm thấy hứng thú"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "刚才",
+   "pinyin": "gāngcái",
+   "nghia": "vừa nãy"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "个子",
+   "pinyin": "gèzi",
+   "nghia": "vóc người, chiều cao"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "根据",
+   "pinyin": "gēnjù",
+   "nghia": "căn cứ vào, dựa theo"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "跟",
+   "pinyin": "gēn",
+   "nghia": "với, cùng"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "更",
+   "pinyin": "gèng",
+   "nghia": "càng, hơn nữa"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "公斤",
+   "pinyin": "gōngjīn",
+   "nghia": "ki-lô-gam"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "公园",
+   "pinyin": "gōngyuán",
+   "nghia": "công viên"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "故事",
+   "pinyin": "gùshi",
+   "nghia": "câu chuyện"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "刮风",
+   "pinyin": "guāfēng",
+   "nghia": "nổi gió"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "关",
+   "pinyin": "guān",
+   "nghia": "đóng, tắt"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "关系",
+   "pinyin": "guānxi",
+   "nghia": "quan hệ"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "关心",
+   "pinyin": "guānxīn",
+   "nghia": "quan tâm"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "关于",
+   "pinyin": "guānyú",
+   "nghia": "về (vấn đề gì)"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "国家",
+   "pinyin": "guójiā",
+   "nghia": "quốc gia, đất nước"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "过",
+   "pinyin": "guò",
+   "nghia": "đi qua, trải qua"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "过去",
+   "pinyin": "guòqù",
+   "nghia": "quá khứ, trước đây"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "还是",
+   "pinyin": "háishi",
+   "nghia": "hay là; vẫn"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "黑板",
+   "pinyin": "hēibǎn",
+   "nghia": "bảng đen"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "后来",
+   "pinyin": "hòulái",
+   "nghia": "sau này, về sau"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "花",
+   "pinyin": "huā",
+   "nghia": "tiêu (tiền, thời gian); hoa"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "画",
+   "pinyin": "huà",
+   "nghia": "vẽ; bức tranh"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "坏",
+   "pinyin": "huài",
+   "nghia": "hỏng, xấu"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "欢迎",
+   "pinyin": "huānyíng",
+   "nghia": "hoan nghênh, chào mừng"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "环境",
+   "pinyin": "huánjìng",
+   "nghia": "môi trường"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "换",
+   "pinyin": "huàn",
+   "nghia": "đổi, thay"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "黄河",
+   "pinyin": "Huáng Hé",
+   "nghia": "sông Hoàng Hà"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "会议",
+   "pinyin": "huìyì",
+   "nghia": "cuộc họp, hội nghị"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "或者",
+   "pinyin": "huòzhě",
+   "nghia": "hoặc"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "几乎",
+   "pinyin": "jīhū",
+   "nghia": "hầu như, gần như"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "机会",
+   "pinyin": "jīhuì",
+   "nghia": "cơ hội"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "极",
+   "pinyin": "jí",
+   "nghia": "cực kỳ, vô cùng"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "记得",
+   "pinyin": "jìde",
+   "nghia": "nhớ"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "季节",
+   "pinyin": "jìjié",
+   "nghia": "mùa"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "检查",
+   "pinyin": "jiǎnchá",
+   "nghia": "kiểm tra"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "简单",
+   "pinyin": "jiǎndān",
+   "nghia": "đơn giản"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "见面",
+   "pinyin": "jiànmiàn",
+   "nghia": "gặp mặt"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "讲",
+   "pinyin": "jiǎng",
+   "nghia": "giảng, kể"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "教",
+   "pinyin": "jiāo",
+   "nghia": "dạy"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "角",
+   "pinyin": "jiǎo",
+   "nghia": "hào (đơn vị tiền); góc"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "脚",
+   "pinyin": "jiǎo",
+   "nghia": "bàn chân"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "接",
+   "pinyin": "jiē",
+   "nghia": "đón; nhận"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "街道",
+   "pinyin": "jiēdào",
+   "nghia": "đường phố"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "结婚",
+   "pinyin": "jiéhūn",
+   "nghia": "kết hôn"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "结束",
+   "pinyin": "jiéshù",
+   "nghia": "kết thúc"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "节目",
+   "pinyin": "jiémù",
+   "nghia": "tiết mục, chương trình"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "节日",
+   "pinyin": "jiérì",
+   "nghia": "ngày lễ"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "解决",
+   "pinyin": "jiějué",
+   "nghia": "giải quyết"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "借",
+   "pinyin": "jiè",
+   "nghia": "mượn, cho mượn"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "经常",
+   "pinyin": "jīngcháng",
+   "nghia": "thường xuyên"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "经过",
+   "pinyin": "jīngguò",
+   "nghia": "đi qua; trải qua"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "经理",
+   "pinyin": "jīnglǐ",
+   "nghia": "giám đốc, quản lý"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "久",
+   "pinyin": "jiǔ",
+   "nghia": "lâu"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "旧",
+   "pinyin": "jiù",
+   "nghia": "cũ"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "句子",
+   "pinyin": "jùzi",
+   "nghia": "câu (văn)"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "决定",
+   "pinyin": "juédìng",
+   "nghia": "quyết định"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "渴",
+   "pinyin": "kě",
+   "nghia": "khát"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "刻",
+   "pinyin": "kè",
+   "nghia": "khắc (15 phút)"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "客人",
+   "pinyin": "kèrén",
+   "nghia": "khách"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "口",
+   "pinyin": "kǒu",
+   "nghia": "miệng; (lượng từ chỉ người trong nhà)"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "哭",
+   "pinyin": "kū",
+   "nghia": "khóc"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "蓝",
+   "pinyin": "lán",
+   "nghia": "màu xanh lam"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "老",
+   "pinyin": "lǎo",
+   "nghia": "già, cũ"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "离开",
+   "pinyin": "líkāi",
+   "nghia": "rời khỏi"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "礼物",
+   "pinyin": "lǐwù",
+   "nghia": "quà tặng"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "脸",
+   "pinyin": "liǎn",
+   "nghia": "mặt, khuôn mặt"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "练习",
+   "pinyin": "liànxí",
+   "nghia": "luyện tập; bài tập"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "辆",
+   "pinyin": "liàng",
+   "nghia": "chiếc (lượng từ cho xe)"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "了解",
+   "pinyin": "liǎojiě",
+   "nghia": "tìm hiểu, hiểu rõ"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "邻居",
+   "pinyin": "línjū",
+   "nghia": "hàng xóm"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "楼",
+   "pinyin": "lóu",
+   "nghia": "tòa nhà, tầng"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "绿",
+   "pinyin": "lǜ",
+   "nghia": "màu xanh lá"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "马上",
+   "pinyin": "mǎshàng",
+   "nghia": "ngay lập tức"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "米",
+   "pinyin": "mǐ",
+   "nghia": "mét; gạo"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "面包",
+   "pinyin": "miànbāo",
+   "nghia": "bánh mì"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "明白",
+   "pinyin": "míngbai",
+   "nghia": "hiểu, rõ ràng"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "拿",
+   "pinyin": "ná",
+   "nghia": "cầm, lấy"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "奶奶",
+   "pinyin": "nǎinai",
+   "nghia": "bà nội"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "南",
+   "pinyin": "nán",
+   "nghia": "phía nam"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "难",
+   "pinyin": "nán",
+   "nghia": "khó"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "难过",
+   "pinyin": "nánguò",
+   "nghia": "buồn"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "年级",
+   "pinyin": "niánjí",
+   "nghia": "lớp, khối (năm học)"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "年轻",
+   "pinyin": "niánqīng",
+   "nghia": "trẻ"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "努力",
+   "pinyin": "nǔlì",
+   "nghia": "cố gắng"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "爬山",
+   "pinyin": "páshān",
+   "nghia": "leo núi"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "盘子",
+   "pinyin": "pánzi",
+   "nghia": "cái đĩa"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "啤酒",
+   "pinyin": "píjiǔ",
+   "nghia": "bia"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "瓶子",
+   "pinyin": "píngzi",
+   "nghia": "cái chai, lọ"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "其实",
+   "pinyin": "qíshí",
+   "nghia": "thực ra"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "其他",
+   "pinyin": "qítā",
+   "nghia": "khác, còn lại"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "奇怪",
+   "pinyin": "qíguài",
+   "nghia": "kỳ lạ"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "骑",
+   "pinyin": "qí",
+   "nghia": "cưỡi, đi (xe đạp, xe máy)"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "起飞",
+   "pinyin": "qǐfēi",
+   "nghia": "cất cánh"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "起来",
+   "pinyin": "qǐlai",
+   "nghia": "dậy, đứng lên"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "清楚",
+   "pinyin": "qīngchu",
+   "nghia": "rõ ràng"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "请假",
+   "pinyin": "qǐngjià",
+   "nghia": "xin nghỉ phép"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "然后",
+   "pinyin": "ránhòu",
+   "nghia": "sau đó"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "热情",
+   "pinyin": "rèqíng",
+   "nghia": "nhiệt tình"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "认为",
+   "pinyin": "rènwéi",
+   "nghia": "cho rằng"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "认真",
+   "pinyin": "rènzhēn",
+   "nghia": "chăm chỉ, nghiêm túc"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "容易",
+   "pinyin": "róngyì",
+   "nghia": "dễ dàng"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "如果",
+   "pinyin": "rúguǒ",
+   "nghia": "nếu"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "上网",
+   "pinyin": "shàngwǎng",
+   "nghia": "lên mạng"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "声音",
+   "pinyin": "shēngyīn",
+   "nghia": "âm thanh, giọng nói"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "世界",
+   "pinyin": "shìjiè",
+   "nghia": "thế giới"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "试",
+   "pinyin": "shì",
+   "nghia": "thử"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "叔叔",
+   "pinyin": "shūshu",
+   "nghia": "chú"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "舒服",
+   "pinyin": "shūfu",
+   "nghia": "dễ chịu, thoải mái"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "双",
+   "pinyin": "shuāng",
+   "nghia": "đôi (lượng từ)"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "水平",
+   "pinyin": "shuǐpíng",
+   "nghia": "trình độ"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "司机",
+   "pinyin": "sījī",
+   "nghia": "tài xế"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "特别",
+   "pinyin": "tèbié",
+   "nghia": "đặc biệt"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "提高",
+   "pinyin": "tígāo",
+   "nghia": "nâng cao"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "体育",
+   "pinyin": "tǐyù",
+   "nghia": "thể dục, thể thao"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "甜",
+   "pinyin": "tián",
+   "nghia": "ngọt"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "条",
+   "pinyin": "tiáo",
+   "nghia": "chiếc, con (lượng từ cho vật dài)"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "同事",
+   "pinyin": "tóngshì",
+   "nghia": "đồng nghiệp"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "同意",
+   "pinyin": "tóngyì",
+   "nghia": "đồng ý"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "突然",
+   "pinyin": "tūrán",
+   "nghia": "đột nhiên"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "完成",
+   "pinyin": "wánchéng",
+   "nghia": "hoàn thành"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "万",
+   "pinyin": "wàn",
+   "nghia": "mười nghìn, vạn"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "忘记",
+   "pinyin": "wàngjì",
+   "nghia": "quên"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "为",
+   "pinyin": "wèi",
+   "nghia": "vì, cho"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "为了",
+   "pinyin": "wèile",
+   "nghia": "để, vì"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "位",
+   "pinyin": "wèi",
+   "nghia": "vị (lượng từ chỉ người, lịch sự)"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "文化",
+   "pinyin": "wénhuà",
+   "nghia": "văn hóa"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "西",
+   "pinyin": "xī",
+   "nghia": "phía tây"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "习惯",
+   "pinyin": "xíguàn",
+   "nghia": "thói quen; quen với"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "洗手间",
+   "pinyin": "xǐshǒujiān",
+   "nghia": "nhà vệ sinh"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "先",
+   "pinyin": "xiān",
+   "nghia": "trước"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "相信",
+   "pinyin": "xiāngxìn",
+   "nghia": "tin tưởng"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "香蕉",
+   "pinyin": "xiāngjiāo",
+   "nghia": "quả chuối"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "向",
+   "pinyin": "xiàng",
+   "nghia": "hướng về, về phía"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "像",
+   "pinyin": "xiàng",
+   "nghia": "giống"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "小心",
+   "pinyin": "xiǎoxīn",
+   "nghia": "cẩn thận"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "校长",
+   "pinyin": "xiàozhǎng",
+   "nghia": "hiệu trưởng"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "新闻",
+   "pinyin": "xīnwén",
+   "nghia": "tin tức"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "新鲜",
+   "pinyin": "xīnxiān",
+   "nghia": "tươi"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "信用卡",
+   "pinyin": "xìnyòngkǎ",
+   "nghia": "thẻ tín dụng"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "需要",
+   "pinyin": "xūyào",
+   "nghia": "cần"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "选择",
+   "pinyin": "xuǎnzé",
+   "nghia": "lựa chọn"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "要求",
+   "pinyin": "yāoqiú",
+   "nghia": "yêu cầu"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "爷爷",
+   "pinyin": "yéye",
+   "nghia": "ông nội"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "一般",
+   "pinyin": "yìbān",
+   "nghia": "thông thường, bình thường"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "一边",
+   "pinyin": "yìbiān",
+   "nghia": "vừa… vừa…"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "一定",
+   "pinyin": "yídìng",
+   "nghia": "nhất định"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "一共",
+   "pinyin": "yígòng",
+   "nghia": "tổng cộng"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "一会儿",
+   "pinyin": "yíhuìr",
+   "nghia": "một lát"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "一样",
+   "pinyin": "yíyàng",
+   "nghia": "giống nhau"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "一直",
+   "pinyin": "yìzhí",
+   "nghia": "luôn luôn, liên tục; thẳng"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "以前",
+   "pinyin": "yǐqián",
+   "nghia": "trước đây"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "音乐",
+   "pinyin": "yīnyuè",
+   "nghia": "âm nhạc"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "饮料",
+   "pinyin": "yǐnliào",
+   "nghia": "đồ uống"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "应该",
+   "pinyin": "yīnggāi",
+   "nghia": "nên, cần phải"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "影响",
+   "pinyin": "yǐngxiǎng",
+   "nghia": "ảnh hưởng"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "用",
+   "pinyin": "yòng",
+   "nghia": "dùng, sử dụng"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "游戏",
+   "pinyin": "yóuxì",
+   "nghia": "trò chơi"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "有名",
+   "pinyin": "yǒumíng",
+   "nghia": "nổi tiếng"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "又",
+   "pinyin": "yòu",
+   "nghia": "lại, vừa"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "遇到",
+   "pinyin": "yùdào",
+   "nghia": "gặp phải"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "元",
+   "pinyin": "yuán",
+   "nghia": "đồng tệ (đơn vị tiền)"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "愿意",
+   "pinyin": "yuànyì",
+   "nghia": "bằng lòng, muốn"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "月亮",
+   "pinyin": "yuèliang",
+   "nghia": "mặt trăng"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "越",
+   "pinyin": "yuè",
+   "nghia": "càng… càng…"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "站",
+   "pinyin": "zhàn",
+   "nghia": "đứng; bến, trạm"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "张",
+   "pinyin": "zhāng",
+   "nghia": "tấm, tờ (lượng từ cho vật phẳng)"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "长",
+   "pinyin": "zhǎng",
+   "nghia": "mọc, lớn lên"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "照片",
+   "pinyin": "zhàopiàn",
+   "nghia": "bức ảnh"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "只",
+   "pinyin": "zhǐ",
+   "nghia": "chỉ"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "只",
+   "pinyin": "zhī",
+   "nghia": "con (lượng từ cho động vật)"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "中间",
+   "pinyin": "zhōngjiān",
+   "nghia": "ở giữa"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "中文",
+   "pinyin": "Zhōngwén",
+   "nghia": "tiếng Trung"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "终于",
+   "pinyin": "zhōngyú",
+   "nghia": "cuối cùng cũng"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "种",
+   "pinyin": "zhǒng",
+   "nghia": "loại, kiểu"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "重要",
+   "pinyin": "zhòngyào",
+   "nghia": "quan trọng"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "周末",
+   "pinyin": "zhōumò",
+   "nghia": "cuối tuần"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "主要",
+   "pinyin": "zhǔyào",
+   "nghia": "chủ yếu"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "祝",
+   "pinyin": "zhù",
+   "nghia": "chúc"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "注意",
+   "pinyin": "zhùyì",
+   "nghia": "chú ý"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "字典",
+   "pinyin": "zìdiǎn",
+   "nghia": "từ điển (tra chữ)"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "自己",
+   "pinyin": "zìjǐ",
+   "nghia": "tự mình, bản thân"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "总是",
+   "pinyin": "zǒngshì",
+   "nghia": "luôn luôn"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "最近",
+   "pinyin": "zuìjìn",
+   "nghia": "gần đây"
+  },
+  {
+   "cap": "HSK3",
+   "chu_han": "作用",
+   "pinyin": "zuòyòng",
+   "nghia": "tác dụng"
+  }
+ ]
+}

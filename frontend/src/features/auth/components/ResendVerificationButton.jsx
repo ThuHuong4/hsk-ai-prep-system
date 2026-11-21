@@ -1,12 +1,14 @@
 import { useEffect, useRef, useState } from "react";
 
 import { resendVerification } from "../api/resendVerification.js";
+import { useAuth } from "../context/AuthContext.jsx";
 
 // Khớp AUTH_RESEND_MIN_SECONDS của backend; backend vẫn là nơi quyết định cuối cùng
 const DEFAULT_COOLDOWN_SECONDS = 60;
 
-export default function ResendVerificationButton({ email, initialCooldown = 0 }) {
-  const [cooldown, setCooldown] = useState(initialCooldown);
+export default function ResendVerificationButton() {
+  const { token, markEmailVerified } = useAuth();
+  const [cooldown, setCooldown] = useState(0);
   const [sending, setSending] = useState(false);
   const [message, setMessage] = useState("");
   const [error, setError] = useState("");
@@ -18,21 +20,22 @@ export default function ResendVerificationButton({ email, initialCooldown = 0 })
     return () => clearTimeout(timerId);
   }, [cooldown]);
 
-  const trimmedEmail = (email || "").trim();
-
   async function handleClick() {
-    if (!trimmedEmail || sendingRef.current || cooldown > 0) return;
-
+    if (!token || sendingRef.current || cooldown > 0) return;
     sendingRef.current = true;
     setSending(true);
     setMessage("");
     setError("");
     try {
-      const data = await resendVerification(trimmedEmail);
+      const data = await resendVerification(token);
       setMessage(data.message);
       setCooldown(DEFAULT_COOLDOWN_SECONDS);
     } catch (err) {
-      setError(err?.message || "Không gửi lại được, vui lòng thử lại");
+      if (err?.code === "DA_XAC_MINH") {
+        markEmailVerified(); // Đã xác minh ở tab khác: ẩn thanh nhắc
+        return;
+      }
+      setError(err?.message || "Không gửi được, vui lòng thử lại");
       if (err?.retryAfterSeconds) setCooldown(err.retryAfterSeconds);
     } finally {
       sendingRef.current = false;
@@ -40,21 +43,17 @@ export default function ResendVerificationButton({ email, initialCooldown = 0 })
     }
   }
 
-  let label = "Gửi lại email xác minh";
+  let label = "Gửi thư xác minh";
   if (sending) label = "Đang gửi...";
-  else if (cooldown > 0) label = `Gửi lại email xác minh (${cooldown}s)`;
+  else if (cooldown > 0) label = `Gửi lại (${cooldown}s)`;
 
   return (
-    <div>
-      <button
-        type="button"
-        onClick={handleClick}
-        disabled={sending || cooldown > 0 || !trimmedEmail}
-      >
+    <span className="verify-banner__action">
+      <button type="button" onClick={handleClick} disabled={sending || cooldown > 0}>
         {label}
       </button>
-      {message && <p role="status">{message}</p>}
-      {error && <p role="alert">{error}</p>}
-    </div>
+      {message && <span role="status">{message}</span>}
+      {error && <span role="alert">{error}</span>}
+    </span>
   );
 }

@@ -1,0 +1,2725 @@
+{
+ "cap": "HSK3",
+ "ky_nang": "viet",
+ "thua": [
+  {
+   "ten": "Cuộc sống hằng ngày",
+   "muc_tieu": "Viết câu và chữ Hán về sinh hoạt buổi sáng, việc nhà và đồ dùng",
+   "bai": [
+    {
+     "ten": "Sắp xếp câu: buổi sáng",
+     "cau": [
+      {
+       "dang": "sap_xep",
+       "noi_dung": "每天 ／ 起床 ／ 我 ／ 七点",
+       "goi_y": "Gõ lại cả câu theo đúng thứ tự",
+       "dich_nghia": "Mỗi ngày tôi dậy lúc 7 giờ.",
+       "giai_thich": "Từ chỉ thời gian (每天, 七点) đứng trước động từ.",
+       "phuong_an": [
+        {
+         "noi_dung": "每天"
+        },
+        {
+         "noi_dung": "起床"
+        },
+        {
+         "noi_dung": "我"
+        },
+        {
+         "noi_dung": "七点"
+        }
+       ],
+       "dap_an_chap_nhan": [
+        "我每天七点起床。",
+        "每天我七点起床。"
+       ]
+      },
+      {
+       "dang": "sap_xep",
+       "noi_dung": "刷牙 ／ 先 ／ 我 ／ 洗脸 ／ 再",
+       "goi_y": "Gõ lại cả câu theo đúng thứ tự",
+       "dich_nghia": "Tôi đánh răng trước rồi rửa mặt.",
+       "giai_thich": "先…再… = trước… rồi…",
+       "phuong_an": [
+        {
+         "noi_dung": "刷牙"
+        },
+        {
+         "noi_dung": "先"
+        },
+        {
+         "noi_dung": "我"
+        },
+        {
+         "noi_dung": "洗脸"
+        },
+        {
+         "noi_dung": "再"
+        }
+       ],
+       "dap_an_chap_nhan": [
+        "我先刷牙再洗脸。",
+        "我先洗脸再刷牙。"
+       ]
+      },
+      {
+       "dang": "sap_xep",
+       "noi_dung": "把 ／ 房间 ／ 打扫 ／ 干净了 ／ 妈妈",
+       "goi_y": "Gõ lại cả câu theo đúng thứ tự",
+       "dich_nghia": "Mẹ đã dọn sạch căn phòng.",
+       "giai_thich": "Câu chữ 把: chủ ngữ + 把 + tân ngữ + động từ + bổ ngữ.",
+       "phuong_an": [
+        {
+         "noi_dung": "把"
+        },
+        {
+         "noi_dung": "房间"
+        },
+        {
+         "noi_dung": "打扫"
+        },
+        {
+         "noi_dung": "干净了"
+        },
+        {
+         "noi_dung": "妈妈"
+        }
+       ],
+       "dap_an_chap_nhan": [
+        "妈妈把房间打扫干净了。"
+       ]
+      },
+      {
+       "dang": "sap_xep",
+       "noi_dung": "一杯 ／ 喝 ／ 牛奶 ／ 早上 ／ 我",
+       "goi_y": "Gõ lại cả câu theo đúng thứ tự",
+       "dich_nghia": "Buổi sáng tôi uống một cốc sữa.",
+       "giai_thich": "Số lượng 一杯 đứng trước danh từ 牛奶.",
+       "phuong_an": [
+        {
+         "noi_dung": "一杯"
+        },
+        {
+         "noi_dung": "喝"
+        },
+        {
+         "noi_dung": "牛奶"
+        },
+        {
+         "noi_dung": "早上"
+        },
+        {
+         "noi_dung": "我"
+        }
+       ],
+       "dap_an_chap_nhan": [
+        "我早上喝一杯牛奶。",
+        "早上我喝一杯牛奶。"
+       ]
+      },
+      {
+       "dang": "sap_xep",
+       "noi_dung": "带 ／ 别忘了 ／ 伞 ／ 出门",
+       "goi_y": "Gõ lại cả câu theo đúng thứ tự",
+       "dich_nghia": "Ra ngoài đừng quên mang ô.",
+       "giai_thich": "别忘了 + việc cần làm: 别忘了带伞.",
+       "phuong_an": [
+        {
+         "noi_dung": "带"
+        },
+        {
+         "noi_dung": "别忘了"
+        },
+        {
+         "noi_dung": "伞"
+        },
+        {
+         "noi_dung": "出门"
+        }
+       ],
+       "dap_an_chap_nhan": [
+        "出门别忘了带伞。"
+       ]
+      }
+     ]
+    },
+    {
+     "ten": "Sắp xếp câu: ở nhà",
+     "cau": [
+      {
+       "dang": "sap_xep",
+       "noi_dung": "有 ／ 鸡蛋 ／ 冰箱里 ／ 几个",
+       "goi_y": "Gõ lại cả câu theo đúng thứ tự",
+       "dich_nghia": "Trong tủ lạnh có mấy quả trứng.",
+       "giai_thich": "Nơi chốn + 有 + số lượng + sự vật.",
+       "phuong_an": [
+        {
+         "noi_dung": "有"
+        },
+        {
+         "noi_dung": "鸡蛋"
+        },
+        {
+         "noi_dung": "冰箱里"
+        },
+        {
+         "noi_dung": "几个"
+        }
+       ],
+       "dap_an_chap_nhan": [
+        "冰箱里有几个鸡蛋。"
+       ]
+      },
+      {
+       "dang": "sap_xep",
+       "noi_dung": "睡觉 ／ 洗完澡 ／ 就 ／ 他",
+       "goi_y": "Gõ lại cả câu theo đúng thứ tự",
+       "dich_nghia": "Anh ấy tắm xong là đi ngủ.",
+       "giai_thich": "…就… nối hai việc xảy ra liền nhau.",
+       "phuong_an": [
+        {
+         "noi_dung": "睡觉"
+        },
+        {
+         "noi_dung": "洗完澡"
+        },
+        {
+         "noi_dung": "就"
+        },
+        {
+         "noi_dung": "他"
+        }
+       ],
+       "dap_an_chap_nhan": [
+        "他洗完澡就睡觉。"
+       ]
+      },
+      {
+       "dang": "sap_xep",
+       "noi_dung": "打开 ／ 吧 ／ 空调 ／ 把",
+       "goi_y": "Gõ lại cả câu theo đúng thứ tự",
+       "dich_nghia": "Mở điều hòa ra đi.",
+       "giai_thich": "把 + tân ngữ + động từ + bổ ngữ; 吧 đặt cuối câu đề nghị.",
+       "phuong_an": [
+        {
+         "noi_dung": "打开"
+        },
+        {
+         "noi_dung": "吧"
+        },
+        {
+         "noi_dung": "空调"
+        },
+        {
+         "noi_dung": "把"
+        }
+       ],
+       "dap_an_chap_nhan": [
+        "把空调打开吧。"
+       ]
+      },
+      {
+       "dang": "sap_xep",
+       "noi_dung": "了吗 ／ 灯 ／ 你 ／ 关",
+       "goi_y": "Gõ lại cả câu theo đúng thứ tự",
+       "dich_nghia": "Bạn tắt đèn chưa?",
+       "giai_thich": "关灯 = tắt đèn; 了吗 hỏi việc đã làm chưa.",
+       "phuong_an": [
+        {
+         "noi_dung": "了吗"
+        },
+        {
+         "noi_dung": "灯"
+        },
+        {
+         "noi_dung": "你"
+        },
+        {
+         "noi_dung": "关"
+        }
+       ],
+       "dap_an_chap_nhan": [
+        "你关灯了吗？"
+       ]
+      },
+      {
+       "dang": "sap_xep",
+       "noi_dung": "照顾 ／ 回家 ／ 我 ／ 奶奶 ／ 常常",
+       "goi_y": "Gõ lại cả câu theo đúng thứ tự",
+       "dich_nghia": "Tôi thường về nhà chăm sóc bà.",
+       "giai_thich": "Phó từ 常常 đứng trước động từ; 回家 + 照顾奶奶 (đi để làm gì).",
+       "phuong_an": [
+        {
+         "noi_dung": "照顾"
+        },
+        {
+         "noi_dung": "回家"
+        },
+        {
+         "noi_dung": "我"
+        },
+        {
+         "noi_dung": "奶奶"
+        },
+        {
+         "noi_dung": "常常"
+        }
+       ],
+       "dap_an_chap_nhan": [
+        "我常常回家照顾奶奶。"
+       ]
+      }
+     ]
+    },
+    {
+     "ten": "Điền chữ: đồ dùng trong nhà",
+     "cau": [
+      {
+       "dang": "dien_chu",
+       "noi_dung": "冰（ xiāng ）里有很多水果。",
+       "goi_y": "Điền chữ Hán theo pinyin trong ngoặc",
+       "dich_nghia": "Trong tủ lạnh có nhiều hoa quả.",
+       "giai_thich": "冰箱 (bīngxiāng) = tủ lạnh.",
+       "dap_an_chap_nhan": [
+        "箱"
+       ]
+      },
+      {
+       "dang": "dien_chu",
+       "noi_dung": "天太热了，打开空（ tiáo ）吧。",
+       "goi_y": "Điền chữ Hán theo pinyin trong ngoặc",
+       "dich_nghia": "Trời nóng quá, bật điều hòa đi.",
+       "giai_thich": "空调 (kōngtiáo) = điều hòa.",
+       "dap_an_chap_nhan": [
+        "调"
+       ]
+      },
+      {
+       "dang": "dien_chu",
+       "noi_dung": "他用（ kuài ）子吃饭。",
+       "goi_y": "Điền chữ Hán theo pinyin trong ngoặc",
+       "dich_nghia": "Anh ấy ăn cơm bằng đũa.",
+       "giai_thich": "筷子 (kuàizi) = đũa.",
+       "dap_an_chap_nhan": [
+        "筷"
+       ]
+      },
+      {
+       "dang": "dien_chu",
+       "noi_dung": "这个（ wǎn ）很干净。",
+       "goi_y": "Điền chữ Hán theo pinyin trong ngoặc",
+       "dich_nghia": "Cái bát này rất sạch.",
+       "giai_thich": "碗 (wǎn) = bát.",
+       "dap_an_chap_nhan": [
+        "碗"
+       ]
+      },
+      {
+       "dang": "dien_chu",
+       "noi_dung": "我每天晚上洗（ zǎo ）。",
+       "goi_y": "Điền chữ Hán theo pinyin trong ngoặc",
+       "dich_nghia": "Tối nào tôi cũng tắm.",
+       "giai_thich": "洗澡 (xǐzǎo) = tắm.",
+       "dap_an_chap_nhan": [
+        "澡"
+       ]
+      }
+     ]
+    },
+    {
+     "ten": "Điền chữ: sinh hoạt",
+     "cau": [
+      {
+       "dang": "dien_chu",
+       "noi_dung": "每天早上我都刷（ yá ）。",
+       "goi_y": "Điền chữ Hán theo pinyin trong ngoặc",
+       "dich_nghia": "Sáng nào tôi cũng đánh răng.",
+       "giai_thich": "刷牙 (shuāyá) = đánh răng.",
+       "dap_an_chap_nhan": [
+        "牙"
+       ]
+      },
+      {
+       "dang": "dien_chu",
+       "noi_dung": "星期天我在家打（ sǎo ）房间。",
+       "goi_y": "Điền chữ Hán theo pinyin trong ngoặc",
+       "dich_nghia": "Chủ nhật tôi ở nhà dọn phòng.",
+       "giai_thich": "打扫 (dǎsǎo) = quét dọn.",
+       "dap_an_chap_nhan": [
+        "扫"
+       ]
+      },
+      {
+       "dang": "dien_chu",
+       "noi_dung": "我们下个月（ bān ）家。",
+       "goi_y": "Điền chữ Hán theo pinyin trong ngoặc",
+       "dich_nghia": "Tháng sau chúng tôi chuyển nhà.",
+       "giai_thich": "搬家 (bānjiā) = chuyển nhà.",
+       "dap_an_chap_nhan": [
+        "搬"
+       ]
+      },
+      {
+       "dang": "dien_chu",
+       "noi_dung": "请把（ dēng ）关上。",
+       "goi_y": "Điền chữ Hán theo pinyin trong ngoặc",
+       "dich_nghia": "Hãy tắt đèn đi.",
+       "giai_thich": "灯 (dēng) = đèn.",
+       "dap_an_chap_nhan": [
+        "灯"
+       ]
+      },
+      {
+       "dang": "dien_chu",
+       "noi_dung": "你要好好照（ gù ）自己。",
+       "goi_y": "Điền chữ Hán theo pinyin trong ngoặc",
+       "dich_nghia": "Bạn phải chăm sóc bản thân thật tốt.",
+       "giai_thich": "照顾 (zhàogù) = chăm sóc.",
+       "dap_an_chap_nhan": [
+        "顾"
+       ]
+      }
+     ]
+    }
+   ],
+   "cuoi_thua": [
+    {
+     "dang": "sap_xep",
+     "noi_dung": "干净 ／ 洗得 ／ 衣服 ／ 很",
+     "goi_y": "Gõ lại cả câu theo đúng thứ tự",
+     "dich_nghia": "Quần áo giặt rất sạch.",
+     "giai_thich": "Động từ + 得 + bổ ngữ mức độ: 洗得很干净.",
+     "phuong_an": [
+      {
+       "noi_dung": "干净"
+      },
+      {
+       "noi_dung": "洗得"
+      },
+      {
+       "noi_dung": "衣服"
+      },
+      {
+       "noi_dung": "很"
+      }
+     ],
+     "dap_an_chap_nhan": [
+      "衣服洗得很干净。"
+     ]
+    },
+    {
+     "dang": "sap_xep",
+     "noi_dung": "一个 ／ 冰箱 ／ 我 ／ 新 ／ 想买",
+     "goi_y": "Gõ lại cả câu theo đúng thứ tự",
+     "dich_nghia": "Tôi muốn mua một cái tủ lạnh mới.",
+     "giai_thich": "Số lượng + tính từ + danh từ: 一个新冰箱.",
+     "phuong_an": [
+      {
+       "noi_dung": "一个"
+      },
+      {
+       "noi_dung": "冰箱"
+      },
+      {
+       "noi_dung": "我"
+      },
+      {
+       "noi_dung": "新"
+      },
+      {
+       "noi_dung": "想买"
+      }
+     ],
+     "dap_an_chap_nhan": [
+      "我想买一个新冰箱。"
+     ]
+    },
+    {
+     "dang": "sap_xep",
+     "noi_dung": "一张 ／ 放着 ／ 桌子上 ／ 地图",
+     "goi_y": "Gõ lại cả câu theo đúng thứ tự",
+     "dich_nghia": "Trên bàn có đặt một tấm bản đồ.",
+     "giai_thich": "Nơi chốn + động từ + 着 + sự vật (câu tồn hiện).",
+     "phuong_an": [
+      {
+       "noi_dung": "一张"
+      },
+      {
+       "noi_dung": "放着"
+      },
+      {
+       "noi_dung": "桌子上"
+      },
+      {
+       "noi_dung": "地图"
+      }
+     ],
+     "dap_an_chap_nhan": [
+      "桌子上放着一张地图。"
+     ]
+    },
+    {
+     "dang": "sap_xep",
+     "noi_dung": "关上 ／ 请 ／ 门 ／ 把",
+     "goi_y": "Gõ lại cả câu theo đúng thứ tự",
+     "dich_nghia": "Hãy đóng cửa lại.",
+     "giai_thich": "请 + 把 + tân ngữ + động từ + bổ ngữ.",
+     "phuong_an": [
+      {
+       "noi_dung": "关上"
+      },
+      {
+       "noi_dung": "请"
+      },
+      {
+       "noi_dung": "门"
+      },
+      {
+       "noi_dung": "把"
+      }
+     ],
+     "dap_an_chap_nhan": [
+      "请把门关上。"
+     ]
+    },
+    {
+     "dang": "sap_xep",
+     "noi_dung": "睡觉 ／ 应该 ／ 你 ／ 早点儿",
+     "goi_y": "Gõ lại cả câu theo đúng thứ tự",
+     "dich_nghia": "Bạn nên đi ngủ sớm một chút.",
+     "giai_thich": "应该 + động từ = nên làm gì.",
+     "phuong_an": [
+      {
+       "noi_dung": "睡觉"
+      },
+      {
+       "noi_dung": "应该"
+      },
+      {
+       "noi_dung": "你"
+      },
+      {
+       "noi_dung": "早点儿"
+      }
+     ],
+     "dap_an_chap_nhan": [
+      "你应该早点儿睡觉。"
+     ]
+    },
+    {
+     "dang": "dien_chu",
+     "noi_dung": "我每天都要洗（ wǎn ）。",
+     "goi_y": "Điền chữ Hán theo pinyin trong ngoặc",
+     "dich_nghia": "Ngày nào tôi cũng phải rửa bát.",
+     "giai_thich": "洗碗 (xǐ wǎn) = rửa bát.",
+     "dap_an_chap_nhan": [
+      "碗"
+     ]
+    },
+    {
+     "dang": "dien_chu",
+     "noi_dung": "我们一起打（ sǎo ）教室吧。",
+     "goi_y": "Điền chữ Hán theo pinyin trong ngoặc",
+     "dich_nghia": "Chúng ta cùng quét dọn lớp học nhé.",
+     "giai_thich": "打扫 (dǎsǎo) = quét dọn.",
+     "dap_an_chap_nhan": [
+      "扫"
+     ]
+    },
+    {
+     "dang": "dien_chu",
+     "noi_dung": "他（ bān ）到北京去了。",
+     "goi_y": "Điền chữ Hán theo pinyin trong ngoặc",
+     "dich_nghia": "Anh ấy đã chuyển đến Bắc Kinh.",
+     "giai_thich": "搬 (bān) = chuyển (nhà), dời.",
+     "dap_an_chap_nhan": [
+      "搬"
+     ]
+    },
+    {
+     "dang": "dien_chu",
+     "noi_dung": "冰箱里没有（ niú ）奶了。",
+     "goi_y": "Điền chữ Hán theo pinyin trong ngoặc",
+     "dich_nghia": "Trong tủ lạnh hết sữa rồi.",
+     "giai_thich": "牛奶 (niúnǎi) = sữa bò.",
+     "dap_an_chap_nhan": [
+      "牛"
+     ]
+    },
+    {
+     "dang": "dien_chu",
+     "noi_dung": "我用（ kuài ）子吃面条。",
+     "goi_y": "Điền chữ Hán theo pinyin trong ngoặc",
+     "dich_nghia": "Tôi ăn mì bằng đũa.",
+     "giai_thich": "筷子 (kuàizi) = đũa.",
+     "dap_an_chap_nhan": [
+      "筷"
+     ]
+    }
+   ]
+  },
+  {
+   "ten": "Trường học và công việc",
+   "muc_tieu": "Viết câu và chữ Hán về học tập, thi cử và công việc văn phòng",
+   "bai": [
+    {
+     "ten": "Sắp xếp câu: học tập",
+     "cau": [
+      {
+       "dang": "sap_xep",
+       "noi_dung": "作业 ／ 完成了 ／ 我 ／ 已经",
+       "goi_y": "Gõ lại cả câu theo đúng thứ tự",
+       "dich_nghia": "Tôi đã làm xong bài tập.",
+       "giai_thich": "已经 đứng trước động từ: 已经完成了.",
+       "phuong_an": [
+        {
+         "noi_dung": "作业"
+        },
+        {
+         "noi_dung": "完成了"
+        },
+        {
+         "noi_dung": "我"
+        },
+        {
+         "noi_dung": "已经"
+        }
+       ],
+       "dap_an_chap_nhan": [
+        "我已经完成了作业。",
+        "作业我已经完成了。"
+       ]
+      },
+      {
+       "dang": "sap_xep",
+       "noi_dung": "比 ／ 今天 ／ 冷多了 ／ 昨天",
+       "goi_y": "Gõ lại cả câu theo đúng thứ tự",
+       "dich_nghia": "Hôm nay lạnh hơn hôm qua nhiều.",
+       "giai_thich": "A + 比 + B + tính từ + 多了.",
+       "phuong_an": [
+        {
+         "noi_dung": "比"
+        },
+        {
+         "noi_dung": "今天"
+        },
+        {
+         "noi_dung": "冷多了"
+        },
+        {
+         "noi_dung": "昨天"
+        }
+       ],
+       "dap_an_chap_nhan": [
+        "今天比昨天冷多了。",
+        "昨天比今天冷多了。"
+       ]
+      },
+      {
+       "dang": "sap_xep",
+       "noi_dung": "在 ／ 复习 ／ 图书馆 ／ 我 ／ 数学",
+       "goi_y": "Gõ lại cả câu theo đúng thứ tự",
+       "dich_nghia": "Tôi ôn toán ở thư viện.",
+       "giai_thich": "Chủ ngữ + 在 + nơi chốn + động từ + tân ngữ.",
+       "phuong_an": [
+        {
+         "noi_dung": "在"
+        },
+        {
+         "noi_dung": "复习"
+        },
+        {
+         "noi_dung": "图书馆"
+        },
+        {
+         "noi_dung": "我"
+        },
+        {
+         "noi_dung": "数学"
+        }
+       ],
+       "dap_an_chap_nhan": [
+        "我在图书馆复习数学。"
+       ]
+      },
+      {
+       "dang": "sap_xep",
+       "noi_dung": "叫走了 ／ 老师 ／ 被 ／ 他",
+       "goi_y": "Gõ lại cả câu theo đúng thứ tự",
+       "dich_nghia": "Cậu ấy bị thầy gọi đi rồi.",
+       "giai_thich": "Câu bị động: A + 被 + B + động từ.",
+       "phuong_an": [
+        {
+         "noi_dung": "叫走了"
+        },
+        {
+         "noi_dung": "老师"
+        },
+        {
+         "noi_dung": "被"
+        },
+        {
+         "noi_dung": "他"
+        }
+       ],
+       "dap_an_chap_nhan": [
+        "他被老师叫走了。"
+       ]
+      },
+      {
+       "dang": "sap_xep",
+       "noi_dung": "开始 ／ 明天的 ／ 九点 ／ 会议",
+       "goi_y": "Gõ lại cả câu theo đúng thứ tự",
+       "dich_nghia": "Cuộc họp ngày mai bắt đầu lúc 9 giờ.",
+       "giai_thich": "Chủ ngữ (明天的会议) + thời gian + động từ.",
+       "phuong_an": [
+        {
+         "noi_dung": "开始"
+        },
+        {
+         "noi_dung": "明天的"
+        },
+        {
+         "noi_dung": "九点"
+        },
+        {
+         "noi_dung": "会议"
+        }
+       ],
+       "dap_an_chap_nhan": [
+        "明天的会议九点开始。"
+       ]
+      }
+     ]
+    },
+    {
+     "ten": "Sắp xếp câu: lớp học và công ty",
+     "cau": [
+      {
+       "dang": "sap_xep",
+       "noi_dung": "留学 ／ 他 ／ 中国 ／ 想 ／ 去",
+       "goi_y": "Gõ lại cả câu theo đúng thứ tự",
+       "dich_nghia": "Anh ấy muốn đi Trung Quốc du học.",
+       "giai_thich": "想 + 去 + nơi chốn + mục đích.",
+       "phuong_an": [
+        {
+         "noi_dung": "留学"
+        },
+        {
+         "noi_dung": "他"
+        },
+        {
+         "noi_dung": "中国"
+        },
+        {
+         "noi_dung": "想"
+        },
+        {
+         "noi_dung": "去"
+        }
+       ],
+       "dap_an_chap_nhan": [
+        "他想去中国留学。"
+       ]
+      },
+      {
+       "dang": "sap_xep",
+       "noi_dung": "一次 ／ 说 ／ 请 ／ 再",
+       "goi_y": "Gõ lại cả câu theo đúng thứ tự",
+       "dich_nghia": "Xin hãy nói lại một lần nữa.",
+       "giai_thich": "再 + động từ + 一次 = làm lại một lần.",
+       "phuong_an": [
+        {
+         "noi_dung": "一次"
+        },
+        {
+         "noi_dung": "说"
+        },
+        {
+         "noi_dung": "请"
+        },
+        {
+         "noi_dung": "再"
+        }
+       ],
+       "dap_an_chap_nhan": [
+        "请再说一次。"
+       ]
+      },
+      {
+       "dang": "sap_xep",
+       "noi_dung": "写着 ／ 几个 ／ 黑板上 ／ 字",
+       "goi_y": "Gõ lại cả câu theo đúng thứ tự",
+       "dich_nghia": "Trên bảng có viết mấy chữ.",
+       "giai_thich": "Nơi chốn + động từ + 着 + sự vật.",
+       "phuong_an": [
+        {
+         "noi_dung": "写着"
+        },
+        {
+         "noi_dung": "几个"
+        },
+        {
+         "noi_dung": "黑板上"
+        },
+        {
+         "noi_dung": "字"
+        }
+       ],
+       "dap_an_chap_nhan": [
+        "黑板上写着几个字。"
+       ]
+      },
+      {
+       "dang": "sap_xep",
+       "noi_dung": "认真 ／ 学习 ／ 非常 ／ 她",
+       "goi_y": "Gõ lại cả câu theo đúng thứ tự",
+       "dich_nghia": "Cô ấy học rất chăm chỉ.",
+       "giai_thich": "Chủ ngữ + động từ + phó từ + tính từ: 学习非常认真.",
+       "phuong_an": [
+        {
+         "noi_dung": "认真"
+        },
+        {
+         "noi_dung": "学习"
+        },
+        {
+         "noi_dung": "非常"
+        },
+        {
+         "noi_dung": "她"
+        }
+       ],
+       "dap_an_chap_nhan": [
+        "她学习非常认真。"
+       ]
+      },
+      {
+       "dang": "sap_xep",
+       "noi_dung": "开会 ／ 正 ／ 在 ／ 经理",
+       "goi_y": "Gõ lại cả câu theo đúng thứ tự",
+       "dich_nghia": "Giám đốc đang họp.",
+       "giai_thich": "正在 + động từ = đang làm gì.",
+       "phuong_an": [
+        {
+         "noi_dung": "开会"
+        },
+        {
+         "noi_dung": "正"
+        },
+        {
+         "noi_dung": "在"
+        },
+        {
+         "noi_dung": "经理"
+        }
+       ],
+       "dap_an_chap_nhan": [
+        "经理正在开会。"
+       ]
+      }
+     ]
+    },
+    {
+     "ten": "Điền chữ: trường học",
+     "cau": [
+      {
+       "dang": "dien_chu",
+       "noi_dung": "我的数（ xué ）成绩很好。",
+       "goi_y": "Điền chữ Hán theo pinyin trong ngoặc",
+       "dich_nghia": "Điểm toán của tôi rất tốt.",
+       "giai_thich": "数学 (shùxué) = môn toán.",
+       "dap_an_chap_nhan": [
+        "学"
+       ]
+      },
+      {
+       "dang": "dien_chu",
+       "noi_dung": "我在图书（ guǎn ）看书。",
+       "goi_y": "Điền chữ Hán theo pinyin trong ngoặc",
+       "dich_nghia": "Tôi đọc sách ở thư viện.",
+       "giai_thich": "图书馆 (túshūguǎn) = thư viện.",
+       "dap_an_chap_nhan": [
+        "馆"
+       ]
+      },
+      {
+       "dang": "dien_chu",
+       "noi_dung": "这次考试的成（ jì ）不错。",
+       "goi_y": "Điền chữ Hán theo pinyin trong ngoặc",
+       "dich_nghia": "Điểm thi lần này khá tốt.",
+       "giai_thich": "成绩 (chéngjì) = thành tích, điểm số.",
+       "dap_an_chap_nhan": [
+        "绩"
+       ]
+      },
+      {
+       "dang": "dien_chu",
+       "noi_dung": "老师让我们复（ xí ）第三课。",
+       "goi_y": "Điền chữ Hán theo pinyin trong ngoặc",
+       "dich_nghia": "Thầy bảo chúng tôi ôn bài 3.",
+       "giai_thich": "复习 (fùxí) = ôn tập.",
+       "dap_an_chap_nhan": [
+        "习"
+       ]
+      },
+      {
+       "dang": "dien_chu",
+       "noi_dung": "我还没写完作（ yè ）。",
+       "goi_y": "Điền chữ Hán theo pinyin trong ngoặc",
+       "dich_nghia": "Tôi vẫn chưa viết xong bài tập.",
+       "giai_thich": "作业 (zuòyè) = bài tập.",
+       "dap_an_chap_nhan": [
+        "业"
+       ]
+      }
+     ]
+    },
+    {
+     "ten": "Điền chữ: công việc",
+     "cau": [
+      {
+       "dang": "dien_chu",
+       "noi_dung": "我们公司的（ jīng ）理很年轻。",
+       "goi_y": "Điền chữ Hán theo pinyin trong ngoặc",
+       "dich_nghia": "Giám đốc công ty chúng tôi rất trẻ.",
+       "giai_thich": "经理 (jīnglǐ) = giám đốc.",
+       "dap_an_chap_nhan": [
+        "经"
+       ]
+      },
+      {
+       "dang": "dien_chu",
+       "noi_dung": "明天上午我们开（ huì ）。",
+       "goi_y": "Điền chữ Hán theo pinyin trong ngoặc",
+       "dich_nghia": "Sáng mai chúng tôi họp.",
+       "giai_thich": "开会 (kāihuì) = họp.",
+       "dap_an_chap_nhan": [
+        "会"
+       ]
+      },
+      {
+       "dang": "dien_chu",
+       "noi_dung": "她（ jiǎng ）的故事很有意思。",
+       "goi_y": "Điền chữ Hán theo pinyin trong ngoặc",
+       "dich_nghia": "Câu chuyện cô ấy kể rất thú vị.",
+       "giai_thich": "讲 (jiǎng) = kể, giảng.",
+       "dap_an_chap_nhan": [
+        "讲"
+       ]
+      },
+      {
+       "dang": "dien_chu",
+       "noi_dung": "这个问题很简（ dān ）。",
+       "goi_y": "Điền chữ Hán theo pinyin trong ngoặc",
+       "dich_nghia": "Câu hỏi này rất đơn giản.",
+       "giai_thich": "简单 (jiǎndān) = đơn giản.",
+       "dap_an_chap_nhan": [
+        "单"
+       ]
+      },
+      {
+       "dang": "dien_chu",
+       "noi_dung": "我对历（ shǐ ）很感兴趣。",
+       "goi_y": "Điền chữ Hán theo pinyin trong ngoặc",
+       "dich_nghia": "Tôi rất hứng thú với lịch sử.",
+       "giai_thich": "历史 (lìshǐ) = lịch sử.",
+       "dap_an_chap_nhan": [
+        "史"
+       ]
+      }
+     ]
+    }
+   ],
+   "cuoi_thua": [
+    {
+     "dang": "sap_xep",
+     "noi_dung": "了 ／ 他 ／ 去 ／ 图书馆",
+     "goi_y": "Gõ lại cả câu theo đúng thứ tự",
+     "dich_nghia": "Anh ấy đi thư viện rồi.",
+     "giai_thich": "了 cuối câu báo việc đã xảy ra.",
+     "phuong_an": [
+      {
+       "noi_dung": "了"
+      },
+      {
+       "noi_dung": "他"
+      },
+      {
+       "noi_dung": "去"
+      },
+      {
+       "noi_dung": "图书馆"
+      }
+     ],
+     "dap_an_chap_nhan": [
+      "他去图书馆了。"
+     ]
+    },
+    {
+     "dang": "sap_xep",
+     "noi_dung": "书 ／ 打开 ／ 请 ／ 把",
+     "goi_y": "Gõ lại cả câu theo đúng thứ tự",
+     "dich_nghia": "Hãy mở sách ra.",
+     "giai_thich": "请 + 把 + tân ngữ + động từ + bổ ngữ.",
+     "phuong_an": [
+      {
+       "noi_dung": "书"
+      },
+      {
+       "noi_dung": "打开"
+      },
+      {
+       "noi_dung": "请"
+      },
+      {
+       "noi_dung": "把"
+      }
+     ],
+     "dap_an_chap_nhan": [
+      "请把书打开。"
+     ]
+    },
+    {
+     "dang": "sap_xep",
+     "noi_dung": "了 ／ 已经 ／ 复习完 ／ 我",
+     "goi_y": "Gõ lại cả câu theo đúng thứ tự",
+     "dich_nghia": "Tôi đã ôn xong rồi.",
+     "giai_thich": "已经 + động từ + bổ ngữ kết quả + 了.",
+     "phuong_an": [
+      {
+       "noi_dung": "了"
+      },
+      {
+       "noi_dung": "已经"
+      },
+      {
+       "noi_dung": "复习完"
+      },
+      {
+       "noi_dung": "我"
+      }
+     ],
+     "dap_an_chap_nhan": [
+      "我已经复习完了。"
+     ]
+    },
+    {
+     "dang": "sap_xep",
+     "noi_dung": "感兴趣 ／ 历史 ／ 对 ／ 我",
+     "goi_y": "Gõ lại cả câu theo đúng thứ tự",
+     "dich_nghia": "Tôi hứng thú với lịch sử.",
+     "giai_thich": "对 + đối tượng + 感兴趣.",
+     "phuong_an": [
+      {
+       "noi_dung": "感兴趣"
+      },
+      {
+       "noi_dung": "历史"
+      },
+      {
+       "noi_dung": "对"
+      },
+      {
+       "noi_dung": "我"
+      }
+     ],
+     "dap_an_chap_nhan": [
+      "我对历史感兴趣。"
+     ]
+    },
+    {
+     "dang": "sap_xep",
+     "noi_dung": "在 ／ 开会 ／ 会议室 ／ 经理",
+     "goi_y": "Gõ lại cả câu theo đúng thứ tự",
+     "dich_nghia": "Giám đốc họp ở phòng họp.",
+     "giai_thich": "Chủ ngữ + 在 + nơi chốn + động từ.",
+     "phuong_an": [
+      {
+       "noi_dung": "在"
+      },
+      {
+       "noi_dung": "开会"
+      },
+      {
+       "noi_dung": "会议室"
+      },
+      {
+       "noi_dung": "经理"
+      }
+     ],
+     "dap_an_chap_nhan": [
+      "经理在会议室开会。"
+     ]
+    },
+    {
+     "dang": "dien_chu",
+     "noi_dung": "下课以后我去图书（ guǎn ）。",
+     "goi_y": "Điền chữ Hán theo pinyin trong ngoặc",
+     "dich_nghia": "Tan học tôi đi thư viện.",
+     "giai_thich": "图书馆 (túshūguǎn) = thư viện.",
+     "dap_an_chap_nhan": [
+      "馆"
+     ]
+    },
+    {
+     "dang": "dien_chu",
+     "noi_dung": "这道题很简（ dān ）。",
+     "goi_y": "Điền chữ Hán theo pinyin trong ngoặc",
+     "dich_nghia": "Bài này rất đơn giản.",
+     "giai_thich": "简单 (jiǎndān) = đơn giản.",
+     "dap_an_chap_nhan": [
+      "单"
+     ]
+    },
+    {
+     "dang": "dien_chu",
+     "noi_dung": "明天有历（ shǐ ）考试。",
+     "goi_y": "Điền chữ Hán theo pinyin trong ngoặc",
+     "dich_nghia": "Ngày mai có bài thi lịch sử.",
+     "giai_thich": "历史 (lìshǐ) = lịch sử.",
+     "dap_an_chap_nhan": [
+      "史"
+     ]
+    },
+    {
+     "dang": "dien_chu",
+     "noi_dung": "你的作（ yè ）写完了吗？",
+     "goi_y": "Điền chữ Hán theo pinyin trong ngoặc",
+     "dich_nghia": "Bài tập của bạn viết xong chưa?",
+     "giai_thich": "作业 (zuòyè) = bài tập.",
+     "dap_an_chap_nhan": [
+      "业"
+     ]
+    },
+    {
+     "dang": "dien_chu",
+     "noi_dung": "她的成（ jì ）比我好。",
+     "goi_y": "Điền chữ Hán theo pinyin trong ngoặc",
+     "dich_nghia": "Điểm của cô ấy tốt hơn tôi.",
+     "giai_thich": "成绩 (chéngjì) = điểm số.",
+     "dap_an_chap_nhan": [
+      "绩"
+     ]
+    }
+   ]
+  },
+  {
+   "ten": "Mua sắm và ăn uống",
+   "muc_tieu": "Viết câu và chữ Hán về quần áo, siêu thị và nhà hàng",
+   "bai": [
+    {
+     "ten": "Sắp xếp câu: mua sắm",
+     "cau": [
+      {
+       "dang": "sap_xep",
+       "noi_dung": "这条 ／ 很 ／ 裤子 ／ 便宜",
+       "goi_y": "Gõ lại cả câu theo đúng thứ tự",
+       "dich_nghia": "Chiếc quần này rất rẻ.",
+       "giai_thich": "这 + lượng từ 条 + danh từ 裤子.",
+       "phuong_an": [
+        {
+         "noi_dung": "这条"
+        },
+        {
+         "noi_dung": "很"
+        },
+        {
+         "noi_dung": "裤子"
+        },
+        {
+         "noi_dung": "便宜"
+        }
+       ],
+       "dap_an_chap_nhan": [
+        "这条裤子很便宜。"
+       ]
+      },
+      {
+       "dang": "sap_xep",
+       "noi_dung": "一件 ／ 衬衫 ／ 买了 ／ 我",
+       "goi_y": "Gõ lại cả câu theo đúng thứ tự",
+       "dich_nghia": "Tôi đã mua một chiếc áo sơ mi.",
+       "giai_thich": "Động từ + 了 + số lượng + danh từ.",
+       "phuong_an": [
+        {
+         "noi_dung": "一件"
+        },
+        {
+         "noi_dung": "衬衫"
+        },
+        {
+         "noi_dung": "买了"
+        },
+        {
+         "noi_dung": "我"
+        }
+       ],
+       "dap_an_chap_nhan": [
+        "我买了一件衬衫。"
+       ]
+      },
+      {
+       "dang": "sap_xep",
+       "noi_dung": "好吃 ／ 菜 ／ 做的 ／ 妈妈 ／ 很",
+       "goi_y": "Gõ lại cả câu theo đúng thứ tự",
+       "dich_nghia": "Món mẹ nấu rất ngon.",
+       "giai_thich": "妈妈做的 bổ nghĩa cho 菜.",
+       "phuong_an": [
+        {
+         "noi_dung": "好吃"
+        },
+        {
+         "noi_dung": "菜"
+        },
+        {
+         "noi_dung": "做的"
+        },
+        {
+         "noi_dung": "妈妈"
+        },
+        {
+         "noi_dung": "很"
+        }
+       ],
+       "dap_an_chap_nhan": [
+        "妈妈做的菜很好吃。"
+       ]
+      },
+      {
+       "dang": "sap_xep",
+       "noi_dung": "超市 ／ 去 ／ 我们 ／ 水果 ／ 买",
+       "goi_y": "Gõ lại cả câu theo đúng thứ tự",
+       "dich_nghia": "Chúng tôi đi siêu thị mua hoa quả.",
+       "giai_thich": "去 + nơi chốn + việc làm.",
+       "phuong_an": [
+        {
+         "noi_dung": "超市"
+        },
+        {
+         "noi_dung": "去"
+        },
+        {
+         "noi_dung": "我们"
+        },
+        {
+         "noi_dung": "水果"
+        },
+        {
+         "noi_dung": "买"
+        }
+       ],
+       "dap_an_chap_nhan": [
+        "我们去超市买水果。"
+       ]
+      },
+      {
+       "dang": "sap_xep",
+       "noi_dung": "多少钱 ／ 这双 ／ 皮鞋",
+       "goi_y": "Gõ lại cả câu theo đúng thứ tự",
+       "dich_nghia": "Đôi giày da này bao nhiêu tiền?",
+       "giai_thich": "这 + 双 + 皮鞋 rồi mới hỏi 多少钱.",
+       "phuong_an": [
+        {
+         "noi_dung": "多少钱"
+        },
+        {
+         "noi_dung": "这双"
+        },
+        {
+         "noi_dung": "皮鞋"
+        }
+       ],
+       "dap_an_chap_nhan": [
+        "这双皮鞋多少钱？"
+       ]
+      }
+     ]
+    },
+    {
+     "ten": "Sắp xếp câu: ở nhà hàng",
+     "cau": [
+      {
+       "dang": "sap_xep",
+       "noi_dung": "比 ／ 那件 ／ 贵 ／ 这件",
+       "goi_y": "Gõ lại cả câu theo đúng thứ tự",
+       "dich_nghia": "Chiếc này đắt hơn chiếc kia.",
+       "giai_thich": "A + 比 + B + tính từ.",
+       "phuong_an": [
+        {
+         "noi_dung": "比"
+        },
+        {
+         "noi_dung": "那件"
+        },
+        {
+         "noi_dung": "贵"
+        },
+        {
+         "noi_dung": "这件"
+        }
+       ],
+       "dap_an_chap_nhan": [
+        "这件比那件贵。",
+        "那件比这件贵。"
+       ]
+      },
+      {
+       "dang": "sap_xep",
+       "noi_dung": "看看 ／ 菜单 ／ 请 ／ 给我",
+       "goi_y": "Gõ lại cả câu theo đúng thứ tự",
+       "dich_nghia": "Cho tôi xem thực đơn.",
+       "giai_thich": "请 + 给我 + động từ lặp lại (看看) + tân ngữ.",
+       "phuong_an": [
+        {
+         "noi_dung": "看看"
+        },
+        {
+         "noi_dung": "菜单"
+        },
+        {
+         "noi_dung": "请"
+        },
+        {
+         "noi_dung": "给我"
+        }
+       ],
+       "dap_an_chap_nhan": [
+        "请给我看看菜单。"
+       ]
+      },
+      {
+       "dang": "sap_xep",
+       "noi_dung": "一碗 ／ 我 ／ 要 ／ 米饭",
+       "goi_y": "Gõ lại cả câu theo đúng thứ tự",
+       "dich_nghia": "Tôi muốn một bát cơm.",
+       "giai_thich": "要 + số lượng + danh từ.",
+       "phuong_an": [
+        {
+         "noi_dung": "一碗"
+        },
+        {
+         "noi_dung": "我"
+        },
+        {
+         "noi_dung": "要"
+        },
+        {
+         "noi_dung": "米饭"
+        }
+       ],
+       "dap_an_chap_nhan": [
+        "我要一碗米饭。"
+       ]
+      },
+      {
+       "dang": "sap_xep",
+       "noi_dung": "筷子 ／ 用 ／ 吃饭 ／ 中国人",
+       "goi_y": "Gõ lại cả câu theo đúng thứ tự",
+       "dich_nghia": "Người Trung Quốc ăn cơm bằng đũa.",
+       "giai_thich": "用 + công cụ + động từ.",
+       "phuong_an": [
+        {
+         "noi_dung": "筷子"
+        },
+        {
+         "noi_dung": "用"
+        },
+        {
+         "noi_dung": "吃饭"
+        },
+        {
+         "noi_dung": "中国人"
+        }
+       ],
+       "dap_an_chap_nhan": [
+        "中国人用筷子吃饭。"
+       ]
+      },
+      {
+       "dang": "sap_xep",
+       "noi_dung": "帽子 ／ 这个 ／ 可爱 ／ 真",
+       "goi_y": "Gõ lại cả câu theo đúng thứ tự",
+       "dich_nghia": "Cái mũ này thật đáng yêu.",
+       "giai_thich": "真 + tính từ = thật là…",
+       "phuong_an": [
+        {
+         "noi_dung": "帽子"
+        },
+        {
+         "noi_dung": "这个"
+        },
+        {
+         "noi_dung": "可爱"
+        },
+        {
+         "noi_dung": "真"
+        }
+       ],
+       "dap_an_chap_nhan": [
+        "这个帽子真可爱。"
+       ]
+      }
+     ]
+    },
+    {
+     "ten": "Điền chữ: quần áo",
+     "cau": [
+      {
+       "dang": "dien_chu",
+       "noi_dung": "我去（ chāo ）市买东西。",
+       "goi_y": "Điền chữ Hán theo pinyin trong ngoặc",
+       "dich_nghia": "Tôi đi siêu thị mua đồ.",
+       "giai_thich": "超市 (chāoshì) = siêu thị.",
+       "dap_an_chap_nhan": [
+        "超"
+       ]
+      },
+      {
+       "dang": "dien_chu",
+       "noi_dung": "这件（ chèn ）衫多少钱？",
+       "goi_y": "Điền chữ Hán theo pinyin trong ngoặc",
+       "dich_nghia": "Chiếc áo sơ mi này bao nhiêu tiền?",
+       "giai_thich": "衬衫 (chènshān) = áo sơ mi.",
+       "dap_an_chap_nhan": [
+        "衬"
+       ]
+      },
+      {
+       "dang": "dien_chu",
+       "noi_dung": "她穿了一条红（ qún ）子。",
+       "goi_y": "Điền chữ Hán theo pinyin trong ngoặc",
+       "dich_nghia": "Cô ấy mặc một chiếc váy đỏ.",
+       "giai_thich": "裙子 (qúnzi) = váy.",
+       "dap_an_chap_nhan": [
+        "裙"
+       ]
+      },
+      {
+       "dang": "dien_chu",
+       "noi_dung": "这双皮（ xié ）很贵。",
+       "goi_y": "Điền chữ Hán theo pinyin trong ngoặc",
+       "dich_nghia": "Đôi giày da này rất đắt.",
+       "giai_thich": "皮鞋 (píxié) = giày da.",
+       "dap_an_chap_nhan": [
+        "鞋"
+       ]
+      },
+      {
+       "dang": "dien_chu",
+       "noi_dung": "这个（ mào ）子很漂亮。",
+       "goi_y": "Điền chữ Hán theo pinyin trong ngoặc",
+       "dich_nghia": "Cái mũ này rất đẹp.",
+       "giai_thich": "帽子 (màozi) = mũ.",
+       "dap_an_chap_nhan": [
+        "帽"
+       ]
+      }
+     ]
+    },
+    {
+     "ten": "Điền chữ: ăn uống",
+     "cau": [
+      {
+       "dang": "dien_chu",
+       "noi_dung": "服务员，请给我（ cài ）单。",
+       "goi_y": "Điền chữ Hán theo pinyin trong ngoặc",
+       "dich_nghia": "Phục vụ ơi, cho tôi thực đơn.",
+       "giai_thich": "菜单 (càidān) = thực đơn.",
+       "dap_an_chap_nhan": [
+        "菜"
+       ]
+      },
+      {
+       "dang": "dien_chu",
+       "noi_dung": "我饿了，想吃（ dàn ）糕。",
+       "goi_y": "Điền chữ Hán theo pinyin trong ngoặc",
+       "dich_nghia": "Tôi đói rồi, muốn ăn bánh ngọt.",
+       "giai_thich": "蛋糕 (dàngāo) = bánh ga tô.",
+       "dap_an_chap_nhan": [
+        "蛋"
+       ]
+      },
+      {
+       "dang": "dien_chu",
+       "noi_dung": "他很喜欢喝（ pí ）酒。",
+       "goi_y": "Điền chữ Hán theo pinyin trong ngoặc",
+       "dich_nghia": "Anh ấy rất thích uống bia.",
+       "giai_thich": "啤酒 (píjiǔ) = bia.",
+       "dap_an_chap_nhan": [
+        "啤"
+       ]
+      },
+      {
+       "dang": "dien_chu",
+       "noi_dung": "你想喝（ guǒ ）汁吗？",
+       "goi_y": "Điền chữ Hán theo pinyin trong ngoặc",
+       "dich_nghia": "Bạn muốn uống nước ép không?",
+       "giai_thich": "果汁 (guǒzhī) = nước ép hoa quả.",
+       "dap_an_chap_nhan": [
+        "果"
+       ]
+      },
+      {
+       "dang": "dien_chu",
+       "noi_dung": "这条（ kù ）子有点儿长。",
+       "goi_y": "Điền chữ Hán theo pinyin trong ngoặc",
+       "dich_nghia": "Chiếc quần này hơi dài.",
+       "giai_thich": "裤子 (kùzi) = quần.",
+       "dap_an_chap_nhan": [
+        "裤"
+       ]
+      }
+     ]
+    }
+   ],
+   "cuoi_thua": [
+    {
+     "dang": "sap_xep",
+     "noi_dung": "便宜 ／ 超市里的 ／ 很 ／ 水果",
+     "goi_y": "Gõ lại cả câu theo đúng thứ tự",
+     "dich_nghia": "Hoa quả trong siêu thị rất rẻ.",
+     "giai_thich": "超市里的 bổ nghĩa cho 水果.",
+     "phuong_an": [
+      {
+       "noi_dung": "便宜"
+      },
+      {
+       "noi_dung": "超市里的"
+      },
+      {
+       "noi_dung": "很"
+      },
+      {
+       "noi_dung": "水果"
+      }
+     ],
+     "dap_an_chap_nhan": [
+      "超市里的水果很便宜。"
+     ]
+    },
+    {
+     "dang": "sap_xep",
+     "noi_dung": "一条 ／ 她 ／ 裙子 ／ 买了",
+     "goi_y": "Gõ lại cả câu theo đúng thứ tự",
+     "dich_nghia": "Cô ấy đã mua một chiếc váy.",
+     "giai_thich": "Động từ + 了 + 一条 + 裙子.",
+     "phuong_an": [
+      {
+       "noi_dung": "一条"
+      },
+      {
+       "noi_dung": "她"
+      },
+      {
+       "noi_dung": "裙子"
+      },
+      {
+       "noi_dung": "买了"
+      }
+     ],
+     "dap_an_chap_nhan": [
+      "她买了一条裙子。"
+     ]
+    },
+    {
+     "dang": "sap_xep",
+     "noi_dung": "蛋糕 ／ 我 ／ 想吃 ／ 一块",
+     "goi_y": "Gõ lại cả câu theo đúng thứ tự",
+     "dich_nghia": "Tôi muốn ăn một miếng bánh.",
+     "giai_thich": "想 + động từ + số lượng + danh từ.",
+     "phuong_an": [
+      {
+       "noi_dung": "蛋糕"
+      },
+      {
+       "noi_dung": "我"
+      },
+      {
+       "noi_dung": "想吃"
+      },
+      {
+       "noi_dung": "一块"
+      }
+     ],
+     "dap_an_chap_nhan": [
+      "我想吃一块蛋糕。"
+     ]
+    },
+    {
+     "dang": "sap_xep",
+     "noi_dung": "啤酒 ／ 他 ／ 喝 ／ 不 ／ 喜欢",
+     "goi_y": "Gõ lại cả câu theo đúng thứ tự",
+     "dich_nghia": "Anh ấy không thích uống bia.",
+     "giai_thich": "不 đứng trước 喜欢: 不喜欢喝.",
+     "phuong_an": [
+      {
+       "noi_dung": "啤酒"
+      },
+      {
+       "noi_dung": "他"
+      },
+      {
+       "noi_dung": "喝"
+      },
+      {
+       "noi_dung": "不"
+      },
+      {
+       "noi_dung": "喜欢"
+      }
+     ],
+     "dap_an_chap_nhan": [
+      "他不喜欢喝啤酒。"
+     ]
+    },
+    {
+     "dang": "sap_xep",
+     "noi_dung": "衬衫 ／ 太 ／ 这件 ／ 了 ／ 小",
+     "goi_y": "Gõ lại cả câu theo đúng thứ tự",
+     "dich_nghia": "Chiếc áo sơ mi này nhỏ quá.",
+     "giai_thich": "太 + tính từ + 了.",
+     "phuong_an": [
+      {
+       "noi_dung": "衬衫"
+      },
+      {
+       "noi_dung": "太"
+      },
+      {
+       "noi_dung": "这件"
+      },
+      {
+       "noi_dung": "了"
+      },
+      {
+       "noi_dung": "小"
+      }
+     ],
+     "dap_an_chap_nhan": [
+      "这件衬衫太小了。"
+     ]
+    },
+    {
+     "dang": "dien_chu",
+     "noi_dung": "超（ shì ）里人很多。",
+     "goi_y": "Điền chữ Hán theo pinyin trong ngoặc",
+     "dich_nghia": "Trong siêu thị rất đông người.",
+     "giai_thich": "超市 (chāoshì) = siêu thị.",
+     "dap_an_chap_nhan": [
+      "市"
+     ]
+    },
+    {
+     "dang": "dien_chu",
+     "noi_dung": "我的皮（ xié ）在哪儿？",
+     "goi_y": "Điền chữ Hán theo pinyin trong ngoặc",
+     "dich_nghia": "Giày da của tôi đâu rồi?",
+     "giai_thich": "皮鞋 (píxié) = giày da.",
+     "dap_an_chap_nhan": [
+      "鞋"
+     ]
+    },
+    {
+     "dang": "dien_chu",
+     "noi_dung": "生日（ dàn ）糕很好吃。",
+     "goi_y": "Điền chữ Hán theo pinyin trong ngoặc",
+     "dich_nghia": "Bánh sinh nhật rất ngon.",
+     "giai_thich": "蛋糕 (dàngāo) = bánh ga tô.",
+     "dap_an_chap_nhan": [
+      "蛋"
+     ]
+    },
+    {
+     "dang": "dien_chu",
+     "noi_dung": "请给我一杯（ guǒ ）汁。",
+     "goi_y": "Điền chữ Hán theo pinyin trong ngoặc",
+     "dich_nghia": "Cho tôi một cốc nước ép.",
+     "giai_thich": "果汁 (guǒzhī) = nước ép hoa quả.",
+     "dap_an_chap_nhan": [
+      "果"
+     ]
+    },
+    {
+     "dang": "dien_chu",
+     "noi_dung": "她的（ qún ）子很漂亮。",
+     "goi_y": "Điền chữ Hán theo pinyin trong ngoặc",
+     "dich_nghia": "Váy của cô ấy rất đẹp.",
+     "giai_thich": "裙子 (qúnzi) = váy.",
+     "dap_an_chap_nhan": [
+      "裙"
+     ]
+    }
+   ]
+  },
+  {
+   "ten": "Đi lại và du lịch",
+   "muc_tieu": "Viết câu và chữ Hán về phương tiện, hỏi đường và du lịch",
+   "bai": [
+    {
+     "ten": "Sắp xếp câu: đi lại",
+     "cau": [
+      {
+       "dang": "sap_xep",
+       "noi_dung": "坐地铁 ／ 我 ／ 上班 ／ 每天",
+       "goi_y": "Gõ lại cả câu theo đúng thứ tự",
+       "dich_nghia": "Mỗi ngày tôi đi tàu điện ngầm đi làm.",
+       "giai_thich": "坐 + phương tiện + mục đích.",
+       "phuong_an": [
+        {
+         "noi_dung": "坐地铁"
+        },
+        {
+         "noi_dung": "我"
+        },
+        {
+         "noi_dung": "上班"
+        },
+        {
+         "noi_dung": "每天"
+        }
+       ],
+       "dap_an_chap_nhan": [
+        "我每天坐地铁上班。",
+        "每天我坐地铁上班。"
+       ]
+      },
+      {
+       "dang": "sap_xep",
+       "noi_dung": "护照 ／ 带 ／ 了吗 ／ 你",
+       "goi_y": "Gõ lại cả câu theo đúng thứ tự",
+       "dich_nghia": "Bạn mang hộ chiếu chưa?",
+       "giai_thich": "Động từ + tân ngữ + 了吗.",
+       "phuong_an": [
+        {
+         "noi_dung": "护照"
+        },
+        {
+         "noi_dung": "带"
+        },
+        {
+         "noi_dung": "了吗"
+        },
+        {
+         "noi_dung": "你"
+        }
+       ],
+       "dap_an_chap_nhan": [
+        "你带护照了吗？"
+       ]
+      },
+      {
+       "dang": "sap_xep",
+       "noi_dung": "行李箱 ／ 很 ／ 大 ／ 这个",
+       "goi_y": "Gõ lại cả câu theo đúng thứ tự",
+       "dich_nghia": "Cái va li này rất to.",
+       "giai_thich": "这个 + danh từ + 很 + tính từ.",
+       "phuong_an": [
+        {
+         "noi_dung": "行李箱"
+        },
+        {
+         "noi_dung": "很"
+        },
+        {
+         "noi_dung": "大"
+        },
+        {
+         "noi_dung": "这个"
+        }
+       ],
+       "dap_an_chap_nhan": [
+        "这个行李箱很大。"
+       ]
+      },
+      {
+       "dang": "sap_xep",
+       "noi_dung": "银行 ／ 怎么 ／ 走 ／ 去",
+       "goi_y": "Gõ lại cả câu theo đúng thứ tự",
+       "dich_nghia": "Đến ngân hàng đi thế nào?",
+       "giai_thich": "去 + nơi chốn + 怎么走 = hỏi đường.",
+       "phuong_an": [
+        {
+         "noi_dung": "银行"
+        },
+        {
+         "noi_dung": "怎么"
+        },
+        {
+         "noi_dung": "走"
+        },
+        {
+         "noi_dung": "去"
+        }
+       ],
+       "dap_an_chap_nhan": [
+        "去银行怎么走？"
+       ]
+      },
+      {
+       "dang": "sap_xep",
+       "noi_dung": "照相机 ／ 带上 ／ 别忘了",
+       "goi_y": "Gõ lại cả câu theo đúng thứ tự",
+       "dich_nghia": "Đừng quên mang theo máy ảnh.",
+       "giai_thich": "别忘了 + việc cần làm.",
+       "phuong_an": [
+        {
+         "noi_dung": "照相机"
+        },
+        {
+         "noi_dung": "带上"
+        },
+        {
+         "noi_dung": "别忘了"
+        }
+       ],
+       "dap_an_chap_nhan": [
+        "别忘了带上照相机。"
+       ]
+      }
+     ]
+    },
+    {
+     "ten": "Sắp xếp câu: du lịch",
+     "cau": [
+      {
+       "dang": "sap_xep",
+       "noi_dung": "旅游 ／ 去 ／ 打算 ／ 我 ／ 北京",
+       "goi_y": "Gõ lại cả câu theo đúng thứ tự",
+       "dich_nghia": "Tôi định đi Bắc Kinh du lịch.",
+       "giai_thich": "打算 + 去 + nơi chốn + mục đích.",
+       "phuong_an": [
+        {
+         "noi_dung": "旅游"
+        },
+        {
+         "noi_dung": "去"
+        },
+        {
+         "noi_dung": "打算"
+        },
+        {
+         "noi_dung": "我"
+        },
+        {
+         "noi_dung": "北京"
+        }
+       ],
+       "dap_an_chap_nhan": [
+        "我打算去北京旅游。"
+       ]
+      },
+      {
+       "dang": "sap_xep",
+       "noi_dung": "上楼 ／ 我们 ／ 坐电梯",
+       "goi_y": "Gõ lại cả câu theo đúng thứ tự",
+       "dich_nghia": "Chúng tôi đi thang máy lên lầu.",
+       "giai_thich": "坐 + phương tiện + động từ chỉ hướng.",
+       "phuong_an": [
+        {
+         "noi_dung": "上楼"
+        },
+        {
+         "noi_dung": "我们"
+        },
+        {
+         "noi_dung": "坐电梯"
+        }
+       ],
+       "dap_an_chap_nhan": [
+        "我们坐电梯上楼。"
+       ]
+      },
+      {
+       "dang": "sap_xep",
+       "noi_dung": "离 ／ 很近 ／ 这儿 ／ 地铁站",
+       "goi_y": "Gõ lại cả câu theo đúng thứ tự",
+       "dich_nghia": "Ga tàu điện ngầm cách đây rất gần.",
+       "giai_thich": "A + 离 + B + 很近 / 很远.",
+       "phuong_an": [
+        {
+         "noi_dung": "离"
+        },
+        {
+         "noi_dung": "很近"
+        },
+        {
+         "noi_dung": "这儿"
+        },
+        {
+         "noi_dung": "地铁站"
+        }
+       ],
+       "dap_an_chap_nhan": [
+        "地铁站离这儿很近。",
+        "这儿离地铁站很近。"
+       ]
+      },
+      {
+       "dang": "sap_xep",
+       "noi_dung": "机场 ／ 送 ／ 我 ／ 去 ／ 朋友",
+       "goi_y": "Gõ lại cả câu theo đúng thứ tự",
+       "dich_nghia": "Tôi tiễn bạn ra sân bay.",
+       "giai_thich": "送 + người + 去 + nơi chốn.",
+       "phuong_an": [
+        {
+         "noi_dung": "机场"
+        },
+        {
+         "noi_dung": "送"
+        },
+        {
+         "noi_dung": "我"
+        },
+        {
+         "noi_dung": "去"
+        },
+        {
+         "noi_dung": "朋友"
+        }
+       ],
+       "dap_an_chap_nhan": [
+        "我送朋友去机场。",
+        "朋友送我去机场。"
+       ]
+      },
+      {
+       "dang": "sap_xep",
+       "noi_dung": "一张 ／ 地图 ／ 我 ／ 需要",
+       "goi_y": "Gõ lại cả câu theo đúng thứ tự",
+       "dich_nghia": "Tôi cần một tấm bản đồ.",
+       "giai_thich": "需要 + số lượng + danh từ.",
+       "phuong_an": [
+        {
+         "noi_dung": "一张"
+        },
+        {
+         "noi_dung": "地图"
+        },
+        {
+         "noi_dung": "我"
+        },
+        {
+         "noi_dung": "需要"
+        }
+       ],
+       "dap_an_chap_nhan": [
+        "我需要一张地图。"
+       ]
+      }
+     ]
+    },
+    {
+     "ten": "Điền chữ: phương tiện",
+     "cau": [
+      {
+       "dang": "dien_chu",
+       "noi_dung": "我们坐（ dì ）铁去吧。",
+       "goi_y": "Điền chữ Hán theo pinyin trong ngoặc",
+       "dich_nghia": "Chúng ta đi tàu điện ngầm nhé.",
+       "giai_thich": "地铁 (dìtiě) = tàu điện ngầm.",
+       "dap_an_chap_nhan": [
+        "地"
+       ]
+      },
+      {
+       "dang": "dien_chu",
+       "noi_dung": "出国要带护（ zhào ）。",
+       "goi_y": "Điền chữ Hán theo pinyin trong ngoặc",
+       "dich_nghia": "Ra nước ngoài phải mang hộ chiếu.",
+       "giai_thich": "护照 (hùzhào) = hộ chiếu.",
+       "dap_an_chap_nhan": [
+        "照"
+       ]
+      },
+      {
+       "dang": "dien_chu",
+       "noi_dung": "银（ háng ）在超市旁边。",
+       "goi_y": "Điền chữ Hán theo pinyin trong ngoặc",
+       "dich_nghia": "Ngân hàng ở bên cạnh siêu thị.",
+       "giai_thich": "银行 (yínháng) = ngân hàng.",
+       "dap_an_chap_nhan": [
+        "行"
+       ]
+      },
+      {
+       "dang": "dien_chu",
+       "noi_dung": "我们坐电（ tī ）上去吧。",
+       "goi_y": "Điền chữ Hán theo pinyin trong ngoặc",
+       "dich_nghia": "Chúng ta đi thang máy lên nhé.",
+       "giai_thich": "电梯 (diàntī) = thang máy.",
+       "dap_an_chap_nhan": [
+        "梯"
+       ]
+      },
+      {
+       "dang": "dien_chu",
+       "noi_dung": "我的行李（ xiāng ）是黑色的。",
+       "goi_y": "Điền chữ Hán theo pinyin trong ngoặc",
+       "dich_nghia": "Va li của tôi màu đen.",
+       "giai_thich": "行李箱 (xínglixiāng) = va li.",
+       "dap_an_chap_nhan": [
+        "箱"
+       ]
+      }
+     ]
+    },
+    {
+     "ten": "Điền chữ: du lịch",
+     "cau": [
+      {
+       "dang": "dien_chu",
+       "noi_dung": "这是我在北京照的照（ piàn ）。",
+       "goi_y": "Điền chữ Hán theo pinyin trong ngoặc",
+       "dich_nghia": "Đây là ảnh tôi chụp ở Bắc Kinh.",
+       "giai_thich": "照片 (zhàopiàn) = bức ảnh.",
+       "dap_an_chap_nhan": [
+        "片"
+       ]
+      },
+      {
+       "dang": "dien_chu",
+       "noi_dung": "公园里有很多（ niǎo ）。",
+       "goi_y": "Điền chữ Hán theo pinyin trong ngoặc",
+       "dich_nghia": "Trong công viên có nhiều chim.",
+       "giai_thich": "鸟 (niǎo) = chim.",
+       "dap_an_chap_nhan": [
+        "鸟"
+       ]
+      },
+      {
+       "dang": "dien_chu",
+       "noi_dung": "中国有很多大熊（ māo ）。",
+       "goi_y": "Điền chữ Hán theo pinyin trong ngoặc",
+       "dich_nghia": "Trung Quốc có nhiều gấu trúc.",
+       "giai_thich": "大熊猫 (dàxióngmāo) = gấu trúc.",
+       "dap_an_chap_nhan": [
+        "猫"
+       ]
+      },
+      {
+       "dang": "dien_chu",
+       "noi_dung": "他（ jīng ）常去国外旅游。",
+       "goi_y": "Điền chữ Hán theo pinyin trong ngoặc",
+       "dich_nghia": "Anh ấy thường đi du lịch nước ngoài.",
+       "giai_thich": "经常 (jīngcháng) = thường xuyên.",
+       "dap_an_chap_nhan": [
+        "经"
+       ]
+      },
+      {
+       "dang": "dien_chu",
+       "noi_dung": "这里的风（ jǐng ）很美。",
+       "goi_y": "Điền chữ Hán theo pinyin trong ngoặc",
+       "dich_nghia": "Phong cảnh ở đây rất đẹp.",
+       "giai_thich": "风景 (fēngjǐng) = phong cảnh.",
+       "dap_an_chap_nhan": [
+        "景"
+       ]
+      }
+     ]
+    }
+   ],
+   "cuoi_thua": [
+    {
+     "dang": "sap_xep",
+     "noi_dung": "去 ／ 怎么走 ／ 请问 ／ 地铁站",
+     "goi_y": "Gõ lại cả câu theo đúng thứ tự",
+     "dich_nghia": "Xin hỏi đến ga tàu điện ngầm đi thế nào?",
+     "giai_thich": "请问 mở đầu câu hỏi lịch sự.",
+     "phuong_an": [
+      {
+       "noi_dung": "去"
+      },
+      {
+       "noi_dung": "怎么走"
+      },
+      {
+       "noi_dung": "请问"
+      },
+      {
+       "noi_dung": "地铁站"
+      }
+     ],
+     "dap_an_chap_nhan": [
+      "请问去地铁站怎么走？"
+     ]
+    },
+    {
+     "dang": "sap_xep",
+     "noi_dung": "护照 ／ 放在 ／ 我的 ／ 包里",
+     "goi_y": "Gõ lại cả câu theo đúng thứ tự",
+     "dich_nghia": "Hộ chiếu của tôi để trong túi.",
+     "giai_thich": "Sự vật + 放在 + nơi chốn.",
+     "phuong_an": [
+      {
+       "noi_dung": "护照"
+      },
+      {
+       "noi_dung": "放在"
+      },
+      {
+       "noi_dung": "我的"
+      },
+      {
+       "noi_dung": "包里"
+      }
+     ],
+     "dap_an_chap_nhan": [
+      "我的护照放在包里。"
+     ]
+    },
+    {
+     "dang": "sap_xep",
+     "noi_dung": "熊猫 ／ 很 ／ 可爱 ／ 大",
+     "goi_y": "Gõ lại cả câu theo đúng thứ tự",
+     "dich_nghia": "Gấu trúc rất đáng yêu.",
+     "giai_thich": "大熊猫 = gấu trúc; 很 + tính từ.",
+     "phuong_an": [
+      {
+       "noi_dung": "熊猫"
+      },
+      {
+       "noi_dung": "很"
+      },
+      {
+       "noi_dung": "可爱"
+      },
+      {
+       "noi_dung": "大"
+      }
+     ],
+     "dap_an_chap_nhan": [
+      "大熊猫很可爱。"
+     ]
+    },
+    {
+     "dang": "sap_xep",
+     "noi_dung": "经常 ／ 他 ／ 坐飞机 ／ 去上海",
+     "goi_y": "Gõ lại cả câu theo đúng thứ tự",
+     "dich_nghia": "Anh ấy thường đi máy bay đến Thượng Hải.",
+     "giai_thich": "Phó từ 经常 đứng trước cụm động từ.",
+     "phuong_an": [
+      {
+       "noi_dung": "经常"
+      },
+      {
+       "noi_dung": "他"
+      },
+      {
+       "noi_dung": "坐飞机"
+      },
+      {
+       "noi_dung": "去上海"
+      }
+     ],
+     "dap_an_chap_nhan": [
+      "他经常坐飞机去上海。"
+     ]
+    },
+    {
+     "dang": "sap_xep",
+     "noi_dung": "照片 ／ 了 ／ 很多 ／ 我们 ／ 照",
+     "goi_y": "Gõ lại cả câu theo đúng thứ tự",
+     "dich_nghia": "Chúng tôi đã chụp rất nhiều ảnh.",
+     "giai_thich": "Động từ + 了 + 很多 + danh từ.",
+     "phuong_an": [
+      {
+       "noi_dung": "照片"
+      },
+      {
+       "noi_dung": "了"
+      },
+      {
+       "noi_dung": "很多"
+      },
+      {
+       "noi_dung": "我们"
+      },
+      {
+       "noi_dung": "照"
+      }
+     ],
+     "dap_an_chap_nhan": [
+      "我们照了很多照片。"
+     ]
+    },
+    {
+     "dang": "dien_chu",
+     "noi_dung": "我在银（ háng ）工作。",
+     "goi_y": "Điền chữ Hán theo pinyin trong ngoặc",
+     "dich_nghia": "Tôi làm việc ở ngân hàng.",
+     "giai_thich": "银行 (yínháng) = ngân hàng.",
+     "dap_an_chap_nhan": [
+      "行"
+     ]
+    },
+    {
+     "dang": "dien_chu",
+     "noi_dung": "坐电（ tī ）去五楼。",
+     "goi_y": "Điền chữ Hán theo pinyin trong ngoặc",
+     "dich_nghia": "Đi thang máy lên tầng năm.",
+     "giai_thich": "电梯 (diàntī) = thang máy.",
+     "dap_an_chap_nhan": [
+      "梯"
+     ]
+    },
+    {
+     "dang": "dien_chu",
+     "noi_dung": "我的照相（ jī ）坏了。",
+     "goi_y": "Điền chữ Hán theo pinyin trong ngoặc",
+     "dich_nghia": "Máy ảnh của tôi hỏng rồi.",
+     "giai_thich": "照相机 (zhàoxiàngjī) = máy ảnh.",
+     "dap_an_chap_nhan": [
+      "机"
+     ]
+    },
+    {
+     "dang": "dien_chu",
+     "noi_dung": "他（ jīng ）常坐地铁上班。",
+     "goi_y": "Điền chữ Hán theo pinyin trong ngoặc",
+     "dich_nghia": "Anh ấy thường đi tàu điện ngầm đi làm.",
+     "giai_thich": "经常 (jīngcháng) = thường xuyên.",
+     "dap_an_chap_nhan": [
+      "经"
+     ]
+    },
+    {
+     "dang": "dien_chu",
+     "noi_dung": "树上有一只小（ niǎo ）。",
+     "goi_y": "Điền chữ Hán theo pinyin trong ngoặc",
+     "dich_nghia": "Trên cây có một chú chim nhỏ.",
+     "giai_thich": "鸟 (niǎo) = chim.",
+     "dap_an_chap_nhan": [
+      "鸟"
+     ]
+    }
+   ]
+  },
+  {
+   "ten": "Sức khỏe và thời tiết",
+   "muc_tieu": "Viết câu và chữ Hán về ốm đau, rèn luyện và bốn mùa",
+   "bai": [
+    {
+     "ten": "Sắp xếp câu: sức khỏe",
+     "cau": [
+      {
+       "dang": "sap_xep",
+       "noi_dung": "感冒了 ／ 我 ／ 好像",
+       "goi_y": "Gõ lại cả câu theo đúng thứ tự",
+       "dich_nghia": "Hình như tôi bị cảm rồi.",
+       "giai_thich": "好像 đứng trước động từ: 好像感冒了.",
+       "phuong_an": [
+        {
+         "noi_dung": "感冒了"
+        },
+        {
+         "noi_dung": "我"
+        },
+        {
+         "noi_dung": "好像"
+        }
+       ],
+       "dap_an_chap_nhan": [
+        "我好像感冒了。"
+       ]
+      },
+      {
+       "dang": "sap_xep",
+       "noi_dung": "发烧 ／ 有点儿 ／ 他",
+       "goi_y": "Gõ lại cả câu theo đúng thứ tự",
+       "dich_nghia": "Anh ấy hơi sốt.",
+       "giai_thich": "有点儿 + tính từ / động từ = hơi…",
+       "phuong_an": [
+        {
+         "noi_dung": "发烧"
+        },
+        {
+         "noi_dung": "有点儿"
+        },
+        {
+         "noi_dung": "他"
+        }
+       ],
+       "dap_an_chap_nhan": [
+        "他有点儿发烧。"
+       ]
+      },
+      {
+       "dang": "sap_xep",
+       "noi_dung": "锻炼 ／ 身体 ／ 每天 ／ 我",
+       "goi_y": "Gõ lại cả câu theo đúng thứ tự",
+       "dich_nghia": "Mỗi ngày tôi rèn luyện thân thể.",
+       "giai_thich": "锻炼身体 = rèn luyện sức khỏe.",
+       "phuong_an": [
+        {
+         "noi_dung": "锻炼"
+        },
+        {
+         "noi_dung": "身体"
+        },
+        {
+         "noi_dung": "每天"
+        },
+        {
+         "noi_dung": "我"
+        }
+       ],
+       "dap_an_chap_nhan": [
+        "我每天锻炼身体。",
+        "每天我锻炼身体。"
+       ]
+      },
+      {
+       "dang": "sap_xep",
+       "noi_dung": "疼 ／ 头 ／ 我的 ／ 很",
+       "goi_y": "Gõ lại cả câu theo đúng thứ tự",
+       "dich_nghia": "Đầu tôi rất đau.",
+       "giai_thich": "Chủ ngữ (我的头) + 很 + 疼.",
+       "phuong_an": [
+        {
+         "noi_dung": "疼"
+        },
+        {
+         "noi_dung": "头"
+        },
+        {
+         "noi_dung": "我的"
+        },
+        {
+         "noi_dung": "很"
+        }
+       ],
+       "dap_an_chap_nhan": [
+        "我的头很疼。"
+       ]
+      },
+      {
+       "dang": "sap_xep",
+       "noi_dung": "医院 ／ 你 ／ 去 ／ 应该 ／ 看看",
+       "goi_y": "Gõ lại cả câu theo đúng thứ tự",
+       "dich_nghia": "Bạn nên đi bệnh viện khám xem.",
+       "giai_thich": "应该 + 去 + nơi chốn + 看看.",
+       "phuong_an": [
+        {
+         "noi_dung": "医院"
+        },
+        {
+         "noi_dung": "你"
+        },
+        {
+         "noi_dung": "去"
+        },
+        {
+         "noi_dung": "应该"
+        },
+        {
+         "noi_dung": "看看"
+        }
+       ],
+       "dap_an_chap_nhan": [
+        "你应该去医院看看。"
+       ]
+      }
+     ]
+    },
+    {
+     "ten": "Sắp xếp câu: thời tiết",
+     "cau": [
+      {
+       "dang": "sap_xep",
+       "noi_dung": "夏天 ／ 很热 ／ 这里的",
+       "goi_y": "Gõ lại cả câu theo đúng thứ tự",
+       "dich_nghia": "Mùa hè ở đây rất nóng.",
+       "giai_thich": "这里的 bổ nghĩa cho 夏天.",
+       "phuong_an": [
+        {
+         "noi_dung": "夏天"
+        },
+        {
+         "noi_dung": "很热"
+        },
+        {
+         "noi_dung": "这里的"
+        }
+       ],
+       "dap_an_chap_nhan": [
+        "这里的夏天很热。"
+       ]
+      },
+      {
+       "dang": "sap_xep",
+       "noi_dung": "冬天 ／ 下雪 ／ 北京 ／ 常常",
+       "goi_y": "Gõ lại cả câu theo đúng thứ tự",
+       "dich_nghia": "Mùa đông Bắc Kinh thường có tuyết.",
+       "giai_thich": "常常 đứng ngay trước động từ 下雪.",
+       "phuong_an": [
+        {
+         "noi_dung": "冬天"
+        },
+        {
+         "noi_dung": "下雪"
+        },
+        {
+         "noi_dung": "北京"
+        },
+        {
+         "noi_dung": "常常"
+        }
+       ],
+       "dap_an_chap_nhan": [
+        "北京冬天常常下雪。",
+        "冬天北京常常下雪。"
+       ]
+      },
+      {
+       "dang": "sap_xep",
+       "noi_dung": "刮风了 ／ 外面 ／ 突然",
+       "goi_y": "Gõ lại cả câu theo đúng thứ tự",
+       "dich_nghia": "Bên ngoài đột nhiên nổi gió.",
+       "giai_thich": "突然 đứng trước động từ hoặc đầu câu.",
+       "phuong_an": [
+        {
+         "noi_dung": "刮风了"
+        },
+        {
+         "noi_dung": "外面"
+        },
+        {
+         "noi_dung": "突然"
+        }
+       ],
+       "dap_an_chap_nhan": [
+        "外面突然刮风了。",
+        "突然外面刮风了。"
+       ]
+      },
+      {
+       "dang": "sap_xep",
+       "noi_dung": "出来了 ／ 太阳 ／ 终于",
+       "goi_y": "Gõ lại cả câu theo đúng thứ tự",
+       "dich_nghia": "Mặt trời cuối cùng cũng ló ra.",
+       "giai_thich": "终于 + động từ = cuối cùng cũng…",
+       "phuong_an": [
+        {
+         "noi_dung": "出来了"
+        },
+        {
+         "noi_dung": "太阳"
+        },
+        {
+         "noi_dung": "终于"
+        }
+       ],
+       "dap_an_chap_nhan": [
+        "太阳终于出来了。"
+       ]
+      },
+      {
+       "dang": "sap_xep",
+       "noi_dung": "最喜欢 ／ 春天 ／ 我",
+       "goi_y": "Gõ lại cả câu theo đúng thứ tự",
+       "dich_nghia": "Tôi thích nhất mùa xuân.",
+       "giai_thich": "最 + động từ chỉ cảm xúc = … nhất.",
+       "phuong_an": [
+        {
+         "noi_dung": "最喜欢"
+        },
+        {
+         "noi_dung": "春天"
+        },
+        {
+         "noi_dung": "我"
+        }
+       ],
+       "dap_an_chap_nhan": [
+        "我最喜欢春天。",
+        "春天我最喜欢。"
+       ]
+      }
+     ]
+    },
+    {
+     "ten": "Điền chữ: sức khỏe",
+     "cau": [
+      {
+       "dang": "dien_chu",
+       "noi_dung": "我（ gǎn ）冒了，不想吃饭。",
+       "goi_y": "Điền chữ Hán theo pinyin trong ngoặc",
+       "dich_nghia": "Tôi bị cảm, không muốn ăn cơm.",
+       "giai_thich": "感冒 (gǎnmào) = cảm cúm.",
+       "dap_an_chap_nhan": [
+        "感"
+       ]
+      },
+      {
+       "dang": "dien_chu",
+       "noi_dung": "你发（ shāo ）了吗？",
+       "goi_y": "Điền chữ Hán theo pinyin trong ngoặc",
+       "dich_nghia": "Bạn bị sốt à?",
+       "giai_thich": "发烧 (fāshāo) = sốt.",
+       "dap_an_chap_nhan": [
+        "烧"
+       ]
+      },
+      {
+       "dang": "dien_chu",
+       "noi_dung": "多锻（ liàn ）身体很重要。",
+       "goi_y": "Điền chữ Hán theo pinyin trong ngoặc",
+       "dich_nghia": "Rèn luyện thân thể nhiều rất quan trọng.",
+       "giai_thich": "锻炼 (duànliàn) = rèn luyện.",
+       "dap_an_chap_nhan": [
+        "炼"
+       ]
+      },
+      {
+       "dang": "dien_chu",
+       "noi_dung": "我牙（ téng ）。",
+       "goi_y": "Điền chữ Hán theo pinyin trong ngoặc",
+       "dich_nghia": "Tôi đau răng.",
+       "giai_thich": "疼 (téng) = đau.",
+       "dap_an_chap_nhan": [
+        "疼"
+       ]
+      },
+      {
+       "dang": "dien_chu",
+       "noi_dung": "他的身体很健（ kāng ）。",
+       "goi_y": "Điền chữ Hán theo pinyin trong ngoặc",
+       "dich_nghia": "Sức khỏe của anh ấy rất tốt.",
+       "giai_thich": "健康 (jiànkāng) = khỏe mạnh.",
+       "dap_an_chap_nhan": [
+        "康"
+       ]
+      }
+     ]
+    },
+    {
+     "ten": "Điền chữ: bốn mùa",
+     "cau": [
+      {
+       "dang": "dien_chu",
+       "noi_dung": "秋天的天气很凉（ kuai ）。",
+       "goi_y": "Điền chữ Hán theo pinyin trong ngoặc",
+       "dich_nghia": "Thời tiết mùa thu rất mát mẻ.",
+       "giai_thich": "凉快 (liángkuai) = mát mẻ.",
+       "dap_an_chap_nhan": [
+        "快"
+       ]
+      },
+      {
+       "dang": "dien_chu",
+       "noi_dung": "北京的（ dōng ）天很冷。",
+       "goi_y": "Điền chữ Hán theo pinyin trong ngoặc",
+       "dich_nghia": "Mùa đông ở Bắc Kinh rất lạnh.",
+       "giai_thich": "冬天 (dōngtiān) = mùa đông.",
+       "dap_an_chap_nhan": [
+        "冬"
+       ]
+      },
+      {
+       "dang": "dien_chu",
+       "noi_dung": "今天（ guā ）风了。",
+       "goi_y": "Điền chữ Hán theo pinyin trong ngoặc",
+       "dich_nghia": "Hôm nay nổi gió.",
+       "giai_thich": "刮风 (guāfēng) = nổi gió.",
+       "dap_an_chap_nhan": [
+        "刮"
+       ]
+      },
+      {
+       "dang": "dien_chu",
+       "noi_dung": "下（ xuě ）了，我们出去玩儿吧。",
+       "goi_y": "Điền chữ Hán theo pinyin trong ngoặc",
+       "dich_nghia": "Tuyết rơi rồi, mình ra ngoài chơi đi.",
+       "giai_thich": "下雪 (xiàxuě) = tuyết rơi.",
+       "dap_an_chap_nhan": [
+        "雪"
+       ]
+      },
+      {
+       "dang": "dien_chu",
+       "noi_dung": "他（ dān ）心明天会下雨。",
+       "goi_y": "Điền chữ Hán theo pinyin trong ngoặc",
+       "dich_nghia": "Anh ấy lo ngày mai sẽ mưa.",
+       "giai_thich": "担心 (dānxīn) = lo lắng.",
+       "dap_an_chap_nhan": [
+        "担"
+       ]
+      }
+     ]
+    }
+   ],
+   "cuoi_thua": [
+    {
+     "dang": "sap_xep",
+     "noi_dung": "健康 ／ 很 ／ 身体 ／ 爷爷的",
+     "goi_y": "Gõ lại cả câu theo đúng thứ tự",
+     "dich_nghia": "Sức khỏe của ông rất tốt.",
+     "giai_thich": "爷爷的 bổ nghĩa cho 身体.",
+     "phuong_an": [
+      {
+       "noi_dung": "健康"
+      },
+      {
+       "noi_dung": "很"
+      },
+      {
+       "noi_dung": "身体"
+      },
+      {
+       "noi_dung": "爷爷的"
+      }
+     ],
+     "dap_an_chap_nhan": [
+      "爷爷的身体很健康。"
+     ]
+    },
+    {
+     "dang": "sap_xep",
+     "noi_dung": "发烧了 ／ 孩子 ／ 昨天",
+     "goi_y": "Gõ lại cả câu theo đúng thứ tự",
+     "dich_nghia": "Hôm qua đứa bé bị sốt.",
+     "giai_thich": "Thời gian đứng trước động từ hoặc đầu câu.",
+     "phuong_an": [
+      {
+       "noi_dung": "发烧了"
+      },
+      {
+       "noi_dung": "孩子"
+      },
+      {
+       "noi_dung": "昨天"
+      }
+     ],
+     "dap_an_chap_nhan": [
+      "孩子昨天发烧了。",
+      "昨天孩子发烧了。"
+     ]
+    },
+    {
+     "dang": "sap_xep",
+     "noi_dung": "风 ／ 今天的 ／ 很大",
+     "goi_y": "Gõ lại cả câu theo đúng thứ tự",
+     "dich_nghia": "Gió hôm nay rất to.",
+     "giai_thich": "今天的 bổ nghĩa cho 风.",
+     "phuong_an": [
+      {
+       "noi_dung": "风"
+      },
+      {
+       "noi_dung": "今天的"
+      },
+      {
+       "noi_dung": "很大"
+      }
+     ],
+     "dap_an_chap_nhan": [
+      "今天的风很大。"
+     ]
+    },
+    {
+     "dang": "sap_xep",
+     "noi_dung": "妈妈 ／ 担心 ／ 我的 ／ 很 ／ 身体",
+     "goi_y": "Gõ lại cả câu theo đúng thứ tự",
+     "dich_nghia": "Mẹ rất lo cho sức khỏe của tôi.",
+     "giai_thich": "很 + 担心 + đối tượng.",
+     "phuong_an": [
+      {
+       "noi_dung": "妈妈"
+      },
+      {
+       "noi_dung": "担心"
+      },
+      {
+       "noi_dung": "我的"
+      },
+      {
+       "noi_dung": "很"
+      },
+      {
+       "noi_dung": "身体"
+      }
+     ],
+     "dap_an_chap_nhan": [
+      "妈妈很担心我的身体。"
+     ]
+    },
+    {
+     "dang": "sap_xep",
+     "noi_dung": "锻炼 ／ 去 ／ 公园 ／ 我们",
+     "goi_y": "Gõ lại cả câu theo đúng thứ tự",
+     "dich_nghia": "Chúng tôi ra công viên tập thể dục.",
+     "giai_thich": "去 + nơi chốn + việc làm.",
+     "phuong_an": [
+      {
+       "noi_dung": "锻炼"
+      },
+      {
+       "noi_dung": "去"
+      },
+      {
+       "noi_dung": "公园"
+      },
+      {
+       "noi_dung": "我们"
+      }
+     ],
+     "dap_an_chap_nhan": [
+      "我们去公园锻炼。"
+     ]
+    },
+    {
+     "dang": "dien_chu",
+     "noi_dung": "我头（ téng ），想休息一下。",
+     "goi_y": "Điền chữ Hán theo pinyin trong ngoặc",
+     "dich_nghia": "Tôi đau đầu, muốn nghỉ một chút.",
+     "giai_thich": "疼 (téng) = đau.",
+     "dap_an_chap_nhan": [
+      "疼"
+     ]
+    },
+    {
+     "dang": "dien_chu",
+     "noi_dung": "我们去（ duàn ）炼一下吧。",
+     "goi_y": "Điền chữ Hán theo pinyin trong ngoặc",
+     "dich_nghia": "Chúng ta đi tập luyện một chút nhé.",
+     "giai_thich": "锻炼 (duànliàn) = rèn luyện.",
+     "dap_an_chap_nhan": [
+      "锻"
+     ]
+    },
+    {
+     "dang": "dien_chu",
+     "noi_dung": "今天有点儿（ liáng ），多穿点儿。",
+     "goi_y": "Điền chữ Hán theo pinyin trong ngoặc",
+     "dich_nghia": "Hôm nay hơi lạnh, mặc thêm áo nhé.",
+     "giai_thich": "凉 (liáng) = mát, lạnh.",
+     "dap_an_chap_nhan": [
+      "凉"
+     ]
+    },
+    {
+     "dang": "dien_chu",
+     "noi_dung": "祝你身体健（ kāng ）！",
+     "goi_y": "Điền chữ Hán theo pinyin trong ngoặc",
+     "dich_nghia": "Chúc bạn mạnh khỏe!",
+     "giai_thich": "健康 (jiànkāng) = khỏe mạnh.",
+     "dap_an_chap_nhan": [
+      "康"
+     ]
+    },
+    {
+     "dang": "dien_chu",
+     "noi_dung": "他发（ shāo ）三天了。",
+     "goi_y": "Điền chữ Hán theo pinyin trong ngoặc",
+     "dich_nghia": "Anh ấy sốt ba ngày rồi.",
+     "giai_thich": "发烧 (fāshāo) = sốt.",
+     "dap_an_chap_nhan": [
+      "烧"
+     ]
+    }
+   ]
+  }
+ ]
+}

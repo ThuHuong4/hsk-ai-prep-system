@@ -1,0 +1,985 @@
+{
+ "cap": "HSK1",
+ "vi_du": [
+  {
+   "chu_han": "你",
+   "pinyin": "nǐ",
+   "vd_cau": "你好吗？",
+   "vd_pinyin": "Nǐ hǎo ma?",
+   "vd_nghia": "Bạn khỏe không?"
+  },
+  {
+   "chu_han": "我",
+   "pinyin": "wǒ",
+   "vd_cau": "我是学生。",
+   "vd_pinyin": "Wǒ shì xuésheng.",
+   "vd_nghia": "Tôi là học sinh."
+  },
+  {
+   "chu_han": "他",
+   "pinyin": "tā",
+   "vd_cau": "他是我爸爸。",
+   "vd_pinyin": "Tā shì wǒ bàba.",
+   "vd_nghia": "Ông ấy là bố tôi."
+  },
+  {
+   "chu_han": "她",
+   "pinyin": "tā",
+   "vd_cau": "她是我的老师。",
+   "vd_pinyin": "Tā shì wǒ de lǎoshī.",
+   "vd_nghia": "Cô ấy là giáo viên của tôi."
+  },
+  {
+   "chu_han": "我们",
+   "pinyin": "wǒmen",
+   "vd_cau": "我们都是中国人。",
+   "vd_pinyin": "Wǒmen dōu shì Zhōngguó rén.",
+   "vd_nghia": "Chúng tôi đều là người Trung Quốc."
+  },
+  {
+   "chu_han": "谢谢",
+   "pinyin": "xièxie",
+   "vd_cau": "谢谢你，老师！",
+   "vd_pinyin": "Xièxie nǐ, lǎoshī!",
+   "vd_nghia": "Cảm ơn thầy ạ!"
+  },
+  {
+   "chu_han": "不客气",
+   "pinyin": "bú kèqi",
+   "vd_cau": "谢谢！——不客气。",
+   "vd_pinyin": "Xièxie! — Bú kèqi.",
+   "vd_nghia": "Cảm ơn! – Không có gì."
+  },
+  {
+   "chu_han": "再见",
+   "pinyin": "zàijiàn",
+   "vd_cau": "老师，再见！",
+   "vd_pinyin": "Lǎoshī, zàijiàn!",
+   "vd_nghia": "Tạm biệt thầy!"
+  },
+  {
+   "chu_han": "对不起",
+   "pinyin": "duìbuqǐ",
+   "vd_cau": "对不起，我不认识他。",
+   "vd_pinyin": "Duìbuqǐ, wǒ bú rènshi tā.",
+   "vd_nghia": "Xin lỗi, tôi không quen anh ấy."
+  },
+  {
+   "chu_han": "没关系",
+   "pinyin": "méi guānxi",
+   "vd_cau": "对不起！——没关系。",
+   "vd_pinyin": "Duìbuqǐ! — Méi guānxi.",
+   "vd_nghia": "Xin lỗi! – Không sao."
+  },
+  {
+   "chu_han": "爸爸",
+   "pinyin": "bàba",
+   "vd_cau": "我爸爸是医生。",
+   "vd_pinyin": "Wǒ bàba shì yīshēng.",
+   "vd_nghia": "Bố tôi là bác sĩ."
+  },
+  {
+   "chu_han": "妈妈",
+   "pinyin": "māma",
+   "vd_cau": "妈妈在家做饭。",
+   "vd_pinyin": "Māma zài jiā zuò fàn.",
+   "vd_nghia": "Mẹ đang nấu cơm ở nhà."
+  },
+  {
+   "chu_han": "儿子",
+   "pinyin": "érzi",
+   "vd_cau": "他的儿子五岁了。",
+   "vd_pinyin": "Tā de érzi wǔ suì le.",
+   "vd_nghia": "Con trai anh ấy năm tuổi rồi."
+  },
+  {
+   "chu_han": "女儿",
+   "pinyin": "nǚ'ér",
+   "vd_cau": "我女儿很漂亮。",
+   "vd_pinyin": "Wǒ nǚ'ér hěn piàoliang.",
+   "vd_nghia": "Con gái tôi rất xinh."
+  },
+  {
+   "chu_han": "家",
+   "pinyin": "jiā",
+   "vd_cau": "我家有四个人。",
+   "vd_pinyin": "Wǒ jiā yǒu sì ge rén.",
+   "vd_nghia": "Nhà tôi có bốn người."
+  },
+  {
+   "chu_han": "朋友",
+   "pinyin": "péngyou",
+   "vd_cau": "他是我的好朋友。",
+   "vd_pinyin": "Tā shì wǒ de hǎo péngyou.",
+   "vd_nghia": "Anh ấy là bạn tốt của tôi."
+  },
+  {
+   "chu_han": "老师",
+   "pinyin": "lǎoshī",
+   "vd_cau": "王老师是北京人。",
+   "vd_pinyin": "Wáng lǎoshī shì Běijīng rén.",
+   "vd_nghia": "Thầy Vương là người Bắc Kinh."
+  },
+  {
+   "chu_han": "学生",
+   "pinyin": "xuésheng",
+   "vd_cau": "我是这个学校的学生。",
+   "vd_pinyin": "Wǒ shì zhè ge xuéxiào de xuésheng.",
+   "vd_nghia": "Tôi là học sinh của trường này."
+  },
+  {
+   "chu_han": "医生",
+   "pinyin": "yīshēng",
+   "vd_cau": "李医生在医院工作。",
+   "vd_pinyin": "Lǐ yīshēng zài yīyuàn gōngzuò.",
+   "vd_nghia": "Bác sĩ Lý làm việc ở bệnh viện."
+  },
+  {
+   "chu_han": "同学",
+   "pinyin": "tóngxué",
+   "vd_cau": "他是我的同学。",
+   "vd_pinyin": "Tā shì wǒ de tóngxué.",
+   "vd_nghia": "Cậu ấy là bạn học của tôi."
+  },
+  {
+   "chu_han": "一",
+   "pinyin": "yī",
+   "vd_cau": "我有一个儿子。",
+   "vd_pinyin": "Wǒ yǒu yí ge érzi.",
+   "vd_nghia": "Tôi có một cậu con trai."
+  },
+  {
+   "chu_han": "二",
+   "pinyin": "èr",
+   "vd_cau": "今天是二月二号。",
+   "vd_pinyin": "Jīntiān shì èr yuè èr hào.",
+   "vd_nghia": "Hôm nay là ngày 2 tháng 2."
+  },
+  {
+   "chu_han": "三",
+   "pinyin": "sān",
+   "vd_cau": "我买了三个苹果。",
+   "vd_pinyin": "Wǒ mǎi le sān ge píngguǒ.",
+   "vd_nghia": "Tôi đã mua ba quả táo."
+  },
+  {
+   "chu_han": "四",
+   "pinyin": "sì",
+   "vd_cau": "现在四点。",
+   "vd_pinyin": "Xiànzài sì diǎn.",
+   "vd_nghia": "Bây giờ là 4 giờ."
+  },
+  {
+   "chu_han": "五",
+   "pinyin": "wǔ",
+   "vd_cau": "我女儿五岁。",
+   "vd_pinyin": "Wǒ nǚ'ér wǔ suì.",
+   "vd_nghia": "Con gái tôi 5 tuổi."
+  },
+  {
+   "chu_han": "六",
+   "pinyin": "liù",
+   "vd_cau": "他六点回家。",
+   "vd_pinyin": "Tā liù diǎn huí jiā.",
+   "vd_nghia": "Anh ấy về nhà lúc 6 giờ."
+  },
+  {
+   "chu_han": "七",
+   "pinyin": "qī",
+   "vd_cau": "一个星期有七天。",
+   "vd_pinyin": "Yí ge xīngqī yǒu qī tiān.",
+   "vd_nghia": "Một tuần có bảy ngày."
+  },
+  {
+   "chu_han": "八",
+   "pinyin": "bā",
+   "vd_cau": "我们八点去学校。",
+   "vd_pinyin": "Wǒmen bā diǎn qù xuéxiào.",
+   "vd_nghia": "Chúng tôi đến trường lúc 8 giờ."
+  },
+  {
+   "chu_han": "九",
+   "pinyin": "jiǔ",
+   "vd_cau": "这个杯子九块钱。",
+   "vd_pinyin": "Zhè ge bēizi jiǔ kuài qián.",
+   "vd_nghia": "Cái cốc này 9 đồng."
+  },
+  {
+   "chu_han": "十",
+   "pinyin": "shí",
+   "vd_cau": "商店里有十个人。",
+   "vd_pinyin": "Shāngdiàn lǐ yǒu shí ge rén.",
+   "vd_nghia": "Trong cửa hàng có mười người."
+  },
+  {
+   "chu_han": "今天",
+   "pinyin": "jīntiān",
+   "vd_cau": "今天天气很好。",
+   "vd_pinyin": "Jīntiān tiānqì hěn hǎo.",
+   "vd_nghia": "Hôm nay thời tiết rất đẹp."
+  },
+  {
+   "chu_han": "明天",
+   "pinyin": "míngtiān",
+   "vd_cau": "明天我去北京。",
+   "vd_pinyin": "Míngtiān wǒ qù Běijīng.",
+   "vd_nghia": "Ngày mai tôi đi Bắc Kinh."
+  },
+  {
+   "chu_han": "昨天",
+   "pinyin": "zuótiān",
+   "vd_cau": "昨天下雨了。",
+   "vd_pinyin": "Zuótiān xià yǔ le.",
+   "vd_nghia": "Hôm qua trời mưa."
+  },
+  {
+   "chu_han": "现在",
+   "pinyin": "xiànzài",
+   "vd_cau": "现在几点？",
+   "vd_pinyin": "Xiànzài jǐ diǎn?",
+   "vd_nghia": "Bây giờ mấy giờ?"
+  },
+  {
+   "chu_han": "星期",
+   "pinyin": "xīngqī",
+   "vd_cau": "今天星期几？",
+   "vd_pinyin": "Jīntiān xīngqī jǐ?",
+   "vd_nghia": "Hôm nay thứ mấy?"
+  },
+  {
+   "chu_han": "年",
+   "pinyin": "nián",
+   "vd_cau": "我在中国住了三年。",
+   "vd_pinyin": "Wǒ zài Zhōngguó zhù le sān nián.",
+   "vd_nghia": "Tôi đã sống ở Trung Quốc ba năm."
+  },
+  {
+   "chu_han": "月",
+   "pinyin": "yuè",
+   "vd_cau": "我七月去中国。",
+   "vd_pinyin": "Wǒ qī yuè qù Zhōngguó.",
+   "vd_nghia": "Tháng 7 tôi đi Trung Quốc."
+  },
+  {
+   "chu_han": "号",
+   "pinyin": "hào",
+   "vd_cau": "明天是几号？",
+   "vd_pinyin": "Míngtiān shì jǐ hào?",
+   "vd_nghia": "Ngày mai là ngày mấy?"
+  },
+  {
+   "chu_han": "点",
+   "pinyin": "diǎn",
+   "vd_cau": "我们三点见。",
+   "vd_pinyin": "Wǒmen sān diǎn jiàn.",
+   "vd_nghia": "Chúng ta gặp nhau lúc 3 giờ."
+  },
+  {
+   "chu_han": "分钟",
+   "pinyin": "fēnzhōng",
+   "vd_cau": "他看了五分钟书。",
+   "vd_pinyin": "Tā kàn le wǔ fēnzhōng shū.",
+   "vd_nghia": "Anh ấy đọc sách năm phút."
+  },
+  {
+   "chu_han": "菜",
+   "pinyin": "cài",
+   "vd_cau": "我喜欢吃中国菜。",
+   "vd_pinyin": "Wǒ xǐhuan chī Zhōngguó cài.",
+   "vd_nghia": "Tôi thích ăn món Trung Quốc."
+  },
+  {
+   "chu_han": "米饭",
+   "pinyin": "mǐfàn",
+   "vd_cau": "中午我吃米饭。",
+   "vd_pinyin": "Zhōngwǔ wǒ chī mǐfàn.",
+   "vd_nghia": "Buổi trưa tôi ăn cơm."
+  },
+  {
+   "chu_han": "苹果",
+   "pinyin": "píngguǒ",
+   "vd_cau": "我想买一些苹果。",
+   "vd_pinyin": "Wǒ xiǎng mǎi yìxiē píngguǒ.",
+   "vd_nghia": "Tôi muốn mua một ít táo."
+  },
+  {
+   "chu_han": "水果",
+   "pinyin": "shuǐguǒ",
+   "vd_cau": "你喜欢吃什么水果？",
+   "vd_pinyin": "Nǐ xǐhuan chī shénme shuǐguǒ?",
+   "vd_nghia": "Bạn thích ăn hoa quả gì?"
+  },
+  {
+   "chu_han": "吃",
+   "pinyin": "chī",
+   "vd_cau": "我们去饭店吃饭。",
+   "vd_pinyin": "Wǒmen qù fàndiàn chī fàn.",
+   "vd_nghia": "Chúng tôi đi nhà hàng ăn cơm."
+  },
+  {
+   "chu_han": "茶",
+   "pinyin": "chá",
+   "vd_cau": "爸爸喜欢喝茶。",
+   "vd_pinyin": "Bàba xǐhuan hē chá.",
+   "vd_nghia": "Bố thích uống trà."
+  },
+  {
+   "chu_han": "水",
+   "pinyin": "shuǐ",
+   "vd_cau": "我想喝水。",
+   "vd_pinyin": "Wǒ xiǎng hē shuǐ.",
+   "vd_nghia": "Tôi muốn uống nước."
+  },
+  {
+   "chu_han": "喝",
+   "pinyin": "hē",
+   "vd_cau": "你想喝什么？",
+   "vd_pinyin": "Nǐ xiǎng hē shénme?",
+   "vd_nghia": "Bạn muốn uống gì?"
+  },
+  {
+   "chu_han": "杯子",
+   "pinyin": "bēizi",
+   "vd_cau": "桌子上有一个杯子。",
+   "vd_pinyin": "Zhuōzi shang yǒu yí ge bēizi.",
+   "vd_nghia": "Trên bàn có một cái cốc."
+  },
+  {
+   "chu_han": "饭店",
+   "pinyin": "fàndiàn",
+   "vd_cau": "这个饭店很大。",
+   "vd_pinyin": "Zhè ge fàndiàn hěn dà.",
+   "vd_nghia": "Nhà hàng này rất lớn."
+  },
+  {
+   "chu_han": "买",
+   "pinyin": "mǎi",
+   "vd_cau": "我去商店买东西。",
+   "vd_pinyin": "Wǒ qù shāngdiàn mǎi dōngxi.",
+   "vd_nghia": "Tôi đi cửa hàng mua đồ."
+  },
+  {
+   "chu_han": "钱",
+   "pinyin": "qián",
+   "vd_cau": "这些衣服多少钱？",
+   "vd_pinyin": "Zhèxiē yīfu duōshao qián?",
+   "vd_nghia": "Những bộ quần áo này bao nhiêu tiền?"
+  },
+  {
+   "chu_han": "块",
+   "pinyin": "kuài",
+   "vd_cau": "一个苹果三块钱。",
+   "vd_pinyin": "Yí ge píngguǒ sān kuài qián.",
+   "vd_nghia": "Một quả táo ba đồng."
+  },
+  {
+   "chu_han": "商店",
+   "pinyin": "shāngdiàn",
+   "vd_cau": "商店在学校前面。",
+   "vd_pinyin": "Shāngdiàn zài xuéxiào qiánmiàn.",
+   "vd_nghia": "Cửa hàng ở phía trước trường học."
+  },
+  {
+   "chu_han": "多少",
+   "pinyin": "duōshao",
+   "vd_cau": "你们学校有多少学生？",
+   "vd_pinyin": "Nǐmen xuéxiào yǒu duōshao xuésheng?",
+   "vd_nghia": "Trường các bạn có bao nhiêu học sinh?"
+  },
+  {
+   "chu_han": "东西",
+   "pinyin": "dōngxi",
+   "vd_cau": "你买什么东西了？",
+   "vd_pinyin": "Nǐ mǎi shénme dōngxi le?",
+   "vd_nghia": "Bạn đã mua những gì?"
+  },
+  {
+   "chu_han": "衣服",
+   "pinyin": "yīfu",
+   "vd_cau": "她的衣服很漂亮。",
+   "vd_pinyin": "Tā de yīfu hěn piàoliang.",
+   "vd_nghia": "Quần áo của cô ấy rất đẹp."
+  },
+  {
+   "chu_han": "桌子",
+   "pinyin": "zhuōzi",
+   "vd_cau": "桌子上有一本书。",
+   "vd_pinyin": "Zhuōzi shang yǒu yì běn shū.",
+   "vd_nghia": "Trên bàn có một quyển sách."
+  },
+  {
+   "chu_han": "椅子",
+   "pinyin": "yǐzi",
+   "vd_cau": "这个椅子很小。",
+   "vd_pinyin": "Zhè ge yǐzi hěn xiǎo.",
+   "vd_nghia": "Cái ghế này rất nhỏ."
+  },
+  {
+   "chu_han": "书",
+   "pinyin": "shū",
+   "vd_cau": "这是我的汉语书。",
+   "vd_pinyin": "Zhè shì wǒ de Hànyǔ shū.",
+   "vd_nghia": "Đây là sách tiếng Hán của tôi."
+  },
+  {
+   "chu_han": "学习",
+   "pinyin": "xuéxí",
+   "vd_cau": "我在学校学习汉语。",
+   "vd_pinyin": "Wǒ zài xuéxiào xuéxí Hànyǔ.",
+   "vd_nghia": "Tôi học tiếng Hán ở trường."
+  },
+  {
+   "chu_han": "学校",
+   "pinyin": "xuéxiào",
+   "vd_cau": "我们学校很大。",
+   "vd_pinyin": "Wǒmen xuéxiào hěn dà.",
+   "vd_nghia": "Trường chúng tôi rất lớn."
+  },
+  {
+   "chu_han": "汉语",
+   "pinyin": "Hànyǔ",
+   "vd_cau": "你会说汉语吗？",
+   "vd_pinyin": "Nǐ huì shuō Hànyǔ ma?",
+   "vd_nghia": "Bạn biết nói tiếng Hán không?"
+  },
+  {
+   "chu_han": "字",
+   "pinyin": "zì",
+   "vd_cau": "这个字怎么读？",
+   "vd_pinyin": "Zhè ge zì zěnme dú?",
+   "vd_nghia": "Chữ này đọc thế nào?"
+  },
+  {
+   "chu_han": "读",
+   "pinyin": "dú",
+   "vd_cau": "他在读汉语书。",
+   "vd_pinyin": "Tā zài dú Hànyǔ shū.",
+   "vd_nghia": "Anh ấy đang đọc sách tiếng Hán."
+  },
+  {
+   "chu_han": "写",
+   "pinyin": "xiě",
+   "vd_cau": "你会写你的名字吗？",
+   "vd_pinyin": "Nǐ huì xiě nǐ de míngzi ma?",
+   "vd_nghia": "Bạn biết viết tên của mình không?"
+  },
+  {
+   "chu_han": "说",
+   "pinyin": "shuō",
+   "vd_cau": "请说汉语。",
+   "vd_pinyin": "Qǐng shuō Hànyǔ.",
+   "vd_nghia": "Xin hãy nói tiếng Hán."
+  },
+  {
+   "chu_han": "听",
+   "pinyin": "tīng",
+   "vd_cau": "你听，谁来了？",
+   "vd_pinyin": "Nǐ tīng, shéi lái le?",
+   "vd_nghia": "Bạn nghe kìa, ai đến vậy?"
+  },
+  {
+   "chu_han": "会",
+   "pinyin": "huì",
+   "vd_cau": "她会说汉语。",
+   "vd_pinyin": "Tā huì shuō Hànyǔ.",
+   "vd_nghia": "Cô ấy biết nói tiếng Hán."
+  },
+  {
+   "chu_han": "能",
+   "pinyin": "néng",
+   "vd_cau": "你明天能来吗？",
+   "vd_pinyin": "Nǐ míngtiān néng lái ma?",
+   "vd_nghia": "Ngày mai bạn đến được không?"
+  },
+  {
+   "chu_han": "工作",
+   "pinyin": "gōngzuò",
+   "vd_cau": "我爸爸在医院工作。",
+   "vd_pinyin": "Wǒ bàba zài yīyuàn gōngzuò.",
+   "vd_nghia": "Bố tôi làm việc ở bệnh viện."
+  },
+  {
+   "chu_han": "医院",
+   "pinyin": "yīyuàn",
+   "vd_cau": "他去医院了。",
+   "vd_pinyin": "Tā qù yīyuàn le.",
+   "vd_nghia": "Anh ấy đi bệnh viện rồi."
+  },
+  {
+   "chu_han": "先生",
+   "pinyin": "xiānsheng",
+   "vd_cau": "王先生是我的老师。",
+   "vd_pinyin": "Wáng xiānsheng shì wǒ de lǎoshī.",
+   "vd_nghia": "Ông Vương là thầy giáo của tôi."
+  },
+  {
+   "chu_han": "小姐",
+   "pinyin": "xiǎojiě",
+   "vd_cau": "李小姐，你好！",
+   "vd_pinyin": "Lǐ xiǎojiě, nǐ hǎo!",
+   "vd_nghia": "Chào cô Lý!"
+  },
+  {
+   "chu_han": "做",
+   "pinyin": "zuò",
+   "vd_cau": "你在做什么？",
+   "vd_pinyin": "Nǐ zài zuò shénme?",
+   "vd_nghia": "Bạn đang làm gì?"
+  },
+  {
+   "chu_han": "电脑",
+   "pinyin": "diànnǎo",
+   "vd_cau": "我的电脑在桌子上。",
+   "vd_pinyin": "Wǒ de diànnǎo zài zhuōzi shang.",
+   "vd_nghia": "Máy tính của tôi ở trên bàn."
+  },
+  {
+   "chu_han": "电视",
+   "pinyin": "diànshì",
+   "vd_cau": "爸爸在看电视。",
+   "vd_pinyin": "Bàba zài kàn diànshì.",
+   "vd_nghia": "Bố đang xem ti vi."
+  },
+  {
+   "chu_han": "电影",
+   "pinyin": "diànyǐng",
+   "vd_cau": "我们去看电影。",
+   "vd_pinyin": "Wǒmen qù kàn diànyǐng.",
+   "vd_nghia": "Chúng ta đi xem phim."
+  },
+  {
+   "chu_han": "打电话",
+   "pinyin": "dǎ diànhuà",
+   "vd_cau": "她在打电话。",
+   "vd_pinyin": "Tā zài dǎ diànhuà.",
+   "vd_nghia": "Cô ấy đang gọi điện thoại."
+  },
+  {
+   "chu_han": "看",
+   "pinyin": "kàn",
+   "vd_cau": "你看，那是我的猫。",
+   "vd_pinyin": "Nǐ kàn, nà shì wǒ de māo.",
+   "vd_nghia": "Bạn xem kìa, đó là con mèo của tôi."
+  },
+  {
+   "chu_han": "上午",
+   "pinyin": "shàngwǔ",
+   "vd_cau": "我上午去学校。",
+   "vd_pinyin": "Wǒ shàngwǔ qù xuéxiào.",
+   "vd_nghia": "Buổi sáng tôi đến trường."
+  },
+  {
+   "chu_han": "中午",
+   "pinyin": "zhōngwǔ",
+   "vd_cau": "中午我们在饭店吃饭。",
+   "vd_pinyin": "Zhōngwǔ wǒmen zài fàndiàn chī fàn.",
+   "vd_nghia": "Buổi trưa chúng tôi ăn ở nhà hàng."
+  },
+  {
+   "chu_han": "下午",
+   "pinyin": "xiàwǔ",
+   "vd_cau": "下午三点见。",
+   "vd_pinyin": "Xiàwǔ sān diǎn jiàn.",
+   "vd_nghia": "Hẹn gặp lúc 3 giờ chiều."
+  },
+  {
+   "chu_han": "时候",
+   "pinyin": "shíhou",
+   "vd_cau": "你什么时候回家？",
+   "vd_pinyin": "Nǐ shénme shíhou huí jiā?",
+   "vd_nghia": "Khi nào bạn về nhà?"
+  },
+  {
+   "chu_han": "睡觉",
+   "pinyin": "shuìjiào",
+   "vd_cau": "我十点睡觉。",
+   "vd_pinyin": "Wǒ shí diǎn shuìjiào.",
+   "vd_nghia": "Tôi đi ngủ lúc 10 giờ."
+  },
+  {
+   "chu_han": "天气",
+   "pinyin": "tiānqì",
+   "vd_cau": "明天天气怎么样？",
+   "vd_pinyin": "Míngtiān tiānqì zěnmeyàng?",
+   "vd_nghia": "Thời tiết ngày mai thế nào?"
+  },
+  {
+   "chu_han": "冷",
+   "pinyin": "lěng",
+   "vd_cau": "今天很冷。",
+   "vd_pinyin": "Jīntiān hěn lěng.",
+   "vd_nghia": "Hôm nay rất lạnh."
+  },
+  {
+   "chu_han": "热",
+   "pinyin": "rè",
+   "vd_cau": "北京的天气太热了。",
+   "vd_pinyin": "Běijīng de tiānqì tài rè le.",
+   "vd_nghia": "Thời tiết Bắc Kinh nóng quá."
+  },
+  {
+   "chu_han": "下雨",
+   "pinyin": "xià yǔ",
+   "vd_cau": "今天下雨了。",
+   "vd_pinyin": "Jīntiān xià yǔ le.",
+   "vd_nghia": "Hôm nay trời mưa."
+  },
+  {
+   "chu_han": "太",
+   "pinyin": "tài",
+   "vd_cau": "这个杯子太小了。",
+   "vd_pinyin": "Zhè ge bēizi tài xiǎo le.",
+   "vd_nghia": "Cái cốc này nhỏ quá."
+  },
+  {
+   "chu_han": "岁",
+   "pinyin": "suì",
+   "vd_cau": "你女儿几岁了？",
+   "vd_pinyin": "Nǐ nǚ'ér jǐ suì le?",
+   "vd_nghia": "Con gái bạn mấy tuổi rồi?"
+  },
+  {
+   "chu_han": "几",
+   "pinyin": "jǐ",
+   "vd_cau": "你家有几个人？",
+   "vd_pinyin": "Nǐ jiā yǒu jǐ ge rén?",
+   "vd_nghia": "Nhà bạn có mấy người?"
+  },
+  {
+   "chu_han": "多",
+   "pinyin": "duō",
+   "vd_cau": "商店里人很多。",
+   "vd_pinyin": "Shāngdiàn lǐ rén hěn duō.",
+   "vd_nghia": "Trong cửa hàng rất đông người."
+  },
+  {
+   "chu_han": "少",
+   "pinyin": "shǎo",
+   "vd_cau": "今天学校里人很少。",
+   "vd_pinyin": "Jīntiān xuéxiào lǐ rén hěn shǎo.",
+   "vd_nghia": "Hôm nay trong trường rất ít người."
+  },
+  {
+   "chu_han": "个",
+   "pinyin": "gè",
+   "vd_cau": "我有一个中国朋友。",
+   "vd_pinyin": "Wǒ yǒu yí ge Zhōngguó péngyou.",
+   "vd_nghia": "Tôi có một người bạn Trung Quốc."
+  },
+  {
+   "chu_han": "飞机",
+   "pinyin": "fēijī",
+   "vd_cau": "我坐飞机去北京。",
+   "vd_pinyin": "Wǒ zuò fēijī qù Běijīng.",
+   "vd_nghia": "Tôi đi máy bay đến Bắc Kinh."
+  },
+  {
+   "chu_han": "出租车",
+   "pinyin": "chūzūchē",
+   "vd_cau": "我们坐出租车回家。",
+   "vd_pinyin": "Wǒmen zuò chūzūchē huí jiā.",
+   "vd_nghia": "Chúng tôi đi taxi về nhà."
+  },
+  {
+   "chu_han": "坐",
+   "pinyin": "zuò",
+   "vd_cau": "请坐。",
+   "vd_pinyin": "Qǐng zuò.",
+   "vd_nghia": "Mời ngồi."
+  },
+  {
+   "chu_han": "去",
+   "pinyin": "qù",
+   "vd_cau": "你去哪儿？",
+   "vd_pinyin": "Nǐ qù nǎr?",
+   "vd_nghia": "Bạn đi đâu?"
+  },
+  {
+   "chu_han": "回",
+   "pinyin": "huí",
+   "vd_cau": "我明天回中国。",
+   "vd_pinyin": "Wǒ míngtiān huí Zhōngguó.",
+   "vd_nghia": "Ngày mai tôi về Trung Quốc."
+  },
+  {
+   "chu_han": "中国",
+   "pinyin": "Zhōngguó",
+   "vd_cau": "我想去中国学习汉语。",
+   "vd_pinyin": "Wǒ xiǎng qù Zhōngguó xuéxí Hànyǔ.",
+   "vd_nghia": "Tôi muốn đến Trung Quốc học tiếng Hán."
+  },
+  {
+   "chu_han": "北京",
+   "pinyin": "Běijīng",
+   "vd_cau": "北京很大。",
+   "vd_pinyin": "Běijīng hěn dà.",
+   "vd_nghia": "Bắc Kinh rất rộng lớn."
+  },
+  {
+   "chu_han": "住",
+   "pinyin": "zhù",
+   "vd_cau": "你住在哪儿？",
+   "vd_pinyin": "Nǐ zhù zài nǎr?",
+   "vd_nghia": "Bạn sống ở đâu?"
+  },
+  {
+   "chu_han": "在",
+   "pinyin": "zài",
+   "vd_cau": "妈妈在家。",
+   "vd_pinyin": "Māma zài jiā.",
+   "vd_nghia": "Mẹ đang ở nhà."
+  },
+  {
+   "chu_han": "人",
+   "pinyin": "rén",
+   "vd_cau": "你是哪国人？",
+   "vd_pinyin": "Nǐ shì nǎ guó rén?",
+   "vd_nghia": "Bạn là người nước nào?"
+  },
+  {
+   "chu_han": "上",
+   "pinyin": "shàng",
+   "vd_cau": "书在桌子上。",
+   "vd_pinyin": "Shū zài zhuōzi shang.",
+   "vd_nghia": "Sách ở trên bàn."
+  },
+  {
+   "chu_han": "下",
+   "pinyin": "xià",
+   "vd_cau": "猫在桌子下。",
+   "vd_pinyin": "Māo zài zhuōzi xià.",
+   "vd_nghia": "Con mèo ở dưới bàn."
+  },
+  {
+   "chu_han": "里",
+   "pinyin": "lǐ",
+   "vd_cau": "杯子里有水。",
+   "vd_pinyin": "Bēizi lǐ yǒu shuǐ.",
+   "vd_nghia": "Trong cốc có nước."
+  },
+  {
+   "chu_han": "前面",
+   "pinyin": "qiánmiàn",
+   "vd_cau": "学校前面有一个商店。",
+   "vd_pinyin": "Xuéxiào qiánmiàn yǒu yí ge shāngdiàn.",
+   "vd_nghia": "Phía trước trường có một cửa hàng."
+  },
+  {
+   "chu_han": "后面",
+   "pinyin": "hòumiàn",
+   "vd_cau": "医院在商店后面。",
+   "vd_pinyin": "Yīyuàn zài shāngdiàn hòumiàn.",
+   "vd_nghia": "Bệnh viện ở phía sau cửa hàng."
+  },
+  {
+   "chu_han": "哪儿",
+   "pinyin": "nǎr",
+   "vd_cau": "你的书在哪儿？",
+   "vd_pinyin": "Nǐ de shū zài nǎr?",
+   "vd_nghia": "Sách của bạn ở đâu?"
+  },
+  {
+   "chu_han": "这",
+   "pinyin": "zhè",
+   "vd_cau": "这是什么？",
+   "vd_pinyin": "Zhè shì shénme?",
+   "vd_nghia": "Đây là cái gì?"
+  },
+  {
+   "chu_han": "那",
+   "pinyin": "nà",
+   "vd_cau": "那是我的学校。",
+   "vd_pinyin": "Nà shì wǒ de xuéxiào.",
+   "vd_nghia": "Kia là trường của tôi."
+  },
+  {
+   "chu_han": "哪",
+   "pinyin": "nǎ",
+   "vd_cau": "你喜欢哪个？",
+   "vd_pinyin": "Nǐ xǐhuan nǎ ge?",
+   "vd_nghia": "Bạn thích cái nào?"
+  },
+  {
+   "chu_han": "来",
+   "pinyin": "lái",
+   "vd_cau": "你什么时候来北京？",
+   "vd_pinyin": "Nǐ shénme shíhou lái Běijīng?",
+   "vd_nghia": "Khi nào bạn đến Bắc Kinh?"
+  },
+  {
+   "chu_han": "猫",
+   "pinyin": "māo",
+   "vd_cau": "我很喜欢猫。",
+   "vd_pinyin": "Wǒ hěn xǐhuan māo.",
+   "vd_nghia": "Tôi rất thích mèo."
+  },
+  {
+   "chu_han": "狗",
+   "pinyin": "gǒu",
+   "vd_cau": "那个小狗很漂亮。",
+   "vd_pinyin": "Nà ge xiǎo gǒu hěn piàoliang.",
+   "vd_nghia": "Chú chó nhỏ kia rất đẹp."
+  },
+  {
+   "chu_han": "大",
+   "pinyin": "dà",
+   "vd_cau": "他的家很大。",
+   "vd_pinyin": "Tā de jiā hěn dà.",
+   "vd_nghia": "Nhà anh ấy rất lớn."
+  },
+  {
+   "chu_han": "小",
+   "pinyin": "xiǎo",
+   "vd_cau": "我的杯子很小。",
+   "vd_pinyin": "Wǒ de bēizi hěn xiǎo.",
+   "vd_nghia": "Cốc của tôi rất nhỏ."
+  },
+  {
+   "chu_han": "漂亮",
+   "pinyin": "piàoliang",
+   "vd_cau": "你的衣服很漂亮。",
+   "vd_pinyin": "Nǐ de yīfu hěn piàoliang.",
+   "vd_nghia": "Quần áo của bạn rất đẹp."
+  },
+  {
+   "chu_han": "什么",
+   "pinyin": "shénme",
+   "vd_cau": "你叫什么名字？",
+   "vd_pinyin": "Nǐ jiào shénme míngzi?",
+   "vd_nghia": "Bạn tên là gì?"
+  },
+  {
+   "chu_han": "谁",
+   "pinyin": "shéi",
+   "vd_cau": "他是谁？",
+   "vd_pinyin": "Tā shì shéi?",
+   "vd_nghia": "Anh ấy là ai?"
+  },
+  {
+   "chu_han": "怎么",
+   "pinyin": "zěnme",
+   "vd_cau": "这个字怎么写？",
+   "vd_pinyin": "Zhè ge zì zěnme xiě?",
+   "vd_nghia": "Chữ này viết thế nào?"
+  },
+  {
+   "chu_han": "怎么样",
+   "pinyin": "zěnmeyàng",
+   "vd_cau": "这个电影怎么样？",
+   "vd_pinyin": "Zhè ge diànyǐng zěnmeyàng?",
+   "vd_nghia": "Bộ phim này thế nào?"
+  },
+  {
+   "chu_han": "名字",
+   "pinyin": "míngzi",
+   "vd_cau": "我的名字叫王明。",
+   "vd_pinyin": "Wǒ de míngzi jiào Wáng Míng.",
+   "vd_nghia": "Tên tôi là Vương Minh."
+  },
+  {
+   "chu_han": "爱",
+   "pinyin": "ài",
+   "vd_cau": "我爱我的家。",
+   "vd_pinyin": "Wǒ ài wǒ de jiā.",
+   "vd_nghia": "Tôi yêu gia đình tôi."
+  },
+  {
+   "chu_han": "喜欢",
+   "pinyin": "xǐhuan",
+   "vd_cau": "我喜欢喝茶。",
+   "vd_pinyin": "Wǒ xǐhuan hē chá.",
+   "vd_nghia": "Tôi thích uống trà."
+  },
+  {
+   "chu_han": "高兴",
+   "pinyin": "gāoxìng",
+   "vd_cau": "认识你很高兴。",
+   "vd_pinyin": "Rènshi nǐ hěn gāoxìng.",
+   "vd_nghia": "Rất vui được làm quen với bạn."
+  },
+  {
+   "chu_han": "想",
+   "pinyin": "xiǎng",
+   "vd_cau": "我想回家。",
+   "vd_pinyin": "Wǒ xiǎng huí jiā.",
+   "vd_nghia": "Tôi muốn về nhà."
+  },
+  {
+   "chu_han": "认识",
+   "pinyin": "rènshi",
+   "vd_cau": "你认识她吗？",
+   "vd_pinyin": "Nǐ rènshi tā ma?",
+   "vd_nghia": "Bạn có quen cô ấy không?"
+  },
+  {
+   "chu_han": "叫",
+   "pinyin": "jiào",
+   "vd_cau": "我叫李月。",
+   "vd_pinyin": "Wǒ jiào Lǐ Yuè.",
+   "vd_nghia": "Tôi tên là Lý Nguyệt."
+  },
+  {
+   "chu_han": "是",
+   "pinyin": "shì",
+   "vd_cau": "我是老师。",
+   "vd_pinyin": "Wǒ shì lǎoshī.",
+   "vd_nghia": "Tôi là giáo viên."
+  },
+  {
+   "chu_han": "有",
+   "pinyin": "yǒu",
+   "vd_cau": "我有一个女儿。",
+   "vd_pinyin": "Wǒ yǒu yí ge nǚ'ér.",
+   "vd_nghia": "Tôi có một cô con gái."
+  },
+  {
+   "chu_han": "没有",
+   "pinyin": "méiyǒu",
+   "vd_cau": "我没有钱。",
+   "vd_pinyin": "Wǒ méiyǒu qián.",
+   "vd_nghia": "Tôi không có tiền."
+  },
+  {
+   "chu_han": "开",
+   "pinyin": "kāi",
+   "vd_cau": "他会开车。",
+   "vd_pinyin": "Tā huì kāi chē.",
+   "vd_nghia": "Anh ấy biết lái xe."
+  },
+  {
+   "chu_han": "不",
+   "pinyin": "bù",
+   "vd_cau": "我不喝茶。",
+   "vd_pinyin": "Wǒ bù hē chá.",
+   "vd_nghia": "Tôi không uống trà."
+  },
+  {
+   "chu_han": "很",
+   "pinyin": "hěn",
+   "vd_cau": "今天很热。",
+   "vd_pinyin": "Jīntiān hěn rè.",
+   "vd_nghia": "Hôm nay rất nóng."
+  },
+  {
+   "chu_han": "都",
+   "pinyin": "dōu",
+   "vd_cau": "我们都喜欢汉语。",
+   "vd_pinyin": "Wǒmen dōu xǐhuan Hànyǔ.",
+   "vd_nghia": "Chúng tôi đều thích tiếng Hán."
+  },
+  {
+   "chu_han": "和",
+   "pinyin": "hé",
+   "vd_cau": "我和妈妈去商店。",
+   "vd_pinyin": "Wǒ hé māma qù shāngdiàn.",
+   "vd_nghia": "Tôi và mẹ đi cửa hàng."
+  },
+  {
+   "chu_han": "请",
+   "pinyin": "qǐng",
+   "vd_cau": "请喝茶。",
+   "vd_pinyin": "Qǐng hē chá.",
+   "vd_nghia": "Mời uống trà."
+  }
+ ]
+}

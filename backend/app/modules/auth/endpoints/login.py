@@ -1,3 +1,7 @@
+#nhận yêu cầu đăng nhập từ frontend, kiểm tra email và mật khẩu, trả về kết quả
+# importt để lấy công cụ cần dùng
+# APIRouter: tạo đường dẫn 
+
 from fastapi import APIRouter, Depends, HTTPException, status
 from sqlalchemy.orm import Session
 
@@ -6,7 +10,6 @@ from app.modules.auth.schemas.login_request import LoginRequest
 from app.modules.auth.schemas.login_response import LoginResponse
 from app.modules.auth.services.authenticate_user import (
     AccountLockedError,
-    EmailNotVerifiedError,
     InvalidCredentialsError,
     authenticate_user,
 )
@@ -29,14 +32,6 @@ def login(body: LoginRequest, db: Session = Depends(get_db)):
         raise HTTPException(
             status_code=status.HTTP_403_FORBIDDEN,
             detail="Tài khoản đã bị khóa",
-        )
-    except EmailNotVerifiedError:
-        raise HTTPException(
-            status_code=status.HTTP_403_FORBIDDEN,
-            detail={
-                "ma_loi": "EMAIL_CHUA_XAC_MINH",
-                "thong_bao": "Email chưa được xác minh. Hãy mở liên kết trong email hoặc yêu cầu gửi lại.",
-            },
         )
     return LoginResponse(
         access_token=create_access_token(user["ma_nguoi_dung"]),

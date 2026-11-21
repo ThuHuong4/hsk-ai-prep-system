@@ -1,0 +1,510 @@
+{
+ "cap": "HSK2",
+ "nguon": "Danh sách từ vựng HSK 2 (hệ HSK 2.0, 150 từ mới) của 国家汉办/孔子学院总部",
+ "thua": [
+  {
+   "ten": "Nhà cửa, trường lớp và sức khỏe",
+   "muc_tieu": "Nhận biết từ về nhà ở, lớp học, công việc, ăn uống và sức khỏe",
+   "bai": [
+    [
+     "Trong nhà",
+     [
+      [
+       "房间",
+       "fángjiān",
+       "căn phòng"
+      ],
+      [
+       "门",
+       "mén",
+       "cửa"
+      ],
+      [
+       "起床",
+       "qǐchuáng",
+       "thức dậy"
+      ],
+      [
+       "洗",
+       "xǐ",
+       "rửa, giặt"
+      ],
+      [
+       "手机",
+       "shǒujī",
+       "điện thoại di động"
+      ]
+     ]
+    ],
+    [
+     "Lớp học",
+     [
+      [
+       "课",
+       "kè",
+       "bài học, tiết học"
+      ],
+      [
+       "题",
+       "tí",
+       "đề bài, câu hỏi (bài tập)"
+      ],
+      [
+       "铅笔",
+       "qiānbǐ",
+       "bút chì"
+      ],
+      [
+       "回答",
+       "huídá",
+       "trả lời"
+      ],
+      [
+       "意思",
+       "yìsi",
+       "ý nghĩa"
+      ]
+     ]
+    ],
+    [
+     "Đi làm",
+     [
+      [
+       "报纸",
+       "bàozhǐ",
+       "tờ báo"
+      ],
+      [
+       "上班",
+       "shàngbān",
+       "đi làm"
+      ],
+      [
+       "服务员",
+       "fúwùyuán",
+       "nhân viên phục vụ"
+      ],
+      [
+       "事情",
+       "shìqing",
+       "việc, sự việc"
+      ],
+      [
+       "时间",
+       "shíjiān",
+       "thời gian"
+      ]
+     ]
+    ],
+    [
+     "Ăn uống và sức khỏe",
+     [
+      [
+       "咖啡",
+       "kāfēi",
+       "cà phê"
+      ],
+      [
+       "鱼",
+       "yú",
+       "con cá"
+      ],
+      [
+       "好吃",
+       "hǎochī",
+       "ngon"
+      ],
+      [
+       "药",
+       "yào",
+       "thuốc"
+      ],
+      [
+       "运动",
+       "yùndòng",
+       "vận động, thể thao"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "ten": "Thời tiết, số đếm và so sánh",
+   "muc_tieu": "Nhận biết từ về thời tiết, số đếm, so sánh và mức độ",
+   "bai": [
+    [
+     "Thời tiết",
+     [
+      [
+       "晴",
+       "qíng",
+       "trời nắng, trời quang"
+      ],
+      [
+       "阴",
+       "yīn",
+       "trời âm u"
+      ],
+      [
+       "雪",
+       "xuě",
+       "tuyết"
+      ],
+      [
+       "日",
+       "rì",
+       "ngày"
+      ],
+      [
+       "新",
+       "xīn",
+       "mới"
+      ]
+     ]
+    ],
+    [
+     "Số đếm",
+     [
+      [
+       "百",
+       "bǎi",
+       "trăm"
+      ],
+      [
+       "零",
+       "líng",
+       "số không"
+      ],
+      [
+       "两",
+       "liǎng",
+       "hai (đứng trước lượng từ)"
+      ],
+      [
+       "第一",
+       "dìyī",
+       "thứ nhất"
+      ],
+      [
+       "次",
+       "cì",
+       "lần"
+      ]
+     ]
+    ],
+    [
+     "So sánh",
+     [
+      [
+       "比",
+       "bǐ",
+       "so với, hơn"
+      ],
+      [
+       "长",
+       "cháng",
+       "dài"
+      ],
+      [
+       "快",
+       "kuài",
+       "nhanh"
+      ],
+      [
+       "慢",
+       "màn",
+       "chậm"
+      ],
+      [
+       "最",
+       "zuì",
+       "nhất"
+      ]
+     ]
+    ],
+    [
+     "Mức độ và lượng từ",
+     [
+      [
+       "件",
+       "jiàn",
+       "chiếc, việc (lượng từ)"
+      ],
+      [
+       "每",
+       "měi",
+       "mỗi"
+      ],
+      [
+       "非常",
+       "fēicháng",
+       "vô cùng"
+      ],
+      [
+       "真",
+       "zhēn",
+       "thật, thật là"
+      ],
+      [
+       "近",
+       "jìn",
+       "gần"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "ten": "Di chuyển và hoạt động",
+   "muc_tieu": "Nhận biết từ về di chuyển, hoạt động, chờ đợi và giúp đỡ",
+   "bai": [
+    [
+     "Di chuyển",
+     [
+      [
+       "出",
+       "chū",
+       "ra"
+      ],
+      [
+       "进",
+       "jìn",
+       "vào"
+      ],
+      [
+       "到",
+       "dào",
+       "đến (nơi nào đó)"
+      ],
+      [
+       "往",
+       "wǎng",
+       "về phía, hướng về"
+      ],
+      [
+       "离",
+       "lí",
+       "cách (khoảng cách)"
+      ]
+     ]
+    ],
+    [
+     "Hoạt động",
+     [
+      [
+       "穿",
+       "chuān",
+       "mặc"
+      ],
+      [
+       "玩",
+       "wán",
+       "chơi"
+      ],
+      [
+       "踢足球",
+       "tī zúqiú",
+       "đá bóng"
+      ],
+      [
+       "完",
+       "wán",
+       "xong, hết"
+      ],
+      [
+       "开始",
+       "kāishǐ",
+       "bắt đầu"
+      ]
+     ]
+    ],
+    [
+     "Chờ và tìm",
+     [
+      [
+       "等",
+       "děng",
+       "đợi, chờ"
+      ],
+      [
+       "找",
+       "zhǎo",
+       "tìm"
+      ],
+      [
+       "从",
+       "cóng",
+       "từ (điểm bắt đầu)"
+      ],
+      [
+       "正在",
+       "zhèngzài",
+       "đang"
+      ],
+      [
+       "已经",
+       "yǐjīng",
+       "đã"
+      ]
+     ]
+    ],
+    [
+     "Cho và giúp",
+     [
+      [
+       "给",
+       "gěi",
+       "cho, đưa"
+      ],
+      [
+       "送",
+       "sòng",
+       "tặng, tiễn"
+      ],
+      [
+       "帮助",
+       "bāngzhù",
+       "giúp đỡ"
+      ],
+      [
+       "让",
+       "ràng",
+       "để, bảo (ai làm gì)"
+      ],
+      [
+       "欢迎",
+       "huānyíng",
+       "hoan nghênh, chào mừng"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "ten": "Giao tiếp và suy nghĩ",
+   "muc_tieu": "Nhận biết từ chỉ người, hỏi đáp, suy nghĩ và đúng sai",
+   "bai": [
+    [
+     "Con người",
+     [
+      [
+       "您",
+       "nín",
+       "ngài, ông, bà (kính trọng)"
+      ],
+      [
+       "大家",
+       "dàjiā",
+       "mọi người"
+      ],
+      [
+       "男",
+       "nán",
+       "nam"
+      ],
+      [
+       "女",
+       "nǚ",
+       "nữ"
+      ],
+      [
+       "它",
+       "tā",
+       "nó (đồ vật, con vật)"
+      ]
+     ]
+    ],
+    [
+     "Hỏi đáp",
+     [
+      [
+       "问",
+       "wèn",
+       "hỏi"
+      ],
+      [
+       "告诉",
+       "gàosu",
+       "nói cho biết"
+      ],
+      [
+       "说话",
+       "shuōhuà",
+       "nói chuyện"
+      ],
+      [
+       "为什么",
+       "wèi shénme",
+       "tại sao"
+      ],
+      [
+       "姓",
+       "xìng",
+       "họ (trong họ tên)"
+      ]
+     ]
+    ],
+    [
+     "Suy nghĩ",
+     [
+      [
+       "觉得",
+       "juéde",
+       "cảm thấy"
+      ],
+      [
+       "知道",
+       "zhīdao",
+       "biết"
+      ],
+      [
+       "希望",
+       "xīwàng",
+       "hy vọng"
+      ],
+      [
+       "可能",
+       "kěnéng",
+       "có lẽ, có khả năng"
+      ],
+      [
+       "要",
+       "yào",
+       "muốn, cần"
+      ]
+     ]
+    ],
+    [
+     "Đúng và sai",
+     [
+      [
+       "对",
+       "duì",
+       "đúng"
+      ],
+      [
+       "错",
+       "cuò",
+       "sai"
+      ],
+      [
+       "别",
+       "bié",
+       "đừng"
+      ],
+      [
+       "可以",
+       "kěyǐ",
+       "có thể, được phép"
+      ],
+      [
+       "一起",
+       "yìqǐ",
+       "cùng nhau"
+      ]
+     ]
+    ]
+   ]
+  }
+ ]
+}

@@ -8,5 +8,5 @@ def is_duplicate_key(error: IntegrityError, key_name: str) -> bool:
     args = getattr(error.orig, "args", ())
     if len(args) < 2 or args[0] != MYSQL_DUPLICATE_ENTRY:
         return False
-    # Thông báo MySQL 8: "Duplicate entry '...' for key 'nguoi_dung.uq_nd_google_sub'"
+    # Thông báo MySQL 8: "Duplicate entry '...' for key 'nguoi_dung.uq_nguoi_dung_google'"
     return f"'{key_name}'" in str(args[1]) or f".{key_name}'" in str(args[1])

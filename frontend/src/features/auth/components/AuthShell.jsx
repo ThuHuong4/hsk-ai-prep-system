@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import xiangFull from "../../../assets/images/xiang/home/xiang_full.webp";
 import "../styles/auth.css";
 
-function AuthSprite() {
+export function AuthSprite() {
   return (
     <svg width="0" height="0" style={{ position: "absolute" }} aria-hidden="true" focusable="false">
       <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>

@@ -1,0 +1,20 @@
+/* Ô ghép câu kiểu Duolingo cho dạng Sắp xếp câu — dùng biến màu chung Sáng/Tối của khung trang */
+.sb { display: flex; flex-direction: column; gap: 28px; }
+/* Vùng câu trả lời: hai dòng kẻ, mảnh đã chọn nằm trên dòng */
+.sb-line { min-height: 124px; display: flex; flex-wrap: wrap; align-content: flex-start; gap: 10px 8px; padding: 6px 0;
+  background-image: linear-gradient(to bottom, transparent 59px, var(--line-2, #BDB6AB) 59px, var(--line-2, #BDB6AB) 61px, transparent 61px);
+  background-size: 100% 62px; }
+/* Ngân hàng mảnh: giữ chỗ trống xám khi mảnh đã được chọn */
+.sb-pool { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; }
+.sb-chip { min-height: 50px; padding: 6px 16px; border-radius: 14px; border: 2px solid var(--line-2, #BDB6AB);
+  border-bottom-width: 4px; background: var(--surface, #F3F1EC); color: var(--ink, #1D2731); font-size: 22px; line-height: 1.2;
+  font-family: var(--f-hz, serif); cursor: pointer; transition: transform .08s ease, border-color .1s ease; }
+.sb-chip:not(.sb-chip--used):hover:not(:disabled), .sb-chip:focus-visible { border-color: var(--teal, #2A958E); outline: none; }
+.sb-chip:active:not(:disabled) { transform: translateY(2px); border-bottom-width: 2px; margin-top: 2px; }
+.sb-chip:disabled { cursor: default; }
+.sb-chip--used { background: var(--surface-3, #DEDAD3); border-color: var(--surface-3, #DEDAD3); color: transparent; cursor: default; }
+.sb.is-off .sb-pool { display: none; }
+.sb-prompt { display: flex; align-items: center; gap: 12px; }
+.sb-prompt__face { width: 64px; height: 64px; flex: none; border-radius: 50%; background: var(--teal-soft, #D8E8E4); object-fit: cover; }
+.sb-prompt__bubble { position: relative; margin: 0; padding: 14px 20px; border-radius: 18px; border: 2px solid var(--line-2, #BDB6AB);
+  background: var(--surface, #F3F1EC); color: var(--ink, #1D2731); font-size: 22px; font-weight: 600; line-height: 1.35; }

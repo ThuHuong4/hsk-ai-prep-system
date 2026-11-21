@@ -1,0 +1,73 @@
+/* Bản đồ Ôn luyện (Học viên và Khách): gọn như bản mô phỏng — tiêu đề, chip cấp, bản đồ */
+.xc.sp-page { align-items: center; gap: 14px; }
+.xc.sp-page > * { width: 100%; max-width: 600px; }
+.sp-top2 { display: flex; align-items: center; gap: 12px; }
+.xc .sp-back { display: inline-grid; place-items: center; width: 40px; height: 40px; flex: none; border-radius: 50%;
+  background: var(--surface); border: 1px solid var(--line); color: var(--ink-2); }
+.xc .sp-back:hover { color: var(--teal-ink); border-color: var(--teal); }
+.xc .sp-back .ico { width: 18px; height: 18px; }
+.sp-top2 h1 { flex: 1; min-width: 0; font-size: clamp(22px, 3.4vw, 28px); }
+.sp-top2 h1 small { font: inherit; color: var(--ink-3); }
+.sp-chips { display: flex; gap: 8px; flex-wrap: wrap; margin: 0; padding: 0; list-style: none; }
+.xc .sp-chip { display: inline-flex; align-items: center; gap: 5px; height: 34px; padding: 0 14px; border-radius: 999px;
+  border: 1px solid var(--line); background: var(--surface); color: var(--ink-2); font: inherit; font-size: 14px; font-weight: 800;
+  text-decoration: none; cursor: pointer; }
+.xc .sp-chip.is-on { background: var(--ink); border-color: var(--ink); color: var(--bg); }
+.xc .sp-chip.is-off { cursor: not-allowed; opacity: .55; }
+.xc .sp-chip .ico { width: 12px; height: 12px; }
+.gp-line { margin: 0; font-size: 13.5px; color: var(--ink-3); }
+.xc .gp-link { border: 0; padding: 0; background: none; font: inherit; font-weight: 800; color: var(--teal-ink); cursor: pointer; }
+.xc .gp-link:hover { text-decoration: underline; }
+.xc.sp-page > .sp-board { margin-top: 4px; }
+.xc-head .sp-top2 h1 { font-size: clamp(32px, 4.6vw, 52px); }
+
+/* ---------- Bản đồ ở chế độ sáng: không khung, ô nổi trên nền be
+   Màu theo trạng thái (không theo thửa): Đang mở = san hô, Đã xong = xanh ngọc, Thu hoạch = vàng, Chưa mở = xám ---------- */
+html:not([data-theme="dark"]) .sp-board { --field: var(--bg, #E4E1DB); background: none; border: 0; box-shadow: none; padding: 6px 0 10px; overflow: visible; }
+html:not([data-theme="dark"]) .sp-path__edge { stroke: #B7D3B4; }
+html:not([data-theme="dark"]) .sp-path__road { stroke: #E2C796; }
+html:not([data-theme="dark"]) .sp-path__dots { stroke: rgba(255,255,255,.7); }
+html:not([data-theme="dark"]) .sp-land.is-locked .sp-path__road { stroke: #CFCCC6; }
+html:not([data-theme="dark"]) .sp-land.is-locked .sp-path__edge { stroke: #CBD3C3; }
+/* Ô đang mở (chưa học, đang làm, chưa đạt) */
+html:not([data-theme="dark"]) .sp-node .sp-node__top { background: linear-gradient(#E3775B, #CC5A3E); box-shadow: 0 8px 0 #9E4129; color: #FFFFFF; text-shadow: 0 1px 0 rgba(0,0,0,.18); }
+html:not([data-theme="dark"]) button.sp-node:active .sp-node__top { box-shadow: 0 3px 0 #9E4129; }
+html:not([data-theme="dark"]) .sp-node.st-chua_hoc .sp-sprout, html:not([data-theme="dark"]) .sp-node.st-dang_lam .sp-sprout, html:not([data-theme="dark"]) .sp-node.st-chua_dat .sp-sprout { color: #FFFFFF; }
+html:not([data-theme="dark"]) .sp-node.st-chua_dat .sp-node__top { box-shadow: 0 8px 0 #9E4129, 0 0 0 4px var(--field), 0 0 0 7px #E9A23B; }
+/* Đã xong */
+html:not([data-theme="dark"]) .sp-node.st-da_xong .sp-node__top { background: linear-gradient(#3AAEA6, #2A958E); box-shadow: 0 8px 0 #1A6F6A; color: #FFFFFF; }
+html:not([data-theme="dark"]) .sp-node.is-big.st-da_xong .sp-node__top { background: linear-gradient(#F6CF6A, #E8B23E); box-shadow: 0 8px 0 #B5831C; color: #6B4A0C; }
+/* Chưa mở / chưa xuất bản */
+html:not([data-theme="dark"]) .sp-node.st-khoa .sp-node__top,
+html:not([data-theme="dark"]) .sp-node.is-ghost .sp-node__top { background: linear-gradient(#C9CDD2, #BCC1C7); box-shadow: 0 8px 0 #9AA0A8; color: #3F4852; text-shadow: none; }
+html:not([data-theme="dark"]) .sp-node.is-ghost .sp-node__top { outline-color: #8E959D; }
+html:not([data-theme="dark"]) .sp-lock { background: #FFFFFF; color: #3F4852; box-shadow: 0 0 0 2px var(--field); }
+/* Ô hiện tại: vòng xanh ngọc nhấp nháy */
+html:not([data-theme="dark"]) .sp-node.is-current .sp-node__top { box-shadow: 0 8px 0 #9E4129, 0 0 0 4px var(--field), 0 0 0 8px #2A958E; }
+@keyframes sp-glow-l { 50% { box-shadow: 0 8px 0 #9E4129, 0 0 0 4px var(--field), 0 0 0 12px rgba(42,149,142,.35); } }
+@media (prefers-reduced-motion: no-preference) {
+  html:not([data-theme="dark"]) .sp-node.is-current .sp-node__top { animation-name: sp-glow-l; }
+}
+html:not([data-theme="dark"]) .sp-node:focus-visible .sp-node__top { outline-color: #2A958E; }
+/* Biển thửa, trang trí, sông */
+html:not([data-theme="dark"]) .sp-sign.is-dim { background: linear-gradient(#B29A7E, #A08668); color: #FFF8EE; box-shadow: 0 6px 0 #7A6349; }
+html:not([data-theme="dark"]) .sp-sign.is-dim small { color: #F3E3CB; }
+html:not([data-theme="dark"]) .sp-xiang { filter: drop-shadow(0 8px 8px rgba(60,50,30,.22)); }
+html:not([data-theme="dark"]) .sp-reeds { stroke: #8FB08A; fill: #D6B867; opacity: .8; }
+html:not([data-theme="dark"]) .sp-river { height: 34px; margin: 10px 0 22px; background: none; }
+html:not([data-theme="dark"]) .sp-river::before { content: ""; position: absolute; left: 6%; right: 6%; top: 10px; height: 14px; border-radius: 999px; background: #A9CCD6; }
+html:not([data-theme="dark"]) .sp-river::after { inset: 15px 12% auto; height: 2px; background: repeating-linear-gradient(90deg, rgba(255,255,255,.75) 0 30px, transparent 30px 80px); }
+html:not([data-theme="dark"]) .sp-bridge { top: -2px; height: 38px; }
+html:not([data-theme="dark"]) .sp-empty p { background: #F3F1EC; border-color: #BDB6AB; color: #434D58; }
+html:not([data-theme="dark"]) .sp-road { background: linear-gradient(90deg, #B7D3B4 0 5px, #E2C796 5px 25px, #B7D3B4 25px); }
+
+/* ---------- Vượt đến thửa: nút trên biển thửa khóa, nhãn "Đã vượt", ô Đã vượt (tím) ---------- */
+.xc .sp-skip { display: inline-flex; align-items: center; gap: 6px; margin-top: 8px; padding: 6px 14px; border: 0; border-radius: 999px;
+  background: #FFF8EE; color: #5B3E8F; font: inherit; font-size: 13.5px; font-weight: 800; cursor: pointer; box-shadow: 0 3px 0 rgba(0,0,0,.18); }
+.xc .sp-skip:hover { background: #FFFFFF; }
+.xc .sp-skip:active { transform: translateY(2px); box-shadow: 0 1px 0 rgba(0,0,0,.18); }
+.sp-sign__tag { display: inline-flex; align-items: center; gap: 4px; margin-top: 4px; padding: 2px 10px; border-radius: 999px; font-style: normal;
+  font-size: 12px; font-weight: 800; background: rgba(255,255,255,.22); color: #FFF4E2; }
+.sp-node.st-da_vuot .sp-node__top { background: linear-gradient(#A98BDB, #8D6CC9); box-shadow: 0 8px 0 #63469A; color: #FFFFFF; }
+.sp-pop em.st-da_vuot { color: #6B4FA8; }
+html:not([data-theme="dark"]) .sp-node.st-da_vuot .sp-node__top { background: linear-gradient(#A98BDB, #8D6CC9); box-shadow: 0 8px 0 #63469A; color: #FFFFFF; }

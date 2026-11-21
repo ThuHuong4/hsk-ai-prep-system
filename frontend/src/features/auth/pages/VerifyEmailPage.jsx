@@ -1,14 +1,15 @@
 import { useRef, useState } from "react";
 
 import { verifyEmail } from "../api/verifyEmail.js";
-import ResendVerificationButton from "../components/ResendVerificationButton.jsx";
+import AuthCard, { Notice } from "../components/AuthCard.jsx";
+import { useAuth } from "../context/AuthContext.jsx";
 
-export default function VerifyEmailPage({ token, onGoLogin }) {
+export default function VerifyEmailPage({ token, onDone }) {
+  const { user, markEmailVerified } = useAuth();
   // missing | ready | verifying | success | error
   const [status, setStatus] = useState(token ? "ready" : "missing");
   const [message, setMessage] = useState("");
   const [errorCode, setErrorCode] = useState(null);
-  const [email, setEmail] = useState("");
   const verifyingRef = useRef(false);
 
   async function handleVerify() {
@@ -21,68 +22,55 @@ export default function VerifyEmailPage({ token, onGoLogin }) {
       const data = await verifyEmail(token);
       setMessage(data.message);
       setStatus("success");
+      markEmailVerified();
     } catch (err) {
       setErrorCode(err?.code ?? null);
       setMessage(err?.message || "Không xác minh được email, vui lòng thử lại");
       setStatus("error");
+      if (err?.code === "TOKEN_DA_DUNG") markEmailVerified();
     } finally {
       verifyingRef.current = false;
     }
   }
 
-  const resendSection = (
-    <div>
-      <p>Nhập email đã đăng ký để nhận liên kết xác minh mới:</p>
-      <label htmlFor="verify-resend-email">Email</label>
-      <input
-        id="verify-resend-email"
-        type="email"
-        autoComplete="email"
-        value={email}
-        onChange={(e) => setEmail(e.target.value)}
-        maxLength={255}
-      />
-      <ResendVerificationButton email={email} />
-    </div>
+  const resendHint = (
+    <p className="ac-alt" style={{ marginBottom: 16 }}>
+      {user
+        ? "Bấm “Gửi thư xác minh” trên thanh nhắc ở đầu trang để nhận liên kết mới."
+        : "Hãy đăng nhập, rồi bấm “Gửi thư xác minh” trên thanh nhắc ở đầu trang để nhận liên kết mới."}
+    </p>
   );
 
   return (
-    <div>
-      <h1>Xác minh email</h1>
-
+    <AuthCard title="Xác minh email" lead={status === "ready" || status === "verifying" ? "Bấm nút dưới đây để hoàn tất xác minh email." : null}>
       {status === "missing" && (
         <>
-          <p role="alert">Liên kết xác minh không hợp lệ hoặc bị thiếu mã.</p>
-          {resendSection}
+          <Notice kind="bad">Liên kết xác minh không hợp lệ hoặc bị thiếu mã.</Notice>
+          {resendHint}
         </>
       )}
 
       {(status === "ready" || status === "verifying") && (
-        <>
-          <p>Bấm nút dưới đây để hoàn tất xác minh email.</p>
-          <button type="button" onClick={handleVerify} disabled={status === "verifying"}>
-            {status === "verifying" ? "Đang xác minh..." : "Xác minh email"}
-          </button>
-        </>
+        <button className="btn block" type="button" onClick={handleVerify} disabled={status === "verifying"}>
+          {status === "verifying" ? "Đang xác minh..." : "Xác minh email"}
+        </button>
       )}
 
-      {status === "success" && <p role="status">{message}</p>}
+      {status === "success" && <Notice kind="ok">{message}</Notice>}
 
       {status === "error" && (
         <>
-          <p role="alert">{message}</p>
+          <Notice kind="bad">{message}</Notice>
           {errorCode === null && (
-            <button type="button" onClick={handleVerify}>
-              Thử lại
-            </button>
+            <button className="btn block" type="button" onClick={handleVerify}>Thử lại</button>
           )}
-          {(errorCode === "TOKEN_HET_HAN" || errorCode === "TOKEN_KHONG_HOP_LE") && resendSection}
+          {(errorCode === "TOKEN_HET_HAN" || errorCode === "TOKEN_KHONG_HOP_LE") && resendHint}
         </>
       )}
 
-      <button type="button" onClick={onGoLogin}>
-        Đến trang đăng nhập
+      <button className={`btn block${status === "success" ? "" : " plain"}`} type="button" onClick={onDone} style={{ marginTop: 14 }}>
+        {user ? "Tiếp tục học" : "Đến trang đăng nhập"}
       </button>
-    </div>
+    </AuthCard>
   );
 }

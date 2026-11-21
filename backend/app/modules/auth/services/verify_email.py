@@ -33,7 +33,7 @@ def verify_email(db: Session, token: str) -> None:
             raise TokenAlreadyUsedError()
         if record["da_het_han"]:
             raise ExpiredTokenError()
-        if not mark_token_used(db, record["ma_xac_thuc"]):
+        if not mark_token_used(db, record["ma_xac_thuc"], PURPOSE):
             raise TokenAlreadyUsedError()
         mark_email_verified(db, record["ma_nguoi_dung"])
         db.commit()

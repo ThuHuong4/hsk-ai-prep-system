@@ -13,14 +13,14 @@ export default function Footer() {
               <span className="face"><img src={xiangFace} alt="" /></span>
               <span>Xiang<b>lingo</b></span>
             </Link>
-            <p style={{ marginTop: "14px", opacity: 0.8, maxWidth: "30ch" }}>Luyện thi HSK 1–4 cho người Việt.</p>
+            <p style={{ marginTop: "14px", opacity: 0.8, maxWidth: "30ch" }}>Luyện thi HSK cho người Việt.</p>
           </div>
           <div>
             <h4>Học</h4>
             <ul>
               <li><Link to="/on-luyen">Ôn luyện</Link></li>
               <li><a href="/#loi-sai">Ôn câu sai</a></li>
-              <li><Link to="/thi-thu">HSK 1–4</Link></li>
+              <li><Link to="/thi-thu">HSK </Link></li>
             </ul>
           </div>
           <div>

@@ -44,4 +44,5 @@ def get_current_user(
         "ho_ten": user["ho_ten"],
         "email": user["email"],
         "vai_tro": user["vai_tro"],
+        "email_da_xac_minh": bool(user["email_da_xac_minh"]),
     }

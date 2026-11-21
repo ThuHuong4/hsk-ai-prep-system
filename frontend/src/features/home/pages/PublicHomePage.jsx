@@ -53,7 +53,7 @@ export default function PublicHomePage() {
             <span className="dot" style={{ left: "12%", top: "20%", background: "#FFD99B" }}></span><span className="dot" style={{ right: "14%", top: "58%", background: "#8BE6C9" }}></span><span className="dot" style={{ left: "22%", bottom: "12%", background: "#FF8A72" }}></span>
           </div>
           <div className="h-copy">
-            <h1 id="hero-title" className="enter" tabIndex="-1">Học HSK theo cách vui nhất, cùng chú trâu Xiang!</h1>
+            <h1 id="hero-title" className="enter" tabIndex="-1">Học HSK theo cách vui nhất, cùng Xiang!</h1>
             <div className="h-btns enter d2">
               <Link className="btn btn-xl" to="/dang-ky">Bắt đầu ôn luyện</Link>
               <Link className="btn btn-xl plain" to="/thi-thu">Xem đề thi thử HSK</Link>
@@ -75,7 +75,7 @@ export default function PublicHomePage() {
       {/* Đề thi thử trên trang chủ */}
       <section className="h-exams" aria-labelledby="hx-title">
         <div className="wrap">
-          <div className="hx-head"><div><span className="eyebrow">Thi thử HSK</span><h2 id="hx-title">Đề thi thử HSK 1–4</h2></div><Link className="gline" to="/thi-thu">Xem tất cả đề</Link></div>
+          <div className="hx-head"><div><span className="eyebrow">Thi thử HSK</span><h2 id="hx-title">Đề thi thử HSK</h2></div><Link className="gline" to="/thi-thu">Xem tất cả đề</Link></div>
           <div className="pk-grid" id="home-cats">
             {LEVELS.map((d) => (
               <Link key={d.n} className="pk-card cat" to={`/thi-thu/hsk/${d.n}`} style={{ "--c": d.c }} aria-label={`Đề thi thử HSK ${d.n}`}>
@@ -152,7 +152,7 @@ export default function PublicHomePage() {
         <div className="wrap feat-grid rev">
           <div className="feat-copy reveal">
             <h2 id="fx-title">Thi thử trước ngày thi</h2>
-            <p>Làm quen với cấu trúc đề HSK 1–4.</p>
+            <p>Làm quen với cấu trúc đề HSK</p>
             <Link className="btn exam fx-btn" to="/thi-thu">Xem đề thi thử</Link>
           </div>
           <div className="feat-art reveal" aria-hidden="true">

@@ -42,15 +42,18 @@ export default function GoogleSignInButton({ onCredential, disabled = false }) {
           ux_mode: "popup",
           callback: (response) => callbackRef.current(response.credential),
         });
-          window.google.accounts.id.renderButton(containerRef.current, {
+        // Nút theo chế độ sáng/tối, rộng bằng form (Google giới hạn 200–400px)
+        const dark = document.documentElement.dataset.theme === "dark";
+        const width = Math.max(200, Math.min(400, Math.round(containerRef.current.offsetWidth || 400)));
+        window.google.accounts.id.renderButton(containerRef.current, {
           type: "standard",
-          theme: "outline",
-          // size: "large", tên mình hiện lên gg
-          size: "medium",
+          theme: dark ? "filled_black" : "outline",
+          size: "large",
           text: "continue_with",
           shape: "pill",
+          logo_alignment: "left",
           locale: "vi",
-          width: 400,
+          width,
         });
       })
       .catch(() => {
@@ -67,6 +70,7 @@ export default function GoogleSignInButton({ onCredential, disabled = false }) {
 
   return (
     <div
+      className="gbtn-slot"
       ref={containerRef}
       aria-disabled={disabled}
       style={disabled ? { pointerEvents: "none", opacity: 0.6 } : undefined}

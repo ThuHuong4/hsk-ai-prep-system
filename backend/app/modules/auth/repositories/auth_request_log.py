@@ -1,56 +1,65 @@
-from sqlalchemy import text
+"""Nhật ký yêu cầu xác thực để chặn gửi lặp / thử nhiều lần.
+
+CSDL Xianglingo (19 bảng) không có bảng nhật ký này, nên dữ liệu được giữ trong bộ nhớ
+của tiến trình backend. Giới hạn: mất khi khởi động lại server và chỉ đúng khi chạy
+một tiến trình (uvicorn mặc định). Chữ ký hàm giữ nguyên để service không phải sửa;
+tham số db không còn được dùng.
+"""
+import threading
+import time
+from collections import defaultdict, deque
+
 from sqlalchemy.orm import Session
+
+_HOUR = 3600
+_lock = threading.Lock()
+_by_email: dict[tuple[str, bytes], deque] = defaultdict(deque)
+_by_ip: dict[tuple[str, str], deque] = defaultdict(deque)
+
+
+def _prune(q: deque, now: float, window: float = _HOUR) -> None:
+    while q and q[0] <= now - window:
+        q.popleft()
 
 
 def record_auth_request(db: Session, muc_dich: str, bam_email: bytes, dia_chi_ip: str) -> None:
-    db.execute(
-        text("""
-            INSERT INTO yeu_cau_xac_thuc (muc_dich, bam_email, dia_chi_ip, ngay_tao)
-            VALUES (:muc_dich, :bam_email, :dia_chi_ip, NOW(3))
-        """),
-        {"muc_dich": muc_dich, "bam_email": bam_email, "dia_chi_ip": dia_chi_ip},
-    )
+    now = time.monotonic()
+    with _lock:
+        _by_email[(muc_dich, bam_email)].append(now)
+        _by_ip[(muc_dich, dia_chi_ip)].append(now)
 
 
 def get_email_request_stats(db: Session, muc_dich: str, bam_email: bytes) -> dict:
-    # FOR UPDATE: đọc bản mới nhất đã commit, không dùng snapshot cũ của transaction
-    row = db.execute(
-        text("""
-            SELECT COUNT(*) AS so_lan_1_gio,
-                   TIMESTAMPDIFF(SECOND, MAX(ngay_tao), NOW(3)) AS giay_tu_lan_cuoi
-            FROM yeu_cau_xac_thuc
-            WHERE bam_email = :bam_email
-              AND muc_dich = :muc_dich
-              AND ngay_tao > NOW(3) - INTERVAL 1 HOUR
-            FOR UPDATE
-        """),
-        {"muc_dich": muc_dich, "bam_email": bam_email},
-    ).mappings().one()
-    return dict(row)
+    now = time.monotonic()
+    with _lock:
+        q = _by_email.get((muc_dich, bam_email))
+        if not q:
+            return {"so_lan_1_gio": 0, "giay_tu_lan_cuoi": None}
+        _prune(q, now)
+        if not q:
+            return {"so_lan_1_gio": 0, "giay_tu_lan_cuoi": None}
+        return {"so_lan_1_gio": len(q), "giay_tu_lan_cuoi": int(now - q[-1])}
 
 
 def count_ip_requests_last_hour(db: Session, muc_dich: str, dia_chi_ip: str) -> int:
-    return db.execute(
-        text("""
-            SELECT COUNT(*)
-            FROM yeu_cau_xac_thuc
-            WHERE dia_chi_ip = :dia_chi_ip
-              AND muc_dich = :muc_dich
-              AND ngay_tao > NOW(3) - INTERVAL 1 HOUR
-            FOR UPDATE
-        """),
-        {"muc_dich": muc_dich, "dia_chi_ip": dia_chi_ip},
-    ).scalar_one()
+    now = time.monotonic()
+    with _lock:
+        q = _by_ip.get((muc_dich, dia_chi_ip))
+        if not q:
+            return 0
+        _prune(q, now)
+        return len(q)
 
 
 def delete_old_auth_requests(db: Session, retention_days: int, batch_size: int = 1000) -> int:
-    result = db.execute(
-        text("""
-            DELETE FROM yeu_cau_xac_thuc
-            WHERE ngay_tao < NOW(3) - INTERVAL :retention_days DAY
-            ORDER BY ngay_tao
-            LIMIT :batch_size
-        """),
-        {"retention_days": retention_days, "batch_size": batch_size},
-    )
-    return result.rowcount
+    # Bộ nhớ chỉ cần giữ 1 giờ gần nhất; xóa các khóa đã rỗng
+    now = time.monotonic()
+    removed = 0
+    with _lock:
+        for store in (_by_email, _by_ip):
+            for key in list(store.keys()):
+                _prune(store[key], now)
+                if not store[key]:
+                    del store[key]
+                    removed += 1
+    return removed

@@ -4,10 +4,8 @@
 /* Trung hoà style chung của global.css bên trong .xl */
 .xl button{min-height:0;padding:0;border:0;border-radius:0;background:none;color:inherit;cursor:pointer}
 .xl h1,.xl h2,.xl h3{margin:0}
-.xl{--bg: #F2F7F7; --bg-2: #E9F2F2; --surface: #FFFFFF; --surface-2: #EEF6F5; --line: #D9E7E6; --line-2: #C3D8D6; --ink: #14243D; --ink-2: #4A5A72; --ink-3: #73839A; --teal: #16B2AA; --teal-ink: #0A7C77; --btn: #0E8F89; --btn-sh: #0A6863; --on-btn: #FFFFFF; --teal-soft: #D6F2EF; --exam: #2F4F9A; --exam-sh: #20386F; --on-exam: #FFFFFF; --exam-soft: #E1E8F7; --coral: #EF6F57; --coral-ink: #B5432D; --coral-soft: #FDE4DD; --cream: #FFF3DE; --band: #FFF5E6; --band-line: #F6E2BF; --good: #118656; --good-soft: #DCF3E7; --bad: #C63A2C; --bad-soft: #FCE5E1; --warn: #995A08; --warn-soft: #FCEFD6; --scene: #0F1A2E; --scene-2: #16243D; --scene-line: rgba(140,190,210,.10); --scene-ink: #EAF4F7; --foot: #0D1626; --foot-ink: #DDE7F0; --grad: linear-gradient(120deg,#2CD3C9 0%,#8BE6C9 32%,#FFD99B 66%,#FF8A72 100%); --shadow-sm: 0 1px 2px rgba(20,36,61,.06),0 4px 14px -6px rgba(20,36,61,.14); --shadow: 0 2px 6px rgba(20,36,61,.05),0 18px 40px -16px rgba(20,36,61,.22); --focus: #FF8A72; --f-display: "Baloo 2","Be Vietnam Pro",system-ui,sans-serif; --f-body: "Be Vietnam Pro",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; --f-hz: "Noto Serif SC","Songti SC","SimSun",serif;}
-@media (prefers-color-scheme: dark){
-.xl{--bg: #0D1422; --bg-2: #111A2B; --surface: #152035; --surface-2: #1A2740; --line: #24334C; --line-2: #2F4260; --ink: #EDF3F7; --ink-2: #AEBBCE; --ink-3: #8190A8; --teal: #2CD3C9; --teal-ink: #5EE0D7; --btn: #2CC9BF; --btn-sh: #178F88; --on-btn: #04221F; --teal-soft: #123A40; --exam: #8DA5FF; --exam-sh: #5069C2; --on-exam: #0B1530; --exam-soft: #1C2850; --coral: #FF8A72; --coral-ink: #FFA08B; --coral-soft: #3A2224; --cream: #2A2619; --band: #141E31; --band-line: #22314B; --good: #4FD69C; --good-soft: #123528; --bad: #FF7E70; --bad-soft: #3F1D1D; --warn: #F4B860; --warn-soft: #352812; --scene: #0A1120; --scene-2: #111C31; --scene-line: rgba(140,190,210,.08); --scene-ink: #EAF4F7; --foot: #080E19; --foot-ink: #C9D5E2; --shadow-sm: 0 1px 2px rgba(0,0,0,.3),0 4px 14px -6px rgba(0,0,0,.5); --shadow: 0 2px 6px rgba(0,0,0,.25),0 22px 44px -18px rgba(0,0,0,.7); color-scheme: dark;}
-}
+.xl{--bg: #E4E1DB; --bg-2: #DAD6CF; --surface: #F3F1EC; --surface-2: #E9E6E0; --line: #D2CDC4; --line-2: #BDB6AB; --ink: #1D2731; --ink-2: #434D58; --ink-3: #5A636D; --teal: #2A958E; --teal-ink: #1A6F6A; --btn: #18807A; --btn-sh: #0F5C57; --on-btn: #FFFFFF; --teal-soft: #D8E8E4; --exam: #2F4F9A; --exam-sh: #20386F; --on-exam: #FFFFFF; --exam-soft: #E1E8F7; --coral: #DD6E54; --coral-ink: #A3442D; --coral-soft: #F4DDD4; --cream: #FFF3DE; --band: #FFF5E6; --band-line: #F6E2BF; --good: #18704B; --good-soft: #DCEBE1; --bad: #A93A2A; --bad-soft: #F3DDD7; --warn: #8C5A12; --warn-soft: #F1E4CC; --scene: #0F1A2E; --scene-2: #16243D; --scene-line: rgba(140,190,210,.10); --scene-ink: #EAF4F7; --foot: #0D1626; --foot-ink: #DDE7F0; --grad: linear-gradient(120deg,#2CD3C9 0%,#8BE6C9 32%,#FFD99B 66%,#FF8A72 100%); --shadow-sm: 0 1px 2px rgba(52,44,34,.06),0 4px 14px -6px rgba(52,44,34,.14); --shadow: 0 2px 6px rgba(52,44,34,.05),0 18px 40px -16px rgba(52,44,34,.22); --focus: #DD6E54; --f-display: "Baloo 2","Be Vietnam Pro",system-ui,sans-serif; --f-body: "Be Vietnam Pro",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; --f-hz: "Noto Serif SC","Songti SC","SimSun",serif;}
+html[data-theme="dark"] .xl{--bg: #0D1422; --bg-2: #111A2B; --surface: #152035; --surface-2: #1A2740; --line: #24334C; --line-2: #2F4260; --ink: #EDF3F7; --ink-2: #AEBBCE; --ink-3: #8190A8; --teal: #2CD3C9; --teal-ink: #5EE0D7; --btn: #2CC9BF; --btn-sh: #178F88; --on-btn: #04221F; --teal-soft: #123A40; --exam: #8DA5FF; --exam-sh: #5069C2; --on-exam: #0B1530; --exam-soft: #1C2850; --coral: #FF8A72; --coral-ink: #FFA08B; --coral-soft: #3A2224; --cream: #2A2619; --band: #141E31; --band-line: #22314B; --good: #4FD69C; --good-soft: #123528; --bad: #FF7E70; --bad-soft: #3F1D1D; --warn: #F4B860; --warn-soft: #352812; --scene: #0A1120; --scene-2: #111C31; --scene-line: rgba(140,190,210,.08); --scene-ink: #EAF4F7; --foot: #080E19; --foot-ink: #C9D5E2; --shadow-sm: 0 1px 2px rgba(0,0,0,.3),0 4px 14px -6px rgba(0,0,0,.5); --shadow: 0 2px 6px rgba(0,0,0,.25),0 22px 44px -18px rgba(0,0,0,.7); color-scheme: dark;}
 .xl *,
 .xl ::before,
 .xl ::after{box-sizing: border-box;}
@@ -43,9 +41,7 @@ html.motion-ok .xl .gline{animation: 6s linear 0s infinite normal none running s
 .xl .mm.done{background: rgb(44, 211, 201); color: rgb(5, 50, 47); box-shadow: rgb(23, 143, 136) 0px 6px 0px, rgba(44, 211, 201, 0.5) 0px 0px 24px;}
 .xl .mm.now{background: rgb(255, 138, 114); color: rgb(255, 255, 255); box-shadow: rgb(201, 85, 63) 0px 6px 0px, rgba(255, 138, 114, 0.18) 0px 0px 0px 8px;}
 .xl .words{display: grid; grid-template-columns: repeat(3, minmax(0px, 1fr)); gap: 10px; margin-top: 18px;}
-@media (prefers-color-scheme: dark){
-.xl :root:not([data-theme="light"]) .stat.fire{color: rgb(244, 184, 96);}
-}
+html[data-theme="dark"] .xl :root:not([data-theme="light"]) .stat.fire{color: rgb(244, 184, 96);}
 @media (max-width: 720px){
 .xl .stamp{width: 50px; height: 50px; font-size: 28px;}
 }
@@ -62,9 +58,7 @@ html:not(.motion-ok) .xl ::before,
 html:not(.motion-ok) .xl ::after{transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; animation-iteration-count: 1 !important;}
 html:not(.motion-ok) .xl{scroll-behavior: auto;}
 .xl{--ground: #C9F0EB; --blob: #E2F6F3; --paper: #FFFFFF;}
-@media (prefers-color-scheme: dark){
-.xl{--ground: #123A40; --blob: #13283A; --paper: #18263D;}
-}
+html[data-theme="dark"] .xl{--ground: #123A40; --blob: #13283A; --paper: #18263D;}
 .xl .btn-xl{min-height: 56px; width: min(340px, 100%); font-size: 15.5px; letter-spacing: 0.08em; text-transform: uppercase; border-radius: 18px;}
 .xl .btn-xl.plain{color: var(--teal-ink);}
 .xl .h-hero{background: var(--surface); border-bottom: 1px solid var(--line);}
@@ -186,9 +180,7 @@ html.motion-ok .xl .cta-x{animation: 4.8s ease-in-out 0s infinite normal none ru
 .xl .tile-hz{width: 50px; height: 50px; font-size: 26px;}
 }
 .xl{--sky1: #DDF4F1; --sky2: #FFF4E0; --hill1: #9ADBC2; --hill2: #7CCDB0; --grass1: #8FD9A8; --grass2: #79CC97; --soil: #D7A673; --soil2: #C08E5C; --sun: #FFC56E; --cloud: #FFFFFF;}
-@media (prefers-color-scheme: dark){
-.xl{--sky1: #0F1C30; --sky2: #1C2C44; --hill1: #1D4A4A; --hill2: #17403F; --grass1: #22574A; --grass2: #1C4B40; --soil: #6B4B33; --soil2: #5A3E2A; --sun: #FFE7B8; --cloud: rgba(255,255,255,.14);}
-}
+html[data-theme="dark"] .xl{--sky1: #0F1C30; --sky2: #1C2C44; --hill1: #1D4A4A; --hill2: #17403F; --grass1: #22574A; --grass2: #1C4B40; --soil: #6B4B33; --soil2: #5A3E2A; --sun: #FFE7B8; --cloud: rgba(255,255,255,.14);}
 .xl .sprout{position: absolute; left: var(--x); bottom: 0px; display: flex; flex-direction: column; align-items: center; transform-origin: 50% 100%; transform: scale(0) translateY(10px); transition: transform 0.45s cubic-bezier(0.3, 1.6, 0.5, 1);}
 .xl .sprout.up{transform: none;}
 .xl .sprout b{position: relative; display: flex; align-items: center; justify-content: center; width: 46px; height: 46px; border-radius: 14px; background: rgb(255, 243, 222); color: rgb(122, 74, 16); font-size: 24px; box-shadow: rgb(227, 199, 154) 0px 4px 0px;}
@@ -240,9 +232,7 @@ html.motion-ok .xl .xiang-main.hop{animation: 0.6s cubic-bezier(0.3, 1.5, 0.5, 1
 .xl .bird::after{right: 0px;}
 .xl .sprout.up b{transition: transform 0.2s;}
 .xl{--sky-a: #FDEBD2; --sky-b: #DDF3EF; --mt1: #A9D8CF; --mt2: #7DC4AE; --mist: #EAF7F3; --paddy: #9BD88C; --paddy2: #87CC7A; --water: #BDE7EF; --soil: #E3C096; --soil-d: #9C6A3E; --g3: #5DBB78; --bam: #6DBF86; --bam-node: #4E9E67; --bam-leaf: #4FAE6E; --sunc: #FFC56E; --stars-o: 0;}
-@media (prefers-color-scheme: dark){
-.xl{--sky-a: #0B1426; --sky-b: #18324A; --mt1: #1F4050; --mt2: #1B3B3A; --mist: #132A3A; --paddy: #22513F; --paddy2: #1C4636; --water: #1E4C5C; --soil: #6E4E35; --soil-d: #3C281A; --g3: #183F31; --bam: #2D6C4C; --bam-node: #1F5038; --bam-leaf: #245D41; --sunc: #FFE7B8; --stars-o: 1;}
-}
+html[data-theme="dark"] .xl{--sky-a: #0B1426; --sky-b: #18324A; --mt1: #1F4050; --mt2: #1B3B3A; --mist: #132A3A; --paddy: #22513F; --paddy2: #1C4636; --water: #1E4C5C; --soil: #6E4E35; --soil-d: #3C281A; --g3: #183F31; --bam: #2D6C4C; --bam-node: #1F5038; --bam-leaf: #245D41; --sunc: #FFE7B8; --stars-o: 1;}
 .xl .pl-sec{position: relative; padding-block: 0px; background: var(--bg);}
 .xl .pl-sticky{display: block;}
 .xl .pl-wrap{width: 100%;}
@@ -373,29 +363,19 @@ html.motion-ok .xl .ex-head{animation: 3.6s ease-in-out 0s infinite normal none 
 @media (max-width: 560px){
 .xl .pk-grid{grid-template-columns: 1fr;}
 }
-@media (prefers-color-scheme: dark){
-.xl :root:not([data-theme="light"]) .terr{background: linear-gradient(rgb(36, 87, 74), rgb(28, 75, 64)); box-shadow: rgb(22, 60, 51) 0px -8px 0px inset;}
-.xl :root:not([data-theme="light"]) .terr-h{color: rgb(205, 239, 224);}
-.xl :root:not([data-theme="light"]) .terr.lk{background: rgb(42, 47, 58); box-shadow: rgb(34, 38, 47) 0px -8px 0px inset;}
-}
+html[data-theme="dark"] .xl :root:not([data-theme="light"]) .terr{background: linear-gradient(rgb(36, 87, 74), rgb(28, 75, 64)); box-shadow: rgb(22, 60, 51) 0px -8px 0px inset;}
+html[data-theme="dark"] .xl :root:not([data-theme="light"]) .terr-h{color: rgb(205, 239, 224);}
+html[data-theme="dark"] .xl :root:not([data-theme="light"]) .terr.lk{background: rgb(42, 47, 58); box-shadow: rgb(34, 38, 47) 0px -8px 0px inset;}
 .xl .b2{--s1: #CFE6FF; --s2: #E8F4FF; --m1: #9FD8C9; --m2: #7FC9B6; --h1: #94CBE0; --h2: #7DBBD2; --sun2: #FFE08A; --tg1: #B7E6DA; --tg2: #9BD9C9; --tb: #6FBFA9; --acc: #2B7FD4;}
-@media (prefers-color-scheme: dark){
-.xl :root:not([data-theme="light"]) .biome{--s1: #14243B; --s2: #1A2E48; --m1: #1E4A43; --m2: #173C36; --h1: #1F3A50; --h2: #193246; --tg1: #24574A; --tg2: #1D4B40; --tb: #143A31;}
-.xl :root:not([data-theme="light"]) .b3{--m1: #4A4022; --m2: #3D351C; --tg1: #5A4D27; --tg2: #4C4121; --tb: #392F15;}
-}
-@media (prefers-color-scheme: dark){
-.xl :root:not([data-theme="light"]) .pi.soil{background: rgb(74, 60, 42); box-shadow: rgb(94, 76, 53) 0px 0px 0px 1.5px inset;}
-.xl :root:not([data-theme="light"]) .pi.sprt{background: rgb(31, 74, 54); box-shadow: rgb(46, 107, 78) 0px 0px 0px 1.5px inset;}
-.xl :root:not([data-theme="light"]) .pi.rice{background: rgb(74, 61, 22); box-shadow: rgb(107, 87, 32) 0px 0px 0px 1.5px inset;}
-.xl :root:not([data-theme="light"]) .pi.rv svg{stroke: rgb(242, 179, 107);}
-}
-@media (prefers-color-scheme: dark){
-.xl :root:not([data-theme="light"]) .map{--lk1: #3A3A3F; --lk2: #2A2A2F; --soil1: #8A6A45; --soil2: #755636; --soil3: #5A3F24; --grass: #2E6B4E; --grass2: #2B5E47; --water: #24536B; --water2: #1D4559;}
-.xl :root:not([data-theme="light"]) .node2.done .top{background: radial-gradient(120% 90% at 30% 20%, rgb(63, 127, 87), rgb(47, 107, 71)); box-shadow: rgb(34, 81, 58) 0px 9px 0px;}
-}
-@media (prefers-color-scheme: dark){
-.xl :root:not([data-theme="light"]) .node2.done.big .top{background: radial-gradient(120% 90% at 30% 20%, rgb(185, 138, 42), rgb(143, 106, 30)); box-shadow: rgb(101, 74, 18) 0px 9px 0px;}
-}
+html[data-theme="dark"] .xl :root:not([data-theme="light"]) .biome{--s1: #14243B; --s2: #1A2E48; --m1: #1E4A43; --m2: #173C36; --h1: #1F3A50; --h2: #193246; --tg1: #24574A; --tg2: #1D4B40; --tb: #143A31;}
+html[data-theme="dark"] .xl :root:not([data-theme="light"]) .b3{--m1: #4A4022; --m2: #3D351C; --tg1: #5A4D27; --tg2: #4C4121; --tb: #392F15;}
+html[data-theme="dark"] .xl :root:not([data-theme="light"]) .pi.soil{background: rgb(74, 60, 42); box-shadow: rgb(94, 76, 53) 0px 0px 0px 1.5px inset;}
+html[data-theme="dark"] .xl :root:not([data-theme="light"]) .pi.sprt{background: rgb(31, 74, 54); box-shadow: rgb(46, 107, 78) 0px 0px 0px 1.5px inset;}
+html[data-theme="dark"] .xl :root:not([data-theme="light"]) .pi.rice{background: rgb(74, 61, 22); box-shadow: rgb(107, 87, 32) 0px 0px 0px 1.5px inset;}
+html[data-theme="dark"] .xl :root:not([data-theme="light"]) .pi.rv svg{stroke: rgb(242, 179, 107);}
+html[data-theme="dark"] .xl :root:not([data-theme="light"]) .map{--lk1: #3A3A3F; --lk2: #2A2A2F; --soil1: #8A6A45; --soil2: #755636; --soil3: #5A3F24; --grass: #2E6B4E; --grass2: #2B5E47; --water: #24536B; --water2: #1D4559;}
+html[data-theme="dark"] .xl :root:not([data-theme="light"]) .node2.done .top{background: radial-gradient(120% 90% at 30% 20%, rgb(63, 127, 87), rgb(47, 107, 71)); box-shadow: rgb(34, 81, 58) 0px 9px 0px;}
+html[data-theme="dark"] .xl :root:not([data-theme="light"]) .node2.done.big .top{background: radial-gradient(120% 90% at 30% 20%, rgb(185, 138, 42), rgb(143, 106, 30)); box-shadow: rgb(101, 74, 18) 0px 9px 0px;}
 .xl body.map-on .demo{display: none;}
 @keyframes spinang { 
   100% { --ang: 360deg; }
