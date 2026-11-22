@@ -1,5 +1,5 @@
 """Bản đồ Ôn luyện của Học viên (mục 4.1): Kỹ năng → Cấp → Thửa → 5 ô.
-
+    
 - Chỉ hiện thửa/bài đang đăng. Thửa chưa có bài đăng → "Chưa xuất bản", không tạo tiến độ giả.
 - Mở khóa: thửa đầu mở; thửa sau mở khi kiểm tra cuối thửa trước đạt. Trong thửa, ô sau mở khi ô trước đạt.
 - Đạt = lượt đã nộp có mọi câu đúng (5/5, 10/10). Tiến độ tính theo bài gốc (mọi phiên bản).
