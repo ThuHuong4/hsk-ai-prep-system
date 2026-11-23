@@ -1,38 +1,29 @@
 import { useCallback, useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 
-import Icon from "../../../shared/components/Icon.jsx";
-import { useTheme } from "../../../shared/theme.js";
-import { useAuth } from "../../auth/context/AuthContext.jsx";
-import "../../exam_catalog/styles/catalog.css";
-import { mediaUrl } from "../../lecturer/utils/labels.js";
-import "../../../layouts/staffShell.css";
-import HanziText from "../../mock_test/components/HanziText.jsx";
-import "../../mock_test/styles/mockTest.css";
 import xiangFace from "../../../assets/images/xiang/home/xiang_face.webp";
+import "../../../layouts/staffShell.css";
+import HanziText from "../../../shared/components/HanziText.jsx";
+import Icon from "../../../shared/components/Icon.jsx";
+import { CHOICE, LATIN, Option, SKILL, pickMessages } from "../../../shared/components/LessonParts.jsx";
+import SentenceBuilder, { isPieceList, pickDistractors } from "../../../shared/components/SentenceBuilder.jsx";
+import { useTheme } from "../../../shared/hooks/useTheme.js";
+import { mediaUrl } from "../../../shared/utils/format.js";
 import XiangChat from "../../ai_tutor/components/XiangChat.jsx";
 import "../../ai_tutor/styles/xiangChat.css";
+import { useAuth } from "../../auth/context/AuthContext.jsx";
+import "../../exam_catalog/styles/catalog.css";
+import "../../mock_test/styles/mockTest.css";
 import { abandonSkip, askSkipXiang, getSkip, saveSkipAnswer, startLevelTest, startSkip, submitSkip } from "../api/practiceApi.js";
-import { CHOICE, LATIN, Option, SKILL } from "../guest/LessonParts.jsx";
-import { skillSlug } from "../skills.js";
 import "../styles/practice.css";
 import "../styles/skipTest.css";
-import SentenceBuilder, { isPieceList, pickDistractors } from "../../../shared/components/SentenceBuilder.jsx";
+import { skillSlug } from "../utils/skills.js";
 
 function stemOf(q) {
   if (q.dang === "dung_sai") return "Đúng hay sai?";
   if (q.dang === "dien_chu") return "Điền vào chỗ trống";
   if (q.dang === "sap_xep") return "Sắp xếp thành câu đúng";
   return "Chọn đáp án đúng";
-}
-
-// Lấy mảng tin nhắn từ lời gọi của XiangChat (dù gọi theo kiểu nào)
-function pickMessages(args) {
-  for (const a of args) {
-    if (Array.isArray(a)) return a;
-    if (a && typeof a === "object" && Array.isArray(a.tin_nhan)) return a.tin_nhan;
-  }
-  return [];
 }
 
 function answered(item) {

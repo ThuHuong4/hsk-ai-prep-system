@@ -2,33 +2,25 @@ import { useEffect, useMemo, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 
 import xiangFace from "../../../assets/images/xiang/home/xiang_face.webp";
+import "../../../layouts/staffShell.css";
+import HanziText from "../../../shared/components/HanziText.jsx";
 import Icon from "../../../shared/components/Icon.jsx";
-import { useTheme } from "../../../shared/theme.js";
+import { CHOICE, LATIN, Option, SKILL, instruction, pickMessages } from "../../../shared/components/LessonParts.jsx";
+import SentenceBuilder, { isPieceList, pickDistractors } from "../../../shared/components/SentenceBuilder.jsx";
+import { useTheme } from "../../../shared/hooks/useTheme.js";
+import { mediaUrl } from "../../../shared/utils/format.js";
 import XiangChat from "../../ai_tutor/components/XiangChat.jsx";
 import "../../ai_tutor/styles/xiangChat.css";
 import { useAuth } from "../../auth/context/AuthContext.jsx";
 import "../../exam_catalog/styles/catalog.css";
-import { mediaUrl } from "../../lecturer/utils/labels.js";
-import "../../../layouts/staffShell.css";
-import HanziText from "../../mock_test/components/HanziText.jsx";
 import "../../mock_test/styles/mockTest.css";
-import { CHOICE, LATIN, Option, SKILL, instruction } from "../../practice/guest/LessonParts.jsx";
 import "../../practice/styles/practice.css";
 import { abandonNotebookReview, askNotebookXiang, checkNotebookAnswer, getNotebookReview } from "../api/notebookApi.js";
 import DailyMissions from "../components/DailyMissions.jsx";
 import "../styles/notebook.css";
-import SentenceBuilder, { isPieceList, pickDistractors } from "../../../shared/components/SentenceBuilder.jsx";
 
 const STATE = { can_on: "Cần ôn", cho_on_lai: "Chờ ôn lại · hẹn ôn ngày mai", da_cung_co: "Đã củng cố" };
 const BACK = "/hoc-vien/so-tay-cau-sai";
-
-function pickMessages(args) {
-  for (const a of args) {
-    if (Array.isArray(a)) return a;
-    if (a && typeof a === "object" && Array.isArray(a.tin_nhan)) return a.tin_nhan;
-  }
-  return [];
-}
 
 // Lượt ôn Sổ tay: phản hồi từng câu như bài học, không tốn năng lượng
 export default function NotebookReviewPage() {

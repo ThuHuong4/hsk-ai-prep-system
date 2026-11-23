@@ -15,13 +15,17 @@ from sqlalchemy import text
 from sqlalchemy.orm import Session
 
 from app.modules.common.service_errors import ConflictError, NotFoundError, RuleError
-from app.modules.mock_tests.services.attempt_service import _is_correct
-from app.modules.mock_tests.services.content import correct_option_id, load_items
+from app.modules.grading import (
+    CHOICE_TYPES,
+    correct_option_id,
+    is_correct as _is_correct,
+    load_set_items as load_items,
+    shuffle_choice_options as _shuffled,
+)
 from app.modules.practice.services import path_view
 
 CONSUMING = ("hoc_moi", "lam_lai")
 KN = {"bai": ("kn_bai", 10), "cuoi_thua": ("kn_cuoi_thua", 20)}
-CHOICE_TYPES = ("chon_mot", "dung_sai", "chon_bo_chung")
 
 
 def _lesson_scope(db: Session, ma_goc_id: int) -> dict:
@@ -110,14 +114,6 @@ def _answers(db: Session, luot_id: int) -> list[dict]:
         {"l": luot_id},
     ).mappings().all()
     return [dict(r) for r in rows]
-
-
-def _shuffled(q: dict, options: dict, seed: int | None) -> list[dict]:
-    owner = q["cau_cha_id"] if q["dang"] == "chon_bo_chung" else q["id"]
-    opts = [{"id": o["id"], "noi_dung": o["noi_dung"], "tep_hinh": o["tep_hinh"]} for o in options[owner]["lua_chon"]]
-    if q["dang"] != "dung_sai" and seed:
-        random.Random(seed).shuffle(opts)
-    return opts
 
 
 def _feedback(q: dict, options: dict, answer: dict, energy_cut: int) -> dict:

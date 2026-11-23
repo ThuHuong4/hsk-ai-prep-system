@@ -7,7 +7,7 @@ import { useAuth } from "../features/auth/context/AuthContext.jsx";
 import Icon from "../shared/components/Icon.jsx";
 import BackButton from "../shared/components/BackButton.jsx";
 import ScrollNav from "../shared/components/ScrollNav.jsx";
-import { useTheme } from "../shared/theme.js";
+import { useTheme } from "../shared/hooks/useTheme.js";
 import "./staffShell.css";
 
 // Khung trang theo bản mô phỏng: thanh bên + thanh trên. tabs = điện thoại dùng thanh tab ở đáy (Học viên)

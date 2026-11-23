@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 
-import { formatDateTime } from "../../lecturer/utils/labels.js";
+import { formatDateTime } from "../../../shared/utils/format.js";
 
 // Điểm từng lượt (cũ → mới) của một cấp, có vạch mốc đạt. Một trục, đường mảnh, rê chuột/chạm để xem chi tiết.
 const H = 230, L = 40, R = 16, T = 14, B = 30;

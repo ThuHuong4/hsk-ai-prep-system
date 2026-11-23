@@ -7,7 +7,7 @@ import { useRequest } from "../../../shared/api/useRequest.js";
 import { deleteMaterial, listMaterials, materialAction } from "../api/lecturerApi.js";
 import StatusBadge from "../components/StatusBadge.jsx";
 import { FILE_TYPE_LABELS, SKILL_LABELS, STATUS_LABELS } from "../utils/labels.js";
-import { useLevels } from "../utils/useLevels.js";
+import { useLevels } from "../hooks/useLevels.js";
 import "../styles/lecturer.css";
 import CreatorTag from "../components/CreatorTag.jsx";
 

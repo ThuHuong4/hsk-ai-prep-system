@@ -4,7 +4,8 @@ import { Link, useNavigate } from "react-router-dom";
 import xiangFace from "../../../assets/images/xiang/home/xiang_face.webp";
 import { useAuth } from "../../auth/context/AuthContext.jsx";
 import { startLesson } from "../../practice/api/practiceApi.js";
-import { fetchMaterialUrl, getRoadmap } from "../api/roadmapApi.js";
+import { fetchMaterialUrl } from "../../study_materials/api/materialsApi.js";
+import { getRoadmap } from "../api/roadmapApi.js";
 import "../styles/roadmap.css";
 
 const SKILL = { nghe: "Nghe", doc: "Đọc", viet: "Viết", tu_vung: "Từ vựng" };

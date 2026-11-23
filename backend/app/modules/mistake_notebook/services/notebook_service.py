@@ -14,9 +14,13 @@ from sqlalchemy.orm import Session
 
 from app.modules.common.service_errors import ConflictError, NotFoundError, RuleError
 from app.modules.common.sql_helpers import in_params
-from app.modules.mock_tests.services.attempt_service import _is_correct
-from app.modules.mock_tests.services.content import correct_option_id
-from app.modules.practice.services.skip_service import CHOICE_TYPES, _load_questions, _options_of
+from app.modules.grading import (
+    CHOICE_TYPES,
+    correct_option_id,
+    is_correct as _is_correct,
+    load_questions_by_ids as _load_questions,
+    shuffle_choice_options as _options_of,
+)
 from app.modules.mistake_notebook.services import missions
 
 REVIEW_SIZE = 10

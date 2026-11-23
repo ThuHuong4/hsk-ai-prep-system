@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 
-import { mediaUrl } from "../../lecturer/utils/labels.js";
+import { mediaUrl } from "../../../shared/utils/format.js";
 import { LETTERS, splitOption } from "../utils/paper.js";
 import SentenceBuilder from "../../../shared/components/SentenceBuilder.jsx";
-import HanziText from "./HanziText.jsx";
+import HanziText from "../../../shared/components/HanziText.jsx";
 import XiangChat from "../../ai_tutor/components/XiangChat.jsx";
 // Đề thi trình bày như đề giấy. mode = "do" (đang làm) | "review" (xem lại sau khi nộp)
 

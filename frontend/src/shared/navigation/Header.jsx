@@ -4,7 +4,7 @@ import xiangFace from "../../assets/images/xiang/home/xiang_face.webp";
 import { useAuth } from "../../features/auth/context/AuthContext.jsx";
 import DictionaryButton from "../../features/search/components/DictionaryButton.jsx";
 import { homePathForRole } from "../../features/auth/utils/roles.js";
-import { useTheme } from "../theme.js";
+import { useTheme } from "../hooks/useTheme.js";
 import "./siteShell.css";
 
 export default function Header() {

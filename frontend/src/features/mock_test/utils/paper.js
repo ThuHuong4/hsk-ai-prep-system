@@ -1,3 +1,7 @@
+import { splitOption } from "../../../shared/utils/format.js";
+
+export { splitOption };
+
 // Gom câu theo kỹ năng → phần → khối (câu lẻ hoặc nhóm cùng ngữ liệu), đánh số như đề giấy
 const SECTION_ZH = { nghe: "听力", doc: "阅读", viet: "书写", tu_vung: "词汇" };
 const SECTION_VI = { nghe: "Nghe", doc: "Đọc", viet: "Viết", tu_vung: "Từ vựng" };
@@ -27,13 +31,6 @@ export function buildPaper(items) {
     else part.blocks.push({ group: item.cau_cha_id || null, items: [item] });
   }
   return sections;
-}
-
-// "商店 [shāngdiàn]" → { text: "商店", pinyin: "shāngdiàn" }
-export function splitOption(value) {
-  if (!value) return { text: "", pinyin: null };
-  const m = value.match(/^(.*?)\s*\[([^\]]+)\]\s*$/);
-  return m ? { text: m[1], pinyin: m[2] } : { text: value, pinyin: null };
 }
 
 export function formatClock(seconds) {

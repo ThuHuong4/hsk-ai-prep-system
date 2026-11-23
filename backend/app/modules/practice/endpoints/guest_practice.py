@@ -6,20 +6,14 @@ from pydantic import BaseModel, ConfigDict, Field
 from sqlalchemy.orm import Session
 
 from app.database.session import get_db
+from app.modules.ai_tutor.services import stateless_tutor
+from app.modules.common.schemas import ChatTurnIn as GuestMessage, CheckAnswerIn as CheckIn
 from app.modules.common.service_errors import run_service
-from app.modules.practice.endpoints.student_practice import CheckIn
-from app.modules.practice.services import guest_service, guest_xiang
+from app.modules.practice.services import guest_service
 from app.security.client_ip import get_client_ip
 
 router = APIRouter(prefix="/cong-khai")
 _LESSON_404 = "Không tìm thấy bài"
-
-
-class GuestMessage(BaseModel):
-    model_config = ConfigDict(extra="forbid")
-
-    vai: Literal["hoc_vien", "xiang"]
-    noi_dung: str = Field(..., min_length=1, max_length=2000)
 
 
 class GuestAskIn(BaseModel):
@@ -62,14 +56,14 @@ def guest_ask(body: GuestAskIn, request: Request, db: Session = Depends(get_db))
     db.close()  # trả kết nối CSDL trước khi chờ AI
     ip = get_client_ip(request)
     try:
-        reply = guest_xiang.ask(ip, context, [m.model_dump() for m in body.tin_nhan])
+        reply = stateless_tutor.ask(ip, context, [m.model_dump() for m in body.tin_nhan])
     except ValueError as error:
         raise HTTPException(status_code=status.HTTP_422_UNPROCESSABLE_ENTITY, detail=str(error))
-    except guest_xiang.GuestLimit as error:
+    except stateless_tutor.GuestLimit as error:
         raise HTTPException(status_code=status.HTTP_429_TOO_MANY_REQUESTS, detail=error.message,
                             headers={"Retry-After": str(error.retry_after)})
-    except guest_xiang.GuestAiOff:
+    except stateless_tutor.GuestAiOff:
         raise HTTPException(status_code=status.HTTP_503_SERVICE_UNAVAILABLE, detail="Xiang chưa được cấu hình")
-    except guest_xiang.GuestAiError:
+    except stateless_tutor.GuestAiError:
         raise HTTPException(status_code=status.HTTP_503_SERVICE_UNAVAILABLE, detail="Xiang đang bận, thử lại sau nhé")
-    return {"tra_loi": reply, "con_lai": guest_xiang.remaining(ip)}
+    return {"tra_loi": reply, "con_lai": stateless_tutor.remaining(ip)}

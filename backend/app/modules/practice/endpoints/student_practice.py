@@ -5,8 +5,10 @@ from pydantic import BaseModel, ConfigDict, Field
 from sqlalchemy.orm import Session
 
 from app.database.session import get_db
+from app.modules.ai_tutor.services import stateless_tutor
+from app.modules.common.schemas import ChatTurnIn as XiangMessage, CheckAnswerIn as CheckIn
 from app.modules.common.service_errors import run_service
-from app.modules.practice.services import guest_xiang, lesson_service, level_test_service, path_view, skip_service
+from app.modules.practice.services import lesson_service, level_test_service, path_view, skip_service
 from app.security.require_student import require_student
 
 router = APIRouter(prefix="/on-luyen")
@@ -21,26 +23,11 @@ class AnswerIn(BaseModel):
     van_ban: str | None = Field(None, max_length=2000)
 
 
-class XiangMessage(BaseModel):
-    model_config = ConfigDict(extra="forbid")
-
-    vai: Literal["hoc_vien", "xiang"]
-    noi_dung: str = Field(..., min_length=1, max_length=2000)
-
-
 class SkipAskIn(BaseModel):
     model_config = ConfigDict(extra="forbid")
 
     cau_hoi_id: int = Field(..., ge=1)
     tin_nhan: list[XiangMessage] = Field(..., min_length=1, max_length=20)
-
-
-class CheckIn(BaseModel):
-    model_config = ConfigDict(extra="forbid")
-
-    cau_hoi_id: int = Field(..., ge=1)
-    phuong_an_chon_id: int | None = Field(None, ge=1)  # cả hai trống = Bỏ qua
-    van_ban: str | None = Field(None, max_length=2000)
 
 
 @router.get("/tong-quan")
@@ -124,15 +111,15 @@ def ask_skip(body: SkipAskIn, luot_id: int = Path(..., ge=1), db: Session = Depe
     context = run_service(lambda: skip_service.skip_context(db, luot_id, uid, body.cau_hoi_id), _ATTEMPT_404)
     db.close()  # trả kết nối CSDL trước khi chờ AI
     try:
-        reply = guest_xiang.ask(f"hv:{uid}", context, [m.model_dump() for m in body.tin_nhan],
-                                daily=STUDENT_DAILY_ASK, out_msg="Bạn đã dùng hết lượt hỏi Xiang hôm nay, mai hỏi tiếp nhé.")
+        reply = stateless_tutor.ask(f"hv:{uid}", context, [m.model_dump() for m in body.tin_nhan],
+                                    daily=STUDENT_DAILY_ASK, out_msg="Bạn đã dùng hết lượt hỏi Xiang hôm nay, mai hỏi tiếp nhé.")
     except ValueError as error:
         raise HTTPException(status_code=status.HTTP_422_UNPROCESSABLE_ENTITY, detail=str(error))
-    except guest_xiang.GuestLimit as error:
+    except stateless_tutor.GuestLimit as error:
         raise HTTPException(status_code=status.HTTP_429_TOO_MANY_REQUESTS, detail=error.message,
                             headers={"Retry-After": str(error.retry_after)})
-    except guest_xiang.GuestAiOff:
+    except stateless_tutor.GuestAiOff:
         raise HTTPException(status_code=status.HTTP_503_SERVICE_UNAVAILABLE, detail="Xiang chưa được cấu hình")
-    except guest_xiang.GuestAiError:
+    except stateless_tutor.GuestAiError:
         raise HTTPException(status_code=status.HTTP_503_SERVICE_UNAVAILABLE, detail="Xiang đang bận, thử lại sau nhé")
     return {"tra_loi": reply}

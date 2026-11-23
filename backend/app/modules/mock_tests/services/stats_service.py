@@ -8,8 +8,8 @@
 from sqlalchemy import text
 from sqlalchemy.orm import Session
 
+from app.modules.grading import load_set_items as load_items
 from app.modules.mock_tests.services.attempt_service import _answers, score_attempt
-from app.modules.mock_tests.services.content import load_items
 from app.modules.mock_tests.services.roadmap_service import DANG_VI, SKILL_VI, WEAK_BELOW, group_scores
 
 MAX_ATTEMPTS = 60  # lượt gần nhất được tính (đủ cho biểu đồ, tránh trang chậm)

@@ -5,7 +5,7 @@ import { useRequest } from "../../../shared/api/useRequest.js";
 import Icon from "../../../shared/components/Icon.jsx";
 import { useAuth } from "../../auth/context/AuthContext.jsx";
 import "../../exam_catalog/styles/catalog.css";
-import { SKILL } from "../../practice/guest/LessonParts.jsx";
+import { SKILL } from "../../../shared/components/LessonParts.jsx";
 import { getNotebook, startNotebookReview } from "../api/notebookApi.js";
 import DailyMissions from "../components/DailyMissions.jsx";
 import "../styles/notebook.css";

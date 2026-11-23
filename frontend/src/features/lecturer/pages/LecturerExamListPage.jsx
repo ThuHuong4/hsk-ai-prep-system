@@ -7,7 +7,7 @@ import { useRequest } from "../../../shared/api/useRequest.js";
 import { deleteExam, examAction, listExams } from "../api/lecturerApi.js";
 import StatusBadge from "../components/StatusBadge.jsx";
 import { STATUS_LABELS } from "../utils/labels.js";
-import { useLevels } from "../utils/useLevels.js";
+import { useLevels } from "../hooks/useLevels.js";
 import "../styles/lecturer.css";
 import CreatorTag from "../components/CreatorTag.jsx";
 

@@ -15,16 +15,20 @@ from sqlalchemy.orm import Session
 
 from app.modules.common.service_errors import ConflictError, NotFoundError, RuleError
 from app.modules.common.sql_helpers import in_params
-from app.modules.mock_tests.services.attempt_service import _is_correct
-from app.modules.mock_tests.services.content import _Q_FIELDS, correct_option_id
+from app.modules.grading import (
+    CHOICE_TYPES,
+    OBJECTIVE_TYPES as GRADABLE,
+    correct_option_id,
+    is_correct as _is_correct,
+    load_questions_by_ids as _load_questions,
+    shuffle_choice_options as _options_of,
+)
 from app.modules.practice.services import path_view
 
 SKIP_SIZE = 10
 KN_SKIP = 20
 KINDS = ("vuot_thua", "bat_dau_cap", "vuot_chang")
 KN_REASON = {"vuot_thua": "kn_vuot_thua", "bat_dau_cap": "kn_bat_dau_cap", "vuot_chang": "kn_vuot_chang"}
-GRADABLE = ("chon_mot", "dung_sai", "chon_bo_chung", "sap_xep", "dien_chu")
-CHOICE_TYPES = ("chon_mot", "dung_sai", "chon_bo_chung")
 
 
 def _target(db: Session, thua_ma_goc: int) -> dict:
@@ -37,25 +41,6 @@ def _target(db: Session, thua_ma_goc: int) -> dict:
     if row is None:
         raise NotFoundError()
     return dict(row)
-
-
-def _load_questions(db: Session, ids: list[int]) -> tuple[dict, dict]:
-    marks, params = in_params("q", ids)
-    questions = {r["id"]: dict(r) for r in db.execute(text(f"SELECT {_Q_FIELDS} FROM cau_hoi WHERE id IN ({marks})"), params).mappings().all()}
-    parents = sorted({q["cau_cha_id"] for q in questions.values() if q["cau_cha_id"]})
-    if parents:
-        marks, params = in_params("p", parents)
-        for r in db.execute(text(f"SELECT {_Q_FIELDS} FROM cau_hoi WHERE id IN ({marks})"), params).mappings().all():
-            questions[r["id"]] = dict(r)
-    marks, params = in_params("o", list(questions))
-    options = {i: {"lua_chon": [], "chap_nhan": []} for i in questions}
-    for r in db.execute(
-        text(f"""SELECT id, cau_hoi_id, vai_tro, thu_tu, la_dap_an_dung, noi_dung, tep_hinh
-                 FROM phuong_an WHERE cau_hoi_id IN ({marks}) ORDER BY cau_hoi_id, vai_tro, thu_tu"""),
-        params,
-    ).mappings().all():
-        options[r["cau_hoi_id"]]["lua_chon" if r["vai_tro"] == "lua_chon" else "chap_nhan"].append(dict(r))
-    return questions, options
 
 
 def _pool(db: Session, target: dict) -> list[int]:
@@ -154,14 +139,6 @@ def _answers(db: Session, luot_id: int) -> list[dict]:
                 WHERE a.luot_lam_id = :l ORDER BY a.thu_tu"""),
         {"l": luot_id},
     ).mappings().all()]
-
-
-def _options_of(q: dict, options: dict, seed: int | None) -> list[dict]:
-    owner = q["cau_cha_id"] if q["dang"] == "chon_bo_chung" else q["id"]
-    opts = [{"id": o["id"], "noi_dung": o["noi_dung"], "tep_hinh": o["tep_hinh"]} for o in options[owner]["lua_chon"]]
-    if q["dang"] != "dung_sai" and seed:
-        random.Random(seed).shuffle(opts)
-    return opts
 
 
 def get_skip(db: Session, luot_id: int, uid: int) -> dict:

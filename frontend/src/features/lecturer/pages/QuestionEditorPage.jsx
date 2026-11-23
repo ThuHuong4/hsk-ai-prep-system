@@ -13,7 +13,7 @@ import QuestionPreview, { SharedPassage } from "../components/QuestionPreview.js
 import StatusBadge from "../components/StatusBadge.jsx";
 import { CHILD_TYPES, DANG_LABELS, SKILL_LABELS, TOP_TYPES } from "../utils/labels.js";
 import { answerDefaults, blankChild, blankQuestion, fromApi, toApi } from "../utils/questionForm.js";
-import { useLevels } from "../utils/useLevels.js";
+import { useLevels } from "../hooks/useLevels.js";
 import "../styles/lecturer.css";
 
 export default function QuestionEditorPage() {

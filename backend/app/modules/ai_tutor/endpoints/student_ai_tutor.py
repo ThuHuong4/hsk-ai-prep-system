@@ -1,22 +1,14 @@
-from typing import Literal
-
 from fastapi import APIRouter, Depends, HTTPException, status
 from pydantic import BaseModel, ConfigDict, Field
 from sqlalchemy.orm import Session
 
 from app.database.session import get_db
 from app.modules.ai_tutor.services.xiang_chat import AiBusy, AiNotConfigured, AiUnavailable, ask_xiang
+from app.modules.common.schemas import ChatTurnIn as ChatMessage
 from app.modules.common.service_errors import run_service
 from app.security.require_student import require_student
 
 router = APIRouter(prefix="/hoi-xiang")
-
-
-class ChatMessage(BaseModel):
-    model_config = ConfigDict(extra="forbid")
-
-    vai: Literal["hoc_vien", "xiang"]
-    noi_dung: str = Field(..., min_length=1, max_length=2000)
 
 
 class AskIn(BaseModel):

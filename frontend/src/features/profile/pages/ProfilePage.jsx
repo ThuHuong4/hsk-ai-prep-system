@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 
 import { useAuth } from "../../auth/context/AuthContext.jsx";
 import Icon from "../../../shared/components/Icon.jsx";
-import { RANKS, rankOf } from "../../../shared/rank.js";
+import { RANKS, rankOf } from "../../../shared/utils/rank.js";
 import { changePassword, getProfile, saveName, saveReminder } from "../api/profileApi.js";
 import LevelUpDialog from "../components/LevelUpDialog.jsx";
 import RankBadge from "../components/RankBadge.jsx";

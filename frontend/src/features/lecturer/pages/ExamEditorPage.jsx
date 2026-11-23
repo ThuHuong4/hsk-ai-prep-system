@@ -11,7 +11,7 @@ import QuestionPreview, { SharedPassage } from "../components/QuestionPreview.js
 import QuestionPicker from "../components/QuestionPicker.jsx";
 import StatusBadge from "../components/StatusBadge.jsx";
 import { DANG_LABELS, SKILL_LABELS } from "../utils/labels.js";
-import { useLevels } from "../utils/useLevels.js";
+import { useLevels } from "../hooks/useLevels.js";
 import "../styles/lecturer.css";
 
 const DEFAULT_PART = { nghe: 1, doc: 2, viet: 3, tu_vung: 4 };

@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 import { useAuth } from "../../auth/context/AuthContext.jsx";
 import { ROLE } from "../../auth/utils/roles.js";
-import { mediaUrl } from "../../lecturer/utils/labels.js";
+import { mediaUrl } from "../../../shared/utils/format.js";
 import { searchAll } from "../api/searchApi.js";
 import "../styles/dictionary.css";
 

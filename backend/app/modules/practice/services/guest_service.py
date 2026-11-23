@@ -9,10 +9,15 @@ import random
 from sqlalchemy.orm import Session
 
 from app.modules.common.service_errors import ConflictError, RuleError
-from app.modules.mock_tests.services.attempt_service import _is_correct
-from app.modules.mock_tests.services.content import correct_option_id, load_items
+from app.modules.grading import (
+    CHOICE_TYPES,
+    correct_option_id,
+    is_correct as _is_correct,
+    load_set_items as load_items,
+    shuffle_choice_options as _shuffled,
+)
 from app.modules.practice.services import path_view
-from app.modules.practice.services.lesson_service import CHOICE_TYPES, _lesson_scope, _shuffled, _word
+from app.modules.practice.services.lesson_service import _lesson_scope, _word
 
 GUEST_UID = 0  # không trùng tài khoản nào → mọi ô ở trạng thái gốc
 

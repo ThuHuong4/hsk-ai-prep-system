@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { useAuth } from "../../auth/context/AuthContext.jsx";
 import { useRequest } from "../../../shared/api/useRequest.js";
 import "../../exam_catalog/styles/catalog.css";
-import { formatDateTime } from "../../lecturer/utils/labels.js";
+import { formatDateTime } from "../../../shared/utils/format.js";
 import { getMyStats } from "../api/statisticsApi.js";
 import ScoreChart from "../components/ScoreChart.jsx";
 import "../styles/statistics.css";

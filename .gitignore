@@ -21,6 +21,9 @@ __pycache__/
 # Tep he dieu hanh
 Thumbs.db
 .DS_Store
+# Tep nguoi dung tai len rieng tu (khong dua vao Git; tep tren may van giu nguyen)
+backend/private_uploads/
+
 # File tong hop code tam
 backend/auth_dump.txt
 frontend/frontend_dump.txt

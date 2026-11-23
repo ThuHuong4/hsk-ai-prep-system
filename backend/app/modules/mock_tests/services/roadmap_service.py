@@ -14,18 +14,19 @@
 - Hai yêu cầu cùng lúc: chỉ bắt lỗi trùng khóa MySQL 1062 rồi đọc bản đã lưu.
 - Không gọi AI khi đang giữ giao dịch; không ghi khóa API hay nội dung trả lời vào log.
 """
-import json
 import re
 
 from sqlalchemy import text
 from sqlalchemy.exc import IntegrityError
 from sqlalchemy.orm import Session
 
-from app.core.openai_config import OPENAI_API_KEY, OPENAI_BASE_URL, OPENAI_MODEL, OPENAI_TIMEOUT_SECONDS, openai_ready
+from app.integrations.ai import XIANG_JSON_SYSTEM_PROMPT, json_completion
 from app.modules.common.service_errors import ConflictError, NotFoundError
 from app.modules.common.sql_helpers import in_params
+from app.modules.grading import load_set_items as load_items
+from app.modules.materials.services.material_service import external_for
 from app.modules.mock_tests.services.attempt_service import _answers, _current_results
-from app.modules.mock_tests.services.content import exam_version, load_items
+from app.modules.mock_tests.services.content import exam_version
 from app.modules.practice.services import path_view
 
 WEAK_BELOW = 0.6
@@ -34,7 +35,7 @@ MAX_REASON = 400
 SKILL_VI = {"nghe": "Nghe", "doc": "Đọc", "viet": "Viết", "tu_vung": "Từ vựng"}
 DANG_VI = {
     "chon_mot": "chọn một đáp án", "dung_sai": "đúng/sai", "chon_bo_chung": "chọn từ bộ phương án chung",
-    "sap_xep": "sắp xếp câu", "dien_chu": "điền chữ", "viet_mo": "viết đoạn/câu",
+    "sap_xep": "sắp xếp câu", "dien_chu": "điền chữ", "viet_mo": "viết đoạn/câu", "dich_cau": "dịch câu",
 }
 # Tên phần thi theo cấu trúc đề HSK 2.0 (khớp số phần trong bo_de_cau_hoi.phan và mục lục cẩm nang)
 PARTS = {
@@ -45,30 +46,8 @@ PARTS = {
              4: "Phần 4 – hội thoại dài, chọn A/B/C", 5: "Phần 1 – đọc câu, chọn tranh", 6: "Phần 2 – điền từ",
              7: "Phần 3 – phán đoán câu ★ Đúng/Sai", 8: "Phần 4 – ghép câu"},
 }
-# Nguồn học thêm bên ngoài (miễn phí xem, đã kiểm tra tồn tại 20/11/2026); chỉ là đường dẫn, không sao chép nội dung.
-EXTERNAL = [
-    {"ten": "Mandarin Corner (YouTube)", "mo_ta": "Hội thoại thật có phụ đề Trung–Anh; có khóa từ vựng HSK 1 và HSK 2 theo chủ đề.",
-     "url": "https://www.youtube.com/channel/UC2fAiRQHRQT9aj9P_ijYeow/playlists", "cap": {"HSK1", "HSK2", "HSK3", "HSK4"},
-     "ky_nang": {"nghe", "tu_vung"}},
-    {"ten": "Chinese Zero to Hero (YouTube)", "mo_ta": "Bài giảng theo từng cấp HSK 1–6: từ vựng, ngữ pháp, đọc hiểu (giảng bằng tiếng Anh).",
-     "url": "https://www.youtube.com/@ChineseZeroToHero", "cap": {"HSK1", "HSK2", "HSK3", "HSK4"}, "ky_nang": {"doc", "nghe", "viet", "tu_vung"}},
-    {"ten": "Chinese for HSK 1 – Đại học Bắc Kinh (Coursera)", "mo_ta": "Khóa học trực tuyến của Đại học Bắc Kinh bám theo HSK 1.",
-     "url": "https://www.coursera.org/learn/hsk-1", "cap": {"HSK1"}, "ky_nang": {"nghe", "doc", "tu_vung"}},
-    {"ten": "Chinese for HSK 2 – Đại học Bắc Kinh (Coursera)", "mo_ta": "Khóa học trực tuyến của Đại học Bắc Kinh bám theo HSK 2.",
-     "url": "https://www.coursera.org/learn/hsk-2", "cap": {"HSK2"}, "ky_nang": {"nghe", "doc", "tu_vung"}},
-    {"ten": "Trang chính thức kỳ thi HSK (汉考国际)", "mo_ta": "Thông tin kỳ thi và đề mẫu chính thức để luyện thêm.",
-     "url": "https://www.chinesetest.cn", "cap": {"HSK1", "HSK2", "HSK3", "HSK4"}, "ky_nang": {"nghe", "doc", "viet"}},
-]
-MAX_EXTERNAL = 3
-
-
-def external_for(cap_ma: str, skill: str) -> list[dict]:
-    return [{"ten": x["ten"], "mo_ta": x["mo_ta"], "url": x["url"]} for x in EXTERNAL
-            if cap_ma in x["cap"] and skill in x["ky_nang"]][:MAX_EXTERNAL]
-
 
 _CODE = re.compile(r"\b(?:N|B|T|D|b|t)\d+\b")
-_client = None
 
 
 # ---------------- Nhóm câu (code) ----------------
@@ -232,14 +211,6 @@ def level_context(db: Session, uid: int, exam_level: dict, skill: str) -> dict:
 
 # ---------------- AI viết nhận xét ----------------
 
-def _get_client():
-    global _client
-    if _client is None:
-        from openai import OpenAI
-        _client = OpenAI(api_key=OPENAI_API_KEY, base_url=OPENAI_BASE_URL, timeout=OPENAI_TIMEOUT_SECONDS, max_retries=1)
-    return _client
-
-
 def _label(g: dict) -> str:
     parts = f" ({'; '.join(g['phan_ten'])})" if g["phan_ten"] else ""
     return f"{SKILL_VI[g['ky_nang']]} · {DANG_VI[g['dang']]}{parts}"
@@ -270,22 +241,7 @@ def _prompt(exam: dict, groups: list[dict], prev: dict) -> str:
 
 
 def _ask_ai(prompt: str) -> dict[str, str]:
-    if not openai_ready():
-        return {}
-    try:
-        response = _get_client().chat.completions.create(
-            model=OPENAI_MODEL,
-            messages=[{"role": "system", "content": "Bạn là Xiang, trợ giảng HSK cho người Việt. Chỉ trả JSON hợp lệ."},
-                      {"role": "user", "content": prompt}],
-        )
-        raw = (response.choices[0].message.content or "") if response.choices else ""
-    except Exception:  # lỗi mạng/hạn mức → dùng câu mẫu
-        return {}
-    raw = re.sub(r"^```(?:json)?\s*|\s*```$", "", raw.strip())
-    try:
-        data = json.loads(raw)
-    except ValueError:
-        return {}
+    data = json_completion(XIANG_JSON_SYSTEM_PROMPT, prompt)
     out = {}
     for row in data if isinstance(data, list) else []:
         if isinstance(row, dict) and isinstance(row.get("nhom"), str) and isinstance(row.get("ly_do"), str):
@@ -413,13 +369,3 @@ def get_roadmap(db: Session, luot_id: int, uid: int) -> dict:
     view = _view(db, uid, level, groups, prev_info, prev, _saved(db, luot_id), "co_goi_y")
     db.rollback()
     return view
-
-
-def material_file(db: Session, tai_lieu_id: int) -> dict:
-    """Tài liệu đang đăng để Học viên mở (tệp lưu riêng, không công khai)."""
-    row = db.execute(text("SELECT id, duong_dan, loai_tep, ten FROM tai_lieu WHERE id = :id AND trang_thai = 'da_dang'"),
-                     {"id": tai_lieu_id}).mappings().first()
-    db.rollback()
-    if row is None:
-        raise NotFoundError()
-    return dict(row)

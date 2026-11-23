@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 
 import "../styles/practice.css";
 import Icon from "../../../shared/components/Icon.jsx";
-import { rankOf } from "../../../shared/rank.js";
+import { rankOf } from "../../../shared/utils/rank.js";
 import { useAuth } from "../../auth/context/AuthContext.jsx";
 import LevelUpDialog from "../../profile/components/LevelUpDialog.jsx";
 

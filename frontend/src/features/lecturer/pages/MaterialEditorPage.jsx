@@ -9,7 +9,7 @@ import {
 import MaterialViewer from "../components/MaterialViewer.jsx";
 import StatusBadge from "../components/StatusBadge.jsx";
 import { FILE_TYPE_LABELS, SKILL_LABELS, formatSize } from "../utils/labels.js";
-import { useLevels } from "../utils/useLevels.js";
+import { useLevels } from "../hooks/useLevels.js";
 import "../styles/lecturer.css";
 
 const blank = { ten: "", mo_ta: "", nguon: "", cap_do_id: "", ky_nang: "", duong_dan: "", file: null };

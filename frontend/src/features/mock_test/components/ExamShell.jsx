@@ -1,4 +1,4 @@
-import { useTheme } from "../../../shared/theme.js";
+import { useTheme } from "../../../shared/hooks/useTheme.js";
 import { Link } from "react-router-dom";
 
 import xiangFace from "../../../assets/images/xiang/home/xiang_face.webp";
@@ -7,7 +7,7 @@ import "../../../layouts/staffShell.css";
 import "../../lecturer/styles/lecturer.css";
 import "../styles/mockTest.css";
 
-export { readTheme } from "../../../shared/theme.js";
+export { readTheme } from "../../../shared/hooks/useTheme.js";
 
 // Khung trang làm bài/xem kết quả: toàn màn hình, không thanh bên để tập trung
 export default function ExamShell({ title, right, children }) {

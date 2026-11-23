@@ -2,7 +2,7 @@ from sqlalchemy import text
 from sqlalchemy.orm import Session
 
 from app.modules.common.service_errors import ConflictError, NotFoundError
-from app.modules.mock_tests.services.content import correct_option_id, load_items
+from app.modules.grading import correct_option_id, load_set_items as load_items
 
 SKILL = {"nghe": "Nghe", "doc": "Đọc", "viet": "Viết", "tu_vung": "Từ vựng"}
 TYPE = {

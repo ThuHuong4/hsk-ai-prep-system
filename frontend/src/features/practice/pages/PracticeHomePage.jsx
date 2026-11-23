@@ -4,7 +4,7 @@ import { useRequest } from "../../../shared/api/useRequest.js";
 import { useAuth } from "../../auth/context/AuthContext.jsx";
 import "../../exam_catalog/styles/catalog.css";
 import { getPracticeOverview } from "../api/practiceApi.js";
-import { PRACTICE_SKILLS, SKILL_HZ, skillApi } from "../skills.js";
+import { PRACTICE_SKILLS, SKILL_HZ, skillApi } from "../utils/skills.js";
 import "../styles/practice.css";
 
 // Ôn luyện: mỗi kỹ năng một lộ trình riêng (mục 4.1)

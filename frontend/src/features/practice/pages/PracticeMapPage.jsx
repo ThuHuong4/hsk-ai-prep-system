@@ -8,7 +8,7 @@ import "../../exam_catalog/styles/catalog.css";
 import { getSkillPath, startLesson, startLevelTest, startSkip } from "../api/practiceApi.js";
 import LevelTestCard from "../components/LevelTestCard.jsx";
 import PathMap from "../components/PathMap.jsx";
-import { findSkill, skillApi } from "../skills.js";
+import { findSkill, skillApi } from "../utils/skills.js";
 import "../styles/practice.css";
 import "../styles/mapLayout.css";
 

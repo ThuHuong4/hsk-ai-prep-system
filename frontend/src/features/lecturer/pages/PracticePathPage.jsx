@@ -7,7 +7,7 @@ import { useRequest } from "../../../shared/api/useRequest.js";
 import { createLand, createLesson, deleteLand, getPath, landAction, moveLand, updateLand } from "../api/lecturerApi.js";
 import StatusBadge from "../components/StatusBadge.jsx";
 import { LESSON_SLOTS, SKILL_LABELS, slotName } from "../utils/labels.js";
-import { useLevels } from "../utils/useLevels.js";
+import { useLevels } from "../hooks/useLevels.js";
 import "../styles/lecturer.css";
 
 export default function PracticePathPage() {

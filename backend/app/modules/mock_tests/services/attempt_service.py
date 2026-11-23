@@ -7,31 +7,18 @@
   câu Viết mở chưa có AI chấm → ghi lần chấm 'loi' để Giảng viên chấm ở mục Chấm bài Viết.
 - Câu sai/bỏ trống vào Sổ tay (theo câu gốc); nộp chỉ chạy một lần nên không ghi trùng.
 """
-import re
-import unicodedata
-
 from sqlalchemy import text
 from sqlalchemy.orm import Session
 
 from app.modules.common.service_errors import ConflictError, NotFoundError, RuleError
 from app.modules.common.sql_helpers import in_params
+from app.modules.grading import OBJECTIVE_TYPES as AUTO_TYPES, is_correct, load_set_items as load_items
 from app.modules.mock_tests.services.content import (
-    correct_option_id,
     exam_version,
-    load_items,
     published_version,
     shape_passage,
     shape_question,
 )
-
-AUTO_TYPES = ("chon_mot", "dung_sai", "chon_bo_chung", "sap_xep", "dien_chu")
-_STRIP = re.compile(r"[\s　.,!?;:'\"“”‘’。，！？；：、（）()《》…·-]+")
-
-
-def _normalize(value: str | None) -> str:
-    if not value:
-        return ""
-    return _STRIP.sub("", unicodedata.normalize("NFKC", value)).lower()
 
 
 def _remaining_seconds_sql() -> str:
@@ -233,16 +220,6 @@ def save_answer(db: Session, luot_id: int, uid: int, body) -> dict:
         raise
 
 
-def _is_correct(q: dict, answer: dict, options: dict) -> bool | None:
-    """True/False cho câu chấm bằng code; None cho Viết mở."""
-    if q["dang"] in ("chon_mot", "dung_sai", "chon_bo_chung"):
-        return answer["phuong_an_chon_id"] is not None and answer["phuong_an_chon_id"] == correct_option_id(q, options)
-    if q["dang"] in ("sap_xep", "dien_chu"):
-        given = _normalize(answer["van_ban"])
-        return bool(given) and any(given == _normalize(o["noi_dung"]) for o in options[q["id"]]["chap_nhan"])
-    return None
-
-
 def _submit_locked(db: Session, attempt: dict, reason: str) -> None:
     """Chấm và đóng lượt. Gọi khi đã khóa dòng luot_lam và lượt đang làm."""
     items, questions, options = load_items(db, attempt["bo_de_id"])
@@ -254,7 +231,7 @@ def _submit_locked(db: Session, attempt: dict, reason: str) -> None:
         answer = answers.get(q["id"])
         if answer is None:
             continue
-        correct = _is_correct(q, answer, options)
+        correct = is_correct(q, answer, options)
         if correct is None:  # Viết mở
             if answer["van_ban"]:
                 db.execute(

@@ -15,6 +15,67 @@ from app.storage.private_files import copy_document, delete_file, resolve
 _FIELDS = "id, ma_goc_id, phien_ban, ten, mo_ta, nguon, cap_do_id, ky_nang, loai_tep, duong_dan, kich_thuoc, trang_thai, nguoi_tao_id, tao_luc"
 EXT_TO_TYPE = {"pdf": "pdf", "png": "png", "jpg": "jpg", "jpeg": "jpg", "mp3": "mp3", "wav": "wav"}
 MAX_SIZE = 20 * 1024 * 1024
+MAX_EXTERNAL = 3
+
+# Nguồn học thêm bên ngoài (miễn phí xem, chỉ dẫn liên kết tới đơn vị gốc, không sao chép nội dung)
+EXTERNAL = [
+    {
+        "ten": "Mandarin Corner (YouTube)",
+        "mo_ta": "Hội thoại thật có phụ đề Trung–Anh; có khóa từ vựng HSK 1 và HSK 2 theo chủ đề.",
+        "url": "https://www.youtube.com/channel/UC2fAiRQHRQT9aj9P_ijYeow/playlists",
+        "cap": {"HSK1", "HSK2", "HSK3", "HSK4"},
+        "ky_nang": {"nghe", "tu_vung"},
+    },
+    {
+        "ten": "Chinese Zero to Hero (YouTube)",
+        "mo_ta": "Bài giảng theo từng cấp HSK 1–6: từ vựng, ngữ pháp, đọc hiểu (giảng bằng tiếng Anh).",
+        "url": "https://www.youtube.com/@ChineseZeroToHero",
+        "cap": {"HSK1", "HSK2", "HSK3", "HSK4"},
+        "ky_nang": {"doc", "nghe", "viet", "tu_vung"},
+    },
+    {
+        "ten": "Chinese for HSK 1 – Đại học Bắc Kinh (Coursera)",
+        "mo_ta": "Khóa học trực tuyến của Đại học Bắc Kinh bám theo HSK 1.",
+        "url": "https://www.coursera.org/learn/hsk-1",
+        "cap": {"HSK1"},
+        "ky_nang": {"nghe", "doc", "tu_vung"},
+    },
+    {
+        "ten": "Chinese for HSK 2 – Đại học Bắc Kinh (Coursera)",
+        "mo_ta": "Khóa học trực tuyến của Đại học Bắc Kinh bám theo HSK 2.",
+        "url": "https://www.coursera.org/learn/hsk-2",
+        "cap": {"HSK2"},
+        "ky_nang": {"nghe", "doc", "tu_vung"},
+    },
+    {
+        "ten": "Trang chính thức kỳ thi HSK (汉考国际)",
+        "mo_ta": "Thông tin kỳ thi và đề mẫu chính thức để luyện thêm.",
+        "url": "https://www.chinesetest.cn",
+        "cap": {"HSK1", "HSK2", "HSK3", "HSK4"},
+        "ky_nang": {"nghe", "doc", "viet"},
+    },
+]
+
+
+def external_for(cap_ma: str, skill: str) -> list[dict]:
+    """Lọc tối đa 3 nguồn học ngoài phù hợp với mã cấp HSK và kỹ năng."""
+    return [
+        {"ten": x["ten"], "mo_ta": x["mo_ta"], "url": x["url"]}
+        for x in EXTERNAL
+        if cap_ma in x["cap"] and skill in x["ky_nang"]
+    ][:MAX_EXTERNAL]
+
+
+def published_material_file(db: Session, tai_lieu_id: int) -> dict:
+    """Lấy thông tin tệp tài liệu đang đăng để Học viên mở xem an toàn."""
+    row = db.execute(
+        text("SELECT id, duong_dan, loai_tep, ten FROM tai_lieu WHERE id = :id AND trang_thai = 'da_dang'"),
+        {"id": tai_lieu_id},
+    ).mappings().first()
+    db.rollback()
+    if row is None:
+        raise NotFoundError()
+    return dict(row)
 
 
 def find_material(db: Session, tai_lieu_id: int, for_update: bool = False) -> dict | None:

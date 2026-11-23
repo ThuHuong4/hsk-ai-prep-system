@@ -18,6 +18,19 @@ DANG_LABELS = {
 }
 
 
+def resolve_audio_verified_flag(
+    old_audio: str | None,
+    new_audio: str | None,
+    requested_verified: bool = False,
+) -> bool:
+    """Tự động đặt lại cờ da_kiem_tra_audio = False khi không có audio hoặc khi đổi sang tệp audio khác."""
+    if not new_audio:
+        return False
+    if old_audio != new_audio:
+        return False
+    return bool(requested_verified)
+
+
 def _has_content(q) -> bool:
     # Câu Nghe trong đề dùng âm thanh chung của đề: lời nghe (transcript) cũng tính là nội dung
     return bool(q.noi_dung or q.tep_audio or q.tep_hinh or q.loi_nghe)

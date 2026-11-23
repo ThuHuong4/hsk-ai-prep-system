@@ -4,7 +4,7 @@ import { Link, Navigate, useNavigate } from "react-router-dom";
 import xiangFace from "../../../assets/images/xiang/home/xiang_face.webp";
 import { useRequest } from "../../../shared/api/useRequest.js";
 import Icon from "../../../shared/components/Icon.jsx";
-import { useTheme } from "../../../shared/theme.js";
+import { useTheme } from "../../../shared/hooks/useTheme.js";
 import { useAuth } from "../../auth/context/AuthContext.jsx";
 import "../../exam_catalog/styles/catalog.css";
 import "../../../layouts/staffShell.css";

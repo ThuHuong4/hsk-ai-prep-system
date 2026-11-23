@@ -2,7 +2,7 @@ import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 
 import { useAuth } from "../../auth/context/AuthContext.jsx";
-import { mediaUrl } from "../../lecturer/utils/labels.js";
+import { mediaUrl } from "../../../shared/utils/format.js";
 import { getAttempt, saveAnswer, submitAttempt } from "../api/mockTestApi.js";
 import ExamPaper from "../components/ExamPaper.jsx";
 import ExamShell from "../components/ExamShell.jsx";

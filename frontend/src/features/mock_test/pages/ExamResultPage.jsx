@@ -3,7 +3,7 @@ import { Link, useNavigate, useParams } from "react-router-dom";
 
 import { useAuth } from "../../auth/context/AuthContext.jsx";
 import { useRequest } from "../../../shared/api/useRequest.js";
-import { mediaUrl } from "../../lecturer/utils/labels.js";
+import { mediaUrl } from "../../../shared/utils/format.js";
 import { getResult, startAttempt } from "../api/mockTestApi.js";
 import ExamPaper from "../components/ExamPaper.jsx";
 import ExamShell from "../components/ExamShell.jsx";
