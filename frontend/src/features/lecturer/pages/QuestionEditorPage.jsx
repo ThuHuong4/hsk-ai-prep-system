@@ -1,9 +1,10 @@
 import { useEffect, useMemo, useState } from "react";
-import { Link, useNavigate, useParams } from "react-router-dom";
+import { Link, useLocation, useNavigate, useParams } from "react-router-dom";
 
 import { useAuth } from "../../auth/context/AuthContext.jsx";
 import {
   createQuestion, deleteQuestion, getQuestion, questionAction, updateQuestion,
+  checkSimilar,
 } from "../api/lecturerApi.js";
 import Icon from "../../../shared/components/Icon.jsx";
 import OptionsEditor from "../components/OptionsEditor.jsx";
@@ -11,8 +12,9 @@ import QuestionFields from "../components/QuestionFields.jsx";
 import WordPicker from "../components/WordPicker.jsx";
 import QuestionPreview, { SharedPassage } from "../components/QuestionPreview.jsx";
 import StatusBadge from "../components/StatusBadge.jsx";
-import { CHILD_TYPES, DANG_LABELS, SKILL_LABELS, TOP_TYPES } from "../utils/labels.js";
+import { CHILD_TYPES, DANG_LABELS, SKILL_LABELS, SOURCE_LABELS, TOP_TYPES } from "../utils/labels.js";
 import { answerDefaults, blankChild, blankQuestion, fromApi, toApi } from "../utils/questionForm.js";
+import { useKnowledgeGroups } from "../hooks/useKnowledgeGroups.js";
 import { useLevels } from "../hooks/useLevels.js";
 import "../styles/lecturer.css";
 
@@ -21,7 +23,11 @@ export default function QuestionEditorPage() {
   const isNew = !id;
   const { token } = useAuth();
   const navigate = useNavigate();
+  const location = useLocation();
   const levels = useLevels();
+  const groups = useKnowledgeGroups();
+  // Bản nháp AI chuyển sang từ trang "Soạn câu với AI" (nút Sửa tay)
+  const aiDraft = isNew ? location.state?.draft : null;
 
   const [form, setForm] = useState(() => blankQuestion());
   const [meta, setMeta] = useState(null); // dữ liệu đã lưu: trạng thái, phiên bản, đề đang dùng
@@ -33,7 +39,8 @@ export default function QuestionEditorPage() {
 
   useEffect(() => {
     if (isNew) {
-      setForm(blankQuestion(levels[0]?.ma_cap_do ?? ""));
+      setForm(aiDraft ? fromApi(aiDraft) : blankQuestion(levels[0]?.ma_cap_do ?? ""));
+      if (aiDraft) setNotice("Bản nháp AI đã nạp vào form. Kiểm tra, sửa rồi bấm Lưu nháp; bấm Đăng là duyệt.");
       setMeta(null);
       setSaved(null);
       return undefined;
@@ -104,7 +111,20 @@ export default function QuestionEditorPage() {
     setMeta(data);
   }
 
-  function handleSave() {
+  async function handleSave() {
+    // Câu đơn: cảnh báo nếu gần trùng câu đã có trong ngân hàng (không chặn, Giảng viên tự quyết)
+    if (form.dang !== "ngu_lieu" && payload.noi_dung && payload.cap_do_id) {
+      try {
+        const res = await checkSimilar(token, {
+          noi_dung: payload.noi_dung, cap_do_id: Number(payload.cap_do_id), dang: payload.dang,
+          bo_qua_ma_goc: isNew ? null : meta?.ma_goc_id ?? null,
+        });
+        const hit = res.trung_lap?.[0];
+        if (hit && !window.confirm(`Câu này giống ${Math.round(hit.do_giong * 100)}% câu #${hit.ma_goc_id} đã có:\n"${hit.noi_dung}"\n\nVẫn lưu?`)) return;
+      } catch {
+        // không kiểm tra được thì vẫn cho lưu
+      }
+    }
     run(
       () => (isNew ? createQuestion(token, payload) : updateQuestion(token, id, payload)),
       async (data) => {
@@ -180,6 +200,23 @@ export default function QuestionEditorPage() {
                 </select>
               </div>
             </div>
+            <div className="lv-field">
+              <label htmlFor="q-source">Nguồn nội dung</label>
+              <select id="q-source" value={form.nguon_noi_dung || ""} onChange={(e) => set({ nguon_noi_dung: e.target.value })}>
+                <option value="">Chưa xác định</option>
+                {Object.entries(SOURCE_LABELS).map(([k, v]) => <option key={k} value={k}>{v}</option>)}
+              </select>
+            </div>
+            {form.dang !== "ngu_lieu" && (
+              <div className="lv-field">
+                <label htmlFor="q-group">Nhóm kiến thức (dùng cho cá nhân hóa)</label>
+                <select id="q-group" value={form.nhom_kien_thuc_id ?? ""}
+                  onChange={(e) => set({ nhom_kien_thuc_id: e.target.value ? Number(e.target.value) : null })}>
+                  <option value="">Chưa gắn</option>
+                  {groups.map((g) => <option key={g.id} value={g.id}>{g.ten}</option>)}
+                </select>
+              </div>
+            )}
             {form.ky_nang === "tu_vung" && (
               <WordPicker capDoId={form.cap_do_id} value={form.tu_vung_id} word={form.tu_vung}
                 onChange={(id, word) => set({ tu_vung_id: id, tu_vung: word })} />
@@ -218,7 +255,7 @@ export default function QuestionEditorPage() {
                       <button type="button" className="xlink xlink--danger" onClick={() => set({ cau_con: form.cau_con.filter((_, i) => i !== index) })}>Xóa</button>
                     )}
                   </div>
-                  <QuestionFields q={child} idPrefix={`c${index}`} sharedCount={sharedCount}
+                  <QuestionFields q={child} idPrefix={`c${index}`} sharedCount={sharedCount} capDoId={form.cap_do_id}
                     onChange={(next) => updateChild(index, next)} disabled={busy} />
                 </div>
               ))}

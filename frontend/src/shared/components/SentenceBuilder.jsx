@@ -33,17 +33,23 @@ export function pickDistractors(items, current, max = 2) {
   return pool.slice(0, n);
 }
 
+function cleanPunct(s) {
+  return (s || "").replace(/[\s。？！，、；：.?!,;:\u3000]/g, "");
+}
+
 function restore(all, value) {
-  // Dựng lại thứ tự đã chọn từ chuỗi đã lưu (ghép tham lam theo mảnh dài trước)
+  // Dựng lại thứ tự đã chọn từ chuỗi đã lưu (ghép tham lam theo mảnh dài trước, bỏ qua dấu câu bên trong mảnh)
   if (!value) return [];
-  const left = [...all].sort((a, b) => (b.noi_dung || "").length - (a.noi_dung || "").length);
+  const prepared = all
+    .map((p) => ({ ...p, norm: cleanPunct(p.noi_dung) }))
+    .sort((a, b) => b.norm.length - a.norm.length);
   const out = [];
-  let rest = value.replace(/[\s。？！，.?!,]/g, "");
+  let rest = cleanPunct(value);
   while (rest) {
-    const hit = left.find((p) => p.noi_dung && !out.includes(p.id) && rest.startsWith(p.noi_dung));
+    const hit = prepared.find((p) => p.norm && !out.includes(p.id) && rest.startsWith(p.norm));
     if (!hit) return null;
     out.push(hit.id);
-    rest = rest.slice(hit.noi_dung.length);
+    rest = rest.slice(hit.norm.length);
   }
   return out;
 }

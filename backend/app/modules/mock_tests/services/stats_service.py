@@ -39,7 +39,7 @@ def student_stats(db: Session, uid: int) -> dict:
             "diem_toi_da": score["diem_toi_da"], "diem_dat": score["diem_dat"], "luot": [], "_groups": {}, "_skills": [],
         })
         latest = attempt["cap_do_id"]
-        lv["luot"].append({"id": attempt["id"], "ten_de": attempt["ten_de"], "nop_luc": attempt["nop_luc"],
+        lv["luot"].append({"id": attempt["id"], "ten_de": f"Đề thi thử {attempt['cap_ten']}", "nop_luc": attempt["nop_luc"],
                            "tong_diem": score["tong_diem"], "dat": score["dat"]})
         lv["_skills"].append({s["ky_nang"]: s["diem"] for s in score["ky_nang"]})
         groups, _ = group_scores(db, attempt, attempt["cap_ma"])

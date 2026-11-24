@@ -60,4 +60,4 @@
 @keyframes lv-pop { from { opacity: 0; transform: translateY(30px) scale(.9); } to { opacity: 1; transform: none; } }
 @keyframes lv-badge { from { opacity: 0; transform: scale(.3) rotate(-25deg); } to { opacity: 1; transform: none; } }
 @keyframes lv-fall { 0% { opacity: 1; transform: translateY(0) rotate(0); } 100% { opacity: .9; transform: translateY(110vh) rotate(720deg); } }
-.lvup__zh { margin: 4px 0 0; font: 800 34px/1.1 "Noto Serif SC", "Noto Sans SC", serif; color: var(--teal-ink, #157a73); letter-spacing: .08em; }
+.lvup__zh { margin: 4px 0 0; font: 800 34px/1.15 "Noto Sans SC", "Microsoft YaHei UI", sans-serif; color: var(--teal-ink, #157a73); letter-spacing: .08em; }

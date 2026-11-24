@@ -15,6 +15,7 @@ DANG_LABELS = {
     "sap_xep": "Sắp xếp câu",
     "dien_chu": "Điền chữ",
     "viet_mo": "Viết mở",
+    "dich_cau": "Dịch câu",
 }
 
 
@@ -62,9 +63,9 @@ def _check_answerable(q, where: str, shared_count: int) -> None:
         raise QuestionRuleError(f"{where}: cần nội dung, hình, âm thanh hoặc lời nghe")
     if dang != "chon_bo_chung" and q.dap_an_thu_tu is not None:
         raise QuestionRuleError(f"{where}: chỉ dạng chọn từ bộ chung mới có số thứ tự đáp án")
-    if dang != "viet_mo" and (q.diem_toi_da is not None or q.nguong_dat is not None):
-        raise QuestionRuleError(f"{where}: chỉ dạng Viết mở mới có điểm tối đa và ngưỡng đạt")
-    if dang not in ("sap_xep", "dien_chu") and q.dap_an_chap_nhan:
+    if dang not in ("viet_mo", "dich_cau") and (q.diem_toi_da is not None or q.nguong_dat is not None):
+        raise QuestionRuleError(f"{where}: chỉ dạng Viết mở hoặc Dịch câu mới có điểm tối đa và ngưỡng đạt")
+    if dang not in ("sap_xep", "dien_chu", "dich_cau") and q.dap_an_chap_nhan:
         raise QuestionRuleError(f"{where}: dạng này không có danh sách đáp án chấp nhận")
 
     if dang == "chon_mot":
@@ -87,7 +88,7 @@ def _check_answerable(q, where: str, shared_count: int) -> None:
         _check_no_options(q, where)
         if not q.dap_an_chap_nhan:
             raise QuestionRuleError(f"{where}: cần ít nhất 1 đáp án chấp nhận")
-    elif dang == "viet_mo":
+    elif dang in ("viet_mo", "dich_cau"):
         _check_no_options(q, where)
         if q.diem_toi_da is None or q.nguong_dat is None:
             raise QuestionRuleError(f"{where}: cần điểm tối đa và ngưỡng đạt")
@@ -97,6 +98,12 @@ def _check_answerable(q, where: str, shared_count: int) -> None:
             raise QuestionRuleError(f"{where}: cần mô tả tiêu chí chấm")
     if dang != "viet_mo" and q.tu_bat_buoc:
         raise QuestionRuleError(f"{where}: chỉ dạng Viết mở mới có từ bắt buộc")
+    _check_hints(q, where)
+
+
+def _check_hints(q, where: str) -> None:
+    if q.goi_y_2 and not q.goi_y:
+        raise QuestionRuleError(f"{where}: có gợi ý mức 2 thì phải có gợi ý mức 1")
 
 
 def validate_question(q) -> None:
@@ -107,6 +114,7 @@ def validate_question(q) -> None:
             raise QuestionRuleError("Ngữ liệu: cần nội dung, hình, âm thanh hoặc bộ phương án chung")
         if not q.cau_con:
             raise QuestionRuleError("Ngữ liệu: cần ít nhất 1 câu con")
+        _check_hints(q, "Ngữ liệu")
         if q.dap_an_chap_nhan or q.dap_an_thu_tu is not None or q.diem_toi_da is not None:
             raise QuestionRuleError("Ngữ liệu: không có đáp án riêng; đáp án nằm ở từng câu con")
         if q.phuong_an:

@@ -1,5 +1,4 @@
 /* Đăng nhập / Đăng ký Xianglingo – chuyển từ bản mô phỏng đã duyệt. Mọi quy tắc nằm trong .xa để không ảnh hưởng trang khác. */
-@import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=Noto+Serif+SC:wght@600;700&display=swap");
 @property --ang { syntax: "<angle>"; inherits: false; initial-value: 0deg; }
 /* Trung hoà style chung của global.css bên trong .xa */
 .xa button{min-height:0;padding:0;border:0;border-radius:0;background:none;color:inherit;cursor:pointer}
@@ -8,7 +7,7 @@
 .xa h1,.xa h2{margin:0}
 .xa p{margin:0}
 .xa [role="alert"],.xa [role="status"]{color:inherit}
-.xa{--bg: #E4E1DB; --bg-2: #DAD6CF; --surface: #F3F1EC; --surface-2: #E9E6E0; --line: #D2CDC4; --line-2: #BDB6AB; --ink: #1D2731; --ink-2: #434D58; --ink-3: #5A636D; --teal: #2A958E; --teal-ink: #1A6F6A; --btn: #18807A; --btn-sh: #0F5C57; --on-btn: #FFFFFF; --teal-soft: #D8E8E4; --exam: #2F4F9A; --exam-sh: #20386F; --on-exam: #FFFFFF; --exam-soft: #E1E8F7; --coral: #DD6E54; --coral-ink: #A3442D; --coral-soft: #F4DDD4; --cream: #FFF3DE; --band: #FFF5E6; --band-line: #F6E2BF; --good: #18704B; --good-soft: #DCEBE1; --bad: #A93A2A; --bad-soft: #F3DDD7; --warn: #8C5A12; --warn-soft: #F1E4CC; --scene: #0F1A2E; --scene-2: #16243D; --scene-line: rgba(140,190,210,.10); --scene-ink: #EAF4F7; --foot: #0D1626; --foot-ink: #DDE7F0; --grad: linear-gradient(120deg,#2CD3C9 0%,#8BE6C9 32%,#FFD99B 66%,#FF8A72 100%); --shadow-sm: 0 1px 2px rgba(52,44,34,.06),0 4px 14px -6px rgba(52,44,34,.14); --shadow: 0 2px 6px rgba(52,44,34,.05),0 18px 40px -16px rgba(52,44,34,.22); --focus: #DD6E54; --f-display: "Baloo 2","Be Vietnam Pro",system-ui,sans-serif; --f-body: "Be Vietnam Pro",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; --f-hz: "Noto Serif SC","Songti SC","SimSun",serif;}
+.xa{--bg: #E4E1DB; --bg-2: #DAD6CF; --surface: #F3F1EC; --surface-2: #E9E6E0; --line: #D2CDC4; --line-2: #BDB6AB; --ink: #1D2731; --ink-2: #434D58; --ink-3: #5A636D; --teal: #2A958E; --teal-ink: #1A6F6A; --btn: #18807A; --btn-sh: #0F5C57; --on-btn: #FFFFFF; --teal-soft: #D8E8E4; --exam: #2F4F9A; --exam-sh: #20386F; --on-exam: #FFFFFF; --exam-soft: #E1E8F7; --coral: #DD6E54; --coral-ink: #A3442D; --coral-soft: #F4DDD4; --cream: #FFF3DE; --band: #FFF5E6; --band-line: #F6E2BF; --good: #18704B; --good-soft: #DCEBE1; --bad: #A93A2A; --bad-soft: #F3DDD7; --warn: #8C5A12; --warn-soft: #F1E4CC; --scene: #0F1A2E; --scene-2: #16243D; --scene-line: rgba(140,190,210,.10); --scene-ink: #EAF4F7; --foot: #0D1626; --foot-ink: #DDE7F0; --grad: linear-gradient(120deg,#2CD3C9 0%,#8BE6C9 32%,#FFD99B 66%,#FF8A72 100%); --shadow-sm: 0 1px 2px rgba(52,44,34,.06),0 4px 14px -6px rgba(52,44,34,.14); --shadow: 0 2px 6px rgba(52,44,34,.05),0 18px 40px -16px rgba(52,44,34,.22); --focus: #DD6E54; --f-display: "Be Vietnam Pro","Noto Sans SC","Microsoft YaHei UI",system-ui,sans-serif; --f-body: "Be Vietnam Pro","Noto Sans SC","Microsoft YaHei UI",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; --f-hz: "Noto Sans SC","Microsoft YaHei UI","Microsoft YaHei","PingFang SC",sans-serif;}
 html[data-theme="dark"] .xa{--bg: #0D1422; --bg-2: #111A2B; --surface: #152035; --surface-2: #1A2740; --line: #24334C; --line-2: #2F4260; --ink: #EDF3F7; --ink-2: #AEBBCE; --ink-3: #8190A8; --teal: #2CD3C9; --teal-ink: #5EE0D7; --btn: #2CC9BF; --btn-sh: #178F88; --on-btn: #04221F; --teal-soft: #123A40; --exam: #8DA5FF; --exam-sh: #5069C2; --on-exam: #0B1530; --exam-soft: #1C2850; --coral: #FF8A72; --coral-ink: #FFA08B; --coral-soft: #3A2224; --cream: #2A2619; --band: #141E31; --band-line: #22314B; --good: #4FD69C; --good-soft: #123528; --bad: #FF7E70; --bad-soft: #3F1D1D; --warn: #F4B860; --warn-soft: #352812; --scene: #0A1120; --scene-2: #111C31; --scene-line: rgba(140,190,210,.08); --scene-ink: #EAF4F7; --foot: #080E19; --foot-ink: #C9D5E2; --shadow-sm: 0 1px 2px rgba(0,0,0,.3),0 4px 14px -6px rgba(0,0,0,.5); --shadow: 0 2px 6px rgba(0,0,0,.25),0 22px 44px -18px rgba(0,0,0,.7); color-scheme: dark;}
 .xa, .xa *,
 .xa ::before,
@@ -16,7 +15,7 @@ html[data-theme="dark"] .xa{--bg: #0D1422; --bg-2: #111A2B; --surface: #152035; 
 .xa [hidden]{display: none !important;}
 .xa{scroll-behavior: smooth; scroll-padding-top: 88px;}
 .xa{background: var(--bg); color: var(--ink); font-family: var(--f-body); font-size: 16px; line-height: 1.6; -webkit-font-smoothing: antialiased;}
-.xa h1{font-family: var(--f-display); line-height: 1.1; margin: 0px; text-wrap: balance; letter-spacing: -0.01em; font-weight: 800;}
+.xa h1{font-family: var(--f-display); line-height: 1.24; margin: 0px; text-wrap: balance; letter-spacing: -0.01em; font-weight: 800;}
 .xa p{margin: 0px;}
 .xa a{color: var(--teal-ink);}
 .xa img{max-width: 100%; display: block;}

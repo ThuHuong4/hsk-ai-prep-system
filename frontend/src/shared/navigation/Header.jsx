@@ -1,4 +1,4 @@
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import xiangFace from "../../assets/images/xiang/home/xiang_face.webp";
 import { useAuth } from "../../features/auth/context/AuthContext.jsx";
@@ -19,10 +19,6 @@ export default function Header() {
           <span className="face"><img src={xiangFace} alt="" /></span>
           <span>Xiang<b>lingo</b></span>
         </Link>
-        <nav className="mainnav" aria-label="Điều hướng chính">
-          <NavLink to="/thi-thu">Thi thử</NavLink>
-          <NavLink to="/on-luyen">Ôn luyện</NavLink>
-        </nav>
         <div className="head-actions">
           <DictionaryButton />
           <button type="button" className="theme-tg" onClick={toggleTheme}

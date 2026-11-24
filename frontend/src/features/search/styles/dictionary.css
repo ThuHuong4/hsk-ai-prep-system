@@ -3,8 +3,8 @@
   --d-bg: rgba(19, 26, 36, .45); --d-surface: #F3F1EC; --d-surface-2: #E9E6E0; --d-line: #D2CDC4; --d-line-2: #BDB6AB;
   --d-ink: #1D2731; --d-ink-2: #434D58; --d-ink-3: #5A636D; --d-teal: #2A958E; --d-teal-ink: #1A6F6A; --d-teal-soft: #D8E8E4;
   --d-coral-ink: #A3442D; --d-coral-soft: #F4DDD4; --d-bad: #A93A2A;
-  --d-f-body: "Be Vietnam Pro", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
-  --d-f-display: "Baloo 2", "Be Vietnam Pro", system-ui, sans-serif; --d-f-hz: "Noto Serif SC", "Songti SC", "SimSun", serif;
+  --d-f-body: "Be Vietnam Pro", "Noto Sans SC", "Microsoft YaHei UI", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --d-f-display: "Be Vietnam Pro", "Noto Sans SC", "Microsoft YaHei UI", system-ui, sans-serif; --d-f-hz: "Noto Sans SC", "Microsoft YaHei UI", "Microsoft YaHei", "PingFang SC", sans-serif;
   position: fixed; inset: 0; z-index: 1000; display: grid; place-items: start center; padding: 6vh 16px 16px;
   background: var(--d-bg); font-family: var(--d-f-body); color: var(--d-ink);
 }

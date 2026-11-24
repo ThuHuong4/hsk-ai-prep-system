@@ -1,0 +1,244 @@
+/* Kiểu giao diện cho Đánh giá đầu vào 8 câu & Màn hình kết quả 4 phần */
+.plm-intro {
+  max-width: 680px;
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 20px;
+  background: var(--surface, #fff);
+  border: 1px solid var(--line, rgba(0, 0, 0, 0.08));
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.plm-intro__head {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.plm-intro__head img {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+}
+
+.plm-steps-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(145px, 1fr));
+  gap: 0.75rem;
+  margin: 1.25rem 0;
+  padding: 0;
+  list-style: none;
+}
+
+.plm-steps-grid li {
+  padding: 0.85rem;
+  border-radius: 12px;
+  background: var(--bg-soft, rgba(16, 124, 108, 0.06));
+  font-size: 0.92rem;
+}
+
+.plm-steps-grid li b {
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+.plm-textarea {
+  width: 100%;
+  min-height: 110px;
+  padding: 0.9rem 1rem;
+  border-radius: 14px;
+  border: 1.5px solid var(--line, #d4dad7);
+  background: var(--surface, #fff);
+  color: inherit;
+  font-size: 1.02rem;
+  line-height: 1.5;
+  resize: vertical;
+}
+
+.plm-textarea:focus {
+  outline: none;
+  border-color: var(--teal, #138a72);
+}
+
+.plm-audio-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem;
+  margin: 0.75rem 0 1rem;
+}
+
+.plm-link-btn {
+  background: none;
+  border: none;
+  padding: 0.35rem 0.6rem;
+  color: var(--muted, #5c6b66);
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.plm-res {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 1.5rem 1rem 3rem;
+}
+
+.plm-card {
+  background: var(--surface, #fff);
+  border: 1px solid var(--line, rgba(0, 0, 0, 0.08));
+  border-radius: 18px;
+  padding: 1.35rem 1.5rem;
+  margin-bottom: 1.15rem;
+}
+
+.plm-card h2 {
+  font-size: 1.15rem;
+  margin: 0 0 0.75rem;
+}
+
+.plm-hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  border-left: 5px solid var(--teal, #138a72);
+}
+
+.plm-level-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.45rem 1rem;
+  border-radius: 999px;
+  background: rgba(19, 138, 114, 0.12);
+  color: var(--teal, #138a72);
+  font-weight: 700;
+  font-size: 1.15rem;
+}
+
+.plm-note {
+  padding: 0.75rem 1rem;
+  border-radius: 12px;
+  background: rgba(230, 140, 40, 0.1);
+  font-size: 0.92rem;
+  margin-top: 0.75rem;
+}
+
+.plm-insights {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.plm-insight {
+  padding: 0.9rem 1rem;
+  border-radius: 12px;
+  background: var(--bg-soft, rgba(0, 0, 0, 0.03));
+}
+
+.plm-insight--diem_manh {
+  border-left: 4px solid #198754;
+}
+
+.plm-insight--diem_yeu {
+  border-left: 4px solid #d9534f;
+}
+
+.plm-insight--nhan_xet {
+  border-left: 4px solid #138a72;
+}
+
+.plm-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin-top: 0.5rem;
+}
+
+.plm-chip {
+  font-size: 0.82rem;
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+  border: 1px solid var(--line, #cbd5d1);
+  background: var(--surface, #fff);
+  cursor: pointer;
+}
+
+.plm-rec-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.plm-rec-item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding: 0.9rem 1rem;
+  border-radius: 12px;
+  border: 1px solid var(--line, rgba(0, 0, 0, 0.08));
+}
+
+.plm-open-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  gap: 0.75rem;
+}
+
+.plm-open-box {
+  padding: 0.8rem 1rem;
+  border-radius: 12px;
+  background: var(--bg-soft, rgba(0, 0, 0, 0.03));
+}
+
+.plm-goal-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-top: 0.65rem;
+}
+
+.plm-evidence-list {
+  list-style: none;
+  padding: 0;
+  margin: 0.75rem 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.plm-evidence-item {
+  padding: 0.85rem 1rem;
+  border-radius: 12px;
+  border: 1px solid var(--line, rgba(0, 0, 0, 0.08));
+  font-size: 0.94rem;
+}
+
+.plm-evidence-item.is-focus {
+  border-color: var(--teal, #138a72);
+  box-shadow: 0 0 0 2px rgba(19, 138, 114, 0.18);
+}
+
+.plm-banner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 1.25rem;
+  margin-bottom: 1.25rem;
+  border-radius: 16px;
+  background: rgba(19, 138, 114, 0.08);
+  border: 1px solid rgba(19, 138, 114, 0.22);
+}

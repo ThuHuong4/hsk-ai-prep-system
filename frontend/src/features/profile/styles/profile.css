@@ -91,6 +91,6 @@
   .pf-card { padding: 18px 16px; }
 }
 .pf form { max-width: none; margin: 0; }
-.pf-hero__rank em { font-style: normal; font-family: "Noto Serif SC", "Noto Sans SC", serif; }
-.pf-road b { font-family: "Noto Serif SC", "Noto Sans SC", serif; font-size: 17px; color: var(--teal-ink); line-height: 1; }
+.pf-hero__rank em { font-style: normal; font-family: "Noto Sans SC", "Microsoft YaHei UI", sans-serif; }
+.pf-road b { font-family: "Noto Sans SC", "Microsoft YaHei UI", sans-serif; font-size: 17px; color: var(--teal-ink); line-height: 1; }
 .pf-road li:not(.is-done) b { color: var(--ink-3); }

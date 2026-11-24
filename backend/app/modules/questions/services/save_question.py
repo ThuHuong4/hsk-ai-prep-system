@@ -45,10 +45,23 @@ def _check_level(db: Session, cap_do_id: int, tu_vung_id: int | None = None) -> 
             raise QuestionRuleError("Từ vựng được gắn phải cùng cấp với câu hỏi")
 
 
+def _check_group(db: Session, q) -> None:
+    group = getattr(q, "nhom_kien_thuc_id", None)
+    if group is None:
+        return
+    if q.dang == "ngu_lieu":
+        raise QuestionRuleError("Ngữ liệu chung không gắn nhóm kiến thức; gắn ở từng câu đơn")
+    ok = db.execute(text("SELECT EXISTS(SELECT 1 FROM nhom_kien_thuc WHERE id = :id AND trang_thai = 'hoat_dong')"),
+                    {"id": group}).scalar_one()
+    if not ok:
+        raise QuestionRuleError("Nhóm kiến thức không tồn tại hoặc đã ẩn")
+
+
 def create_question(db: Session, q, nguoi_tao_id: int) -> int:
     validate_question(q)
     try:
         _check_level(db, q.cap_do_id, q.tu_vung_id)
+        _check_group(db, q)
         parent_id = insert_question(db, _parent_values(q), None, 1, None, nguoi_tao_id)
         replace_options(db, parent_id, q.phuong_an, q.dap_an_chap_nhan)
         for child in q.cau_con:
@@ -68,6 +81,7 @@ def update_question_content(db: Session, cau_hoi_id: int, q, nguoi_tao_id: int) 
     validate_question(q)
     try:
         _check_level(db, q.cap_do_id, q.tu_vung_id)
+        _check_group(db, q)
         row = find_question(db, cau_hoi_id, for_update=True)
         if row is None or row["cau_cha_id"] is not None:
             raise NotFoundError()

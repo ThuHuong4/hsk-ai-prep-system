@@ -1,0 +1,457 @@
+{
+  "ten": "Đặt câu tình huống & Viết ứng dụng HSK 4",
+  "muc_tieu": "Vận dụng cấu trúc câu phức, dịch câu Việt – Trung và đặt câu mở với từ bắt buộc chuẩn HSK 4",
+  "bai": [
+    {
+      "ten": "Sắp xếp câu nhượng bộ, mục đích và điều kiện",
+      "items": [
+        {
+          "dang": "sap_xep",
+          "nhom": "lien_tu_quan_he",
+          "noi_dung": "Sắp xếp các cụm từ sau thành câu tiếng Trung hoàn chỉnh:",
+          "manh_ghep": [
+            "尽管",
+            "价格有点儿贵，",
+            "这台笔记本电脑",
+            "还是卖得很好。"
+          ],
+          "dap_an_chap_nhan": [
+            "尽管价格有点儿贵，这台笔记本电脑还是卖得很好。",
+            "这台笔记本电脑尽管价格有点儿贵，还是卖得很好。"
+          ],
+          "dich_nghia": "Mặc dù giá hơi đắt một chút, chiếc máy tính xách tay này vẫn bán rất chạy.",
+          "goi_y": "Mở đầu vế nhượng bộ bằng liên từ 尽管, vế sau dùng 还是 để nhấn mạnh kết quả vẫn diễn ra.",
+          "goi_y_2": "Cấu trúc: 尽管 + mệnh đề nhượng bộ，Chủ ngữ + 还是 + mệnh đề kết quả.",
+          "giai_thich": "Cặp liên từ 尽管…还是… biểu thị quan hệ nhượng bộ thực tế: 'mặc dù… vẫn…'."
+        },
+        {
+          "dang": "sap_xep",
+          "nhom": "lien_tu_quan_he",
+          "noi_dung": "Sắp xếp các cụm từ sau thành câu tiếng Trung hoàn chỉnh:",
+          "manh_ghep": [
+            "为了",
+            "保护眼睛，",
+            "我们平时",
+            "不要躺着看手机。"
+          ],
+          "dap_an_chap_nhan": [
+            "为了保护眼睛，我们平时不要躺着看手机。",
+            "我们平时为了保护眼睛，不要躺着看手机。"
+          ],
+          "dich_nghia": "Để bảo vệ đôi mắt, ngày thường chúng ta đừng nằm xem điện thoại.",
+          "goi_y": "Giới từ chỉ mục đích 为了 thường đứng ở đầu câu kèm cụm động từ chỉ mục tiêu.",
+          "goi_y_2": "Cấu trúc: 为了 + mục đích (保护眼睛)，Chủ ngữ + 平时 + hành động khuyên ngăn.",
+          "giai_thich": "为了 đặt ở vế đầu nhằm nêu rõ mục đích 'để bảo vệ mắt', vế sau dùng 不要躺着看手机 nêu hành động cần tránh."
+        },
+        {
+          "dang": "sap_xep",
+          "nhom": "lien_tu_quan_he",
+          "noi_dung": "Sắp xếp các cụm từ sau thành câu tiếng Trung hoàn chỉnh:",
+          "manh_ghep": [
+            "只有",
+            "平时多练习口语，",
+            "汉语发音",
+            "才能越来越标准。"
+          ],
+          "dap_an_chap_nhan": [
+            "只有平时多练习口语，汉语发音才能越来越标准。"
+          ],
+          "dich_nghia": "Chỉ có ngày thường luyện nói nhiều thì phát âm tiếng Trung mới có thể ngày càng chuẩn.",
+          "goi_y": "Tìm cặp liên từ chỉ điều kiện cần duy nhất 只有…才… để nối hai vế câu.",
+          "goi_y_2": "Cấu trúc: 只有 + điều kiện cần，Chủ ngữ vế sau (汉语发音) + 才能 + kết quả.",
+          "giai_thich": "只有…才… nhấn mạnh điều kiện bắt buộc ('chỉ có… thì mới…'), khác với 只要…就… chỉ điều kiện đủ."
+        },
+        {
+          "dang": "sap_xep",
+          "nhom": "lien_tu_quan_he",
+          "noi_dung": "Sắp xếp các cụm từ sau thành câu tiếng Trung hoàn chỉnh:",
+          "manh_ghep": [
+            "快点儿",
+            "出发吧，",
+            "否则我们",
+            "就要赶不上火车了。"
+          ],
+          "dap_an_chap_nhan": [
+            "快点儿出发吧，否则我们就要赶不上火车了。"
+          ],
+          "dich_nghia": "Mau xuất phát thôi, nếu không chúng ta sẽ không kịp chuyến tàu mất.",
+          "goi_y": "Vế đầu là lời thúc giục có trợ từ ngữ khí 吧, vế sau mở đầu bằng liên từ 否则 (nếu không thì).",
+          "goi_y_2": "Cấu trúc: Câu cầu khiến (快点儿出发吧)，否则 + hệ quả bất lợi (我们就要赶不上火车了).",
+          "giai_thich": "Liên từ 否则 đứng đầu vế thứ hai để dẫn ra kết quả không mong muốn nếu không làm theo vế trước."
+        },
+        {
+          "dang": "sap_xep",
+          "nhom": "lien_tu_quan_he",
+          "noi_dung": "Sắp xếp các cụm từ sau thành câu tiếng Trung hoàn chỉnh:",
+          "manh_ghep": [
+            "不管",
+            "发生什么误会，",
+            "好朋友之间",
+            "都应该冷静地交流。"
+          ],
+          "dap_an_chap_nhan": [
+            "不管发生什么误会，好朋友之间都应该冷静地交流。",
+            "好朋友之间不管发生什么误会，都应该冷静地交流。"
+          ],
+          "dich_nghia": "Bất kể xảy ra hiểu lầm gì, giữa những người bạn tốt đều nên bình tĩnh trao đổi.",
+          "goi_y": "Liên từ điều kiện vô điều kiện 不管 đi kèm đại từ nghi vấn 什么 ở vế đầu và phó từ 都 ở vế sau.",
+          "goi_y_2": "Cấu trúc: 不管 + 发生什么误会，好朋友之间 + 都应该 + 冷静地交流.",
+          "giai_thich": "Cặp 不管…都… tương đương 无论…都…, vế sau 不管 bắt buộc có yếu tố nghi vấn hoặc lựa chọn."
+        }
+      ]
+    },
+    {
+      "ten": "Sắp xếp câu đánh giá, kinh nghiệm và xã hội",
+      "items": [
+        {
+          "dang": "sap_xep",
+          "nhom": "cau_so_sanh_nhan_manh",
+          "noi_dung": "Sắp xếp các cụm từ sau thành câu tiếng Trung hoàn chỉnh:",
+          "manh_ghep": [
+            "对留学生来说，",
+            "适应当地的",
+            "生活习惯",
+            "需要一段时间。"
+          ],
+          "dap_an_chap_nhan": [
+            "对留学生来说，适应当地的生活习惯需要一段时间。",
+            "适应当地的生活习惯对留学生来说需要一段时间。"
+          ],
+          "dich_nghia": "Đối với du học sinh mà nói, thích nghi với thói quen sinh hoạt bản địa cần một khoảng thời gian.",
+          "goi_y": "Đặt cấu trúc nêu góc độ đánh giá 对…来说 ở đầu câu làm trạng ngữ.",
+          "goi_y_2": "Cấu trúc: 对留学生来说，Chủ ngữ cụm động từ (适应当地的生活习惯) + 需要一段时间.",
+          "giai_thich": "Cấu trúc 对…来说 dùng để nêu đối tượng mà nhận định phía sau hướng tới ('đối với… mà nói')."
+        },
+        {
+          "dang": "sap_xep",
+          "nhom": "tro_tu_dong_thai",
+          "noi_dung": "Sắp xếp các cụm từ sau thành câu tiếng Trung hoàn chỉnh:",
+          "manh_ghep": [
+            "经历过",
+            "那次失败以后，",
+            "他终于改掉了",
+            "粗心的毛病。"
+          ],
+          "dap_an_chap_nhan": [
+            "经历过那次失败以后，他终于改掉了粗心的毛病。"
+          ],
+          "dich_nghia": "Sau khi trải qua lần thất bại đó, anh ấy cuối cùng đã sửa được tật bất cẩn.",
+          "goi_y": "Cụm chỉ trải nghiệm quá khứ 经历过…以后 đứng ở vế đầu làm mốc thời gian – kinh nghiệm.",
+          "goi_y_2": "Trật tự: 经历过 + 那次失败以后，Chủ ngữ (他) + 终于改掉了 + 粗心的毛病.",
+          "giai_thich": "Trợ từ động thái 过 đi sau 经历 nhấn mạnh kinh nghiệm từng trải qua, kết hợp 改掉…毛病 (sửa bỏ tật xấu)."
+        },
+        {
+          "dang": "sap_xep",
+          "nhom": "so_dem_luong_tu",
+          "noi_dung": "Sắp xếp các cụm từ sau thành câu tiếng Trung hoàn chỉnh:",
+          "manh_ghep": [
+            "自己带袋子去购物",
+            "能够大大减少",
+            "塑料袋的",
+            "使用数量。"
+          ],
+          "dap_an_chap_nhan": [
+            "自己带袋子去购物能够大大减少塑料袋的使用数量。"
+          ],
+          "dich_nghia": "Tự mang túi đi mua sắm có thể giảm đáng kể số lượng túi ni-lông sử dụng.",
+          "goi_y": "Cụm động từ 自己带袋子去购物 đóng vai trò chủ ngữ đứng đầu câu.",
+          "goi_y_2": "Cấu trúc: Chủ ngữ + 能够大大减少 + Định ngữ (塑料袋的) + Danh từ trung tâm (使用数量).",
+          "giai_thich": "Cụm 减少…的使用数量 (giảm số lượng sử dụng của…) là cách diễn đạt chuẩn mực trong chủ đề bảo vệ môi trường HSK 4."
+        },
+        {
+          "dang": "sap_xep",
+          "nhom": "chao_hoi_giao_tiep",
+          "noi_dung": "Sắp xếp các cụm từ sau thành câu tiếng Trung hoàn chỉnh:",
+          "manh_ghep": [
+            "跟别人交流时，",
+            "耐心听对方把话说完",
+            "是一种基本的",
+            "礼貌和尊重。"
+          ],
+          "dap_an_chap_nhan": [
+            "跟别人交流时，耐心听对方把话说完是一种基本的礼貌和尊重。"
+          ],
+          "dich_nghia": "Khi giao tiếp với người khác, kiên nhẫn nghe đối phương nói hết lời là phép lịch sự và sự tôn trọng cơ bản.",
+          "goi_y": "Mở đầu bằng cụm bối cảnh thời gian 跟别人交流时，theo sau là hành vi làm chủ ngữ của động từ 是.",
+          "goi_y_2": "Cấu trúc: 跟别人交流时，耐心听对方把话说完 + 是一种基本的 + 礼貌和尊重.",
+          "giai_thich": "Câu nhận định dùng 是 nối cụm chủ ngữ hành vi (耐心听对方把话说完) với cụm danh từ đánh giá (礼貌和尊重)."
+        },
+        {
+          "dang": "sap_xep",
+          "nhom": "gia_dinh_nghe_nghiep",
+          "noi_dung": "Sắp xếp các cụm từ sau thành câu tiếng Trung hoàn chỉnh:",
+          "manh_ghep": [
+            "这位年轻律师",
+            "做事认真负责，",
+            "赢得了大家的",
+            "信任和支持。"
+          ],
+          "dap_an_chap_nhan": [
+            "这位年轻律师做事认真负责，赢得了大家的信任和支持。"
+          ],
+          "dich_nghia": "Vị luật sư trẻ tuổi này làm việc nghiêm túc có trách nhiệm, đã giành được sự tin tưởng và ủng hộ của mọi người.",
+          "goi_y": "Đặt danh từ chỉ người 这位年轻律师 làm chủ ngữ chung ở đầu câu.",
+          "goi_y_2": "Cấu trúc: 这位年轻律师 + phẩm chất làm việc (做事认真负责)，kết quả đạt được (赢得了大家的信任和支持).",
+          "giai_thich": "Động từ 赢得 (giành được, có được) thường kết hợp với danh từ trừu tượng tích cực như 信任, 支持, 尊重."
+        }
+      ]
+    },
+    {
+      "ten": "Ghép câu nâng cao & Dịch câu giao tiếp HSK 4",
+      "items": [
+        {
+          "dang": "sap_xep",
+          "nhom": "cau_so_sanh_nhan_manh",
+          "noi_dung": "Sắp xếp các cụm từ sau thành câu tiếng Trung hoàn chỉnh:",
+          "manh_ghep": [
+            "坐高铁去外地出差",
+            "比自己开车",
+            "轻松得多，",
+            "也准时得多。"
+          ],
+          "dap_an_chap_nhan": [
+            "坐高铁去外地出差比自己开车轻松得多，也准时得多。"
+          ],
+          "dich_nghia": "Đi tàu cao tốc ra tỉnh ngoài công tác nhẹ nhàng hơn tự lái xe nhiều, mà cũng đúng giờ hơn nhiều.",
+          "goi_y": "Sử dụng cấu trúc so sánh hơn A 比 B + Tính từ + 得多 để nhấn mạnh mức độ chênh lệch lớn.",
+          "goi_y_2": "Trật tự: Đối tượng A (坐高铁去外地出差) + 比自己开车 + 轻松得多，+ 也准时得多.",
+          "giai_thich": "Trong câu so sánh chữ 比, bổ ngữ mức độ 得多 đặt sau tính từ (轻松得多, 准时得多), tuyệt đối không dùng 很 trước tính từ."
+        },
+        {
+          "dang": "sap_xep",
+          "nhom": "bo_ngu",
+          "noi_dung": "Sắp xếp các cụm từ sau thành câu tiếng Trung hoàn chỉnh:",
+          "manh_ghep": [
+            "请把空调的温度",
+            "稍微调高一点儿，",
+            "会议室里实在",
+            "太冷了。"
+          ],
+          "dap_an_chap_nhan": [
+            "请把空调的温度稍微调高一点儿，会议室里实在太冷了。",
+            "会议室里实在太冷了，请把空调的温度稍微调高一点儿。"
+          ],
+          "dich_nghia": "Xin hãy chỉnh nhiệt độ điều hòa cao lên một chút, trong phòng họp thực sự lạnh quá.",
+          "goi_y": "Câu cầu khiến chữ 把 đưa tân ngữ 空调的温度 lên trước cụm động từ bổ ngữ kết quả 调高.",
+          "goi_y_2": "Cấu trúc: 请把空调的温度 + 稍微调高一点儿，+ 会议室里实在 + 太冷了.",
+          "giai_thich": "Phó từ chỉ mức độ nhẹ 稍微 đứng trước động từ 调高, kết hợp bổ ngữ số lượng 一点儿 sau bổ ngữ kết quả."
+        },
+        {
+          "dang": "sap_xep",
+          "nhom": "phu_dinh_nghi_van",
+          "noi_dung": "Sắp xếp các cụm từ sau thành câu tiếng Trung hoàn chỉnh:",
+          "manh_ghep": [
+            "你们俩商量了半天，",
+            "同学聚会的地点",
+            "到底定下来",
+            "没有？"
+          ],
+          "dap_an_chap_nhan": [
+            "你们俩商量了半天，同学聚会的地点到底定下来没有？"
+          ],
+          "dich_nghia": "Hai bạn bàn bạc cả buổi rồi, rốt cuộc địa điểm họp lớp đã chốt được hay chưa?",
+          "goi_y": "Mở đầu bằng vế bối cảnh 你们俩商量了半天，vế hỏi dùng phó từ truy vấn 到底 kết hợp câu hỏi …没有？",
+          "goi_y_2": "Cấu trúc: 你们俩商量了半天，+ 同学聚会的地点 + 到底定下来 + 没有？",
+          "giai_thich": "Phó từ 到底 đặt trước vị ngữ nghi vấn (定下来没有) để nhấn mạnh ý truy hỏi kết quả cuối cùng ('rốt cuộc…')."
+        },
+        {
+          "dang": "dich_cau",
+          "nhom": "lien_tu_quan_he",
+          "noi_dung": "Dịch câu sau sang tiếng Trung (gợi ý dùng cấu trúc 既…又…): «Xem phim tiếng Trung vừa có thể luyện nghe, vừa có thể tìm hiểu văn hóa truyền thống Trung Quốc.»",
+          "dap_an_chap_nhan": [
+            "看中文电影既能练习听力，又能了解中国的传统文化。",
+            "看汉语电影既能练习听力，又能了解中国传统文化。",
+            "看中文电影既可以练习听力，又可以了解中国的传统文化。",
+            "看中国电影既能练习听力，又能了解中国传统文化。"
+          ],
+          "dich_nghia": "看中文电影既能练习听力，又能了解中国的传统文化。",
+          "tieu_chi_mo_ta": "Dịch đủ ý hai vế song hành, sử dụng chuẩn cấu trúc 既…又… và từ vựng HSK 4 tự nhiên (练习听力, 了解, 传统文化).",
+          "goi_y": "Dùng cặp liên từ song hành 既能…又能… (hoặc 既可以…又可以…); 'văn hóa truyền thống' là 传统文化.",
+          "goi_y_2": "Khung câu: 看中文电影 + 既能练习听力，+ 又能了解中国的传统文化。",
+          "giai_thich": "Cấu trúc 既…又… dùng để nối hai tính chất hoặc hai hành động cùng tồn tại song song ('vừa… vừa…')."
+        },
+        {
+          "dang": "dich_cau",
+          "nhom": "thoi_gian_lich_hen",
+          "noi_dung": "Dịch câu sau sang tiếng Trung (gợi ý dùng từ 来不及 và 提前): «Nếu chiều mai bạn không kịp tham gia cuộc họp, xin hãy gửi email thông báo trước cho giám đốc Vương.»",
+          "dap_an_chap_nhan": [
+            "如果明天下午你来不及参加会议，请提前发邮件通知王经理。",
+            "如果你明天下午来不及参加会议，请提前发电子邮件通知王经理。",
+            "要是明天下午你来不及开会，请提前发邮件通知王经理。"
+          ],
+          "dich_nghia": "如果明天下午你来不及参加会议，请提前发邮件通知王经理。",
+          "tieu_chi_mo_ta": "Dịch chính xác mệnh đề giả thiết và lời nhắn lịch sự, dùng đúng vị trí từ 来不及 (không kịp) và phó từ 提前 (trước thời hạn).",
+          "goi_y": "'Không kịp làm gì' dùng 来不及 + động từ; 'thông báo trước' đặt 提前 trước cụm 发邮件通知.",
+          "goi_y_2": "Khung câu: 如果明天下午你 + 来不及参加会议，+ 请提前 + 发邮件通知王经理。",
+          "giai_thich": "来不及 đứng trước động từ biểu thị không đủ thời gian thực hiện; 提前 làm trạng ngữ đứng trước động từ 发邮件/通知."
+        }
+      ]
+    },
+    {
+      "ten": "Đặt câu mở với từ vựng trọng tâm HSK 4",
+      "items": [
+        {
+          "dang": "sap_xep",
+          "nhom": "vi_tri_phuong_huong",
+          "noi_dung": "Sắp xếp các cụm từ sau thành câu tiếng Trung hoàn chỉnh:",
+          "manh_ghep": [
+            "新开的羽毛球馆",
+            "就在人民公园",
+            "南门入口的",
+            "对面。"
+          ],
+          "dap_an_chap_nhan": [
+            "新开的羽毛球馆就在人民公园南门入口的对面。"
+          ],
+          "dich_nghia": "Nhà thi đấu cầu lông mới mở nằm ngay đối diện lối vào cổng phía nam công viên Nhân Dân.",
+          "goi_y": "Chủ ngữ địa điểm 新开的羽毛球馆 đứng đầu câu, động từ định vị 就在 dẫn ra mốc tham chiếu.",
+          "goi_y_2": "Trật tự cụm danh từ chỉ vị trí: 就在 + 人民公园 + 南门入口的 + 对面.",
+          "giai_thich": "Trong tiếng Trung, trật tự địa điểm đi từ phạm vi lớn (人民公园) đến bộ phận nhỏ (南门入口) rồi mới đến phương vị từ (对面)."
+        },
+        {
+          "dang": "sap_xep",
+          "nhom": "tro_tu_dong_thai",
+          "noi_dung": "Sắp xếp các cụm từ sau thành câu tiếng Trung hoàn chỉnh:",
+          "manh_ghep": [
+            "林教授戴着眼镜，",
+            "正在安静地阅读",
+            "学生刚发来的",
+            "调查报告。"
+          ],
+          "dap_an_chap_nhan": [
+            "林教授戴着眼镜，正在安静地阅读学生刚发来的调查报告。"
+          ],
+          "dich_nghia": "Giáo sư Lâm đeo kính, đang yên lặng đọc bản báo cáo khảo sát mà sinh viên vừa gửi tới.",
+          "goi_y": "Vế đầu miêu tả trạng thái trang phục với trợ từ 着, vế sau nêu hành động đang diễn ra với 正在.",
+          "goi_y_2": "Cấu trúc: 林教授戴着眼镜，+ 正在安静地阅读 + Định ngữ (学生刚发来的) + 调查报告.",
+          "giai_thich": "戴着眼镜 dùng 着 chỉ trạng thái duy trì trên người, kết hợp hài hòa với 正在…阅读 chỉ hành động chính."
+        },
+        {
+          "dang": "viet_mo",
+          "nhom": "chao_hoi_giao_tiep",
+          "noi_dung": "Hãy viết một câu tiếng Trung hoàn chỉnh (tối thiểu 8 chữ Hán) có sử dụng từ bắt buộc cho sẵn để nói về việc nhắc nhở người thân hoặc bạn bè trong sinh hoạt hằng ngày.",
+          "tu_bat_buoc": "提醒",
+          "dich_nghia": "出门之前，妈妈特意提醒我把身份证和钥匙带好。",
+          "tieu_chi_mo_ta": "Câu viết hoàn chỉnh, tối thiểu 8 chữ Hán, đúng ngữ pháp HSK 4, có chứa từ bắt buộc «提醒» (nhắc nhở) và phù hợp ngữ cảnh giao tiếp hằng ngày.",
+          "goi_y": "Động từ «提醒» thường dùng trong cấu trúc kiêm ngữ: 提醒 + ai đó + làm việc gì (hoặc đừng quên việc gì).",
+          "goi_y_2": "Khung câu gợi ý: Ai đó + 提醒我 + 别忘了带雨伞 / 把重要东西带好.",
+          "giai_thich": "Câu mẫu tham khảo: 出门之前，妈妈特意提醒我把身份证和钥匙带好。"
+        },
+        {
+          "dang": "viet_mo",
+          "nhom": "gia_dinh_nghe_nghiep",
+          "noi_dung": "Hãy viết một câu tiếng Trung hoàn chỉnh (tối thiểu 8 chữ Hán) có sử dụng từ bắt buộc cho sẵn để nói về sự động viên trong học tập hoặc công việc.",
+          "tu_bat_buoc": "鼓励",
+          "dich_nghia": "每当我遇到困难想放弃时，老师总是耐心地鼓励我继续努力。",
+          "tieu_chi_mo_ta": "Câu viết hoàn chỉnh, tối thiểu 8 chữ Hán, đúng ngữ pháp HSK 4, có chứa từ bắt buộc «鼓励» (khích lệ, động viên) dùng đúng vai trò động từ hoặc danh từ.",
+          "goi_y": "«鼓励» có thể dùng làm động từ (鼓励某人做某事) hoặc làm danh từ tân ngữ (给我很大的鼓励).",
+          "goi_y_2": "Có thể kết hợp với chủ ngữ 老师, 父母, 同事 cùng các cụm như 继续努力, 不要放弃.",
+          "giai_thich": "Câu mẫu tham khảo: 每当我遇到困难想放弃时，老师总是耐心地鼓励我继续努力。"
+        },
+        {
+          "dang": "viet_mo",
+          "nhom": "chao_hoi_giao_tiep",
+          "noi_dung": "Hãy viết một câu tiếng Trung hoàn chỉnh (tối thiểu 8 chữ Hán) có sử dụng từ bắt buộc cho sẵn để diễn tả việc tiện đường hoặc nhân tiện làm thêm một việc khác.",
+          "tu_bat_buoc": "顺便",
+          "dich_nghia": "我下班路过超市的时候，顺便买了一些新鲜的水果和牛奶。",
+          "tieu_chi_mo_ta": "Câu viết hoàn chỉnh, tối thiểu 8 chữ Hán, nêu rõ hành động chính và đặt phó từ «顺便» đúng vị trí trước động từ phụ đi kèm.",
+          "goi_y": "Phó từ «顺便» (nhân tiện, tiện thể) luôn đứng trước động từ chỉ hành động kết hợp thêm.",
+          "goi_y_2": "Khung câu gợi ý: Hành động chính (去邮局 / 路过超市) + 顺便 + hành động tiện tay làm thêm (买水果 / 寄信).",
+          "giai_thich": "Câu mẫu tham khảo: 我下班路过超市的时候，顺便买了一些新鲜的水果和牛奶。"
+        }
+      ]
+    }
+  ],
+  "cuoi_thua_moi": [
+    {
+      "dang": "sap_xep",
+      "nhom": "lien_tu_quan_he",
+      "noi_dung": "Sắp xếp các cụm từ sau thành câu tiếng Trung hoàn chỉnh:",
+      "manh_ghep": [
+        "他之所以",
+        "能取得好成绩，",
+        "是因为平时",
+        "复习得非常认真。"
+      ],
+      "dap_an_chap_nhan": [
+        "他之所以能取得好成绩，是因为平时复习得非常认真。"
+      ],
+      "dich_nghia": "Sở dĩ anh ấy đạt được thành tích tốt là bởi vì ngày thường ôn tập vô cùng nghiêm túc.",
+      "goi_y": "Cấu trúc đảo kết quả lên trước nguyên nhân dùng 之所以 ở vế đầu và 是因为 ở vế sau.",
+      "goi_y_2": "Trật tự: Chủ ngữ + 之所以 + kết quả (能取得好成绩)，是因为 + nguyên nhân (平时复习得非常认真).",
+      "giai_thich": "Cặp 之所以…是因为… ('sở dĩ… là vì…') đặt sau chủ ngữ ở vế đầu để nhấn mạnh lý do giải thích ở vế sau."
+    },
+    {
+      "dang": "sap_xep",
+      "nhom": "cau_so_sanh_nhan_manh",
+      "noi_dung": "Sắp xếp các cụm từ sau thành câu tiếng Trung hoàn chỉnh:",
+      "manh_ghep": [
+        "阳台上刚洗干净的",
+        "白衬衫",
+        "差点儿被大风",
+        "刮到地上去。"
+      ],
+      "dap_an_chap_nhan": [
+        "阳台上刚洗干净的白衬衫差点儿被大风刮到地上去。"
+      ],
+      "dich_nghia": "Chiếc áo sơ mi trắng vừa giặt sạch phơi ngoài ban công suýt chút nữa bị gió lớn thổi rơi xuống đất.",
+      "goi_y": "Định ngữ 阳台上刚洗干净的 bổ nghĩa cho danh từ 白衬衫 làm chủ ngữ của câu bị động chữ 被.",
+      "goi_y_2": "Trật tự: 阳台上刚洗干净的 + 白衬衫 + 差点儿被大风 + 刮到地上去.",
+      "giai_thich": "Trong câu chữ 被, phó từ 差点儿 (suýt nữa) đặt ngay trước 被, phía sau động từ 刮 có bổ ngữ kết quả và xu hướng 到地上去."
+    },
+    {
+      "dang": "sap_xep",
+      "nhom": "bo_ngu",
+      "noi_dung": "Sắp xếp các cụm từ sau thành câu tiếng Trung hoàn chỉnh:",
+      "manh_ghep": [
+        "这本历史小说的",
+        "内容太精彩了，",
+        "让人一拿起来",
+        "就舍不得放下。"
+      ],
+      "dap_an_chap_nhan": [
+        "这本历史小说的内容太精彩了，让人一拿起来就舍不得放下。"
+      ],
+      "dich_nghia": "Nội dung cuốn tiểu thuyết lịch sử này đặc sắc quá, khiến người ta hễ cầm lên là chẳng nỡ đặt xuống.",
+      "goi_y": "Vế đầu đánh giá nội dung cuốn tiểu thuyết, vế sau dùng cấu trúc 一…就… kết hợp bổ ngữ xu hướng 拿起来.",
+      "goi_y_2": "Cấu trúc: 这本历史小说的 + 内容太精彩了，+ 让人一拿起来 + 就舍不得放下.",
+      "giai_thich": "拿起来 (cầm lên) đối ứng với 放下 (đặt xuống), đi cùng 舍不得 (không nỡ) diễn tả sức hấp dẫn của cuốn sách."
+    },
+    {
+      "dang": "sap_xep",
+      "nhom": "so_dem_luong_tu",
+      "noi_dung": "Sắp xếp các cụm từ sau thành câu tiếng Trung hoàn chỉnh:",
+      "manh_ghep": [
+        "这所大学今年的",
+        "留学生人数",
+        "大约是十年前的",
+        "三倍。"
+      ],
+      "dap_an_chap_nhan": [
+        "这所大学今年的留学生人数大约是十年前的三倍。"
+      ],
+      "dich_nghia": "Số lượng du học sinh năm nay của trường đại học này xấp xỉ gấp ba lần so với mười năm trước.",
+      "goi_y": "Lượng từ của 大学 là 所; câu biểu thị bội số dùng cấu trúc A 是 B 的 + Số từ + 倍.",
+      "goi_y_2": "Trật tự: 这所大学今年的 + 留学生人数 + 大约是十年前的 + 三倍.",
+      "giai_thich": "Phó từ ước lượng 大约 đứng trước động từ 是, từ chỉ bội số 三倍 đứng cuối cụm định ngữ 十年前的."
+    },
+    {
+      "dang": "sap_xep",
+      "nhom": "thoi_gian_lich_hen",
+      "noi_dung": "Sắp xếp các cụm từ sau thành câu tiếng Trung hoàn chỉnh:",
+      "manh_ghep": [
+        "为了给别人",
+        "留下好印象，",
+        "参加活动时",
+        "一定要准时到达。"
+      ],
+      "dap_an_chap_nhan": [
+        "为了给别人留下好印象，参加活动时一定要准时到达。"
+      ],
+      "dich_nghia": "Để tạo ấn tượng tốt với người khác, khi tham gia hoạt động nhất định phải đến đúng giờ.",
+      "goi_y": "Đặt vế chỉ mục đích 为了… ở đầu câu, vế sau nêu yêu cầu 一定要准时到达.",
+      "goi_y_2": "Trật tự: 为了给别人 + 留下好印象，+ 参加活动时 + 一定要准时到达.",
+      "giai_thich": "给…留下好印象 (để lại ấn tượng tốt cho ai) kết hợp với phó từ 准时 (đúng giờ) trước động từ 到达."
+    }
+  ]
+}

@@ -1,0 +1,2865 @@
+{
+ "exam": {
+  "code": "H4M07",
+  "level": "HSK4",
+  "ten": "HSK 4 – Đề 7",
+  "phut": 105,
+  "nguon": "Đề mô phỏng biên soạn chuẩn cấu trúc HSK 2.0 (HSK 四级)",
+  "audio": "exams/hsk4_h4m07/listening.mp3"
+ },
+ "plan": [
+  {
+   "part": 1,
+   "ex": true,
+   "q": {
+    "dang": "dung_sai",
+    "ky_nang": "nghe",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "noi_dung": "★ 他打算下午去银行。",
+    "loi_nghe": "我想去办个信用卡，今天下午你有时间吗？陪我去一趟银行？\n★ 他打算下午去银行。",
+    "phuong_an": [
+     {
+      "noi_dung": "Đúng",
+      "la_dap_an_dung": true
+     },
+     {
+      "noi_dung": "Sai",
+      "la_dap_an_dung": false
+     }
+    ]
+   }
+  },
+  {
+   "part": 1,
+   "ex": true,
+   "q": {
+    "dang": "dung_sai",
+    "ky_nang": "nghe",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "noi_dung": "★ 他喜欢看电视广告。",
+    "loi_nghe": "现在我很少看电视，其中一个原因是，广告太多了，不管什么时间，也不管什么节目，只要你打开电视，总能看到那么多的广告，浪费我的时间。\n★ 他喜欢看电视广告。",
+    "phuong_an": [
+     {
+      "noi_dung": "Đúng",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "Sai",
+      "la_dap_an_dung": true
+     }
+    ]
+   }
+  },
+  {
+   "part": 1,
+   "ex": false,
+   "q": {
+    "dang": "dung_sai",
+    "ky_nang": "nghe",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "noi_dung": "★ 他对新买的枕头不满意。",
+    "loi_nghe": "以前我睡觉总爱落枕，上星期听医生的建议换了一个高度适中的记忆棉枕头，这几天睡得特别香，脖子再也不酸了。\n★ 他对新买的枕头不满意。",
+    "phuong_an": [
+     {
+      "noi_dung": "Đúng",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "Sai",
+      "la_dap_an_dung": true
+     }
+    ]
+   }
+  },
+  {
+   "part": 1,
+   "ex": false,
+   "q": {
+    "dang": "dung_sai",
+    "ky_nang": "nghe",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "noi_dung": "★ 航班因为大雾延误了。",
+    "loi_nghe": "各位旅客非常抱歉，由于目的地成都双流机场目前大雾弥漫，能见度较低，您乘坐的CA4102次航班起飞时间待定，请您在候机厅耐心等候。\n★ 航班因为大雾延误了。",
+    "phuong_an": [
+     {
+      "noi_dung": "Đúng",
+      "la_dap_an_dung": true
+     },
+     {
+      "noi_dung": "Sai",
+      "la_dap_an_dung": false
+     }
+    ]
+   }
+  },
+  {
+   "part": 1,
+   "ex": false,
+   "q": {
+    "dang": "dung_sai",
+    "ky_nang": "nghe",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "noi_dung": "★ 适当的笔记有助于复习。",
+    "loi_nghe": "好记性不如烂笔头。读书或听课的时候，用不同颜色的笔把核心观点和自己的疑问记在空白处，期末复习时翻开一看就一目了然。\n★ 适当的笔记有助于复习。",
+    "phuong_an": [
+     {
+      "noi_dung": "Đúng",
+      "la_dap_an_dung": true
+     },
+     {
+      "noi_dung": "Sai",
+      "la_dap_an_dung": false
+     }
+    ]
+   }
+  },
+  {
+   "part": 1,
+   "ex": false,
+   "q": {
+    "dang": "dung_sai",
+    "ky_nang": "nghe",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "noi_dung": "★ 小陈是学市场营销专业的。",
+    "loi_nghe": "别看小陈现在做市场营销做得风生水起，其实他大学本科读的是化学专业，沟通能力和商业头脑全是工作以后一点点摸索出来的。\n★ 小陈是学市场营销专业的。",
+    "phuong_an": [
+     {
+      "noi_dung": "Đúng",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "Sai",
+      "la_dap_an_dung": true
+     }
+    ]
+   }
+  },
+  {
+   "part": 1,
+   "ex": false,
+   "q": {
+    "dang": "dung_sai",
+    "ky_nang": "nghe",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "noi_dung": "★ 植物园的郁金香已经开了。",
+    "loi_nghe": "四月中旬天气一暖和，植物园北门那一大片五颜六色的郁金香全都盛开了，周末去赏花拍照的市民络绎不绝。\n★ 植物园的郁金香已经开了。",
+    "phuong_an": [
+     {
+      "noi_dung": "Đúng",
+      "la_dap_an_dung": true
+     },
+     {
+      "noi_dung": "Sai",
+      "la_dap_an_dung": false
+     }
+    ]
+   }
+  },
+  {
+   "part": 1,
+   "ex": false,
+   "q": {
+    "dang": "dung_sai",
+    "ky_nang": "nghe",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "noi_dung": "★ 这家书店不能用现金结账。",
+    "loi_nghe": "虽然现在绝大多数顾客都习惯刷手机支付，但为了照顾老年读者和小朋友，我们书店专门保留了一个现金收银窗口。\n★ 这家书店不能用现金结账。",
+    "phuong_an": [
+     {
+      "noi_dung": "Đúng",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "Sai",
+      "la_dap_an_dung": true
+     }
+    ]
+   }
+  },
+  {
+   "part": 1,
+   "ex": false,
+   "q": {
+    "dang": "dung_sai",
+    "ky_nang": "nghe",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "noi_dung": "★ 父亲年轻时在北方生活过。",
+    "loi_nghe": "父亲虽然是土生土长的广州人，但二十多岁时曾在哈尔滨工作过五年，所以他不仅会包地道的北方酸菜饺子，滑冰技术也相当不错。\n★ 父亲年轻时在北方生活过。",
+    "phuong_an": [
+     {
+      "noi_dung": "Đúng",
+      "la_dap_an_dung": true
+     },
+     {
+      "noi_dung": "Sai",
+      "la_dap_an_dung": false
+     }
+    ]
+   }
+  },
+  {
+   "part": 1,
+   "ex": false,
+   "q": {
+    "dang": "dung_sai",
+    "ky_nang": "nghe",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "noi_dung": "★ 他已经把申请表交上去了。",
+    "loi_nghe": "奖学金申请表我已经填好并请导师签完字了，还差一张成绩单原件没打印出来，明天上午一早再去系办公室交。\n★ 他已经把申请表交上去了。",
+    "phuong_an": [
+     {
+      "noi_dung": "Đúng",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "Sai",
+      "la_dap_an_dung": true
+     }
+    ]
+   }
+  },
+  {
+   "part": 1,
+   "ex": false,
+   "q": {
+    "dang": "dung_sai",
+    "ky_nang": "nghe",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "noi_dung": "★ 真诚道歉更容易获得原谅。",
+    "loi_nghe": "做错事以后如果一味地找客观理由替自己辩解，只会让对方更反感；坦诚地承认自己的失误并马上想办法补救，大多数人都会选择原谅。\n★ 真诚道歉更容易获得原谅。",
+    "phuong_an": [
+     {
+      "noi_dung": "Đúng",
+      "la_dap_an_dung": true
+     },
+     {
+      "noi_dung": "Sai",
+      "la_dap_an_dung": false
+     }
+    ]
+   }
+  },
+  {
+   "part": 1,
+   "ex": false,
+   "q": {
+    "dang": "dung_sai",
+    "ky_nang": "nghe",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "noi_dung": "★ 周六下午体育馆有篮球赛。",
+    "loi_nghe": "原定本周六下午在综合体育馆举行的校际篮球友谊赛，因场地临时铺设新木地板，改在室外三号灯光球场照常进行。\n★ 周六下午体育馆有篮球赛。",
+    "phuong_an": [
+     {
+      "noi_dung": "Đúng",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "Sai",
+      "la_dap_an_dung": true
+     }
+    ]
+   }
+  },
+  {
+   "part": 2,
+   "ex": true,
+   "q": {
+    "dang": "chon_mot",
+    "ky_nang": "nghe",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "loi_nghe": "女：该加油了，去机场的路上有加油站吗？\n男：有，你放心吧。\n问：男的主要是什么意思？",
+    "phuong_an": [
+     {
+      "noi_dung": "去机场",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "快到了",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "油是满的",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "有加油站",
+      "la_dap_an_dung": true
+     }
+    ]
+   }
+  },
+  {
+   "part": 2,
+   "ex": false,
+   "q": {
+    "dang": "chon_mot",
+    "ky_nang": "nghe",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "loi_nghe": "男：糟糕，车票上写的是“北京西站”发车，咱们现在来的是“北京南站”！\n女：还有五十分钟开车，赶紧坐地铁七号线过去，兴许还来得及！\n问：他们出了什么差错？",
+    "phuong_an": [
+     {
+      "noi_dung": "忘带身份证",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "错过检票时间",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "买错车站的票了",
+      "la_dap_an_dung": true
+     },
+     {
+      "noi_dung": "走错进站口",
+      "la_dap_an_dung": false
+     }
+    ]
+   }
+  },
+  {
+   "part": 2,
+   "ex": false,
+   "q": {
+    "dang": "chon_mot",
+    "ky_nang": "nghe",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "loi_nghe": "女：先生，这双棕色皮鞋是牛皮的，刚开始穿脚后跟可能会稍微有一点儿硬，穿两天就软和了。\n男：尺码倒是挺合脚的，那就拿这双吧。\n问：说话人现在在哪儿？",
+    "phuong_an": [
+     {
+      "noi_dung": "鞋店",
+      "la_dap_an_dung": true
+     },
+     {
+      "noi_dung": "裁缝铺",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "洗衣店",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "理发店",
+      "la_dap_an_dung": false
+     }
+    ]
+   }
+  },
+  {
+   "part": 2,
+   "ex": false,
+   "q": {
+    "dang": "chon_mot",
+    "ky_nang": "nghe",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "loi_nghe": "男：我想组织咱们社区的大学生志愿者周末给独居老人免费修家电、教用手机，您看行吗？\n女：这是大好事啊！居委会全力支持，场地和桌椅我们负责提供！\n问：女的是什么态度？",
+    "phuong_an": [
+     {
+      "noi_dung": "觉得太累",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "担心经费不够",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "反对在周末办",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "非常支持",
+      "la_dap_an_dung": true
+     }
+    ]
+   }
+  },
+  {
+   "part": 2,
+   "ex": false,
+   "q": {
+    "dang": "chon_mot",
+    "ky_nang": "nghe",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "loi_nghe": "女：请问参观海底世界门票多少钱？\n男：成人票一百二十元，六十岁以上老人和学生凭有效证件半价。我是大学生，这是我的学生证。\n问：说话人买票需要多少钱？",
+    "phuong_an": [
+     {
+      "noi_dung": "40元",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "60元",
+      "la_dap_an_dung": true
+     },
+     {
+      "noi_dung": "80元",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "120元",
+      "la_dap_an_dung": false
+     }
+    ]
+   }
+  },
+  {
+   "part": 2,
+   "ex": false,
+   "q": {
+    "dang": "chon_mot",
+    "ky_nang": "nghe",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "loi_nghe": "男：菜都炒好端上桌了，电饭煲里的米饭熟了吗？\n女：哎呀！我半小时前把米和水放进去，忘了按煮饭开关，连电源插头都没插！\n问：米饭为什么还没熟？",
+    "phuong_an": [
+     {
+      "noi_dung": "没加糖",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "煮糊了",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "忘插电源了",
+      "la_dap_an_dung": true
+     },
+     {
+      "noi_dung": "米放太少了",
+      "la_dap_an_dung": false
+     }
+    ]
+   }
+  },
+  {
+   "part": 2,
+   "ex": false,
+   "q": {
+    "dang": "chon_mot",
+    "ky_nang": "nghe",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "loi_nghe": "女：你这身深蓝色西装配白衬衫很精神，就是这条黑领带显得太沉闷了。\n男：那我换成你去年送我的那条浅蓝色斜纹领带怎么样？好多了！\n问：女的建议男的怎么做？",
+    "phuong_an": [
+     {
+      "noi_dung": "换一条浅色领带",
+      "la_dap_an_dung": true
+     },
+     {
+      "noi_dung": "脱掉西装外套",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "穿运动鞋去",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "剪短头发",
+      "la_dap_an_dung": false
+     }
+    ]
+   }
+  },
+  {
+   "part": 2,
+   "ex": false,
+   "q": {
+    "dang": "chon_mot",
+    "ky_nang": "nghe",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "loi_nghe": "男：妈，您炖的莲藕排骨汤真香，我在一楼电梯口都闻到香味了！\n女：快去洗手吧，排骨汤刚出锅，专门给你留了两大块排骨。\n问：说话人最可能是什么关系？",
+    "phuong_an": [
+     {
+      "noi_dung": "同事",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "母子",
+      "la_dap_an_dung": true
+     },
+     {
+      "noi_dung": "邻居",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "师生",
+      "la_dap_an_dung": false
+     }
+    ]
+   }
+  },
+  {
+   "part": 2,
+   "ex": false,
+   "q": {
+    "dang": "chon_mot",
+    "ky_nang": "nghe",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "loi_nghe": "女：王主任今天周二去深圳参加展会了，什么时候回北京？\n男：展会一共开两天，他后天晚上坐八点的飞机回来。\n问：王主任哪天回北京？",
+    "phuong_an": [
+     {
+      "noi_dung": "周一",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "周二",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "周三",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "周四",
+      "la_dap_an_dung": true
+     }
+    ]
+   }
+  },
+  {
+   "part": 2,
+   "ex": false,
+   "q": {
+    "dang": "chon_mot",
+    "ky_nang": "nghe",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "loi_nghe": "男：怎么急得满头汗？一会儿轮到你上台演示课件了。\n女：我的U盘插进会议室电脑怎么也读不出来，幸好我昨晚在邮箱里存了一份备份，赶紧下载下来！\n问：女的刚才遇到了什么突发情况？",
+    "phuong_an": [
+     {
+      "noi_dung": "打印机坏了",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "网络断了",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "U盘打不开了",
+      "la_dap_an_dung": true
+     },
+     {
+      "noi_dung": "电脑没电了",
+      "la_dap_an_dung": false
+     }
+    ]
+   }
+  },
+  {
+   "part": 2,
+   "ex": false,
+   "q": {
+    "dang": "chon_mot",
+    "ky_nang": "nghe",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "loi_nghe": "女：谈合作的时候你怎么总爱约在竹林茶舍？那儿离公司并不算近。\n男：那儿都是独立的小包间，窗外全是翠竹，特别安静，谈正事儿一点儿不受打扰。\n问：男的为什么喜欢去竹林茶舍？",
+    "phuong_an": [
+     {
+      "noi_dung": "环境安静幽雅",
+      "la_dap_an_dung": true
+     },
+     {
+      "noi_dung": "离地铁口最近",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "点心免费续加",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "有驻唱歌手",
+      "la_dap_an_dung": false
+     }
+    ]
+   }
+  },
+  {
+   "part": 2,
+   "ex": false,
+   "q": {
+    "dang": "chon_mot",
+    "ky_nang": "nghe",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "loi_nghe": "男：小朋友别怕，张开嘴巴说“啊”，让阿姨看看嗓子红不红，一点儿都不疼。\n女：大夫，他昨晚烧到三十八度八，今天早上退下来一点儿了。\n问：第一位说话人最可能是做什么的？",
+    "phuong_an": [
+     {
+      "noi_dung": "律师",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "儿科医生",
+      "la_dap_an_dung": true
+     },
+     {
+      "noi_dung": "小学老师",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "图书管理员",
+      "la_dap_an_dung": false
+     }
+    ]
+   }
+  },
+  {
+   "part": 2,
+   "ex": false,
+   "q": {
+    "dang": "chon_mot",
+    "ky_nang": "nghe",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "loi_nghe": "女：今晚七点半俱乐部有羽毛球双打练习，你来不来？\n男：今晚去不了了，我大学最好的哥们儿回西安工作，八点的火车，我去车站送送他。\n问：男的今晚要去做什么？",
+    "phuong_an": [
+     {
+      "noi_dung": "去听相声",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "在家看球赛",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "加班改方案",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "去火车站送朋友",
+      "la_dap_an_dung": true
+     }
+    ]
+   }
+  },
+  {
+   "part": 2,
+   "ex": false,
+   "q": {
+    "dang": "chon_mot",
+    "ky_nang": "nghe",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "loi_nghe": "男：这本外国童话的中文译本你读完了吗？翻译得怎么样？\n女：译者水平真高，一点儿生硬的翻译腔都没有，读起来就像原本就是用优美的中文写的一样。\n问：女的为什么称赞这本书的译本？",
+    "phuong_an": [
+     {
+      "noi_dung": "字迹太潦草",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "页数太少",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "翻译得自然流畅",
+      "la_dap_an_dung": true
+     },
+     {
+      "noi_dung": "价格太便宜",
+      "la_dap_an_dung": false
+     }
+    ]
+   }
+  },
+  {
+   "part": 2,
+   "ex": false,
+   "q": {
+    "dang": "chon_mot",
+    "ky_nang": "nghe",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "loi_nghe": "女：用高压锅炖牛肉真省时间，平时用普通砂锅得炖一个多小时才烂。\n男：是啊，用高压锅上汽以后只要压十五分钟就软烂入味了！\n问：用高压锅上汽后炖牛肉只要多久？",
+    "phuong_an": [
+     {
+      "noi_dung": "15分钟",
+      "la_dap_an_dung": true
+     },
+     {
+      "noi_dung": "25分钟",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "40分钟",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "1小时",
+      "la_dap_an_dung": false
+     }
+    ]
+   }
+  },
+  {
+   "part": 2,
+   "ex": false,
+   "q": {
+    "dang": "chon_mot",
+    "ky_nang": "nghe",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "loi_nghe": "男：老板，上个月在您这儿买的君子兰根部有点儿烂了，还能救活吗？\n女：您肯定浇水太勤了！回去把烂根剪掉换干土，放在通风的北阳台，十天浇一次水就能缓过来。\n问：老板建议男的怎么养护君子兰？",
+    "phuong_an": [
+     {
+      "noi_dung": "换个新花盆",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "少浇水多通风",
+      "la_dap_an_dung": true
+     },
+     {
+      "noi_dung": "放在卫生间里",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "每天喷营养液",
+      "la_dap_an_dung": false
+     }
+    ]
+   }
+  },
+  {
+   "part": 3,
+   "ex": true,
+   "q": {
+    "dang": "chon_mot",
+    "ky_nang": "nghe",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "loi_nghe": "男：把这个文件复印五份，一会儿拿到会议室发给大家。\n女：好的。会议是下午三点吗？\n男：改了。三点半，推迟了半个小时。\n女：好，六零二会议室没变吧？\n男：对，没变。\n问：会议几点开始？",
+    "phuong_an": [
+     {
+      "noi_dung": "两点",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "3点",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "3：30",
+      "la_dap_an_dung": true
+     },
+     {
+      "noi_dung": "6点",
+      "la_dap_an_dung": false
+     }
+    ]
+   }
+  },
+  {
+   "part": 3,
+   "ex": false,
+   "q": {
+    "dang": "chon_mot",
+    "ky_nang": "nghe",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "loi_nghe": "男：等一下！你看咱们推着的这个黑色行李箱，提手上怎么系着一根红丝带？\n女：咦？咱们的箱子没系红丝带呀！我看看行李牌……天哪，上面写着“刘建国”！\n男：两个箱子牌子和尺寸一模一样，刚才在转盘上拿错了！\n女：快推回行李提取处，那位刘先生肯定也在那儿着急找箱子呢！\n问：他们发现什么问题了？",
+    "phuong_an": [
+     {
+      "noi_dung": "行李箱锁打不开了",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "拿错了别人的行李箱",
+      "la_dap_an_dung": true
+     },
+     {
+      "noi_dung": "托运行李还没出来",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "箱子轮子摔断了",
+      "la_dap_an_dung": false
+     }
+    ]
+   }
+  },
+  {
+   "part": 3,
+   "ex": false,
+   "q": {
+    "dang": "chon_mot",
+    "ky_nang": "nghe",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "loi_nghe": "女：小赵，你们这次四个人去桂林玩了四天，人均花了五千多吗？\n男：哪儿用得了那么多！四月份正好是旅游淡季，往返特价机票才六百块。\n女：那加上住宿、吃饭和竹筏门票呢？\n男：全部加起来算了算账，平均每个人一共只花了一千五百块，玩得还特别尽兴！\n问：他们这次去桂林平均每人花了多少钱？",
+    "phuong_an": [
+     {
+      "noi_dung": "800元",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "1000元",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "1200元",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "1500元",
+      "la_dap_an_dung": true
+     }
+    ]
+   }
+  },
+  {
+   "part": 3,
+   "ex": false,
+   "q": {
+    "dang": "chon_mot",
+    "ky_nang": "nghe",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "loi_nghe": "男：嫂子，你们工作那么忙，怎么还同意给八岁的小宇养一只小金毛犬啊？\n女：小宇缠着我们要了半年，我们跟他签了一份“养狗协议”。\n男：什么协议呀？\n女：每天早晚遛狗、喂食、梳毛必须由他自己负责完成。养了两个月，这孩子不仅再也不睡懒觉了，做事也有责任心多了！\n问：父母同意给小宇养狗主要是为了什么？",
+    "phuong_an": [
+     {
+      "noi_dung": "培养孩子的责任心",
+      "la_dap_an_dung": true
+     },
+     {
+      "noi_dung": "减轻父母的家务负担",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "省下买狗粮的钱",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "参加宠物选美比赛",
+      "la_dap_an_dung": false
+     }
+    ]
+   }
+  },
+  {
+   "part": 3,
+   "ex": false,
+   "q": {
+    "dang": "chon_mot",
+    "ky_nang": "nghe",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "loi_nghe": "女：您好，我在超市买了两袋大米和一桶油，提着实在太重了，请问哪儿可以办免费送货上门？\n男：购物满两百元就可以在服务点登记三公里内免费送货。\n女：服务点在一楼出口那儿吗？\n男：不是，在三楼收银台出口右手边，您把小票交给穿绿马甲的工作人员填个地址就行。\n问：登记免费送货的地方在哪儿？",
+    "phuong_an": [
+     {
+      "noi_dung": "一楼服务台",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "二楼家电区",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "三楼收银台旁",
+      "la_dap_an_dung": true
+     },
+     {
+      "noi_dung": "地下一层停车场",
+      "la_dap_an_dung": false
+     }
+    ]
+   }
+  },
+  {
+   "part": 3,
+   "ex": false,
+   "q": {
+    "dang": "chon_mot",
+    "ky_nang": "nghe",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "loi_nghe": "男：新买的面包机怎么烤出来的吐司硬得像石头一样，是不是机器坏了？\n女：你放酵母粉的时候是跟盐混在一起放的吗？\n男：对啊，我把面粉、糖、盐和酵母一股脑儿全倒进去了。\n女：你也不看看说明书！说明书第一页就写着酵母绝对不能直接接触盐，要放在顶上的专用酵母盒里！\n问：男的烤面包失败的原因是什么？",
+    "phuong_an": [
+     {
+      "noi_dung": "忘记提前充电",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "没看产品说明书",
+      "la_dap_an_dung": true
+     },
+     {
+      "noi_dung": "买错了型号",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "家里的电压不稳",
+      "la_dap_an_dung": false
+     }
+    ]
+   }
+  },
+  {
+   "part": 3,
+   "ex": false,
+   "q": {
+    "dang": "chon_mot",
+    "ky_nang": "nghe",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "loi_nghe": "女：林老师，您这本散文集的封面设计出了两版样稿，发到您邮箱里了，您看更喜欢哪一版？\n男：我刚打开看了，水墨青山那一版非常淡雅，跟书里的江南题材很契合。\n女：我和美编也是这么想的！那我们就按这一版下印厂印刷了，预计下个月初就能上市。\n男：辛苦你们编辑部各位老师了！\n问：说话人最可能是什么关系？",
+    "phuong_an": [
+     {
+      "noi_dung": "同事",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "房东和租客",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "导游和游客",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "编辑和作者",
+      "la_dap_an_dung": true
+     }
+    ]
+   }
+  },
+  {
+   "part": 3,
+   "ex": false,
+   "q": {
+    "dang": "chon_mot",
+    "ky_nang": "nghe",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "loi_nghe": "男：张医生，最近我一喝冰水或者吃酸苹果，牙齿就酸疼得厉害，是有虫牙了吗？\n女：我刚仔细检查了，没有蛀牙，但是你牙齿外面的保护层磨损得比较明显。\n男：为什么会磨损呢？我每天刷牙可使劲儿了！\n女：问题就出在这儿！横着使大劲儿刷牙最伤牙釉质，回去换一把软毛牙刷，用温水顺着牙缝上下轻刷，两周就会好转。\n问：张医生建议男的怎么做？",
+    "phuong_an": [
+     {
+      "noi_dung": "改用温水和软毛牙刷",
+      "la_dap_an_dung": true
+     },
+     {
+      "noi_dung": "去医院拔掉智齿",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "换一种薄荷牙膏",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "每天刷五次牙",
+      "la_dap_an_dung": false
+     }
+    ]
+   }
+  },
+  {
+   "part": 3,
+   "ex": false,
+   "q": {
+    "dang": "chon_mot",
+    "ky_nang": "nghe",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "loi_nghe": "女：老王，咱们业余合唱团这周排练时间改了，群里通知你看了吗？\n男：这两天忙着带孙子没顾上看手机，原定周六上午不练了吗？\n女：指挥李老师周六要去外地当评委，所以提前到周五晚上七点到九点排练一次。\n男：好嘞，周五晚上我有空，准时到文化馆！\n问：合唱团这周改在什么时候排练？",
+    "phuong_an": [
+     {
+      "noi_dung": "周三上午",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "周四下午",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "周五晚上",
+      "la_dap_an_dung": true
+     },
+     {
+      "noi_dung": "周六上午",
+      "la_dap_an_dung": false
+     }
+    ]
+   }
+  },
+  {
+   "part": 3,
+   "ex": false,
+   "q": {
+    "dang": "chon_mot",
+    "ky_nang": "nghe",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "loi_nghe": "男：听说你辞掉了深圳高薪的互联网工作，回武汉发展了？挺可惜的呀。\n女：在深圳收入确实高一些，但爸妈年纪大了，去年我爸住院我都没能及时赶回去，心里特别内疚。\n男：现在在武汉找的工作还满意吗？\n女：挺好的，在一家软件园做项目经理，最重要的是周末开车半小时就能回家陪爸妈吃顿热乎饭。\n问：女的回武汉工作最主要的原因是什么？",
+    "phuong_an": [
+     {
+      "noi_dung": "工资翻了一倍",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "离父母家近方便照顾老人",
+      "la_dap_an_dung": true
+     },
+     {
+      "noi_dung": "不用再出差了",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "公司免费提供住房",
+      "la_dap_an_dung": false
+     }
+    ]
+   }
+  },
+  {
+   "part": 3,
+   "ex": false,
+   "q": {
+    "dang": "chon_mot",
+    "ky_nang": "nghe",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "loi_nghe": "女：陈总，研发部新调配的低糖乌龙茶饮料样品已经出来了，我们下个月直接大规模投产吗？\n男：新口味市场反应还不好说，一下子投产几十万箱风险太大。\n女：那您的意思是？\n男：先在大学城和写字楼周边的二十家便利店试销两周，收集年轻顾客的真实口味反馈，微调后再正式全面上市。\n问：陈总决定下一步先怎么做？",
+    "phuong_an": [
+     {
+      "noi_dung": "先做小范围调查测试",
+      "la_dap_an_dung": true
+     },
+     {
+      "noi_dung": "立刻全国铺货上市",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "降低一半产品价格",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "更换全部包装颜色",
+      "la_dap_an_dung": false
+     }
+    ]
+   }
+  },
+  {
+   "part": 3,
+   "group": {
+    "dang": "ngu_lieu",
+    "ky_nang": "nghe",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "loi_nghe": "许多人买回新鲜绿叶蔬菜后，习惯连着超市的塑料袋直接塞进冰箱，结果没过三天菜叶就腐烂发黄了。正确的保存方法是：先把菜叶表面的水珠晾干，用干爽的厨房纸巾包好，再装进保鲜袋里放进冰箱冷藏。厨房纸巾能吸收蔬菜呼吸产生的水汽，让绿叶菜保持一个星期依然翠绿新鲜。"
+   },
+   "children": [
+    [
+     {
+      "dang": "chon_mot",
+      "loi_nghe": "绿叶菜直接连塑料袋放冰箱为什么容易烂？",
+      "phuong_an": [
+       {
+        "noi_dung": "温度太高",
+        "la_dap_an_dung": false
+       },
+       {
+        "noi_dung": "水汽聚集在袋子里",
+        "la_dap_an_dung": true
+       },
+       {
+        "noi_dung": "冰箱里没有光",
+        "la_dap_an_dung": false
+       },
+       {
+        "noi_dung": "塑料袋太薄",
+        "la_dap_an_dung": false
+       }
+      ]
+     },
+     false
+    ],
+    [
+     {
+      "dang": "chon_mot",
+      "loi_nghe": "包一层厨房纸巾有什么作用？",
+      "phuong_an": [
+       {
+        "noi_dung": "阻挡冷气",
+        "la_dap_an_dung": false
+       },
+       {
+        "noi_dung": "增加蔬菜甜度",
+        "la_dap_an_dung": false
+       },
+       {
+        "noi_dung": "吸收多余水汽",
+        "la_dap_an_dung": true
+       },
+       {
+        "noi_dung": "防止串味",
+        "la_dap_an_dung": false
+       }
+      ]
+     },
+     false
+    ]
+   ]
+  },
+  {
+   "part": 3,
+   "group": {
+    "dang": "ngu_lieu",
+    "ky_nang": "nghe",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "loi_nghe": "著名作家巴金先生晚年谈起自己的写作经验时曾说，他并没有什么高深的技巧，最大的秘诀就是“把心交给读者”——写自己真正熟悉的生活，说自己心里最真实的话。如果一篇文章连作者自己都感动不了，只是堆砌华丽的辞藻，那就绝对不可能打动读者的心。"
+   },
+   "children": [
+    [
+     {
+      "dang": "chon_mot",
+      "loi_nghe": "巴金先生认为写作最大的秘诀是什么？",
+      "phuong_an": [
+       {
+        "noi_dung": "真实真诚",
+        "la_dap_an_dung": true
+       },
+       {
+        "noi_dung": "多用优美成语",
+        "la_dap_an_dung": false
+       },
+       {
+        "noi_dung": "每天写五千字",
+        "la_dap_an_dung": false
+       },
+       {
+        "noi_dung": "模仿外国名著",
+        "la_dap_an_dung": false
+       }
+      ]
+     },
+     false
+    ],
+    [
+     {
+      "dang": "chon_mot",
+      "loi_nghe": "什么样的文章打动不了读者？",
+      "phuong_an": [
+       {
+        "noi_dung": "描写普通生活的",
+        "la_dap_an_dung": false
+       },
+       {
+        "noi_dung": "篇幅比较短小的",
+        "la_dap_an_dung": false
+       },
+       {
+        "noi_dung": "用词朴素自然的",
+        "la_dap_an_dung": false
+       },
+       {
+        "noi_dung": "只堆砌辞藻没有真情的",
+        "la_dap_an_dung": true
+       }
+      ]
+     },
+     false
+    ]
+   ]
+  },
+  {
+   "part": 3,
+   "group": {
+    "dang": "ngu_lieu",
+    "ky_nang": "nghe",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "loi_nghe": "近年来，不少城市公园铺设了红色的塑胶健步跑道，跑起来脚感柔软有弹性，深受跑步爱好者的喜爱。体育专家提醒，虽然塑胶跑道能缓冲一部分冲击力，但长期总是沿着逆时针一个方向绕圈跑，左右两条腿受力的大小并不均衡，建议每隔几天就换顺时针方向跑一跑，让双腿膝盖受力更均匀。"
+   },
+   "children": [
+    [
+     {
+      "dang": "chon_mot",
+      "loi_nghe": "人们为什么喜欢在红色塑胶跑道上跑步？",
+      "phuong_an": [
+       {
+        "noi_dung": "拍照更好看",
+        "la_dap_an_dung": false
+       },
+       {
+        "noi_dung": "晚上会发光",
+        "la_dap_an_dung": false
+       },
+       {
+        "noi_dung": "柔软有弹性可缓冲冲击",
+        "la_dap_an_dung": true
+       },
+       {
+        "noi_dung": "不会弄脏鞋底",
+        "la_dap_an_dung": false
+       }
+      ]
+     },
+     false
+    ],
+    [
+     {
+      "dang": "chon_mot",
+      "loi_nghe": "专家建议在跑道绕圈跑时应该注意什么？",
+      "phuong_an": [
+       {
+        "noi_dung": "越跑越快",
+        "la_dap_an_dung": false
+       },
+       {
+        "noi_dung": "定期变换顺逆时针方向",
+        "la_dap_an_dung": true
+       },
+       {
+        "noi_dung": "踮着脚尖跑",
+        "la_dap_an_dung": false
+       },
+       {
+        "noi_dung": "每次至少跑十公里",
+        "la_dap_an_dung": false
+       }
+      ]
+     },
+     false
+    ]
+   ]
+  },
+  {
+   "part": 3,
+   "group": {
+    "dang": "ngu_lieu",
+    "ky_nang": "nghe",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "loi_nghe": "各位游客朋友，现在出现在我们右手边的这片古建筑群，就是有着八百多年历史的宏村。大家看村口那汪半月形的水塘叫做“月沼”，古人巧妙地引山泉水入村，让清澈的溪水绕着每家每户门前流过，既解决了防火和日常洗刷用水，又能调节村里的空气温度，被称为中国古代乡村建筑的杰作。"
+   },
+   "children": [
+    [
+     {
+      "dang": "chon_mot",
+      "loi_nghe": "古人引山泉水进村的作用不包括哪项？",
+      "phuong_an": [
+       {
+        "noi_dung": "日常洗刷用水",
+        "la_dap_an_dung": false
+       },
+       {
+        "noi_dung": "预防火灾",
+        "la_dap_an_dung": false
+       },
+       {
+        "noi_dung": "调节气温",
+        "la_dap_an_dung": false
+       },
+       {
+        "noi_dung": "水力发电",
+        "la_dap_an_dung": true
+       }
+      ]
+     },
+     false
+    ],
+    [
+     {
+      "dang": "chon_mot",
+      "loi_nghe": "这段话最可能是谁说的？",
+      "phuong_an": [
+       {
+        "noi_dung": "景区导游",
+        "la_dap_an_dung": true
+       },
+       {
+        "noi_dung": "建筑工人",
+        "la_dap_an_dung": false
+       },
+       {
+        "noi_dung": "村委会会计",
+        "la_dap_an_dung": false
+       },
+       {
+        "noi_dung": "天气预报员",
+        "la_dap_an_dung": false
+       }
+      ]
+     },
+     false
+    ]
+   ]
+  },
+  {
+   "part": 3,
+   "group": {
+    "dang": "ngu_lieu",
+    "ky_nang": "nghe",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "loi_nghe": "在面试结束前，面试官通常会问应聘者一句：“你还有什么问题想问我们吗？”不少求职者怕说错话，连忙回答“没有了”，其实这等于白白浪费了一个展示自己的好机会。如果你能围绕岗位的核心工作内容、团队未来的业务重点或者新员工培养机制提出一两个有深度的问题，会让面试官觉得你真正做足了功课，对这份工作充满诚意。"
+   },
+   "children": [
+    [
+     {
+      "dang": "chon_mot",
+      "loi_nghe": "面试官最后提问时，回答“没有了”会怎样？",
+      "phuong_an": [
+       {
+        "noi_dung": "显得非常谦虚",
+        "la_dap_an_dung": false
+       },
+       {
+        "noi_dung": "错过展示诚意的好机会",
+        "la_dap_an_dung": true
+       },
+       {
+        "noi_dung": "能更快拿到通知",
+        "la_dap_an_dung": false
+       },
+       {
+        "noi_dung": "让面试官更满意",
+        "la_dap_an_dung": false
+       }
+      ]
+     },
+     false
+    ],
+    [
+     {
+      "dang": "chon_mot",
+      "loi_nghe": "说话人建议求职者提哪类问题？",
+      "phuong_an": [
+       {
+        "noi_dung": "每天几点下班",
+        "la_dap_an_dung": false
+       },
+       {
+        "noi_dung": "食堂饭菜好不好吃",
+        "la_dap_an_dung": false
+       },
+       {
+        "noi_dung": "岗位重点及培养机制",
+        "la_dap_an_dung": true
+       },
+       {
+        "noi_dung": "年终奖发多少钱",
+        "la_dap_an_dung": false
+       }
+      ]
+     },
+     false
+    ]
+   ]
+  },
+  {
+   "part": 4,
+   "group": {
+    "dang": "ngu_lieu",
+    "ky_nang": "doc",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "phuong_an": [
+     {
+      "noi_dung": "精彩",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "耐心",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "误会",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "坚持",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "后悔",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "节约",
+      "la_dap_an_dung": false
+     }
+    ]
+   },
+   "children": [
+    [
+     {
+      "dang": "chon_bo_chung",
+      "noi_dung": "她每天都（　）走路上下班，所以身体一直很不错。",
+      "dap_an_thu_tu": 4
+     },
+     true
+    ],
+    [
+     {
+      "dang": "chon_bo_chung",
+      "noi_dung": "随手关灯、双面用纸，看似微不足道的小习惯却能为社会（　）大量资源。",
+      "dap_an_thu_tu": 6
+     },
+     false
+    ],
+    [
+     {
+      "dang": "chon_bo_chung",
+      "noi_dung": "面对哭闹不止的小朋友，幼儿园的林老师总是极有（　）地轻声安抚。",
+      "dap_an_thu_tu": 2
+     },
+     false
+    ],
+    [
+     {
+      "dang": "chon_bo_chung",
+      "noi_dung": "由于双方事先没有沟通清楚时间，结果造成了一场不必要的（　）。",
+      "dap_an_thu_tu": 3
+     },
+     false
+    ],
+    [
+     {
+      "dang": "chon_bo_chung",
+      "noi_dung": "这本人物传记写得十分（　），我一个周末就一口气读完了。",
+      "dap_an_thu_tu": 1
+     },
+     false
+    ],
+    [
+     {
+      "dang": "chon_bo_chung",
+      "noi_dung": "机会摆在面前的时候一定要勇敢抓住，别等错过了才拍着大腿（　）。",
+      "dap_an_thu_tu": 5
+     },
+     false
+    ]
+   ]
+  },
+  {
+   "part": 4,
+   "group": {
+    "dang": "ngu_lieu",
+    "ky_nang": "doc",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "phuong_an": [
+     {
+      "noi_dung": "肯定",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "顺便",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "温度",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "严格",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "推迟",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "值得",
+      "la_dap_an_dung": false
+     }
+    ]
+   },
+   "children": [
+    [
+     {
+      "dang": "chon_bo_chung",
+      "noi_dung": "A：今天真冷啊，好像白天最高（　）才2℃。\nB：刚才电视里说明天更冷。",
+      "dap_an_thu_tu": 3
+     },
+     true
+    ],
+    [
+     {
+      "dang": "chon_bo_chung",
+      "noi_dung": "A：敦煌莫高窟离这儿挺远的，你觉得专程去一趟（　）吗？\nB：太值了！里面的壁画艺术震撼极了，一生至少要去一次。",
+      "dap_an_thu_tu": 6
+     },
+     false
+    ],
+    [
+     {
+      "dang": "chon_bo_chung",
+      "noi_dung": "A：明天的春季运动会还照常开吗？\nB：气象台报明天有中雨，学校刚通知（　）到下周五举行。",
+      "dap_an_thu_tu": 5
+     },
+     false
+    ],
+    [
+     {
+      "dang": "chon_bo_chung",
+      "noi_dung": "A：你看小刘最近每天练琴到十点，这次考级能过吧？\nB：他基本功那么扎实，通过（　）没问题！",
+      "dap_an_thu_tu": 1
+     },
+     false
+    ],
+    [
+     {
+      "dang": "chon_bo_chung",
+      "noi_dung": "A：我去一趟财务室交报销单。\nB：那麻烦你（　）帮我领一盒回形针回来吧，谢谢啦！",
+      "dap_an_thu_tu": 2
+     },
+     false
+    ],
+    [
+     {
+      "dang": "chon_bo_chung",
+      "noi_dung": "A：你们食品厂进车间要求很（　）吧？\nB：是的，必须换无菌工作服、戴帽子口罩并经过风淋消毒才能进去。",
+      "dap_an_thu_tu": 4
+     },
+     false
+    ]
+   ]
+  },
+  {
+   "part": 5,
+   "ex": true,
+   "q": {
+    "dang": "sap_xep",
+    "ky_nang": "doc",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "noi_dung": "Sắp xếp A, B, C thành đoạn văn đúng (gõ thứ tự, ví dụ BAC).",
+    "phuong_an": [
+     {
+      "noi_dung": "A 可是今天起晚了"
+     },
+     {
+      "noi_dung": "B 平时我骑自行车上下班"
+     },
+     {
+      "noi_dung": "C 所以就打车来公司"
+     }
+    ],
+    "dap_an_chap_nhan": [
+     "BAC",
+     "平时我骑自行车上下班可是今天起晚了所以就打车来公司"
+    ]
+   }
+  },
+  {
+   "part": 5,
+   "ex": false,
+   "q": {
+    "dang": "sap_xep",
+    "ky_nang": "doc",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "noi_dung": "Sắp xếp A, B, C thành đoạn văn đúng (gõ thứ tự, ví dụ BAC).",
+    "phuong_an": [
+     {
+      "noi_dung": "A 睡眠不足不仅让人白天注意力难以集中"
+     },
+     {
+      "noi_dung": "B 长期下去还会降低身体的免疫力"
+     },
+     {
+      "noi_dung": "C 甚至引发多种健康问题"
+     }
+    ],
+    "dap_an_chap_nhan": [
+     "ACB",
+     "睡眠不足不仅让人白天注意力难以集中甚至引发多种健康问题长期下去还会降低身体的免疫力"
+    ]
+   }
+  },
+  {
+   "part": 5,
+   "ex": false,
+   "q": {
+    "dang": "sap_xep",
+    "ky_nang": "doc",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "noi_dung": "Sắp xếp A, B, C thành đoạn văn đúng (gõ thứ tự, ví dụ BAC).",
+    "phuong_an": [
+     {
+      "noi_dung": "A 但是只要用心观察身边的点滴温暖"
+     },
+     {
+      "noi_dung": "B 平淡的日常生活看似每天都在重复"
+     },
+     {
+      "noi_dung": "C 就能发现许多值得记录的美好瞬间"
+     }
+    ],
+    "dap_an_chap_nhan": [
+     "BAC",
+     "平淡的日常生活看似每天都在重复但是只要用心观察身边的点滴温暖就能发现许多值得记录的美好瞬间"
+    ]
+   }
+  },
+  {
+   "part": 5,
+   "ex": false,
+   "q": {
+    "dang": "sap_xep",
+    "ky_nang": "doc",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "noi_dung": "Sắp xếp A, B, C thành đoạn văn đúng (gõ thứ tự, ví dụ BAC).",
+    "phuong_an": [
+     {
+      "noi_dung": "A 从而大大提高了通关效率"
+     },
+     {
+      "noi_dung": "B 旅客只需刷护照和按指纹十秒钟就能过关"
+     },
+     {
+      "noi_dung": "C 机场今年启用了全新的自助边检通道"
+     }
+    ],
+    "dap_an_chap_nhan": [
+     "CBA",
+     "机场今年启用了全新的自助边检通道旅客只需刷护照和按指纹十秒钟就能过关从而大大提高了通关效率"
+    ]
+   }
+  },
+  {
+   "part": 5,
+   "ex": false,
+   "q": {
+    "dang": "sap_xep",
+    "ky_nang": "doc",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "noi_dung": "Sắp xếp A, B, C thành đoạn văn đúng (gõ thứ tự, ví dụ BAC).",
+    "phuong_an": [
+     {
+      "noi_dung": "A 茶文化在中国有着数千年的悠久历史"
+     },
+     {
+      "noi_dung": "B 它不仅是一种解渴的健康饮品"
+     },
+     {
+      "noi_dung": "C 更蕴含着宁静谦和的人生态度"
+     }
+    ],
+    "dap_an_chap_nhan": [
+     "ABC",
+     "茶文化在中国有着数千年的悠久历史它不仅是一种解渴的健康饮品更蕴含着宁静谦和的人生态度"
+    ]
+   }
+  },
+  {
+   "part": 5,
+   "ex": false,
+   "q": {
+    "dang": "sap_xep",
+    "ky_nang": "doc",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "noi_dung": "Sắp xếp A, B, C thành đoạn văn đúng (gõ thứ tự, ví dụ BAC).",
+    "phuong_an": [
+     {
+      "noi_dung": "A 才能写出真正打动人心的好作品"
+     },
+     {
+      "noi_dung": "B 作家不能整天关在书房里凭空想象"
+     },
+     {
+      "noi_dung": "C 只有深入到普通人的真实生活中去体验"
+     }
+    ],
+    "dap_an_chap_nhan": [
+     "BCA",
+     "作家不能整天关在书房里凭空想象只有深入到普通人的真实生活中去体验才能写出真正打动人心的好作品"
+    ]
+   }
+  },
+  {
+   "part": 5,
+   "ex": false,
+   "q": {
+    "dang": "sap_xep",
+    "ky_nang": "doc",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "noi_dung": "Sắp xếp A, B, C thành đoạn văn đúng (gõ thứ tự, ví dụ BAC).",
+    "phuong_an": [
+     {
+      "noi_dung": "A 没想到发到网上后点击量超过了百万"
+     },
+     {
+      "noi_dung": "B 许多网友留言说被老人的乐观精神深深打动"
+     },
+     {
+      "noi_dung": "C 他原本只是随手拍了一段爷爷拉二胡的视频"
+     }
+    ],
+    "dap_an_chap_nhan": [
+     "CAB",
+     "他原本只是随手拍了一段爷爷拉二胡的视频没想到发到网上后点击量超过了百万许多网友留言说被老人的乐观精神深深打动"
+    ]
+   }
+  },
+  {
+   "part": 5,
+   "ex": false,
+   "q": {
+    "dang": "sap_xep",
+    "ky_nang": "doc",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "noi_dung": "Sắp xếp A, B, C thành đoạn văn đúng (gõ thứ tự, ví dụ BAC).",
+    "phuong_an": [
+     {
+      "noi_dung": "A 给别人提意见的时候要注意方式方法"
+     },
+     {
+      "noi_dung": "B 如果当着大家的面直接指责"
+     },
+     {
+      "noi_dung": "C 往往会让对方因丢面子而难以接受"
+     }
+    ],
+    "dap_an_chap_nhan": [
+     "ACB",
+     "给别人提意见的时候要注意方式方法往往会让对方因丢面子而难以接受如果当着大家的面直接指责"
+    ]
+   }
+  },
+  {
+   "part": 5,
+   "ex": false,
+   "q": {
+    "dang": "sap_xep",
+    "ky_nang": "doc",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "noi_dung": "Sắp xếp A, B, C thành đoạn văn đúng (gõ thứ tự, ví dụ BAC).",
+    "phuong_an": [
+     {
+      "noi_dung": "A 因此深受年轻父母的信赖"
+     },
+     {
+      "noi_dung": "B 这个品牌的婴儿护肤品成分天然温和"
+     },
+     {
+      "noi_dung": "C 不含任何香精和刺激性化学物质"
+     }
+    ],
+    "dap_an_chap_nhan": [
+     "BAC",
+     "这个品牌的婴儿护肤品成分天然温和因此深受年轻父母的信赖不含任何香精和刺激性化学物质"
+    ]
+   }
+  },
+  {
+   "part": 5,
+   "ex": false,
+   "q": {
+    "dang": "sap_xep",
+    "ky_nang": "doc",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "noi_dung": "Sắp xếp A, B, C thành đoạn văn đúng (gõ thứ tự, ví dụ BAC).",
+    "phuong_an": [
+     {
+      "noi_dung": "A 结果等赶到考场时已经停止入场了"
+     },
+     {
+      "noi_dung": "B 出门前又因为找准考证耽误了二十分钟"
+     },
+     {
+      "noi_dung": "C 他把考试地点记成了另一所分校"
+     }
+    ],
+    "dap_an_chap_nhan": [
+     "CBA",
+     "他把考试地点记成了另一所分校出门前又因为找准考证耽误了二十分钟结果等赶到考场时已经停止入场了"
+    ]
+   }
+  },
+  {
+   "part": 5,
+   "ex": false,
+   "q": {
+    "dang": "sap_xep",
+    "ky_nang": "doc",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "noi_dung": "Sắp xếp A, B, C thành đoạn văn đúng (gõ thứ tự, ví dụ BAC).",
+    "phuong_an": [
+     {
+      "noi_dung": "A 学会倾听是人际沟通中最重要的能力之一"
+     },
+     {
+      "noi_dung": "B 认真听完别人的表达再发表自己的看法"
+     },
+     {
+      "noi_dung": "C 既体现了修养也能避免偏见"
+     }
+    ],
+    "dap_an_chap_nhan": [
+     "ABC",
+     "学会倾听是人际沟通中最重要的能力之一认真听完别人的表达再发表自己的看法既体现了修养也能避免偏见"
+    ]
+   }
+  },
+  {
+   "part": 6,
+   "ex": true,
+   "q": {
+    "dang": "chon_mot",
+    "ky_nang": "doc",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "noi_dung": "她很活泼，说话很有趣，总能给我们带来快乐，我们都很喜欢和她在一起。\n★ 她是个什么样的人？",
+    "phuong_an": [
+     {
+      "noi_dung": "幽默",
+      "la_dap_an_dung": true
+     },
+     {
+      "noi_dung": "马虎",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "骄傲",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "害羞",
+      "la_dap_an_dung": false
+     }
+    ]
+   }
+  },
+  {
+   "part": 6,
+   "ex": false,
+   "q": {
+    "dang": "chon_mot",
+    "ky_nang": "doc",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "noi_dung": "菠萝酸甜多汁，但如果削完皮直接大口吃，很多人会觉得舌头发麻甚至刺痛。这是因为菠萝里含有一种特殊的蛋白酶，会刺激口腔黏膜。吃之前只要把切好的菠萝块放进淡盐水里浸泡十分钟，不仅能破坏这种酶避免扎嘴，吃起来还会显得更加清甜。\n★ 吃菠萝前怎样处理就不容易扎嘴了？",
+    "phuong_an": [
+     {
+      "noi_dung": "用温盐水浸泡十分钟",
+      "la_dap_an_dung": true
+     },
+     {
+      "noi_dung": "放进冰箱冷冻半小时",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "削掉厚厚一层果肉",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "撒上一层白糖",
+      "la_dap_an_dung": false
+     }
+    ]
+   }
+  },
+  {
+   "part": 6,
+   "ex": false,
+   "q": {
+    "dang": "chon_mot",
+    "ky_nang": "doc",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "noi_dung": "近年来，连接北京与上海、广州等大城市的“动卧列车”越来越受商务旅客和家庭游客的欢迎。晚上八九点钟上车，在干净舒适的卧铺车厢里美美睡上一觉，第二天早上七点多就到达目的地市中心了，既不耽误白天办事游玩，还省下了一晚酒店住宿费。\n★ “动卧列车”受欢迎的主要原因是：",
+    "phuong_an": [
+     {
+      "noi_dung": "票价降了一半",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "只能在车上睡觉",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "夕发朝至省时间又省住宿费",
+      "la_dap_an_dung": true
+     },
+     {
+      "noi_dung": "车速比飞机还快",
+      "la_dap_an_dung": false
+     }
+    ]
+   }
+  },
+  {
+   "part": 6,
+   "ex": false,
+   "q": {
+    "dang": "chon_mot",
+    "ky_nang": "doc",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "noi_dung": "走进这家年轻的设计公司，你会发现每个工位旁边都摆着绿植，休息区配有免费现磨咖啡机和乒乓球台，每天下午三点还会响起十分钟的轻音乐提醒大家起身做颈椎操。负责人认为，只有员工身心舒畅了，才能源源不断地涌现出好创意。\n★ 这家公司的布置和安排主要是为了：",
+    "phuong_an": [
+     {
+      "noi_dung": "批评员工效率低",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "营造轻松健康的办公氛围",
+      "la_dap_an_dung": true
+     },
+     {
+      "noi_dung": "减少公司电费开支",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "要求员工自带电脑",
+      "la_dap_an_dung": false
+     }
+    ]
+   }
+  },
+  {
+   "part": 6,
+   "ex": false,
+   "q": {
+    "dang": "chon_mot",
+    "ky_nang": "doc",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "noi_dung": "一个人靠不靠谱，其实不需要看他在大事上说了多么动听的誓言，从日常生活的小细节就能看出来：约好九点见面绝不九点半才到，借了别人的书按时完好地归还，答应帮忙的事办成了有交代、办不成也及时说明原因。件件有着落，事事有回音，就是最让人放心的品质。\n★ 什么样的人最让人觉得靠谱放心？",
+    "phuong_an": [
+     {
+      "noi_dung": "不借钱给朋友",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "从不跟人争论",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "帮别人做所有决定",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "守时且答应的事一定兑现",
+      "la_dap_an_dung": true
+     }
+    ]
+   }
+  },
+  {
+   "part": 6,
+   "ex": false,
+   "q": {
+    "dang": "chon_mot",
+    "ky_nang": "doc",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "noi_dung": "本羽毛球馆实行分时段收费：工作日上午九点至下午五点为闲时，每小时四十元；工作日晚上五点至十点及周末全天为忙时，每小时八十元。退休的李大爷每周三上午十点约老伙计来打一个小时球。\n★ 李大爷周三上午打一小时球需要多少钱？",
+    "phuong_an": [
+     {
+      "noi_dung": "30元",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "40元",
+      "la_dap_an_dung": true
+     },
+     {
+      "noi_dung": "50元",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "60元",
+      "la_dap_an_dung": false
+     }
+    ]
+   }
+  },
+  {
+   "part": 6,
+   "ex": false,
+   "q": {
+    "dang": "chon_mot",
+    "ky_nang": "doc",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "noi_dung": "真正经典的文学名著是经得起一生反复阅读的。十几岁少年时读《西游记》，看的只是孙悟空打妖怪的热闹神奇；等到三十多岁经历过工作和生活的磨炼之后再翻开重读，却能从取经路上的九九八十一难里读出坚持、团队与成长的深意。\n★ 为什么经典名著值得反复重读？",
+    "phuong_an": [
+     {
+      "noi_dung": "字太小看不清",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "故事结局太悲伤",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "重读时能读出不同的人生体会",
+      "la_dap_an_dung": true
+     },
+     {
+      "noi_dung": "市面上买不到新书了",
+      "la_dap_an_dung": false
+     }
+    ]
+   }
+  },
+  {
+   "part": 6,
+   "ex": false,
+   "q": {
+    "dang": "chon_mot",
+    "ky_nang": "doc",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "noi_dung": "以前拆完一个网购快递，往往会留下一大团缠绕几十圈的塑料胶带和泡沫填充物，很难自然降解。如今越来越多电商平台开始使用免胶带的拉链纸箱和可降解的玉米淀粉缓冲袋，消费者轻轻一撕就能打开纸箱，既方便又大大减少了白色垃圾污染。\n★ 电商平台推广拉链纸箱和玉米淀粉袋是为了：",
+    "phuong_an": [
+     {
+      "noi_dung": "减少白色塑料污染",
+      "la_dap_an_dung": true
+     },
+     {
+      "noi_dung": "降低快递运输重量",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "让包装盒更漂亮",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "提高胶带黏性",
+      "la_dap_an_dung": false
+     }
+    ]
+   }
+  },
+  {
+   "part": 6,
+   "ex": false,
+   "q": {
+    "dang": "chon_mot",
+    "ky_nang": "doc",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "noi_dung": "夏天长跑或者踢完球满头大汗的时候，千万不要图一时痛快猛灌一整瓶冰镇饮料，否则冰水刺激胃肠道很容易引起肚子疼，还会加重心脏负担。科学的方法是先慢走几分钟平复呼吸，小口、分次地喝一些温开水或淡运动饮料来补充流失的水分。\n★ 夏天剧烈运动大汗后应该怎么补水？",
+    "phuong_an": [
+     {
+      "noi_dung": "马上喝两大碗浓肉汤",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "立刻躺下睡两个小时",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "吃两根冰棍降温",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "先小口补充温淡盐水或温水",
+      "la_dap_an_dung": true
+     }
+    ]
+   }
+  },
+  {
+   "part": 6,
+   "ex": false,
+   "q": {
+    "dang": "chon_mot",
+    "ky_nang": "doc",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "noi_dung": "在这次历史文化街区的保护改造中，政府没有采取大拆大建的做法，而是在完整保留青砖灰瓦老院落外貌的基础上，为老房子重新铺设了地下排污管道、天然气和保温层。老街坊们高兴地说：“既留住了小时候的老胡同味道，屋里过冬做饭也跟新楼房一样方便了！”\n★ 这次老街区改造取得了什么效果？",
+    "phuong_an": [
+     {
+      "noi_dung": "老街已经被拆光了",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "既保留了古建筑风貌又改善了居住条件",
+      "la_dap_an_dung": true
+     },
+     {
+      "noi_dung": "居民全部搬走了",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "改造成了现代高楼",
+      "la_dap_an_dung": false
+     }
+    ]
+   }
+  },
+  {
+   "part": 6,
+   "ex": false,
+   "q": {
+    "dang": "chon_mot",
+    "ky_nang": "doc",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "noi_dung": "有些家长陪孩子写作业时，眼睛一直盯着孩子的笔尖，孩子刚写错一个数就立刻大声指出来擦掉。时间长了，孩子反而养成了依赖心理，离开家长就不会自己检查了。聪明父母会先让孩子独立做完，再引导他自己找出错在哪里、为什么错，培养他独立思考的习惯。\n★ 聪明的父母怎样辅导孩子写作业？",
+    "phuong_an": [
+     {
+      "noi_dung": "不让孩子看课外书",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "替孩子检查每一道题",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "允许孩子犯错并引导他自己独立思考",
+      "la_dap_an_dung": true
+     },
+     {
+      "noi_dung": "每天布置三套额外试卷",
+      "la_dap_an_dung": false
+     }
+    ]
+   }
+  },
+  {
+   "part": 6,
+   "ex": false,
+   "q": {
+    "dang": "chon_mot",
+    "ky_nang": "doc",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "noi_dung": "现在国内许多热门博物馆和景区都实行“实名制分时段预约”，节假日往往提前三到五天名额就约满了。因此出门旅游前花半小时做一点儿攻略，查清目的地的天气变化、重点场馆的闭馆日以及预约放票时间，能避免白跑一趟吃“闭门羹”。\n★ 出门旅游前做攻略重点要查清什么？",
+    "phuong_an": [
+     {
+      "noi_dung": "提前查清当地天气和场馆预约规定",
+      "la_dap_an_dung": true
+     },
+     {
+      "noi_dung": "带十双不同的鞋子",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "只去网红餐厅打卡",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "到了当地再临时找住处",
+      "la_dap_an_dung": false
+     }
+    ]
+   }
+  },
+  {
+   "part": 6,
+   "ex": false,
+   "q": {
+    "dang": "chon_mot",
+    "ky_nang": "doc",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "noi_dung": "二胡是中国著名的传统拉弦乐器，别看它只有两根琴弦和一个小小的琴筒，表现力却极其丰富。著名二胡曲《赛马》能拉出万马奔腾的热烈欢快，而《二泉映月》又能诉说出深沉动人的沧桑情感，常常让听众听得热泪盈眶。\n★ 这段话主要介绍了哪种乐器？",
+    "phuong_an": [
+     {
+      "noi_dung": "竹笛",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "古筝",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "小提琴",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "二胡",
+      "la_dap_an_dung": true
+     }
+    ]
+   }
+  },
+  {
+   "part": 6,
+   "ex": false,
+   "q": {
+    "dang": "chon_mot",
+    "ky_nang": "doc",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "noi_dung": "巷子深处那家开了三十年的蟹黄汤包店，每天只卖上午三百笼，卖完就收摊。有人劝老板雇十几个工人用机器包，一天能卖两千笼赚大钱。老板摇摇头说：“机器压出来的皮没有手工擀的筋道，每天三百笼是我和老伴儿盯得过来的极限，味道变差了就对不起老街坊了。”\n★ 老板为什么坚持每天只卖三百笼汤包？",
+    "phuong_an": [
+     {
+      "noi_dung": "怕别人偷学手艺",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "保证每一笼汤包的品质",
+      "la_dap_an_dung": true
+     },
+     {
+      "noi_dung": "请不起年轻帮工",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "面粉供应不足",
+      "la_dap_an_dung": false
+     }
+    ]
+   }
+  },
+  {
+   "part": 6,
+   "ex": false,
+   "q": {
+    "dang": "chon_mot",
+    "ky_nang": "doc",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "noi_dung": "上班族总觉得每天工作忙，抽不出整块的两小时来学外语。其实，早上坐地铁的二十分钟听一段新闻听力，午休前花十分钟背八个实用短语，晚上睡前读一页简短的外文故事，把这些不起眼的碎片时间串起来，一年下来的进步绝对会让你自己大吃一惊。\n★ 上班族怎样学外语最有效？",
+    "phuong_an": [
+     {
+      "noi_dung": "完全不用背单词",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "看电影不看字幕",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "把零碎时间充分利用起来",
+      "la_dap_an_dung": true
+     },
+     {
+      "noi_dung": "只周末学十个小时",
+      "la_dap_an_dung": false
+     }
+    ]
+   }
+  },
+  {
+   "part": 6,
+   "group": {
+    "dang": "ngu_lieu",
+    "ky_nang": "doc",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "noi_dung": "为什么我们在录音里听到自己的声音时，总觉得跟平时自己说话的声音不像，甚至觉得有点儿陌生难听？声学家解释说，平时我们说话时，声音主要通过头骨振动直接传到内耳，这种“骨传导”会让声音听起来更加低沉浑厚；而录音机录下来再播放的声音，是完全通过空气传播进耳朵的，这其实才是别人平时听到的你真实的声音。"
+   },
+   "children": [
+    [
+     {
+      "dang": "chon_mot",
+      "noi_dung": "★ 平时我们自己听自己说话主要靠什么传播？",
+      "phuong_an": [
+       {
+        "noi_dung": "空气反射",
+        "la_dap_an_dung": false
+       },
+       {
+        "noi_dung": "头骨振动传导",
+        "la_dap_an_dung": true
+       },
+       {
+        "noi_dung": "手机麦克风",
+        "la_dap_an_dung": false
+       },
+       {
+        "noi_dung": "房间墙壁回音",
+        "la_dap_an_dung": false
+       }
+      ]
+     },
+     false
+    ],
+    [
+     {
+      "dang": "chon_mot",
+      "noi_dung": "★ 别人平时听到的你的声音更接近哪一种？",
+      "phuong_an": [
+       {
+        "noi_dung": "比自己听到的更低沉",
+        "la_dap_an_dung": false
+       },
+       {
+        "noi_dung": "完全听不清楚",
+        "la_dap_an_dung": false
+       },
+       {
+        "noi_dung": "录音机录下来的声音",
+        "la_dap_an_dung": true
+       },
+       {
+        "noi_dung": "像唱歌一样洪亮",
+        "la_dap_an_dung": false
+       }
+      ]
+     },
+     false
+    ]
+   ]
+  },
+  {
+   "part": 6,
+   "group": {
+    "dang": "ngu_lieu",
+    "ky_nang": "doc",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "noi_dung": "中国古代著名的都江堰水利工程建于两千两百多年前，至今仍然在灌溉着成都平原上千万亩良田。更令人惊叹的是，整座工程没有修建一道拦河高坝，而是顺应江水流动的自然地势，巧妙地利用“鱼嘴”分水堤，在春天缺水时把六成江水引入内江灌溉农田，到了夏天发洪水时又自动把六成以上的洪水排向外江，真正做到了人与自然的和谐共生。"
+   },
+   "children": [
+    [
+     {
+      "dang": "chon_mot",
+      "noi_dung": "★ 都江堰水利工程最突出的设计智慧是什么？",
+      "phuong_an": [
+       {
+        "noi_dung": "不建高坝而顺应地势自动分水",
+        "la_dap_an_dung": true
+       },
+       {
+        "noi_dung": "用钢铁筑成百米大坝",
+        "la_dap_an_dung": false
+       },
+       {
+        "noi_dung": "把整条江水彻底堵住",
+        "la_dap_an_dung": false
+       },
+       {
+        "noi_dung": "全部依靠人工挑水",
+        "la_dap_an_dung": false
+       }
+      ]
+     },
+     false
+    ],
+    [
+     {
+      "dang": "chon_mot",
+      "noi_dung": "★ 夏天发洪水时都江堰怎样发挥作用？",
+      "phuong_an": [
+       {
+        "noi_dung": "把水全部存进水库",
+        "la_dap_an_dung": false
+       },
+       {
+        "noi_dung": "停止农田灌溉",
+        "la_dap_an_dung": false
+       },
+       {
+        "noi_dung": "人工开闸放水",
+        "la_dap_an_dung": false
+       },
+       {
+        "noi_dung": "自动将大部分洪水排向外江",
+        "la_dap_an_dung": true
+       }
+      ]
+     },
+     false
+    ]
+   ]
+  },
+  {
+   "part": 6,
+   "group": {
+    "dang": "ngu_lieu",
+    "ky_nang": "doc",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "noi_dung": "近年来，“旧衣改造”在许多手工爱好者当中流行起来。一件款式过时的爸爸的大衬衫，经过巧妙裁剪和缝纫，就能变成小女孩儿漂亮的夏日连衣裙；几条穿旧的牛仔裤拼在一起，可以做成结实耐磨的帆布手提包和沙发靠垫。动手改造旧物不仅赋予了闲置衣物第二次生命，还在穿针引线的专注过程中让人收获了满满的平静与乐趣。"
+   },
+   "children": [
+    [
+     {
+      "dang": "chon_mot",
+      "noi_dung": "★ 文中没提到把旧衣物改造成什么？",
+      "phuong_an": [
+       {
+        "noi_dung": "女孩连衣裙",
+        "la_dap_an_dung": false
+       },
+       {
+        "noi_dung": "帆布手提包",
+        "la_dap_an_dung": false
+       },
+       {
+        "noi_dung": "冬季羽绒服",
+        "la_dap_an_dung": true
+       },
+       {
+        "noi_dung": "沙发靠垫",
+        "la_dap_an_dung": false
+       }
+      ]
+     },
+     false
+    ],
+    [
+     {
+      "dang": "chon_mot",
+      "noi_dung": "★ 人们喜欢“旧衣改造”的原因是什么？",
+      "phuong_an": [
+       {
+        "noi_dung": "买不到新衣服",
+        "la_dap_an_dung": false
+       },
+       {
+        "noi_dung": "环保实用且能收获手工乐趣",
+        "la_dap_an_dung": true
+       },
+       {
+        "noi_dung": "可以拿去参加时装周",
+        "la_dap_an_dung": false
+       },
+       {
+        "noi_dung": "比买布料更昂贵",
+        "la_dap_an_dung": false
+       }
+      ]
+     },
+     false
+    ]
+   ]
+  },
+  {
+   "part": 7,
+   "ex": true,
+   "q": {
+    "dang": "sap_xep",
+    "ky_nang": "viet",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "noi_dung": "完成句子。",
+    "phuong_an": [
+     {
+      "noi_dung": "那座桥"
+     },
+     {
+      "noi_dung": "800年的"
+     },
+     {
+      "noi_dung": "历史"
+     },
+     {
+      "noi_dung": "有"
+     },
+     {
+      "noi_dung": "了"
+     }
+    ],
+    "dap_an_chap_nhan": [
+     "那座桥有800年的历史了。"
+    ]
+   }
+  },
+  {
+   "part": 7,
+   "ex": false,
+   "q": {
+    "dang": "sap_xep",
+    "ky_nang": "viet",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "noi_dung": "完成句子。",
+    "phuong_an": [
+     {
+      "noi_dung": "把"
+     },
+     {
+      "noi_dung": "整理得"
+     },
+     {
+      "noi_dung": "秘书"
+     },
+     {
+      "noi_dung": "井井有条"
+     },
+     {
+      "noi_dung": "会议资料"
+     }
+    ],
+    "dap_an_chap_nhan": [
+     "秘书把会议资料整理得井井有条。"
+    ]
+   }
+  },
+  {
+   "part": 7,
+   "ex": false,
+   "q": {
+    "dang": "sap_xep",
+    "ky_nang": "viet",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "noi_dung": "完成句子。",
+    "phuong_an": [
+     {
+      "noi_dung": "对"
+     },
+     {
+      "noi_dung": "他的鼓励"
+     },
+     {
+      "noi_dung": "增强了我的信心"
+     },
+     {
+      "noi_dung": "很大程度上"
+     }
+    ],
+    "dap_an_chap_nhan": [
+     "他的鼓励很大程度上增强了我的信心。"
+    ]
+   }
+  },
+  {
+   "part": 7,
+   "ex": false,
+   "q": {
+    "dang": "sap_xep",
+    "ky_nang": "viet",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "noi_dung": "完成句子。",
+    "phuong_an": [
+     {
+      "noi_dung": "连"
+     },
+     {
+      "noi_dung": "都"
+     },
+     {
+      "noi_dung": "这么偏僻的小镇"
+     },
+     {
+      "noi_dung": "通了高铁"
+     }
+    ],
+    "dap_an_chap_nhan": [
+     "连这么偏僻的小镇都通了高铁。",
+     "这么偏僻的小镇连高铁都通了。"
+    ]
+   }
+  },
+  {
+   "part": 7,
+   "ex": false,
+   "q": {
+    "dang": "sap_xep",
+    "ky_nang": "viet",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "noi_dung": "完成句子。",
+    "phuong_an": [
+     {
+      "noi_dung": "只要"
+     },
+     {
+      "noi_dung": "就一定能"
+     },
+     {
+      "noi_dung": "肯下功夫"
+     },
+     {
+      "noi_dung": "把外语学好"
+     }
+    ],
+    "dap_an_chap_nhan": [
+     "只要肯下功夫，就一定能把外语学好。",
+     "只要肯下功夫就一定能把外语学好。"
+    ]
+   }
+  },
+  {
+   "part": 7,
+   "ex": false,
+   "q": {
+    "dang": "sap_xep",
+    "ky_nang": "viet",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "noi_dung": "完成句子。",
+    "phuong_an": [
+     {
+      "noi_dung": "被"
+     },
+     {
+      "noi_dung": "感动得"
+     },
+     {
+      "noi_dung": "台下的观众"
+     },
+     {
+      "noi_dung": "流下了眼泪"
+     }
+    ],
+    "dap_an_chap_nhan": [
+     "台下的观众被感动得流下了眼泪。"
+    ]
+   }
+  },
+  {
+   "part": 7,
+   "ex": false,
+   "q": {
+    "dang": "sap_xep",
+    "ky_nang": "viet",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "noi_dung": "完成句子。",
+    "phuong_an": [
+     {
+      "noi_dung": "不仅"
+     },
+     {
+      "noi_dung": "还富含维生素"
+     },
+     {
+      "noi_dung": "这种水果"
+     },
+     {
+      "noi_dung": "味道酸甜"
+     }
+    ],
+    "dap_an_chap_nhan": [
+     "这种水果不仅味道酸甜，还富含维生素。",
+     "这种水果不仅味道酸甜还富含维生素。"
+    ]
+   }
+  },
+  {
+   "part": 7,
+   "ex": false,
+   "q": {
+    "dang": "sap_xep",
+    "ky_nang": "viet",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "noi_dung": "完成句子。",
+    "phuong_an": [
+     {
+      "noi_dung": "超出了"
+     },
+     {
+      "noi_dung": "报名人数"
+     },
+     {
+      "noi_dung": "原来的预计"
+     },
+     {
+      "noi_dung": "远远"
+     }
+    ],
+    "dap_an_chap_nhan": [
+     "报名人数远远超出了原来的预计。"
+    ]
+   }
+  },
+  {
+   "part": 7,
+   "ex": false,
+   "q": {
+    "dang": "sap_xep",
+    "ky_nang": "viet",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "noi_dung": "完成句子。",
+    "phuong_an": [
+     {
+      "noi_dung": "最好"
+     },
+     {
+      "noi_dung": "出门旅游前"
+     },
+     {
+      "noi_dung": "天气情况"
+     },
+     {
+      "noi_dung": "查一下当地的"
+     }
+    ],
+    "dap_an_chap_nhan": [
+     "出门旅游前最好查一下当地的天气情况。"
+    ]
+   }
+  },
+  {
+   "part": 7,
+   "ex": false,
+   "q": {
+    "dang": "sap_xep",
+    "ky_nang": "viet",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "noi_dung": "完成句子。",
+    "phuong_an": [
+     {
+      "noi_dung": "比"
+     },
+     {
+      "noi_dung": "现在的交通"
+     },
+     {
+      "noi_dung": "方便多了"
+     },
+     {
+      "noi_dung": "二十年前"
+     }
+    ],
+    "dap_an_chap_nhan": [
+     "现在的交通比二十年前方便多了。"
+    ]
+   }
+  },
+  {
+   "part": 7,
+   "ex": false,
+   "q": {
+    "dang": "sap_xep",
+    "ky_nang": "viet",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "noi_dung": "完成句子。",
+    "phuong_an": [
+     {
+      "noi_dung": "难道"
+     },
+     {
+      "noi_dung": "连这点儿玩笑"
+     },
+     {
+      "noi_dung": "都开不起吗"
+     },
+     {
+      "noi_dung": "你"
+     }
+    ],
+    "dap_an_chap_nhan": [
+     "难道你连这点儿玩笑都开不起吗？"
+    ]
+   }
+  },
+  {
+   "part": 8,
+   "ex": true,
+   "q": {
+    "dang": "viet_mo",
+    "ky_nang": "viet",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "noi_dung": "看图，用词造句。",
+    "tep_hinh": "exams/hsk4_h41002/img/000.jpg",
+    "tu_bat_buoc": "乒乓球",
+    "tieu_chi_mo_ta": "Viết một câu hoàn chỉnh, đúng ngữ pháp, có dùng từ cho sẵn và phù hợp với nội dung hình.",
+    "diem_toi_da": 10,
+    "nguong_dat": 6,
+    "giai_thich": "Câu tham khảo: 她很喜欢打乒乓球。"
+   }
+  },
+  {
+   "part": 8,
+   "ex": false,
+   "q": {
+    "dang": "viet_mo",
+    "ky_nang": "viet",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "noi_dung": "看图，用词造句。",
+    "tep_hinh": "exams/hsk4_h41001/img/w97.jpg",
+    "tu_bat_buoc": "尝",
+    "tieu_chi_mo_ta": "Viết một câu hoàn chỉnh, đúng ngữ pháp, có dùng từ cho sẵn và phù hợp với nội dung hình.",
+    "diem_toi_da": 10,
+    "nguong_dat": 6,
+    "giai_thich": "Câu tham khảo: 来广州旅游，一定要尝一尝地道的虾饺。"
+   }
+  },
+  {
+   "part": 8,
+   "ex": false,
+   "q": {
+    "dang": "viet_mo",
+    "ky_nang": "viet",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "noi_dung": "看图，用词造句。",
+    "tep_hinh": "exams/hsk4_h41003/img/003.jpg",
+    "tu_bat_buoc": "熬夜",
+    "tieu_chi_mo_ta": "Viết một câu hoàn chỉnh, đúng ngữ pháp, có dùng từ cho sẵn và phù hợp với nội dung hình.",
+    "diem_toi_da": 10,
+    "nguong_dat": 6,
+    "giai_thich": "Câu tham khảo: 昨天晚上熬夜写报告，她现在困得睁不开眼睛。"
+   }
+  },
+  {
+   "part": 8,
+   "ex": false,
+   "q": {
+    "dang": "viet_mo",
+    "ky_nang": "viet",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "noi_dung": "看图，用词造句。",
+    "tep_hinh": "exams/hsk4_h41003/img/004.jpg",
+    "tu_bat_buoc": "兴奋",
+    "tieu_chi_mo_ta": "Viết một câu hoàn chỉnh, đúng ngữ pháp, có dùng từ cho sẵn và phù hợp với nội dung hình.",
+    "diem_toi_da": 10,
+    "nguong_dat": 6,
+    "giai_thich": "Câu tham khảo: 接到大学录取通知电话的那一刻，他兴奋极了。"
+   }
+  },
+  {
+   "part": 8,
+   "ex": false,
+   "q": {
+    "dang": "viet_mo",
+    "ky_nang": "viet",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "noi_dung": "看图，用词造句。",
+    "tep_hinh": "exams/hsk3_h31003/img/006.jpg",
+    "tu_bat_buoc": "祝贺",
+    "tieu_chi_mo_ta": "Viết một câu hoàn chỉnh, đúng ngữ pháp, có dùng từ cho sẵn và phù hợp với nội dung hình.",
+    "diem_toi_da": 10,
+    "nguong_dat": 6,
+    "giai_thich": "Câu tham khảo: 同事们纷纷举起酒杯，祝贺她顺利升职。"
+   }
+  },
+  {
+   "part": 8,
+   "ex": false,
+   "q": {
+    "dang": "viet_mo",
+    "ky_nang": "viet",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "noi_dung": "看图，用词造句。",
+    "tep_hinh": "exams/hsk2_h20901/img/010.jpg",
+    "tu_bat_buoc": "压力",
+    "tieu_chi_mo_ta": "Viết một câu hoàn chỉnh, đúng ngữ pháp, có dùng từ cho sẵn và phù hợp với nội dung hình.",
+    "diem_toi_da": 10,
+    "nguong_dat": 6,
+    "giai_thich": "Câu tham khảo: 面对堆满桌子的文件，她感到了不小的工作压力。"
+   }
+  }
+ ]
+}

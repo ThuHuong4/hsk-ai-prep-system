@@ -101,8 +101,9 @@ Hàm `select_today_lesson(profile, target_level, candidate_lessons)` là **hàm 
 
 ## 3. Gợi ý 2 mức, Hỏi Xiang và Chấm chữa câu Viết/Dịch
 
-### 3.1. Phạm vi cho phép hỗ trợ
-- **Cho phép Gợi ý 2 mức & Hỏi Xiang trước khi kiểm tra**: Bài Ôn luyện thường (`bo_de.loai = 'bai'`) và Lượt ôn Sổ tay (`loai_boc_cau = 'so_tay'`).
+### 3.1. Phạm vi cho phép hỗ trợ & Lật thẻ từ sau khi chấm
+- **Trước khi bấm `Kiểm tra` câu**: Chỉ mở **Gợi ý 2 mức** (`Gợi ý 1/2`, `Gợi ý 2/2`) trên bài Ôn luyện thường (`bo_de.loai = 'bai'`); khóa lật thẻ từ và chưa mở Hỏi Xiang để tránh lộ đáp án.
+- **Sau khi bấm `Kiểm tra` câu (đã có kết quả chấm)**: Mở khóa **Hỏi Xiang** theo ngữ cảnh câu vừa làm và mở hiệu ứng **lật thẻ từ 3D** ngay trên câu đó để xem Chữ Hán, Pinyin, Nghĩa và Câu ví dụ song ngữ (không còn màn hình Thẻ từ rời ở đầu bài). Khi học viên bấm **Làm lại bài chưa đạt (`lam_lai`)**, hệ thống tự động ẩn Pinyin hỗ trợ và hiển thị câu ngữ cảnh chữ Hán thực tế để chống học vẹt đáp án.
 - **Tắt hoàn toàn Gợi ý & Hỏi Xiang khi đang làm bài**: Đánh giá đầu vào (`danh_gia_dau_vao`), Thi thử (`de_thi`), Kiểm tra cuối thửa (`cuoi_thua`) và các bài Kiểm tra vượt (`vuot_thua`, `bat_dau_cap`, `vuot_chang`). Ở các bài này chỉ được xem giải thích và Hỏi Xiang **sau khi đã nộp bài** (`AT23`).
 
 ### 3.2. Bảo mật đáp án & Ghi nhận hỗ trợ
@@ -130,7 +131,7 @@ Hàm `select_today_lesson(profile, target_level, candidate_lessons)` là **hàm 
    - **Ô kế trong thửa**: mở khi đạt ô trước (đúng hết các câu của bài).
    - **Thửa kế trong cấp**: mở khi đạt `Kiểm tra cuối thửa` (đúng hết các câu trong 1 lượt) hoặc đạt bài `Vượt thửa` tới thửa đó (`Vượt thửa` đánh dấu các thửa trước trong cùng cấp là `"Đã vượt"`).
    - **Cấp kế theo từng kỹ năng**: mở khi xong các thửa của cấp và đạt `Vượt chặng` (15/15), hoặc đạt `Bắt đầu cấp` (10/10 câu cấp liền dưới). **Đạt `Bắt đầu cấp` chỉ mở cấp đó của kỹ năng tương ứng; vẫn cho ôn cấp dưới nhưng không đánh dấu các bài/thửa cấp dưới là `"Đã vượt"`.**
-   - Học thử cho Khách (`/api/cong-khai/on-luyen/...`): chỉ cho phép truy cập **Thửa 1 – Bài 1** của cấp mở sẵn ở mỗi kỹ năng; chặn truy cập trực tiếp API vào các bài bị khóa (`AT13`).
+   - Mọi luồng Ôn luyện và Thi thử đều bắt buộc đăng nhập tài khoản Học viên (để xác định trình độ đầu vào trước); các đường dẫn công khai cũ `/api/cong-khai/on-luyen/...` đều bị từ chối `401 Unauthorized` (`AT13`).
 3. **Thi thử (Mục 7)**:
    - Học viên chỉ chọn cấp HSK; ẩn danh sách đề và chặn các đường API chọn đề theo ID cũ (`AT17, AT42`).
    - Nếu học viên đang có phiên `de_thi` trạng thái `dang_lam` còn thời gian ở cấp đó: trả lại đúng phiên đang làm (F5 hoặc bấm bắt đầu lại không đổi đề, không đặt lại giờ – `AT18`).
@@ -148,6 +149,9 @@ Hàm `select_today_lesson(profile, target_level, candidate_lessons)` là **hàm 
      - Đạt bắt đầu cấp (`kn_bat_dau_cap`): **+20 KN** (lần đầu mỗi `cap_do_id × ky_nang`).
      - Đạt vượt chặng (`kn_vuot_chang`): **+20 KN** (lần đầu mỗi `cap_do_id × ky_nang`).
      - Củng cố câu Sổ tay (`kn_cung_co`): **+1 KN** (lần đầu mỗi `cau_hoi_goc_id`).
+   - **Bình năng lượng mở rộng theo Trình độ HSK (`5 → 6 → 8 → 10`)**:
+     - Trần năng lượng tối đa theo cấp HSK chính thức: **HSK 1 = 5**, **HSK 2 = 6**, **HSK 3 = 8**, **HSK 4 = 10**; tự động mở rộng khi thăng cấp (`thang_cap_nl`) và tự động hồi đầy bình vào đầu mỗi ngày mới (`hoi_ngay`).
+     - Hồi năng lượng trong ngày (đối soát cân bằng qua `v_doi_soat_nang_luong`): Nhiệm vụ ngày (`+1/nhiệm vụ`), hoàn thành 1 lượt Ôn Sổ tay đạt **≥ 80% câu đúng** (`hoi_so_tay`: `+1/lượt`, không giới hạn số lần khi bình chưa đầy), và vượt Kiểm tra cuối thửa 10/10 (`thuong_cuoi_thua`: `+1`).
 5. **Giảng viên soạn câu hỏi với AI (Mục 9)**:
    - Giảng viên nhập cấp, kỹ năng, chủ đề/nhóm kiến thức, dạng câu, số lượng → AI sinh bản nháp gắn `nguon_noi_dung = 'soan_voi_ai'`, `trang_thai = 'nhap'` (cho phép lưu nháp để sửa dần, không bao giờ tự xuất bản – `AT24`).
    - Khi bấm **Duyệt & Xuất bản (`publish_question`)**: kiểm tra đầy đủ thành phần bắt buộc theo dạng câu, ghi `nguoi_duyet_id` và `duyet_luc = NOW()`.

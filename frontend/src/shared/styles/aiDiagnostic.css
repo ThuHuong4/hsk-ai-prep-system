@@ -1,0 +1,1173 @@
+/* ==========================================================================
+   Xiang AI Diagnostic Studio — lấy cảm hứng từ WriteMate.io & Write & Improve
+   Dùng chung cho Khảo sát đánh giá 8 câu, Báo cáo đầu vào và Chấm bài thực hành
+   ========================================================================== */
+
+.wm-studio-wrap {
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 18px 22px 132px;
+}
+
+.wm-topbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  padding: 14px 18px;
+  margin-bottom: 22px;
+  border-radius: 20px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow-sm, 0 2px 8px rgba(0, 0, 0, 0.04));
+}
+
+.wm-topbar__brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.wm-topbar__logo {
+  width: 38px;
+  height: 38px;
+  border-radius: 12px;
+  object-fit: contain;
+  background: var(--teal-soft);
+  padding: 3px;
+}
+
+.wm-topbar__title {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.wm-topbar__title small {
+  font-size: 11.5px;
+  font-weight: 800;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--teal-ink);
+}
+
+.wm-topbar__title strong {
+  font-size: 15.5px;
+  font-weight: 800;
+  color: var(--ink);
+}
+
+/* Thanh 8 bước tương tác (Step Track 1..8) */
+.wm-steptrack {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.wm-stepdot {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 10px;
+  font-size: 13px;
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+  background: var(--surface-2);
+  color: var(--ink-3);
+  border: 1.5px solid var(--line);
+  transition: all 0.2s ease;
+}
+
+.wm-stepdot.is-current {
+  background: var(--teal-soft);
+  color: var(--teal-ink);
+  border-color: var(--teal);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--teal) 22%, transparent);
+}
+
+.wm-stepdot.is-ok {
+  background: var(--good-soft);
+  color: var(--good);
+  border-color: color-mix(in srgb, var(--good) 45%, transparent);
+}
+
+.wm-stepdot.is-weak {
+  background: var(--coral-soft);
+  color: var(--coral-ink);
+  border-color: color-mix(in srgb, var(--coral) 45%, transparent);
+}
+
+.wm-stepdot.is-skip {
+  background: color-mix(in srgb, var(--amber, #d9952b) 18%, var(--surface));
+  color: var(--ink-2);
+  border-color: color-mix(in srgb, var(--amber, #d9952b) 50%, transparent);
+}
+
+/* Bố cục 2 cột kiểu WriteMate.io: Trái = Không gian làm bài, Phải = AI Inspector */
+.wm-split {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 22px;
+  align-items: start;
+}
+
+@media (min-width: 980px) {
+  .wm-split {
+    grid-template-columns: minmax(0, 1.12fr) minmax(380px, 0.94fr);
+    gap: 24px;
+  }
+}
+
+.wm-workspace {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding: 26px;
+  border-radius: 24px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow);
+}
+
+.wm-workspace__head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--line);
+}
+
+.wm-workspace__pills {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+
+.wm-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 11px;
+  border-radius: 999px;
+  font-size: 12.5px;
+  font-weight: 800;
+  letter-spacing: 0.03em;
+  background: var(--surface-2);
+  color: var(--ink-2);
+}
+
+.wm-pill--skill {
+  background: var(--teal-soft);
+  color: var(--teal-ink);
+}
+
+.wm-pill--probe {
+  background: var(--exam-soft);
+  color: var(--exam);
+}
+
+.wm-workspace h1 {
+  font-size: clamp(22px, 2.6vw, 29px);
+  line-height: 1.25;
+  margin: 0;
+}
+
+/* Khung soạn thảo câu dịch kiểu WriteMate Editor */
+.wm-editor {
+  display: flex;
+  flex-direction: column;
+  border-radius: 18px;
+  border: 2px solid var(--line-2);
+  background: var(--bg);
+  overflow: hidden;
+  transition: border-color 0.18s ease, box-shadow 0.18s ease;
+}
+
+.wm-editor:focus-within {
+  border-color: var(--teal);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--teal) 18%, transparent);
+}
+
+.wm-editor__bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 9px 14px;
+  background: var(--surface-2);
+  border-bottom: 1px solid var(--line);
+  font-size: 12.5px;
+  font-weight: 700;
+  color: var(--ink-2);
+}
+
+.wm-editor textarea {
+  width: 100%;
+  min-height: 132px;
+  padding: 14px 16px;
+  border: 0;
+  background: transparent;
+  color: var(--ink);
+  font: 500 16.5px/1.6 var(--f-body);
+  resize: vertical;
+}
+
+.wm-editor textarea:focus {
+  outline: none;
+}
+
+.wm-editor__foot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 14px;
+  border-top: 1px solid var(--line);
+  background: var(--surface);
+  font-size: 12px;
+  color: var(--ink-3);
+  font-variant-numeric: tabular-nums;
+}
+
+.wm-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding-top: 14px;
+  border-top: 1px solid var(--line);
+}
+
+.wm-actions__right {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  margin-left: auto;
+}
+
+/* ==========================================================================
+   AI Diagnostic Inspector Card (Cột phải hoặc thẻ nhúng)
+   ========================================================================== */
+.wm-inspector {
+  position: sticky;
+  top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 22px 24px;
+  border-radius: 24px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow);
+}
+
+.wm-inspector--static {
+  position: static;
+  padding: 18px 20px;
+  border-radius: 20px;
+}
+
+.wm-inspector--vung {
+  border-top: 4px solid var(--good);
+}
+
+.wm-inspector--can_cung_co {
+  border-top: 4px solid var(--coral);
+}
+
+.wm-inspector--chua_biet {
+  border-top: 4px solid var(--amber, #d9952b);
+}
+
+.wm-inspector__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.wm-ai-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 5px 11px;
+  border-radius: 999px;
+  background: var(--teal-soft);
+  color: var(--teal-ink);
+  font-size: 11.5px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.wm-pulse {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--teal);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .wm-pulse--live {
+    animation: wm-pulse-anim 1.4s ease-in-out infinite;
+  }
+}
+
+@keyframes wm-pulse-anim {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.45); opacity: 0.45; }
+}
+
+/* Khối Verdict & Điểm độ hiểu */
+.wm-verdict {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 16px;
+  border-radius: 18px;
+  background: var(--surface-2);
+  border: 1px solid var(--line);
+}
+
+.wm-score-ring {
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  border-radius: 18px;
+  font-family: var(--f-display);
+  font-weight: 800;
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+}
+
+.wm-score-ring strong {
+  font-size: 20px;
+}
+
+.wm-score-ring small {
+  font-family: var(--f-body);
+  font-size: 10.5px;
+  font-weight: 700;
+  margin-top: 3px;
+  opacity: 0.9;
+}
+
+.wm-score-ring--vung {
+  background: var(--good-soft);
+  color: var(--good);
+  border: 1.5px solid color-mix(in srgb, var(--good) 38%, transparent);
+}
+
+.wm-score-ring--can_cung_co {
+  background: var(--bad-soft);
+  color: var(--bad);
+  border: 1.5px solid color-mix(in srgb, var(--bad) 38%, transparent);
+}
+
+.wm-score-ring--chua_biet {
+  background: color-mix(in srgb, var(--amber, #d9952b) 18%, var(--surface));
+  color: var(--ink);
+  border: 1.5px solid color-mix(in srgb, var(--amber, #d9952b) 48%, transparent);
+}
+
+.wm-verdict__body {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.wm-verdict__tag {
+  align-self: flex-start;
+  display: inline-flex;
+  align-items: center;
+  padding: 3px 9px;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 800;
+  background: var(--surface);
+  color: var(--ink);
+  border: 1px solid var(--line-2);
+}
+
+.wm-verdict__body h3 {
+  font-size: 17.5px;
+  margin: 0;
+  color: var(--ink);
+}
+
+.wm-verdict__body p {
+  font-size: 13px;
+  color: var(--ink-2);
+}
+
+/* Khối đối chiếu Side-by-Side Diff (Bài làm học viên vs Đáp án chuẩn) */
+.wm-diff {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+
+@media (min-width: 520px) {
+  .wm-diff {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.wm-diff__box {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 12px 14px;
+  border-radius: 15px;
+  border: 1px solid var(--line);
+  background: var(--bg);
+}
+
+.wm-diff__label {
+  font-size: 11.5px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--ink-3);
+}
+
+.wm-diff__val {
+  font-size: 15.5px;
+  font-weight: 700;
+  color: var(--ink);
+  word-break: break-word;
+}
+
+.wm-diff__box--wrong {
+  background: color-mix(in srgb, var(--bad-soft) 55%, var(--surface));
+  border-color: color-mix(in srgb, var(--bad) 32%, transparent);
+}
+
+.wm-diff__box--wrong .wm-diff__val {
+  color: var(--bad);
+  text-decoration: line-through;
+  text-decoration-thickness: 1.5px;
+}
+
+.wm-diff__box--skip {
+  background: color-mix(in srgb, var(--amber, #d9952b) 12%, var(--surface));
+  border-color: color-mix(in srgb, var(--amber, #d9952b) 35%, transparent);
+}
+
+.wm-diff__box--model {
+  background: color-mix(in srgb, var(--good-soft) 60%, var(--surface));
+  border-color: color-mix(in srgb, var(--good) 38%, transparent);
+}
+
+.wm-diff__box--model .wm-diff__label,
+.wm-diff__box--model .wm-diff__val {
+  color: var(--good);
+}
+
+.wm-diff__sub {
+  font-size: 12.5px;
+  color: var(--ink-2);
+  margin-top: 2px;
+}
+
+/* 3 Thanh tiêu chí chấm kiểu WriteMate Rubric */
+.wm-rubric {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  padding: 13px 15px;
+  border-radius: 16px;
+  background: var(--surface-2);
+  border: 1px solid var(--line);
+}
+
+.wm-rubric__title {
+  font-size: 12px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--ink-3);
+}
+
+.wm-rubric__row {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.wm-rubric__meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--ink);
+  font-variant-numeric: tabular-nums;
+}
+
+.wm-rubric__bar {
+  height: 7px;
+  border-radius: 999px;
+  background: var(--surface-3, var(--line));
+  overflow: hidden;
+}
+
+.wm-rubric__bar > i {
+  display: block;
+  height: 100%;
+  border-radius: 999px;
+  transition: width 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.wm-rubric__bar--high > i {
+  background: var(--good);
+}
+
+.wm-rubric__bar--mid > i {
+  background: var(--amber, #d9952b);
+}
+
+.wm-rubric__bar--low > i {
+  background: var(--coral);
+}
+
+.wm-rubric__bar--idle > i {
+  background: var(--line-2);
+}
+
+/* Khối Phân tích sâu & Mẹo ghi nhớ */
+.wm-notes {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.wm-note-block {
+  padding: 12px 14px;
+  border-radius: 15px;
+  background: var(--bg);
+  border: 1px solid var(--line);
+  font-size: 14.2px;
+  line-height: 1.58;
+  color: var(--ink);
+}
+
+.wm-note-block strong {
+  display: block;
+  font-size: 12.5px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--teal-ink);
+  margin-bottom: 4px;
+}
+
+.wm-note-block--tip {
+  background: color-mix(in srgb, var(--teal-soft) 50%, var(--surface));
+  border-color: color-mix(in srgb, var(--teal) 30%, transparent);
+}
+
+/* Trạng thái AI đang quét tiêu chí (Skeleton Scanning) */
+.wm-scan-steps {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.wm-scan-step {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 13px;
+  border-radius: 13px;
+  background: var(--surface-2);
+  font-size: 13.5px;
+  font-weight: 600;
+  color: var(--ink-2);
+}
+
+.wm-shimmer {
+  height: 10px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--surface-2) 20%, var(--line) 50%, var(--surface-2) 80%);
+  background-size: 200% 100%;
+  animation: wm-shimmer-move 1.4s linear infinite;
+}
+
+@keyframes wm-shimmer-move {
+  from { background-position: 200% 0; }
+  to { background-position: -200% 0; }
+}
+
+.wm-finish-banner {
+  padding: 14px 16px;
+  border-radius: 16px;
+  background: var(--teal-soft);
+  border: 1.5px solid var(--teal);
+  color: var(--ink);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.wm-finish-banner strong {
+  color: var(--teal-ink);
+  font-size: 15px;
+}
+
+/* ==========================================================================
+   Cambridge Assessment (1 cột tập trung + Màn xoay phân tích) &
+   Cambridge Write & Improve (Bàn học 2 cột Gợi mở không giải hộ)
+   ========================================================================== */
+
+.cb-assess-wrap {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 28px 20px 96px;
+}
+
+.cb-assess-top {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.cb-assess-top__meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.cb-assess-top__meta strong {
+  font-size: 14.5px;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  color: var(--ink-2);
+}
+
+.cb-progress-bar {
+  height: 8px;
+  border-radius: 999px;
+  background: var(--surface-2);
+  border: 1px solid var(--line);
+  overflow: hidden;
+}
+
+.cb-progress-bar > i {
+  display: block;
+  height: 100%;
+  border-radius: 999px;
+  background: var(--teal);
+  transition: width 0.32s ease;
+}
+
+/* Màn hình AI xoay phân tích sau câu 8/8 */
+.cb-spinner-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 14px;
+  padding: 40px 28px;
+  margin-top: 24px;
+  border-radius: 26px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow);
+}
+
+.cb-spinner-ring {
+  position: relative;
+  width: 82px;
+  height: 82px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 4px;
+}
+
+.cb-spinner-ring::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  border: 3.5px solid var(--surface-2);
+  border-top-color: var(--teal);
+  border-right-color: var(--teal);
+  animation: cb-spin 0.95s linear infinite;
+}
+
+.cb-spinner-ring img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+@keyframes cb-spin {
+  to { transform: rotate(360deg); }
+}
+
+.cb-spinner-card h1 {
+  font-size: clamp(22px, 2.8vw, 28px);
+}
+
+.cb-spinner-card > p {
+  max-width: 500px;
+  font-size: 14.5px;
+  line-height: 1.55;
+}
+
+.cb-stage-list {
+  list-style: none;
+  margin: 8px 0 0;
+  padding: 0;
+  width: 100%;
+  max-width: 480px;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  text-align: left;
+}
+
+.cb-stage-item {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  padding: 11px 14px;
+  border-radius: 14px;
+  background: var(--bg);
+  border: 1px solid var(--line);
+  font-size: 13.8px;
+  color: var(--ink-3);
+  transition: all 0.25s ease;
+}
+
+.cb-stage-item.is-active {
+  border-color: var(--teal);
+  background: color-mix(in srgb, var(--teal-soft) 50%, var(--surface));
+  color: var(--ink);
+  font-weight: 700;
+}
+
+.cb-stage-item.is-done {
+  border-color: color-mix(in srgb, var(--good) 40%, transparent);
+  color: var(--good);
+  font-weight: 600;
+}
+
+.cb-stage-dot {
+  flex: 0 0 auto;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 800;
+  background: var(--surface-2);
+  color: var(--ink-2);
+}
+
+.cb-stage-item.is-active .cb-stage-dot {
+  background: var(--teal);
+  color: #fff;
+}
+
+.cb-stage-item.is-done .cb-stage-dot {
+  background: var(--good);
+  color: #fff;
+}
+
+/* ==========================================================================
+   Bàn học Ôn luyện bố cục dọc quen thuộc (Câu hỏi phía trên → Đáp án bên dưới)
+   ========================================================================== */
+.cb-lesson-wrap {
+  width: 100%;
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 20px 24px 140px;
+}
+
+.cb-lesson-wrap .sl-top {
+  width: 100%;
+  padding: 4px 0 24px;
+  margin-bottom: 0;
+  gap: 16px;
+}
+
+.cb-lesson-wrap .sl-progress {
+  height: 14px;
+}
+
+.cb-flow {
+  width: 100%;
+  max-width: 720px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.cb-meta-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.cb-eyebrow {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  font-size: 13.5px;
+  font-weight: 700;
+  color: var(--ink-2);
+}
+
+.cb-eyebrow__step {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 12px;
+  border-radius: 999px;
+  background: var(--teal-soft);
+  color: var(--teal-ink);
+  font-weight: 800;
+  font-size: 12.5px;
+}
+
+.cb-flow h1 {
+  font-size: clamp(24px, 2.8vw, 31px);
+  line-height: 1.25;
+  margin: -4px 0 0;
+}
+
+/* Khung câu hỏi phía trên */
+.cb-flow .sl-stem {
+  position: relative;
+  width: 100%;
+  padding: 26px 28px;
+  border-radius: 24px;
+  background: var(--surface);
+  border: 1.5px solid var(--line);
+  box-shadow: var(--shadow);
+}
+
+.cb-flow .sl-stem--word {
+  min-height: 152px;
+  padding: 28px 32px;
+  font-size: 56px;
+}
+
+.cb-stem-audio {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  width: 40px;
+  height: 40px;
+  min-height: 40px;
+  padding: 0;
+  border-radius: 50%;
+  border: 1.5px solid var(--line);
+  background: var(--bg);
+  color: var(--teal-ink);
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.15s ease, border-color 0.15s ease, background 0.15s ease;
+}
+
+.cb-stem-audio:hover {
+  border-color: var(--teal);
+  background: var(--teal-soft);
+  transform: scale(1.05);
+}
+
+.cb-stem-audio svg {
+  width: 18px;
+  height: 18px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+/* Khu vực đáp án ngay bên dưới câu hỏi */
+.cb-answers {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  width: 100%;
+}
+
+.cb-flow .sl-opts--stack {
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+
+.cb-flow .sl-opts--stack .sl-opt {
+  min-height: 64px;
+  padding: 14px 20px;
+  border-radius: 18px;
+  font-size: 18.5px;
+  gap: 14px;
+}
+
+.cb-flow .sl-opts--stack .sl-opt kbd {
+  min-width: 30px;
+  height: 30px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9px;
+  font-size: 13px;
+  background: var(--bg);
+}
+
+.cb-flow .wm-editor {
+  background: var(--surface);
+  box-shadow: var(--shadow);
+  border-radius: 20px;
+}
+
+.cb-flow .wm-editor textarea {
+  min-height: 136px;
+  padding: 16px 18px;
+  font-size: 17px;
+}
+
+/* Nút Gợi ý gọn gàng ở hàng trên */
+.cb-hint-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  min-height: 36px;
+  padding: 0 14px;
+  border-radius: 999px;
+  border: 1.5px solid var(--line-2);
+  background: var(--surface);
+  color: var(--teal-ink);
+  font: 800 13.5px var(--f-body);
+  cursor: pointer;
+  box-shadow: var(--shadow-sm);
+  transition: all 0.15s ease;
+}
+
+.cb-hint-btn:hover:not(:disabled) {
+  border-color: var(--teal);
+  background: var(--teal-soft);
+  transform: translateY(-1px);
+}
+
+.cb-hint-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.cb-hint-item {
+  padding: 12px 16px;
+  border-radius: 16px;
+  background: color-mix(in srgb, var(--teal-soft) 48%, var(--surface));
+  border: 1px solid color-mix(in srgb, var(--teal) 32%, transparent);
+  font-size: 14px;
+  line-height: 1.55;
+  color: var(--ink);
+}
+
+.cb-hint-item strong {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 11.5px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--teal-ink);
+  margin-bottom: 2px;
+}
+
+/* Thẻ Phản hồi sau khi kiểm tra */
+.cb-fb-card {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 16px 20px;
+  border-radius: 20px;
+  border: 1.5px solid var(--line);
+  background: var(--surface);
+  color: var(--ink);
+  box-shadow: var(--shadow-sm);
+}
+
+.cb-fb-card--ok {
+  background: color-mix(in srgb, var(--good-soft) 65%, var(--surface));
+  border-color: color-mix(in srgb, var(--good) 45%, transparent);
+}
+
+.cb-fb-card--guide {
+  background: color-mix(in srgb, var(--amber, #d9952b) 14%, var(--surface));
+  border-color: color-mix(in srgb, var(--amber, #d9952b) 50%, transparent);
+}
+
+.cb-fb-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.cb-fb-head strong {
+  font-size: 16px;
+}
+
+.cb-fb-card--ok .cb-fb-head strong {
+  color: var(--good);
+}
+
+.cb-fb-card--guide .cb-fb-head strong {
+  color: var(--coral-ink);
+}
+
+.cb-fb-guide {
+  font-size: 14.5px;
+  line-height: 1.58;
+  color: var(--ink);
+}
+
+.cb-fb-tools {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  padding-top: 2px;
+}
+
+.cb-fb-reveal {
+  padding: 13px 16px;
+  border-radius: 15px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 14.5px;
+}
+
+.cb-reveal-btn {
+  align-self: flex-start;
+  min-height: 38px;
+  padding: 0 15px;
+  border-radius: 999px;
+  border: 1.5px solid var(--line-2);
+  background: var(--surface);
+  color: var(--ink);
+  font: 700 13.5px var(--f-body);
+  cursor: pointer;
+}
+
+.cb-reveal-btn:hover {
+  border-color: var(--teal);
+  color: var(--teal-ink);
+}
+
+/* Thanh thao tác cố định ở đáy màn hình */
+.cb-dock {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 20;
+  border-top: 1.5px solid var(--line);
+  background: color-mix(in srgb, var(--surface) 90%, var(--bg));
+  backdrop-filter: blur(10px);
+}
+
+.cb-dock--ok {
+  background: color-mix(in srgb, var(--good-soft) 72%, var(--surface));
+  border-top-color: color-mix(in srgb, var(--good) 38%, var(--line));
+}
+
+.cb-dock--guide {
+  background: color-mix(in srgb, var(--coral-soft) 55%, var(--surface));
+  border-top-color: color-mix(in srgb, var(--coral) 35%, var(--line));
+}
+
+.cb-dock__in {
+  width: 100%;
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 15px 24px calc(15px + env(safe-area-inset-bottom));
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+}
+
+.cb-dock__left,
+.cb-dock__right {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+}
+
+.cb-dock__right {
+  margin-left: auto;
+}
+
+.cb-dock__right .xc-btn {
+  min-width: 176px;
+}
+
+.cb-dock__status {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--f-display);
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.cb-dock--ok .cb-dock__status {
+  color: var(--good);
+}
+
+.cb-dock--guide .cb-dock__status {
+  color: var(--coral-ink);
+}
+
+@media (max-width: 640px) {
+  .cb-lesson-wrap {
+    padding: 14px 16px 150px;
+  }
+  .cb-dock__in {
+    padding: 12px 16px calc(12px + env(safe-area-inset-bottom));
+  }
+  .cb-dock__right .xc-btn {
+    min-width: 144px;
+  }
+}

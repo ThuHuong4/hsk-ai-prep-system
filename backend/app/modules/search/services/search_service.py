@@ -65,19 +65,14 @@ def _load(db: Session) -> dict:
         w["_vi"] = fold(w["nghia"])
         w["_vi_parts"] = [fold(p) for p in _SPLIT.split(w["nghia"]) if fold(p)]
         w["_py"] = compact(fold(w["pinyin"]))
-    exams = [dict(r) for r in db.execute(text("""
-        SELECT b.ma_goc_id, b.ten, cd.ten AS cap, cd.ma, cd.thu_tu
-        FROM bo_de b JOIN cap_do cd ON cd.id = b.cap_do_id AND cd.trang_thai = 'da_dang'
-        WHERE b.loai = 'de_thi' AND b.trang_thai = 'da_dang'
-    """)).mappings().all()]
-    for e in exams:
-        e["_key"] = compact(fold(f"{e['ten']} {e['cap']} {e['ma']}"))
+    # Bảo mật đề Thi thử (AT17, AT42): tuyệt đối không nạp hay trả danh sách đề thi trong ô tìm kiếm
     with _lock:
-        _cache.update({"at": time.monotonic(), "words": words, "exams": exams})
+        _cache.update({"at": time.monotonic(), "words": words, "exams": []})
         return _cache
 
 
 def _score_han(w: dict, q: str) -> int:
+    """Chỉ so khớp trên từ mục chữ Hán (chu_han); nếu gõ cụm dài (như 你好吗) thì khớp cả các từ mục nằm trong cụm."""
     han = w["chu_han"]
     if han == q:
         return 100
@@ -85,7 +80,9 @@ def _score_han(w: dict, q: str) -> int:
         return 85
     if q in han:
         return 75
-    return 60 if w["vd_cau"] and q in w["vd_cau"] else 0
+    if len(q) >= 2 and han in q:
+        return 60 + min(10, len(han) * 3)
+    return 0
 
 
 def _score_pinyin(w: dict, qc: str) -> int:

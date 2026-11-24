@@ -1,11 +1,15 @@
 import { http } from "../../../shared/api/httpClient.js";
 
 export const getPracticeOverview = (token, signal) => http.get("/api/on-luyen/tong-quan", { token, signal });
+export const getPersonalDashboard = (token, signal) => http.get("/api/on-luyen/ho-so-ca-nhan", { token, signal });
 export const getSkillPath = (token, kyNang, capDoId, signal) =>
   http.get(`/api/on-luyen/lo-trinh?ky_nang=${kyNang}${capDoId ? `&cap_do_id=${capDoId}` : ""}`, { token, signal });
 export const startLesson = (token, maGoc) => http.post(`/api/on-luyen/bai/${maGoc}/bat-dau`, undefined, { token });
 export const getLessonAttempt = (token, id, signal) => http.get(`/api/on-luyen/luot/${id}`, { token, signal });
 export const checkAnswer = (token, id, body) => http.post(`/api/on-luyen/luot/${id}/kiem-tra`, body, { token });
+export const openLessonHint = (token, id, cauHoiId) => http.post(`/api/on-luyen/luot/${id}/goi-y`, { cau_hoi_id: cauHoiId }, { token });
+export const markLessonSolutionViewed = (token, id, cauHoiId) =>
+  http.post(`/api/on-luyen/luot/${id}/xem-loi-giai`, { cau_hoi_id: cauHoiId }, { token });
 export const abandonAttempt = (token, id) => http.post(`/api/on-luyen/luot/${id}/bo`, undefined, { token });
 
 // Vượt đến thửa (mục 4.2)

@@ -38,9 +38,20 @@ def get_review(luot_id: int = Path(..., ge=1), db: Session = Depends(get_db), st
     return run_service(lambda: svc.get_review(db, luot_id, student["ma_nguoi_dung"]), _LUOT_404)
 
 
+class SolutionViewIn(BaseModel):
+    model_config = ConfigDict(extra="forbid")
+
+    cau_hoi_id: int = Field(..., ge=1)
+
+
 @router.post("/so-tay/luot/{luot_id}/kiem-tra")
 def check(body: CheckIn, luot_id: int = Path(..., ge=1), db: Session = Depends(get_db), student: dict = Depends(require_student)):
     return run_service(lambda: svc.check_answer(db, luot_id, student["ma_nguoi_dung"], body), _LUOT_404)
+
+
+@router.post("/so-tay/luot/{luot_id}/xem-loi-giai")
+def mark_solution(body: SolutionViewIn, luot_id: int = Path(..., ge=1), db: Session = Depends(get_db), student: dict = Depends(require_student)):
+    return run_service(lambda: svc.mark_solution_viewed(db, luot_id, student["ma_nguoi_dung"], body.cau_hoi_id), _LUOT_404)
 
 
 @router.post("/so-tay/luot/{luot_id}/bo", status_code=status.HTTP_204_NO_CONTENT)

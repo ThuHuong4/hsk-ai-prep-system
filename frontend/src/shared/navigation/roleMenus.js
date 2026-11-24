@@ -1,10 +1,9 @@
 export const STUDENT_MENU = [
   { to: "/hoc-vien", label: "Trang chủ", icon: "home", end: true, tab: true },
-  { to: "/hoc-vien/on-luyen", label: "Ôn luyện", icon: "route", tab: true },
-  { to: "/hoc-vien/thi-thu", label: "Thi thử", icon: "timer", tab: true },
+  { to: "/hoc-vien/on-luyen", label: "Lộ trình ôn", icon: "route", tab: true },
   { to: "/hoc-vien/so-tay-cau-sai", label: "Sổ tay", icon: "book", tab: true },
-  { to: "/hoc-vien/lich-su-thi", label: "Lịch sử thi", icon: "timer" },
-  { to: "/hoc-vien/thong-ke", label: "Thống kê", icon: "chart" },
+  { to: "/hoc-vien/thi-thu", label: "Thi thử", icon: "timer", tab: true },
+  { to: "/hoc-vien/thong-ke", label: "Kết quả & Thống kê", icon: "chart" },
   { to: "/hoc-vien/tai-lieu", label: "Tài liệu", icon: "upload" },
   { to: "/hoc-vien/ca-nhan", label: "Cá nhân", icon: "user" },
 ];
@@ -15,6 +14,7 @@ export const LECTURER_MENU = [
   { to: "/giang-vien/tu-vung", label: "Từ vựng", icon: "pen" },
   { to: "/giang-vien/hoc-lieu", label: "Tài liệu ôn tập", icon: "doc" },
   { to: "/giang-vien/cau-hoi", label: "Ngân hàng câu hỏi", icon: "spark" },
+  { to: "/giang-vien/chat-luong", label: "Chất lượng câu hỏi", icon: "chart" },
   { to: "/giang-vien/bo-de", label: "Đề thi thử HSK", icon: "timer" },
   { to: "/giang-vien/bai-luyen", label: "Bài ôn luyện", icon: "route" },
   { to: "/giang-vien/cham-viet", label: "Chấm bài Viết", icon: "check", badge: "cham_sai_cho" },

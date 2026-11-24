@@ -1,0 +1,1432 @@
+{
+  "cap_nhat_vi_du": [
+    {
+      "id": 527,
+      "chu_han": "阿姨",
+      "vd_cau": "王阿姨做的菜非常好吃。",
+      "vd_pinyin": "Wáng āyí zuò de cài fēicháng hǎochī.",
+      "vd_nghia": "Món ăn dì Vương nấu rất ngon."
+    },
+    {
+      "id": 528,
+      "chu_han": "啊",
+      "vd_cau": "春天的公园多么漂亮啊！",
+      "vd_pinyin": "Chūntiān de gōngyuán duōme piàoliang a!",
+      "vd_nghia": "Công viên vào mùa xuân đẹp biết bao!"
+    },
+    {
+      "id": 529,
+      "chu_han": "爱好",
+      "vd_cau": "我最大的爱好是听音乐和看书。",
+      "vd_pinyin": "Wǒ zuì dà de àihào shì tīng yīnyuè hé kànshū.",
+      "vd_nghia": "Sở thích lớn nhất của tôi là nghe nhạc và đọc sách."
+    },
+    {
+      "id": 530,
+      "chu_han": "把",
+      "vd_cau": "请把桌子上的盘子洗干净。",
+      "vd_pinyin": "Qǐng bǎ zhuōzi shàng de pánzi xǐ gānjìng.",
+      "vd_nghia": "Làm ơn rửa sạch những chiếc đĩa trên bàn."
+    },
+    {
+      "id": 531,
+      "chu_han": "班",
+      "vd_cau": "我们班一共有二十五个学生。",
+      "vd_pinyin": "Wǒmen bān yígòng yǒu èrshíwǔ gè xuésheng.",
+      "vd_nghia": "Lớp chúng tôi có tổng cộng 25 học sinh."
+    },
+    {
+      "id": 532,
+      "chu_han": "半",
+      "vd_cau": "我每天早上七点半去学校上课。",
+      "vd_pinyin": "Wǒ měitiān zǎoshang qī diǎn bàn qù xuéxiào shàngkè.",
+      "vd_nghia": "Sáng nào tôi cũng đến trường đi học lúc 7 giờ rưỡi."
+    },
+    {
+      "id": 533,
+      "chu_han": "包",
+      "vd_cau": "我的手机放在那个黑色的包里了。",
+      "vd_pinyin": "Wǒ de shǒujī fàng zài nàge hēisè de bāo lǐ le.",
+      "vd_nghia": "Điện thoại của tôi để ở trong chiếc túi màu đen kia rồi."
+    },
+    {
+      "id": 534,
+      "chu_han": "饱",
+      "vd_cau": "中午我吃了两碗米饭，现在很饱。",
+      "vd_pinyin": "Zhōngwǔ wǒ chī le liǎng wǎn mǐfàn, xiànzài hěn bǎo.",
+      "vd_nghia": "Buổi trưa tôi đã ăn hai bát cơm, bây giờ rất no."
+    },
+    {
+      "id": 535,
+      "chu_han": "北方",
+      "vd_cau": "中国北方的冬天经常下雪。",
+      "vd_pinyin": "Zhōngguó běifāng de dōngtiān jīngcháng xià xuě.",
+      "vd_nghia": "Mùa đông ở miền Bắc Trung Quốc thường xuyên có tuyết rơi."
+    },
+    {
+      "id": 536,
+      "chu_han": "被",
+      "vd_cau": "冰箱里的牛奶被弟弟喝完了。",
+      "vd_pinyin": "Bīngxiāng lǐ de niúnǎi bèi dìdi hē wán le.",
+      "vd_nghia": "Sữa trong tủ lạnh đã bị em trai uống hết rồi."
+    },
+    {
+      "id": 537,
+      "chu_han": "比较",
+      "vd_cau": "今天天气比较好，我们去公园玩儿吧。",
+      "vd_pinyin": "Jīntiān tiānqì bǐjiào hǎo, wǒmen qù gōngyuán wánr ba.",
+      "vd_nghia": "Hôm nay thời tiết khá đẹp, chúng mình ra công viên chơi nhé."
+    },
+    {
+      "id": 538,
+      "chu_han": "比赛",
+      "vd_cau": "明天下午学校有一场足球比赛。",
+      "vd_pinyin": "Míngtiān xiàwǔ xuéxiào yǒu yì chǎng zúqiú bǐsài.",
+      "vd_nghia": "Chiều mai ở trường có một trận thi đấu bóng đá."
+    },
+    {
+      "id": 539,
+      "chu_han": "必须",
+      "vd_cau": "明天有考试，今天晚上我必须好好复习。",
+      "vd_pinyin": "Míngtiān yǒu kǎoshì, jīntiān wǎnshang wǒ bìxū hǎohāo fùxí.",
+      "vd_nghia": "Ngày mai có bài kiểm tra, tối nay tôi nhất định phải ôn tập thật kỹ."
+    },
+    {
+      "id": 540,
+      "chu_han": "表示",
+      "vd_cau": "大家都笑了，表示同意他的办法。",
+      "vd_pinyin": "Dàjiā dōu xiào le, biǎoshì tóngyì tā de bànfǎ.",
+      "vd_nghia": "Mọi người đều mỉm cười, bày tỏ sự đồng ý với cách làm của anh ấy."
+    },
+    {
+      "id": 541,
+      "chu_han": "表演",
+      "vd_cau": "姐姐在学校节日上表演了一个节目。",
+      "vd_pinyin": "Jiějie zài xuéxiào jiérì shàng biǎoyǎn le yí gè jiémù.",
+      "vd_nghia": "Chị gái đã biểu diễn một tiết mục trong ngày hội của trường."
+    },
+    {
+      "id": 542,
+      "chu_han": "别人",
+      "vd_cau": "在图书馆看书的时候，不要影响别人。",
+      "vd_pinyin": "Zài túshūguǎn kànshū de shíhou, búyào yǐngxiǎng biérén.",
+      "vd_nghia": "Khi đọc sách trong thư viện, đừng làm ảnh hưởng đến người khác."
+    },
+    {
+      "id": 543,
+      "chu_han": "才",
+      "vd_cau": "昨天晚上工作太多，他十一点才回家。",
+      "vd_pinyin": "Zuótiān wǎnshang gōngzuò tài duō, tā shíyī diǎn cái huíjiā.",
+      "vd_nghia": "Tối qua nhiều việc quá nên 11 giờ anh ấy mới về nhà."
+    },
+    {
+      "id": 544,
+      "chu_han": "层",
+      "vd_cau": "我们的教室在三层，坐电梯很快就到。",
+      "vd_pinyin": "Wǒmen de jiàoshì zài sān céng, zuò diàntī hěn kuài jiù dào.",
+      "vd_nghia": "Phòng học của chúng tôi ở tầng ba, đi thang máy rất nhanh là tới."
+    },
+    {
+      "id": 545,
+      "chu_han": "差",
+      "vd_cau": "现在差一刻九点，会议马上就要开始了。",
+      "vd_pinyin": "Xiànzài chà yí kè jiǔ diǎn, huìyì mǎshàng jiù yào kāishǐ le.",
+      "vd_nghia": "Bây giờ là 9 giờ kém 15 phút, cuộc họp sắp bắt đầu ngay rồi."
+    },
+    {
+      "id": 546,
+      "chu_han": "城市",
+      "vd_cau": "这是一座安静又干净的城市。",
+      "vd_pinyin": "Zhè shì yí zuò ānjìng yòu gānjìng de chéngshì.",
+      "vd_nghia": "Đây là một thành phố vừa yên tĩnh vừa sạch sẽ."
+    },
+    {
+      "id": 547,
+      "chu_han": "除了",
+      "vd_cau": "除了汉语，她还会说一点儿英语。",
+      "vd_pinyin": "Chúle Hànyǔ, tā hái huì shuō yìdiǎnr Yīngyǔ.",
+      "vd_nghia": "Ngoài tiếng Hán ra, cô ấy còn biết nói một chút tiếng Anh."
+    },
+    {
+      "id": 548,
+      "chu_han": "船",
+      "vd_cau": "夏天很多客人喜欢来这儿坐船玩儿。",
+      "vd_pinyin": "Xiàtiān hěn duō kèrén xǐhuan lái zhèr zuò chuán wánr.",
+      "vd_nghia": "Mùa hè rất nhiều du khách thích đến đây đi thuyền dạo chơi."
+    },
+    {
+      "id": 549,
+      "chu_han": "打算",
+      "vd_cau": "这个周末你打算在家休息还是去爬山？",
+      "vd_pinyin": "Zhège zhōumò nǐ dǎsuàn zài jiā xiūxi háishi qù páshān?",
+      "vd_nghia": "Cuối tuần này bạn dự định nghỉ ngơi ở nhà hay đi leo núi?"
+    },
+    {
+      "id": 550,
+      "chu_han": "带",
+      "vd_cau": "今天下午可能会下雨，出门记得带伞。",
+      "vd_pinyin": "Jīntiān xiàwǔ kěnéng huì xià yǔ, chūmén jìde dài sǎn.",
+      "vd_nghia": "Chiều nay có thể sẽ mưa, ra ngoài nhớ mang theo ô nhé."
+    },
+    {
+      "id": 551,
+      "chu_han": "蛋糕",
+      "vd_cau": "妈妈买了一个漂亮的水果蛋糕给我过生日。",
+      "vd_pinyin": "Māma mǎi le yí gè piàoliang de shuǐguǒ dàngāo gěi wǒ guò shēngrì.",
+      "vd_nghia": "Mẹ đã mua một chiếc bánh kem hoa quả rất đẹp để mừng sinh nhật tôi."
+    },
+    {
+      "id": 552,
+      "chu_han": "当然",
+      "vd_cau": "你是我的好朋友，遇到问题我当然要帮你。",
+      "vd_pinyin": "Nǐ shì wǒ de hǎo péngyou, yùdào wèntí wǒ dāngrán yào bāng nǐ.",
+      "vd_nghia": "Bạn là bạn tốt của tôi, gặp vấn đề đương nhiên tôi phải giúp bạn rồi."
+    },
+    {
+      "id": 553,
+      "chu_han": "地",
+      "vd_cau": "妹妹每天都在房间里认真地写作业。",
+      "vd_pinyin": "Mèimei měitiān dōu zài fángjiān lǐ rènzhēn de xiě zuòyè.",
+      "vd_nghia": "Em gái ngày nào cũng chăm chú làm bài tập trong phòng."
+    },
+    {
+      "id": 554,
+      "chu_han": "地方",
+      "vd_cau": "这个地方很安静，我们坐在这儿看书吧。",
+      "vd_pinyin": "Zhège dìfang hěn ānjìng, wǒmen zuò zài zhèr kànshū ba.",
+      "vd_nghia": "Chỗ này rất yên tĩnh, chúng mình ngồi ở đây đọc sách nhé."
+    },
+    {
+      "id": 555,
+      "chu_han": "地图",
+      "vd_cau": "去新城市旅游以前，最好先看一下地图。",
+      "vd_pinyin": "Qù xīn chéngshì lǚyóu yǐqián, zuì hǎo xiān kàn yíxià dìtú.",
+      "vd_nghia": "Trước khi đi du lịch ở một thành phố mới, tốt nhất nên xem bản đồ trước."
+    },
+    {
+      "id": 556,
+      "chu_han": "东",
+      "vd_cau": "太阳每天早上从东边出来。",
+      "vd_pinyin": "Tàiyáng měitiān zǎoshang cóng dōngbian chūlái.",
+      "vd_nghia": "Mặt trời mọc từ hướng đông vào mỗi buổi sáng."
+    },
+    {
+      "id": 557,
+      "chu_han": "动物",
+      "vd_cau": "小孩子们都非常喜欢可爱的小动物。",
+      "vd_pinyin": "Xiǎo háizimen dōu fēicháng xǐhuan kě'ài de xiǎo dòngwù.",
+      "vd_nghia": "Các bạn nhỏ đều vô cùng yêu thích những loài động vật nhỏ đáng yêu."
+    },
+    {
+      "id": 558,
+      "chu_han": "短",
+      "vd_cau": "这条裤子有点儿短，我想换一条长的。",
+      "vd_pinyin": "Zhè tiáo kùzi yǒudiǎnr duǎn, wǒ xiǎng huàn yì tiáo cháng de.",
+      "vd_nghia": "Chiếc quần này hơi ngắn, tôi muốn đổi sang một chiếc dài hơn."
+    },
+    {
+      "id": 559,
+      "chu_han": "段",
+      "vd_cau": "最近这一段时间我工作特别忙。",
+      "vd_pinyin": "Zuìjìn zhè yí duàn shíjiān wǒ gōngzuò tèbié máng.",
+      "vd_nghia": "Khoảng thời gian gần đây công việc của tôi đặc biệt bận rộn."
+    },
+    {
+      "id": 560,
+      "chu_han": "多么",
+      "vd_cau": "你看，蓝蓝的天空多么好看！",
+      "vd_pinyin": "Nǐ kàn, lánlán de tiānkōng duōme hǎokàn!",
+      "vd_nghia": "Bạn nhìn kìa, bầu trời xanh thẳm đẹp biết bao!"
+    },
+    {
+      "id": 561,
+      "chu_han": "饿",
+      "vd_cau": "打了一下午篮球，我现在又渴又饿。",
+      "vd_pinyin": "Dǎ le yí xiàwǔ lánqiú, wǒ xiànzài yòu kě yòu è.",
+      "vd_nghia": "Chơi bóng rổ cả buổi chiều, bây giờ tôi vừa khát vừa đói."
+    },
+    {
+      "id": 562,
+      "chu_han": "发",
+      "vd_cau": "到了北京以后，别忘了给我发电子邮件。",
+      "vd_pinyin": "Dào le Běijīng yǐhòu, bié wàng le gěi wǒ fā diànzǐ yóujiàn.",
+      "vd_nghia": "Sau khi đến Bắc Kinh, đừng quên gửi thư điện tử cho tôi nhé."
+    },
+    {
+      "id": 563,
+      "chu_han": "发现",
+      "vd_cau": "到超市门口的时候，我发现自己忘带手机了。",
+      "vd_pinyin": "Dào chāoshì ménkǒu de shíhou, wǒ fāxiàn zìjǐ wàng dài shǒujī le.",
+      "vd_nghia": "Lúc đến cổng siêu thị, tôi phát hiện mình quên mang điện thoại rồi."
+    },
+    {
+      "id": 564,
+      "chu_han": "放",
+      "vd_cau": "新买的苹果我放在冰箱里了。",
+      "vd_pinyin": "Xīn mǎi de píngguǒ wǒ fàng zài bīngxiāng lǐ le.",
+      "vd_nghia": "Chỗ táo mới mua tôi đã cất vào trong tủ lạnh rồi."
+    },
+    {
+      "id": 565,
+      "chu_han": "放心",
+      "vd_cau": "妈妈，我已经到学校了，您放心吧！",
+      "vd_pinyin": "Māma, wǒ yǐjīng dào xuéxiào le, nín fàngxīn ba!",
+      "vd_nghia": "Mẹ ơi, con đã đến trường rồi, mẹ cứ yên tâm nhé!"
+    },
+    {
+      "id": 566,
+      "chu_han": "分",
+      "vd_cau": "这次数学考试他得了一百分，非常高兴。",
+      "vd_pinyin": "Zhè cì shùxué kǎoshì tā dé le yìbǎi fēn, fēicháng gāoxìng.",
+      "vd_nghia": "Kỳ thi toán lần này cậu ấy đạt 100 điểm nên vô cùng vui mừng."
+    },
+    {
+      "id": 567,
+      "chu_han": "附近",
+      "vd_cau": "我家附近有一家大超市，买东西很方便。",
+      "vd_pinyin": "Wǒ jiā fùjìn yǒu yì jiā dà chāoshì, mǎi dōngxi hěn fāngbiàn.",
+      "vd_nghia": "Gần nhà tôi có một siêu thị lớn, mua sắm đồ đạc rất thuận tiện."
+    },
+    {
+      "id": 568,
+      "chu_han": "感兴趣",
+      "vd_cau": "很多外国学生对中国文化很感兴趣。",
+      "vd_pinyin": "Hěn duō wàiguó xuésheng duì Zhōngguó wénhuà hěn gǎn xìngqù.",
+      "vd_nghia": "Rất nhiều lưu học sinh nước ngoài cảm thấy hứng thú với văn hóa Trung Quốc."
+    },
+    {
+      "id": 569,
+      "chu_han": "刚才",
+      "vd_cau": "刚才有人给你打电话，让你回个电话。",
+      "vd_pinyin": "Gāngcái yǒu rén gěi nǐ dǎ diànhuà, ràng nǐ huí gè diànhuà.",
+      "vd_nghia": "Vừa nãy có người gọi điện cho bạn, nhắn bạn gọi lại."
+    },
+    {
+      "id": 570,
+      "chu_han": "个子",
+      "vd_cau": "哥哥喜欢打篮球，个子长得很高。",
+      "vd_pinyin": "Gēge xǐhuan dǎ lánqiú, gèzi zhǎng de hěn gāo.",
+      "vd_nghia": "Anh trai thích chơi bóng rổ nên vóc người cao lớn."
+    },
+    {
+      "id": 571,
+      "chu_han": "根据",
+      "vd_cau": "请大家根据这篇小故事回答三个问题。",
+      "vd_pinyin": "Qǐng dàjiā gēnjù zhè piān xiǎo gùshi huídá sān gè wèntí.",
+      "vd_nghia": "Xin mời mọi người dựa theo câu chuyện nhỏ này để trả lời ba câu hỏi."
+    },
+    {
+      "id": 572,
+      "chu_han": "跟",
+      "vd_cau": "星期天我想跟姐姐一起去图书馆看书。",
+      "vd_pinyin": "Xīngqītiān wǒ xiǎng gēn jiějie yìqǐ qù túshūguǎn kànshū.",
+      "vd_nghia": "Chủ nhật tôi muốn cùng chị gái đến thư viện đọc sách."
+    },
+    {
+      "id": 573,
+      "chu_han": "更",
+      "vd_cau": "多听多说，你的汉语水平会提高得更快。",
+      "vd_pinyin": "Duō tīng duō shuō, nǐ de Hànyǔ shuǐpíng huì tígāo de gèng kuài.",
+      "vd_nghia": "Nghe nhiều nói nhiều, trình độ tiếng Hán của bạn sẽ nâng cao càng nhanh hơn."
+    },
+    {
+      "id": 574,
+      "chu_han": "公斤",
+      "vd_cau": "爸爸去超市买了两公斤新鲜的香蕉。",
+      "vd_pinyin": "Bàba qù chāoshì mǎi le liǎng gōngjīn xīnxiān de xiāngjiāo.",
+      "vd_nghia": "Bố đi siêu thị mua hai ki-lô-gam chuối tươi."
+    },
+    {
+      "id": 575,
+      "chu_han": "公园",
+      "vd_cau": "爷爷每天早上都去公园锻炼身体。",
+      "vd_pinyin": "Yéye měitiān zǎoshang dōu qù gōngyuán duànliàn shēntǐ.",
+      "vd_nghia": "Ông nội sáng nào cũng ra công viên tập thể dục."
+    },
+    {
+      "id": 576,
+      "chu_han": "刮风",
+      "vd_cau": "今天外面刮风了，出门多穿一件衣服吧。",
+      "vd_pinyin": "Jīntiān wàimiàn guāfēng le, chūmén duō chuān yí jiàn yīfu ba.",
+      "vd_nghia": "Hôm nay bên ngoài nổi gió rồi, ra khỏi nhà hãy mặc thêm một chiếc áo nhé."
+    },
+    {
+      "id": 577,
+      "chu_han": "关",
+      "vd_cau": "离开教室以前，请记得关灯和空调。",
+      "vd_pinyin": "Líkāi jiàoshì yǐqián, qǐng jìde guān dēng hé kōngtiáo.",
+      "vd_nghia": "Trước khi rời khỏi phòng học, xin nhớ tắt đèn và điều hòa."
+    },
+    {
+      "id": 578,
+      "chu_han": "关系",
+      "vd_cau": "他和同事们的关系一直非常好。",
+      "vd_pinyin": "Tā hé tóngshìmen de guānxi yìzhí fēicháng hǎo.",
+      "vd_nghia": "Mối quan hệ giữa anh ấy và các đồng nghiệp luôn rất tốt đẹp."
+    },
+    {
+      "id": 579,
+      "chu_han": "关心",
+      "vd_cau": "老师像妈妈一样关心每一个学生。",
+      "vd_pinyin": "Lǎoshī xiàng māma yíyàng guānxīn měi yí gè xuésheng.",
+      "vd_nghia": "Cô giáo quan tâm đến từng học sinh giống như người mẹ vậy."
+    },
+    {
+      "id": 580,
+      "chu_han": "关于",
+      "vd_cau": "我从图书馆借了两本关于中国历史的书。",
+      "vd_pinyin": "Wǒ cóng túshūguǎn jiè le liǎng běn guānyú Zhōngguó lìshǐ de shū.",
+      "vd_nghia": "Tôi đã mượn hai cuốn sách về lịch sử Trung Quốc từ thư viện."
+    },
+    {
+      "id": 581,
+      "chu_han": "国家",
+      "vd_cau": "他去过很多国家旅游，拍了不少照片。",
+      "vd_pinyin": "Tā qùguo hěn duō guójiā lǚyóu, pāi le bù shǎo zhàopiàn.",
+      "vd_nghia": "Anh ấy đã từng đi du lịch nhiều quốc gia và chụp được không ít bức ảnh."
+    },
+    {
+      "id": 582,
+      "chu_han": "过",
+      "vd_cau": "过马路的时候一定要小心看车。",
+      "vd_pinyin": "Guò mǎlù de shíhou yídìng yào xiǎoxīn kàn chē.",
+      "vd_nghia": "Khi đi qua đường nhất định phải cẩn thận quan sát xe cộ."
+    },
+    {
+      "id": 583,
+      "chu_han": "过去",
+      "vd_cau": "过去这儿只有几家小商店，现在变化真大。",
+      "vd_pinyin": "Guòqù zhèr zhǐ yǒu jǐ jiā xiǎo shāngdiàn, xiànzài biànhuà zhēn dà.",
+      "vd_nghia": "Trước đây ở chỗ này chỉ có vài cửa hàng nhỏ, nay thay đổi lớn thật."
+    },
+    {
+      "id": 584,
+      "chu_han": "还是",
+      "vd_cau": "你想喝热咖啡还是喝新鲜果汁？",
+      "vd_pinyin": "Nǐ xiǎng hē rè kāfēi háishi hē xīnxiān guǒzhī?",
+      "vd_nghia": "Bạn muốn uống cà phê nóng hay là uống nước ép trái cây tươi?"
+    },
+    {
+      "id": 585,
+      "chu_han": "黑板",
+      "vd_cau": "请同学们看黑板，跟老师一起读这些句子。",
+      "vd_pinyin": "Qǐng tóngxuémen kàn hēibǎn, gēn lǎoshī yìqǐ dú zhèxiē jùzi.",
+      "vd_nghia": "Mời các bạn học sinh nhìn lên bảng đen, đọc những câu này cùng thầy giáo."
+    },
+    {
+      "id": 586,
+      "chu_han": "后来",
+      "vd_cau": "他以前在上海工作，后来搬到北京去了。",
+      "vd_pinyin": "Tā yǐqián zài Shànghǎi gōngzuò, hòulái bān dào Běijīng qù le.",
+      "vd_nghia": "Trước đây anh ấy làm việc ở Thượng Hải, về sau đã chuyển đến Bắc Kinh rồi."
+    },
+    {
+      "id": 587,
+      "chu_han": "花",
+      "vd_cau": "买这辆新自行车花了我八百块钱。",
+      "vd_pinyin": "Mǎi zhè liàng xīn zìxíngchē huā le wǒ bābǎi kuài qián.",
+      "vd_nghia": "Mua chiếc xe đạp mới này tiêu hết của tôi 800 tệ."
+    },
+    {
+      "id": 588,
+      "chu_han": "画",
+      "vd_cau": "妹妹画了一张非常可爱的大熊猫。",
+      "vd_pinyin": "Mèimei huà le yì zhāng fēicháng kě'ài de dà xióngmāo.",
+      "vd_nghia": "Em gái đã vẽ một bức tranh gấu trúc vô cùng đáng yêu."
+    },
+    {
+      "id": 589,
+      "chu_han": "坏",
+      "vd_cau": "我的旧手机坏了，打算周末去换一个新的。",
+      "vd_pinyin": "Wǒ de jiù shǒujī huài le, dǎsuàn zhōumò qù huàn yí gè xīn de.",
+      "vd_nghia": "Chiếc điện thoại cũ của tôi bị hỏng rồi, dự định cuối tuần đi đổi cái mới."
+    },
+    {
+      "id": 590,
+      "chu_han": "换",
+      "vd_cau": "这件衬衫有点儿小，可以帮我换一件大号的吗？",
+      "vd_pinyin": "Zhè jiàn chènshān yǒudiǎnr xiǎo, kěyǐ bāng wǒ huàn yí jiàn dàhào de ma?",
+      "vd_nghia": "Chiếc áo sơ mi này hơi chật, có thể giúp tôi đổi sang cỡ lớn hơn được không?"
+    },
+    {
+      "id": 591,
+      "chu_han": "黄河",
+      "vd_cau": "黄河是中国非常有名的一条大河。",
+      "vd_pinyin": "Huáng Hé shì Zhōngguó fēicháng yǒumíng de yì tiáo dà hé.",
+      "vd_nghia": "Sông Hoàng Hà là một con sông lớn vô cùng nổi tiếng của Trung Quốc."
+    },
+    {
+      "id": 592,
+      "chu_han": "或者",
+      "vd_cau": "周末我一般在家看书，或者跟朋友去运动。",
+      "vd_pinyin": "Zhōumò wǒ yìbān zài jiā kànshū, huòzhě gēn péngyou qù yùndòng.",
+      "vd_nghia": "Cuối tuần tôi thường đọc sách ở nhà, hoặc đi tập thể thao cùng bạn bè."
+    },
+    {
+      "id": 593,
+      "chu_han": "几乎",
+      "vd_cau": "他非常喜欢运动，几乎每天都去跑步。",
+      "vd_pinyin": "Tā fēicháng xǐhuan yùndòng, jīhū měitiān dōu qù pǎobù.",
+      "vd_nghia": "Anh ấy rất thích thể thao, hầu như ngày nào cũng đi chạy bộ."
+    },
+    {
+      "id": 594,
+      "chu_han": "极",
+      "vd_cau": "看到下雪了，孩子们都高兴极了！",
+      "vd_pinyin": "Kàndào xià xuě le, háizimen dōu gāoxìng jí le!",
+      "vd_nghia": "Nhìn thấy tuyết rơi, lũ trẻ đều vui mừng khôn xiết!"
+    },
+    {
+      "id": 595,
+      "chu_han": "记得",
+      "vd_cau": "你还记得我们第一次见面的地方吗？",
+      "vd_pinyin": "Nǐ hái jìde wǒmen dìyī cì jiànmiàn de dìfang ma?",
+      "vd_nghia": "Bạn còn nhớ nơi chúng ta gặp mặt lần đầu tiên không?"
+    },
+    {
+      "id": 596,
+      "chu_han": "季节",
+      "vd_cau": "一年有四个季节，我最喜欢漂亮的秋天。",
+      "vd_pinyin": "Yì nián yǒu sì gè jìjié, wǒ zuì xǐhuan piàoliang de qiūtiān.",
+      "vd_nghia": "Một năm có bốn mùa, tôi thích nhất là mùa thu tươi đẹp."
+    },
+    {
+      "id": 597,
+      "chu_han": "检查",
+      "vd_cau": "写完作业以后，一定要认真检查一遍。",
+      "vd_pinyin": "Xiě wán zuòyè yǐhòu, yídìng yào rènzhēn jiǎnchá yí biàn.",
+      "vd_nghia": "Sau khi làm xong bài tập, nhất định phải kiểm tra lại cẩn thận một lượt."
+    },
+    {
+      "id": 598,
+      "chu_han": "见面",
+      "vd_cau": "明天上午十点我们在地铁站门口见面吧。",
+      "vd_pinyin": "Míngtiān shàngwǔ shí diǎn wǒmen zài dìtiězhàn ménkǒu jiànmiàn ba.",
+      "vd_nghia": "10 giờ sáng mai chúng mình gặp mặt ở cửa ga tàu điện ngầm nhé."
+    },
+    {
+      "id": 599,
+      "chu_han": "讲",
+      "vd_cau": "奶奶每天晚上睡觉前都给妹妹讲故事。",
+      "vd_pinyin": "Nǎinai měitiān wǎnshang shuìjiào qián dōu gěi mèimei jiǎng gùshi.",
+      "vd_nghia": "Tối nào trước khi đi ngủ bà nội cũng kể chuyện cho em gái nghe."
+    },
+    {
+      "id": 600,
+      "chu_han": "教",
+      "vd_cau": "张老师教了我们两年汉语，大家都很喜欢他。",
+      "vd_pinyin": "Zhāng lǎoshī jiāo le wǒmen liǎng nián Hànyǔ, dàjiā dōu hěn xǐhuan tā.",
+      "vd_nghia": "Thầy Trương đã dạy tiếng Hán cho chúng tôi hai năm, ai cũng rất quý thầy."
+    },
+    {
+      "id": 601,
+      "chu_han": "角",
+      "vd_cau": "这本笔记本只要三元五角钱。",
+      "vd_pinyin": "Zhè běn bǐjìběn zhǐ yào sān yuán wǔ jiǎo qián.",
+      "vd_nghia": "Cuốn sổ tay này chỉ có giá ba đồng năm hào."
+    },
+    {
+      "id": 602,
+      "chu_han": "脚",
+      "vd_cau": "新买的皮鞋有点儿小，走久了脚很疼。",
+      "vd_pinyin": "Xīn mǎi de píxié yǒudiǎnr xiǎo, zǒu jiǔ le jiǎo hěn téng.",
+      "vd_nghia": "Đôi giày da mới mua hơi chật, đi lâu bàn chân rất đau."
+    },
+    {
+      "id": 603,
+      "chu_han": "接",
+      "vd_cau": "爸爸今天下午五点开车去机场接叔叔。",
+      "vd_pinyin": "Bàba jīntiān xiàwǔ wǔ diǎn kāichē qù jīchǎng jiē shūshu.",
+      "vd_nghia": "5 giờ chiều nay bố lái xe ra sân bay đón chú."
+    },
+    {
+      "id": 604,
+      "chu_han": "街道",
+      "vd_cau": "打扫完以后，这条街道变得非常干净。",
+      "vd_pinyin": "Dǎsǎo wán yǐhòu, zhè tiáo jiēdào biàn de fēicháng gānjìng.",
+      "vd_nghia": "Sau khi quét dọn xong, con phố này trở nên vô cùng sạch sẽ."
+    },
+    {
+      "id": 605,
+      "chu_han": "结婚",
+      "vd_cau": "哥哥和他的女朋友打算今年秋天结婚。",
+      "vd_pinyin": "Gēge hé tā de nǚpéngyou dǎsuàn jīnnián qiūtiān jiéhūn.",
+      "vd_nghia": "Anh trai và bạn gái dự định kết hôn vào mùa thu năm nay."
+    },
+    {
+      "id": 606,
+      "chu_han": "结束",
+      "vd_cau": "下午的会议四点半结束，等我一会儿吧。",
+      "vd_pinyin": "Xiàwǔ de huìyì sì diǎn bàn jiéshù, děng wǒ yíhuìr ba.",
+      "vd_nghia": "Cuộc họp buổi chiều kết thúc lúc 4 giờ rưỡi, đợi tôi một lát nhé."
+    },
+    {
+      "id": 607,
+      "chu_han": "经常",
+      "vd_cau": "我周末经常去图书馆借书看。",
+      "vd_pinyin": "Wǒ zhōumò jīngcháng qù túshūguǎn jiè shū kàn.",
+      "vd_nghia": "Cuối tuần tôi thường xuyên đến thư viện mượn sách đọc."
+    },
+    {
+      "id": 608,
+      "chu_han": "经过",
+      "vd_cau": "每天下班回家的时候，我都会经过那家超市。",
+      "vd_pinyin": "Měitiān xiàbān huíjiā de shíhou, wǒ dōu huì jīngguò nà jiā chāoshì.",
+      "vd_nghia": "Mỗi ngày khi tan làm về nhà, tôi đều đi ngang qua siêu thị đó."
+    },
+    {
+      "id": 609,
+      "chu_han": "久",
+      "vd_cau": "对不起，路上车太多，让你等了这么久。",
+      "vd_pinyin": "Duìbuqǐ, lùshang chē tài duō, ràng nǐ děng le zhème jiǔ.",
+      "vd_nghia": "Xin lỗi nhé, trên đường đông xe quá làm bạn phải đợi lâu như vậy."
+    },
+    {
+      "id": 610,
+      "chu_han": "旧",
+      "vd_cau": "这本旧词典是我上中学的时候买的。",
+      "vd_pinyin": "Zhè běn jiù cídiǎn shì wǒ shàng zhōngxué de shíhou mǎi de.",
+      "vd_nghia": "Cuốn từ điển cũ này được tôi mua từ hồi học cấp hai."
+    },
+    {
+      "id": 611,
+      "chu_han": "句子",
+      "vd_cau": "请用黑板上的这几个字写两个句子。",
+      "vd_pinyin": "Qǐng yòng hēibǎn shàng de zhè jǐ gè zì xiě liǎng gè jùzi.",
+      "vd_nghia": "Hãy dùng mấy chữ trên bảng đen để đặt hai câu văn."
+    },
+    {
+      "id": 612,
+      "chu_han": "渴",
+      "vd_cau": "爬了一个小时山，我渴了，想喝点儿水。",
+      "vd_pinyin": "Pá le yí gè xiǎoshí shān, wǒ kě le, xiǎng hē diǎnr shuǐ.",
+      "vd_nghia": "Leo núi một tiếng đồng hồ rồi, tôi thấy khát, muốn uống chút nước."
+    },
+    {
+      "id": 613,
+      "chu_han": "刻",
+      "vd_cau": "现在是八点一刻，第一节课已经开始了。",
+      "vd_pinyin": "Xiànzài shì bā diǎn yí kè, dìyī jié kè yǐjīng kāishǐ le.",
+      "vd_nghia": "Bây giờ là 8 giờ 15 phút, tiết học đầu tiên đã bắt đầu rồi."
+    },
+    {
+      "id": 614,
+      "chu_han": "客人",
+      "vd_cau": "今天晚上家里来客人，妈妈做了很多菜。",
+      "vd_pinyin": "Jīntiān wǎnshang jiālǐ lái kèrén, māma zuò le hěn duō cài.",
+      "vd_nghia": "Tối nay nhà có khách đến chơi nên mẹ nấu rất nhiều món ăn."
+    },
+    {
+      "id": 615,
+      "chu_han": "口",
+      "vd_cau": "我家一共有四口人：爸爸、妈妈、姐姐和我。",
+      "vd_pinyin": "Wǒ jiā yígòng yǒu sì kǒu rén: bàba, māma, jiějie hé wǒ.",
+      "vd_nghia": "Gia đình tôi có tổng cộng bốn người: bố, mẹ, chị gái và tôi."
+    },
+    {
+      "id": 616,
+      "chu_han": "哭",
+      "vd_cau": "找不到妈妈了，那个小女孩儿着急地哭了。",
+      "vd_pinyin": "Zhǎobudào māma le, nàge xiǎo nǚháir zháojí de kū le.",
+      "vd_nghia": "Không tìm thấy mẹ đâu, cô bé ấy lo lắng bật khóc."
+    },
+    {
+      "id": 617,
+      "chu_han": "蓝",
+      "vd_cau": "姐姐今天穿了一条漂亮的蓝裙子。",
+      "vd_pinyin": "Jiějie jīntiān chuān le yì tiáo piàoliang de lán qúnzi.",
+      "vd_nghia": "Hôm nay chị gái mặc một chiếc váy màu xanh lam rất đẹp."
+    },
+    {
+      "id": 618,
+      "chu_han": "老",
+      "vd_cau": "那位老先生今年七十岁了，身体还是很好。",
+      "vd_pinyin": "Nà wèi lǎo xiānsheng jīnnián qīshí suì le, shēntǐ háishi hěn hǎo.",
+      "vd_nghia": "Ông cụ kia năm nay đã 70 tuổi rồi mà sức khỏe vẫn rất tốt."
+    },
+    {
+      "id": 619,
+      "chu_han": "离开",
+      "vd_cau": "他十八岁的时候离开家去北京上大学。",
+      "vd_pinyin": "Tā shíbā suì de shíhou líkāi jiā qù Běijīng shàng dàxué.",
+      "vd_nghia": "Năm 18 tuổi anh ấy rời nhà lên Bắc Kinh học đại học."
+    },
+    {
+      "id": 620,
+      "chu_han": "脸",
+      "vd_cau": "每天早上起床以后，我都先刷牙、洗脸。",
+      "vd_pinyin": "Měitiān zǎoshang qǐchuáng yǐhòu, wǒ dōu xiān shuāyá, xǐ liǎn.",
+      "vd_nghia": "Mỗi buổi sáng sau khi thức dậy, tôi đều đánh răng, rửa mặt trước tiên."
+    },
+    {
+      "id": 621,
+      "chu_han": "练习",
+      "vd_cau": "学完课文以后，我们一起做一下后面的练习吧。",
+      "vd_pinyin": "Xué wán kèwén yǐhòu, wǒmen yìqǐ zuò yíxià hòumiàn de liànxí ba.",
+      "vd_nghia": "Sau khi học xong bài khóa, chúng mình cùng làm phần bài tập phía sau nhé."
+    },
+    {
+      "id": 622,
+      "chu_han": "辆",
+      "vd_cau": "学校门口停着好几辆公共汽车。",
+      "vd_pinyin": "Xuéxiào ménkǒu tíngzhe hǎo jǐ liàng gōnggòng qìchē.",
+      "vd_nghia": "Trước cổng trường có mấy chiếc xe buýt đang đỗ."
+    },
+    {
+      "id": 623,
+      "chu_han": "邻居",
+      "vd_cau": "我的新邻居非常热情，经常送水果给我吃。",
+      "vd_pinyin": "Wǒ de xīn línjū fēicháng rèqíng, jīngcháng sòng shuǐguǒ gěi wǒ chī.",
+      "vd_nghia": "Người hàng xóm mới của tôi rất nhiệt tình, thường xuyên biếu trái cây cho tôi ăn."
+    },
+    {
+      "id": 624,
+      "chu_han": "楼",
+      "vd_cau": "图书馆就在前面那座白色的楼里。",
+      "vd_pinyin": "Túshūguǎn jiù zài qiánmiàn nà zuò báisè de lóu lǐ.",
+      "vd_nghia": "Thư viện nằm ngay trong tòa nhà màu trắng ở phía trước kia."
+    },
+    {
+      "id": 625,
+      "chu_han": "绿",
+      "vd_cau": "春天来了，路边的树和草都变绿了。",
+      "vd_pinyin": "Chūntiān lái le, lùbiān de shù hé cǎo dōu biàn lǜ le.",
+      "vd_nghia": "Mùa xuân đến rồi, cây cối và thảm cỏ bên đường đều chuyển sang màu xanh lá."
+    },
+    {
+      "id": 626,
+      "chu_han": "马上",
+      "vd_cau": "请等一下，我穿好鞋马上就出来。",
+      "vd_pinyin": "Qǐng děng yíxià, wǒ chuān hǎo xié mǎshàng jiù chūlái.",
+      "vd_nghia": "Xin đợi một chút, tôi đi giày xong sẽ ra ngay lập tức."
+    },
+    {
+      "id": 627,
+      "chu_han": "米",
+      "vd_cau": "弟弟今年十四岁，身高已经一米七了。",
+      "vd_pinyin": "Dìdi jīnnián shísì suì, shēngāo yǐjīng yì mǐ qī le.",
+      "vd_nghia": "Em trai năm nay 14 tuổi, chiều cao đã đạt một mét bảy rồi."
+    },
+    {
+      "id": 628,
+      "chu_han": "明白",
+      "vd_cau": "老师讲得很清楚，大家都听明白了。",
+      "vd_pinyin": "Lǎoshī jiǎng de hěn qīngchu, dàjiā dōu tīng míngbai le.",
+      "vd_nghia": "Thầy giáo giảng rất rõ ràng nên mọi người đều nghe hiểu cả rồi."
+    },
+    {
+      "id": 629,
+      "chu_han": "拿",
+      "vd_cau": "箱子太重了，我帮你一起拿上楼吧。",
+      "vd_pinyin": "Xiāngzi tài zhòng le, wǒ bāng nǐ yìqǐ ná shàng lóu ba.",
+      "vd_nghia": "Chiếc va li nặng quá, để tôi giúp bạn cùng xách lên lầu nhé."
+    },
+    {
+      "id": 630,
+      "chu_han": "奶奶",
+      "vd_cau": "每个周末我们全家都去奶奶家吃晚饭。",
+      "vd_pinyin": "Měi gè zhōumò wǒmen quánjiā dōu qù nǎinai jiā chī wǎnfàn.",
+      "vd_nghia": "Mỗi dịp cuối tuần cả nhà tôi đều sang nhà bà nội ăn bữa tối."
+    },
+    {
+      "id": 631,
+      "chu_han": "南",
+      "vd_cau": "冬天到了，很多鸟都向南飞去了。",
+      "vd_pinyin": "Dōngtiān dào le, hěn duō niǎo dōu xiàng nán fēi qù le.",
+      "vd_nghia": "Mùa đông tới rồi, rất nhiều loài chim đều bay về phương nam."
+    },
+    {
+      "id": 632,
+      "chu_han": "难",
+      "vd_cau": "汉字虽然有点儿难写，但是非常有意思。",
+      "vd_pinyin": "Hànzì suīrán yǒudiǎnr nán xiě, dànshì fēicháng yǒu yìsi.",
+      "vd_nghia": "Chữ Hán tuy hơi khó viết nhưng lại vô cùng thú vị."
+    },
+    {
+      "id": 633,
+      "chu_han": "难过",
+      "vd_cau": "这次考试成绩不太好，他心里有点儿难过。",
+      "vd_pinyin": "Zhè cì kǎoshì chéngjì bú tài hǎo, tā xīnlǐ yǒudiǎnr nánguò.",
+      "vd_nghia": "Kết quả kỳ thi lần này không tốt lắm nên trong lòng cậu ấy hơi buồn."
+    },
+    {
+      "id": 634,
+      "chu_han": "年级",
+      "vd_cau": "我妹妹今年上小学三年级。",
+      "vd_pinyin": "Wǒ mèimei jīnnián shàng xiǎoxué sān niánjí.",
+      "vd_nghia": "Em gái tôi năm nay học lớp ba tiểu học."
+    },
+    {
+      "id": 635,
+      "chu_han": "年轻",
+      "vd_cau": "我们班新来的英语老师非常年轻。",
+      "vd_pinyin": "Wǒmen bān xīn lái de Yīngyǔ lǎoshī fēicháng niánqīng.",
+      "vd_nghia": "Cô giáo tiếng Anh mới chuyển đến lớp chúng tôi rất trẻ."
+    },
+    {
+      "id": 636,
+      "chu_han": "努力",
+      "vd_cau": "他每天都努力学习，所以成绩总是很好。",
+      "vd_pinyin": "Tā měitiān dōu nǔlì xuéxí, suǒyǐ chéngjì zǒngshì hěn hǎo.",
+      "vd_nghia": "Ngày nào cậu ấy cũng cố gắng học tập nên thành tích luôn rất tốt."
+    },
+    {
+      "id": 637,
+      "chu_han": "爬山",
+      "vd_cau": "秋天天气很好，周末我们一起去爬山吧。",
+      "vd_pinyin": "Qiūtiān tiānqì hěn hǎo, zhōumò wǒmen yìqǐ qù páshān ba.",
+      "vd_nghia": "Thời tiết mùa thu rất đẹp, cuối tuần chúng mình cùng đi leo núi nhé."
+    },
+    {
+      "id": 638,
+      "chu_han": "盘子",
+      "vd_cau": "盘子里放着一些刚洗好的新鲜水果。",
+      "vd_pinyin": "Pánzi lǐ fàngzhe yìxiē gāng xǐ hǎo de xīnxiān shuǐguǒ.",
+      "vd_nghia": "Trên đĩa bày một ít hoa quả tươi vừa mới rửa sạch."
+    },
+    {
+      "id": 639,
+      "chu_han": "啤酒",
+      "vd_cau": "开车的时候一定不能喝啤酒。",
+      "vd_pinyin": "Kāichē de shíhou yídìng bù néng hē píjiǔ.",
+      "vd_nghia": "Khi lái xe nhất định không được uống bia."
+    },
+    {
+      "id": 640,
+      "chu_han": "瓶子",
+      "vd_cau": "请帮我把桌子上那个空瓶子拿过来。",
+      "vd_pinyin": "Qǐng bāng wǒ bǎ zhuōzi shàng nàge kōng píngzi ná guòlái.",
+      "vd_nghia": "Làm ơn giúp tôi lấy cái chai rỗng ở trên bàn lại đây."
+    },
+    {
+      "id": 641,
+      "chu_han": "其实",
+      "vd_cau": "这道题看起来很难，其实非常简单。",
+      "vd_pinyin": "Zhè dào tí kàn qǐlai hěn nán, qíshí fēicháng jiǎndān.",
+      "vd_nghia": "Bài tập này nhìn có vẻ khó, nhưng thực ra lại vô cùng đơn giản."
+    },
+    {
+      "id": 642,
+      "chu_han": "其他",
+      "vd_cau": "教室里只有小王一个人，其他同学都去操场了。",
+      "vd_pinyin": "Jiàoshì lǐ zhǐ yǒu Xiǎo Wáng yí gè rén, qítā tóngxué dōu qù cāochǎng le.",
+      "vd_nghia": "Trong lớp học chỉ có một mình Tiểu Vương, các bạn học khác đều ra sân vận động cả rồi."
+    },
+    {
+      "id": 643,
+      "chu_han": "奇怪",
+      "vd_cau": "真奇怪，我刚才放在桌上的眼镜怎么不见了？",
+      "vd_pinyin": "Zhēn qíguài, wǒ gāngcái fàng zài zhuō shàng de yǎnjìng zěnme bú jiàn le?",
+      "vd_nghia": "Kỳ lạ thật, cặp kính vừa nãy tôi để trên bàn sao lại biến mất rồi?"
+    },
+    {
+      "id": 644,
+      "chu_han": "骑",
+      "vd_cau": "我家离学校很近，我每天骑自行车去上课。",
+      "vd_pinyin": "Wǒ jiā lí xuéxiào hěn jìn, wǒ měitiān qí zìxíngchē qù shàngkè.",
+      "vd_nghia": "Nhà tôi cách trường rất gần, ngày nào tôi cũng đạp xe đi học."
+    },
+    {
+      "id": 645,
+      "chu_han": "起飞",
+      "vd_cau": "去上海的飞机上午十点半起飞，我们快走吧。",
+      "vd_pinyin": "Qù Shànghǎi de fēijī shàngwǔ shí diǎn bàn qǐfēi, wǒmen kuài zǒu ba.",
+      "vd_nghia": "Chuyến bay đi Thượng Hải cất cánh lúc 10 giờ rưỡi sáng, chúng ta mau đi thôi."
+    },
+    {
+      "id": 646,
+      "chu_han": "起来",
+      "vd_cau": "请大家站起来跟老师一起读课文。",
+      "vd_pinyin": "Qǐng dàjiā zhàn qǐlai gēn lǎoshī yìqǐ dú kèwén.",
+      "vd_nghia": "Xin mời mọi người đứng lên đọc bài khóa cùng thầy giáo."
+    },
+    {
+      "id": 647,
+      "chu_han": "清楚",
+      "vd_cau": "黑板上的字太小了，我坐后面看不清楚。",
+      "vd_pinyin": "Hēibǎn shàng de zì tài xiǎo le, wǒ zuò hòumiàn kàn bù qīngchu.",
+      "vd_nghia": "Chữ trên bảng nhỏ quá, tôi ngồi phía sau nhìn không rõ."
+    },
+    {
+      "id": 648,
+      "chu_han": "请假",
+      "vd_cau": "小李今天感冒发烧了，已经跟经理请假了。",
+      "vd_pinyin": "Xiǎo Lǐ jīntiān gǎnmào fāshāo le, yǐjīng gēn jīnglǐ qǐngjià le.",
+      "vd_nghia": "Tiểu Lý hôm nay bị cảm sốt nên đã xin nghỉ phép với giám đốc rồi."
+    },
+    {
+      "id": 649,
+      "chu_han": "然后",
+      "vd_cau": "今天晚上我想先写完作业，然后看一会儿电视。",
+      "vd_pinyin": "Jīntiān wǎnshang wǒ xiǎng xiān xiě wán zuòyè, ránhòu kàn yíhuìr diànshì.",
+      "vd_nghia": "Tối nay tôi muốn làm xong bài tập trước, sau đó xem tivi một lát."
+    },
+    {
+      "id": 650,
+      "chu_han": "热情",
+      "vd_cau": "这家饭店的服务员对客人都非常热情。",
+      "vd_pinyin": "Zhè jiā fàndiàn de fúwùyuán duì kèrén dōu fēicháng rèqíng.",
+      "vd_nghia": "Nhân viên phục vụ của nhà hàng này đối với khách đều vô cùng nhiệt tình."
+    },
+    {
+      "id": 651,
+      "chu_han": "认为",
+      "vd_cau": "我认为每天锻炼半个小时对身体很有帮助。",
+      "vd_pinyin": "Wǒ rènwéi měitiān duànliàn bàn gè xiǎoshí duì shēntǐ hěn yǒu bāngzhù.",
+      "vd_nghia": "Tôi cho rằng mỗi ngày tập thể dục nửa tiếng rất có ích cho sức khỏe."
+    },
+    {
+      "id": 652,
+      "chu_han": "容易",
+      "vd_cau": "把一件简单的事每天做好其实并不容易。",
+      "vd_pinyin": "Bǎ yí jiàn jiǎndān de shì měitiān zuò hǎo qíshí bìng bù róngyì.",
+      "vd_nghia": "Làm tốt một việc đơn giản mỗi ngày thực ra không hề dễ dàng."
+    },
+    {
+      "id": 653,
+      "chu_han": "如果",
+      "vd_cau": "如果明天不下雨，我们就去公园踢足球。",
+      "vd_pinyin": "Rúguǒ míngtiān bú xià yǔ, wǒmen jiù qù gōngyuán tī zúqiú.",
+      "vd_nghia": "Nếu ngày mai trời không mưa thì chúng mình sẽ ra công viên đá bóng."
+    },
+    {
+      "id": 654,
+      "chu_han": "声音",
+      "vd_cau": "姐姐唱歌的声音非常好听。",
+      "vd_pinyin": "Jiějie chànggē de shēngyīn fēicháng hǎotīng.",
+      "vd_nghia": "Giọng hát của chị gái vô cùng êm tai."
+    },
+    {
+      "id": 655,
+      "chu_han": "世界",
+      "vd_cau": "长大以后，我想去世界各地旅游。",
+      "vd_pinyin": "Zhǎng dà yǐhòu, wǒ xiǎng qù shìjiè gèdì lǚyóu.",
+      "vd_nghia": "Sau khi lớn lên, tôi muốn đi du lịch khắp nơi trên thế giới."
+    },
+    {
+      "id": 656,
+      "chu_han": "试",
+      "vd_cau": "这条白裙子很漂亮，你去试一下吧。",
+      "vd_pinyin": "Zhè tiáo bái qúnzi hěn piàoliang, nǐ qù shì yíxià ba.",
+      "vd_nghia": "Chiếc váy trắng này rất đẹp, bạn vào mặc thử xem sao nhé."
+    },
+    {
+      "id": 657,
+      "chu_han": "叔叔",
+      "vd_cau": "王叔叔在银行工作，每天都很忙。",
+      "vd_pinyin": "Wáng shūshu zài yínháng gōngzuò, měitiān dōu hěn máng.",
+      "vd_nghia": "Chú Vương làm việc ở ngân hàng, ngày nào cũng rất bận rộn."
+    },
+    {
+      "id": 658,
+      "chu_han": "舒服",
+      "vd_cau": "洗完热水澡以后，身体觉得舒服极了。",
+      "vd_pinyin": "Xǐ wán rèshuǐzǎo yǐhòu, shēntǐ juéde shūfu jí le.",
+      "vd_nghia": "Sau khi tắm nước ấm xong, cơ thể cảm thấy dễ chịu vô cùng."
+    },
+    {
+      "id": 659,
+      "chu_han": "双",
+      "vd_cau": "妈妈昨天给我买了一双新的运动鞋。",
+      "vd_pinyin": "Māma zuótiān gěi wǒ mǎi le yì shuāng xīn de yùndòngxié.",
+      "vd_nghia": "Hôm qua mẹ đã mua cho tôi một đôi giày thể thao mới."
+    },
+    {
+      "id": 660,
+      "chu_han": "水平",
+      "vd_cau": "来中国一年以后，他的汉语水平提高了很多。",
+      "vd_pinyin": "Lái Zhōngguó yì nián yǐhòu, tā de Hànyǔ shuǐpíng tígāo le hěn duō.",
+      "vd_nghia": "Sau một năm đến Trung Quốc, trình độ tiếng Hán của cậu ấy đã tiến bộ rất nhiều."
+    },
+    {
+      "id": 661,
+      "chu_han": "司机",
+      "vd_cau": "那位出租车司机非常热情，帮我们拿行李箱。",
+      "vd_pinyin": "Nà wèi chūzūchē sījī fēicháng rèqíng, bāng wǒmen ná xínglixiāng.",
+      "vd_nghia": "Bác tài xế taxi kia rất nhiệt tình, đã giúp chúng tôi xách va li hành lý."
+    },
+    {
+      "id": 662,
+      "chu_han": "特别",
+      "vd_cau": "这家饭店做的面包特别甜，我很喜欢吃。",
+      "vd_pinyin": "Zhè jiā fàndiàn zuò de miànbāo tèbié tián, wǒ hěn xǐhuan chī.",
+      "vd_nghia": "Bánh mì tiệm này làm đặc biệt ngọt thơm, tôi rất thích ăn."
+    },
+    {
+      "id": 663,
+      "chu_han": "提高",
+      "vd_cau": "多跟中国朋友说话，能很快提高口语水平。",
+      "vd_pinyin": "Duō gēn Zhōngguó péngyou shuōhuà, néng hěn kuài tígāo kǒuyǔ shuǐpíng.",
+      "vd_nghia": "Nói chuyện nhiều với bạn bè Trung Quốc có thể nhanh chóng nâng cao trình độ khẩu ngữ."
+    },
+    {
+      "id": 664,
+      "chu_han": "体育",
+      "vd_cau": "弟弟最喜欢上体育课，因为他爱跑步。",
+      "vd_pinyin": "Dìdi zuì xǐhuan shàng tǐyù kè, yīnwèi tā ài pǎobù.",
+      "vd_nghia": "Em trai thích học tiết thể dục nhất vì em ấy mê chạy bộ."
+    },
+    {
+      "id": 665,
+      "chu_han": "条",
+      "vd_cau": "妈妈在商店买了一条漂亮的黑裤子。",
+      "vd_pinyin": "Māma zài shāngdiàn mǎi le yì tiáo piàoliang de hēi kùzi.",
+      "vd_nghia": "Mẹ đã mua một chiếc quần màu đen rất đẹp ở cửa hàng."
+    },
+    {
+      "id": 666,
+      "chu_han": "突然",
+      "vd_cau": "我们正在公园走路，突然下起大雨来了。",
+      "vd_pinyin": "Wǒmen zhèngzài gōngyuán zǒulù, tūrán xià qǐ dàyǔ lái le.",
+      "vd_nghia": "Chúng tôi đang đi dạo trong công viên thì đột nhiên trời đổ mưa to."
+    },
+    {
+      "id": 667,
+      "chu_han": "万",
+      "vd_cau": "我们学校的图书馆里有五万多本书。",
+      "vd_pinyin": "Wǒmen xuéxiào de túshūguǎn lǐ yǒu wǔwàn duō běn shū.",
+      "vd_nghia": "Trong thư viện trường chúng tôi có hơn năm vạn cuốn sách."
+    },
+    {
+      "id": 668,
+      "chu_han": "忘记",
+      "vd_cau": "出门太着急，他忘记带自己的护照了。",
+      "vd_pinyin": "Chūmén tài zháojí, tā wàngjì dài zìjǐ de hùzhào le.",
+      "vd_nghia": "Ra khỏi nhà vội quá nên anh ấy quên mang theo hộ chiếu của mình rồi."
+    },
+    {
+      "id": 669,
+      "chu_han": "为",
+      "vd_cau": "今天是爸爸的生日，我为他准备了一件礼物。",
+      "vd_pinyin": "Jīntiān shì bàba de shēngrì, wǒ wèi tā zhǔnbèi le yí jiàn lǐwù.",
+      "vd_nghia": "Hôm nay là sinh nhật của bố, tôi đã chuẩn bị một món quà cho bố."
+    },
+    {
+      "id": 670,
+      "chu_han": "为了",
+      "vd_cau": "为了身体健康，爸爸每天晚上都去跑步。",
+      "vd_pinyin": "Wèile shēntǐ jiànkāng, bàba měitiān wǎnshang dōu qù pǎobù.",
+      "vd_nghia": "Để có sức khỏe tốt, tối nào bố cũng đi chạy bộ."
+    },
+    {
+      "id": 671,
+      "chu_han": "位",
+      "vd_cau": "请问，哪一位是教你们汉语的李老师？",
+      "vd_pinyin": "Qǐngwèn, nǎ yí wèi shì jiāo nǐmen Hànyǔ de Lǐ lǎoshī?",
+      "vd_nghia": "Xin hỏi, vị nào là cô Lý dạy tiếng Hán cho các bạn vậy?"
+    },
+    {
+      "id": 672,
+      "chu_han": "文化",
+      "vd_cau": "我很喜欢学习汉语，也想多了解中国文化。",
+      "vd_pinyin": "Wǒ hěn xǐhuan xuéxí Hànyǔ, yě xiǎng duō liǎojiě Zhōngguó wénhuà.",
+      "vd_nghia": "Tôi rất thích học tiếng Hán và cũng muốn tìm hiểu thêm về văn hóa Trung Quốc."
+    },
+    {
+      "id": 673,
+      "chu_han": "西",
+      "vd_cau": "下午六点多，太阳慢慢从西边下山了。",
+      "vd_pinyin": "Xiàwǔ liù diǎn duō, tàiyáng mànman cóng xībian xiàshān le.",
+      "vd_nghia": "Hơn 6 giờ chiều, mặt trời từ từ lặn xuống ở phía tây."
+    },
+    {
+      "id": 674,
+      "chu_han": "洗手间",
+      "vd_cau": "请问，这一层的洗手间在电梯左边还是右边？",
+      "vd_pinyin": "Qǐngwèn, zhè yì céng de xǐshǒujiān zài diàntī zuǒbian háishi yòubian?",
+      "vd_nghia": "Xin hỏi, nhà vệ sinh của tầng này nằm ở bên trái hay bên phải thang máy?"
+    },
+    {
+      "id": 675,
+      "chu_han": "先",
+      "vd_cau": "吃饭以前一定要先洗手。",
+      "vd_pinyin": "Chīfàn yǐqián yídìng yào xiān xǐ shǒu.",
+      "vd_nghia": "Trước khi ăn cơm nhất định phải rửa tay trước."
+    },
+    {
+      "id": 676,
+      "chu_han": "香蕉",
+      "vd_cau": "这些黄色的香蕉又香又甜，真好吃。",
+      "vd_pinyin": "Zhèxiē huángsè de xiāngjiāo yòu xiāng yòu tián, zhēn hǎochī.",
+      "vd_nghia": "Mấy quả chuối chín vàng này vừa thơm vừa ngọt, ngon thật đấy."
+    },
+    {
+      "id": 677,
+      "chu_han": "向",
+      "vd_cau": "从图书馆出来向北走两百米就是银行。",
+      "vd_pinyin": "Cóng túshūguǎn chūlái xiàng běi zǒu liǎngbǎi mǐ jiù shì yínháng.",
+      "vd_nghia": "Từ thư viện đi ra hướng về phía bắc 200 mét chính là ngân hàng."
+    },
+    {
+      "id": 678,
+      "chu_han": "像",
+      "vd_cau": "她笑起来的时候非常像她妈妈。",
+      "vd_pinyin": "Tā xiào qǐlai de shíhou fēicháng xiàng tā māma.",
+      "vd_nghia": "Lúc cô ấy mỉm cười trông vô cùng giống mẹ của cô ấy."
+    },
+    {
+      "id": 679,
+      "chu_han": "小心",
+      "vd_cau": "下雨天路上车很多，你走路一定要小心。",
+      "vd_pinyin": "Xiàyǔtiān lùshang chē hěn duō, nǐ zǒulù yídìng yào xiǎoxīn.",
+      "vd_nghia": "Ngày mưa trên đường có rất nhiều xe cộ, bạn đi bộ nhất định phải cẩn thận."
+    },
+    {
+      "id": 680,
+      "chu_han": "校长",
+      "vd_cau": "今天上午校长来我们班听了一节汉语课。",
+      "vd_pinyin": "Jīntiān shàngwǔ xiàozhǎng lái wǒmen bān tīng le yì jié Hànyǔ kè.",
+      "vd_nghia": "Sáng nay thầy hiệu trưởng đã đến lớp chúng tôi dự giờ một tiết tiếng Hán."
+    },
+    {
+      "id": 681,
+      "chu_han": "信用卡",
+      "vd_cau": "在这家大超市买东西可以用信用卡。",
+      "vd_pinyin": "Zài zhè jiā dà chāoshì mǎi dōngxi kěyǐ yòng xìnyòngkǎ.",
+      "vd_nghia": "Mua đồ ở siêu thị lớn này có thể thanh toán bằng thẻ tín dụng."
+    },
+    {
+      "id": 682,
+      "chu_han": "需要",
+      "vd_cau": "明天的会议需要准备三十把椅子。",
+      "vd_pinyin": "Míngtiān de huìyì xūyào zhǔnbèi sānshí bǎ yǐzi.",
+      "vd_nghia": "Cuộc họp ngày mai cần chuẩn bị ba mươi chiếc ghế."
+    },
+    {
+      "id": 683,
+      "chu_han": "爷爷",
+      "vd_cau": "我爷爷最喜欢在花园里一边喝茶一边听音乐。",
+      "vd_pinyin": "Wǒ yéye zuì xǐhuan zài huāyuán lǐ yìbiān hē chá yìbiān tīng yīnyuè.",
+      "vd_nghia": "Ông nội tôi thích nhất là vừa uống trà vừa nghe nhạc trong vườn hoa."
+    },
+    {
+      "id": 684,
+      "chu_han": "一般",
+      "vd_cau": "我一般早上七点起床，八点出门去公司。",
+      "vd_pinyin": "Wǒ yìbān zǎoshang qī diǎn qǐchuáng, bā diǎn chūmén qù gōngsī.",
+      "vd_nghia": "Thông thường tôi thức dậy lúc 7 giờ sáng và ra khỏi nhà đi làm lúc 8 giờ."
+    },
+    {
+      "id": 685,
+      "chu_han": "一边",
+      "vd_cau": "我们坐在咖啡店里，一边喝饮料一边说话。",
+      "vd_pinyin": "Wǒmen zuò zài kāfēidiàn lǐ, yìbiān hē yǐnliào yìbiān shuōhuà.",
+      "vd_nghia": "Chúng tôi ngồi trong quán cà phê, vừa uống nước vừa trò chuyện."
+    },
+    {
+      "id": 686,
+      "chu_han": "一定",
+      "vd_cau": "明天的生日晚会你一定要来参加啊！",
+      "vd_pinyin": "Míngtiān de shēngrì wǎnhuì nǐ yídìng yào lái cānjiā a!",
+      "vd_nghia": "Bữa tiệc sinh nhật tối mai bạn nhất định phải đến tham gia đấy nhé!"
+    },
+    {
+      "id": 687,
+      "chu_han": "一共",
+      "vd_cau": "这两本书和一支铅笔一共三十五块钱。",
+      "vd_pinyin": "Zhè liǎng běn shū hé yì zhī qiānbǐ yígòng sānshíwǔ kuài qián.",
+      "vd_nghia": "Hai cuốn sách này và một chiếc bút chì tổng cộng hết 35 tệ."
+    },
+    {
+      "id": 688,
+      "chu_han": "一会儿",
+      "vd_cau": "工作太累了，我们先喝杯茶休息一会儿吧。",
+      "vd_pinyin": "Gōngzuò tài lèi le, wǒmen xiān hē bēi chá xiūxi yíhuìr ba.",
+      "vd_nghia": "Làm việc mệt quá rồi, chúng ta uống tách trà nghỉ ngơi một lát trước đã nhé."
+    },
+    {
+      "id": 689,
+      "chu_han": "一样",
+      "vd_cau": "我和姐姐的爱好一样，都喜欢画画儿。",
+      "vd_pinyin": "Wǒ hé jiějie de àihào yíyàng, dōu xǐhuan huàhuàr.",
+      "vd_nghia": "Sở thích của tôi và chị gái giống nhau, đều thích vẽ tranh."
+    },
+    {
+      "id": 690,
+      "chu_han": "一直",
+      "vd_cau": "从这儿一直往前走，就能看见地铁站了。",
+      "vd_pinyin": "Cóng zhèr yìzhí wǎng qián zǒu, jiù néng kànjiàn dìtiězhàn le.",
+      "vd_nghia": "Từ đây cứ đi thẳng về phía trước là có thể nhìn thấy ga tàu điện ngầm."
+    },
+    {
+      "id": 691,
+      "chu_han": "以前",
+      "vd_cau": "来北京以前，我只学过六个月的汉语。",
+      "vd_pinyin": "Lái Běijīng yǐqián, wǒ zhǐ xuéguo liù gè yuè de Hànyǔ.",
+      "vd_nghia": "Trước khi đến Bắc Kinh, tôi mới chỉ học tiếng Hán được sáu tháng."
+    },
+    {
+      "id": 692,
+      "chu_han": "饮料",
+      "vd_cau": "冰箱里有牛奶和果汁，你想喝什么饮料？",
+      "vd_pinyin": "Bīngxiāng lǐ yǒu niúnǎi hé guǒzhī, nǐ xiǎng hē shénme yǐnliào?",
+      "vd_nghia": "Trong tủ lạnh có sữa và nước trái cây, bạn muốn uống đồ uống gì?"
+    },
+    {
+      "id": 693,
+      "chu_han": "应该",
+      "vd_cau": "你发烧了，应该早点儿吃药去睡觉。",
+      "vd_pinyin": "Nǐ fāshāo le, yīnggāi zǎodiǎnr chī yào qù shuìjiào.",
+      "vd_nghia": "Bạn bị sốt rồi, nên uống thuốc rồi đi ngủ sớm đi."
+    },
+    {
+      "id": 694,
+      "chu_han": "影响",
+      "vd_cau": "晚上喝太多茶可能会影响睡觉。",
+      "vd_pinyin": "Wǎnshang hē tài duō chá kěnéng huì yǐngxiǎng shuìjiào.",
+      "vd_nghia": "Buổi tối uống quá nhiều trà có thể sẽ ảnh hưởng đến giấc ngủ."
+    },
+    {
+      "id": 695,
+      "chu_han": "用",
+      "vd_cau": "很多外国朋友现在都会用筷子吃饭了。",
+      "vd_pinyin": "Hěn duō wàiguó péngyou xiànzài dōu huì yòng kuàizi chīfàn le.",
+      "vd_nghia": "Rất nhiều người bạn nước ngoài bây giờ đều biết dùng đũa ăn cơm rồi."
+    },
+    {
+      "id": 696,
+      "chu_han": "游戏",
+      "vd_cau": "别总是玩电脑游戏，多出去锻炼身体吧。",
+      "vd_pinyin": "Bié zǒngshì wán diànnǎo yóuxì, duō chūqù duànliàn shēntǐ ba.",
+      "vd_nghia": "Đừng lúc nào cũng chơi trò chơi điện tử nữa, hãy ra ngoài tập thể dục nhiều hơn nhé."
+    },
+    {
+      "id": 697,
+      "chu_han": "有名",
+      "vd_cau": "北京烤鸭是一道非常有名的中国菜。",
+      "vd_pinyin": "Běijīng kǎoyā shì yí dào fēicháng yǒumíng de Zhōngguó cài.",
+      "vd_nghia": "Vịt quay Bắc Kinh là một món ăn Trung Quốc vô cùng nổi tiếng."
+    },
+    {
+      "id": 698,
+      "chu_han": "又",
+      "vd_cau": "这家超市的水果又新鲜又便宜。",
+      "vd_pinyin": "Zhè jiā chāoshì de shuǐguǒ yòu xīnxiān yòu piányi.",
+      "vd_nghia": "Hoa quả của siêu thị này vừa tươi ngon lại vừa rẻ."
+    },
+    {
+      "id": 699,
+      "chu_han": "遇到",
+      "vd_cau": "读课文的时候遇到不认识的字可以查字典。",
+      "vd_pinyin": "Dú kèwén de shíhou yùdào bú rènshi de zì kěyǐ chá zìdiǎn.",
+      "vd_nghia": "Khi đọc bài khóa nếu gặp phải chữ không biết thì có thể tra từ điển."
+    },
+    {
+      "id": 700,
+      "chu_han": "元",
+      "vd_cau": "这张电影票四十元，学生买票只要二十元。",
+      "vd_pinyin": "Zhè zhāng diànyǐngpiào sìshí yuán, xuésheng mǎi piào zhǐ yào èrshí yuán.",
+      "vd_nghia": "Tấm vé xem phim này giá 40 tệ, học sinh mua vé chỉ mất 20 tệ."
+    },
+    {
+      "id": 701,
+      "chu_han": "愿意",
+      "vd_cau": "他非常热情，大家都愿意跟他做朋友。",
+      "vd_pinyin": "Tā fēicháng rèqíng, dàjiā dōu yuànyì gēn tā zuò péngyou.",
+      "vd_nghia": "Anh ấy vô cùng nhiệt tình nên mọi người đều sẵn lòng kết bạn với anh ấy."
+    },
+    {
+      "id": 702,
+      "chu_han": "月亮",
+      "vd_cau": "今天晚上的月亮又大又圆，真好看！",
+      "vd_pinyin": "Jīntiān wǎnshang de yuèliang yòu dà yòu yuán, zhēn hǎokàn!",
+      "vd_nghia": "Mặt trăng tối nay vừa to vừa tròn, đẹp thật đấy!"
+    },
+    {
+      "id": 703,
+      "chu_han": "越",
+      "vd_cau": "外面的雪越下越大，树和房子都变白了。",
+      "vd_pinyin": "Wàimiàn de xuě yuè xià yuè dà, shù hé fángzi dōu biàn bái le.",
+      "vd_nghia": "Tuyết bên ngoài rơi càng lúc càng dày, cây cối và nhà cửa đều hóa trắng xóa."
+    },
+    {
+      "id": 704,
+      "chu_han": "站",
+      "vd_cau": "从学校坐地铁去火车站只有三站。",
+      "vd_pinyin": "Cóng xuéxiào zuò dìtiě qù huǒchēzhàn zhǐ yǒu sān zhàn.",
+      "vd_nghia": "Từ trường đi tàu điện ngầm đến ga tàu hỏa chỉ mất ba trạm."
+    },
+    {
+      "id": 705,
+      "chu_han": "张",
+      "vd_cau": "房间里有一张大床和一张白色的桌子。",
+      "vd_pinyin": "Fángjiān lǐ yǒu yì zhāng dà chuáng hé yì zhāng báisè de zhuōzi.",
+      "vd_nghia": "Trong phòng có một chiếc giường lớn và một chiếc bàn màu trắng."
+    },
+    {
+      "id": 706,
+      "chu_han": "长",
+      "vd_cau": "一年没见，你儿子已经长这么高了！",
+      "vd_pinyin": "Yì nián méi jiàn, nǐ érzi yǐjīng zhǎng zhème gāo le!",
+      "vd_nghia": "Một năm không gặp, con trai bạn đã lớn cao thế này rồi!"
+    },
+    {
+      "id": 707,
+      "chu_han": "照片",
+      "vd_cau": "这张照片是我们去年在长城拍的。",
+      "vd_pinyin": "Zhè zhāng zhàopiàn shì wǒmen qùnián zài Chángchéng pāi de.",
+      "vd_nghia": "Bức ảnh này là do chúng tôi chụp ở Vạn Lý Trường Thành vào năm ngoái."
+    },
+    {
+      "id": 708,
+      "chu_han": "只",
+      "vd_cau": "今天早上起晚了，我只喝了一杯牛奶就出门了。",
+      "vd_pinyin": "Jīntiān zǎoshang qǐ wǎn le, wǒ zhǐ hē le yì bēi niúnǎi jiù chūmén le.",
+      "vd_nghia": "Sáng nay dậy muộn nên tôi chỉ uống một cốc sữa rồi ra khỏi nhà luôn."
+    },
+    {
+      "id": 709,
+      "chu_han": "只",
+      "vd_cau": "树上有两只小鸟正在快乐地唱歌。",
+      "vd_pinyin": "Shù shàng yǒu liǎng zhī xiǎo niǎo zhèngzài kuàilè de chànggē.",
+      "vd_nghia": "Trên cây có hai chú chim nhỏ đang vui vẻ hót vang."
+    },
+    {
+      "id": 710,
+      "chu_han": "中间",
+      "vd_cau": "照片里站在爸爸和妈妈中间的人是我。",
+      "vd_pinyin": "Zhàopiàn lǐ zhàn zài bàba hé māma zhōngjiān de rén shì wǒ.",
+      "vd_nghia": "Người đứng ở giữa bố và mẹ trong bức ảnh chính là tôi."
+    },
+    {
+      "id": 711,
+      "chu_han": "中文",
+      "vd_cau": "她的中文说得真好，跟中国人差不多。",
+      "vd_pinyin": "Tā de Zhōngwén shuō de zhēn hǎo, gēn Zhōngguórén chàbuduō.",
+      "vd_nghia": "Cô ấy nói tiếng Trung giỏi thật, chẳng khác mấy so với người Trung Quốc."
+    },
+    {
+      "id": 712,
+      "chu_han": "终于",
+      "vd_cau": "找了半个小时，我终于在包里找到护照了。",
+      "vd_pinyin": "Zhǎo le bàn gè xiǎoshí, wǒ zhōngyú zài bāo lǐ zhǎodào hùzhào le.",
+      "vd_nghia": "Tìm kiếm nửa tiếng đồng hồ, cuối cùng tôi cũng tìm thấy hộ chiếu ở trong túi."
+    },
+    {
+      "id": 713,
+      "chu_han": "种",
+      "vd_cau": "超市里有好几种新鲜的水果，你想买哪种？",
+      "vd_pinyin": "Chāoshì lǐ yǒu hǎo jǐ zhǒng xīnxiān de shuǐguǒ, nǐ xiǎng mǎi nǎ zhǒng?",
+      "vd_nghia": "Trong siêu thị có mấy loại trái cây tươi, bạn muốn mua loại nào?"
+    },
+    {
+      "id": 714,
+      "chu_han": "周末",
+      "vd_cau": "这个周末我们一家人打算去爷爷家吃饭。",
+      "vd_pinyin": "Zhège zhōumò wǒmen yìjiārén dǎsuàn qù yéye jiā chīfàn.",
+      "vd_nghia": "Cuối tuần này cả nhà chúng tôi dự định sang nhà ông nội ăn cơm."
+    },
+    {
+      "id": 715,
+      "chu_han": "主要",
+      "vd_cau": "这本书主要介绍了中国北方的历史和文化。",
+      "vd_pinyin": "Zhè běn shū zhǔyào jièshào le Zhōngguó běifāng de lìshǐ hé wénhuà.",
+      "vd_nghia": "Cuốn sách này chủ yếu giới thiệu về lịch sử và văn hóa miền Bắc Trung Quốc."
+    },
+    {
+      "id": 716,
+      "chu_han": "祝",
+      "vd_cau": "祝爷爷奶奶身体健康，天天快乐！",
+      "vd_pinyin": "Zhù yéye nǎinai shēntǐ jiànkāng, tiāntiān kuàilè!",
+      "vd_nghia": "Chúc ông bà nội dồi dào sức khỏe, ngày nào cũng vui vẻ!"
+    },
+    {
+      "id": 717,
+      "chu_han": "注意",
+      "vd_cau": "最近天气冷，大家要注意多穿衣服，别感冒了。",
+      "vd_pinyin": "Zuìjìn tiānqì lěng, dàjiā yào zhùyì duō chuān yīfu, bié gǎnmào le.",
+      "vd_nghia": "Dạo này trời lạnh, mọi người nhớ chú ý mặc thêm áo để khỏi bị cảm nhé."
+    },
+    {
+      "id": 718,
+      "chu_han": "字典",
+      "vd_cau": "这本汉字字典非常有用，我每天学习都用它。",
+      "vd_pinyin": "Zhè běn Hànzì zìdiǎn fēicháng yǒuyòng, wǒ měitiān xuéxí dōu yòng tā.",
+      "vd_nghia": "Cuốn từ điển chữ Hán này vô cùng hữu ích, ngày nào học bài tôi cũng dùng đến nó."
+    },
+    {
+      "id": 719,
+      "chu_han": "自己",
+      "vd_cau": "妹妹今年六岁了，已经会自己穿衣服了。",
+      "vd_pinyin": "Mèimei jīnnián liù suì le, yǐjīng huì zìjǐ chuān yīfu le.",
+      "vd_nghia": "Em gái năm nay lên sáu tuổi, đã biết tự mình mặc quần áo rồi."
+    },
+    {
+      "id": 720,
+      "chu_han": "总是",
+      "vd_cau": "张老师总是笑着回答学生们的每一个问题。",
+      "vd_pinyin": "Zhāng lǎoshī zǒngshì xiàozhe huídá xuéshengmen de měi yí gè wèntí.",
+      "vd_nghia": "Thầy Trương luôn mỉm cười giải đáp từng câu hỏi của các học sinh."
+    },
+    {
+      "id": 721,
+      "chu_han": "最近",
+      "vd_cau": "你最近忙什么呢？好久没见到你了。",
+      "vd_pinyin": "Nǐ zuìjìn máng shénme ne? Hǎojiǔ méi jiàndào nǐ le.",
+      "vd_nghia": "Gần đây bạn bận việc gì thế? Đã lâu lắm rồi không gặp bạn."
+    },
+    {
+      "id": 722,
+      "chu_han": "作用",
+      "vd_cau": "这种感冒药很有作用，我吃了一次就好多了。",
+      "vd_pinyin": "Zhè zhǒng gǎnmàoyào hěn yǒu zuòyòng, wǒ chī le yí cì jiù hǎo duō le.",
+      "vd_nghia": "Loại thuốc cảm này rất có tác dụng, tôi mới uống một lần mà đã đỡ hơn nhiều rồi."
+    }
+  ],
+  "them_moi_hsk3": [
+    {
+      "cap": "HSK3",
+      "chu_han": "厨房",
+      "pinyin": "chúfáng",
+      "nghia": "nhà bếp",
+      "vd_cau": "爸爸妈妈正在厨房里一起做晚饭。",
+      "vd_pinyin": "Bàba māma zhèngzài chúfáng lǐ yìqǐ zuò wǎnfàn.",
+      "vd_nghia": "Bố mẹ đang cùng nhau nấu bữa tối ở trong nhà bếp."
+    },
+    {
+      "cap": "HSK3",
+      "chu_han": "普通话",
+      "pinyin": "pǔtōnghuà",
+      "nghia": "tiếng Phổ thông",
+      "vd_cau": "李老师是北京人，她的普通话说得非常标准。",
+      "vd_pinyin": "Lǐ lǎoshī shì Běijīngrén, tā de pǔtōnghuà shuō de fēicháng biāozhǔn.",
+      "vd_nghia": "Cô Lý là người Bắc Kinh, cô ấy nói tiếng Phổ thông vô cùng chuẩn."
+    },
+    {
+      "cap": "HSK3",
+      "chu_han": "葡萄",
+      "pinyin": "pútao",
+      "nghia": "quả nho",
+      "vd_cau": "妈妈刚买了一公斤紫色的葡萄，特别甜。",
+      "vd_pinyin": "Māma gāng mǎi le yì gōngjīn zǐsè de pútao, tèbié tián.",
+      "vd_nghia": "Mẹ vừa mua một ki-lô-gam nho tím, ngọt đặc biệt luôn."
+    },
+    {
+      "cap": "HSK3",
+      "chu_han": "花园",
+      "pinyin": "huāyuán",
+      "nghia": "vườn hoa",
+      "vd_cau": "春天到了，学校花园里的花都开了。",
+      "vd_pinyin": "Chūntiān dào le, xuéxiào huāyuán lǐ de huā dōu kāi le.",
+      "vd_nghia": "Mùa xuân đến rồi, hoa trong vườn hoa của trường đều đã nở rộ."
+    },
+    {
+      "cap": "HSK3",
+      "chu_han": "眼镜",
+      "pinyin": "yǎnjìng",
+      "nghia": "kính mắt",
+      "vd_cau": "不戴眼镜的时候，我看不清楚黑板上的字。",
+      "vd_pinyin": "Bú dài yǎnjìng de shíhou, wǒ kàn bù qīngchu hēibǎn shàng de zì.",
+      "vd_nghia": "Khi không đeo kính, tôi không nhìn rõ chữ viết trên bảng đen."
+    },
+    {
+      "cap": "HSK3",
+      "chu_han": "而且",
+      "pinyin": "érqiě",
+      "nghia": "hơn nữa, mà còn",
+      "vd_cau": "这家饭店的菜不但便宜，而且非常好吃。",
+      "vd_pinyin": "Zhè jiā fàndiàn de cài búdàn piányi, érqiě fēicháng hǎochī.",
+      "vd_nghia": "Món ăn của nhà hàng này không những rẻ mà còn vô cùng ngon."
+    }
+  ]
+}

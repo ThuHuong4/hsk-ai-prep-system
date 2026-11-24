@@ -5,14 +5,6 @@ import xiangHead from "../../../assets/images/xiang/home/xiang_head.webp";
 import useHomeEffects from "../hooks/useHomeEffects.js";
 import "../styles/publicHome.css";
 
-// Cấu trúc đề HSK 1–4 (thông tin định dạng kỳ thi, không phải số liệu người dùng)
-const LEVELS = [
-  { n: 1, q: 40, mins: 40, parts: ["Nghe", "Đọc"], c: "#16B2AA", hz: "一" },
-  { n: 2, q: 60, mins: 55, parts: ["Nghe", "Đọc"], c: "#EF6F57", hz: "二" },
-  { n: 3, q: 80, mins: 90, parts: ["Nghe", "Đọc", "Viết"], c: "#2F4F9A", hz: "三" },
-  { n: 4, q: 100, mins: 105, parts: ["Nghe", "Đọc", "Viết"], c: "#E0A030", hz: "四" },
-];
-
 function HomeSprite() {
   return (
     <svg width="0" height="0" style={{ position: "absolute" }} aria-hidden="true" focusable="false">
@@ -55,35 +47,46 @@ export default function PublicHomePage() {
           <div className="h-copy">
             <h1 id="hero-title" className="enter" tabIndex="-1">Học HSK theo cách vui nhất, cùng Xiang!</h1>
             <div className="h-btns enter d2">
-              <Link className="btn btn-xl" to="/dang-ky">Bắt đầu ôn luyện</Link>
-              <Link className="btn btn-xl plain" to="/thi-thu">Xem đề thi thử HSK</Link>
-              <p className="h-note">Xem đề không cần tài khoản · <Link to="/dang-nhap">Đã có tài khoản? Đăng nhập</Link></p>
+              <Link className="btn btn-xl" to="/dang-ky">Đăng ký & Đánh giá đầu vào</Link>
+              <Link className="btn btn-xl plain" to="/dang-nhap">Đăng nhập</Link>
+              <p className="h-note">Đăng nhập để làm bài đánh giá 8 câu, xác định trình độ trước khi Ôn luyện & Thi thử.</p>
             </div>
           </div>
         </div>
         <nav className="h-levels" aria-label="Các cấp HSK">
           <div className="wrap">
-            <Link to="/thi-thu/hsk/1" className="lv-link"><span className="lv-ic" style={{ '--c': "#16B2AA" }}>一</span>HSK 1</Link>
-            <Link to="/thi-thu/hsk/2" className="lv-link"><span className="lv-ic" style={{ '--c': "#EF6F57" }}>二</span>HSK 2</Link>
-            <Link to="/thi-thu/hsk/3" className="lv-link"><span className="lv-ic" style={{ '--c': "#2F4F9A" }}>三</span>HSK 3</Link>
-            <Link to="/thi-thu/hsk/4" className="lv-link"><span className="lv-ic" style={{ '--c': "#E0A030" }}>四</span>HSK 4</Link>
+            <span className="lv-link"><span className="lv-ic" style={{ '--c': "#16B2AA" }}>一</span>HSK 1</span>
+            <span className="lv-link"><span className="lv-ic" style={{ '--c': "#EF6F57" }}>二</span>HSK 2</span>
+            <span className="lv-link"><span className="lv-ic" style={{ '--c': "#2F4F9A" }}>三</span>HSK 3</span>
+            <span className="lv-link"><span className="lv-ic" style={{ '--c': "#E0A030" }}>四</span>HSK 4</span>
             <span className="lv-note">Từ vựng · Nghe · Đọc · Viết</span>
           </div>
         </nav>
       </section>
     
-      {/* Đề thi thử trên trang chủ */}
+      {/* Quy trình 4 bước cá nhân hóa (giải thích rõ ngay từ đầu, không trùng lặp dải HSK 1–4 ở trên) */}
       <section className="h-exams" aria-labelledby="hx-title">
         <div className="wrap">
-          <div className="hx-head"><div><span className="eyebrow">Thi thử HSK</span><h2 id="hx-title">Đề thi thử HSK</h2></div><Link className="gline" to="/thi-thu">Xem tất cả đề</Link></div>
+          <div className="hx-head">
+            <div>
+              <span className="eyebrow">Lộ trình cá nhân hóa có dẫn chứng</span>
+              <h2 id="hx-title">Học đúng trình độ qua 4 bước rõ ràng</h2>
+            </div>
+            <span className="lv-note">Không học lan man · Không biết trước đề thi</span>
+          </div>
           <div className="pk-grid" id="home-cats">
-            {LEVELS.map((d) => (
-              <Link key={d.n} className="pk-card cat" to={`/thi-thu/hsk/${d.n}`} style={{ "--c": d.c }} aria-label={`Đề thi thử HSK ${d.n}`}>
-                <div className="pk-top"><span className="lv-ic" style={{ "--c": d.c }}>{d.hz}</span><span className="cat-go"><svg className="ico"><use href="#i-arrow" /></svg></span></div>
-                <b className="cat-lv">HSK {d.n}</b>
-                <span className="cat-main">{d.q} câu · {d.mins} phút</span>
-                <span className="cat-sk">{d.parts.join(" · ")}</span>
-              </Link>
+            {[
+              { n: 1, c: "#16B2AA", title: "Đánh giá thích ứng 8 câu", main: "Từ vựng · Đọc · Nghe · Viết", desc: "Tự tăng/hạ độ khó HSK 1–4 theo từng cặp câu thực tế" },
+              { n: 2, c: "#EF6F57", title: "Chẩn đoán lỗ hổng thật", main: "Kèm câu bằng chứng cụ thể", desc: "Tách bạch tự làm đúng, đúng nhờ gợi ý và lỗi lặp lại" },
+              { n: 3, c: "#2F4F9A", title: "Bài phù hợp hôm nay", main: "Đề xuất 5 mức ưu tiên", desc: "Gợi ý 2 tầng & Hỏi Xiang hướng dẫn tư duy, không giải hộ" },
+              { n: 4, c: "#E0A030", title: "Thi thử đề ngẫu nhiên", main: "40–105 phút chuẩn HSK", desc: "Bảo mật danh sách đề, tự chọn cấp từ kết quả đầu vào" },
+            ].map((s) => (
+              <div key={s.n} className="pk-card cat" style={{ "--c": s.c }} aria-label={`Bước ${s.n}: ${s.title}`}>
+                <div className="pk-top"><span className="lv-ic" style={{ "--c": s.c }}>{s.n}</span></div>
+                <b className="cat-lv">{s.title}</b>
+                <span className="cat-main">{s.main}</span>
+                <span className="cat-sk">{s.desc}</span>
+              </div>
             ))}
           </div>
         </div>
@@ -151,9 +154,9 @@ export default function PublicHomePage() {
       <section className="feat alt" aria-labelledby="fx-title">
         <div className="wrap feat-grid rev">
           <div className="feat-copy reveal">
-            <h2 id="fx-title">Thi thử trước ngày thi</h2>
-            <p>Làm quen với cấu trúc đề HSK</p>
-            <Link className="btn exam fx-btn" to="/thi-thu">Xem đề thi thử</Link>
+            <h2 id="fx-title">Thi thử như phòng thi thật</h2>
+            <p>Đề thi được bảo mật trước giờ làm bài và cấp ngẫu nhiên theo trình độ đầu vào của bạn.</p>
+            <Link className="btn exam fx-btn" to="/dang-nhap">Đăng nhập để thi thử</Link>
           </div>
           <div className="feat-art reveal" aria-hidden="true">
             <div className="exam-art">
@@ -218,8 +221,11 @@ export default function PublicHomePage() {
       {/* CTA */}
       <section className="h-cta" aria-labelledby="cta-title">
         <div className="wrap" style={{ textAlign: "center" }}>
-          <h2 id="cta-title" className="reveal">Sẵn sàng chinh phục HSK cùng Xiang?</h2>
-          <div className="reveal" style={{ display: "flex", flexWrap: "wrap", gap: "12px", justifyContent: "center", marginTop: "26px" }}><Link className="btn btn-xl" to="/dang-ky" style={{ width: "auto", padding: "0 32px" }}>Bắt đầu</Link><Link className="btn btn-xl plain" to="/dang-ky" style={{ width: "auto", padding: "0 32px" }}>Đăng ký</Link></div>
+          <h2 id="cta-title" className="reveal">Sẵn sàng đánh giá trình độ HSK cùng Xiang?</h2>
+          <div className="reveal" style={{ display: "flex", flexWrap: "wrap", gap: "12px", justifyContent: "center", marginTop: "26px" }}>
+            <Link className="btn btn-xl" to="/dang-ky" style={{ width: "auto", padding: "0 32px" }}>Tạo tài khoản & Đánh giá ngay</Link>
+            <Link className="btn btn-xl plain" to="/dang-nhap" style={{ width: "auto", padding: "0 32px" }}>Đã có tài khoản? Đăng nhập</Link>
+          </div>
         </div>
         <div className="cta-stage" aria-hidden="true">
           <svg className="ground" viewBox="0 0 1440 260" preserveAspectRatio="none"><path d="M0 120 C 220 120 300 120 420 150 C 560 186 600 260 720 260 C 840 260 880 186 1020 150 C 1140 120 1220 120 1440 120 L1440 260 L0 260 Z" fill="var(--ground)"/></svg>

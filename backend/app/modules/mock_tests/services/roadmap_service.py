@@ -201,11 +201,16 @@ def level_context(db: Session, uid: int, exam_level: dict, skill: str) -> dict:
     lower.reverse()
     name = SKILL_VI[skill]
     if not has:
-        note = f"{exam_level['ten']} chưa có bài Ôn luyện {name}, tạm ôn nền {lower[0]['ten']} trong lúc chờ bổ sung." if lower \
-            else f"{exam_level['ten']} chưa có bài Ôn luyện {name}."
+        note = (
+            f"Đề xuất củng cố từ bài nền tảng {lower[0]['ten']} ({name}) để nắm chắc gốc từ vựng và mẫu câu trọng tâm."
+            if lower
+            else f"Hãy đối chiếu lời giải chi tiết các câu {name} bên dưới và trao đổi cùng Trợ giảng Xiang."
+        )
         return {"levels": lower, "ghi_chu": note, "mo_cap": None}
-    note = (f"Bài {name} {exam_level['ten']} chưa mở với bạn: làm kiểm tra bắt đầu cấp để mở"
-            + (f", trong lúc đó ôn nền {lower[0]['ten']}." if lower else "."))
+    note = (
+        f"Lộ trình {name} {exam_level['ten']} đang chờ mở khóa — bạn có thể làm bài Kiểm tra bắt đầu cấp để mở ngay"
+        + (f", hoặc luyện củng cố từ {lower[0]['ten']}." if lower else ".")
+    )
     return {"levels": lower, "ghi_chu": note, "mo_cap": {"cap_do_id": exam_level["id"], "ky_nang": skill}}
 
 
@@ -217,10 +222,10 @@ def _label(g: dict) -> str:
 
 
 def _template(g: dict) -> str:
-    text_ = f"Bạn đúng {g['dung']:g}/{g['tong']} câu {_label(g)}, đây là phần cần ôn trước."
+    text_ = f"Bạn đạt {g['dung']:g}/{g['tong']} câu ở phần {_label(g)}, đây là nhóm kỹ năng nên ưu tiên củng cố trước."
     if g.get("lesson") and not g["lesson"]["cung_dang"]:
-        text_ += f" Chưa có bài ôn đúng dạng này, hãy luyện bài {SKILL_VI[g['ky_nang']]} để quen từ vựng và tốc độ."
-    return text_ + " Xem lại các câu sai trước, rồi làm bài ôn bên dưới."
+        text_ += f" Hãy luyện bài {SKILL_VI[g['ky_nang']]} bên dưới để tăng phản xạ từ vựng và tốc độ xử lý câu."
+    return text_ + " Đối chiếu kỹ các câu sai trước khi bước vào bài luyện tập."
 
 
 def _prompt(exam: dict, groups: list[dict], prev: dict) -> str:

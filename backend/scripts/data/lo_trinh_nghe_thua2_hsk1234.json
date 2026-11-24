@@ -1,0 +1,1645 @@
+{
+  "lands": [
+    {
+      "cap": 1,
+      "ten": "Mua sắm, ăn uống và đi lại cơ bản",
+      "muc_tieu": "Nghe hiểu giá cả, món ăn, phương tiện đi lại và lịch sinh hoạt đơn giản ở trình độ HSK 1",
+      "bai": [
+        {
+          "ten": "Gọi món và đồ uống",
+          "items": [
+            {
+              "nhom": "chao_hoi_giao_tiep",
+              "loi_nghe": "男：你想喝茶还是喝水？\n女：我想喝一杯热茶。\n问：女的想喝什么？",
+              "noi_dung": "女的 想 喝 什么？",
+              "pinyin": "Nǚde xiǎng hē shénme?",
+              "raw_opts": [
+                "热茶 [rè chá]",
+                "冷水 [lěng shuǐ]",
+                "牛奶 [niúnǎi]"
+              ],
+              "dich_nghia": "Người nữ muốn uống gì?\nTrà nóng / Nước lạnh / Sữa bò",
+              "goi_y": "Nghe kỹ câu trả lời của người nữ sau cụm từ 想喝.",
+              "goi_y_2": "Người nữ nói: 我想喝一杯热茶 (tôi muốn uống một tách trà nóng).",
+              "giai_thich": "Người nữ chọn uống một tách trà nóng (热茶)."
+            },
+            {
+              "nhom": "thoi_gian_lich_hen",
+              "loi_nghe": "女：中午我们去哪儿吃饭？\n男：去学校后面的中国饭店吧，那儿的米饭和菜很好吃。\n问：他们中午去哪儿吃饭？",
+              "noi_dung": "他们 中午 去 哪儿 吃饭？",
+              "pinyin": "Tāmen zhōngwǔ qù nǎr chīfàn?",
+              "raw_opts": [
+                "中国饭店 [Zhōngguó fàndiàn]",
+                "朋友家 [péngyou jiā]",
+                "医院前面 [yīyuàn qiánmiàn]"
+              ],
+              "dich_nghia": "Buổi trưa họ đi đâu ăn cơm?\nNhà hàng Trung Quốc / Nhà bạn bè / Phía trước bệnh viện",
+              "goi_y": "Chú ý địa điểm nằm sau cụm từ 去学校后面的…",
+              "goi_y_2": "Người nam rủ: 去学校后面的中国饭店吧 (đi nhà hàng Trung Quốc sau trường).",
+              "giai_thich": "Buổi trưa hai người đến nhà hàng Trung Quốc (中国饭店) phía sau trường học."
+            },
+            {
+              "nhom": "so_dem_luong_tu",
+              "loi_nghe": "男：桌子上有什么水果？\n女：有五个红苹果，你想吃一个吗？\n问：桌子上有几个苹果？",
+              "noi_dung": "桌子 上 有 几 个 苹果？",
+              "pinyin": "Zhuōzi shàng yǒu jǐ gè píngguǒ?",
+              "raw_opts": [
+                "五个 [wǔ gè]",
+                "三个 [sān gè]",
+                "八个 [bā gè]"
+              ],
+              "dich_nghia": "Trên bàn có mấy quả táo?\n5 quả / 3 quả / 8 quả",
+              "goi_y": "Lắng nghe số lượng đứng ngay sau động từ 有 trong lời người nữ.",
+              "goi_y_2": "Người nữ trả lời: 有五个红苹果 (có 5 quả táo đỏ).",
+              "giai_thich": "Trên bàn có 5 quả táo đỏ (五个)."
+            },
+            {
+              "nhom": "phu_dinh_nghi_van",
+              "loi_nghe": "女：爸爸今天晚上在家吃饭吗？\n男：他今天工作很忙，不回家吃晚饭了。\n问：爸爸今天晚上在哪儿吃饭？",
+              "noi_dung": "爸爸 今天 晚上 在 家 吃饭 吗？",
+              "pinyin": "Bàba jīntiān wǎnshang zài jiā chīfàn ma?",
+              "raw_opts": [
+                "不在家吃 [bú zài jiā chī]",
+                "在家吃 [zài jiā chī]",
+                "去学校吃 [qù xuéxiào chī]"
+              ],
+              "dich_nghia": "Tối nay bố có ăn cơm ở nhà không?\nKhông ăn ở nhà / Ăn ở nhà / Đi trường ăn",
+              "goi_y": "Nghe kỹ cụm phủ định ở cuối câu trả lời của người nam.",
+              "goi_y_2": "Người nam nói: 他今天工作很忙，不回家吃晚饭了.",
+              "giai_thich": "Vì bận công việc nên tối nay bố không về nhà ăn cơm (不在家吃)."
+            },
+            {
+              "nhom": "vi_tri_phuong_huong",
+              "loi_nghe": "男：妈妈，我的大杯子在哪儿？我想喝水。\n女：在电脑旁边，那本汉语书后面。\n问：男的的杯子在哪儿？",
+              "noi_dung": "男的 的 杯子 在 哪儿？",
+              "pinyin": "Nánde de bēizi zài nǎr?",
+              "raw_opts": [
+                "电脑旁边 [diànnǎo pángbiān]",
+                "椅子下面 [yǐzi xiàmiàn]",
+                "电视前面 [diànshì qiánmiàn]"
+              ],
+              "dich_nghia": "Chiếc cốc của người nam ở đâu?\nBên cạnh máy tính / Dưới ghế / Phía trước tivi",
+              "goi_y": "Nghe cụm chỉ vị trí đầu tiên trong câu trả lời của mẹ.",
+              "goi_y_2": "Người mẹ chỉ chỗ: 在电脑旁边 (ở bên cạnh máy tính).",
+              "giai_thich": "Chiếc cốc lớn đặt ở bên cạnh máy tính (电脑旁边), phía sau quyển sách tiếng Hán."
+            }
+          ]
+        },
+        {
+          "ten": "Mua sắm và giá cả",
+          "items": [
+            {
+              "nhom": "so_dem_luong_tu",
+              "loi_nghe": "女：先生，这件衣服多少钱？\n男：这件衣服六十块，很漂亮。\n问：这件衣服多少钱？",
+              "noi_dung": "这 件 衣服 多少 钱？",
+              "pinyin": "Zhè jiàn yīfu duōshao qián?",
+              "raw_opts": [
+                "六十块 [liùshí kuài]",
+                "十六块 [shíliù kuài]",
+                "七十块 [qīshí kuài]"
+              ],
+              "dich_nghia": "Bộ quần áo này giá bao nhiêu tiền?\n60 tệ / 16 tệ / 70 tệ",
+              "goi_y": "Phân biệt rõ thứ tự con số 六十 và 十六 khi người nam báo giá.",
+              "goi_y_2": "Người nam nói: 这件衣服六十块 (bộ quần áo này 60 tệ).",
+              "giai_thich": "Bộ quần áo có giá 60 tệ (六十块)."
+            },
+            {
+              "nhom": "chao_hoi_giao_tiep",
+              "loi_nghe": "男：你星期六下午去商店买什么？\n女：我想去买两本汉语书和一个小杯子。\n问：女的想买几本汉语书？",
+              "noi_dung": "女的 想 买 几 本 汉语 书？",
+              "pinyin": "Nǚde xiǎng mǎi jǐ běn Hànyǔ shū?",
+              "raw_opts": [
+                "两本 [liǎng běn]",
+                "一本 [yì běn]",
+                "四本 [sì běn]"
+              ],
+              "dich_nghia": "Người nữ muốn mua mấy quyển sách tiếng Hán?\n2 quyển / 1 quyển / 4 quyển",
+              "goi_y": "Chú ý số lượng đi trước lượng từ 本.",
+              "goi_y_2": "Người nữ nói: 我想去买两本汉语书 (mua 2 quyển sách tiếng Hán).",
+              "giai_thich": "Người nữ định mua 2 quyển sách tiếng Hán (两本) và 1 chiếc cốc nhỏ."
+            },
+            {
+              "nhom": "tro_tu_dong_thai",
+              "loi_nghe": "女：你在水果商店买了什么？\n男：我买了一些苹果，没买梨，苹果十二块。\n问：男的买了什么水果？",
+              "noi_dung": "男的 买 了 什么 水果？",
+              "pinyin": "Nánde mǎi le shénme shuǐguǒ?",
+              "raw_opts": [
+                "苹果 [píngguǒ]",
+                "梨 [lí]",
+                "什么都没买 [shénme dōu méi mǎi]"
+              ],
+              "dich_nghia": "Người nam đã mua loại quả gì?\nTáo / Lê / Không mua gì cả",
+              "goi_y": "Phân biệt thứ đã mua (买了…) và thứ không mua (没买…).",
+              "goi_y_2": "Người nam nói: 我买了一些苹果，没买梨 (đã mua táo, không mua lê).",
+              "giai_thich": "Người nam mua táo (苹果) hết 12 tệ và không mua lê."
+            },
+            {
+              "nhom": "so_dem_luong_tu",
+              "loi_nghe": "男：小姐，这个小椅子多少钱？\n女：一个四十块，两个七十块。\n问：买一个椅子多少钱？",
+              "noi_dung": "买 一 个 椅子 多少 钱？",
+              "pinyin": "Mǎi yí gè yǐzi duōshao qián?",
+              "raw_opts": [
+                "四十块 [sìshí kuài]",
+                "七十块 [qīshí kuài]",
+                "三十块 [sānshí kuài]"
+              ],
+              "dich_nghia": "Mua một chiếc ghế hết bao nhiêu tiền?\n40 tệ / 70 tệ / 30 tệ",
+              "goi_y": "Câu hỏi chỉ hỏi giá của 1 chiếc ghế (一个), hãy nghe vế đầu tiên.",
+              "goi_y_2": "Người nữ báo giá: 一个四十块，两个七十块 (1 chiếc 40 tệ, 2 chiếc 70 tệ).",
+              "giai_thich": "Mua lẻ 1 chiếc ghế có giá 40 tệ (四十块)."
+            },
+            {
+              "nhom": "gia_dinh_nghe_nghiep",
+              "loi_nghe": "女：这件大衣服是买给谁的？\n男：明天是我爸爸的生日，我想买给他。\n问：衣服是买给谁的？",
+              "noi_dung": "衣服 是 买 给 谁 的？",
+              "pinyin": "Yīfu shì mǎi gěi shéi de?",
+              "raw_opts": [
+                "爸爸 [bàba]",
+                "儿子 [érzi]",
+                "老师 [lǎoshī]"
+              ],
+              "dich_nghia": "Chiếc áo này mua tặng cho ai?\nBố / Con trai / Thầy cô giáo",
+              "goi_y": "Lắng nghe người được nhắc đến trong lời giải thích của người nam.",
+              "goi_y_2": "Người nam nói: 明天是我爸爸的生日，我想买给他.",
+              "giai_thich": "Người nam mua chiếc áo tặng bố (爸爸) nhân dịp sinh nhật ngày mai."
+            }
+          ]
+        },
+        {
+          "ten": "Phương tiện và điểm đến",
+          "items": [
+            {
+              "nhom": "vi_tri_phuong_huong",
+              "loi_nghe": "男：现在九点了，我们怎么去火车站？\n女：我们坐出租车去吧，二十分钟能到。\n问：他们怎么去火车站？",
+              "noi_dung": "他们 怎么 去 火车站？",
+              "pinyin": "Tāmen zěnme qù huǒchēzhàn?",
+              "raw_opts": [
+                "坐出租车 [zuò chūzūchē]",
+                "开车 [kāichē]",
+                "坐飞机 [zuò fēijī]"
+              ],
+              "dich_nghia": "Họ đi đến ga tàu hỏa bằng phương tiện gì?\nĐi taxi / Lái xe ô tô / Đi máy bay",
+              "goi_y": "Nghe phương tiện giao thông đứng sau động từ 坐 trong lời người nữ.",
+              "goi_y_2": "Người nữ đề nghị: 我们坐出租车去吧 (chúng mình đi taxi nhé).",
+              "giai_thich": "Hai người chọn đi taxi (坐出租车) ra ga tàu hỏa."
+            },
+            {
+              "nhom": "thoi_gian_lich_hen",
+              "loi_nghe": "女：李老师什么时候坐飞机去北京？\n男：他星期五上午十点去北京，星期日回来。\n问：李老师哪天去北京？",
+              "noi_dung": "李 老师 哪 天 去 北京？",
+              "pinyin": "Lǐ lǎoshī nǎ tiān qù Běijīng?",
+              "raw_opts": [
+                "星期五 [xīngqīwǔ]",
+                "星期日 [xīngqīrì]",
+                "星期三 [xīngqīsān]"
+              ],
+              "dich_nghia": "Thầy Lý đi Bắc Kinh vào ngày nào?\nThứ Sáu / Chủ nhật / Thứ Tư",
+              "goi_y": "Phân biệt ngày đi Bắc Kinh (去北京) và ngày quay về (回来).",
+              "goi_y_2": "Người nam nói: 他星期五上午十点去北京，星期日回来.",
+              "giai_thich": "Thầy Lý bay đi Bắc Kinh vào sáng thứ Sáu (星期五) và Chủ nhật quay về."
+            },
+            {
+              "nhom": "gia_dinh_nghe_nghiep",
+              "loi_nghe": "男：你下午去学校吗？\n女：不去，我的好朋友在医院工作，我去医院看她。\n问：女的下午去哪儿？",
+              "noi_dung": "女的 下午 去 哪儿？",
+              "pinyin": "Nǚde xiàwǔ qù nǎr?",
+              "raw_opts": [
+                "医院 [yīyuàn]",
+                "学校 [xuéxiào]",
+                "商店 [shāngdiàn]"
+              ],
+              "dich_nghia": "Buổi chiều người nữ đi đâu?\nBệnh viện / Trường học / Cửa hàng",
+              "goi_y": "Sau từ phủ định 不去, hãy nghe địa điểm người nữ thực sự đến.",
+              "goi_y_2": "Người nữ nói: 我去医院看她 (tôi đến bệnh viện thăm cô ấy).",
+              "giai_thich": "Buổi chiều người nữ không đến trường mà đến bệnh viện (医院) thăm bạn thân."
+            },
+            {
+              "nhom": "bo_ngu",
+              "loi_nghe": "女：你姐姐会开车吗？\n男：她会开车，今天早上她开车送我去学校。\n问：今天早上谁开车送男的去学校？",
+              "noi_dung": "今天 早上 谁 开车 送 男的 去 学校？",
+              "pinyin": "Jīntiān zǎoshang shéi kāichē sòng nánde qù xuéxiào?",
+              "raw_opts": [
+                "姐姐 [jiějie]",
+                "妈妈 [māma]",
+                "同学 [tóngxué]"
+              ],
+              "dich_nghia": "Sáng nay ai lái xe đưa người nam đến trường?\nChị gái / Mẹ / Bạn cùng lớp",
+              "goi_y": "Chú ý nhân vật được hỏi ngay từ câu đầu tiên và đại từ 她 ở câu sau.",
+              "goi_y_2": "Người nam trả lời: 她会开车，今天早上她开车送我去学校 (chị gái lái xe đưa đi).",
+              "giai_thich": "Chị gái (姐姐) biết lái xe và sáng nay đã chở người nam tới trường."
+            },
+            {
+              "nhom": "thoi_gian_lich_hen",
+              "loi_nghe": "男：飞机几点到上海？\n女：下午三点四十分到，我哥哥来机场接我。\n问：飞机几点到上海？",
+              "noi_dung": "飞机 几 点 到 上海？",
+              "pinyin": "Fēijī jǐ diǎn dào Shànghǎi?",
+              "raw_opts": [
+                "下午三点四十分 [xiàwǔ sān diǎn sìshí fēn]",
+                "下午四点三十分 [xiàwǔ sì diǎn sānshí fēn]",
+                "上午三点十分 [shàngwǔ sān diǎn shí fēn]"
+              ],
+              "dich_nghia": "Máy bay mấy giờ đến Thượng Hải?\n3 giờ 40 phút chiều / 4 giờ 30 phút chiều / 3 giờ 10 phút sáng",
+              "goi_y": "Nghe kỹ buổi và con số giờ - phút trước chữ 到.",
+              "goi_y_2": "Người nữ nói: 下午三点四十分到 (3 giờ 40 phút chiều đến nơi).",
+              "giai_thich": "Chuyến bay hạ cánh xuống Thượng Hải lúc 3 giờ 40 phút chiều (下午三点四十分)."
+            }
+          ]
+        },
+        {
+          "ten": "Thời tiết và sinh hoạt ở nhà",
+          "items": [
+            {
+              "nhom": "lien_tu_quan_he",
+              "loi_nghe": "女：外面下雨了，我们还去商店吗？\n男：雨很大，今天不去了，在家看书吧。\n问：男的今天想在家做什么？",
+              "noi_dung": "男的 今天 想 在 家 做 什么？",
+              "pinyin": "Nánde jīntiān xiǎng zài jiā zuò shénme?",
+              "raw_opts": [
+                "看书 [kànshū]",
+                "做饭 [zuòfàn]",
+                "睡觉 [shuìjiào]"
+              ],
+              "dich_nghia": "Hôm nay người nam muốn làm gì ở nhà?\nĐọc sách / Nấu cơm / Đi ngủ",
+              "goi_y": "Nghe hoạt động ở cuối câu nói của người nam.",
+              "goi_y_2": "Người nam đề nghị: 在家看书吧 (ở nhà đọc sách nhé).",
+              "giai_thich": "Vì bên ngoài mưa to nên người nam rủ ở nhà đọc sách (看书)."
+            },
+            {
+              "nhom": "cau_so_sanh_nhan_manh",
+              "loi_nghe": "男：今天天气太冷了！\n女：是啊，你快进屋里来，喝一点儿热水吧。\n问：今天天气怎么样？",
+              "noi_dung": "今天 天气 怎么样？",
+              "pinyin": "Jīntiān tiānqì zěnmeyàng?",
+              "raw_opts": [
+                "很冷 [hěn lěng]",
+                "很热 [hěn rè]",
+                "很好 [hěn hǎo]"
+              ],
+              "dich_nghia": "Thời tiết hôm nay như thế nào?\nRất lạnh / Rất nóng / Rất đẹp",
+              "goi_y": "Nghe câu cảm thán mở đầu của người nam.",
+              "goi_y_2": "Người nam nói: 今天天气太冷了！(hôm nay trời lạnh quá!).",
+              "giai_thich": "Thời tiết hôm nay rất lạnh (很冷 / 太冷了)."
+            },
+            {
+              "nhom": "vi_tri_phuong_huong",
+              "loi_nghe": "女：你看见我家的小猫了吗？\n男：看见了，它在椅子下面睡觉呢。\n问：小猫在哪儿睡觉？",
+              "noi_dung": "小猫 在 哪儿 睡觉？",
+              "pinyin": "Xiǎomāo zài nǎr shuìjiào?",
+              "raw_opts": [
+                "椅子下面 [yǐzi xiàmiàn]",
+                "桌子上面 [zhuōzi shàngmiàn]",
+                "电视后面 [diànshì hòumiàn]"
+              ],
+              "dich_nghia": "Chú mèo nhỏ đang ngủ ở đâu?\nPhía dưới chiếc ghế / Phía trên cái bàn / Phía sau tivi",
+              "goi_y": "Lắng nghe cụm từ chỉ vị trí sau chữ 在 trong lời người nam.",
+              "goi_y_2": "Người nam nói: 它在椅子下面睡觉呢 (nó đang ngủ dưới gầm ghế).",
+              "giai_thich": "Chú mèo con đang nằm ngủ ở phía dưới chiếc ghế (椅子下面)."
+            },
+            {
+              "nhom": "thoi_gian_lich_hen",
+              "loi_nghe": "男：晚上八点你在做什么？我给你打电话了。\n女：对不起，八点我在听汉语录音，没听见电话。\n问：晚上八点女的在做什么？",
+              "noi_dung": "晚上 八 点 女的 在 做 什么？",
+              "pinyin": "Wǎnshang bā diǎn nǚde zài zuò shénme?",
+              "raw_opts": [
+                "学习汉语 [xuéxí Hànyǔ]",
+                "看电视 [kàn diànshì]",
+                "买东西 [mǎi dōngxi]"
+              ],
+              "dich_nghia": "Lúc 8 giờ tối người nữ đang làm gì?\nHọc tiếng Hán / Xem tivi / Mua đồ",
+              "goi_y": "Nghe hoạt động sau cụm 八点我在… của người nữ.",
+              "goi_y_2": "Người nữ giải thích: 八点我在听汉语录音 (đang nghe băng tiếng Hán).",
+              "giai_thich": "Lúc 8 giờ tối người nữ đang nghe ghi âm để học tiếng Hán (学习汉语)."
+            },
+            {
+              "nhom": "chao_hoi_giao_tiep",
+              "loi_nghe": "女：明天是星期六，你想去看电影吗？\n男：好啊，明天下午我们一起去看吧。\n问：他们什么时候去看电影？",
+              "noi_dung": "他们 什么 时候 去 看 电影？",
+              "pinyin": "Tāmen shénme shíhou qù kàn diànyǐng?",
+              "raw_opts": [
+                "星期六下午 [xīngqīliù xiàwǔ]",
+                "星期五晚上 [xīngqīwǔ wǎnshang]",
+                "星期日上午 [xīngqīrì shàngwǔ]"
+              ],
+              "dich_nghia": "Khi nào họ đi xem phim?\nChiều thứ Bảy / Tối thứ Sáu / Sáng Chủ nhật",
+              "goi_y": "Kết hợp thông tin ngày (明天是星期六) ở câu đầu và buổi (明天下午) ở câu sau.",
+              "goi_y_2": "Ngày mai là thứ Bảy, người nam hẹn: 明天下午我们一起去看吧.",
+              "giai_thich": "Hai người hẹn đi xem phim cùng nhau vào chiều thứ Bảy (星期六下午)."
+            }
+          ]
+        }
+      ],
+      "cuoi_thua_moi": [
+        {
+          "nhom": "so_dem_luong_tu",
+          "loi_nghe": "女：你在商店买了几个杯子？\n男：我买了三个白杯子，一个十块，一共三十块。\n问：三个杯子一共多少钱？",
+          "noi_dung": "三 个 杯子 一共 多少 钱？",
+          "pinyin": "Sān gè bēizi yígòng duōshao qián?",
+          "raw_opts": [
+            "三十块 [sānshí kuài]",
+            "十块 [shí kuài]",
+            "二十块 [èrshí kuài]"
+          ],
+          "dich_nghia": "Ba chiếc cốc tổng cộng bao nhiêu tiền?\n30 tệ / 10 tệ / 20 tệ",
+          "goi_y": "Câu hỏi có chữ 一共 (tổng cộng), hãy nghe con số cuối cùng.",
+          "goi_y_2": "Người nam nói: 一个十块，一共三十块 (một chiếc 10 tệ, tổng cộng 30 tệ).",
+          "giai_thich": "Mỗi chiếc cốc trắng giá 10 tệ, mua 3 chiếc hết tổng cộng 30 tệ (三十块)."
+        },
+        {
+          "nhom": "thoi_gian_lich_hen",
+          "loi_nghe": "男：女儿明天几点去机场？\n女：上午十点半，我们九点开车送她去吧。\n问：他们几点开车去机场？",
+          "noi_dung": "他们 几 点 开车 去 机场？",
+          "pinyin": "Tāmen jǐ diǎn kāichē qù jīchǎng?",
+          "raw_opts": [
+            "上午九点 [shàngwǔ jiǔ diǎn]",
+            "上午十点半 [shàngwǔ shí diǎn bàn]",
+            "下午两点 [xiàwǔ liǎng diǎn]"
+          ],
+          "dich_nghia": "Mấy giờ họ lái xe ra sân bay?\n9 giờ sáng / 10 giờ rưỡi sáng / 2 giờ chiều",
+          "goi_y": "Chú ý câu hỏi hỏi giờ lái xe đưa đi (开车送她), không phải giờ bay.",
+          "goi_y_2": "Người nữ nói: 我们九点开车送她去吧 (9 giờ chúng ta lái xe đưa con đi nhé).",
+          "giai_thich": "Con gái có lịch ở sân bay lúc 10h30 nên bố mẹ lái xe đưa đi lúc 9 giờ sáng (上午九点)."
+        },
+        {
+          "nhom": "gia_dinh_nghe_nghiep",
+          "loi_nghe": "女：那只小狗是谁的？真漂亮！\n男：是我同学的，它今年两岁了。\n问：小狗是谁的？",
+          "noi_dung": "小狗 是 谁 的？",
+          "pinyin": "Xiǎogǒu shì shéi de?",
+          "raw_opts": [
+            "男的的同学的 [nánde de tóngxué de]",
+            "王老师的 [Wáng lǎoshī de]",
+            "女的的妹妹的 [nǚde de mèimei de]"
+          ],
+          "dich_nghia": "Chú chó nhỏ là của ai?\nCủa bạn học người nam / Của thầy Vương / Của em gái người nữ",
+          "goi_y": "Nghe cụm từ sở hữu ngay đầu câu trả lời của người nam.",
+          "goi_y_2": "Người nam đáp: 是我同学的 (là của bạn học tôi).",
+          "giai_thich": "Chú chó nhỏ 2 tuổi là của bạn cùng lớp người nam (男的的同学的)."
+        },
+        {
+          "nhom": "bo_ngu",
+          "loi_nghe": "男：这个汉字怎么读？我不会写，也不会读。\n女：这个字读“家”，我教你写吧，不难。\n问：女的觉得写这个汉字怎么样？",
+          "noi_dung": "女的 觉得 写 这个 汉字 怎么样？",
+          "pinyin": "Nǚde juéde xiě zhège Hànzì zěnmeyàng?",
+          "raw_opts": [
+            "不难 [bù nán]",
+            "很难 [hěn nán]",
+            "太多了 [tài duō le]"
+          ],
+          "dich_nghia": "Người nữ thấy việc viết chữ Hán này thế nào?\nKhông khó / Rất khó / Nhiều quá",
+          "goi_y": "Nghe nhận xét ở hai chữ cuối cùng của người nữ.",
+          "goi_y_2": "Người nữ nói: 我教你写吧，不难 (để mình dạy bạn viết, không khó đâu).",
+          "giai_thich": "Người nữ hướng dẫn cách đọc chữ 家 và cho biết chữ này viết không khó (不难)."
+        },
+        {
+          "nhom": "phu_dinh_nghi_van",
+          "loi_nghe": "女：你想吃米饭还是吃水果？\n男：我不饿，不想吃米饭，给我一个苹果吧。\n问：男的现在想吃什么？",
+          "noi_dung": "男的 现在 想 吃 什么？",
+          "pinyin": "Nánde xiànzài xiǎng chī shénme?",
+          "raw_opts": [
+            "苹果 [píngguǒ]",
+            "米饭 [mǐfàn]",
+            "中国菜 [Zhōngguó cài]"
+          ],
+          "dich_nghia": "Bây giờ người nam muốn ăn gì?\nQuả táo / Cơm trắng / Món Trung Quốc",
+          "goi_y": "Bỏ qua món bị từ chối sau 不想吃, nghe món người nam xin ở cuối câu.",
+          "goi_y_2": "Người nam nói: 不想吃米饭，给我一个苹果吧 (cho tôi một quả táo nhé).",
+          "giai_thich": "Người nam chưa đói nên không ăn cơm mà chỉ muốn ăn một quả táo (苹果)."
+        }
+      ]
+    },
+    {
+      "cap": 2,
+      "ten": "Mua sắm, kế hoạch cuối tuần và sức khỏe",
+      "muc_tieu": "Nghe hiểu hội thoại có đổi ý, so sánh giá cả, lịch trình cuối tuần, hỏi đường và chăm sóc sức khỏe ở trình độ HSK 2",
+      "bai": [
+        {
+          "ten": "Chọn đồ và so sánh giá cả",
+          "items": [
+            {
+              "nhom": "cau_so_sanh_nhan_manh",
+              "loi_nghe": "男：这两件衬衫都很漂亮，你想买红的还是白的？\n女：红的我已经有一件了，今天买这件白的吧。\n问：女的今天想买什么颜色的衬衫？",
+              "noi_dung": "女的今天想买什么颜色的衬衫？",
+              "pinyin": "Nǚde jīntiān xiǎng mǎi shénme yánsè de chènshān?",
+              "raw_opts": [
+                "白色的 [báisè de]",
+                "红色的 [hóngsè de]",
+                "黑色的 [hēisè de]"
+              ],
+              "dich_nghia": "Hôm nay người nữ muốn mua chiếc áo sơ mi màu gì?\nMàu trắng / Màu đỏ / Màu đen",
+              "goi_y": "Cẩn thận bẫy ở vế đầu (đã có áo đỏ), nghe lựa chọn sau chữ 今天买…",
+              "goi_y_2": "Người nữ nói: 今天买这件白的吧 (hôm nay mua chiếc màu trắng này nhé).",
+              "giai_thich": "Vì ở nhà đã có áo sơ mi đỏ nên hôm nay người nữ chọn mua chiếc màu trắng (白色的)."
+            },
+            {
+              "nhom": "cau_so_sanh_nhan_manh",
+              "loi_nghe": "女：学校旁边的商店西瓜四块一斤，你这儿怎么卖五块？\n男：我的西瓜比那儿的大，而且非常甜，您尝一块就知道了。\n问：男的卖的西瓜怎么样？",
+              "noi_dung": "男的卖的西瓜怎么样？",
+              "pinyin": "Nánde mài de xīguā zěnmeyàng?",
+              "raw_opts": [
+                "又大又甜 [yòu dà yòu tián]",
+                "比学校旁边便宜 [bǐ xuéxiào pángbiān piányi]",
+                "四块钱一斤 [sì kuài qián yì jīn]"
+              ],
+              "dich_nghia": "Dưa hấu người nam bán như thế nào?\nVừa to vừa ngọt / Rẻ hơn cạnh trường / 4 tệ một cân",
+              "goi_y": "Nghe lời giải thích của người bán hàng dùng cấu trúc so sánh 比…",
+              "goi_y_2": "Người nam nói: 我的西瓜比那儿的大，而且非常甜.",
+              "giai_thich": "Dưa hấu người nam bán giá 5 tệ/cân nhưng quả to hơn và rất ngọt (又大又甜)."
+            },
+            {
+              "nhom": "gia_dinh_nghe_nghiep",
+              "loi_nghe": "男：下星期三是弟弟的生日，你准备送他什么礼物？\n女：他的手表坏了，我想给他买一块新手表。\n问：女的准备送弟弟什么生日礼物？",
+              "noi_dung": "女的准备送弟弟什么生日礼物？",
+              "pinyin": "Nǚde zhǔnbèi sòng dìdi shénme shēngrì lǐwù?",
+              "raw_opts": [
+                "一块手表 [yí kuài shǒubiǎo]",
+                "一部新手机 [yí bù xīn shǒujī]",
+                "一个篮球 [yí gè lánqiú]"
+              ],
+              "dich_nghia": "Người nữ chuẩn bị tặng em trai món quà sinh nhật gì?\nMột chiếc đồng hồ đeo tay / Một chiếc điện thoại mới / Một quả bóng rổ",
+              "goi_y": "Nghe kỹ món quà nằm sau cụm 我想给他买…",
+              "goi_y_2": "Người nữ nói: 他的手表坏了，我想给他买一块新手表.",
+              "giai_thich": "Vì đồng hồ của em trai bị hỏng nên người nữ định mua tặng em một chiếc đồng hồ mới (一块手表)."
+            },
+            {
+              "nhom": "tro_tu_dong_thai",
+              "loi_nghe": "女：大卫，我们现在去超市买鸡蛋和面条吧？\n男：等一下，我正在洗衣服呢，还有两件就洗完了。\n问：大卫现在正在做什么？",
+              "noi_dung": "大卫现在正在做什么？",
+              "pinyin": "Dàwèi xiànzài zhèngzài zuò shénme?",
+              "raw_opts": [
+                "洗衣服 [xǐ yīfu]",
+                "煮面条 [zhǔ miàntiáo]",
+                "逛超市 [guàng chāoshì]"
+              ],
+              "dich_nghia": "Hiện tại David đang làm gì?\nGiặt quần áo / Nấu mì / Đi siêu thị",
+              "goi_y": "Nghe hành động đi sau phó từ tiếp diễn 正在…",
+              "goi_y_2": "David trả lời: 我正在洗衣服呢 (mình đang giặt quần áo).",
+              "giai_thich": "Hiện tại David đang giặt quần áo (洗衣服), còn 2 chiếc nữa là xong rồi mới đi siêu thị."
+            },
+            {
+              "nhom": "so_dem_luong_tu",
+              "loi_nghe": "男：服务员，我们要一盘羊肉、一条鱼和两碗米饭。\n女：好的，今天店里送西瓜汁，您要两杯吗？\n问：他们点了几碗米饭？",
+              "noi_dung": "他们点了几碗米饭？",
+              "pinyin": "Tāmen diǎn le jǐ wǎn mǐfàn?",
+              "raw_opts": [
+                "两碗 [liǎng wǎn]",
+                "一碗 [yì wǎn]",
+                "三碗 [sān wǎn]"
+              ],
+              "dich_nghia": "Họ đã gọi mấy bát cơm?\n2 bát / 1 bát / 3 bát",
+              "goi_y": "Chú ý số lượng đi kèm lượng từ 碗 trước danh từ 米饭.",
+              "goi_y_2": "Người nam gọi món: 一盘羊肉、一条鱼和两碗米饭 (2 bát cơm).",
+              "giai_thich": "Khách gọi một đĩa thịt cừu, một con cá và hai bát cơm (两碗)."
+            }
+          ]
+        },
+        {
+          "ten": "Hẹn gặp và kế hoạch cuối tuần",
+          "items": [
+            {
+              "nhom": "thoi_gian_lich_hen",
+              "loi_nghe": "女：明天是星期天，上午我们去游泳馆游泳怎么样？\n男：上午我要在家准备星期一的汉语考试，下午再去吧。\n问：他们什么时候去游泳？",
+              "noi_dung": "他们什么时候去游泳？",
+              "pinyin": "Tāmen shénme shíhou qù yóuyǒng?",
+              "raw_opts": [
+                "星期天下午 [xīngqītiān xiàwǔ]",
+                "星期天上午 [xīngqītiān shàngwǔ]",
+                "星期一下午 [xīngqīyī xiàwǔ]"
+              ],
+              "dich_nghia": "Khi nào họ đi bơi?\nChiều Chủ nhật / Sáng Chủ nhật / Chiều thứ Hai",
+              "goi_y": "Người nam bận vào buổi sáng, hãy nghe thời điểm hẹn lại ở cuối câu.",
+              "goi_y_2": "Ngày mai là Chủ nhật, người nam nói: 下午再去吧 (chiều hẵng đi).",
+              "giai_thich": "Sáng Chủ nhật người nam ôn thi nên hai người dời lịch đi bơi sang chiều Chủ nhật (星期天下午)."
+            },
+            {
+              "nhom": "bo_ngu",
+              "loi_nghe": "男：电影七点半开始，你到电影院门口了吗？\n女：我已经到了，现在才七点十分，我在左边书店等你。\n问：女的比电影开始时间早到了多久？",
+              "noi_dung": "女的比电影开始时间早到了多久？",
+              "pinyin": "Nǚde bǐ diànyǐng kāishǐ shíjiān zǎo dào le duōjiǔ?",
+              "raw_opts": [
+                "二十分钟 [èrshí fēnzhōng]",
+                "十分钟 [shí fēnzhōng]",
+                "半个小时 [bàn gè xiǎoshí]"
+              ],
+              "dich_nghia": "Người nữ đến sớm hơn giờ chiếu phim bao lâu?\n20 phút / 10 phút / Nửa tiếng",
+              "goi_y": "So sánh giờ phim chiếu (七点半) và giờ hiện tại khi người nữ đã tới (七点十分).",
+              "goi_y_2": "Phim chiếu lúc 7:30, người nữ đến lúc 7:10 => sớm 20 phút (二十分钟).",
+              "giai_thich": "Từ 7 giờ 10 phút đến 7 giờ 30 phút là người nữ đến sớm 20 phút (二十分钟)."
+            },
+            {
+              "nhom": "tro_tu_dong_thai",
+              "loi_nghe": "女：听说你下个月要去上海旅游，飞机票买好了吗？\n男：飞机票太贵了，我买了火车票，坐火车去也很快。\n问：男的打算怎么去上海旅游？",
+              "noi_dung": "男的打算怎么去上海旅游？",
+              "pinyin": "Nánde dǎsuàn zěnme qù Shànghǎi lǚyóu?",
+              "raw_opts": [
+                "坐火车 [zuò huǒchē]",
+                "坐飞机 [zuò fēijī]",
+                "坐船 [zuò chuán]"
+              ],
+              "dich_nghia": "Người nam dự định đi du lịch Thượng Hải bằng phương tiện gì?\nĐi tàu hỏa / Đi máy bay / Đi tàu thủy",
+              "goi_y": "Nghe kỹ lý do từ bỏ vé máy bay và loại vé người nam thực sự đã mua.",
+              "goi_y_2": "Người nam nói: 飞机票太贵了，我买了火车票 (đã mua vé tàu hỏa).",
+              "giai_thich": "Vì vé máy bay đắt nên người nam quyết định mua vé đi tàu hỏa (坐火车) tới Thượng Hải."
+            },
+            {
+              "nhom": "chao_hoi_giao_tiep",
+              "loi_nghe": "男：昨晚小丽的生日晚会好玩儿吗？\n女：非常好玩儿，大家一起唱歌、跳舞，十点才回家。\n问：他们在生日晚会上做了什么？",
+              "noi_dung": "他们在生日晚会上做了什么？",
+              "pinyin": "Tāmen zài shēngrì wǎnhuì shàng zuò le shénme?",
+              "raw_opts": [
+                "唱歌和跳舞 [chànggē hé tiàowǔ]",
+                "看足球比赛 [kàn zúqiú bǐsài]",
+                "画画儿 [huàhuàr]"
+              ],
+              "dich_nghia": "Họ đã làm gì trong bữa tiệc sinh nhật?\nCa hát và nhảy múa / Xem trận bóng đá / Vẽ tranh",
+              "goi_y": "Nghe các hoạt động đi sau cụm 大家一起…",
+              "goi_y_2": "Người nữ kể: 大家一起唱歌、跳舞 (mọi người cùng hát và nhảy múa).",
+              "giai_thich": "Trong tiệc sinh nhật của Tiểu Lệ, mọi người cùng nhau ca hát và nhảy múa (唱歌和跳舞)."
+            },
+            {
+              "nhom": "lien_tu_quan_he",
+              "loi_nghe": "女：外边阴天了，好像快要下雨了，今天别去打篮球了吧。\n男：好，那我们今天就在房间里下棋或者看报纸。\n问：他们为什么不去打篮球了？",
+              "noi_dung": "他们为什么不去打篮球了？",
+              "pinyin": "Tāmen wèishénme bú qù dǎ lánqiú le?",
+              "raw_opts": [
+                "快要下雨了 [kuàiyào xiàyǔ le]",
+                "找不到篮球 [zhǎo bú dào lánqiú]",
+                "身体不舒服 [shēntǐ bù shūfu]"
+              ],
+              "dich_nghia": "Tại sao họ không đi đánh bóng rổ nữa?\nTrời sắp mưa / Không tìm thấy bóng rổ / Trong người không khỏe",
+              "goi_y": "Nghe nguyên nhân thời tiết được người nữ nêu ngay câu đầu tiên.",
+              "goi_y_2": "Người nữ nói: 外边阴天了，好像快要下雨了 (trời âm u, sắp mưa rồi).",
+              "giai_thich": "Vì trời chuyển âm u và sắp mưa (快要下雨了) nên hai người ở trong phòng thay vì đi chơi bóng rổ."
+            }
+          ]
+        },
+        {
+          "ten": "Hỏi đường và khoảng cách",
+          "items": [
+            {
+              "nhom": "vi_tri_phuong_huong",
+              "loi_nghe": "男：请问，和平宾馆离这儿远吗？\n女：很近，您看，前面那个白色大楼旁边就是和平宾馆。\n问：和平宾馆在哪儿？",
+              "noi_dung": "和平宾馆在哪儿？",
+              "pinyin": "Hépíng Bīnguǎn zài nǎr?",
+              "raw_opts": [
+                "白色大楼旁边 [báisè dàlóu pángbiān]",
+                "公共汽车站后面 [gōnggòngqìchēzhàn hòumiàn]",
+                "火车站对面 [huǒchēzhàn duìmiàn]"
+              ],
+              "dich_nghia": "Khách sạn Hòa Bình nằm ở đâu?\nBên cạnh tòa nhà lớn màu trắng / Phía sau trạm xe buýt / Đối diện ga tàu hỏa",
+              "goi_y": "Chú ý địa điểm mốc mà người nữ chỉ sau cụm 您看…",
+              "goi_y_2": "Người nữ chỉ đường: 前面那个白色大楼旁边就是和平宾馆.",
+              "giai_thich": "Khách sạn Hòa Bình nằm ngay bên cạnh tòa nhà lớn màu trắng phía trước (白色大楼旁边)."
+            },
+            {
+              "nhom": "vi_tri_phuong_huong",
+              "loi_nghe": "女：从学校去新华书店怎么走？要坐公共汽车吗？\n男：不用坐车，出学校门往左走五分钟就到了。\n问：去新华书店怎么走？",
+              "noi_dung": "去新华书店怎么走？",
+              "pinyin": "Qù Xīnhuá Shūdiàn zěnme zǒu?",
+              "raw_opts": [
+                "出校门往左走 [chū xiàomén wǎng zuǒ zǒu]",
+                "出校门往右走 [chū xiàomén wǎng yòu zǒu]",
+                "坐两站公共汽车 [zuò liǎng zhàn gōnggòngqìchē]"
+              ],
+              "dich_nghia": "Đi đến hiệu sách Tân Hoa đi như thế nào?\nRa cổng trường rẽ trái đi bộ / Ra cổng trường rẽ phải đi bộ / Đi 2 trạm xe buýt",
+              "goi_y": "Nghe kỹ hướng rẽ (往左 hay 往右) trong lời chỉ đường của người nam.",
+              "goi_y_2": "Người nam nói: 不用坐车，出学校门往左走五分钟就到了.",
+              "giai_thich": "Không cần đi xe buýt, ra khỏi cổng trường rẽ trái đi bộ 5 phút là tới (出校门往左走)."
+            },
+            {
+              "nhom": "cau_so_sanh_nhan_manh",
+              "loi_nghe": "男：早上上班路上车太多了，坐公共汽车太慢。\n女：那你跟我一样骑自行车去公司吧，二十分钟就到，还能运动。\n问：女的建议男的怎么去上班？",
+              "noi_dung": "女的建议男的怎么去上班？",
+              "pinyin": "Nǚde jiànyì nánde zěnme qù shàngbān?",
+              "raw_opts": [
+                "骑自行车 [qí zìxíngchē]",
+                "坐公共汽车 [zuò gōnggòngqìchē]",
+                "坐出租车 [zuò chūzūchē]"
+              ],
+              "dich_nghia": "Người nữ khuyên người nam đi làm bằng cách nào?\nĐạp xe đạp / Đi xe buýt / Đi taxi",
+              "goi_y": "Nghe lời khuyên sau cụm 那你跟我一样…",
+              "goi_y_2": "Người nữ khuyên: 那你跟我一样骑自行车去公司吧 (đạp xe đạp đến công ty).",
+              "giai_thich": "Giờ cao điểm buổi sáng đông xe nên người nữ khuyên người nam đạp xe đạp (骑自行车) đi làm."
+            },
+            {
+              "nhom": "so_dem_luong_tu",
+              "loi_nghe": "女：同学，请问新来的王老师的教室在几楼？\n男：二楼是第一教室，王老师在三楼的第三教室上课。\n问：王老师在几楼上课？",
+              "noi_dung": "王老师在几楼上课？",
+              "pinyin": "Wáng lǎoshī zài jǐ lóu shàngkè?",
+              "raw_opts": [
+                "三楼 [sān lóu]",
+                "二楼 [èr lóu]",
+                "四楼 [sì lóu]"
+              ],
+              "dich_nghia": "Thầy Vương dạy học ở tầng mấy?\nTầng 3 / Tầng 2 / Tầng 4",
+              "goi_y": "Đừng nhầm với tầng 2 ở vế đầu, hãy nghe vế có nhắc trực tiếp tên 王老师.",
+              "goi_y_2": "Người nam nói: 王老师在三楼的第三教室上课 (tầng 3, phòng học số 3).",
+              "giai_thich": "Thầy Vương đang dạy tại phòng học số 3 ở tầng 3 (三楼)."
+            },
+            {
+              "nhom": "phu_dinh_nghi_van",
+              "loi_nghe": "男：喂，我已经到咖啡店里了，怎么没看见你？\n女：咖啡店里人太多，我在门外边的红椅子上坐着等你呢。\n问：女的现在在哪儿？",
+              "noi_dung": "女的现在在哪儿？",
+              "pinyin": "Nǚde xiànzài zài nǎr?",
+              "raw_opts": [
+                "咖啡店门外边 [kāfēidiàn mén wàibian]",
+                "咖啡店里边 [kāfēidiàn lǐbian]",
+                "还在去咖啡店的路上 [hái zài qù kāfēidiàn de lùshang]"
+              ],
+              "dich_nghia": "Người nữ hiện đang ở đâu?\nBên ngoài cửa quán cà phê / Bên trong quán cà phê / Vẫn đang trên đường tới quán",
+              "goi_y": "Nghe vị trí chính xác trước cụm 红椅子上坐着.",
+              "goi_y_2": "Người nữ nói: 我在门外边的红椅子上坐着等你呢 (ngồi ghế đỏ ngoài cửa).",
+              "giai_thich": "Vì trong quán đông khách nên người nữ ngồi đợi ở chiếc ghế đỏ bên ngoài cửa quán cà phê (咖啡店门外边)."
+            }
+          ]
+        },
+        {
+          "ten": "Sức khỏe và thói quen tốt",
+          "items": [
+            {
+              "nhom": "thoi_gian_lich_hen",
+              "loi_nghe": "女：你生病了吗？脸色不太好，吃药了吗？\n男：早上看过医生了，医生让我吃完午饭半个小时以后再吃药。\n问：男的什么时候吃药？",
+              "noi_dung": "男的什么时候吃药？",
+              "pinyin": "Nánde shénme shíhou chī yào?",
+              "raw_opts": [
+                "午饭后半小时 [wǔfàn hòu bàn xiǎoshí]",
+                "吃午饭以前 [chī wǔfàn yǐqián]",
+                "晚上睡觉前 [wǎnshang shuìjiào qián]"
+              ],
+              "dich_nghia": "Khi nào người nam uống thuốc?\nNửa tiếng sau bữa trưa / Trước khi ăn trưa / Trước khi đi ngủ buổi tối",
+              "goi_y": "Lắng nghe lời dặn của bác sĩ sau cụm 医生让我…",
+              "goi_y_2": "Bác sĩ dặn: 吃完午饭半个小时以后再吃药 (ăn trưa xong nửa tiếng mới uống thuốc).",
+              "giai_thich": "Người nam cần uống thuốc sau khi ăn trưa nửa tiếng (午饭后半小时)."
+            },
+            {
+              "nhom": "thoi_gian_lich_hen",
+              "loi_nghe": "男：张老师今年六十岁了，身体怎么还这么好？\n女：他每天早上六点起床去公园跑步四十分钟，从不间断。\n问：张老师每天早上做什么运动？",
+              "noi_dung": "张老师每天早上做什么运动？",
+              "pinyin": "Zhāng lǎoshī měitiān zǎoshang zuò shénme yùndòng?",
+              "raw_opts": [
+                "去公园跑步 [qù gōngyuán pǎobù]",
+                "在学校打篮球 [zài xuéxiào dǎ lánqiú]",
+                "去游泳馆游泳 [qù yóuyǒngguǎn yóuyǒng]"
+              ],
+              "dich_nghia": "Mỗi buổi sáng thầy Trương tập môn thể thao gì?\nChạy bộ ở công viên / Đánh bóng rổ ở trường / Đi bơi ở bể bơi",
+              "goi_y": "Nghe hoạt động thể thao ngay sau cụm 六点起床…",
+              "goi_y_2": "Người nữ cho biết: 他每天早上六点起床去公园跑步四十分钟.",
+              "giai_thich": "Thầy Trương giữ sức khỏe dẻo dai nhờ đều đặn chạy bộ ở công viên mỗi sáng (去公园跑步)."
+            },
+            {
+              "nhom": "lien_tu_quan_he",
+              "loi_nghe": "女：已经晚上十一点了，别看电脑了，快去睡觉吧。\n男：好，今天工作了一整天，眼睛确实有点儿累了，我现在就休息。\n问：男的为什么准备去休息了？",
+              "noi_dung": "男的为什么准备去休息了？",
+              "pinyin": "Nánde wèishénme zhǔnbèi qù xiūxi le?",
+              "raw_opts": [
+                "工作一天眼睛累了 [gōngzuò yì tiān yǎnjing lèi le]",
+                "电脑突然坏了 [diànnǎo tūrán huài le]",
+                "明天要去机场接人 [míngtiān yào qù jīchǎng jiē rén]"
+              ],
+              "dich_nghia": "Vì sao người nam chuẩn bị đi nghỉ ngơi?\nLàm việc cả ngày mỏi mắt rồi / Máy tính bỗng nhiên hỏng / Mai phải ra sân bay đón người",
+              "goi_y": "Nghe lý do người nam đồng ý tắt máy tính ở câu thứ hai.",
+              "goi_y_2": "Người nam nói: 今天工作了一整天，眼睛确实有点儿累了.",
+              "giai_thich": "Sau một ngày dài làm việc, mắt đã mỏi nên người nam tắt máy đi nghỉ (工作一天眼睛累了)."
+            },
+            {
+              "nhom": "chao_hoi_giao_tiep",
+              "loi_nghe": "男：医生说我最近太胖了，让我晚上少吃羊肉和米饭。\n女：那今天晚上我给你做一点儿鱼和青菜，再喝一碗汤吧。\n问：女的今天晚上准备做什么菜？",
+              "noi_dung": "女的今天晚上准备做什么菜？",
+              "pinyin": "Nǚde jīntiān wǎnshang zhǔnbèi zuò shénme cài?",
+              "raw_opts": [
+                "鱼、青菜和汤 [yú, qīngcài hé tāng]",
+                "羊肉和米饭 [yángròu hé mǐfàn]",
+                "鸡蛋面条 [jīdàn miàntiáo]"
+              ],
+              "dich_nghia": "Tối nay người nữ chuẩn bị nấu món gì?\nCá, rau xanh và canh / Thịt cừu và cơm / Mì trứng",
+              "goi_y": "Phân biệt món bác sĩ khuyên ăn ít (羊肉、米饭) và món người nữ nấu tối nay.",
+              "goi_y_2": "Người nữ nói: 今天晚上我给你做一点儿鱼和青菜，再喝一碗汤吧.",
+              "giai_thich": "Người nữ chuẩn bị thực đơn nhẹ nhàng gồm cá, rau xanh và canh (鱼、青菜和汤)."
+            },
+            {
+              "nhom": "bo_ngu",
+              "loi_nghe": "女：爷爷，您买这么多水果和鸡蛋，太重了，我帮您拿上楼吧！\n男：不用了孩子，这儿有电梯，我自己能拿上去，谢谢你。\n问：为什么不用女的帮忙拿东西？",
+              "noi_dung": "为什么不用女的帮忙拿东西？",
+              "pinyin": "Wèishénme búyòng nǚde bāngmáng ná dōngxi?",
+              "raw_opts": [
+                "楼里有电梯 [lóu lǐ yǒu diàntī]",
+                "东西非常少 [dōngxi fēicháng shǎo]",
+                "住在一楼不用上楼 [zhù zài yī lóu búyòng shàng lóu]"
+              ],
+              "dich_nghia": "Tại sao không cần người nữ xách đồ giúp?\nTrong tòa nhà có thang máy / Đồ đạc rất ít / Ở tầng 1 không cần lên lầu",
+              "goi_y": "Chú ý lời giải thích sau cụm 不用了孩子… (nhân vật ông/người lớn tuổi trả lời).",
+              "goi_y_2": "Câu trả lời giải thích: 这儿有电梯，我自己能拿上去 (ở đây có thang máy).",
+              "giai_thich": "Tòa nhà có thang máy (楼里有电梯) nên người lớn tuổi có thể tự mang đồ lên dễ dàng."
+            }
+          ]
+        }
+      ],
+      "cuoi_thua_moi": [
+        {
+          "nhom": "thoi_gian_lich_hen",
+          "loi_nghe": "女：我们明天上午八点的火车票还能改吗？我上午突然有个工作会议。\n男：我已经帮你在手机上改好了，改成了明天下午四点半那趟车。\n问：他们的火车票改到了什么时候？",
+          "noi_dung": "他们的火车票改到了什么时候？",
+          "pinyin": "Tāmen de huǒchēpiào gǎi dào le shénme shíhou?",
+          "raw_opts": [
+            "明天下午四点半 [míngtiān xiàwǔ sì diǎn bàn]",
+            "明天上午八点 [míngtiān shàngwǔ bā diǎn]",
+            "后天上午八点 [hòutiān shàngwǔ bā diǎn]"
+          ],
+          "dich_nghia": "Vé tàu hỏa của họ đã được đổi sang lúc nào?\n4 giờ rưỡi chiều mai / 8 giờ sáng mai / 8 giờ sáng ngày kia",
+          "goi_y": "Nghe thông tin giờ mới sau chữ 改成了… của người nam.",
+          "goi_y_2": "Người nam nói: 改成了明天下午四点半那趟车 (đổi sang chuyến 4h30 chiều mai).",
+          "giai_thich": "Vé tàu đã được đổi từ 8h sáng mai sang chuyến 4 giờ rưỡi chiều mai (明天下午四点半)."
+        },
+        {
+          "nhom": "cau_so_sanh_nhan_manh",
+          "loi_nghe": "男：这双黑鞋子和那双白鞋子一样贵吗？\n女：不一样，白鞋子三百块，黑鞋子比白鞋子便宜六十块。\n问：这双黑鞋子多少钱？",
+          "noi_dung": "这双黑鞋子多少钱？",
+          "pinyin": "Zhè shuāng hēi xiézi duōshao qián?",
+          "raw_opts": [
+            "二百四十块 [èrbǎi sìshí kuài]",
+            "三百块 [sānbǎi kuài]",
+            "三百六十块 [sānbǎi liùshí kuài]"
+          ],
+          "dich_nghia": "Đôi giày đen này giá bao nhiêu tiền?\n240 tệ / 300 tệ / 360 tệ",
+          "goi_y": "Lấy giá đôi giày trắng (三百块) trừ đi phần rẻ hơn (便宜六十块).",
+          "goi_y_2": "Giày trắng 300 tệ, giày đen rẻ hơn 60 tệ: 300 - 60 = 240 tệ (二百四十块).",
+          "giai_thich": "Đôi giày đen rẻ hơn đôi giày trắng (300 tệ) 60 tệ nên có giá 240 tệ (二百四十块)."
+        },
+        {
+          "nhom": "gia_dinh_nghe_nghiep",
+          "loi_nghe": "女：哥哥，爸爸去哪儿了？客厅里没人。\n男：他在自己房间里戴着眼镜看今天的报纸呢，你找他有事吗？\n问：爸爸现在在房间里做什么？",
+          "noi_dung": "爸爸现在在房间里做什么？",
+          "pinyin": "Bàba xiànzài zài fángjiān lǐ zuò shénme?",
+          "raw_opts": [
+            "看报纸 [kàn bàozhǐ]",
+            "看电视 [kàn diànshì]",
+            "打电话 [dǎ diànhuà]"
+          ],
+          "dich_nghia": "Bố hiện đang làm gì trong phòng?\nĐọc báo / Xem tivi / Gọi điện thoại",
+          "goi_y": "Nghe hoạt động ở cuối vế đầu tiên của người anh trai.",
+          "goi_y_2": "Người anh nói: 他在自己房间里戴着眼镜看今天的报纸呢.",
+          "giai_thich": "Bố đang đeo kính đọc tờ báo hôm nay (看报纸) trong phòng riêng."
+        },
+        {
+          "nhom": "tro_tu_dong_thai",
+          "loi_nghe": "男：小王，你以前去过北京吗？听说那儿秋天非常漂亮。\n女：我去过两次，一次是去年十月，还有一次是读大学的时候。\n问：小王去过几次北京？",
+          "noi_dung": "小王去过几次北京？",
+          "pinyin": "Xiǎo Wáng qù guo jǐ cì Běijīng?",
+          "raw_opts": [
+            "两次 [liǎng cì]",
+            "一次 [yí cì]",
+            "没去过 [méi qù guo]"
+          ],
+          "dich_nghia": "Tiểu Vương đã từng đến Bắc Kinh mấy lần?\n2 lần / 1 lần / Chưa từng đi",
+          "goi_y": "Chú ý số lần đi kèm trợ từ trải nghiệm 过 ngay đầu câu trả lời.",
+          "goi_y_2": "Tiểu Vương trả lời: 我去过两次 (tôi đã đi qua 2 lần).",
+          "giai_thich": "Tiểu Vương đã từng đến Bắc Kinh 2 lần (两次): một lần hồi đại học và một lần vào tháng 10 năm ngoái."
+        },
+        {
+          "nhom": "phu_dinh_nghi_van",
+          "loi_nghe": "女：爸爸，我渴了，能吃冰箱里的冰西瓜吗？\n男：你今天肚子不舒服，别吃冰西瓜了，喝这杯温水吧。\n问：为什么不让女的吃冰西瓜？",
+          "noi_dung": "为什么不让女的吃冰西瓜？",
+          "pinyin": "Wèishénme bú ràng nǚde chī bīng xīguā?",
+          "raw_opts": [
+            "她肚子不舒服 [tā dùzi bù shūfu]",
+            "西瓜已经坏了 [xīguā yǐjīng huài le]",
+            "冰箱里没有西瓜 [bīngxiāng lǐ méiyǒu xīguā]"
+          ],
+          "dich_nghia": "Tại sao không cho người nữ ăn dưa hấu ướp lạnh?\nCô ấy đang đau/khó chịu bụng / Dưa hấu hỏng rồi / Trong tủ lạnh không có dưa hấu",
+          "goi_y": "Nghe lý do sức khỏe được nêu ngay trước lời khuyên 别吃冰西瓜了.",
+          "goi_y_2": "Câu trả lời nhắc: 你今天肚子不舒服，别吃冰西瓜了.",
+          "giai_thich": "Vì hôm nay bụng không khỏe (肚子不舒服) nên cô ấy được khuyên uống nước ấm thay vì ăn dưa hấu lạnh."
+        }
+      ]
+    },
+    {
+      "cap": 3,
+      "ten": "Giao tiếp công sở, nhà cửa và môi trường xung quanh",
+      "muc_tieu": "Nghe hiểu hội thoại nhiều chi tiết về công việc văn phòng, thuê sửa nhà cửa, dịch vụ đô thị và thói quen sống ở trình độ HSK 3",
+      "bai": [
+        {
+          "ten": "Phối hợp công việc văn phòng",
+          "items": [
+            {
+              "nhom": "vi_tri_phuong_huong",
+              "loi_nghe": "女：小李，明天上午九点的部门会议还在三楼小会议室开吗？\n男：参加的人增加了，小会议室坐不下，我已经改成五楼的大会议室了。\n问：明天的会议改在哪儿开了？",
+              "noi_dung": "明天的会议改在哪儿开了？",
+              "pinyin": null,
+              "raw_opts": [
+                "五楼大会议室",
+                "三楼小会议室",
+                "一楼接待室"
+              ],
+              "dich_nghia": "Cuộc họp ngày mai được đổi sang tổ chức ở đâu?\nPhòng họp lớn tầng 5 / Phòng họp nhỏ tầng 3 / Phòng tiếp khách tầng 1",
+              "goi_y": "Lắng nghe địa điểm mới sau cụm 我已经改成… của người nam.",
+              "goi_y_2": "Người nam nói: 我已经改成五楼的大会议室了 (đã đổi sang phòng họp lớn tầng 5).",
+              "giai_thich": "Do số người tham dự tăng lên nên cuộc họp được chuyển lên phòng họp lớn ở tầng 5."
+            },
+            {
+              "nhom": "so_dem_luong_tu",
+              "loi_nghe": "男：周经理，这次培训的资料需要印多少份？二十份够不够？\n女：除了我们部门的十八个人，还有五位新来的实习生，你印二十五份吧。\n问：男的最后需要印多少份资料？",
+              "noi_dung": "男的最后需要印多少份资料？",
+              "pinyin": null,
+              "raw_opts": [
+                "二十五份",
+                "二十份",
+                "十八份"
+              ],
+              "dich_nghia": "Cuối cùng người nam cần in bao nhiêu bản tài liệu?\n25 bản / 20 bản / 18 bản",
+              "goi_y": "Bỏ qua các con số trung gian, chú ý con số chốt ở cuối lời nữ giám đốc.",
+              "goi_y_2": "Giám đốc Chu dặn: 你印二十五份吧 (cậu in 25 bản nhé).",
+              "giai_thich": "Tính cả 18 nhân viên trong phòng và 5 thực tập sinh mới, giám đốc yêu cầu in 25 bản dự phòng."
+            },
+            {
+              "nhom": "thoi_gian_lich_hen",
+              "loi_nghe": "女：那份客户调查表你发给张总了吗？他下午四点前要用。\n男：表格我刚检查完，发现有两个数字需要核对，两点半以前一定发过去。\n问：男的什么时候把调查表发给张总？",
+              "noi_dung": "男的什么时候把调查表发给张总？",
+              "pinyin": null,
+              "raw_opts": [
+                "今天下午两点半以前",
+                "今天下午四点以后",
+                "明天上午上班前"
+              ],
+              "dich_nghia": "Khi nào người nam sẽ gửi bảng khảo sát cho Giám đốc Trương?\nTrước 2 giờ rưỡi chiều nay / Sau 4 giờ chiều nay / Trước giờ đi làm sáng mai",
+              "goi_y": "Chú ý mốc thời gian cam kết ở cuối câu trả lời của người nam.",
+              "goi_y_2": "Người nam hứa: 两点半以前一定发过去 (trước 2 giờ rưỡi nhất định gửi đi).",
+              "giai_thich": "Sau khi đối chiếu lại hai con số, người nam sẽ gửi bảng khảo sát trước 2 giờ rưỡi chiều nay."
+            },
+            {
+              "nhom": "tro_tu_dong_thai",
+              "loi_nghe": "男：喂，小陈，我的笔记本电脑忘带充电器了，你的能借我用一下吗？\n女：真不巧，我的刚才借给隔壁办公室的老王了，不过前台抽屉里有一根备用的。\n问：男的可以去哪儿找充电器？",
+              "noi_dung": "男的可以去哪儿找充电器？",
+              "pinyin": null,
+              "raw_opts": [
+                "去前台抽屉里拿备用的",
+                "直接用小陈桌上的",
+                "去楼下商店买新的"
+              ],
+              "dich_nghia": "Người nam có thể đến đâu tìm bộ sạc?\nRa ngăn kéo quầy lễ tân lấy chiếc dự phòng / Dùng ngay chiếc trên bàn Tiểu Trần / Xuống cửa hàng dưới lầu mua mới",
+              "goi_y": "Nghe thông tin hữu ích nằm sau liên từ chuyển ý 不过…",
+              "goi_y_2": "Tiểu Trần chỉ: 不过前台抽屉里有一根备用的 (ngăn kéo lễ tân có dây sạc dự phòng).",
+              "giai_thich": "Sạc của Tiểu Trần đã cho mượn nhưng ngăn kéo quầy lễ tân có sẵn một bộ sạc dự phòng."
+            },
+            {
+              "nhom": "gia_dinh_nghe_nghiep",
+              "loi_nghe": "女：今天新来的那位年轻同事真热情，早上主动帮大家擦了桌子还烧了热水。\n男：是啊，听说她大学学的是新闻专业，以前还在电视台工作过两年呢。\n问：关于那位新同事，可以知道什么？",
+              "noi_dung": "关于那位新同事，可以知道什么？",
+              "pinyin": null,
+              "raw_opts": [
+                "以前在电视台工作过",
+                "刚刚从大学毕业",
+                "性格比较害羞安静"
+              ],
+              "dich_nghia": "Có thể biết điều gì về người đồng nghiệp mới?\nTrước đây từng làm việc ở đài truyền hình / Vừa mới tốt nghiệp đại học / Tính cách khá nhút nhát trầm lặng",
+              "goi_y": "Nghe thông tin về kinh nghiệm làm việc của đồng nghiệp mới trong lời người nam.",
+              "goi_y_2": "Người nam nói: 以前还在电视台工作过两年呢 (từng làm ở đài truyền hình 2 năm).",
+              "giai_thich": "Đồng nghiệp mới học chuyên ngành báo chí và từng có 2 năm làm việc tại đài truyền hình."
+            }
+          ]
+        },
+        {
+          "ten": "Thuê nhà và tiện nghi sinh hoạt",
+          "items": [
+            {
+              "nhom": "cau_so_sanh_nhan_manh",
+              "loi_nghe": "男：今天去看的这两套房子，你更满意哪一套？\n女：第一套虽然离地铁近，但窗户朝北太暗了；第二套阳光特别好，还带一个小花园，就租第二套吧。\n问：女的为什么选第二套房子？",
+              "noi_dung": "女的为什么选第二套房子？",
+              "pinyin": null,
+              "raw_opts": [
+                "阳光充足而且带小花园",
+                "离地铁站比第一套更近",
+                "房租比第一套便宜一半"
+              ],
+              "dich_nghia": "Vì sao người nữ chọn căn nhà thứ hai?\nĐầy đủ ánh nắng và có vườn nhỏ / Gần trạm tàu điện ngầm hơn căn đầu / Tiền thuê rẻ hơn căn đầu một nửa",
+              "goi_y": "Phân biệt nhược điểm của căn thứ nhất và ưu điểm của căn thứ hai.",
+              "goi_y_2": "Người nữ nhận xét: 第二套阳光特别好，还带一个小花园，就租第二套吧.",
+              "giai_thich": "Người nữ quyết định thuê căn thứ hai vì tràn ngập ánh nắng và có thêm khu vườn nhỏ."
+            },
+            {
+              "nhom": "bo_ngu",
+              "loi_nghe": "女：家里冰箱的声音怎么这么响？是不是又坏了？\n男：别担心，我上午已经给维修师傅打过电话了，他吃完午饭就过来检查。\n问：关于家里的冰箱，下列哪项正确？",
+              "noi_dung": "关于家里的冰箱，下列哪项正确？",
+              "pinyin": null,
+              "raw_opts": [
+                "维修师傅下午会来检查",
+                "男的已经自己修好了",
+                "他们打算马上去买新的"
+              ],
+              "dich_nghia": "Điều nào sau đây đúng về chiếc tủ lạnh ở nhà?\nThợ sửa chữa chiều nay sẽ tới kiểm tra / Người nam đã tự sửa xong / Họ định đi mua tủ lạnh mới ngay",
+              "goi_y": "Nghe lịch hẹn với thợ sửa chữa ở cuối lời người nam.",
+              "goi_y_2": "Người nam nói: 他吃完午饭就过来检查 (ăn trưa xong anh ấy sẽ qua kiểm tra).",
+              "giai_thich": "Người nam đã gọi thợ sửa chữa vào buổi sáng và thợ hẹn sau bữa trưa sẽ tới kiểm tra tủ lạnh."
+            },
+            {
+              "nhom": "vi_tri_phuong_huong",
+              "loi_nghe": "男：搬到这个新小区一个星期了，你觉得生活方便吗？\n女：特别方便！小区南门对面就是大超市，东门出去走三分钟还有一个安静的公园。\n问：大超市在小区的什么位置？",
+              "noi_dung": "大超市在小区的什么位置？",
+              "pinyin": null,
+              "raw_opts": [
+                "南门对面",
+                "东门里面",
+                "北门旁边"
+              ],
+              "dich_nghia": "Siêu thị lớn nằm ở vị trí nào so với khu dân cư?\nĐối diện cổng Nam / Bên trong cổng Đông / Bên cạnh cổng Bắc",
+              "goi_y": "Chú ý phân biệt vị trí của siêu thị (大超市) và công viên (公园).",
+              "goi_y_2": "Người nữ nói: 小区南门对面就是大超市 (đối diện cổng Nam là siêu thị lớn).",
+              "giai_thich": "Siêu thị lớn nằm ngay phía đối diện cổng Nam của khu chung cư."
+            },
+            {
+              "nhom": "so_dem_luong_tu",
+              "loi_nghe": "女：房东您好，这套一居室每个月房租两千八百块，包水电费和网费吗？\n男：网费是免费送的，不过水费和电费需要您每个月按照账单自己交。\n问：租这套房子，哪项费用是免费的？",
+              "noi_dung": "租这套房子，哪项费用是免费的？",
+              "pinyin": null,
+              "raw_opts": [
+                "网费",
+                "水费和电费",
+                "物业管理费"
+              ],
+              "dich_nghia": "Khi thuê căn hộ này, khoản phí nào được miễn phí?\nTiền mạng Internet / Tiền nước và tiền điện / Phí quản lý tòa nhà",
+              "goi_y": "Nghe ngay câu đầu tiên của chủ nhà để biết khoản nào 免费.",
+              "goi_y_2": "Chủ nhà giải thích: 网费是免费送的 (tiền mạng được tặng miễn phí).",
+              "giai_thich": "Tiền mạng Internet được miễn phí, còn tiền điện và tiền nước người thuê tự thanh toán theo hóa đơn."
+            },
+            {
+              "nhom": "tro_tu_dong_thai",
+              "loi_nghe": "男：阳台上那几盆绿萝叶子有点儿发黄了，是不是好几天没浇水了？\n女：水我前天刚浇过，可能是最近太阳太晒了，咱们把花盆搬到客厅桌子上吧。\n问：他们打算把花盆搬到哪儿？",
+              "noi_dung": "他们打算把花盆搬到哪儿？",
+              "pinyin": null,
+              "raw_opts": [
+                "客厅桌子上",
+                "卧室窗户边",
+                "门外走廊里"
+              ],
+              "dich_nghia": "Họ dự định chuyển mấy chậu cây vào đâu?\nTrên bàn phòng khách / Cạnh cửa sổ phòng ngủ / Ngoài hành lang",
+              "goi_y": "Nghe cấu trúc câu chữ 把 ở cuối lời người nữ: 咱们把花盆搬到…",
+              "goi_y_2": "Người nữ đề nghị: 咱们把花盆搬到客厅桌子上吧.",
+              "giai_thich": "Sợ nắng ngoài ban công quá gắt làm vàng lá nên họ chuyển chậu cây vào đặt trên bàn phòng khách."
+            }
+          ]
+        },
+        {
+          "ten": "Đi lại, đặt dịch vụ và du lịch",
+          "items": [
+            {
+              "nhom": "lien_tu_quan_he",
+              "loi_nghe": "女：刚才机场发来短信，因为大雾天气，咱们十一点的航班取消了。\n男：那别等了，咱们现在马上坐地铁去火车南站，换乘下午一点的高铁过去。\n问：他们现在打算怎么去目的地？",
+              "noi_dung": "他们现在打算怎么去目的地？",
+              "pinyin": null,
+              "raw_opts": [
+                "去火车南站坐高铁",
+                "在机场等下一班飞机",
+                "自己开车走高速公路"
+              ],
+              "dich_nghia": "Bây giờ họ dự định đi đến điểm đến bằng cách nào?\nRa ga Nam đi tàu cao tốc / Đợi chuyến bay tiếp theo ở sân bay / Tự lái xe đi đường cao tốc",
+              "goi_y": "Chuyến bay bị hủy vì sương mù, hãy nghe phương án thay thế của người nam.",
+              "goi_y_2": "Người nam quyết định: 换乘下午一点的高铁过去 (đổi sang đi tàu cao tốc lúc 1h chiều).",
+              "giai_thich": "Vì sương mù dày làm hủy chuyến bay nên họ chuyển sang ra ga Nam đi tàu cao tốc."
+            },
+            {
+              "nhom": "chao_hoi_giao_tiep",
+              "loi_nghe": "男：您好，我想预订星期六晚上六点半的位子，一共六位大人，最好靠窗户。\n女：靠窗的大桌星期六已经订满了，给您留一间安静的包间可以吗？不收包间费。\n问：服务员建议客人坐哪儿？",
+              "noi_dung": "服务员建议客人坐哪儿？",
+              "pinyin": null,
+              "raw_opts": [
+                "安静的包间",
+                "靠窗的大桌",
+                "一楼大厅中间"
+              ],
+              "dich_nghia": "Nhân viên phục vụ gợi ý khách ngồi ở đâu?\nPhòng riêng yên tĩnh / Bàn lớn cạnh cửa sổ / Giữa sảnh tầng 1",
+              "goi_y": "Bàn cạnh cửa sổ đã kín chỗ (订满了), nghe đề xuất tiếp theo của nhân viên.",
+              "goi_y_2": "Nhân viên nói: 给您留一间安静的包间可以吗？ (giữ cho anh một phòng riêng yên tĩnh nhé?).",
+              "giai_thich": "Do bàn lớn cạnh cửa sổ tối thứ Bảy đã hết chỗ, nhân viên đề xuất xếp phòng riêng yên tĩnh miễn phí phụ thu."
+            },
+            {
+              "nhom": "phu_dinh_nghi_van",
+              "loi_nghe": "女：糟糕，检票口要查身份证，我把包翻遍了也没找到！\n男：你别着急，刚才买咖啡付钱的时候，我看见你顺手把身份证放进蓝外套口袋里了。\n问：女的的身份证最可能在哪儿？",
+              "noi_dung": "女的的身份证最可能在哪儿？",
+              "pinyin": null,
+              "raw_opts": [
+                "蓝外套口袋里",
+                "手提包最下面",
+                "咖啡店收银台"
+              ],
+              "dich_nghia": "Chứng minh thư của người nữ nhiều khả năng đang ở đâu nhất?\nTrong túi áo khoác màu xanh / Dưới đáy túi xách / Quầy thu ngân quán cà phê",
+              "goi_y": "Lắng nghe chi tiết người nam nhìn thấy khi mua cà phê.",
+              "goi_y_2": "Người nam nhắc: 我看见你顺手把身份证放进蓝外套口袋里了.",
+              "giai_thich": "Khi mua cà phê, người nữ đã tiện tay đút chứng minh thư vào túi chiếc áo khoác màu xanh."
+            },
+            {
+              "nhom": "thoi_gian_lich_hen",
+              "loi_nghe": "男：这本历史小说真精彩，你借了多久了？借阅期快到了吧？\n女：图书馆规定最多借三十天，今天正好第二十八天，我明天上午就去还。\n问：女的打算什么时候去还书？",
+              "noi_dung": "女的打算什么时候去还书？",
+              "pinyin": null,
+              "raw_opts": [
+                "明天上午",
+                "今天晚上",
+                "下个星期一"
+              ],
+              "dich_nghia": "Người nữ dự định khi nào đi trả sách?\nSáng ngày mai / Tối hôm nay / Thứ Hai tuần sau",
+              "goi_y": "Nghe câu chốt ở cuối lời người nữ về thời điểm đi trả sách.",
+              "goi_y_2": "Người nữ nói: 我明天上午就去还 (sáng mai mình sẽ đi trả ngay).",
+              "giai_thich": "Sách mượn được 28/30 ngày nên người nữ dự định sáng ngày mai sẽ mang đến thư viện trả."
+            },
+            {
+              "nhom": "vi_tri_phuong_huong",
+              "loi_nghe": "女：师傅，这个时间去体育中心是不是特别堵车？\n男：现在正好是下班高峰，走主路肯定堵，我带您绕走河边那条新路，能省十五分钟。\n问：司机打算怎么开去体育中心？",
+              "noi_dung": "司机打算怎么开去体育中心？",
+              "pinyin": null,
+              "raw_opts": [
+                "绕走河边的新路",
+                "一直走中间的主路",
+                "让乘客在地铁站下车"
+              ],
+              "dich_nghia": "Tài xế dự định lái xe tới trung tâm thể thao bằng đường nào?\nĐi vòng theo con đường mới ven sông / Đi thẳng đường chính ở giữa / Cho khách xuống ở ga tàu điện ngầm",
+              "goi_y": "Nghe lộ trình tài xế chọn sau khi giải thích đường chính bị tắc.",
+              "goi_y_2": "Tài xế nói: 我带您绕走河边那条新路，能省十五分钟.",
+              "giai_thich": "Để tránh ùn tắc giờ tan tầm trên trục đường chính, tài xế đi theo đường mới ven sông tiết kiệm 15 phút."
+            }
+          ]
+        },
+        {
+          "ten": "Sở thích, học tập và rèn luyện",
+          "items": [
+            {
+              "nhom": "bo_ngu",
+              "loi_nghe": "男：真没想到你第一次参加十公里长跑就坚持跑完了，腿酸不酸？\n女：跑完以后小腿确实有点儿酸，不过刚才拉伸了二十分钟，现在舒服多了。\n问：女的跑完十公里以后感觉怎么样？",
+              "noi_dung": "女的跑完十公里以后感觉怎么样？",
+              "pinyin": null,
+              "raw_opts": [
+                "拉伸以后舒服多了",
+                "中途太累没有跑完",
+                "一点儿也不觉得累"
+              ],
+              "dich_nghia": "Sau khi chạy xong 10 km, người nữ cảm thấy thế nào?\nSau khi giãn cơ đã dễ chịu hơn nhiều / Giữa chừng mệt quá nên bỏ cuộc / Không thấy mỏi chút nào",
+              "goi_y": "Chú ý cả hai vế: hoàn thành cự ly và cảm giác hiện tại sau khi giãn cơ (拉伸).",
+              "goi_y_2": "Người nữ nói: 不过刚才拉伸了二十分钟，现在舒服多了.",
+              "giai_thich": "Người nữ đã hoàn thành cự ly 10 km; bắp chân hơi mỏi nhưng sau 20 phút giãn cơ đã dễ chịu hơn nhiều."
+            },
+            {
+              "nhom": "chao_hoi_giao_tiep",
+              "loi_nghe": "女：文化馆周末开了书法班和摄影班，你想报名哪一个？\n男：我字写得还行，但每次出门旅游拍出来的照片都不太好看，我想跟老师学学摄影。\n问：男的想报名哪个班？",
+              "noi_dung": "男的想报名哪个班？",
+              "pinyin": null,
+              "raw_opts": [
+                "摄影班",
+                "书法班",
+                "绘画班"
+              ],
+              "dich_nghia": "Người nam muốn đăng ký lớp học nào?\nLớp nhiếp ảnh / Lớp thư pháp / Lớp hội họa",
+              "goi_y": "Nghe nhu cầu thực tế ở cuối lời người nam: 我想跟老师学学…",
+              "goi_y_2": "Người nam nói: 我想跟老师学学摄影 (muốn học nhiếp ảnh với thầy).",
+              "giai_thich": "Vì muốn chụp ảnh đẹp hơn mỗi khi đi du lịch nên người nam chọn đăng ký lớp nhiếp ảnh."
+            },
+            {
+              "nhom": "lien_tu_quan_he",
+              "loi_nghe": "男：你的汉语口语进步真快！除了每天上课，你还有什么好办法吗？\n女：我每天睡觉前都会听一个十分钟的中文故事，听完再用自己的话复述一遍。\n问：女的每天睡前怎么练习汉语？",
+              "noi_dung": "女的每天睡前怎么练习汉语？",
+              "pinyin": null,
+              "raw_opts": [
+                "听中文故事并复述",
+                "抄写二十个生词",
+                "看一部长篇中国电影"
+              ],
+              "dich_nghia": "Mỗi tối trước khi ngủ người nữ luyện tiếng Hán bằng cách nào?\nNghe truyện tiếng Trung rồi kể lại / Chép 20 từ mới / Xem một bộ phim điện ảnh dài",
+              "goi_y": "Lắng nghe hai bước luyện tập liên tiếp trong câu trả lời của người nữ.",
+              "goi_y_2": "Người nữ chia sẻ: 听一个十分钟的中文故事，听完再用自己的话复述一遍.",
+              "giai_thich": "Mỗi tối trước khi đi ngủ cô nghe một câu chuyện tiếng Trung dài 10 phút rồi tự kể lại bằng lời của mình."
+            },
+            {
+              "nhom": "tro_tu_dong_thai",
+              "loi_nghe": "女：现在咱们小区环境比以前干净多了，楼道里一点儿杂物都没有。\n男：是啊，自从上个月换了垃圾分类桶，大家扔垃圾越来越自觉，物业打扫得也勤。\n问：他们认为小区现在怎么样？",
+              "noi_dung": "他们认为小区现在怎么样？",
+              "pinyin": null,
+              "raw_opts": [
+                "环境比以前干净整洁",
+                "垃圾桶的数量不够用",
+                "物业很少来打扫楼道"
+              ],
+              "dich_nghia": "Họ nhận xét khu chung cư hiện nay như thế nào?\nMôi trường sạch sẽ gọn gàng hơn trước / Số lượng thùng rác không đủ dùng / Ban quản lý ít khi quét dọn hành lang",
+              "goi_y": "Nghe nhận xét ngay câu đầu tiên của người nữ và sự đồng tình của người nam.",
+              "goi_y_2": "Người nữ khen: 现在咱们小区环境比以前干净多了.",
+              "giai_thich": "Nhờ phân loại rác tự giác và ban quản lý chăm dọn dẹp, khu dân cư hiện sạch đẹp hơn trước rất nhiều."
+            },
+            {
+              "nhom": "phu_dinh_nghi_van",
+              "loi_nghe": "男：今天这道糖醋鱼是你自己做的吗？酸甜正好，一点儿腥味都没有！\n女：我按照网上的菜谱试着做的，本来还担心放多了醋会太酸呢。\n问：男的觉得这道糖醋鱼做得怎么样？",
+              "noi_dung": "男的觉得这道糖醋鱼做得怎么样？",
+              "pinyin": null,
+              "raw_opts": [
+                "味道非常好",
+                "醋放得太多了",
+                "鱼肉有点儿腥"
+              ],
+              "dich_nghia": "Người nam thấy món cá sốt chua ngọt này nấu thế nào?\nHương vị rất ngon / Cho hơi nhiều giấm / Cá hơi bị tanh",
+              "goi_y": "Đừng nhầm nỗi lo của người nữ (担心太酸) với lời khen thực tế của người nam.",
+              "goi_y_2": "Người nam khen: 酸甜正好，一点儿腥味都没有！(chua ngọt vừa vặn, không hề tanh!).",
+              "giai_thich": "Người nam khen món cá chua ngọt vừa miệng và không có chút mùi tanh nào."
+            }
+          ]
+        }
+      ],
+      "cuoi_thua_moi": [
+        {
+          "nhom": "vi_tri_phuong_huong",
+          "loi_nghe": "女：外面雨停了，不过你的那把黑雨伞怎么没拿回来？\n男：哎呀，刚才在银行柜台签字的时候挂在椅子背上了，我现在回去拿。\n问：男的把雨伞忘在哪儿了？",
+          "noi_dung": "男的把雨伞忘在哪儿了？",
+          "pinyin": null,
+          "raw_opts": [
+            "银行柜台的椅子上",
+            "出租车的后座上",
+            "超市门口的伞架上"
+          ],
+          "dich_nghia": "Người nam đã để quên chiếc ô ở đâu?\nTrên ghế tại quầy giao dịch ngân hàng / Ở ghế sau xe taxi / Trên giá để ô trước cửa siêu thị",
+          "goi_y": "Nghe kỹ địa điểm người nam sực nhớ ra sau tiếng cảm thán 哎呀.",
+          "goi_y_2": "Người nam nhớ lại: 刚才在银行柜台签字的时候挂在椅子背上了.",
+          "giai_thich": "Lúc ký tên ở quầy giao dịch ngân hàng, người nam treo ô trên lưng ghế rồi quên mang về."
+        },
+        {
+          "nhom": "bo_ngu",
+          "loi_nghe": "男：小赵，刚才给客户展示的产品幻灯片是你做的吗？图表特别清楚，客户很满意。\n女：文字部分是我写的，那几张漂亮的对比图表是设计部的小林帮我做的。\n问：幻灯片里的对比图表是谁做的？",
+          "noi_dung": "幻灯片里的对比图表是谁做的？",
+          "pinyin": null,
+          "raw_opts": [
+            "设计部的小林",
+            "小赵自己一个人",
+            "客户公司的代表"
+          ],
+          "dich_nghia": "Mấy biểu đồ so sánh trong bản trình chiếu do ai làm?\nTiểu Lâm ở phòng thiết kế / Một mình Tiểu Triệu tự làm / Đại diện công ty khách hàng",
+          "goi_y": "Phân biệt người viết phần chữ (小赵) và người làm biểu đồ (对比图表).",
+          "goi_y_2": "Tiểu Triệu nói rõ: 那几张漂亮的对比图表是设计部的小林帮我做的.",
+          "giai_thich": "Tiểu Triệu soạn phần nội dung chữ, còn các biểu đồ so sánh do Tiểu Lâm bên phòng thiết kế thực hiện."
+        },
+        {
+          "nhom": "thoi_gian_lich_hen",
+          "loi_nghe": "女：张阿姨，我女儿最近在准备钢琴比赛，每天晚上练琴会不会吵到您休息？\n男：只要晚上九点以前弹就没关系，其实那孩子弹得挺好听的，我和你叔叔都爱听。\n问：男的希望女孩儿几点以前练琴？",
+          "noi_dung": "男的希望女孩儿几点以前练琴？",
+          "pinyin": null,
+          "raw_opts": [
+            "晚上九点以前",
+            "晚上七点以前",
+            "周末下午五点以前"
+          ],
+          "dich_nghia": "Bác trai mong cô bé tập đàn trước mấy giờ?\nTrước 9 giờ tối / Trước 7 giờ tối / Trước 5 giờ chiều cuối tuần",
+          "goi_y": "Lắng nghe mốc giờ đi cùng cấu trúc điều kiện 只要…就没关系.",
+          "goi_y_2": "Người hàng xóm nói: 只要晚上九点以前弹就没关系 (chỉ cần đàn trước 9 giờ tối là không sao).",
+          "giai_thich": "Hàng xóm rất thông cảm và chỉ mong cô bé kết thúc việc luyện đàn trước 9 giờ tối."
+        },
+        {
+          "nhom": "cau_so_sanh_nhan_manh",
+          "loi_nghe": "男：下周只出差四天，你带这么大的行李箱干什么？拿上拿下多累啊。\n女：别看这个箱子大，它特别轻，四个轮子推起来很省力，回来还能装点儿当地特产。\n问：女的为什么要带这个大行李箱？",
+          "noi_dung": "女的为什么要带这个大行李箱？",
+          "pinyin": null,
+          "raw_opts": [
+            "箱子轻便且能装特产",
+            "没有找到更小的背包",
+            "要帮同事带很多文件"
+          ],
+          "dich_nghia": "Vì sao người nữ muốn mang chiếc vali lớn này?\nVali nhẹ dễ đẩy và đựng thêm được đặc sản / Không tìm thấy túi nhỏ hơn / Phải mang hộ đồng nghiệp nhiều tài liệu",
+          "goi_y": "Nghe hai ưu điểm người nữ giải thích ở lượt lời thứ hai.",
+          "goi_y_2": "Người nữ nói: 它特别轻，四个轮子推起来很省力，回来还能装点儿当地特产.",
+          "giai_thich": "Chiếc vali tuy lớn nhưng nhẹ, bốn bánh xe đẩy rất êm và lúc về còn có chỗ đựng đặc sản địa phương."
+        },
+        {
+          "nhom": "chao_hoi_giao_tiep",
+          "loi_nghe": "女：同学，阅览室的空调温度开得有点儿低，我没带外套，能调高两度吗？\n男：当然可以，遥控器就在管理员桌子上，我去请老师调到二十六度吧。\n问：女的为什么想调高空调温度？",
+          "noi_dung": "女的为什么想调高空调温度？",
+          "pinyin": null,
+          "raw_opts": [
+            "觉得有点儿冷而且没带外套",
+            "空调吹出来的风声音太大",
+            "担心开太久浪费学校电费"
+          ],
+          "dich_nghia": "Vì sao người nữ muốn chỉnh tăng nhiệt độ điều hòa?\nThấy hơi lạnh và không mang áo khoác / Tiếng gió điều hòa kêu quá to / Sợ bật lâu tốn điện của trường",
+          "goi_y": "Chú ý lý do người nữ nêu ngay trong lời đề nghị đầu tiên.",
+          "goi_y_2": "Người nữ nói: 阅览室的空调温度开得有点儿低，我没带外套.",
+          "giai_thich": "Phòng đọc bật điều hòa hơi thấp trong khi người nữ không mang theo áo khoác nên nhờ chỉnh cao lên 2 độ."
+        }
+      ]
+    },
+    {
+      "cap": 4,
+      "ten": "Kinh nghiệm sống, văn hóa và độc thoại ngắn",
+      "muc_tieu": "Nghe hiểu hội thoại nhiều lượt lời và đoạn độc thoại ngắn về kinh nghiệm làm việc, văn hóa, tâm lý và lối sống ở trình độ HSK 4",
+      "bai": [
+        {
+          "ten": "Giao tiếp nơi làm việc và hợp tác",
+          "items": [
+            {
+              "nhom": "thoi_gian_lich_hen",
+              "loi_nghe": "女：李厂长，这批儿童家具原定下周五交货，能不能提前到下周二？商场想赶在六一活动前摆出来。\n男：全部提前恐怕来不及，油漆晾干需要时间，保证安全最重要。\n女：那能不能先把样品和前五十套发过来？剩下的按原计划交。\n男：这样没问题，前五十套早做好了，下周一就能装车发货。\n问：男的同意下周一做什么？",
+              "noi_dung": "男的同意下周一做什么？",
+              "pinyin": null,
+              "raw_opts": [
+                "先发样品和前五十套家具",
+                "把全部家具提前交付完毕",
+                "重新修改儿童家具的设计",
+                "派工人去商场帮忙摆家具"
+              ],
+              "dich_nghia": "Người nam đồng ý làm việc gì vào thứ Hai tuần tới?\nGửi trước hàng mẫu và 50 bộ nội thất đầu tiên / Giao xong toàn bộ lô hàng sớm hạn / Sửa lại thiết kế nội thất trẻ em / Cử công nhân tới trung tâm thương mại bày hàng",
+              "goi_y": "Hội thoại có 4 lượt lời: hãy nghe phương án thương lượng ở lượt 3 và lời chốt của xưởng trưởng ở lượt 4.",
+              "goi_y_2": "Lượt cuối người nam chốt: 前五十套早做好了，下周一就能装车发货.",
+              "giai_thich": "Không kịp giao toàn bộ sớm nhưng xưởng trưởng đồng ý thứ Hai tuần tới sẽ xuất trước hàng mẫu và 50 bộ đầu tiên."
+            },
+            {
+              "nhom": "gia_dinh_nghe_nghiep",
+              "loi_nghe": "男：姐，刚才有位顾客打电话投诉包装盒压坏了，我解释说那是快递公司的问题，他怎么更生气了？\n女：顾客遇到麻烦时，最先需要的是理解而不是推卸责任。\n男：那我应该怎么处理才合适呢？\n女：先诚恳道歉，让他拍张照片发过来，咱们马上给他补发一套新的，再去跟快递沟通赔偿。\n问：女的认为处理顾客投诉首先应该怎么做？",
+              "noi_dung": "女的认为处理顾客投诉首先应该怎么做？",
+              "pinyin": null,
+              "raw_opts": [
+                "先表达歉意并积极解决问题",
+                "让顾客自己联系快递公司",
+                "向顾客解释生产流程很严格",
+                "要求顾客先把坏盒子寄回来"
+              ],
+              "dich_nghia": "Người nữ cho rằng khi xử lý khiếu nại của khách hàng trước tiên nên làm gì?\nBày tỏ lời xin lỗi trước và tích cực giải quyết vấn đề / Bảo khách tự liên hệ bên chuyển phát / Giải thích quy trình sản xuất rất nghiêm ngặt / Yêu cầu khách gửi trả hộp hỏng trước",
+              "goi_y": "Chú ý lời khuyên của đồng nghiệp đàn chị ở lượt 2 và lượt 4.",
+              "goi_y_2": "Người nữ hướng dẫn: 先诚恳道歉…咱们马上给他补发一套新的.",
+              "giai_thich": "Khi khách gặp sự cố, cần thành khẩn xin lỗi và chủ động gửi bù sản phẩm mới trước thay vì đổ lỗi cho bên vận chuyển."
+            },
+            {
+              "nhom": "bo_ngu",
+              "loi_nghe": "女：咱们新开发的这款保温杯，保温效果测试结果出来了吗？\n男：出来了，装满九十五度的热水，过了十二个小时还能保持在六十度以上，完全达到标准，就是杯盖拧起来有点儿费劲，老年人可能不容易拧开。\n问：这款新保温杯目前存在什么不足？",
+              "noi_dung": "这款新保温杯目前存在什么不足？",
+              "pinyin": null,
+              "raw_opts": [
+                "杯盖拧起来不够省力",
+                "保温时间不到六个小时",
+                "装满水以后容易漏水",
+                "外观颜色不受年轻人欢迎"
+              ],
+              "dich_nghia": "Mẫu bình giữ nhiệt mới này hiện còn điểm hạn chế nào?\nNắp bình vặn hơi tốn sức, chưa thuận tiện / Thời gian giữ nhiệt chưa được 6 tiếng / Đổ đầy nước dễ bị rò / Màu sắc bên ngoài không hợp giới trẻ",
+              "goi_y": "Hiệu quả giữ nhiệt đã đạt chuẩn, hãy nghe phần hạn chế sau cụm 就是…",
+              "goi_y_2": "Người nam nhận xét: 就是杯盖拧起来有点儿费劲，老年人可能不容易拧开.",
+              "giai_thich": "Khả năng giữ nhiệt rất tốt nhưng nắp bình hiện vặn hơi chặt, gây khó khăn cho người lớn tuổi khi mở."
+            },
+            {
+              "nhom": "lien_tu_quan_he",
+              "loi_nghe": "开会时，有的人喜欢把发言人的每一句话都原原本本地记下来，结果光顾着低头写字，反而没听清重点。其实，真正高效的会议记录，只需要写下核心结论、具体负责人以及完成期限，这样会后执行起来才一目了然。\n问：这段话认为高效的会议记录应该记什么？",
+              "noi_dung": "这段话认为高效的会议记录应该记什么？",
+              "pinyin": null,
+              "raw_opts": [
+                "核心结论、负责人和完成期限",
+                "每位发言人说的全部原话",
+                "会议室的座位安排和人数",
+                "大家在会上开的所有玩笑"
+              ],
+              "dich_nghia": "Đoạn độc thoại cho rằng biên bản cuộc họp hiệu quả nên ghi chép những gì?\nKết luận cốt lõi, người phụ trách và thời hạn hoàn thành / Toàn bộ nguyên văn lời từng người nói / Sơ đồ chỗ ngồi và sĩ số phòng họp / Mọi câu nói đùa trong cuộc họp",
+              "goi_y": "Lắng nghe câu nêu quan điểm chính nằm sau từ chuyển ý 其实…",
+              "goi_y_2": "Đoạn văn nhấn mạnh: 只需要写下核心结论、具体负责人以及完成期限.",
+              "giai_thich": "Ghi biên bản họp hiệu quả chỉ cần tập trung vào kết luận chính, người chịu trách nhiệm và thời hạn hoàn thành."
+            },
+            {
+              "nhom": "cau_so_sanh_nhan_manh",
+              "loi_nghe": "面对一项复杂的大任务时，人们之所以容易产生拖延心理，往往是因为目标看起来太遥远，不知道从何下手。如果把大目标拆分成每天半小时就能完成的小步骤，每完成一步就打一个勾，焦虑感就会大大减轻，效率也会随之提高。\n问：怎样才能有效克服面对大任务时的拖延心理？",
+              "noi_dung": "怎样才能有效克服面对大任务时的拖延心理？",
+              "pinyin": null,
+              "raw_opts": [
+                "把大目标拆成容易做的小步骤",
+                "等到截止日期前一天再通宵做",
+                "同时开始做五六件不同的大事",
+                "请别人替自己制定所有计划"
+              ],
+              "dich_nghia": "Làm thế nào để khắc phục hiệu quả tâm lý trì hoãn trước một nhiệm vụ lớn?\nChia mục tiêu lớn thành các bước nhỏ dễ thực hiện / Đợi sát hạn chót mới thức trắng đêm làm / Bắt đầu làm 5-6 việc lớn cùng lúc / Nhờ người khác lập hộ mọi kế hoạch",
+              "goi_y": "Nghe giải pháp được đưa ra trong câu điều kiện 如果把大目标…",
+              "goi_y_2": "Đoạn văn khuyên: 如果把大目标拆分成每天半小时就能完成的小步骤…",
+              "giai_thich": "Chia nhỏ mục tiêu lớn thành từng bước nhỏ làm trong nửa tiếng mỗi ngày giúp giảm lo âu và xóa bỏ sự trì hoãn."
+            }
+          ]
+        },
+        {
+          "ten": "Đời sống đô thị và tiêu dùng thông minh",
+          "items": [
+            {
+              "nhom": "so_dem_luong_tu",
+              "loi_nghe": "男：你书架上这几套精装艺术画册真漂亮，买的时候一定花了不少钱吧？\n女：其实没花多少，都是我在社区旧书市集上淘来的，几乎九成新，价格却只有原价的三分之一。\n男：这么划算！下次市集什么时候开？我也想去找几本历史书。\n女：每个月第一个星期六上午，在文化广场东侧。\n问：关于女的买的画册，下列哪项正确？",
+              "noi_dung": "关于女的买的画册，下列哪项正确？",
+              "pinyin": null,
+              "raw_opts": [
+                "是在旧书市集以低价买到的",
+                "是按原价从网上书店订购的",
+                "是朋友出国以前免费送她的",
+                "页面破损严重需要重新装订"
+              ],
+              "dich_nghia": "Điều nào sau đây đúng về mấy cuốn tập tranh nghệ thuật người nữ mua?\nMua được với giá rẻ tại chợ sách cũ / Đặt mua nguyên giá trên hiệu sách mạng / Bạn bè tặng miễn phí trước khi ra nước ngoài / Trang sách rách nặng cần đóng lại",
+              "goi_y": "Nghe lời giải thích của người nữ ở lượt lời thứ hai về nguồn mua và mức giá.",
+              "goi_y_2": "Người nữ nói: 都是我在社区旧书市集上淘来的…价格却只有原价的三分之一.",
+              "giai_thich": "Người nữ săn được bộ sách ảnh còn mới 90% tại chợ sách cũ khu dân cư với giá chỉ bằng một phần ba giá gốc."
+            },
+            {
+              "nhom": "chao_hoi_giao_tiep",
+              "loi_nghe": "女：每次去超市买酸奶和果汁，你怎么都要盯着背面看半天？看生产日期吗？\n男：不光看日期，我主要看配料表和营养成分表，尽量挑含糖量低、添加剂少的买。\n问：男的买饮料时主要看什么？",
+              "noi_dung": "男的买饮料时主要看什么？",
+              "pinyin": null,
+              "raw_opts": [
+                "配料表和含糖量",
+                "瓶子包装好不好看",
+                "是不是名牌厂家生产的",
+                "有没有赠送小礼品"
+              ],
+              "dich_nghia": "Khi mua đồ uống, người nam chủ yếu xem thông tin gì?\nBảng thành phần nguyên liệu và hàm lượng đường / Bao bì chai có đẹp không / Có phải hãng nổi tiếng sản xuất không / Có tặng kèm quà nhỏ không",
+              "goi_y": "Chú ý thông tin đi sau cụm 不光看日期，我主要看…",
+              "goi_y_2": "Người nam nói: 我主要看配料表和营养成分表，尽量挑含糖量低、添加剂少的买.",
+              "giai_thich": "Ngoài hạn sử dụng, người nam đọc kỹ bảng thành phần để ưu tiên chọn đồ uống ít đường và ít chất phụ gia."
+            },
+            {
+              "nhom": "vi_tri_phuong_huong",
+              "loi_nghe": "男：听说咱们街道办把三号楼后面那块荒地改造成“共享小菜园”了？\n女：对，居民只要登记一下，就能免费认领一小块地，带着孩子种西红柿和黄瓜。\n男：这个主意真好，既美化了环境，又能让城里的孩子认识农作物。\n问：街道办把三号楼后面的空地改造成了什么？",
+              "noi_dung": "街道办把三号楼后面的空地改造成了什么？",
+              "pinyin": null,
+              "raw_opts": [
+                "居民可以认领的共享菜园",
+                "收费的露天汽车停车场",
+                "专门卖水果的早市摊位",
+                "宠物狗自由活动的草坪"
+              ],
+              "dich_nghia": "Văn phòng khu phố đã cải tạo mảnh đất trống sau tòa số 3 thành gì?\nVườn rau chung để cư dân đăng ký trồng / Bãi đỗ xe ô tô ngoài trời có thu phí / Khu sạp chợ sáng chuyên bán hoa quả / Bãi cỏ cho chó cưng chạy nhảy",
+              "goi_y": "Nghe ngay câu mở đầu của người nam và lời xác nhận của người nữ.",
+              "goi_y_2": "Mảnh đất hoang được cải tạo thành 共享小菜园 để cư dân trồng rau cùng con trẻ.",
+              "giai_thich": "Khu phố cải tạo bãi đất trống sau tòa nhà số 3 thành vườn rau chung miễn phí cho cư dân trải nghiệm trồng trọt."
+            },
+            {
+              "nhom": "tro_tu_dong_thai",
+              "loi_nghe": "定期整理房间不仅是打扫卫生，更是一次审视自己消费习惯的机会。把两年之内一次都没用过的物品挑出来，送给有需要的人或者捐给公益机构，不仅能让家里恢复宽敞明亮，也能提醒自己以后购物时更加理性，不再冲动买回一堆闲置品。\n问：定期整理房间对购物习惯有什么帮助？",
+              "noi_dung": "定期整理房间对购物习惯有什么帮助？",
+              "pinyin": null,
+              "raw_opts": [
+                "提醒自己以后更加理性消费",
+                "腾出地方买更多打折商品",
+                "学会修理坏掉的家用电器",
+                "养成每天去逛商场的习惯"
+              ],
+              "dich_nghia": "Việc định kỳ dọn dẹp phòng ốc giúp ích gì cho thói quen mua sắm?\nNhắc nhở bản thân về sau tiêu dùng lý trí hơn / Lấy chỗ trống để mua thêm nhiều đồ giảm giá / Học được cách sửa đồ điện gia dụng hỏng / Hình thành thói quen đi trung tâm thương mại mỗi ngày",
+              "goi_y": "Nghe phần lợi ích nằm ở cuối đoạn độc thoại sau cụm 也能提醒自己…",
+              "goi_y_2": "Đoạn văn nêu rõ: 也能提醒自己以后购物时更加理性，不再冲动买回一堆闲置品.",
+              "giai_thich": "Dọn dẹp và thanh lọc đồ bỏ không giúp không gian thoáng đãng và nhắc nhở ta mua sắm tỉnh táo, tránh bốc đồng."
+            },
+            {
+              "nhom": "thoi_gian_lich_hen",
+              "loi_nghe": "过去，博物馆大多在下午五点闭馆，许多上班族平时没空去，周末又到处排长队。近两年，不少城市博物馆在周五和周六推出了“奇妙博物馆之夜”，不仅把开放时间延长到晚上九点，还增加了专家导览和传统手工艺体验，深受年轻人的欢迎。\n问：博物馆推出的“奇妙博物馆之夜”有什么特点？",
+              "noi_dung": "博物馆推出的“奇妙博物馆之夜”有什么特点？",
+              "pinyin": null,
+              "raw_opts": [
+                "延长晚间开放时间并增加体验活动",
+                "所有展览门票在夜间提高一倍",
+                "只允许历史专业的大学生参观",
+                "取消了馆内所有的讲解服务"
+              ],
+              "dich_nghia": "Chương trình 'Đêm bảo tàng kỳ diệu' do các bảo tàng triển khai có đặc điểm gì?\nKéo dài giờ mở cửa buổi tối và thêm hoạt động trải nghiệm / Giá vé mọi triển lãm tăng gấp đôi vào ban đêm / Chỉ cho phép sinh viên ngành lịch sử tham quan / Hủy bỏ toàn bộ dịch vụ thuyết minh trong bảo tàng",
+              "goi_y": "Chú ý cấu trúc 不仅…，还… ở câu thứ hai của đoạn độc thoại.",
+              "goi_y_2": "不仅把开放时间延长到晚上九点，还增加了专家导览和传统手工艺体验.",
+              "giai_thich": "Bảo tàng kéo dài giờ mở cửa tới 9 giờ tối thứ Sáu, thứ Bảy và bổ sung thuyết minh chuyên gia cùng trải nghiệm thủ công."
+            }
+          ]
+        },
+        {
+          "ten": "Văn hóa, nghệ thuật và du lịch trải nghiệm",
+          "items": [
+            {
+              "nhom": "chao_hoi_giao_tiep",
+              "loi_nghe": "女：昨晚在老戏台看的那场皮影戏太有意思了，薄薄的牛皮小人在白布后面竟然能做出骑马、射箭那么灵活的动作！\n男：是啊，我特意去后台看了一眼，一位老艺人两只手同时操纵好几根竹棍，还要配合锣鼓声唱戏，真让人佩服。\n问：男的去后台看到了什么？",
+              "noi_dung": "男的去后台看到了什么？",
+              "pinyin": null,
+              "raw_opts": [
+                "老艺人双手操纵竹棍并配唱",
+                "演员们正在化妆换京剧服装",
+                "工作人员用电脑播放动画片",
+                "木偶完全由电动机器控制"
+              ],
+              "dich_nghia": "Người nam ra phía hậu trường đã nhìn thấy điều gì?\nNghệ nhân lớn tuổi hai tay điều khiển que tre vừa hát phối hợp / Các diễn viên đang hóa trang thay đồ Kinh kịch / Nhân viên dùng máy tính chiếu phim hoạt hình / Con rối hoàn toàn do máy điện tự động điều khiển",
+              "goi_y": "Nghe kỹ mô tả của người nam sau cụm 我特意去后台看了一眼…",
+              "goi_y_2": "Người nam kể: 一位老艺人两只手同时操纵好几根竹棍，还要配合锣鼓声唱戏.",
+              "giai_thich": "Ở hậu trường sân khấu rối bóng, nghệ nhân lão luyện dùng hai tay điều khiển nhiều thanh tre cùng lúc và hát theo tiếng chiêng trống."
+            },
+            {
+              "nhom": "cau_so_sanh_nhan_manh",
+              "loi_nghe": "男：大家都喜欢十月去那座江南古镇旅游，你怎么偏偏选在三月初去？\n女：十月游客太多，连石板桥上都挤满了拍照的人；三月初虽然稍微有点儿凉，但住宿便宜一半，清晨还能安安静静地听摇橹船划水的声音。\n问：女的为什么选择三月初去古镇？",
+              "noi_dung": "女的为什么选择三月初去古镇？",
+              "pinyin": null,
+              "raw_opts": [
+                "游客少、住宿便宜且环境清静",
+                "三月初古镇有大型美食节",
+                "只有三月份才有直达的火车",
+                "十月份古镇所有的景点都关闭"
+              ],
+              "dich_nghia": "Vì sao người nữ chọn đi cổ trấn vào đầu tháng Ba?\nÍt khách du lịch, chỗ ở rẻ và không gian thanh tĩnh / Đầu tháng Ba cổ trấn có lễ hội ẩm thực lớn / Chỉ tháng Ba mới có tàu hỏa chạy thẳng / Tháng Mười mọi điểm tham quan ở cổ trấn đều đóng cửa",
+              "goi_y": "Lắng nghe sự đối lập giữa tháng 10 đông đúc và ưu điểm của đầu tháng 3.",
+              "goi_y_2": "Người nữ giải thích: 住宿便宜一半，清晨还能安安静静地听摇橹船划水的声音.",
+              "giai_thich": "Đi trái mùa vào đầu tháng Ba giúp tránh cảnh chen chúc, giá phòng rẻ một nửa và tận hưởng trọn vẹn vẻ yên bình của cổ trấn."
+            },
+            {
+              "nhom": "bo_ngu",
+              "loi_nghe": "女：爷爷，我练毛笔字都两个月了，怎么写出来的“永”字还是歪歪扭扭的？\n男：写毛笔字急不得，手腕要稳，呼吸要平。你看，先把每一笔的起笔和收笔练扎实了，字的结构自然就端正了。\n问：爷爷认为怎样才能把毛笔字写端正？",
+              "noi_dung": "爷爷认为怎样才能把毛笔字写端正？",
+              "pinyin": null,
+              "raw_opts": [
+                "静下心把基本笔画练扎实",
+                "换一支价格更昂贵的毛笔",
+                "每天快速抄写上千个汉字",
+                "只模仿别人写得最快的草书"
+              ],
+              "dich_nghia": "Ông nội cho rằng làm thế nào mới viết chữ bút lông ngay ngắn được?\nBình tâm rèn thật vững từng nét bút cơ bản / Đổi sang cây bút lông đắt tiền hơn / Mỗi ngày chép thật nhanh hàng nghìn chữ Hán / Chỉ bắt chước lối chữ thảo viết nhanh nhất",
+              "goi_y": "Nghe lời chỉ dẫn của ông nội ở câu thứ hai: 写毛笔字急不得…",
+              "goi_y_2": "Ông khuyên: 先把每一笔的起笔和收笔练扎实了，字的结构自然就端正了.",
+              "giai_thich": "Viết thư pháp không thể nóng vội; cần giữ cổ tay vững, nhịp thở đều và luyện chắc từng nét đặt bút, thu bút cơ bản."
+            },
+            {
+              "nhom": "lien_tu_quan_he",
+              "loi_nghe": "中国南北方的气候和地理环境差异很大，这也直接反映在传统饮食习惯上。北方冬季寒冷干燥，人们喜爱热腾腾的面食和炖菜；而南方雨水充沛，盛产水稻和河鲜，菜肴讲究清淡鲜美，保留食材原本的味道。\n问：这段话主要介绍了什么？",
+              "noi_dung": "这段话主要介绍了什么？",
+              "pinyin": null,
+              "raw_opts": [
+                "气候地理对南北饮食习惯的影响",
+                "北方人制作面条的具体步骤",
+                "南方水产养殖业的发展历史",
+                "现代餐厅如何降低食材成本"
+              ],
+              "dich_nghia": "Đoạn độc thoại chủ yếu giới thiệu nội dung gì?\nẢnh hưởng của khí hậu và địa lý tới thói quen ẩm thực Nam - Bắc / Các bước làm mì cụ thể của người miền Bắc / Lịch sử phát triển nghề nuôi trồng thủy sản miền Nam / Cách nhà hàng hiện đại giảm chi phí nguyên liệu",
+              "goi_y": "Câu đầu tiên của đoạn độc thoại chính là câu chủ đề bao quát toàn đoạn.",
+              "goi_y_2": "Câu mở đầu nêu rõ: 中国南北方的气候和地理环境差异很大，这也直接反映在传统饮食习惯上.",
+              "giai_thich": "Đoạn văn lý giải sự khác biệt về khí hậu và địa lý đã tạo nên nét đặc trưng riêng trong ẩm thực truyền thống miền Bắc và miền Nam Trung Quốc."
+            },
+            {
+              "nhom": "gia_dinh_nghe_nghiep",
+              "loi_nghe": "在中国传统文化中，竹子一直深受文人画家的喜爱。竹子四季常青，象征着顽强的生命力；它的树干中间是空的，代表着谦虚的品格；而竹节笔直坚韧，又寓意着做人要有原则、不轻易向困难低头。\n问：竹子中间是空的，在文化中象征什么品格？",
+              "noi_dung": "竹子中间是空的，在文化中象征什么品格？",
+              "pinyin": null,
+              "raw_opts": [
+                "谦虚的品格",
+                "骄傲自满的态度",
+                "追求热闹的性格",
+                "善于经商的头脑"
+              ],
+              "dich_nghia": "Thân tre rỗng ở giữa tượng trưng cho phẩm chất gì trong văn hóa?\nPhẩm chất khiêm tốn / Thái độ kiêu ngạo tự mãn / Tính cách thích náo nhiệt / Đầu óc giỏi kinh doanh",
+              "goi_y": "Đoạn văn nêu 3 đặc điểm của cây tre, hãy nghe kỹ vế giữa nói về 它的树干中间是空的.",
+              "goi_y_2": "Đoạn văn giải thích: 它的树干中间是空的，代表着谦虚的品格 (tượng trưng cho sự khiêm tốn).",
+              "giai_thich": "Ruột tre rỗng (hư tâm) trong văn hóa truyền thống đại diện cho đức tính khiêm nhường của người quân tử."
+            }
+          ]
+        },
+        {
+          "ten": "Tâm lý, thói quen và góc nhìn cuộc sống",
+          "items": [
+            {
+              "nhom": "phu_dinh_nghi_van",
+              "loi_nghe": "男：再过十分钟就轮到我上台做毕业报告了，我的手心全是汗，万一忘词了怎么办？\n女：你准备了整整三个月，内容早就烂熟于心了，怎么会忘呢？来，深呼吸三次，上台后先看着第一排微笑的林老师，就不紧张了。\n问：女的建议男的上台后怎么做来缓解紧张？",
+              "noi_dung": "女的建议男的上台后怎么做来缓解紧张？",
+              "pinyin": null,
+              "raw_opts": [
+                "先看第一排微笑的林老师",
+                "低着头快速把稿子念完",
+                "临时申请推迟到明天再讲",
+                "向台下观众坦白自己忘词了"
+              ],
+              "dich_nghia": "Người nữ khuyên người nam khi lên bục nên làm gì để giảm căng thẳng?\nNhìn về phía cô Lâm đang mỉm cười ở hàng ghế đầu / Cúi đầu đọc thật nhanh cho xong bản thảo / Xin hoãn đột xuất sang ngày mai mới trình bày / Thú nhận với khán giả là mình quên lời",
+              "goi_y": "Nghe mẹo tâm lý cụ thể ở cuối câu động viên của người nữ.",
+              "goi_y_2": "Người nữ khuyên: 上台后先看着第一排微笑的林老师，就不紧张了.",
+              "giai_thich": "Người nữ trấn an bạn đã chuẩn bị rất kỹ, khuyên hít thở sâu và nhìn cô Lâm ở hàng ghế đầu để lấy lại bình tĩnh."
+            },
+            {
+              "nhom": "tro_tu_dong_thai",
+              "loi_nghe": "女：我发现你每读完一本书，都会在笔记本上写一页短短的感想，坚持多久了？\n男：快四年了。以前读书只求快，合上书没几天就忘光了；自从养成写读书笔记的习惯，不仅印象深刻，写文章时也更有条理了。\n问：写读书笔记给男的带来了什么变化？",
+              "noi_dung": "写读书笔记给男的带来了什么变化？",
+              "pinyin": null,
+              "raw_opts": [
+                "记忆更深刻且写文章更有条理",
+                "读书的速度比以前快了十倍",
+                "成为了一名著名的畅销书作家",
+                "不再需要购买任何纸质书籍"
+              ],
+              "dich_nghia": "Việc viết nhật ký đọc sách đã mang lại thay đổi gì cho người nam?\nNhớ sâu hơn và viết bài mạch lạc hơn / Tốc độ đọc nhanh gấp 10 lần trước đây / Trở thành tác giả sách bán chạy nổi tiếng / Không cần mua bất kỳ cuốn sách giấy nào nữa",
+              "goi_y": "Chú ý cấu trúc 自从养成…的习惯，不仅…，…也… trong lời người nam.",
+              "goi_y_2": "Người nam chia sẻ: 不仅印象深刻，写文章时也更有条理了.",
+              "giai_thich": "Duy trì thói quen ghi cảm nhận suốt gần 4 năm giúp người nam nhớ nội dung sách lâu hơn và tư duy viết lách mạch lạc hơn."
+            },
+            {
+              "nhom": "chao_hoi_giao_tiep",
+              "loi_nghe": "男：昨天篮球队训练迟到是我不对，当时我还跟队长顶了两句嘴，现在想起来真后悔。\n女：既然意识到自己冲动了，趁今天中午吃饭的时候主动跟他说声对不起吧。\n男：他会不会还在生我的气，不理我啊？\n女：放心，队长脾气最豪爽，对事不对人，你真诚道歉，误会马上就解开了。\n问：女的认为队长是个什么样的人？",
+              "noi_dung": "女的认为队长是个什么样的人？",
+              "pinyin": null,
+              "raw_opts": [
+                "性格豪爽、对事不对人",
+                "小心眼儿、喜欢记仇",
+                "经常无故缺席训练",
+                "从来不听队员的解释"
+              ],
+              "dich_nghia": "Người nữ nhận xét đội trưởng là người như thế nào?\nTính tình sảng khoái, công tư phân minh / Nhỏ nhen, hay để bụng / Thường xuyên vắng tập không lý do / Chẳng bao giờ nghe lời giải thích của đội viên",
+              "goi_y": "Nghe lời nhận xét về tính cách đội trưởng ở lượt lời thứ tư.",
+              "goi_y_2": "Người nữ nói: 队长脾气最豪爽，对事不对人，你真诚道歉，误会马上就解开了.",
+              "giai_thich": "Người nữ khích lệ bạn chủ động xin lỗi vì đội trưởng rất rộng lượng, sảng khoái và chỉ xét công việc chứ không chấp vặt cá nhân."
+            },
+            {
+              "nhom": "lien_tu_quan_he",
+              "loi_nghe": "在人际交往中，许多人以为能说会道才能赢得好感，于是总急着表现自己。然而，真正让人感到舒服的沟通者，往往是耐心的倾听者。不随意打断对方，用眼神和点头给予回应，会让说话的人感受到被尊重，信任感也就在不知不觉中建立起来了。\n问：这段话认为什么样的沟通者更能赢得信任？",
+              "noi_dung": "这段话认为什么样的沟通者更能赢得信任？",
+              "pinyin": null,
+              "raw_opts": [
+                "尊重对方并耐心倾听的人",
+                "说话声音最大、语速最快的人",
+                "喜欢随时打断别人提建议的人",
+                "在聚会上一言不发低头看手机的人"
+              ],
+              "dich_nghia": "Đoạn độc thoại cho rằng kiểu người giao tiếp nào dễ giành được sự tin cậy hơn?\nNgười tôn trọng đối phương và kiên nhẫn lắng nghe / Người nói to nhất và tốc độ nhanh nhất / Người thích ngắt lời người khác để góp ý / Người im lặng cúi đầu xem điện thoại trong buổi gặp",
+              "goi_y": "Chú ý bước ngoặt lập luận sau từ chuyển ý 然而…",
+              "goi_y_2": "真正让人感到舒服的沟通者，往往是耐心的倾听者…信任感也就在不知不觉中建立起来了.",
+              "giai_thich": "Biết lắng nghe kiên nhẫn và không tự ý ngắt lời giúp người đối diện cảm thấy được tôn trọng, từ đó xây dựng niềm tin bền vững."
+            },
+            {
+              "nhom": "bo_ngu",
+              "loi_nghe": "不少成年人学外语时特别害怕说错被别人笑话，结果学了好几年还是不敢开口。其实，儿童之所以学说话快，正是因为他们不怕出错，敢于不断尝试。把每一次口误都看作修正发音和语法的好机会，口语水平才能真正提高。\n问：成年人怎样才能真正提高外语口语水平？",
+              "noi_dung": "成年人怎样才能真正提高外语口语水平？",
+              "pinyin": null,
+              "raw_opts": [
+                "不怕出错并敢于开口练习",
+                "背熟整本词典以后再说话",
+                "只做书面阅读绝不跟人交流",
+                "遇到不会说的句子立刻放弃"
+              ],
+              "dich_nghia": "Người trưởng thành làm thế nào mới thực sự nâng cao được kỹ năng nói ngoại ngữ?\nKhông sợ sai và mạnh dạn mở lời luyện tập / Học thuộc lòng cả cuốn từ điển rồi mới nói / Chỉ đọc văn bản chứ tuyệt đối không giao tiếp / Gặp câu chưa biết nói thì bỏ cuộc ngay",
+              "goi_y": "Lắng nghe bài học rút ra ở hai câu cuối của đoạn độc thoại.",
+              "goi_y_2": "不怕出错，敢于不断尝试。把每一次口误都看作修正发音和语法的好机会.",
+              "giai_thich": "Muốn giỏi giao tiếp ngoại ngữ, người học cần vượt qua nỗi sợ bị chê cười, mạnh dạn mở lời và coi lỗi sai là cơ hội để sửa chữa."
+            }
+          ]
+        }
+      ],
+      "cuoi_thua_moi": [
+        {
+          "nhom": "tro_tu_dong_thai",
+          "loi_nghe": "女：这把木头摇椅的扶手松了，扔掉买把新的吧？\n男：别扔啊，这是爷爷年轻时亲手做的枣木椅，木料结实着呢。\n女：那你自己修得好吗？\n男：没问题，我去五金店买点儿木工胶和两颗长螺丝，半个小时就能加固好。\n问：男的打算怎么处理这把木头摇椅？",
+          "noi_dung": "男的打算怎么处理这把木头摇椅？",
+          "pinyin": null,
+          "raw_opts": [
+            "买工具把扶手重新加固好",
+            "把它卖给旧家具回收站",
+            "直接扔掉去商场买新的",
+            "送回老家请爷爷帮忙修"
+          ],
+          "dich_nghia": "Người nam dự định xử lý chiếc ghế bập bênh bằng gỗ này như thế nào?\nMua dụng cụ về gia cố lại phần tay vịn / Bán cho trạm thu mua đồ gỗ cũ / Vứt đi mua ngay chiếc mới ở trung tâm thương mại / Gửi về quê nhờ ông nội sửa giúp",
+          "goi_y": "Nghe lý do giữ lại chiếc ghế kỷ niệm ở lượt 2 và cách sửa ở lượt 4.",
+          "goi_y_2": "Người nam nói: 我去五金店买点儿木工胶和两颗长螺丝，半个小时就能加固好.",
+          "giai_thich": "Chiếc ghế gỗ táo là kỷ vật do ông nội tự đóng nên người nam đi mua keo gỗ và ốc vít về tự gia cố lại tay vịn."
+        },
+        {
+          "nhom": "thoi_gian_lich_hen",
+          "loi_nghe": "男：林导演，咱们去云南拍野生亚洲象纪录片，定在下个月出发吗？\n女：摄制组原计划五月去，但当地向导刚通知我们，六月中旬雨季开始后象群才会集中到河谷活动，所以我们推迟了一个月。\n男：也好，那我正好利用这几周把航拍设备再调试一遍。\n问：摄制组最后定在什么时候出发去云南？",
+          "noi_dung": "摄制组最后定在什么时候出发去云南？",
+          "pinyin": null,
+          "raw_opts": [
+            "六月中旬",
+            "五月初",
+            "七月底",
+            "今年十月"
+          ],
+          "dich_nghia": "Đoàn làm phim cuối cùng chốt xuất phát đi Vân Nam vào thời điểm nào?\nGiữa tháng Sáu / Đầu tháng Năm / Cuối tháng Bảy / Tháng Mười năm nay",
+          "goi_y": "Phân biệt kế hoạch gốc (原计划五月) và lịch mới sau khi nghe tư vấn của người dẫn đường địa phương.",
+          "goi_y_2": "Đạo diễn Lâm nói: 六月中旬雨季开始后象群才会集中到河谷活动，所以我们推迟了一个月.",
+          "giai_thich": "Đoàn làm phim lùi lịch từ tháng Năm sang giữa tháng Sáu để đúng mùa mưa khi đàn voi rừng tập trung về thung lũng sông."
+        },
+        {
+          "nhom": "vi_tri_phuong_huong",
+          "loi_nghe": "女：这周末咱们需要一起核对毕业论文的数据，去学校图书馆还是去街角的咖啡馆？\n男：图书馆静音区不让小声讨论，街角咖啡馆周末又太吵。\n女：那去哪儿合适呢？\n男：科技园二楼新开了一家自习书吧，有专门的双人讨论间，隔音好，还免费提供插座和热茶。\n问：他们周末最可能去哪儿核对论文数据？",
+          "noi_dung": "他们周末最可能去哪儿核对论文数据？",
+          "pinyin": null,
+          "raw_opts": [
+            "科技园二楼的自习书吧",
+            "学校图书馆的静音区",
+            "街角热闹的网红咖啡馆",
+            "男的宿舍楼下的花园"
+          ],
+          "dich_nghia": "Cuối tuần họ nhiều khả năng sẽ đến đâu để đối chiếu số liệu luận văn?\nQuán sách tự học ở tầng 2 khu công nghệ / Khu yên tĩnh của thư viện trường / Quán cà phê đông đúc ở góc phố / Vườn hoa dưới ký túc xá của người nam",
+          "goi_y": "Thư viện và quán cà phê góc phố đều bị loại ở lượt 2, hãy nghe địa điểm lý tưởng ở lượt 4.",
+          "goi_y_2": "Người nam đề xuất: 科技园二楼新开了一家自习书吧，有专门的双人讨论间.",
+          "giai_thich": "Quán sách tự học ở tầng 2 khu công nghệ có phòng thảo luận đôi cách âm tốt, có ổ cắm và trà nóng nên phù hợp nhất."
+        },
+        {
+          "nhom": "lien_tu_quan_he",
+          "loi_nghe": "许多设计师和作家在思路卡住的时候，不会一直坐在电脑前苦思冥想，而是穿上运动鞋出门散步二十分钟。当身体在自然光线和新鲜空气中放松下来时，大脑的注意力不再紧绷，原本零散的想法反而更容易连接在一起，产生意想不到的灵感。\n问：为什么出门散步有助于产生创意灵感？",
+          "noi_dung": "为什么出门散步有助于产生创意灵感？",
+          "pinyin": null,
+          "raw_opts": [
+            "身心放松让零散想法更容易连接",
+            "散步时可以向路人请教专业问题",
+            "走路越累大脑记忆生词就越快",
+            "户外噪音能迫使人集中全部精力"
+          ],
+          "dich_nghia": "Vì sao đi dạo ngoài trời lại giúp nảy sinh cảm hứng sáng tạo?\nThân tâm thư giãn giúp các ý tưởng rời rạc dễ kết nối với nhau / Khi đi dạo có thể hỏi ý kiến chuyên môn của người qua đường / Đi bộ càng mệt não càng nhớ từ mới nhanh / Tiếng ồn ngoài trời ép con người tập trung toàn bộ sức lực",
+          "goi_y": "Lắng nghe lời giải thích khoa học ở câu thứ hai của đoạn độc thoại.",
+          "goi_y_2": "当身体…放松下来时，大脑的注意力不再紧绷，原本零散的想法反而更容易连接在一起.",
+          "giai_thich": "Khi cơ thể và tâm trí thư giãn giữa ánh sáng tự nhiên, não bộ bớt căng thẳng nên các ý tưởng rời rạc dễ liên kết thành nguồn cảm hứng mới."
+        },
+        {
+          "nhom": "cau_so_sanh_nhan_manh",
+          "loi_nghe": "在商业合作中，精美的宣传册和流利的口才固然能吸引客户的初步关注，但真正决定双方能否长期走下去的，永远是“守信”二字。哪怕只是按时交付一份小样品、兑现一个看似不起眼的承诺，日积月累下来，都会成为企业最宝贵的口碑。\n问：这段话认为商业合作能够长期维持的关键是什么？",
+          "noi_dung": "这段话认为商业合作能够长期维持的关键是什么？",
+          "pinyin": null,
+          "raw_opts": [
+            "信守承诺、积累良好口碑",
+            "印刷最昂贵的彩色宣传册",
+            "在谈判时用口才压倒对方",
+            "每次合作都把价格压到最低"
+          ],
+          "dich_nghia": "Đoạn văn cho rằng chìa khóa để duy trì hợp tác kinh doanh lâu dài là gì?\nGiữ chữ tín, tích lũy uy tín tốt đẹp / In ấn cuốn cẩm nang quảng cáo màu đắt đỏ nhất / Dùng tài ăn nói áp đảo đối phương khi đàm phán / Mỗi lần hợp tác đều ép giá xuống thấp nhất",
+          "goi_y": "Chú ý thông điệp cốt lõi nằm sau cấu trúc 固然…，但真正决定…的，永远是…",
+          "goi_y_2": "真正决定双方能否长期走下去的，永远是“守信”二字.",
+          "giai_thich": "Giữ chữ tín qua từng cam kết nhỏ nhất giúp doanh nghiệp tích lũy uy tín quý giá và duy trì quan hệ hợp tác bền lâu."
+        }
+      ]
+    }
+  ]
+}

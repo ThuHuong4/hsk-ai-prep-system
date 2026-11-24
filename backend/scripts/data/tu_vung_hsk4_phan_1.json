@@ -1,0 +1,2254 @@
+{
+  "tu": [
+    {
+      "cap": "HSK4",
+      "chu_han": "爱情",
+      "pinyin": "àiqíng",
+      "nghia": "tình yêu",
+      "vd_cau": "这部电影讲了一个感人的爱情故事。",
+      "vd_pinyin": "Zhè bù diànyǐng jiǎng le yí gè gǎnrén de àiqíng gùshi.",
+      "vd_nghia": "Bộ phim này kể về một câu chuyện tình yêu cảm động."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "暗",
+      "pinyin": "àn",
+      "nghia": "tối, mờ tối; sẫm màu",
+      "vd_cau": "房间里的光线太暗了，请把灯打开吧。",
+      "vd_pinyin": "Fángjiān lǐ de guāngxiàn tài àn le, qǐng bǎ dēng dǎkāi ba.",
+      "vd_nghia": "Ánh sáng trong phòng tối quá, vui lòng bật đèn lên nhé."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "百分之",
+      "pinyin": "bǎifēnzhī",
+      "nghia": "phần trăm (%)",
+      "vd_cau": "这项调查工作我们已经完成了百分之八十。",
+      "vd_pinyin": "Zhè xiàng diàochá gōngzuò wǒmen yǐjīng wánchéng le bǎifēnzhī bāshí.",
+      "vd_nghia": "Công việc khảo sát này chúng tôi đã hoàn thành được tám mươi phần trăm."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "棒",
+      "pinyin": "bàng",
+      "nghia": "tuyệt vời, giỏi, xuất sắc",
+      "vd_cau": "你今天的演讲真是太棒了！",
+      "vd_pinyin": "Nǐ jīntiān de yǎnjiǎng zhēn shì tài bàng le!",
+      "vd_nghia": "Bài diễn thuyết hôm nay của bạn thật sự quá tuyệt vời!"
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "包子",
+      "pinyin": "bāozi",
+      "nghia": "bánh bao",
+      "vd_cau": "我今天早上吃了两个肉包子和一碗粥。",
+      "vd_pinyin": "Wǒ jīntiān zǎoshang chī le liǎng gè ròu bāozi hé yì wǎn zhōu.",
+      "vd_nghia": "Sáng nay tôi đã ăn hai chiếc bánh bao nhân thịt và một bát cháo."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "抱",
+      "pinyin": "bào",
+      "nghia": "ôm, bế",
+      "vd_cau": "妈妈微笑着把孩子抱在怀里。",
+      "vd_pinyin": "Māma wēixiàozhe bǎ háizi bào zài huái lǐ.",
+      "vd_nghia": "Mẹ mỉm cười ôm đứa bé vào lòng."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "抱歉",
+      "pinyin": "bàoqiàn",
+      "nghia": "xin lỗi, lấy làm tiếc",
+      "vd_cau": "非常抱歉，让你在雨里等了这么久。",
+      "vd_pinyin": "Fēicháng bàoqiàn, ràng nǐ zài yǔ lǐ děng le zhème jiǔ.",
+      "vd_nghia": "Vô cùng xin lỗi vì đã để bạn đợi lâu như vậy dưới mưa."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "报道",
+      "pinyin": "bàodào",
+      "nghia": "đưa tin; bản tin, bài phóng sự",
+      "vd_cau": "多家电视台都报道了这次国际体育比赛。",
+      "vd_pinyin": "Duō jiā diànshìtái dōu bàodào le zhè cì guójì tǐyù bǐsài.",
+      "vd_nghia": "Nhiều đài truyền hình đều đã đưa tin về giải đấu thể thao quốc tế lần này."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "倍",
+      "pinyin": "bèi",
+      "nghia": "lần, gấp (bội số)",
+      "vd_cau": "现在这座城市的人口是二十年前的三倍。",
+      "vd_pinyin": "Xiànzài zhè zuò chéngshì de rénkǒu shì èrshí nián qián de sān bèi.",
+      "vd_nghia": "Dân số của thành phố này hiện nay gấp ba lần cách đây hai mươi năm."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "本来",
+      "pinyin": "běnlái",
+      "nghia": "vốn dĩ, ban đầu, lẽ ra",
+      "vd_cau": "我本来打算周末去爬山，可是突然下起了大雨。",
+      "vd_pinyin": "Wǒ běnlái dǎsuàn zhōumò qù páshān, kěshì tūrán xià qǐ le dàyǔ.",
+      "vd_nghia": "Ban đầu tôi định cuối tuần đi leo núi, nhưng đột nhiên trời đổ mưa to."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "笨",
+      "pinyin": "bèn",
+      "nghia": "ngốc, vụng về",
+      "vd_cau": "他一点儿也不笨，只是平时不够努力。",
+      "vd_pinyin": "Tā yìdiǎnr yě bú bèn, zhǐshì píngshí bú gòu nǔlì.",
+      "vd_nghia": "Cậu ấy chẳng ngốc chút nào, chỉ là ngày thường chưa đủ chăm chỉ."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "比如",
+      "pinyin": "bǐrú",
+      "nghia": "ví dụ như, chẳng hạn",
+      "vd_cau": "她有很多爱好，比如画画儿、弹钢琴和游泳。",
+      "vd_pinyin": "Tā yǒu hěn duō àihào, bǐrú huàhuàr, tán gāngqín hé yóuyǒng.",
+      "vd_nghia": "Cô ấy có rất nhiều sở thích, chẳng hạn như vẽ tranh, chơi đàn dương cầm và bơi lội."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "遍",
+      "pinyin": "biàn",
+      "nghia": "lần, lượt (từ đầu đến cuối)",
+      "vd_cau": "这篇课文我读了三遍才完全明白。",
+      "vd_pinyin": "Zhè piān kèwén wǒ dú le sān biàn cái wánquán míngbai.",
+      "vd_nghia": "Bài khóa này tôi đọc ba lượt mới hoàn toàn hiểu rõ."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "表格",
+      "pinyin": "biǎogé",
+      "nghia": "bảng biểu, biểu mẫu",
+      "vd_cau": "请您先填一下这张报名表格。",
+      "vd_pinyin": "Qǐng nín xiān tián yíxià zhè zhāng bàomíng biǎogé.",
+      "vd_nghia": "Xin ngài điền vào tờ biểu mẫu đăng ký này trước."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "表达",
+      "pinyin": "biǎodá",
+      "nghia": "bày tỏ, diễn đạt",
+      "vd_cau": "他写了一封信来表达对老师的感谢。",
+      "vd_pinyin": "Tā xiě le yì fēng xìn lái biǎodá duì lǎoshī de gǎnxiè.",
+      "vd_nghia": "Anh ấy đã viết một bức thư để bày tỏ lòng biết ơn đối với thầy giáo."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "饼干",
+      "pinyin": "bǐnggān",
+      "nghia": "bánh quy",
+      "vd_cau": "桌子上有一盒牛奶饼干，饿了就吃几块吧。",
+      "vd_pinyin": "Zhuōzi shàng yǒu yì hé niúnǎi bǐnggān, è le jiù chī jǐ kuài ba.",
+      "vd_nghia": "Trên bàn có một hộp bánh quy sữa, đói thì ăn mấy chiếc nhé."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "不但",
+      "pinyin": "búdàn",
+      "nghia": "không những, chẳng những",
+      "vd_cau": "这家饭馆的菜不但好吃，而且价格也很便宜。",
+      "vd_pinyin": "Zhè jiā fànguǎn de cài búdàn hǎochī, érqiě jiàgé yě hěn piányi.",
+      "vd_nghia": "Món ăn của nhà hàng này không những ngon mà giá cả còn rất rẻ."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "不过",
+      "pinyin": "búguò",
+      "nghia": "nhưng, có điều; chỉ là",
+      "vd_cau": "这件大衣样式很好看，不过对我来说太贵了。",
+      "vd_pinyin": "Zhè jiàn dàyī yàngshì hěn hǎokàn, búguò duì wǒ láishuō tài guì le.",
+      "vd_nghia": "Chiếc áo khoác này kiểu dáng rất đẹp, có điều đối với tôi thì đắt quá."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "不得不",
+      "pinyin": "bùdébù",
+      "nghia": "đành phải, buộc phải",
+      "vd_cau": "因为下大暴雪，我们不得不取消了旅行计划。",
+      "vd_pinyin": "Yīnwèi xià dà bàoxuě, wǒmen bùdébù qǔxiāo le lǚxíng jìhuà.",
+      "vd_nghia": "Vì có bão tuyết lớn, chúng tôi buộc phải hủy kế hoạch du lịch."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "部分",
+      "pinyin": "bùfen",
+      "nghia": "phần, bộ phận",
+      "vd_cau": "这本书的第一部分主要介绍中国历史。",
+      "vd_pinyin": "Zhè běn shū de dì-yī bùfen zhǔyào jièshào Zhōngguó lìshǐ.",
+      "vd_nghia": "Phần thứ nhất của cuốn sách này chủ yếu giới thiệu lịch sử Trung Quốc."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "擦",
+      "pinyin": "cā",
+      "nghia": "lau, chùi, xóa",
+      "vd_cau": "值日生已经把教室的窗户擦得干干净净了。",
+      "vd_pinyin": "Zhírìshēng yǐjīng bǎ jiàoshì de chuānghu cā de gāngānjìngjìng le.",
+      "vd_nghia": "Bạn trực nhật đã lau cửa sổ phòng học sạch bong rồi."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "猜",
+      "pinyin": "cāi",
+      "nghia": "đoán",
+      "vd_cau": "你猜今天我在地铁上遇到谁了？",
+      "vd_pinyin": "Nǐ cāi jīntiān wǒ zài dìtiě shàng yùdào shéi le?",
+      "vd_nghia": "Bạn đoán xem hôm nay tôi đã gặp ai trên tàu điện ngầm?"
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "材料",
+      "pinyin": "cáiliào",
+      "nghia": "tài liệu; nguyên liệu, vật liệu",
+      "vd_cau": "申请奖学金需要准备哪些材料？",
+      "vd_pinyin": "Shēnqǐng jiǎngxuéjīn xūyào zhǔnbèi nǎxiē cáiliào?",
+      "vd_nghia": "Xin học bổng cần chuẩn bị những tài liệu nào?"
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "参观",
+      "pinyin": "cānguān",
+      "nghia": "tham quan",
+      "vd_cau": "下星期学校组织留学生去参观历史博物馆。",
+      "vd_pinyin": "Xià xīngqī xuéxiào zǔzhī liúxuéshēng qù cānguān lìshǐ bówùguǎn.",
+      "vd_nghia": "Tuần sau nhà trường tổ chức cho lưu học sinh đi tham quan bảo tàng lịch sử."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "餐厅",
+      "pinyin": "cāntīng",
+      "nghia": "nhà hàng, phòng ăn",
+      "vd_cau": "酒店二楼的餐厅每天早上七点开始供应早餐。",
+      "vd_pinyin": "Jiǔdiàn èr lóu de cāntīng měitiān zǎoshang qī diǎn kāishǐ gōngyìng zǎocān.",
+      "vd_nghia": "Nhà hàng ở tầng hai khách sạn bắt đầu phục vụ bữa sáng lúc bảy giờ mỗi ngày."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "厕所",
+      "pinyin": "cèsuǒ",
+      "nghia": "nhà vệ sinh",
+      "vd_cau": "请问，这层楼的厕所在哪个方向？",
+      "vd_pinyin": "Qǐngwèn, zhè céng lóu de cèsuǒ zài nǎge fāngxiàng?",
+      "vd_nghia": "Xin hỏi, nhà vệ sinh của tầng này nằm ở hướng nào?"
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "尝",
+      "pinyin": "cháng",
+      "nghia": "nếm, thưởng thức",
+      "vd_cau": "这是我第一次做鱼香肉丝，你快来尝一下。",
+      "vd_pinyin": "Zhè shì wǒ dì-yī cì zuò yúxiāng ròusī, nǐ kuài lái cháng yíxià.",
+      "vd_nghia": "Đây là lần đầu tiên tôi nấu món thịt sợi vị cá, bạn mau lại nếm thử một chút đi."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "长江",
+      "pinyin": "Chángjiāng",
+      "nghia": "sông Trường Giang (Dương Tử)",
+      "vd_cau": "长江是中国第一长河，全长六千三百多公里。",
+      "vd_pinyin": "Chángjiāng shì Zhōngguó dì-yī cháng hé, quáncháng liùqiān sānbǎi duō gōnglǐ.",
+      "vd_nghia": "Trường Giang là con sông dài nhất Trung Quốc, tổng chiều dài hơn 6.300 ki-lô-mét."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "场",
+      "pinyin": "chǎng",
+      "nghia": "trận, buổi, suất (lượng từ cho sự kiện, mưa)",
+      "vd_cau": "昨天晚上下了一场大雨，今天空气特别清新。",
+      "vd_pinyin": "Zuótiān wǎnshang xià le yì chǎng dàyǔ, jīntiān kōngqì tèbié qīngxīn.",
+      "vd_nghia": "Tối qua có một trận mưa to, hôm nay không khí đặc biệt trong lành."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "超过",
+      "pinyin": "chāoguò",
+      "nghia": "vượt quá, vượt qua",
+      "vd_cau": "免费托运的行李重量不能超过二十公斤。",
+      "vd_pinyin": "Miǎnfèi tuōyùn de xíngli zhòngliàng bù néng chāoguò èrshí gōngjīn.",
+      "vd_nghia": "Trọng lượng hành lý ký gửi miễn phí không được vượt quá hai mươi ki-lô-gam."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "吵",
+      "pinyin": "chǎo",
+      "nghia": "ồn ào; cãi nhau",
+      "vd_cau": "外面的马路太吵了，我把窗户关上吧。",
+      "vd_pinyin": "Wàimiàn de mǎlù tài chǎo le, wǒ bǎ chuānghu guān shàng ba.",
+      "vd_nghia": "Đường phố bên ngoài ồn quá, để tôi đóng cửa sổ lại nhé."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "成熟",
+      "pinyin": "chéngshú",
+      "nghia": "chín (quả); trưởng thành, chín chắn",
+      "vd_cau": "工作两年以后，他处理问题比以前成熟多了。",
+      "vd_pinyin": "Gōngzuò liǎng nián yǐhòu, tā chǔlǐ wèntí bǐ yǐqián chéngshú duō le.",
+      "vd_nghia": "Sau hai năm đi làm, anh ấy xử lý vấn đề chín chắn hơn trước nhiều."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "成为",
+      "pinyin": "chéngwéi",
+      "nghia": "trở thành",
+      "vd_cau": "她的梦想是将来成为一名优秀的汉语教师。",
+      "vd_pinyin": "Tā de mèngxiǎng shì jiānglái chéngwéi yì míng yōuxiù de Hànyǔ jiàoshī.",
+      "vd_nghia": "Ước mơ của cô ấy là sau này trở thành một giáo viên tiếng Hán xuất sắc."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "抽烟",
+      "pinyin": "chōuyān",
+      "nghia": "hút thuốc lá",
+      "vd_cau": "医院和地铁站里一律禁止抽烟。",
+      "vd_pinyin": "Yīyuàn hé dìtiězhàn lǐ yílǜ jìnzhǐ chōuyān.",
+      "vd_nghia": "Trong bệnh viện và ga tàu điện ngầm tuyệt đối cấm hút thuốc lá."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "出生",
+      "pinyin": "chūshēng",
+      "nghia": "sinh ra, ra đời",
+      "vd_cau": "我的妹妹是二零零五年在北京出生的。",
+      "vd_pinyin": "Wǒ de mèimei shì èr líng líng wǔ nián zài Běijīng chūshēng de.",
+      "vd_nghia": "Em gái tôi sinh ra tại Bắc Kinh vào năm 2005."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "出现",
+      "pinyin": "chūxiàn",
+      "nghia": "xuất hiện, nảy sinh",
+      "vd_cau": "如果使用过程中出现问题，请及时联系客服。",
+      "vd_pinyin": "Rúguǒ shǐyòng guòchéng zhōng chūxiàn wèntí, qǐng jíshí liánxì kèfú.",
+      "vd_nghia": "Nếu trong quá trình sử dụng nảy sinh vấn đề, xin hãy kịp thời liên hệ bộ phận chăm sóc khách hàng."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "厨房",
+      "pinyin": "chúfáng",
+      "nghia": "nhà bếp, phòng bếp",
+      "vd_cau": "爸爸正在厨房里为大家准备丰盛的晚餐。",
+      "vd_pinyin": "Bàba zhèngzài chúfáng lǐ wèi dàjiā zhǔnbèi fēngshèng de wǎncān.",
+      "vd_nghia": "Bố đang ở trong bếp chuẩn bị bữa tối thịnh soạn cho cả nhà."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "传真",
+      "pinyin": "chuánzhēn",
+      "nghia": "fax, bản fax; gửi fax",
+      "vd_cau": "请把签好字的合同发传真到我们办公室。",
+      "vd_pinyin": "Qǐng bǎ qiān hǎo zì de hétong fā chuánzhēn dào wǒmen bàngōngshì.",
+      "vd_nghia": "Vui lòng gửi fax bản hợp đồng đã ký tên tới văn phòng chúng tôi."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "窗户",
+      "pinyin": "chuānghu",
+      "nghia": "cửa sổ",
+      "vd_cau": "早上起床后打开窗户透透气，感觉很舒服。",
+      "vd_pinyin": "Zǎoshang qǐchuáng hòu dǎkāi chuānghu tòutou qì, gǎnjué hěn shūfu.",
+      "vd_nghia": "Buổi sáng ngủ dậy mở cửa sổ cho thoáng khí, cảm thấy rất dễ chịu."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "词语",
+      "pinyin": "cíyǔ",
+      "nghia": "từ ngữ",
+      "vd_cau": "阅读时遇到不认识的词语，可以先猜一猜意思。",
+      "vd_pinyin": "Yuèdú shí yùdào bú rènshi de cíyǔ, kěyǐ xiān cāi yi cāi yìsi.",
+      "vd_nghia": "Khi đọc gặp từ ngữ không biết, có thể đoán thử nghĩa trước."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "从来",
+      "pinyin": "cónglái",
+      "nghia": "từ trước đến nay (thường đi với phủ định)",
+      "vd_cau": "张老师工作非常认真，从来没有迟到过。",
+      "vd_pinyin": "Zhāng lǎoshī gōngzuò fēicháng rènzhēn, cónglái méiyǒu chídào guo.",
+      "vd_nghia": "Thầy Trương làm việc vô cùng nghiêm túc, từ trước đến nay chưa từng đi muộn."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "存",
+      "pinyin": "cún",
+      "nghia": "gửi, tiết kiệm (tiền); lưu trữ",
+      "vd_cau": "他每个月都会把一部分工资存进银行。",
+      "vd_pinyin": "Tā měi gè yuè dōu huì bǎ yí bùfen gōngzī cún jìn yínháng.",
+      "vd_nghia": "Mỗi tháng anh ấy đều gửi một phần tiền lương vào ngân hàng."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "错误",
+      "pinyin": "cuòwù",
+      "nghia": "sai lầm, lỗi sai",
+      "vd_cau": "写完作文以后要认真检查，减少语法错误。",
+      "vd_pinyin": "Xiě wán zuòwén yǐhòu yào rènzhēn jiǎnchá, jiǎnshǎo yǔfǎ cuòwù.",
+      "vd_nghia": "Sau khi viết xong bài văn cần kiểm tra kỹ để giảm lỗi ngữ pháp."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "打印",
+      "pinyin": "dǎyìn",
+      "nghia": "in, in ấn",
+      "vd_cau": "开会以前，请把这份报告打印二十份。",
+      "vd_pinyin": "Kāihuì yǐqián, qǐng bǎ zhè fèn bàogào dǎyìn èrshí fèn.",
+      "vd_nghia": "Trước khi họp, vui lòng in bản báo cáo này ra hai mươi bản."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "打招呼",
+      "pinyin": "dǎ zhāohu",
+      "nghia": "chào hỏi; báo trước",
+      "vd_cau": "每天早上见到邻居，她都会热情地打招呼。",
+      "vd_pinyin": "Měitiān zǎoshang jiàndào línjū, tā dōu huì rèqíng de dǎ zhāohu.",
+      "vd_nghia": "Mỗi buổi sáng gặp hàng xóm, cô ấy đều nhiệt tình chào hỏi."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "打针",
+      "pinyin": "dǎzhēn",
+      "nghia": "tiêm, chích thuốc",
+      "vd_cau": "医生说我的感冒不严重，吃点儿药就行，不用打针。",
+      "vd_pinyin": "Yīshēng shuō wǒ de gǎnmào bù yánzhòng, chī diǎnr yào jiù xíng, búyòng dǎzhēn.",
+      "vd_nghia": "Bác sĩ nói bệnh cảm của tôi không nặng, uống chút thuốc là được, không cần tiêm."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "大概",
+      "pinyin": "dàgài",
+      "nghia": "khoảng chừng, đại khái; có lẽ",
+      "vd_cau": "从学校坐地铁去机场大概需要四十分钟。",
+      "vd_pinyin": "Cóng xuéxiào zuò dìtiě qù jīchǎng dàgài xūyào sìshí fēnzhōng.",
+      "vd_nghia": "Từ trường đi tàu điện ngầm ra sân bay mất khoảng bốn mươi phút."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "大使馆",
+      "pinyin": "dàshǐguǎn",
+      "nghia": "đại sứ quán",
+      "vd_cau": "他今天上午去中国大使馆办理旅游签证了。",
+      "vd_pinyin": "Tā jīntiān shàngwǔ qù Zhōngguó Dàshǐguǎn bànlǐ lǚyóu qiānzhèng le.",
+      "vd_nghia": "Sáng nay anh ấy đã đến Đại sứ quán Trung Quốc làm thị thực du lịch."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "大约",
+      "pinyin": "dàyuē",
+      "nghia": "khoảng, xấp xỉ",
+      "vd_cau": "参加这次夏令营的学生大约有两百人。",
+      "vd_pinyin": "Cānjiā zhè cì xiàlìngyíng de xuésheng dàyuē yǒu liǎngbǎi rén.",
+      "vd_nghia": "Học sinh tham gia trại hè lần này có khoảng hai trăm người."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "大夫",
+      "pinyin": "dàifu",
+      "nghia": "bác sĩ",
+      "vd_cau": "李大夫对病人非常有耐心，大家都信任他。",
+      "vd_pinyin": "Lǐ dàifu duì bìngrén fēicháng yǒu nàixīn, dàjiā dōu xìnrèn tā.",
+      "vd_nghia": "Bác sĩ Lý vô cùng kiên nhẫn với bệnh nhân, ai nấy đều tin tưởng ông."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "戴",
+      "pinyin": "dài",
+      "nghia": "đội, đeo, mang (mũ, kính, trang sức)",
+      "vd_cau": "外面紫外线很强，出门最好戴上太阳镜。",
+      "vd_pinyin": "Wàimiàn zǐwàixiàn hěn qiáng, chūmén zuì hǎo dài shàng tàiyángjìng.",
+      "vd_nghia": "Bên ngoài tia cực tím rất mạnh, ra ngoài tốt nhất nên đeo kính râm."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "代表",
+      "pinyin": "dàibiǎo",
+      "nghia": "đại biểu; đại diện, tượng trưng",
+      "vd_cau": "她代表全班同学在毕业典礼上发了言。",
+      "vd_pinyin": "Tā dàibiǎo quánbān tóngxué zài bìyè diǎnlǐ shàng fā le yán.",
+      "vd_nghia": "Cô ấy đại diện cho cả lớp phát biểu tại lễ tốt nghiệp."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "代替",
+      "pinyin": "dàitì",
+      "nghia": "thay thế",
+      "vd_cau": "王老师今天生病了，由刘老师代替他给我们上课。",
+      "vd_pinyin": "Wáng lǎoshī jīntiān shēngbìng le, yóu Liú lǎoshī dàitì tā gěi wǒmen shàngkè.",
+      "vd_nghia": "Hôm nay thầy Vương bị ốm, thầy Lưu dạy thay thầy ấy cho lớp chúng tôi."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "当",
+      "pinyin": "dāng",
+      "nghia": "làm (nghề gì); khi, lúc",
+      "vd_cau": "当我遇到困难的时候，朋友们总是热情地帮助我。",
+      "vd_pinyin": "Dāng wǒ yùdào kùnnan de shíhou, péngyoumen zǒngshì rèqíng de bāngzhù wǒ.",
+      "vd_nghia": "Khi tôi gặp khó khăn, bạn bè luôn nhiệt tình giúp đỡ tôi."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "当地",
+      "pinyin": "dāngdì",
+      "nghia": "địa phương, bản địa",
+      "vd_cau": "去一个新地方旅行时，我最喜欢品尝当地的小吃。",
+      "vd_pinyin": "Qù yí gè xīn dìfang lǚxíng shí, wǒ zuì xǐhuan pǐncháng dāngdì de xiǎochī.",
+      "vd_nghia": "Khi đi du lịch tới một vùng đất mới, tôi thích nhất là thưởng thức món ăn vặt địa phương."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "当时",
+      "pinyin": "dāngshí",
+      "nghia": "lúc đó, khi ấy",
+      "vd_cau": "当时我太紧张了，连自己的名字都差点儿说错。",
+      "vd_pinyin": "Dāngshí wǒ tài jǐnzhāng le, lián zìjǐ de míngzi dōu chàdiǎnr shuō cuò.",
+      "vd_nghia": "Lúc đó tôi căng thẳng quá, đến cả tên mình cũng suýt nói nhầm."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "刀",
+      "pinyin": "dāo",
+      "nghia": "con dao",
+      "vd_cau": "这把水果刀很锋利，切西瓜的时候要小心。",
+      "vd_pinyin": "Zhè bǎ shuǐguǒdāo hěn fēnglì, qiē xīguā de shíhou yào xiǎoxīn.",
+      "vd_nghia": "Con dao gọt hoa quả này rất sắc, lúc bổ dưa hấu phải cẩn thận."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "到处",
+      "pinyin": "dàochù",
+      "nghia": "khắp nơi, đâu đâu cũng",
+      "vd_cau": "春天到了，公园里到处都是美丽的花朵。",
+      "vd_pinyin": "Chūntiān dào le, gōngyuán lǐ dàochù dōu shì měilì de huāduǒ.",
+      "vd_nghia": "Mùa xuân đến rồi, trong công viên khắp nơi đều là những đóa hoa tươi đẹp."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "到底",
+      "pinyin": "dàodǐ",
+      "nghia": "rốt cuộc; đến cùng",
+      "vd_cau": "这件事情你到底是怎么打算的？",
+      "vd_pinyin": "Zhè jiàn shìqing nǐ dàodǐ shì zěnme dǎsuàn de?",
+      "vd_nghia": "Chuyện này rốt cuộc bạn định tính thế nào?"
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "倒",
+      "pinyin": "dào",
+      "nghia": "rót, đổ; ngược lại, trái lại",
+      "vd_cau": "客人来了，快给客人倒一杯热茶吧。",
+      "vd_pinyin": "Kèrén lái le, kuài gěi kèrén dào yì bēi rè chá ba.",
+      "vd_nghia": "Khách đến rồi, mau rót cho khách một tách trà nóng nhé."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "低",
+      "pinyin": "dī",
+      "nghia": "thấp; cúi xuống",
+      "vd_cau": "今天夜里的气温很低，睡觉时记得盖好被子。",
+      "vd_pinyin": "Jīntiān yèlǐ de qìwēn hěn dī, shuìjiào shí jìde gài hǎo bèizi.",
+      "vd_nghia": "Nhiệt độ đêm nay rất thấp, khi ngủ nhớ đắp kỹ chăn."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "底",
+      "pinyin": "dǐ",
+      "nghia": "đáy; cuối (năm, tháng)",
+      "vd_cau": "我们公司计划今年年底搬进新的办公大楼。",
+      "vd_pinyin": "Wǒmen gōngsī jìhuà jīnnián niándǐ bān jìn xīn de bàngōng dàlóu.",
+      "vd_nghia": "Công ty chúng tôi dự định cuối năm nay sẽ chuyển vào tòa nhà văn phòng mới."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "地点",
+      "pinyin": "dìdiǎn",
+      "nghia": "địa điểm",
+      "vd_cau": "明天下午开会的地点改在三楼会议室了。",
+      "vd_pinyin": "Míngtiān xiàwǔ kāihuì de dìdiǎn gǎi zài sān lóu huìyìshì le.",
+      "vd_nghia": "Địa điểm họp chiều mai đã đổi sang phòng họp tầng ba rồi."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "地球",
+      "pinyin": "dìqiú",
+      "nghia": "Trái Đất",
+      "vd_cau": "地球是我们共同的家园，大家都应该好好保护它。",
+      "vd_pinyin": "Dìqiú shì wǒmen gòngtóng de jiāyuán, dàjiā dōu yīnggāi hǎohāo bǎohù tā.",
+      "vd_nghia": "Trái Đất là ngôi nhà chung của chúng ta, mọi người đều nên bảo vệ tốt nó."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "地址",
+      "pinyin": "dìzhǐ",
+      "nghia": "địa chỉ",
+      "vd_cau": "请把您的详细地址和电话号码写在快递单上。",
+      "vd_pinyin": "Qǐng bǎ nín de xiángxì dìzhǐ hé diànhuà hàomǎ xiě zài kuàidìdān shàng.",
+      "vd_nghia": "Vui lòng ghi địa chỉ chi tiết và số điện thoại của ngài lên phiếu chuyển phát nhanh."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "掉",
+      "pinyin": "diào",
+      "nghia": "rơi, rụng; mất",
+      "vd_cau": "秋天到了，树上的黄叶一片一片地掉下来。",
+      "vd_pinyin": "Qiūtiān dào le, shù shàng de huángyè yí piàn yí piàn de diào xiàlái.",
+      "vd_nghia": "Mùa thu đến rồi, lá vàng trên cây rơi xuống từng chiếc một."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "丢",
+      "pinyin": "diū",
+      "nghia": "mất, làm mất; ném",
+      "vd_cau": "他太马虎了，上个星期又把门钥匙弄丢了。",
+      "vd_pinyin": "Tā tài mǎhu le, shàng gè xīngqī yòu bǎ mén yàoshi nòng diū le.",
+      "vd_nghia": "Cậu ấy bất cẩn quá, tuần trước lại làm mất chìa khóa cửa rồi."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "动作",
+      "pinyin": "dòngzuò",
+      "nghia": "động tác, thao tác",
+      "vd_cau": "这位太极拳教练的每个动作都非常标准。",
+      "vd_pinyin": "Zhè wèi tàijíquán jiàoliàn de měi gè dòngzuò dōu fēicháng biāozhǔn.",
+      "vd_nghia": "Mỗi động tác của huấn luyện viên thái cực quyền này đều vô cùng chuẩn xác."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "堵车",
+      "pinyin": "dǔchē",
+      "nghia": "tắc đường, kẹt xe",
+      "vd_cau": "上下班高峰期很容易堵车，我们还是坐地铁吧。",
+      "vd_pinyin": "Shàngxiàbān gāofēngqī hěn róngyì dǔchē, wǒmen háishi zuò dìtiě ba.",
+      "vd_nghia": "Giờ cao điểm đi làm và tan tầm rất dễ tắc đường, chúng ta cứ đi tàu điện ngầm nhé."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "肚子",
+      "pinyin": "dùzi",
+      "nghia": "bụng",
+      "vd_cau": "别喝太冰的饮料，小心肚子疼。",
+      "vd_pinyin": "Bié hē tài bīng de yǐnliào, xiǎoxīn dùzi téng.",
+      "vd_nghia": "Đừng uống đồ uống lạnh quá, cẩn thận kẻo đau bụng."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "断",
+      "pinyin": "duàn",
+      "nghia": "đứt, gãy; ngắt, cắt đứt",
+      "vd_cau": "昨天夜里刮大风，院子里的那棵老树枝被吹断了。",
+      "vd_pinyin": "Zuótiān yèlǐ guā dàfēng, yuànzi lǐ de nà kē lǎo shùzhī bèi chuī duàn le.",
+      "vd_nghia": "Đêm qua gió lớn, cành cây già trong sân đã bị thổi gãy."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "短信",
+      "pinyin": "duǎnxìn",
+      "nghia": "tin nhắn (điện thoại)",
+      "vd_cau": "会议期间请把手机调成静音，有事可以发短信。",
+      "vd_pinyin": "Huìyì qījiān qǐng bǎ shǒujī tiáo chéng jìngyīn, yǒushì kěyǐ fā duǎnxìn.",
+      "vd_nghia": "Trong thời gian họp vui lòng chuyển điện thoại sang chế độ im lặng, có việc có thể nhắn tin."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "顿",
+      "pinyin": "dùn",
+      "nghia": "bữa (ăn), trận (mắng, đòn)",
+      "vd_cau": "工作再忙，每天也要按时吃好三顿饭。",
+      "vd_pinyin": "Gōngzuò zài máng, měitiān yě yào ànshí chī hǎo sān dùn fàn.",
+      "vd_nghia": "Công việc có bận đến mấy thì mỗi ngày cũng phải ăn uống đầy đủ đúng giờ ba bữa cơm."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "对于",
+      "pinyin": "duìyú",
+      "nghia": "đối với, về (vấn đề, đối tượng)",
+      "vd_cau": "对于这个问题，大家都有自己不同的看法。",
+      "vd_pinyin": "Duìyú zhège wèntí, dàjiā dōu yǒu zìjǐ bùtóng de kànfǎ.",
+      "vd_nghia": "Đối với vấn đề này, mọi người đều có quan điểm khác nhau của riêng mình."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "朵",
+      "pinyin": "duǒ",
+      "nghia": "bông, đóa, đám (lượng từ cho hoa, mây)",
+      "vd_cau": "蓝蓝的天空上飘着几朵洁白的云。",
+      "vd_pinyin": "Lánlán de tiānkōng shàng piāozhe jǐ duǒ jiébái de yún.",
+      "vd_nghia": "Trên bầu trời xanh thẳm có mấy đám mây trắng tinh đang trôi."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "儿童",
+      "pinyin": "értóng",
+      "nghia": "nhi đồng, trẻ em",
+      "vd_cau": "身高一米二以下的儿童可以免费参观动物园。",
+      "vd_pinyin": "Shēngāo yì mǐ èr yǐxià de értóng kěyǐ miǎnfèi cānguān dòngwùyuán.",
+      "vd_nghia": "Trẻ em cao dưới một mét hai được miễn phí tham quan sở thú."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "而",
+      "pinyin": "ér",
+      "nghia": "còn, mà, nhưng (liên từ nối đối lập hoặc bổ sung)",
+      "vd_cau": "北方的冬天很冷，而南方的冬天比较暖和。",
+      "vd_pinyin": "Běifāng de dōngtiān hěn lěng, ér nánfāng de dōngtiān bǐjiào nuǎnhuo.",
+      "vd_nghia": "Mùa đông ở miền Bắc rất lạnh, còn mùa đông ở miền Nam khá ấm áp."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "发生",
+      "pinyin": "fāshēng",
+      "nghia": "xảy ra, phát sinh",
+      "vd_cau": "这几年我的家乡发生了非常大的变化。",
+      "vd_pinyin": "Zhè jǐ nián wǒ de jiāxiāng fāshēng le fēicháng dà de biànhuà.",
+      "vd_nghia": "Mấy năm nay quê hương tôi đã có những thay đổi vô cùng to lớn."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "烦恼",
+      "pinyin": "fánnǎo",
+      "nghia": "phiền não, buồn phiền",
+      "vd_cau": "遇到烦恼的时候，跟好朋友聊聊天会轻松很多。",
+      "vd_pinyin": "Yùdào fánnǎo de shíhou, gēn hǎo péngyou liáoliao tiān huì qīngsōng hěn duō.",
+      "vd_nghia": "Khi gặp chuyện buồn phiền, trò chuyện với bạn thân sẽ thấy nhẹ nhõm hơn nhiều."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "反映",
+      "pinyin": "fǎnyìng",
+      "nghia": "phản ánh, báo cáo",
+      "vd_cau": "这部小说真实地反映了当代年轻人的生活。",
+      "vd_pinyin": "Zhè bù xiǎoshuō zhēnshí de fǎnyìng le dāngdài niánqīngrén de shēnghuó.",
+      "vd_nghia": "Cuốn tiểu thuyết này phản ánh chân thực cuộc sống của giới trẻ đương đại."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "范围",
+      "pinyin": "fànwéi",
+      "nghia": "phạm vi",
+      "vd_cau": "老师已经在黑板上写出了这次期末考试的复习范围。",
+      "vd_pinyin": "Lǎoshī yǐjīng zài hēibǎn shàng xiě chū le zhè cì qīmò kǎoshì de fùxí fànwéi.",
+      "vd_nghia": "Thầy giáo đã viết lên bảng phạm vi ôn tập của kỳ thi cuối kỳ lần này."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "方面",
+      "pinyin": "fāngmiàn",
+      "nghia": "phương diện, mặt, khía cạnh",
+      "vd_cau": "他在环境保护方面做了很多深入的研究。",
+      "vd_pinyin": "Tā zài huánjìng bǎohù fāngmiàn zuò le hěn duō shēnrù de yánjiū.",
+      "vd_nghia": "Ông ấy đã thực hiện nhiều nghiên cứu chuyên sâu về mặt bảo vệ môi trường."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "方向",
+      "pinyin": "fāngxiàng",
+      "nghia": "phương hướng, hướng",
+      "vd_cau": "对不起，我坐反方向了，得在下一站换车。",
+      "vd_pinyin": "Duìbuqǐ, wǒ zuò fǎn fāngxiàng le, děi zài xià yí zhàn huànchē.",
+      "vd_nghia": "Xin lỗi, tôi đi ngược hướng rồi, phải đổi xe ở trạm tiếp theo."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "房东",
+      "pinyin": "fángdōng",
+      "nghia": "chủ nhà (cho thuê)",
+      "vd_cau": "我的房东是一位热心的老奶奶，经常送水果给我。",
+      "vd_pinyin": "Wǒ de fángdōng shì yí wèi rèxīn de lǎo nǎinai, jīngcháng sòng shuǐguǒ gěi wǒ.",
+      "vd_nghia": "Chủ nhà của tôi là một bà cụ tốt bụng, thường xuyên biếu trái cây cho tôi."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "访问",
+      "pinyin": "fǎngwèn",
+      "nghia": "thăm, viếng thăm; phỏng vấn",
+      "vd_cau": "下个月将有一个中国大学生代表团来访问我们学校。",
+      "vd_pinyin": "Xià gè yuè jiāng yǒu yí gè Zhōngguó dàxuéshēng dàibiǎotuán lái fǎngwèn wǒmen xuéxiào.",
+      "vd_nghia": "Tháng sau sẽ có một đoàn đại biểu sinh viên Trung Quốc sang thăm trường chúng tôi."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "放弃",
+      "pinyin": "fàngqì",
+      "nghia": "từ bỏ, bỏ cuộc",
+      "vd_cau": "离成功只差最后一步了，千万不要轻易放弃。",
+      "vd_pinyin": "Lí chénggōng zhǐ chà zuìhòu yí bù le, qiānwàn búyào qīngyì fàngqì.",
+      "vd_nghia": "Cách thành công chỉ còn bước cuối cùng thôi, tuyệt đối đừng dễ dàng từ bỏ."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "放暑假",
+      "pinyin": "fàng shǔjià",
+      "nghia": "nghỉ hè",
+      "vd_cau": "每年七月初学校开始放暑假，学生们都回家看父母。",
+      "vd_pinyin": "Měinián qīyuè chū xuéxiào kāishǐ fàng shǔjià, xuéshengmen dōu huí jiā kàn fùmǔ.",
+      "vd_nghia": "Đầu tháng bảy hằng năm trường bắt đầu nghỉ hè, học sinh đều về nhà thăm bố mẹ."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "放松",
+      "pinyin": "fàngsōng",
+      "nghia": "thư giãn, thả lỏng",
+      "vd_cau": "考完试以后，我想听听轻音乐放松一下心情。",
+      "vd_pinyin": "Kǎo wán shì yǐhòu, wǒ xiǎng tīngting qīngyīnyuè fàngsōng yíxià xīnqíng.",
+      "vd_nghia": "Sau khi thi xong, tôi muốn nghe nhạc nhẹ để thư giãn tâm trạng một chút."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "份",
+      "pinyin": "fèn",
+      "nghia": "phần, suất, bản (lượng từ cho công việc, tài liệu, suất ăn)",
+      "vd_cau": "姐姐大学毕业以后找到了一份非常理想的工作。",
+      "vd_pinyin": "Jiějie dàxué bìyè yǐhòu zhǎodào le yí fèn fēicháng lǐxiǎng de gōngzuò.",
+      "vd_nghia": "Sau khi tốt nghiệp đại học, chị gái đã tìm được một công việc vô cùng lý tưởng."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "夫妻",
+      "pinyin": "fūqī",
+      "nghia": "vợ chồng",
+      "vd_cau": "那对老夫妻结婚五十年了，感情一直非常好。",
+      "vd_pinyin": "Nà duì lǎo fūqī jiéhūn wǔshí nián le, gǎnqíng yìzhí fēicháng hǎo.",
+      "vd_nghia": "Cặp vợ chồng già ấy đã kết hôn năm mươi năm rồi mà tình cảm vẫn luôn rất tốt."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "符合",
+      "pinyin": "fúhé",
+      "nghia": "phù hợp với, đúng với (tiêu chuẩn, yêu cầu)",
+      "vd_cau": "他的工作经验和专业背景都很符合公司的招聘要求。",
+      "vd_pinyin": "Tā de gōngzuò jīngyàn hé zhuānyè bèijǐng dōu hěn fúhé gōngsī de zhāopìn yāoqiú.",
+      "vd_nghia": "Kinh nghiệm làm việc và nền tảng chuyên môn của anh ấy đều rất phù hợp với yêu cầu tuyển dụng của công ty."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "父亲",
+      "pinyin": "fùqīn",
+      "nghia": "cha, bố",
+      "vd_cau": "我的父亲虽然话不多，但总是默默地关心我们。",
+      "vd_pinyin": "Wǒ de fùqīn suīrán huà bù duō, dàn zǒngshì mòmò de guānxīn wǒmen.",
+      "vd_nghia": "Cha tôi tuy ít nói nhưng luôn âm thầm quan tâm đến chúng tôi."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "付款",
+      "pinyin": "fùkuǎn",
+      "nghia": "thanh toán, trả tiền",
+      "vd_cau": "现在在超市买东西用手机扫码付款非常方便。",
+      "vd_pinyin": "Xiànzài zài chāoshì mǎi dōngxi yòng shǒujī sǎomǎ fùkuǎn fēicháng fāngbiàn.",
+      "vd_nghia": "Hiện nay mua đồ ở siêu thị quét mã bằng điện thoại để thanh toán vô cùng tiện lợi."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "复印",
+      "pinyin": "fùyìn",
+      "nghia": "phô-tô, sao chụp",
+      "vd_cau": "办签证需要把护照首页复印两份。",
+      "vd_pinyin": "Bàn qiānzhèng xūyào bǎ hùzhào shǒuyè fùyìn liǎng fèn.",
+      "vd_nghia": "Làm thị thực cần phô-tô trang đầu hộ chiếu ra hai bản."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "复杂",
+      "pinyin": "fùzá",
+      "nghia": "phức tạp",
+      "vd_cau": "这个问题看起来很复杂，其实解决起来并不难。",
+      "vd_pinyin": "Zhège wèntí kàn qǐlái hěn fùzá, qíshí jiějué qǐlái bìng bù nán.",
+      "vd_nghia": "Vấn đề này nhìn có vẻ phức tạp, thực ra giải quyết lại chẳng hề khó."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "富",
+      "pinyin": "fù",
+      "nghia": "giàu, giàu có",
+      "vd_cau": "真正让人快乐的不是有多少钱，而是精神足够富。",
+      "vd_pinyin": "Zhēnzhèng ràng rén kuàilè de bú shì yǒu duōshao qián, ér shì jīngshen zúgòu fù.",
+      "vd_nghia": "Điều thực sự khiến con người hạnh phúc không phải là có bao nhiêu tiền, mà là tinh thần đủ giàu có."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "干杯",
+      "pinyin": "gānbēi",
+      "nghia": "cạn ly, chúc mừng",
+      "vd_cau": "来，让我们为了大家的身体健康一起干杯！",
+      "vd_pinyin": "Lái, ràng wǒmen wèile dàjiā de shēntǐ jiànkāng yìqǐ gānbēi!",
+      "vd_nghia": "Nào, chúng ta hãy cùng nâng ly vì sức khỏe của mọi người!"
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "赶",
+      "pinyin": "gǎn",
+      "nghia": "đuổi theo, cho kịp (tàu, xe); vội vã",
+      "vd_cau": "他早上六点就出门去赶第一班高铁了。",
+      "vd_pinyin": "Tā zǎoshang liù diǎn jiù chūmén qù gǎn dì-yī bān gāotiě le.",
+      "vd_nghia": "Sáng sáu giờ anh ấy đã ra khỏi nhà để kịp chuyến tàu cao tốc đầu tiên."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "敢",
+      "pinyin": "gǎn",
+      "nghia": "dám",
+      "vd_cau": "学外语一定要敢开口说，不要怕说错。",
+      "vd_pinyin": "Xué wàiyǔ yídìng yào gǎn kāikǒu shuō, búyào pà shuō cuò.",
+      "vd_nghia": "Học ngoại ngữ nhất định phải dám mở miệng nói, đừng sợ nói sai."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "感觉",
+      "pinyin": "gǎnjué",
+      "nghia": "cảm giác; cảm thấy",
+      "vd_cau": "休息了一个下午，我感觉身体舒服多了。",
+      "vd_pinyin": "Xiūxi le yí gè xiàwǔ, wǒ gǎnjué shēntǐ shūfu duō le.",
+      "vd_nghia": "Nghỉ ngơi suốt một buổi chiều, tôi cảm thấy cơ thể dễ chịu hơn nhiều."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "感情",
+      "pinyin": "gǎnqíng",
+      "nghia": "tình cảm",
+      "vd_cau": "我们从小学就是同班同学，彼此的感情非常深。",
+      "vd_pinyin": "Wǒmen cóng xiǎoxué jiù shì tóngbān tóngxué, bǐcǐ de gǎnqíng fēicháng shēn.",
+      "vd_nghia": "Chúng tôi học cùng lớp từ hồi tiểu học, tình cảm dành cho nhau rất sâu đậm."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "干",
+      "pinyin": "gàn",
+      "nghia": "làm, đảm nhiệm",
+      "vd_cau": "不管干什么工作，都要有认真负责的态度。",
+      "vd_pinyin": "Bùguǎn gàn shénme gōngzuò, dōu yào yǒu rènzhēn fùzé de tàidù.",
+      "vd_nghia": "Bất kể làm công việc gì cũng đều phải có thái độ nghiêm túc và trách nhiệm."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "刚",
+      "pinyin": "gāng",
+      "nghia": "vừa mới",
+      "vd_cau": "我刚到办公室，手机就响了起来。",
+      "vd_pinyin": "Wǒ gāng dào bàngōngshì, shǒujī jiù xiǎng le qǐlái.",
+      "vd_nghia": "Tôi vừa mới tới văn phòng thì chuông điện thoại reo lên."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "高速公路",
+      "pinyin": "gāosù gōnglù",
+      "nghia": "đường cao tốc",
+      "vd_cau": "这条高速公路修好以后，去邻市只需要一个小时。",
+      "vd_pinyin": "Zhè tiáo gāosù gōnglù xiū hǎo yǐhòu, qù línshì zhǐ xūyào yí gè xiǎoshí.",
+      "vd_nghia": "Sau khi tuyến đường cao tốc này xây xong, đi sang thành phố bên cạnh chỉ mất một tiếng."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "胳膊",
+      "pinyin": "gēbo",
+      "nghia": "cánh tay",
+      "vd_cau": "昨天打了两个小时羽毛球，今天胳膊有点儿酸。",
+      "vd_pinyin": "Zuótiān dǎ le liǎng gè xiǎoshí yǔmáoqiú, jīntiān gēbo yǒudiǎnr suān.",
+      "vd_nghia": "Hôm qua đánh cầu lông hai tiếng đồng hồ, hôm nay cánh tay hơi mỏi."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "各",
+      "pinyin": "gè",
+      "nghia": "mỗi, các",
+      "vd_cau": "来自世界各地的运动员参加了这次比赛。",
+      "vd_pinyin": "Láizì shìjiè gèdì de yùndòngyuán cānjiā le zhè cì bǐsài.",
+      "vd_nghia": "Các vận động viên đến từ khắp nơi trên thế giới đã tham dự giải đấu lần này."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "公里",
+      "pinyin": "gōnglǐ",
+      "nghia": "ki-lô-mét (km)",
+      "vd_cau": "我家离公司大约有五公里，骑自行车很方便。",
+      "vd_pinyin": "Wǒ jiā lí gōngsī dàyuē yǒu wǔ gōnglǐ, qí zìxíngchē hěn fāngbiàn.",
+      "vd_nghia": "Nhà tôi cách công ty khoảng năm ki-lô-mét, đạp xe rất thuận tiện."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "功夫",
+      "pinyin": "gōngfu",
+      "nghia": "công phu, võ thuật; thời gian, công sức",
+      "vd_cau": "很多外国朋友都对中国功夫非常感兴趣。",
+      "vd_pinyin": "Hěn duō wàiguó péngyou dōu duì Zhōngguó gōngfu fēicháng gǎn xìngqù.",
+      "vd_nghia": "Rất nhiều người bạn nước ngoài đều vô cùng hứng thú với võ thuật Trung Hoa."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "共同",
+      "pinyin": "gòngtóng",
+      "nghia": "chung, cùng nhau",
+      "vd_cau": "她和丈夫有很多共同的爱好，周末常一起看展览。",
+      "vd_pinyin": "Tā hé zhàngfu yǒu hěn duō gòngtóng de àihào, zhōumò cháng yìqǐ kàn zhǎnlǎn.",
+      "vd_nghia": "Cô ấy và chồng có rất nhiều sở thích chung, cuối tuần thường cùng đi xem triển lãm."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "购物",
+      "pinyin": "gòuwù",
+      "nghia": "mua sắm",
+      "vd_cau": "现在越来越多的年轻人习惯在网上购物。",
+      "vd_pinyin": "Xiànzài yuèláiyuè duō de niánqīngrén xíguàn zài wǎngshàng gòuwù.",
+      "vd_nghia": "Ngày nay càng ngày càng nhiều người trẻ quen mua sắm trực tuyến."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "够",
+      "pinyin": "gòu",
+      "nghia": "đủ",
+      "vd_cau": "这点儿钱够买两张电影票吗？",
+      "vd_pinyin": "Zhè diǎnr qián gòu mǎi liǎng zhāng diànyǐngpiào ma?",
+      "vd_nghia": "Chỗ tiền này có đủ mua hai tấm vé xem phim không?"
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "估计",
+      "pinyin": "gūjì",
+      "nghia": "ước tính, đoán chừng",
+      "vd_cau": "路上有点儿堵车，我估计要晚十分钟才能到。",
+      "vd_pinyin": "Lùshang yǒudiǎnr dǔchē, wǒ gūjì yào wǎn shí fēnzhōng cái néng dào.",
+      "vd_nghia": "Trên đường hơi kẹt xe, tôi đoán chừng phải muộn mười phút mới tới được."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "故意",
+      "pinyin": "gùyì",
+      "nghia": "cố ý, cố tình",
+      "vd_cau": "弟弟不是故意弄坏你的玩具的，你就原谅他吧。",
+      "vd_pinyin": "Dìdi bú shì gùyì nòng huài nǐ de wánjù de, nǐ jiù yuánliàng tā ba.",
+      "vd_nghia": "Em trai không phải cố tình làm hỏng đồ chơi của con đâu, con hãy tha thứ cho em nhé."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "光",
+      "pinyin": "guāng",
+      "nghia": "ánh sáng; hết sạch; chỉ, riêng",
+      "vd_cau": "妈妈做的红烧肉太香了，一盘菜很快就被吃光了。",
+      "vd_pinyin": "Māma zuò de hóngshāoròu tài xiāng le, yì pán cài hěn kuài jiù bèi chī guāng le.",
+      "vd_nghia": "Món thịt kho tàu mẹ nấu thơm quá, cả đĩa thức ăn nhanh chóng được ăn hết sạch."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "广播",
+      "pinyin": "guǎngbō",
+      "nghia": "phát thanh; chương trình phát thanh, loa thông báo",
+      "vd_cau": "机场广播正在提醒旅客抓紧时间登机。",
+      "vd_pinyin": "Jīchǎng guǎngbō zhèngzài tíxǐng lǚkè zhuājǐn shíjiān dēngjī.",
+      "vd_nghia": "Loa phát thanh sân bay đang nhắc hành khách tranh thủ thời gian lên máy bay."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "逛",
+      "pinyin": "guàng",
+      "nghia": "đi dạo, dạo phố",
+      "vd_cau": "星期天下午她喜欢约好朋友一起去逛商场。",
+      "vd_pinyin": "Xīngqītiān xiàwǔ tā xǐhuan yuē hǎo péngyou yìqǐ qù guàng shāngchǎng.",
+      "vd_nghia": "Chiều Chủ nhật cô ấy thích hẹn bạn thân cùng đi dạo trung tâm thương mại."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "规定",
+      "pinyin": "guīdìng",
+      "nghia": "quy định",
+      "vd_cau": "按照图书馆的规定，每人每次最多可以借五本书。",
+      "vd_pinyin": "Ànzhào túshūguǎn de guīdìng, měi rén měi cì zuì duō kěyǐ jiè wǔ běn shū.",
+      "vd_nghia": "Theo quy định của thư viện, mỗi người mỗi lần được mượn tối đa năm cuốn sách."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "国籍",
+      "pinyin": "guójí",
+      "nghia": "quốc tịch",
+      "vd_cau": "请在这张入境卡上填写您的姓名和国籍。",
+      "vd_pinyin": "Qǐng zài zhè zhāng rùjìngkǎ shàng tiánxiě nín de xìngmíng hé guójí.",
+      "vd_nghia": "Vui lòng điền họ tên và quốc tịch của quý khách vào tờ khai nhập cảnh này."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "果然",
+      "pinyin": "guǒrán",
+      "nghia": "quả nhiên, đúng như dự đoán",
+      "vd_cau": "天气预报说下午有雨，到了三点果然下起了大雨。",
+      "vd_pinyin": "Tiānqì yùbào shuō xiàwǔ yǒu yǔ, dào le sān diǎn guǒrán xià qǐ le dàyǔ.",
+      "vd_nghia": "Dự báo thời tiết nói chiều có mưa, đến ba giờ quả nhiên trời đổ mưa lớn."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "过程",
+      "pinyin": "guòchéng",
+      "nghia": "quá trình",
+      "vd_cau": "学习一门外语是一个需要长期积累的过程。",
+      "vd_pinyin": "Xuéxí yì mén wàiyǔ shì yí gè xūyào chángqī jīlěi de guòchéng.",
+      "vd_nghia": "Học một ngoại ngữ là một quá trình đòi hỏi sự tích lũy lâu dài."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "海洋",
+      "pinyin": "hǎiyáng",
+      "nghia": "đại dương, biển cả",
+      "vd_cau": "孩子们在海洋馆里看到了各种各样的鱼。",
+      "vd_pinyin": "Háizimen zài hǎiyángguǎn lǐ kàndào le gèzhǒng gèyàng de yú.",
+      "vd_nghia": "Lũ trẻ đã nhìn thấy đủ các loài cá trong thủy cung."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "害羞",
+      "pinyin": "hàixiū",
+      "nghia": "ngại ngùng, xấu hổ, e thẹn",
+      "vd_cau": "小女孩儿第一次上台唱歌，显得有点儿害羞。",
+      "vd_pinyin": "Xiǎo nǚháir dì-yī cì shàngtái chànggē, xiǎnde yǒudiǎnr hàixiū.",
+      "vd_nghia": "Cô bé lần đầu lên sân khấu hát, trông có chút ngại ngùng."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "寒假",
+      "pinyin": "hánjià",
+      "nghia": "kỳ nghỉ đông",
+      "vd_cau": "今年寒假我打算去哈尔滨看冰灯和滑雪。",
+      "vd_pinyin": "Jīnnián hánjià wǒ dǎsuàn qù Hā'ěrbīn kàn bīngdēng hé huáxuě.",
+      "vd_nghia": "Kỳ nghỉ đông năm nay tôi dự định đi Cáp Nhĩ Tân ngắm đèn băng và trượt tuyết."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "汗",
+      "pinyin": "hàn",
+      "nghia": "mồ hôi",
+      "vd_cau": "跑完五公里，他出了一身汗，赶紧拿毛巾擦了擦。",
+      "vd_pinyin": "Pǎo wán wǔ gōnglǐ, tā chū le yì shēn hàn, gǎnjǐn ná máojīn cā le cā.",
+      "vd_nghia": "Chạy xong năm ki-lô-mét, anh ấy toát đầy mồ hôi, vội lấy khăn mặt lau đi."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "好处",
+      "pinyin": "hǎochu",
+      "nghia": "lợi ích, điểm tốt",
+      "vd_cau": "每天早睡早起对身体健康有很多好处。",
+      "vd_pinyin": "Měitiān zǎoshuì zǎoqǐ duì shēntǐ jiànkāng yǒu hěn duō hǎochu.",
+      "vd_nghia": "Mỗi ngày đi ngủ sớm và dậy sớm có rất nhiều lợi ích cho sức khỏe."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "好像",
+      "pinyin": "hǎoxiàng",
+      "nghia": "hình như, dường như, giống như",
+      "vd_cau": "天边黑云密布，看样子好像快要下雨了。",
+      "vd_pinyin": "Tiānbiān hēiyún mìbù, kàn yàngzi hǎoxiàng kuàiyào xiàyǔ le.",
+      "vd_nghia": "Chân trời mây đen giăng kín, xem chừng hình như sắp mưa rồi."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "号码",
+      "pinyin": "hàomǎ",
+      "nghia": "số (điện thoại, phòng, cỡ)",
+      "vd_cau": "我换了新的手机号码，你记一下吧。",
+      "vd_pinyin": "Wǒ huàn le xīn de shǒujī hàomǎ, nǐ jì yíxià ba.",
+      "vd_nghia": "Tôi đổi số điện thoại mới rồi, bạn lưu lại nhé."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "合格",
+      "pinyin": "hégé",
+      "nghia": "đạt tiêu chuẩn, hợp quy cách",
+      "vd_cau": "这批产品质量全部合格，可以按时发货。",
+      "vd_pinyin": "Zhè pī chǎnpǐn zhìliàng quánbù hégé, kěyǐ ànshí fāhuò.",
+      "vd_nghia": "Chất lượng lô sản phẩm này toàn bộ đều đạt chuẩn, có thể giao hàng đúng hẹn."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "盒子",
+      "pinyin": "hézi",
+      "nghia": "cái hộp",
+      "vd_cau": "这个漂亮的木头盒子里装着奶奶送我的礼物。",
+      "vd_pinyin": "Zhège piàoliang de mùtou hézi lǐ zhuāngzhe nǎinai sòng wǒ de lǐwù.",
+      "vd_nghia": "Trong chiếc hộp gỗ xinh xắn này đựng món quà bà nội tặng tôi."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "猴子",
+      "pinyin": "hóuzi",
+      "nghia": "con khỉ",
+      "vd_cau": "山上的小猴子非常聪明，一点儿也不怕游客。",
+      "vd_pinyin": "Shān shàng de xiǎo hóuzi fēicháng cōngming, yìdiǎnr yě bú pà yóukè.",
+      "vd_nghia": "Mấy chú khỉ nhỏ trên núi rất thông minh, chẳng sợ du khách chút nào."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "厚",
+      "pinyin": "hòu",
+      "nghia": "dày; sâu đậm",
+      "vd_cau": "这本汉语词典虽然很厚，但查起来十分清楚。",
+      "vd_pinyin": "Zhè běn Hànyǔ cídiǎn suīrán hěn hòu, dàn chá qǐlái shífēn qīngchu.",
+      "vd_nghia": "Cuốn từ điển tiếng Hán này tuy rất dày nhưng tra cứu vô cùng rõ ràng."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "互联网",
+      "pinyin": "hùliánwǎng",
+      "nghia": "mạng Internet",
+      "vd_cau": "互联网的发展让人们查找资料变得越来越方便。",
+      "vd_pinyin": "Hùliánwǎng de fāzhǎn ràng rénmen cházhǎo zīliào biàn de yuèláiyuè fāngbiàn.",
+      "vd_nghia": "Sự phát triển của Internet giúp mọi người tra cứu tài liệu ngày càng thuận tiện."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "互相",
+      "pinyin": "hùxiāng",
+      "nghia": "lẫn nhau",
+      "vd_cau": "同屋的室友平时应该互相理解、互相帮助。",
+      "vd_pinyin": "Tóngwū de shìyǒu píngshí yīnggāi hùxiāng lǐjiě, hùxiāng bāngzhù.",
+      "vd_nghia": "Bạn cùng phòng ngày thường nên thấu hiểu và giúp đỡ lẫn nhau."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "护士",
+      "pinyin": "hùshi",
+      "nghia": "y tá, điều dưỡng",
+      "vd_cau": "那位年轻的护士每天都细心地照顾住院的老人。",
+      "vd_pinyin": "Nà wèi niánqīng de hùshi měitiān dōu xìxīn de zhàogu zhùyuàn de lǎorén.",
+      "vd_nghia": "Cô y tá trẻ tuổi ấy ngày nào cũng ân cần chăm sóc các cụ già nằm viện."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "怀疑",
+      "pinyin": "huáiyí",
+      "nghia": "nghi ngờ, hoài nghi",
+      "vd_cau": "不要怀疑自己的能力，只要努力就一定能做好。",
+      "vd_pinyin": "Búyào huáiyí zìjǐ de nénglì, zhǐyào nǔlì jiù yídìng néng zuò hǎo.",
+      "vd_nghia": "Đừng nghi ngờ năng lực của bản thân, chỉ cần nỗ lực thì nhất định sẽ làm tốt."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "回忆",
+      "pinyin": "huíyì",
+      "nghia": "hồi ức, kỷ niệm; nhớ lại",
+      "vd_cau": "四年的大学生活给我留下了许多美好的回忆。",
+      "vd_pinyin": "Sì nián de dàxué shēnghuó gěi wǒ liúxià le xǔduō měihǎo de huíyì.",
+      "vd_nghia": "Bốn năm đời sống đại học đã để lại cho tôi biết bao kỷ niệm tươi đẹp."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "活动",
+      "pinyin": "huódòng",
+      "nghia": "hoạt động; vận động",
+      "vd_cau": "坐在电脑前一个小时后，最好站起来活动一下。",
+      "vd_pinyin": "Zuò zài diànnǎo qián yí gè xiǎoshí hòu, zuì hǎo zhàn qǐlái huódòng yíxià.",
+      "vd_nghia": "Sau khi ngồi trước máy tính một tiếng, tốt nhất nên đứng dậy vận động một chút."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "活泼",
+      "pinyin": "huópo",
+      "nghia": "hoạt bát, lanh lợi",
+      "vd_cau": "她的女儿性格很活泼，走到哪儿都爱说爱笑。",
+      "vd_pinyin": "Tā de nǚ'ér xìnggé hěn huópo, zǒu dào nǎr dōu ài shuō ài xiào.",
+      "vd_nghia": "Con gái cô ấy tính tình rất hoạt bát, đi đến đâu cũng hay nói hay cười."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "火",
+      "pinyin": "huǒ",
+      "nghia": "lửa; nổi tiếng, ăn khách; nóng giận",
+      "vd_cau": "这家新开的火锅店最近在网上特别火。",
+      "vd_pinyin": "Zhè jiā xīn kāi de huǒguōdiàn zuìjìn zài wǎngshàng tèbié huǒ.",
+      "vd_nghia": "Quán lẩu mới mở này dạo gần đây cực kỳ nổi tiếng trên mạng."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "获得",
+      "pinyin": "huòdé",
+      "nghia": "giành được, đạt được",
+      "vd_cau": "经过半年的准备，他们队终于获得了比赛冠军。",
+      "vd_pinyin": "Jīngguò bàn nián de zhǔnbèi, tāmen duì zhōngyú huòdé le bǐsài guànjūn.",
+      "vd_nghia": "Trải qua nửa năm chuẩn bị, đội của họ cuối cùng đã giành được chức vô địch cuộc thi."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "积极",
+      "pinyin": "jījí",
+      "nghia": "tích cực, hăng hái",
+      "vd_cau": "上课时同学们都积极举手回答老师的问题。",
+      "vd_pinyin": "Shàngkè shí tóngxuémen dōu jījí jǔshǒu huídá lǎoshī de wèntí.",
+      "vd_nghia": "Trong giờ học các bạn học sinh đều hăng hái giơ tay trả lời câu hỏi của thầy giáo."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "积累",
+      "pinyin": "jīlěi",
+      "nghia": "tích lũy",
+      "vd_cau": "多参加社会实践可以帮助大学生积累工作经验。",
+      "vd_pinyin": "Duō cānjiā shèhuì shíjiàn kěyǐ bāngzhù dàxuéshēng jīlěi gōngzuò jīngyàn.",
+      "vd_nghia": "Tham gia nhiều hoạt động thực tiễn xã hội có thể giúp sinh viên tích lũy kinh nghiệm làm việc."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "基础",
+      "pinyin": "jīchǔ",
+      "nghia": "nền tảng, cơ sở",
+      "vd_cau": "他的汉语基础很扎实，学新语法一点儿也不吃力。",
+      "vd_pinyin": "Tā de Hànyǔ jīchǔ hěn zhāshi, xué xīn yǔfǎ yìdiǎnr yě bù chīlì.",
+      "vd_nghia": "Nền tảng tiếng Hán của cậu ấy rất vững chắc, học ngữ pháp mới chẳng vất vả chút nào."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "及时",
+      "pinyin": "jíshí",
+      "nghia": "kịp thời, đúng lúc",
+      "vd_cau": "多亏你及时提醒，要不然我就忘了今天的会议。",
+      "vd_pinyin": "Duōkuī nǐ jíshí tíxǐng, yàobùrán wǒ jiù wàng le jīntiān de huìyì.",
+      "vd_nghia": "Nhờ bạn nhắc nhở kịp thời, nếu không thì tôi đã quên mất cuộc họp hôm nay."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "即使",
+      "pinyin": "jíshǐ",
+      "nghia": "cho dù, dù cho",
+      "vd_cau": "即使明天下雨，我们的足球比赛也照常进行。",
+      "vd_pinyin": "Jíshǐ míngtiān xiàyǔ, wǒmen de zúqiú bǐsài yě zhàocháng jìnxíng.",
+      "vd_nghia": "Cho dù ngày mai trời mưa, trận bóng đá của chúng tôi vẫn diễn ra như thường lệ."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "记者",
+      "pinyin": "jìzhě",
+      "nghia": "nhà báo, phóng viên",
+      "vd_cau": "那位新闻记者正在现场采访获奖的科学家。",
+      "vd_pinyin": "Nà wèi xīnwén jìzhě zhèngzài xiànchǎng cǎifǎng huòjiǎng de kēxuéjiā.",
+      "vd_nghia": "Phóng viên thời sự ấy đang phỏng vấn tại hiện trường nhà khoa học đoạt giải."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "技术",
+      "pinyin": "jìshù",
+      "nghia": "kỹ thuật, công nghệ",
+      "vd_cau": "随着科学技术的发展，人们的生活越来越便利。",
+      "vd_pinyin": "Suízhe kēxué jìshù de fāzhǎn, rénmen de shēnghuó yuèláiyuè biànlì.",
+      "vd_nghia": "Cùng với sự phát triển của khoa học kỹ thuật, cuộc sống con người ngày càng tiện lợi."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "继续",
+      "pinyin": "jìxù",
+      "nghia": "tiếp tục",
+      "vd_cau": "大家先休息十分钟，一会儿我们继续讨论。",
+      "vd_pinyin": "Dàjiā xiān xiūxi shí fēnzhōng, yíhuìr wǒmen jìxù tǎolùn.",
+      "vd_nghia": "Mọi người nghỉ mười phút trước đã, lát nữa chúng ta tiếp tục thảo luận."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "寄",
+      "pinyin": "jì",
+      "nghia": "gửi (thư, bưu phẩm)",
+      "vd_cau": "我今天下午去邮局给老家的父母寄了一箱特产。",
+      "vd_pinyin": "Wǒ jīntiān xiàwǔ qù yóujú gěi lǎojiā de fùmǔ jì le yì xiāng tèchǎn.",
+      "vd_nghia": "Chiều nay tôi ra bưu điện gửi một thùng đặc sản về quê cho bố mẹ."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "加油站",
+      "pinyin": "jiāyóuzhàn",
+      "nghia": "trạm xăng, cây xăng",
+      "vd_cau": "车快没油了，我们去前面的加油站加满油吧。",
+      "vd_pinyin": "Chē kuài méi yóu le, wǒmen qù qiánmiàn de jiāyóuzhàn jiā mǎn yóu ba.",
+      "vd_nghia": "Xe sắp hết xăng rồi, chúng ta đến trạm xăng phía trước đổ đầy bình nhé."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "家具",
+      "pinyin": "jiājù",
+      "nghia": "đồ nội thất, bàn ghế",
+      "vd_cau": "搬进新房子以前，他们去商场挑选了一套木头家具。",
+      "vd_pinyin": "Bān jìn xīn fángzi yǐqián, tāmen qù shāngchǎng tiāoxuǎn le yí tào mùtou jiājù.",
+      "vd_nghia": "Trước khi dọn vào nhà mới, họ đã đến trung tâm thương mại chọn một bộ nội thất gỗ."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "假",
+      "pinyin": "jiǎ",
+      "nghia": "giả, không thật",
+      "vd_cau": "网上的消息有真有假，不要随便相信。",
+      "vd_pinyin": "Wǎngshàng de xiāoxi yǒu zhēn yǒu jiǎ, búyào suíbiàn xiāngxìn.",
+      "vd_nghia": "Tin tức trên mạng có thật có giả, đừng tùy tiện tin theo."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "减少",
+      "pinyin": "jiǎnshǎo",
+      "nghia": "giảm bớt, cắt giảm",
+      "vd_cau": "多种树可以净化空气，减少风沙对城市的影响。",
+      "vd_pinyin": "Duō zhòng shù kěyǐ jìnghuà kōngqì, jiǎnshǎo fēngshā duì chéngshì de yǐngxiǎng.",
+      "vd_nghia": "Trồng nhiều cây có thể làm sạch không khí, giảm bớt ảnh hưởng của gió cát đối với thành phố."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "建议",
+      "pinyin": "jiànyì",
+      "nghia": "kiến nghị, đề xuất, lời khuyên",
+      "vd_cau": "医生建议他平时少吃油腻的食物，多吃蔬菜。",
+      "vd_pinyin": "Yīshēng jiànyì tā píngshí shǎo chī yóunì de shíwù, duō chī shūcài.",
+      "vd_nghia": "Bác sĩ khuyên anh ấy ngày thường nên ăn ít đồ dầu mỡ, ăn nhiều rau xanh hơn."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "将来",
+      "pinyin": "jiānglái",
+      "nghia": "tương lai, sau này",
+      "vd_cau": "你将来毕业以后想留在北京工作还是回老家？",
+      "vd_pinyin": "Nǐ jiānglái bìyè yǐhòu xiǎng liú zài Běijīng gōngzuò háishi huí lǎojiā?",
+      "vd_nghia": "Sau này tốt nghiệp xong bạn muốn ở lại Bắc Kinh làm việc hay về quê?"
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "降低",
+      "pinyin": "jiàngdī",
+      "nghia": "hạ thấp, giảm xuống",
+      "vd_cau": "改进生产技术以后，工厂大大降低了成本。",
+      "vd_pinyin": "Gǎijìn shēngchǎn jìshù yǐhòu, gōngchǎng dàdà jiàngdī le chéngběn.",
+      "vd_nghia": "Sau khi cải tiến kỹ thuật sản xuất, nhà máy đã giảm đáng kể chi phí."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "降落",
+      "pinyin": "jiàngluò",
+      "nghia": "hạ cánh",
+      "vd_cau": "各位旅客，飞机将在二十分钟后降落在上海浦东机场。",
+      "vd_pinyin": "Gèwèi lǚkè, fēijī jiāng zài èrshí fēnzhōng hòu jiàngluò zài Shànghǎi Pǔdōng Jīchǎng.",
+      "vd_nghia": "Thưa quý hành khách, máy bay sẽ hạ cánh xuống sân bay Phố Đông Thượng Hải sau hai mươi phút nữa."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "交",
+      "pinyin": "jiāo",
+      "nghia": "nộp, giao; kết (bạn)",
+      "vd_cau": "请大家在星期五下午以前把读书报告交上来。",
+      "vd_pinyin": "Qǐng dàjiā zài xīngqīwǔ xiàwǔ yǐqián bǎ dúshū bàogào jiāo shànglái.",
+      "vd_nghia": "Mời mọi người nộp bài báo cáo đọc sách trước chiều thứ Sáu."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "交流",
+      "pinyin": "jiāoliú",
+      "nghia": "giao lưu, trao đổi",
+      "vd_cau": "常跟中国朋友交流能很快提高汉语口语水平。",
+      "vd_pinyin": "Cháng gēn Zhōngguó péngyou jiāoliú néng hěn kuài tígāo Hànyǔ kǒuyǔ shuǐpíng.",
+      "vd_nghia": "Thường xuyên trò chuyện giao lưu với bạn bè Trung Quốc sẽ nhanh chóng nâng cao trình độ khẩu ngữ tiếng Hán."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "郊区",
+      "pinyin": "jiāoqū",
+      "nghia": "ngoại ô, vùng ven",
+      "vd_cau": "周末我们一家人开车去郊区摘草莓了。",
+      "vd_pinyin": "Zhōumò wǒmen yì jiā rén kāichē qù jiāoqū zhāi cǎoméi le.",
+      "vd_nghia": "Cuối tuần cả nhà chúng tôi lái xe ra ngoại ô hái dâu tây."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "饺子",
+      "pinyin": "jiǎozi",
+      "nghia": "bánh chẻo, sủi cảo",
+      "vd_cau": "在中国北方，过春节的时候家家户户都包饺子吃。",
+      "vd_pinyin": "Zài Zhōngguó běifāng, guò Chūnjié de shíhou jiājiāhùhù dōu bāo jiǎozi chī.",
+      "vd_nghia": "Ở miền Bắc Trung Quốc, vào dịp Tết Nguyên đán nhà nhà đều gói sủi cảo ăn."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "教授",
+      "pinyin": "jiàoshòu",
+      "nghia": "giáo sư",
+      "vd_cau": "陈教授的讲座内容很精彩，礼堂里坐满了学生。",
+      "vd_pinyin": "Chén jiàoshòu de jiǎngzuò nèiróng hěn jīngcǎi, lǐtáng lǐ zuò mǎn le xuésheng.",
+      "vd_nghia": "Nội dung buổi diễn thuyết của giáo sư Trần rất đặc sắc, hội trường chật kín sinh viên."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "教育",
+      "pinyin": "jiàoyù",
+      "nghia": "giáo dục",
+      "vd_cau": "父母的言行对孩子的成长和教育有很大影响。",
+      "vd_pinyin": "Fùmǔ de yánxíng duì háizi de chéngzhǎng hé jiàoyù yǒu hěn dà yǐngxiǎng.",
+      "vd_nghia": "Lời nói và việc làm của cha mẹ có ảnh hưởng rất lớn đến sự trưởng thành và giáo dục của con cái."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "接受",
+      "pinyin": "jiēshòu",
+      "nghia": "chấp nhận, tiếp nhận",
+      "vd_cau": "她愉快地接受了朋友的邀请，准备周六去参加聚会。",
+      "vd_pinyin": "Tā yúkuài de jiēshòu le péngyou de yāoqǐng, zhǔnbèi zhōuliù qù cānjiā jùhuì.",
+      "vd_nghia": "Cô ấy vui vẻ nhận lời mời của bạn, chuẩn bị thứ Bảy đi dự buổi họp mặt."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "接着",
+      "pinyin": "jiēzhe",
+      "nghia": "tiếp theo, sau đó, tiếp tục",
+      "vd_cau": "他喝了一口水，接着给大家讲刚才的故事。",
+      "vd_pinyin": "Tā hē le yì kǒu shuǐ, jiēzhe gěi dàjiā jiǎng gāngcái de gùshi.",
+      "vd_nghia": "Anh ấy uống một ngụm nước rồi tiếp tục kể cho mọi người nghe câu chuyện vừa nãy."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "节",
+      "pinyin": "jié",
+      "nghia": "tiết (học), đoạn, toa (tàu); ngày lễ",
+      "vd_cau": "今天上午我们有两节汉语阅读课。",
+      "vd_pinyin": "Jīntiān shàngwǔ wǒmen yǒu liǎng jié Hànyǔ yuèdú kè.",
+      "vd_nghia": "Sáng nay chúng tôi có hai tiết đọc hiểu tiếng Hán."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "解释",
+      "pinyin": "jiěshì",
+      "nghia": "giải thích",
+      "vd_cau": "老师用简单的例子把那个语法点解释得清清楚楚。",
+      "vd_pinyin": "Lǎoshī yòng jiǎndān de lìzi bǎ nàge yǔfǎdiǎn jiěshì de qīngqīngchǔchǔ.",
+      "vd_nghia": "Thầy giáo dùng ví dụ đơn giản giải thích điểm ngữ pháp đó hết sức rõ ràng."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "紧张",
+      "pinyin": "jǐnzhāng",
+      "nghia": "căng thẳng, hồi hộp; khẩn trương",
+      "vd_cau": "第一次参加面试的时候，心里难免会有一点儿紧张。",
+      "vd_pinyin": "Dì-yī cì cānjiā miànshì de shíhou, xīnlǐ nánmiǎn huì yǒu yìdiǎnr jǐnzhāng.",
+      "vd_nghia": "Lần đầu tiên tham gia phỏng vấn, trong lòng khó tránh khỏi có chút hồi hộp."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "进行",
+      "pinyin": "jìnxíng",
+      "nghia": "tiến hành, diễn ra",
+      "vd_cau": "下午的篮球比赛正在体育馆里激烈地进行着。",
+      "vd_pinyin": "Xiàwǔ de lánqiú bǐsài zhèngzài tǐyùguǎn lǐ jīliè de jìnxíngzhe.",
+      "vd_nghia": "Trận thi đấu bóng rổ buổi chiều đang diễn ra sôi nổi trong nhà thi đấu."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "禁止",
+      "pinyin": "jìnzhǐ",
+      "nghia": "cấm, nghiêm cấm",
+      "vd_cau": "博物馆的展厅里禁止使用闪光灯拍照。",
+      "vd_pinyin": "Bówùguǎn de zhǎntīng lǐ jìnzhǐ shǐyòng shǎnguāngdēng pāizhào.",
+      "vd_nghia": "Trong phòng trưng bày của bảo tàng nghiêm cấm dùng đèn flash chụp ảnh."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "京剧",
+      "pinyin": "jīngjù",
+      "nghia": "Kinh kịch",
+      "vd_cau": "爷爷退休以后每天早上都在公园里唱一段京剧。",
+      "vd_pinyin": "Yéye tuìxiū yǐhòu měitiān zǎoshang dōu zài gōngyuán lǐ chàng yí duàn jīngjù.",
+      "vd_nghia": "Sau khi nghỉ hưu, sáng nào ông nội cũng ra công viên hát một đoạn Kinh kịch."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "经济",
+      "pinyin": "jīngjì",
+      "nghia": "kinh tế; tiết kiệm",
+      "vd_cau": "交通方便促进了这座海滨城市的经济发展。",
+      "vd_pinyin": "Jiāotōng fāngbiàn cùjìn le zhè zuò hǎibīn chéngshì de jīngjì fāzhǎn.",
+      "vd_nghia": "Giao thông thuận tiện đã thúc đẩy sự phát triển kinh tế của thành phố biển này."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "经历",
+      "pinyin": "jīnglì",
+      "nghia": "trải qua; sự từng trải, trải nghiệm",
+      "vd_cau": "那次独自去云南旅行是我最难忘的一次经历。",
+      "vd_pinyin": "Nà cì dúzì qù Yúnnán lǚxíng shì wǒ zuì nánwàng de yí cì jīnglì.",
+      "vd_nghia": "Chuyến đi du lịch Vân Nam một mình lần đó là trải nghiệm khó quên nhất của tôi."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "精彩",
+      "pinyin": "jīngcǎi",
+      "nghia": "đặc sắc, xuất sắc, hấp dẫn",
+      "vd_cau": "昨天晚上的杂技表演太精彩了，观众不停地鼓掌。",
+      "vd_pinyin": "Zuótiān wǎnshang de zájì biǎoyǎn tài jīngcǎi le, guānzhòng bùtíng de gǔzhǎng.",
+      "vd_nghia": "Buổi biểu diễn xiếc tối qua đặc sắc quá, khán giả vỗ tay không ngớt."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "景色",
+      "pinyin": "jǐngsè",
+      "nghia": "cảnh sắc, phong cảnh",
+      "vd_cau": "秋天香山上的红叶全红了，景色美极了。",
+      "vd_pinyin": "Qiūtiān Xiāngshān shàng de hóngyè quán hóng le, jǐngsè měi jíle.",
+      "vd_nghia": "Mùa thu lá phong trên núi Hương Sơn đỏ rực, cảnh sắc đẹp tuyệt vời."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "警察",
+      "pinyin": "jǐngchá",
+      "nghia": "cảnh sát, công an",
+      "vd_cau": "迷路的小朋友在热心警察的帮助下找到了妈妈。",
+      "vd_pinyin": "Mílù de xiǎopéngyou zài rèxīn jǐngchá de bāngzhù xià zhǎodào le māma.",
+      "vd_nghia": "Em nhỏ đi lạc đã tìm lại được mẹ nhờ sự giúp đỡ của chú cảnh sát nhiệt tình."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "精神",
+      "pinyin": "jīngshen",
+      "nghia": "tinh thần; tươi tỉnh, lanh lợi",
+      "vd_cau": "昨晚睡了八个小时，今天上班感觉特别有精神。",
+      "vd_pinyin": "Zuówǎn shuì le bā gè xiǎoshí, jīntiān shàngbān gǎnjué tèbié yǒu jīngshen.",
+      "vd_nghia": "Tối qua ngủ đủ tám tiếng, hôm nay đi làm cảm thấy vô cùng tỉnh táo."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "竞争",
+      "pinyin": "jìngzhēng",
+      "nghia": "cạnh tranh",
+      "vd_cau": "现在的就业市场竞争很激烈，我们要不断学习新知识。",
+      "vd_pinyin": "Xiànzài de jiùyè shìchǎng jìngzhēng hěn jīliè, wǒmen yào búduàn xuéxí xīn zhīshi.",
+      "vd_nghia": "Thị trường việc làm hiện nay cạnh tranh rất khốc liệt, chúng ta phải không ngừng học hỏi kiến thức mới."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "竟然",
+      "pinyin": "jìngrán",
+      "nghia": "không ngờ lại, vậy mà lại",
+      "vd_cau": "这么简单的道理，他竟然到现在还没有明白。",
+      "vd_pinyin": "Zhème jiǎndān de dàolǐ, tā jìngrán dào xiànzài hái méiyǒu míngbai.",
+      "vd_nghia": "Đạo lý đơn giản như vậy mà không ngờ đến tận bây giờ anh ấy vẫn chưa hiểu."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "镜子",
+      "pinyin": "jìngzi",
+      "nghia": "cái gương",
+      "vd_cau": "出门以前，她习惯站在镜子前整理一下衣服。",
+      "vd_pinyin": "Chūmén yǐqián, tā xíguàn zhàn zài jìngzi qián zhěnglǐ yíxià yīfu.",
+      "vd_nghia": "Trước khi ra ngoài, cô ấy quen đứng trước gương chỉnh lại trang phục một chút."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "举",
+      "pinyin": "jǔ",
+      "nghia": "giơ lên, nâng lên; nêu ra",
+      "vd_cau": "如果你有不同的意见，可以先举手发言。",
+      "vd_pinyin": "Rúguǒ nǐ yǒu bùtóng de yìjiàn, kěyǐ xiān jǔshǒu fāyán.",
+      "vd_nghia": "Nếu bạn có ý kiến khác, có thể giơ tay phát biểu trước."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "举办",
+      "pinyin": "jǔbàn",
+      "nghia": "tổ chức (triển lãm, cuộc thi, hoạt động)",
+      "vd_cau": "学校下个月将举办一年一度的中国文化节。",
+      "vd_pinyin": "Xuéxiào xià gè yuè jiāng jǔbàn yìnián-yídù de Zhōngguó wénhuàjié.",
+      "vd_nghia": "Tháng sau nhà trường sẽ tổ chức lễ hội văn hóa Trung Hoa thường niên."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "举行",
+      "pinyin": "jǔxíng",
+      "nghia": "cử hành, diễn ra, tổ chức",
+      "vd_cau": "毕业典礼定于本周五上午九点在礼堂举行。",
+      "vd_pinyin": "Bìyè diǎnlǐ dìng yú běn zhōuwǔ shàngwǔ jiǔ diǎn zài lǐtáng jǔxíng.",
+      "vd_nghia": "Lễ tốt nghiệp được ấn định cử hành tại hội trường vào chín giờ sáng thứ Sáu tuần này."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "拒绝",
+      "pinyin": "jùjué",
+      "nghia": "từ chối, cự tuyệt",
+      "vd_cau": "因为周末要准备考试，他礼貌地拒绝了同学的邀请。",
+      "vd_pinyin": "Yīnwèi zhōumò yào zhǔnbèi kǎoshì, tā lǐmào de jùjué le tóngxué de yāoqǐng.",
+      "vd_nghia": "Vì cuối tuần phải chuẩn bị thi cử nên cậu ấy đã lịch sự từ chối lời mời của bạn học."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "距离",
+      "pinyin": "jùlí",
+      "nghia": "khoảng cách; cách",
+      "vd_cau": "这家宾馆距离火车站只有五百米，走路就能到。",
+      "vd_pinyin": "Zhè jiā bīnguǎn jùlí huǒchēzhàn zhǐ yǒu wǔbǎi mǐ, zǒulù jiù néng dào.",
+      "vd_nghia": "Khách sạn này cách ga tàu hỏa chỉ năm trăm mét, đi bộ là tới được."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "聚会",
+      "pinyin": "jùhuì",
+      "nghia": "tụ họp, họp mặt; buổi tiệc họp mặt",
+      "vd_cau": "每年春节期间，我们高中同学都会举行一次聚会。",
+      "vd_pinyin": "Měinián Chūnjié qījiān, wǒmen gāozhōng tóngxué dōu huì jǔxíng yí cì jùhuì.",
+      "vd_nghia": "Vào dịp Tết Nguyên đán hằng năm, các bạn học cấp ba chúng tôi đều tổ chức một buổi họp mặt."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "开玩笑",
+      "pinyin": "kāi wánxiào",
+      "nghia": "nói đùa, trêu đùa",
+      "vd_cau": "我刚才只是跟你开玩笑，你千万别往心里去。",
+      "vd_pinyin": "Wǒ gāngcái zhǐshì gēn nǐ kāi wánxiào, nǐ qiānwàn bié wǎng xīnlǐ qù.",
+      "vd_nghia": "Vừa nãy tôi chỉ nói đùa với bạn thôi, bạn đừng để bụng nhé."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "开心",
+      "pinyin": "kāixīn",
+      "nghia": "vui vẻ, hân hoan",
+      "vd_cau": "收到朋友们送的生日礼物，妹妹笑得特别开心。",
+      "vd_pinyin": "Shōudào péngyoumen sòng de shēngrì lǐwù, mèimei xiào de tèbié kāixīn.",
+      "vd_nghia": "Nhận được quà sinh nhật các bạn tặng, em gái cười vô cùng vui vẻ."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "看法",
+      "pinyin": "kànfǎ",
+      "nghia": "cách nhìn, quan điểm, ý kiến",
+      "vd_cau": "听完他的解释，大家改变了对这件事的看法。",
+      "vd_pinyin": "Tīng wán tā de jiěshì, dàjiā gǎibiàn le duì zhè jiàn shì de kànfǎ.",
+      "vd_nghia": "Sau khi nghe xong lời giải thích của anh ấy, mọi người đã thay đổi cách nhìn về việc này."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "考虑",
+      "pinyin": "kǎolǜ",
+      "nghia": "cân nhắc, suy nghĩ, xem xét",
+      "vd_cau": "换工作是一件大事，你最好先认真考虑清楚。",
+      "vd_pinyin": "Huàn gōngzuò shì yí jiàn dàshì, nǐ zuì hǎo xiān rènzhēn kǎolǜ qīngchu.",
+      "vd_nghia": "Đổi việc là chuyện lớn, tốt nhất bạn hãy suy nghĩ cân nhắc kỹ càng trước đã."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "烤鸭",
+      "pinyin": "kǎoyā",
+      "nghia": "vịt quay",
+      "vd_cau": "来北京旅游的客人几乎都要去尝尝正宗的北京烤鸭。",
+      "vd_pinyin": "Lái Běijīng lǚyóu de kèrén jīhū dōu yào qù chángchang zhèngzōng de Běijīng kǎoyā.",
+      "vd_nghia": "Du khách đến Bắc Kinh du lịch hầu như ai cũng muốn đi thưởng thức vịt quay Bắc Kinh chính hiệu."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "科学",
+      "pinyin": "kēxué",
+      "nghia": "khoa học; có tính khoa học",
+      "vd_cau": "安排科学合理的作息时间有助于提高学习效率。",
+      "vd_pinyin": "Ānpái kēxué hélǐ de zuòxī shíjiān yǒuzhùyú tígāo xuéxí xiàolǜ.",
+      "vd_nghia": "Sắp xếp thời gian sinh hoạt khoa học hợp lý giúp nâng cao hiệu quả học tập."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "棵",
+      "pinyin": "kē",
+      "nghia": "cây, gốc (lượng từ cho thực vật)",
+      "vd_cau": "老家院子里有一棵爷爷年轻时种的苹果树。",
+      "vd_pinyin": "Lǎojiā yuànzi lǐ yǒu yì kē yéye niánqīng shí zhòng de píngguǒshù.",
+      "vd_nghia": "Trong sân nhà ở quê có một cây táo ông nội trồng hồi còn trẻ."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "咳嗽",
+      "pinyin": "késou",
+      "nghia": "ho",
+      "vd_cau": "他感冒好几天了，现在还有点儿咳嗽。",
+      "vd_pinyin": "Tā gǎnmào hǎo jǐ tiān le, xiànzài hái yǒudiǎnr késou.",
+      "vd_nghia": "Anh ấy bị cảm mấy hôm rồi, bây giờ vẫn còn hơi ho."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "可怜",
+      "pinyin": "kělián",
+      "nghia": "đáng thương, tội nghiệp",
+      "vd_cau": "那只淋湿的流浪小猫看起来真可怜，我们喂它点儿吃的吧。",
+      "vd_pinyin": "Nà zhī lín shī de liúlàng xiǎomāo kàn qǐlái zhēn kělián, wǒmen wèi tā diǎnr chī de ba.",
+      "vd_nghia": "Chú mèo hoang bị ướt mưa kia trông thật đáng thương, chúng mình cho nó chút đồ ăn nhé."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "可是",
+      "pinyin": "kěshì",
+      "nghia": "nhưng, thế nhưng",
+      "vd_cau": "我很想跟你一起去看电影，可是今晚还得加班。",
+      "vd_pinyin": "Wǒ hěn xiǎng gēn nǐ yìqǐ qù kàn diànyǐng, kěshì jīnwǎn hái děi jiābān.",
+      "vd_nghia": "Tôi rất muốn đi xem phim cùng bạn, nhưng tối nay còn phải tăng ca."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "可惜",
+      "pinyin": "kěxī",
+      "nghia": "đáng tiếc, tiếc là",
+      "vd_cau": "这么好的演出机会错过了实在太可惜了。",
+      "vd_pinyin": "Zhème hǎo de yǎnchū jīhuì cuòguò le shízài tài kěxī le.",
+      "vd_nghia": "Bỏ lỡ cơ hội biểu diễn tốt như thế này thực sự quá đáng tiếc."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "客厅",
+      "pinyin": "kètīng",
+      "nghia": "phòng khách",
+      "vd_cau": "这套房子的客厅朝南，白天阳光非常充足。",
+      "vd_pinyin": "Zhè tào fángzi de kètīng cháonán, báitiān yángguāng fēicháng chōngzú.",
+      "vd_nghia": "Phòng khách của căn hộ này hướng Nam, ban ngày ánh nắng vô cùng chan hòa."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "肯定",
+      "pinyin": "kěndìng",
+      "nghia": "chắc chắn, nhất định; khẳng định",
+      "vd_cau": "只要你坚持每天练习口语，发音肯定会越来越好。",
+      "vd_pinyin": "Zhǐyào nǐ jiānchí měitiān liànxí kǒuyǔ, fāyīn kěndìng huì yuèláiyuè hǎo.",
+      "vd_nghia": "Chỉ cần bạn kiên trì luyện khẩu ngữ mỗi ngày, phát âm chắc chắn sẽ ngày càng tốt hơn."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "空",
+      "pinyin": "kōng",
+      "nghia": "trống, rỗng",
+      "vd_cau": "冰箱里差不多空了，我们下午去超市买点儿菜吧。",
+      "vd_pinyin": "Bīngxiāng lǐ chàbuduō kōng le, wǒmen xiàwǔ qù chāoshì mǎi diǎnr cài ba.",
+      "vd_nghia": "Trong tủ lạnh gần như trống trơn rồi, chiều nay chúng mình đi siêu thị mua ít thức ăn nhé."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "空气",
+      "pinyin": "kōngqì",
+      "nghia": "không khí",
+      "vd_cau": "雨后的森林里空气格外新鲜，让人神清气爽。",
+      "vd_pinyin": "Yǔhòu de sēnlín lǐ kōngqì géwài xīnxiān, ràng rén shénqīng-qìshuǎng.",
+      "vd_nghia": "Trong khu rừng sau cơn mưa không khí đặc biệt trong lành, khiến con người sảng khoái dễ chịu."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "苦",
+      "pinyin": "kǔ",
+      "nghia": "đắng; vất vả, cực khổ",
+      "vd_cau": "这种中药味道虽然很苦，但是治咳嗽效果很好。",
+      "vd_pinyin": "Zhè zhǒng zhōngyào wèidào suīrán hěn kǔ, dànshì zhì késou xiàoguǒ hěn hǎo.",
+      "vd_nghia": "Loại thuốc Đông y này vị tuy rất đắng nhưng trị ho hiệu quả lắm."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "宽",
+      "pinyin": "kuān",
+      "nghia": "rộng, rộng rãi",
+      "vd_cau": "学校门前新修的马路又平又宽，开车舒服多了。",
+      "vd_pinyin": "Xuéxiào ménqián xīn xiū de mǎlù yòu píng yòu kuān, kāichē shūfu duō le.",
+      "vd_nghia": "Con đường mới làm trước cổng trường vừa phẳng vừa rộng, lái xe dễ chịu hơn hẳn."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "矿泉水",
+      "pinyin": "kuàngquánshuǐ",
+      "nghia": "nước khoáng",
+      "vd_cau": "天气这么热，我去便利店买两瓶冰镇矿泉水。",
+      "vd_pinyin": "Tiānqì zhème rè, wǒ qù biànlìdiàn mǎi liǎng píng bīngzhèn kuàngquánshuǐ.",
+      "vd_nghia": "Trời nóng thế này, tôi ra cửa hàng tiện lợi mua hai chai nước khoáng ướp lạnh."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "困",
+      "pinyin": "kùn",
+      "nghia": "buồn ngủ",
+      "vd_cau": "昨天晚上熬夜写论文，我现在困得眼睛都睁不开了。",
+      "vd_pinyin": "Zuótiān wǎnshang áoyè xiě lùnwén, wǒ xiànzài kùn de yǎnjing dōu zhēng bù kāi le.",
+      "vd_nghia": "Đêm qua thức khuya viết luận văn, bây giờ tôi buồn ngủ đến mức mở không nổi mắt."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "困难",
+      "pinyin": "kùnnan",
+      "nghia": "khó khăn",
+      "vd_cau": "只要全组同事齐心协力，再大的困难也能克服。",
+      "vd_pinyin": "Zhǐyào quán zǔ tóngshì qíxīn-xiélì, zài dà de kùnnan yě néng kèfú.",
+      "vd_nghia": "Chỉ cần các đồng nghiệp cả nhóm đồng tâm hiệp lực thì khó khăn lớn đến mấy cũng vượt qua được."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "扩大",
+      "pinyin": "kuòdà",
+      "nghia": "mở rộng",
+      "vd_cau": "坚持每天看中文报纸是扩大词汇量的好办法。",
+      "vd_pinyin": "Jiānchí měitiān kàn Zhōngwén bàozhǐ shì kuòdà cíhuìliàng de hǎo bànfǎ.",
+      "vd_nghia": "Kiên trì đọc báo tiếng Trung mỗi ngày là cách tốt để mở rộng vốn từ vựng."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "垃圾桶",
+      "pinyin": "lājītǒng",
+      "nghia": "thùng rác",
+      "vd_cau": "请把喝完的饮料瓶扔进可回收垃圾桶里。",
+      "vd_pinyin": "Qǐng bǎ hē wán de yǐnliàopíng rēng jìn kě huíshōu lājītǒng lǐ.",
+      "vd_nghia": "Vui lòng bỏ vỏ chai nước đã uống hết vào thùng rác tái chế."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "拉",
+      "pinyin": "lā",
+      "nghia": "kéo; chơi (đàn nhị, vĩ cầm)",
+      "vd_cau": "这扇玻璃门是往外拉的，不是往里推的。",
+      "vd_pinyin": "Zhè shàn bōlimén shì wǎng wài lā de, bú shì wǎng lǐ tuī de.",
+      "vd_nghia": "Cánh cửa kính này kéo ra ngoài chứ không phải đẩy vào trong."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "辣",
+      "pinyin": "là",
+      "nghia": "cay",
+      "vd_cau": "四川菜虽然有点儿辣，但是味道特别香。",
+      "vd_pinyin": "Sìchuāncài suīrán yǒudiǎnr là, dànshì wèidào tèbié xiāng.",
+      "vd_nghia": "Món ăn Tứ Xuyên tuy hơi cay nhưng hương vị vô cùng thơm ngon."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "来不及",
+      "pinyin": "láibují",
+      "nghia": "không kịp",
+      "vd_cau": "已经七点五十了，走路去学校肯定来不及了。",
+      "vd_pinyin": "Yǐjīng qī diǎn wǔshí le, zǒulù qù xuéxiào kěndìng láibují le.",
+      "vd_nghia": "Đã bảy giờ năm mươi rồi, đi bộ tới trường chắc chắn không kịp nữa."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "来得及",
+      "pinyin": "láidejí",
+      "nghia": "vẫn kịp, kịp thời gian",
+      "vd_cau": "电影八点半才开始，我们吃完晚饭再去也来得及。",
+      "vd_pinyin": "Diànyǐng bā diǎn bàn cái kāishǐ, wǒmen chī wán wǎnfàn zài qù yě láidejí.",
+      "vd_nghia": "Phim tám rưỡi mới bắt đầu, chúng ta ăn tối xong rồi đi vẫn kịp."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "来自",
+      "pinyin": "láizì",
+      "nghia": "đến từ",
+      "vd_cau": "我们班的二十名留学生来自十个不同的国家。",
+      "vd_pinyin": "Wǒmen bān de èrshí míng liúxuéshēng láizì shí gè bùtóng de guójiā.",
+      "vd_nghia": "Hai mươi lưu học sinh lớp chúng tôi đến từ mười quốc gia khác nhau."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "懒",
+      "pinyin": "lǎn",
+      "nghia": "lười, lười biếng",
+      "vd_cau": "冬天外面的天气太冷，弟弟懒得下楼去买早饭。",
+      "vd_pinyin": "Dōngtiān wàimiàn de tiānqì tài lěng, dìdi lǎnde xià lóu qù mǎi zǎofàn.",
+      "vd_nghia": "Mùa đông thời tiết bên ngoài lạnh quá, em trai lười xuống lầu mua bữa sáng."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "浪费",
+      "pinyin": "làngfèi",
+      "nghia": "lãng phí",
+      "vd_cau": "点菜的时候够吃就行，千万不要浪费粮食。",
+      "vd_pinyin": "Diǎncài de shíhou gòu chī jiù xíng, qiānwàn búyào làngfèi liángshi.",
+      "vd_nghia": "Khi gọi món chỉ cần đủ ăn là được, tuyệt đối đừng lãng phí lương thực."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "浪漫",
+      "pinyin": "làngmàn",
+      "nghia": "lãng mạn",
+      "vd_cau": "结婚纪念日那天，丈夫为她准备了一顿浪漫的晚餐。",
+      "vd_pinyin": "Jiéhūn jìniànrì nà tiān, zhàngfu wèi tā zhǔnbèi le yí dùn làngmàn de wǎncān.",
+      "vd_nghia": "Vào ngày kỷ niệm ngày cưới, chồng đã chuẩn bị cho cô ấy một bữa tối lãng mạn."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "老虎",
+      "pinyin": "lǎohǔ",
+      "nghia": "con hổ",
+      "vd_cau": "动物园里的东北老虎身体强壮，走起路来威风极了。",
+      "vd_pinyin": "Dòngwùyuán lǐ de Dōngběi lǎohǔ shēntǐ qiángzhuàng, zǒu qǐ lù lái wēifēng jíle.",
+      "vd_nghia": "Chú hổ Đông Bắc trong sở thú có thân hình cường tráng, dáng đi oai vệ vô cùng."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "冷静",
+      "pinyin": "lěngjìng",
+      "nghia": "bình tĩnh, điềm tĩnh",
+      "vd_cau": "遇到紧急情况时一定要保持冷静，先想办法求助。",
+      "vd_pinyin": "Yùdào jǐnjí qíngkuàng shí yídìng yào bǎochí lěngjìng, xiān xiǎng bànfǎ qiúzhù.",
+      "vd_nghia": "Khi gặp tình huống khẩn cấp nhất định phải giữ bình tĩnh, trước tiên tìm cách cầu cứu."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "礼拜天",
+      "pinyin": "lǐbàitiān",
+      "nghia": "Chủ nhật",
+      "vd_cau": "这个礼拜天不用上课，我想在家好好打扫一下房间。",
+      "vd_pinyin": "Zhège lǐbàitiān búyòng shàngkè, wǒ xiǎng zài jiā hǎohāo dǎsǎo yíxià fángjiān.",
+      "vd_nghia": "Chủ nhật này không phải đi học, tôi muốn ở nhà dọn dẹp kỹ căn phòng một chút."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "礼貌",
+      "pinyin": "lǐmào",
+      "nghia": "lễ phép, lịch sự",
+      "vd_cau": "向别人问路的时候说话有礼貌，更容易得到帮助。",
+      "vd_pinyin": "Xiàng biérén wènlù de shíhou shuōhuà yǒu lǐmào, gèng róngyì dédào bāngzhù.",
+      "vd_nghia": "Khi hỏi đường người khác mà ăn nói lịch sự thì càng dễ nhận được sự giúp đỡ."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "理发",
+      "pinyin": "lǐfà",
+      "nghia": "cắt tóc",
+      "vd_cau": "头发有点儿长了，我下午打算去学校门口理发。",
+      "vd_pinyin": "Tóufa yǒudiǎnr cháng le, wǒ xiàwǔ dǎsuàn qù xuéxiào ménkǒu lǐfà.",
+      "vd_nghia": "Tóc hơi dài rồi, chiều nay tôi định ra cổng trường cắt tóc."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "理解",
+      "pinyin": "lǐjiě",
+      "nghia": "hiểu, thấu hiểu, thông cảm",
+      "vd_cau": "感谢家人一直理解并支持我的工作选择。",
+      "vd_pinyin": "Gǎnxiè jiārén yìzhí lǐjiě bìng zhīchí wǒ de gōngzuò xuǎnzé.",
+      "vd_nghia": "Cảm ơn gia đình đã luôn thấu hiểu và ủng hộ lựa chọn công việc của tôi."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "理想",
+      "pinyin": "lǐxiǎng",
+      "nghia": "lý tưởng, ước mơ; ưng ý, hoàn hảo",
+      "vd_cau": "每个人年轻的时候都应该为自己的理想努力奋斗。",
+      "vd_pinyin": "Měi gè rén niánqīng de shíhou dōu yīnggāi wèi zìjǐ de lǐxiǎng nǔlì fèndòu.",
+      "vd_nghia": "Mỗi người khi còn trẻ đều nên nỗ lực phấn đấu vì lý tưởng của riêng mình."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "力气",
+      "pinyin": "lìqi",
+      "nghia": "sức lực",
+      "vd_cau": "搬了一上午家具，他累得一点儿力气都没有了。",
+      "vd_pinyin": "Bān le yí shàngwǔ jiājù, tā lèi de yìdiǎnr lìqi dōu méiyǒu le.",
+      "vd_nghia": "Chuyển đồ đạc suốt cả buổi sáng, anh ấy mệt đến mức chẳng còn chút sức lực nào."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "厉害",
+      "pinyin": "lìhai",
+      "nghia": "giỏi, lợi hại; dữ dội, nghiêm trọng",
+      "vd_cau": "她才学了一年汉语就能看懂中文小说，真厉害！",
+      "vd_pinyin": "Tā cái xué le yì nián Hànyǔ jiù néng kàndǒng Zhōngwén xiǎoshuō, zhēn lìhai!",
+      "vd_nghia": "Cô ấy mới học tiếng Hán một năm mà đã đọc hiểu được tiểu thuyết tiếng Trung, giỏi thật đấy!"
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "例如",
+      "pinyin": "lìrú",
+      "nghia": "ví dụ như",
+      "vd_cau": "许多水果都富含维生素，例如橙子、猕猴桃和草莓。",
+      "vd_pinyin": "Xǔduō shuǐguǒ dōu fùhán wéishēngsù, lìrú chéngzi, míhóutáo hé cǎoméi.",
+      "vd_nghia": "Nhiều loại trái cây rất giàu vi-ta-min, ví dụ như cam, kiwi và dâu tây."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "俩",
+      "pinyin": "liǎ",
+      "nghia": "hai (người, vật, không thêm lượng từ phía sau)",
+      "vd_cau": "我们俩住在同一个宿舍，每天都一起去上课。",
+      "vd_pinyin": "Wǒmen liǎ zhù zài tóng yí gè sùshè, měitiān dōu yìqǐ qù shàngkè.",
+      "vd_nghia": "Hai đứa chúng tôi ở cùng một phòng ký túc xá, ngày nào cũng cùng nhau đi học."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "连",
+      "pinyin": "lián",
+      "nghia": "ngay cả, đến cả (thường đi với 都/也)",
+      "vd_cau": "他今天忙得连吃午饭的时间都没有。",
+      "vd_pinyin": "Tā jīntiān máng de lián chī wǔfàn de shíjiān dōu méiyǒu.",
+      "vd_nghia": "Hôm nay anh ấy bận đến mức ngay cả thời gian ăn trưa cũng không có."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "凉快",
+      "pinyin": "liángkuai",
+      "nghia": "mát mẻ",
+      "vd_cau": "秋天的傍晚吹着微风，去湖边散步特别凉快。",
+      "vd_pinyin": "Qiūtiān de bàngwǎn chuīzhe wēifēng, qù húbiān sànbù tèbié liángkuai.",
+      "vd_nghia": "Chiều tối mùa thu có gió nhẹ thổi, ra bờ hồ tản bộ vô cùng mát mẻ."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "零钱",
+      "pinyin": "língqián",
+      "nghia": "tiền lẻ",
+      "vd_cau": "坐这路公共汽车需要提前准备好两块钱零钱。",
+      "vd_pinyin": "Zuò zhè lù gōnggòng qìchē xūyào tíqián zhǔnbèi hǎo liǎng kuài qián língqián.",
+      "vd_nghia": "Đi tuyến xe buýt này cần chuẩn bị sẵn hai tệ tiền lẻ từ trước."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "另外",
+      "pinyin": "lìngwài",
+      "nghia": "ngoài ra, hơn nữa; khác",
+      "vd_cau": "除了课本以外，老师另外给我们推荐了两本阅读书。",
+      "vd_pinyin": "Chúle kèběn yǐwài, lǎoshī lìngwài gěi wǒmen tuījiàn le liǎng běn yuèdúshū.",
+      "vd_nghia": "Ngoài sách giáo khoa ra, thầy giáo còn giới thiệu thêm cho chúng tôi hai cuốn sách đọc thêm."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "留",
+      "pinyin": "liú",
+      "nghia": "ở lại, giữ lại, để lại",
+      "vd_cau": "中午外面太阳太大，你就留在家里跟我们一起吃饭吧。",
+      "vd_pinyin": "Zhōngwǔ wàimiàn tàiyáng tài dà, nǐ jiù liú zài jiālǐ gēn wǒmen yìqǐ chīfàn ba.",
+      "vd_nghia": "Buổi trưa bên ngoài nắng gắt lắm, bạn cứ ở lại nhà ăn cơm cùng chúng tôi nhé."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "流利",
+      "pinyin": "liúlì",
+      "nghia": "lưu loát, trôi chảy",
+      "vd_cau": "他在中国生活了三年，现在能说一口流利的普通话。",
+      "vd_pinyin": "Tā zài Zhōngguó shēnghuó le sān nián, xiànzài néng shuō yì kǒu liúlì de Pǔtōnghuà.",
+      "vd_nghia": "Anh ấy đã sống ở Trung Quốc ba năm, hiện giờ có thể nói tiếng Phổ thông lưu loát."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "流行",
+      "pinyin": "liúxíng",
+      "nghia": "thịnh hành, phổ biến; nhạc trẻ",
+      "vd_cau": "这首中文歌最近在大学生当中非常流行。",
+      "vd_pinyin": "Zhè shǒu Zhōngwén gē zuìjìn zài dàxuéshēng dāngzhōng fēicháng liúxíng.",
+      "vd_nghia": "Bài hát tiếng Trung này gần đây vô cùng thịnh hành trong giới sinh viên."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "旅行",
+      "pinyin": "lǚxíng",
+      "nghia": "du lịch, lữ hành",
+      "vd_cau": "毕业以后，他们打算坐火车去中国西北旅行。",
+      "vd_pinyin": "Bìyè yǐhòu, tāmen dǎsuàn zuò huǒchē qù Zhōngguó xīběi lǚxíng.",
+      "vd_nghia": "Sau khi tốt nghiệp, họ dự định đi tàu hỏa tới miền Tây Bắc Trung Quốc du lịch."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "律师",
+      "pinyin": "lǜshī",
+      "nghia": "luật sư",
+      "vd_cau": "签重要合同以前，最好先请专业律师看一看。",
+      "vd_pinyin": "Qiān zhòngyào hétong yǐqián, zuì hǎo xiān qǐng zhuānyè lǜshī kàn yi kàn.",
+      "vd_nghia": "Trước khi ký hợp đồng quan trọng, tốt nhất nên nhờ luật sư chuyên nghiệp xem qua trước."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "乱",
+      "pinyin": "luàn",
+      "nghia": "bừa bộn, lộn xộn; bừa bãi",
+      "vd_cau": "书桌上的书放得太乱了，快把它们整理好吧。",
+      "vd_pinyin": "Shūzhuō shàng de shū fàng de tài luàn le, kuài bǎ tāmen zhěnglǐ hǎo ba.",
+      "vd_nghia": "Sách vở trên bàn học để bừa bộn quá, mau sắp xếp chúng gọn gàng lại đi."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "麻烦",
+      "pinyin": "máfan",
+      "nghia": "phiền phức, rắc rối; làm phiền",
+      "vd_cau": "真不好意思，这件事又要麻烦您跑一趟了。",
+      "vd_pinyin": "Zhēn bù hǎoyìsi, zhè jiàn shì yòu yào máfan nín pǎo yí tàng le.",
+      "vd_nghia": "Thật ngại quá, chuyện này lại phải làm phiền ngài đi một chuyến rồi."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "马虎",
+      "pinyin": "mǎhu",
+      "nghia": "qua loa, đại khái, cẩu thả",
+      "vd_cau": "核对财务数据一定要细心，半点儿也不能马虎。",
+      "vd_pinyin": "Héduì cáiwù shùjù yídìng yào xìxīn, bàndiǎnr yě bù néng mǎhu.",
+      "vd_nghia": "Đối chiếu số liệu tài chính nhất định phải tỉ mỉ, không được cẩu thả dù chỉ một chút."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "满",
+      "pinyin": "mǎn",
+      "nghia": "đầy, chật kín; tròn, đủ",
+      "vd_cau": "周末图书馆里坐满了认真看书复习的学生。",
+      "vd_pinyin": "Zhōumò túshūguǎn lǐ zuò mǎn le rènzhēn kànshū fùxí de xuésheng.",
+      "vd_nghia": "Cuối tuần trong thư viện chật kín sinh viên đang chăm chú đọc sách ôn tập."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "毛",
+      "pinyin": "máo",
+      "nghia": "lông; hào (đơn vị tiền tệ bằng 1/10 tệ)",
+      "vd_cau": "这只小兔子的毛雪白雪白的，摸起来非常软。",
+      "vd_pinyin": "Zhè zhī xiǎo tùzi de máo xuěbái xuěbái de, mō qǐlái fēicháng ruǎn.",
+      "vd_nghia": "Bộ lông của chú thỏ nhỏ này trắng muốt như tuyết, sờ vào vô cùng mềm mại."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "毛巾",
+      "pinyin": "máojīn",
+      "nghia": "khăn mặt, khăn bông",
+      "vd_cau": "去健身房运动的时候，记得随身带一条干净的毛巾。",
+      "vd_pinyin": "Qù jiànshēnfáng yùndòng de shíhou, jìde suíshēn dài yì tiáo gānjìng de máojīn.",
+      "vd_nghia": "Khi đến phòng tập thể hình vận động, nhớ mang theo một chiếc khăn sạch bên mình."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "美丽",
+      "pinyin": "měilì",
+      "nghia": "tươi đẹp, xinh đẹp",
+      "vd_cau": "春天的西湖像一幅美丽的画儿，吸引了无数游客。",
+      "vd_pinyin": "Chūntiān de Xīhú xiàng yì fú měilì de huàr, xīyǐn le wúshù yóukè.",
+      "vd_nghia": "Tây Hồ vào mùa xuân đẹp tựa một bức tranh tươi đẹp, thu hút vô số du khách."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "梦",
+      "pinyin": "mèng",
+      "nghia": "giấc mơ, ước mơ",
+      "vd_cau": "昨天夜里我做了一个有趣的梦，梦见自己学会了开飞机。",
+      "vd_pinyin": "Zuótiān yèlǐ wǒ zuò le yí gè yǒuqù de mèng, mèngjiàn zìjǐ xuéhuì le kāi fēijī.",
+      "vd_nghia": "Đêm qua tôi mơ một giấc mơ thú vị, mơ thấy mình học được cách lái máy bay."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "迷路",
+      "pinyin": "mílù",
+      "nghia": "lạc đường",
+      "vd_cau": "老城区的胡同太多了，第一次去很容易迷路。",
+      "vd_pinyin": "Lǎochéngqū de hútòng tài duō le, dì-yī cì qù hěn róngyì mílù.",
+      "vd_nghia": "Ngõ nhỏ ở khu phố cổ nhiều quá, lần đầu tới rất dễ bị lạc đường."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "密码",
+      "pinyin": "mìmǎ",
+      "nghia": "mật khẩu, mật mã",
+      "vd_cau": "在银行取钱输入密码的时候，要注意遮挡。",
+      "vd_pinyin": "Zài yínháng qǔqián shūrù mìmǎ de shíhou, yào zhùyì zhēdǎng.",
+      "vd_nghia": "Khi rút tiền ở ngân hàng và nhập mật khẩu, cần chú ý che chắn."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "秒",
+      "pinyin": "miǎo",
+      "nghia": "giây (đơn vị thời gian)",
+      "vd_cau": "他在百米赛跑中只用了十一秒就冲过了终点。",
+      "vd_pinyin": "Tā zài bǎimǐ sàipǎo zhōng zhǐ yòng le shíyī miǎo jiù chōng guò le zhōngdiǎn.",
+      "vd_nghia": "Trong cuộc thi chạy trăm mét, cậu ấy chỉ mất mười một giây đã lao qua vạch đích."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "民族",
+      "pinyin": "mínzú",
+      "nghia": "dân tộc",
+      "vd_cau": "中国是一个由五十六个民族共同组成的多民族国家。",
+      "vd_pinyin": "Zhōngguó shì yí gè yóu wǔshíliù gè mínzú gòngtóng zǔchéng de duō mínzú guójiā.",
+      "vd_nghia": "Trung Quốc là một quốc gia đa dân tộc gồm năm mươi sáu dân tộc cùng hợp thành."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "母亲",
+      "pinyin": "mǔqīn",
+      "nghia": "mẹ, mẫu thân",
+      "vd_cau": "母亲节那天，我亲手做了一顿晚饭送给母亲。",
+      "vd_pinyin": "Mǔqīnjié nà tiān, wǒ qīnshǒu zuò le yí dùn wǎnfàn sòng gěi mǔqīn.",
+      "vd_nghia": "Vào Ngày của Mẹ, tôi đã tự tay nấu một bữa tối dành tặng mẹ."
+    },
+    {
+      "cap": "HSK4",
+      "chu_han": "目的",
+      "pinyin": "mùdì",
+      "nghia": "mục đích",
+      "vd_cau": "我报名参加口语班的主要目的是提高听说能力。",
+      "vd_pinyin": "Wǒ bàomíng cānjiā kǒuyǔbān de zhǔyào mùdì shì tígāo tīngshuō nénglì.",
+      "vd_nghia": "Mục đích chính khi tôi đăng ký lớp khẩu ngữ là nâng cao khả năng nghe nói."
+    }
+  ]
+}

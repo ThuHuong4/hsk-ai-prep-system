@@ -8,12 +8,17 @@ from app.database.session import get_db
 from app.modules.ai_tutor.services import stateless_tutor
 from app.modules.common.schemas import ChatTurnIn as XiangMessage, CheckAnswerIn as CheckIn
 from app.modules.common.service_errors import run_service
-from app.modules.practice.services import lesson_service, level_test_service, path_view, skip_service
+from app.modules.practice.services import competency_service, lesson_service, level_test_service, path_view, skip_service
 from app.security.require_student import require_student
 
 router = APIRouter(prefix="/on-luyen")
 _LESSON_404 = "Không tìm thấy bài"
 _ATTEMPT_404 = "Không tìm thấy lượt làm bài"
+
+
+@router.get("/ho-so-ca-nhan")
+def personal_dashboard(db: Session = Depends(get_db), student: dict = Depends(require_student)):
+    return competency_service.get_personal_dashboard(db, student["ma_nguoi_dung"])
 
 
 class AnswerIn(BaseModel):
@@ -28,6 +33,12 @@ class SkipAskIn(BaseModel):
 
     cau_hoi_id: int = Field(..., ge=1)
     tin_nhan: list[XiangMessage] = Field(..., min_length=1, max_length=20)
+
+
+class HintIn(BaseModel):
+    model_config = ConfigDict(extra="forbid")
+
+    cau_hoi_id: int = Field(..., ge=1)
 
 
 @router.get("/tong-quan")
@@ -54,6 +65,16 @@ def get_attempt(luot_id: int = Path(..., ge=1), db: Session = Depends(get_db), s
 @router.post("/luot/{luot_id}/kiem-tra")
 def check(body: CheckIn, luot_id: int = Path(..., ge=1), db: Session = Depends(get_db), student: dict = Depends(require_student)):
     return run_service(lambda: lesson_service.check_answer(db, luot_id, student["ma_nguoi_dung"], body), _ATTEMPT_404)
+
+
+@router.post("/luot/{luot_id}/goi-y")
+def open_hint(body: HintIn, luot_id: int = Path(..., ge=1), db: Session = Depends(get_db), student: dict = Depends(require_student)):
+    return run_service(lambda: lesson_service.open_hint(db, luot_id, student["ma_nguoi_dung"], body.cau_hoi_id), _ATTEMPT_404)
+
+
+@router.post("/luot/{luot_id}/xem-loi-giai")
+def mark_solution_viewed(body: HintIn, luot_id: int = Path(..., ge=1), db: Session = Depends(get_db), student: dict = Depends(require_student)):
+    return run_service(lambda: lesson_service.mark_solution_viewed(db, luot_id, student["ma_nguoi_dung"], body.cau_hoi_id), _ATTEMPT_404)
 
 
 @router.post("/luot/{luot_id}/bo", status_code=status.HTTP_204_NO_CONTENT)

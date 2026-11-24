@@ -16,18 +16,18 @@ export default function Footer() {
             <p style={{ marginTop: "14px", opacity: 0.8, maxWidth: "30ch" }}>Luyện thi HSK cho người Việt.</p>
           </div>
           <div>
-            <h4>Học</h4>
+            <h4>Phạm vi đào tạo</h4>
             <ul>
-              <li><Link to="/on-luyen">Ôn luyện</Link></li>
-              <li><a href="/#loi-sai">Ôn câu sai</a></li>
-              <li><Link to="/thi-thu">HSK </Link></li>
+              <li><span>Chứng chỉ HSK 1 – HSK 4</span></li>
+              <li><span>Từ vựng · Nghe · Đọc · Viết</span></li>
+              <li><span>Trợ giảng AI Xiang cá nhân hóa</span></li>
             </ul>
           </div>
           <div>
             <h4>Tài khoản</h4>
             <ul>
               <li><Link to="/dang-nhap">Đăng nhập</Link></li>
-              <li><Link to="/dang-ky">Tạo tài khoản</Link></li>
+              <li><Link to="/dang-ky">Đăng ký học viên</Link></li>
             </ul>
           </div>
         </div>

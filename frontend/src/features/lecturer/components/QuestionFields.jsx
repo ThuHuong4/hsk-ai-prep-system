@@ -1,13 +1,48 @@
 import { useState } from "react";
 
+import { useAuth } from "../../auth/context/AuthContext.jsx";
+import { aiMakeAudio, aiMakeImage } from "../api/lecturerApi.js";
 import MediaInput from "./MediaInput.jsx";
 import OptionsEditor from "./OptionsEditor.jsx";
 import { optionLetter } from "../utils/labels.js";
+import { SCORED_TYPES } from "../utils/questionForm.js";
 
 // Phần nội dung + đáp án dùng chung cho câu đơn và câu con
-export default function QuestionFields({ q, onChange, idPrefix, sharedCount = 0, disabled }) {
-  const [showMore, setShowMore] = useState(Boolean(q.pinyin || q.dich_nghia || q.goi_y || q.loi_nghe || q.mo_ta_hinh));
+export default function QuestionFields({ q, onChange, idPrefix, sharedCount = 0, capDoId, disabled }) {
+  const { token } = useAuth();
+  const [showMore, setShowMore] = useState(Boolean(q.pinyin || q.dich_nghia || q.goi_y || q.goi_y_2 || q.loi_nghe || q.mo_ta_hinh));
   const set = (patch) => onChange({ ...q, ...patch });
+
+  async function generateImage() {
+    let desc = (q.mo_ta_hinh || "").trim();
+    if (!desc) {
+      const entered = window.prompt(
+        "Nhập mô tả bức tranh cần tạo bằng tiếng Việt (ví dụ: Một nam sinh đang đọc sách trên bàn gỗ trong thư viện):",
+        (q.dich_nghia || "").trim(),
+      );
+      if (entered === null) return null;
+      desc = entered.trim();
+    }
+    if (desc.length < 2) throw new Error("Cần nhập mô tả bức tranh trước khi tạo hình AI");
+    const data = await aiMakeImage(token, desc);
+    if (!q.mo_ta_hinh) set({ tep_hinh: data.duong_dan, mo_ta_hinh: desc });
+    return data.duong_dan;
+  }
+
+  async function generateAudio() {
+    let script = (q.loi_nghe || q.noi_dung || "").trim();
+    if (!script) {
+      const entered = window.prompt("Nhập lời nghe tiếng Trung (có thể ghi 男：... / 女：... / 问：...):");
+      if (entered === null) return null;
+      script = entered.trim();
+    }
+    if (!script) throw new Error("Cần nhập lời nghe hoặc nội dung tiếng Trung trước khi tạo giọng đọc");
+    const levelId = Number(capDoId || q.cap_do_id) || 1;
+    const data = await aiMakeAudio(token, levelId, script);
+    if (!q.loi_nghe && q.ky_nang === "nghe") set({ tep_audio: data.duong_dan, loi_nghe: script });
+    return data.duong_dan;
+  }
+
   const field = (name, label, props = {}) => (
     <div className="lv-field">
       <label htmlFor={`${idPrefix}-${name}`}>{label}</label>
@@ -28,8 +63,10 @@ export default function QuestionFields({ q, onChange, idPrefix, sharedCount = 0,
       {field("noi_dung", q.dang === "chon_bo_chung" ? "Nội dung câu (có thể để trống nếu chỉ nghe)" : "Nội dung / đề bài", { rows: 3, zh: true })}
 
       <div className="lv-media-row">
-        <MediaInput kind="hinh" label="Hình" value={q.tep_hinh} onChange={(v) => set({ tep_hinh: v })} disabled={disabled} />
-        <MediaInput kind="audio" label="Âm thanh" value={q.tep_audio} onChange={(v) => set({ tep_audio: v })} disabled={disabled} />
+        <MediaInput kind="hinh" label="Hình minh họa" value={q.tep_hinh} onChange={(v) => set({ tep_hinh: v })}
+          onAiGenerate={generateImage} aiLabel="Tạo hình AI" disabled={disabled} />
+        <MediaInput kind="audio" label="Âm thanh" value={q.tep_audio} onChange={(v) => set({ tep_audio: v })}
+          onAiGenerate={generateAudio} aiLabel="Tạo giọng đọc AI" disabled={disabled} />
       </div>
 
       {/* Phần đáp án theo dạng */}
@@ -58,12 +95,12 @@ export default function QuestionFields({ q, onChange, idPrefix, sharedCount = 0,
         <OptionsEditor name={`${idPrefix}-frag`} title="Các mảnh để sắp xếp (theo thứ tự hiển thị)" mode="plain" allowImage={false}
           options={q.phuong_an} onChange={(v) => set({ phuong_an: v })} disabled={disabled} />
       )}
-      {(q.dang === "sap_xep" || q.dang === "dien_chu") && (
+      {(q.dang === "sap_xep" || q.dang === "dien_chu" || q.dang === "dich_cau") && (
         <AcceptedAnswers idPrefix={idPrefix} values={q.dap_an_chap_nhan} disabled={disabled}
-          label={q.dang === "sap_xep" ? "Câu đúng sau khi sắp xếp" : "Đáp án chấp nhận"}
+          label={q.dang === "sap_xep" ? "Câu đúng sau khi sắp xếp" : q.dang === "dich_cau" ? "Bản dịch mẫu (AI tham khảo khi chấm)" : "Đáp án chấp nhận"}
           onChange={(v) => set({ dap_an_chap_nhan: v })} />
       )}
-      {q.dang === "viet_mo" && (
+      {SCORED_TYPES.includes(q.dang) && (
         <div className="lv-grid-3">
           <div className="lv-field">
             <label htmlFor={`${idPrefix}-max`}>Điểm tối đa</label>
@@ -75,19 +112,21 @@ export default function QuestionFields({ q, onChange, idPrefix, sharedCount = 0,
             <input id={`${idPrefix}-pass`} type="number" min="0.5" step="0.5" value={q.nguong_dat} disabled={disabled}
               onChange={(e) => set({ nguong_dat: e.target.value })} />
           </div>
-          <div className="lv-field">
-            <label htmlFor={`${idPrefix}-word`}>Từ bắt buộc (nếu có)</label>
-            <input id={`${idPrefix}-word`} className="zh" maxLength={20} value={q.tu_bat_buoc} disabled={disabled}
-              onChange={(e) => set({ tu_bat_buoc: e.target.value })} />
-          </div>
+          {q.dang === "viet_mo" && (
+            <div className="lv-field">
+              <label htmlFor={`${idPrefix}-word`}>Từ bắt buộc (nếu có)</label>
+              <input id={`${idPrefix}-word`} className="zh" maxLength={20} value={q.tu_bat_buoc} disabled={disabled}
+                onChange={(e) => set({ tu_bat_buoc: e.target.value })} />
+            </div>
+          )}
         </div>
       )}
-      {q.dang === "viet_mo" && field("tieu_chi_mo_ta", "Tiêu chí chấm (AI dựa vào đây)", { rows: 3 })}
+      {SCORED_TYPES.includes(q.dang) && field("tieu_chi_mo_ta", "Tiêu chí chấm (AI dựa vào đây)", { rows: 3 })}
 
       {field("giai_thich", "Giải thích đáp án")}
 
       <button type="button" className="xlink" onClick={() => setShowMore((v) => !v)} aria-expanded={showMore}>
-        {showMore ? "Ẩn thông tin thêm" : "Thêm pinyin, dịch nghĩa, lời nghe, gợi ý…"}
+        {showMore ? "Ẩn thông tin thêm" : "Thêm pinyin, dịch nghĩa, lời nghe, gợi ý 2 mức…"}
       </button>
       {showMore && (
         <div className="lv-more">
@@ -95,7 +134,8 @@ export default function QuestionFields({ q, onChange, idPrefix, sharedCount = 0,
           {field("dich_nghia", "Dịch nghĩa")}
           {field("loi_nghe", "Lời nghe (transcript)", { zh: true })}
           {field("mo_ta_hinh", "Mô tả hình (cho người dùng trình đọc màn hình)", { max: 1000 })}
-          {field("goi_y", "Gợi ý", { max: 2000 })}
+          {field("goi_y", "Gợi ý mức 1 – định hướng (không lộ đáp án)", { max: 2000 })}
+          {field("goi_y_2", "Gợi ý mức 2 – cách tiếp cận (không lộ đáp án)", { max: 2000 })}
         </div>
       )}
     </div>

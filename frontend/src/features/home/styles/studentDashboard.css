@@ -1,0 +1,518 @@
+/* ==========================================================================
+   Bảng điều khiển Cá nhân hóa Học viên & Báo cáo Năng lực AI (WriteMate Style)
+   ========================================================================== */
+
+.sd-alert-exam {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 16px 20px;
+  margin-bottom: 18px;
+  border-radius: 20px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-left: 5px solid var(--coral);
+  box-shadow: var(--shadow);
+}
+
+/* Khối Hero Trình độ HSK + Thanh 4 cấp mở khóa + Bài ưu tiên hôm nay */
+.sd-hero {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  padding: 28px 30px;
+  border-radius: 28px;
+  color: var(--scene-ink, #f4f8fb);
+  background:
+    radial-gradient(70% 65% at 18% 80%, rgba(44, 211, 201, 0.24), transparent 70%),
+    radial-gradient(45% 45% at 88% 12%, rgba(255, 138, 114, 0.18), transparent 70%),
+    linear-gradient(165deg, var(--scene-2, #162840), var(--scene, #0f1d30));
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.sd-hero__head {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.sd-hero__intro {
+  flex: 1 1 auto;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.sd-hero__eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #8be6c9;
+}
+
+.xc .sd-hero h1 {
+  color: #ffffff;
+  font-size: clamp(26px, 3vw, 36px);
+  line-height: 1.18;
+}
+
+.sd-hero__sub {
+  color: rgba(235, 244, 252, 0.84);
+  font-size: 14.5px;
+  line-height: 1.5;
+}
+
+.sd-hero__masc {
+  width: 84px;
+  height: 84px;
+  object-fit: contain;
+  flex-shrink: 0;
+  filter: drop-shadow(0 10px 16px rgba(0, 0, 0, 0.35));
+}
+
+@media (max-width: 640px) {
+  .sd-hero {
+    padding: 22px 20px;
+  }
+  .sd-hero__masc {
+    display: none;
+  }
+}
+
+/* Thanh lộ trình 4 cấp HSK (Mở khóa 1..L, Khóa > L) */
+.sd-level-track {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px;
+}
+
+@media (max-width: 620px) {
+  .sd-level-track {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.sd-lv-step {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  padding: 10px 13px;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+.sd-lv-step b {
+  font-size: 14.5px;
+  color: #ffffff;
+}
+
+.sd-lv-step small {
+  font-size: 11.8px;
+  font-weight: 700;
+  color: rgba(235, 244, 252, 0.72);
+}
+
+.sd-lv-step.is-unlocked {
+  background: rgba(44, 211, 201, 0.14);
+  border-color: rgba(139, 230, 201, 0.42);
+}
+
+.sd-lv-step.is-unlocked small {
+  color: #9ef0d6;
+}
+
+.sd-lv-step.is-current {
+  background: rgba(44, 211, 201, 0.24);
+  border-color: #8be6c9;
+  box-shadow: 0 0 0 2px rgba(139, 230, 201, 0.25);
+}
+
+.sd-lv-step.is-locked {
+  opacity: 0.62;
+}
+
+/* Thẻ Bài học Trọng tâm số 1 hôm nay nằm trong Hero */
+.sd-focus-card {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 16px 18px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.11);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(8px);
+}
+
+.sd-focus-card__info {
+  flex: 1 1 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.sd-focus-card__badge {
+  align-self: flex-start;
+  padding: 3px 9px;
+  border-radius: 999px;
+  background: rgba(255, 138, 114, 0.24);
+  color: #ffd0c4;
+  font-size: 11.5px;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.sd-focus-card__title {
+  font-size: 17.5px;
+  font-weight: 800;
+  color: #ffffff;
+}
+
+.sd-focus-card__desc {
+  font-size: 13.8px;
+  color: rgba(235, 244, 252, 0.88);
+}
+
+.sd-focus-card__acts {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Lưới 4 Kỹ năng HSK (Competency Meters) */
+.sd-skill-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+@media (min-width: 720px) {
+  .sd-skill-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+.xc .sd-skill-card {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 15px 16px;
+  border-radius: 18px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  color: var(--ink);
+  text-decoration: none;
+  box-shadow: var(--shadow-sm, 0 2px 6px rgba(0, 0, 0, 0.04));
+  transition: transform 0.15s ease, border-color 0.15s ease;
+}
+
+.xc .sd-skill-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--teal);
+}
+
+.sd-skill-card__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6px;
+}
+
+.sd-skill-card__top strong {
+  font-size: 15px;
+}
+
+.sd-skill-card__pct {
+  font-size: 13px;
+  font-weight: 800;
+  color: var(--teal-ink);
+  font-variant-numeric: tabular-nums;
+}
+
+.sd-skill-card__bar {
+  height: 6px;
+  border-radius: 999px;
+  background: var(--surface-2);
+  overflow: hidden;
+}
+
+.sd-skill-card__bar > i {
+  display: block;
+  height: 100%;
+  border-radius: 999px;
+  background: var(--teal);
+}
+
+.sd-skill-card.is-weak .sd-skill-card__bar > i {
+  background: var(--coral);
+}
+
+.sd-skill-card.is-weak .sd-skill-card__pct {
+  color: var(--coral-ink);
+}
+
+.sd-skill-card small {
+  font-size: 12px;
+  color: var(--ink-3);
+}
+
+/* Danh sách Thẻ Điểm yếu Chẩn đoán bởi AI (WriteMate Diagnostic Spotlight) */
+.sd-section-card {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 22px 24px;
+  border-radius: 24px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow);
+}
+
+.sd-section-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.sd-section-head__title {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  color: var(--teal-ink);
+}
+
+.sd-section-head__title h2 {
+  font-size: 21px;
+}
+
+.sd-weak-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.sd-weak-card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 16px 18px;
+  border-radius: 18px;
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--coral);
+}
+
+.sd-weak-card__head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.sd-weak-card__topic {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+
+.sd-weak-card__topic strong {
+  font-size: 16px;
+  color: var(--ink);
+}
+
+.sd-weak-card__source {
+  font-size: 12px;
+  font-weight: 700;
+  padding: 3px 9px;
+  border-radius: 999px;
+  background: var(--coral-soft);
+  color: var(--coral-ink);
+}
+
+.sd-weak-card__ai {
+  font-size: 14px;
+  line-height: 1.56;
+  color: var(--ink-2);
+}
+
+.sd-remedy {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding-top: 10px;
+  border-top: 1px dashed var(--line-2);
+}
+
+.sd-remedy__meta {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.sd-remedy__meta small {
+  font-size: 11.5px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--teal-ink);
+}
+
+.sd-remedy__meta b {
+  font-size: 14.5px;
+  color: var(--ink);
+}
+
+/* Khối Điểm mạnh đã làm chủ */
+.sd-strength-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.xc .sd-strength-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 12px;
+  border-radius: 12px;
+  background: var(--good-soft);
+  color: var(--good);
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+/* Bộ lọc câu trên Báo cáo Đánh giá 8 câu */
+.sd-filter-tabs {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  padding: 4px;
+  border-radius: 12px;
+  background: var(--surface-2);
+}
+
+.sd-filter-tab {
+  padding: 6px 12px;
+  border: 0;
+  border-radius: 9px;
+  background: transparent;
+  color: var(--ink-2);
+  font: 700 13px var(--f-body);
+  cursor: pointer;
+}
+
+.sd-filter-tab.is-active {
+  background: var(--surface);
+  color: var(--teal-ink);
+  box-shadow: var(--shadow-sm, 0 1px 3px rgba(0, 0, 0, 0.08));
+}
+
+.sd-report-qcard {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 18px;
+  border-radius: 20px;
+  background: var(--bg);
+  border: 1px solid var(--line);
+}
+
+.sd-report-qcard.is-focus {
+  border-color: var(--teal);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--teal) 22%, transparent);
+}
+
+.sd-report-qcard__stem {
+  padding: 12px 16px;
+  border-radius: 14px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  font-size: 20px;
+}
+
+/* ---------- Khung Quy Tắc & Tiến Độ Thăng Cấp Trình Độ Trên Trang Chủ ---------- */
+.sd-levelup-box {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px 16px;
+  padding: 13px 16px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.sd-levelup-box__body {
+  flex: 1 1 380px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.sd-levelup-box__kicker {
+  font-size: 11.5px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #8ee8df;
+}
+
+.sd-levelup-box__ways {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  font-size: 13.5px;
+  line-height: 1.45;
+  color: rgba(244, 248, 252, 0.92);
+}
+
+.sd-levelup-box__ways b {
+  color: #ffffff;
+}
+
+.xc .sd-levelup-box__cta {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.16);
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 800;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background 0.15s ease;
+}
+
+.xc .sd-levelup-box__cta:hover {
+  background: rgba(255, 255, 255, 0.25);
+  color: #ffffff;
+}

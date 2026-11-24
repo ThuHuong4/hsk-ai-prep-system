@@ -3,6 +3,7 @@ import { useLocation } from "react-router-dom";
 
 import { useAuth } from "../features/auth/context/AuthContext.jsx";
 import { getOverview } from "../features/lecturer/api/lecturerApi.js";
+import LecturerAssistant from "../features/lecturer/components/LecturerAssistant.jsx";
 import { LECTURER_MENU } from "../shared/navigation/roleMenus.js";
 import StaffLayout from "./StaffLayout.jsx";
 
@@ -18,5 +19,5 @@ export default function LecturerLayout() {
     return () => controller.abort();
   }, [token, location.pathname]);
 
-  return <StaffLayout roleLabel="Giảng viên" menu={LECTURER_MENU} badges={badges} />;
+  return <StaffLayout roleLabel="Giảng viên" menu={LECTURER_MENU} badges={badges} floating={<LecturerAssistant />} />;
 }

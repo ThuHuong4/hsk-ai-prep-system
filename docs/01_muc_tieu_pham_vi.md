@@ -13,7 +13,7 @@
 ## 2. Phạm vi thực hiện
 - **Trình độ**: HSK 1 – HSK 4.
 - **Vai trò người dùng (3 vai trò)**:
-  1. **Học viên (`hoc_vien`)**: Đánh giá đầu vào 8 câu, Ôn luyện theo thửa/bài, Gợi ý 2 mức & Hỏi Xiang, Sổ tay câu sai, Thi thử tính giờ, Học liệu cẩm nang, Thống kê & Hồ sơ cá nhân. *(Khách chưa đăng nhập chỉ được xem lộ trình mở sẵn và học thử bài đầu tiên, không ghi CSDL).*
+  1. **Học viên (`hoc_vien`)**: Đánh giá đầu vào 8 câu, Ôn luyện theo thửa/bài, Gợi ý 2 mức & Hỏi Xiang, Sổ tay câu sai, Thi thử tính giờ ngẫu nhiên theo trình độ, Học liệu cẩm nang, Thống kê & Hồ sơ cá nhân. *(Người dùng chưa đăng nhập ở trang ngoài chỉ xem giới thiệu hệ thống và tra cứu từ điển nhanh; bắt buộc Đăng nhập → Đánh giá đầu vào 8 câu trước khi Ôn luyện và Thi thử).*
   2. **Giảng viên (`giang_vien`)**: Quản lý cấp độ, từ vựng, ngân hàng câu hỏi (tự soạn & soạn nháp với AI), lộ trình bài ôn, đề thi thử, học liệu, chấm phúc khảo bài viết và xử lý báo lỗi nội dung/chấm điểm.
   3. **Quản trị viên (`quan_tri`)**: Quản lý tài khoản, khóa/mở khóa, phân quyền, mời Giảng viên và tra cứu nhật ký quản trị.
 - **Giới hạn ngoài phạm vi**: Không triển khai kỹ năng Nói (thu âm chấm phát âm); không giám sát phòng thi bằng webcam.

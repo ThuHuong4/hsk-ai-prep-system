@@ -5,6 +5,7 @@ import { useAuth } from "../../auth/context/AuthContext.jsx";
 import { useRequest } from "../../../shared/api/useRequest.js";
 import "../../exam_catalog/styles/catalog.css";
 import { formatDateTime } from "../../../shared/utils/format.js";
+import { skillSlug } from "../../practice/utils/skills.js";
 import { getMyStats } from "../api/statisticsApi.js";
 import ScoreChart from "../components/ScoreChart.jsx";
 import "../styles/statistics.css";
@@ -30,20 +31,20 @@ export default function StatisticsPage() {
     <section className="xc st">
       <div className="sh-pghead">
         <header className="xc-head">
-          <h1>Thống kê thi thử</h1>
-          <p>Theo dõi điểm qua từng lượt thi thử. Chỉ tính các lượt đã chấm xong, mỗi cấp xem riêng vì thang điểm khác nhau.</p>
+          <h1>Kết quả & Thống kê thi thử</h1>
+          <p>Theo dõi tiến bộ qua từng lượt thi thử đã chấm xong (tách riêng theo từng cấp HSK) và chỉ ra dạng câu dưới 60% cần bù.</p>
         </header>
-        <Link className="xc-btn xc-btn--plain xc-btn--sm" to="/hoc-vien/lich-su-thi">Lịch sử thi thử</Link>
+        <Link className="xc-btn xc-btn--plain xc-btn--sm" to="/hoc-vien/lich-su-thi">Xem toàn bộ các lượt thi</Link>
       </div>
       {error && <p role="alert">{error}</p>}
       {loading && <p className="xc-muted">Đang tải...</p>}
       {data?.so_luot_cho_cham > 0 && (
-        <p className="st-note">{data.so_luot_cho_cham} lượt còn câu Viết đang chờ chấm, chưa tính vào thống kê.</p>
+        <p className="st-note">{data.so_luot_cho_cham} lượt còn câu Viết đang chờ chấm, xem trong mục Toàn bộ các lượt thi.</p>
       )}
       {data && !levels.length && (
         <div className="xc-empty">
           <p>Chưa có lượt thi thử nào chấm xong để thống kê.</p>
-          <Link className="xc-btn xc-btn--sm" to="/hoc-vien/thi-thu">Chọn đề thi thử</Link>
+          <Link className="xc-btn xc-btn--sm" to="/hoc-vien/thi-thu">Vào phòng thi thử</Link>
         </div>
       )}
       {lv && (
@@ -113,7 +114,7 @@ export default function StatisticsPage() {
                     </div>
                     <span className="st-types__pct">{pct(g.ty_le)}</span>
                     {g.yeu
-                      ? <Link className="xc-btn xc-btn--sm" to={`/hoc-vien/on-luyen/${g.ky_nang}?cap=${lv.cap_do_id}`}>⚠ Ôn {SKILL[g.ky_nang]}</Link>
+                      ? <Link className="xc-btn xc-btn--sm" to={`/hoc-vien/on-luyen/${skillSlug(g.ky_nang)}?cap=${lv.cap_do_id}`}>⚠ Ôn {SKILL[g.ky_nang]}</Link>
                       : <span className="st-ok">✓ Ổn</span>}
                   </li>
                 ))}

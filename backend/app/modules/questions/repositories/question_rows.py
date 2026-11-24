@@ -7,8 +7,8 @@ from app.database.root_id import next_root_id
 ROW_FIELDS = (
     "dang", "cap_do_id", "ky_nang", "dung_on_luyen", "dung_thi_thu", "dung_dau_vao",
     "noi_dung", "tep_audio", "tep_hinh", "mo_ta_hinh", "loi_nghe", "pinyin", "dich_nghia",
-    "goi_y", "giai_thich", "dap_an_thu_tu", "tu_bat_buoc", "tieu_chi_mo_ta", "diem_toi_da", "nguong_dat",
-    "tu_vung_id",
+    "goi_y", "goi_y_2", "giai_thich", "dap_an_thu_tu", "tu_bat_buoc", "tieu_chi_mo_ta", "diem_toi_da", "nguong_dat",
+    "tu_vung_id", "nguon_noi_dung", "nhom_kien_thuc_id",
 )
 SELECT_FIELDS = (
     "id, ma_goc_id, phien_ban, cau_cha_id, trang_thai, nguoi_tao_id, tao_luc, " + ", ".join(ROW_FIELDS)
@@ -125,6 +125,12 @@ def replace_options(db: Session, cau_hoi_id: int, options: list, accepted: list[
 def delete_question_row(db: Session, cau_hoi_id: int) -> None:
     db.execute(text("DELETE FROM phuong_an WHERE cau_hoi_id = :id"), {"id": cau_hoi_id})
     db.execute(text("DELETE FROM cau_hoi WHERE id = :id"), {"id": cau_hoi_id})
+
+
+def mark_approved(db: Session, cau_hoi_id: int, nguoi_duyet_id: int) -> None:
+    """Ghi người duyệt và thời điểm duyệt khi Giảng viên đăng câu (câu cha)."""
+    db.execute(text("UPDATE cau_hoi SET nguoi_duyet_id = :u, duyet_luc = NOW() WHERE id = :id"),
+               {"u": nguoi_duyet_id, "id": cau_hoi_id})
 
 
 def set_status(db: Session, ids: list[int], trang_thai: str) -> None:

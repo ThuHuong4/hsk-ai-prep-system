@@ -134,7 +134,8 @@ def _next_level(db: Session, attempt: dict) -> dict | None:
 
 def _answers(db: Session, luot_id: int) -> list[dict]:
     return [dict(r) for r in db.execute(
-        text("""SELECT a.id, a.cau_hoi_id, a.thu_tu, a.seed_xao, a.phuong_an_chon_id, a.van_ban, a.xac_nhan_luc, v.diem
+        text("""SELECT a.id, a.cau_hoi_id, a.thu_tu, a.seed_xao, a.trang_thai_thao_tac,
+                       a.phuong_an_chon_id, a.van_ban, a.xac_nhan_luc, a.phien_ban_luu, v.diem
                 FROM cau_tra_loi a LEFT JOIN v_ket_qua_hien_hanh v ON v.cau_tra_loi_id = a.id
                 WHERE a.luot_lam_id = :l ORDER BY a.thu_tu"""),
         {"l": luot_id},
@@ -171,18 +172,15 @@ def get_skip(db: Session, luot_id: int, uid: int) -> dict:
     result = None
     if done:
         right = sum(1 for i in items if i["ket_qua"]["dung"])
-        if attempt["loai"] == "vuot_thua":
-            kn = db.execute(
-                text("SELECT so_luong FROM nhat_ky_thuong WHERE nguoi_dung_id = :u AND ly_do = 'kn_vuot_thua' AND bo_de_goc_id = :g"),
-                {"u": uid, "g": attempt["thua_ma_goc"]},
+        passed = attempt["ap_dung_luc"] is not None
+        kn = 0
+        if passed:
+            kn_row = db.execute(
+                text("SELECT so_luong FROM nhat_ky_thuong WHERE nguoi_dung_id = :u AND luot_lam_id = :l AND ly_do LIKE 'kn\\_%' LIMIT 1"),
+                {"u": uid, "l": luot_id},
             ).scalar_one_or_none()
-        else:
-            kn = db.execute(
-                text("""SELECT so_luong FROM nhat_ky_thuong WHERE nguoi_dung_id = :u AND ly_do = :r
-                        AND cap_do_id = :c AND ky_nang = :k"""),
-                {"u": uid, "r": KN_REASON[attempt["loai"]], "c": attempt["cap_do_id"], "k": attempt["ky_nang"]},
-            ).scalar_one_or_none()
-        result = {"so_dung": right, "tong": len(items), "dat": attempt["ap_dung_luc"] is not None, "kn": int(kn or 0)}
+            kn = int(kn_row or 0)
+        result = {"so_dung": right, "tong": len(items), "dat": passed, "kn": kn, "ly_do_kn": KN_REASON[attempt["loai"]] if kn else None}
     return {
         "id": luot_id, "trang_thai": attempt["trang_thai"], "loai": attempt["loai"],
         "cap_ke": _next_level(db, attempt) if attempt["loai"] == "vuot_chang" else None,
@@ -210,9 +208,13 @@ def save_answer(db: Session, luot_id: int, uid: int, cau_hoi_id: int, body) -> N
                 option_id = body.phuong_an_chon_id
         else:
             van_ban = (body.van_ban or "").strip() or None
+        trang_thai_tt = "da_tra_loi" if (option_id is not None or van_ban is not None) else "chua_thao_tac"
         db.execute(
-            text("UPDATE cau_tra_loi SET phuong_an_chon_id = :o, van_ban = :v, phien_ban_luu = phien_ban_luu + 1 WHERE id = :id"),
-            {"o": option_id, "v": van_ban, "id": answer["id"]},
+            text("""UPDATE cau_tra_loi
+                    SET phuong_an_chon_id = :o, van_ban = :v, trang_thai_thao_tac = :tt,
+                        phien_ban_luu = phien_ban_luu + 1
+                    WHERE id = :id"""),
+            {"o": option_id, "v": van_ban, "tt": trang_thai_tt, "id": answer["id"]},
         )
         db.execute(text("UPDATE luot_lam SET vi_tri_hien_tai = :v WHERE id = :id"), {"v": answer["thu_tu"], "id": luot_id})
         db.commit()
@@ -232,14 +234,21 @@ def submit_skip(db: Session, luot_id: int, uid: int) -> None:
         right = 0
         for a in answers:
             q = questions[a["cau_hoi_id"]]
-            correct = bool(_is_correct(q, a, options))
+            is_skipped = a["phuong_an_chon_id"] is None and not a["van_ban"]
+            trang_thai_tt = "bo_qua" if is_skipped else "da_tra_loi"
+            correct = (not is_skipped) and bool(_is_correct(q, a, options))
             right += correct
-            db.execute(text("UPDATE cau_tra_loi SET xac_nhan_luc = NOW() WHERE id = :id"), {"id": a["id"]})
+            pbl = int(a.get("phien_ban_luu") or 0)
             db.execute(
-                text("INSERT INTO ket_qua_cham (cau_tra_loi_id, lan, nguon, trang_thai, diem) VALUES (:a, 1, 'code', 'hoan_tat', :d)"),
-                {"a": a["id"], "d": 1 if correct else 0},
+                text("UPDATE cau_tra_loi SET trang_thai_thao_tac = :tt, xac_nhan_luc = NOW() WHERE id = :id"),
+                {"tt": trang_thai_tt, "id": a["id"]},
             )
-            if not correct:
+            db.execute(
+                text("""INSERT INTO ket_qua_cham (cau_tra_loi_id, lan, nguon, trang_thai, phien_ban_luu, diem)
+                        VALUES (:a, 1, 'code', 'hoan_tat', :pbl, :d)"""),
+                {"a": a["id"], "pbl": pbl, "d": 1 if correct else 0},
+            )
+            if not is_skipped and not correct:
                 db.execute(
                     text("""INSERT INTO so_tay (nguoi_dung_id, cau_hoi_goc_id, trang_thai, han_on, cap_nhat_luc)
                             VALUES (:u, :g, 'can_on', CURDATE(), NOW())
@@ -254,15 +263,15 @@ def submit_skip(db: Session, luot_id: int, uid: int) -> None:
         )
         if passed and attempt["loai"] == "vuot_thua":
             db.execute(
-                text("""INSERT IGNORE INTO nhat_ky_thuong (nguoi_dung_id, ly_do, so_luong, bo_de_goc_id)
-                        VALUES (:u, 'kn_vuot_thua', :n, :g)"""),
-                {"u": uid, "n": KN_SKIP, "g": attempt["thua_ma_goc"]},
+                text("""INSERT IGNORE INTO nhat_ky_thuong (nguoi_dung_id, luot_lam_id, ly_do, so_luong, bo_de_goc_id)
+                        VALUES (:u, :l, 'kn_vuot_thua', :n, :g)"""),
+                {"u": uid, "l": luot_id, "n": KN_SKIP, "g": attempt["thua_ma_goc"]},
             )
         elif passed:  # Bắt đầu cấp / Vượt chặng: +20 KN lần đạt đầu của từng cấp × kỹ năng
             db.execute(
-                text("""INSERT IGNORE INTO nhat_ky_thuong (nguoi_dung_id, ly_do, so_luong, cap_do_id, ky_nang)
-                        VALUES (:u, :r, :n, :c, :k)"""),
-                {"u": uid, "r": KN_REASON[attempt["loai"]], "n": KN_SKIP, "c": attempt["cap_do_id"], "k": attempt["ky_nang"]},
+                text("""INSERT IGNORE INTO nhat_ky_thuong (nguoi_dung_id, luot_lam_id, ly_do, so_luong, cap_do_id, ky_nang)
+                        VALUES (:u, :l, :r, :n, :c, :k)"""),
+                {"u": uid, "l": luot_id, "r": KN_REASON[attempt["loai"]], "n": KN_SKIP, "c": attempt["cap_do_id"], "k": attempt["ky_nang"]},
             )
         db.commit()
     except Exception:

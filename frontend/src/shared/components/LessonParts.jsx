@@ -1,7 +1,9 @@
 // Thành phần hiển thị câu hỏi, phương án và thẻ từ dùng chung cho Ôn luyện, Học thử, Vượt thửa và Sổ tay.
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 import HanziText from "./HanziText.jsx";
+import Icon from "./Icon.jsx";
+import { pronounceUrl } from "../../features/search/api/searchApi.js";
 import { mediaUrl, splitOption } from "../utils/format.js";
 
 export const SKILL = { nghe: "Nghe", doc: "Đọc", viet: "Viết", tu_vung: "Từ vựng" };
@@ -37,13 +39,44 @@ export function Option({ option }) {
   );
 }
 
-export function FlashCards({ words, onDone }) {
+export function FlashCards({ words, onDone, returnLabel = "Làm câu hỏi" }) {
   const [i, setI] = useState(0);
   const [flip, setFlip] = useState(false);
   const w = words[i];
+
+  function speakWord(text, audioPath = null) {
+    if (!text && !audioPath) return;
+    try {
+      const src = audioPath ? mediaUrl(audioPath) : pronounceUrl(text);
+      new Audio(src).play().catch(() => {});
+    } catch {
+      /* trình duyệt chặn tự phát */
+    }
+  }
+
+  useEffect(() => {
+    function onKey(e) {
+      if (["INPUT", "TEXTAREA"].includes(e.target.tagName)) return;
+      if (e.key === " ") {
+        e.preventDefault();
+        setFlip((f) => !f);
+      } else if (e.key === "ArrowLeft" && i > 0) {
+        setI(i - 1);
+        setFlip(false);
+      } else if (e.key === "ArrowRight" && i < words.length - 1) {
+        setI(i + 1);
+        setFlip(false);
+      } else if (e.key === "Escape") {
+        onDone();
+      }
+    }
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, [i, words.length, onDone]);
+
   return (
     <div className="sl-cards">
-      <p className="sl-meta">Thẻ từ {i + 1}/{words.length} · bấm thẻ để lật</p>
+      <p className="sl-meta">Thẻ từ {i + 1}/{words.length} · bấm thẻ hoặc phím Cách để lật</p>
       <button type="button" className={`sl-card${flip ? " is-flipped" : ""}`} onClick={() => setFlip(!flip)} aria-label={flip ? "Mặt trước" : "Lật thẻ"}>
         <span className="sl-card__front hz">{w.chu_han}</span>
         <span className="sl-card__back">
@@ -53,12 +86,15 @@ export function FlashCards({ words, onDone }) {
       </button>
       <div className="sl-cards__nav">
         <button type="button" className="xc-btn xc-btn--plain xc-btn--sm" disabled={i === 0} onClick={() => { setI(i - 1); setFlip(false); }}>Trước</button>
+        <button type="button" className="xc-btn xc-btn--plain xc-btn--sm" onClick={() => speakWord(w.chu_han)}>
+          <Icon name="audio" size={16} /> Nghe từ
+        </button>
         {i < words.length - 1
           ? <button type="button" className="xc-btn xc-btn--plain xc-btn--sm" onClick={() => { setI(i + 1); setFlip(false); }}>Thẻ sau</button>
           : null}
-        <button type="button" className="xc-btn xc-btn--sm" onClick={onDone}>Làm câu hỏi</button>
+        <button type="button" className="xc-btn xc-btn--sm" onClick={onDone}>{returnLabel}</button>
       </div>
-      <p className="sl-note">Xem thẻ không tốn năng lượng và không tính hoàn thành bài.</p>
+      <p className="sl-note">Xem thẻ không tốn năng lượng — bạn có thể mở lại Thẻ từ bất cứ lúc nào trong bài học.</p>
     </div>
   );
 }

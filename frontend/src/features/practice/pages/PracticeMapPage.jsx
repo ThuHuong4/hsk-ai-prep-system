@@ -4,6 +4,7 @@ import { Link, useNavigate, useParams, useSearchParams } from "react-router-dom"
 import { useRequest } from "../../../shared/api/useRequest.js";
 import Icon from "../../../shared/components/Icon.jsx";
 import { useAuth } from "../../auth/context/AuthContext.jsx";
+import DailyMissions from "../../notebook/components/DailyMissions.jsx";
 import "../../exam_catalog/styles/catalog.css";
 import { getSkillPath, startLesson, startLevelTest, startSkip } from "../api/practiceApi.js";
 import LevelTestCard from "../components/LevelTestCard.jsx";
@@ -87,7 +88,12 @@ export default function PracticeMapPage() {
               </button>
             ))}
           </div>
-          {notice && <p role="alert">{notice}</p>}
+          {notice && (
+            <div style={{ margin: "12px 0 16px" }}>
+              <p role="alert" style={{ marginBottom: "10px" }}>{notice}</p>
+              {/năng lượng/i.test(notice) && <DailyMissions compact onClaimed={() => setNotice("")} />}
+            </div>
+          )}
           {!data.cap_do?.mo ? (
             <>
               <LevelTestCard test={data.kiem_tra_cap} level={data.cap_do} skillLabel={skill.label} busy={busy} onStart={levelTest} />

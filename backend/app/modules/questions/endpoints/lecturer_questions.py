@@ -5,7 +5,17 @@ from sqlalchemy.orm import Session
 
 from app.database.session import get_db
 from app.modules.questions.repositories.list_questions import list_questions
-from app.modules.questions.schemas.question_payload import SKILLS, QuestionIn
+from sqlalchemy import text
+
+from app.modules.questions.schemas.question_payload import SKILLS, AiBatchIn, AiChatIn, AiDraftIn, AiSuggestIn, QuestionIn
+from app.modules.questions.services.ai_draft_service import (
+    AiDraftError,
+    approve_drafts,
+    chat_about_draft,
+    generate_drafts,
+    review_drafts,
+    suggest_plan,
+)
 from app.modules.questions.services.errors import ConflictError, NotFoundError
 from app.modules.questions.services.get_question import get_question_detail
 from app.modules.questions.services.question_rules import QuestionRuleError
@@ -19,6 +29,7 @@ from app.modules.questions.services.save_question import create_question, update
 from app.security.require_lecturer import require_lecturer
 
 router = APIRouter(prefix="/giang-vien/cau-hoi")
+group_router = APIRouter(prefix="/giang-vien/nhom-kien-thuc")
 
 _NOT_FOUND = HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Không tìm thấy câu hỏi")
 
@@ -65,6 +76,49 @@ def get_question(
     return item
 
 
+def _ai(action):
+    try:
+        return action()
+    except AiDraftError as error:
+        raise HTTPException(status_code=error.status_code, detail=error.message)
+
+
+@group_router.get("")
+def get_knowledge_groups(db: Session = Depends(get_db), _lecturer: dict = Depends(require_lecturer)):
+    rows = db.execute(text("SELECT id, ma, ten FROM nhom_kien_thuc WHERE trang_thai = 'hoat_dong' ORDER BY ten")).mappings().all()
+    return {"items": [dict(r) for r in rows]}
+
+
+@router.post("/ai-goi-y")
+def post_ai_suggest(body: AiSuggestIn, db: Session = Depends(get_db), _lecturer: dict = Depends(require_lecturer)):
+    """Hỏi AI nên soạn gì; AI dựa trên số câu thật trong ngân hàng."""
+    return _ai(lambda: suggest_plan(db, body))
+
+
+@router.post("/ai-soan-nhap")
+def post_ai_drafts(body: AiDraftIn, db: Session = Depends(get_db), _lecturer: dict = Depends(require_lecturer)):
+    """AI soạn lô bản nháp + tự soát lỗi; chưa lưu vào CSDL."""
+    return _ai(lambda: generate_drafts(db, body))
+
+
+@router.post("/ai-trao-doi")
+def post_ai_chat(body: AiChatIn, db: Session = Depends(get_db), _lecturer: dict = Depends(require_lecturer)):
+    """Giảng viên trao đổi với AI về một câu nháp; AI chỉ đề xuất bản sửa, không tự thay."""
+    return _ai(lambda: chat_about_draft(db, body))
+
+
+@router.post("/ai-kiem-tra")
+def post_ai_review(body: AiBatchIn, db: Session = Depends(get_db), _lecturer: dict = Depends(require_lecturer)):
+    """AI soát lại các câu sau khi Giảng viên sửa tay."""
+    return _ai(lambda: review_drafts(db, body.cau_hoi))
+
+
+@router.post("/ai-duyet")
+def post_ai_approve(body: AiBatchIn, db: Session = Depends(get_db), lecturer: dict = Depends(require_lecturer)):
+    """Giảng viên duyệt: lưu và đăng từng câu, ghi người duyệt + thời điểm duyệt."""
+    return approve_drafts(db, body.cau_hoi, lecturer["ma_nguoi_dung"])
+
+
 @router.post("", status_code=status.HTTP_201_CREATED)
 def post_question(body: QuestionIn, db: Session = Depends(get_db), lecturer: dict = Depends(require_lecturer)):
     new_id = _run(lambda: create_question(db, body, lecturer["ma_nguoi_dung"]))
@@ -85,8 +139,8 @@ def put_question(
 
 @router.post("/{cau_hoi_id}/dang")
 def post_publish(cau_hoi_id: int = Path(..., ge=1), db: Session = Depends(get_db),
-                 _lecturer: dict = Depends(require_lecturer)):
-    _run(lambda: publish_question(db, cau_hoi_id))
+                 lecturer: dict = Depends(require_lecturer)):
+    _run(lambda: publish_question(db, cau_hoi_id, lecturer["ma_nguoi_dung"]))
     return {"message": "Đã đăng câu hỏi"}
 
 

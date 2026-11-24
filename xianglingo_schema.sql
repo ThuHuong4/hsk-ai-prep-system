@@ -1,7 +1,7 @@
 -- =====================================================================
 -- Xianglingo - CSDL 24 bang (19 bang goc + 5 bang nghiep vu bo sung)
--- Muc chuan hoa: tat ca bang dat toi thieu 3NF; 5 bang moi dat BCNF.
--- Hai diem giu o 3NF / du thua co doi soat co chu dich:
+-- Muc chuan hoa CSDL: Toan bo 24 bang dat chuan 3NF (1NF -> 2NF -> 3NF).
+-- Hai diem thiet ke thuc tiễn o muc 3NF co doi soat toan ven:
 --   1) nguoi_dung.nang_luong: doi soat qua v_doi_soat_nang_luong.
 --   2) cau_tra_loi.cap_tham_do_id: de NULL o cac luot khong phai danh gia dau vao
 --      thay vi tach bang phu 1-1 lam phuc tap truy van.
@@ -21,7 +21,7 @@ USE xianglingo;
 -- NHOM TAI KHOAN (3 bang)
 -- ---------------------------------------------------------------------
 
--- 1. vai_tro (BCNF)
+-- 1. vai_tro (3NF)
 CREATE TABLE vai_tro (
   id   TINYINT UNSIGNED NOT NULL AUTO_INCREMENT,
   ma   VARCHAR(30)  NOT NULL,
@@ -30,7 +30,7 @@ CREATE TABLE vai_tro (
   UNIQUE KEY uq_vai_tro_ma (ma)
 ) ENGINE=InnoDB;
 
--- 4. cap_do (BCNF; tao truoc nguoi_dung vi nguoi_dung tham chieu cap_do)
+-- 4. cap_do (3NF; tao truoc nguoi_dung vi nguoi_dung tham chieu cap_do)
 CREATE TABLE cap_do (
   id               INT UNSIGNED NOT NULL AUTO_INCREMENT,
   ma               VARCHAR(10)  NOT NULL,
@@ -85,12 +85,12 @@ CREATE TABLE nguoi_dung (
   UNIQUE KEY uq_nguoi_dung_email (email),
   UNIQUE KEY uq_nguoi_dung_google (google_sub),
   KEY ix_nguoi_dung_vai_tro (vai_tro_id),
-  CONSTRAINT ck_nguoi_dung_nang_luong CHECK (nang_luong BETWEEN 0 AND 5),
+  CONSTRAINT ck_nguoi_dung_nang_luong CHECK (nang_luong BETWEEN 0 AND 10),
   CONSTRAINT ck_nguoi_dung_phut CHECK (ks_phut_moi_ngay IS NULL OR ks_phut_moi_ngay IN (10,15,30,60)),
   CONSTRAINT ck_nguoi_dung_dang_nhap CHECK (mat_khau_bam IS NOT NULL OR google_sub IS NOT NULL)
 ) ENGINE=InnoDB;
 
--- 3. nhat_ky_quan_tri (BCNF)
+-- 3. nhat_ky_quan_tri (3NF)
 CREATE TABLE nhat_ky_quan_tri (
   id                    BIGINT UNSIGNED NOT NULL AUTO_INCREMENT,
   nguoi_thao_tac_id     BIGINT UNSIGNED NOT NULL,
@@ -113,7 +113,7 @@ CREATE TABLE nhat_ky_quan_tri (
 -- Phien ban: (ma_goc_id, phien_ban) la khoa ung vien. Ban dau tien co ma_goc_id = id.
 -- ---------------------------------------------------------------------
 
--- 20. nhom_kien_thuc (BANG MOI #1 - BCNF: danh muc chuan nhom kien thuc xuyen ky nang)
+-- 20. nhom_kien_thuc (BANG MOI #1 - 3NF: danh muc chuan nhom kien thuc xuyen ky nang)
 CREATE TABLE nhom_kien_thuc (
   id            INT UNSIGNED NOT NULL AUTO_INCREMENT,
   ma            VARCHAR(50)  NOT NULL,
@@ -126,7 +126,7 @@ CREATE TABLE nhom_kien_thuc (
   UNIQUE KEY uq_nhom_kien_thuc_ma (ma)
 ) ENGINE=InnoDB;
 
--- 9. tai_lieu (BCNF)
+-- 9. tai_lieu (3NF)
 CREATE TABLE tai_lieu (
   id            BIGINT UNSIGNED NOT NULL AUTO_INCREMENT,
   ma_goc_id     BIGINT UNSIGNED NOT NULL,
@@ -149,7 +149,7 @@ CREATE TABLE tai_lieu (
   CONSTRAINT ck_tai_lieu_kich_thuoc CHECK (kich_thuoc > 0 AND kich_thuoc <= 20971520)
 ) ENGINE=InnoDB;
 
--- 10. tu_vung (BCNF; chu_han, pinyin phan biet dau thanh -> collation phan biet dau)
+-- 10. tu_vung (3NF; chu_han, pinyin phan biet dau thanh -> collation phan biet dau)
 CREATE TABLE tu_vung (
   id            BIGINT UNSIGNED NOT NULL AUTO_INCREMENT,
   chu_han       VARCHAR(20) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_as_cs NOT NULL,
@@ -229,7 +229,7 @@ CREATE TABLE cau_hoi (
     OR (nguoi_duyet_id IS NOT NULL AND duyet_luc IS NOT NULL))
 ) ENGINE=InnoDB;
 
--- 6. phuong_an (BCNF)
+-- 6. phuong_an (3NF)
 CREATE TABLE phuong_an (
   id               BIGINT UNSIGNED NOT NULL AUTO_INCREMENT,
   cau_hoi_id       BIGINT UNSIGNED NOT NULL,
@@ -288,7 +288,7 @@ CREATE TABLE bo_de (
         AND tep_audio_chung IS NULL AND tep_pdf_goc IS NULL))
 ) ENGINE=InnoDB;
 
--- 8. bo_de_cau_hoi (BCNF)
+-- 8. bo_de_cau_hoi (3NF)
 CREATE TABLE bo_de_cau_hoi (
   bo_de_id      BIGINT UNSIGNED NOT NULL,
   cau_hoi_id    BIGINT UNSIGNED NOT NULL,
@@ -384,7 +384,7 @@ CREATE TABLE cau_tra_loi (
   CONSTRAINT ck_ctl_hoan_luc CHECK ((nang_luong_hoan = 0 AND hoan_luc IS NULL) OR (nang_luong_hoan > 0 AND hoan_luc IS NOT NULL))
 ) ENGINE=InnoDB;
 
--- 13. ket_qua_cham (BCNF; moi lan cham/sua la mot dong; hien hanh = lan lon nhat hoan_tat)
+-- 13. ket_qua_cham (3NF; moi lan cham/sua la mot dong; hien hanh = lan lon nhat hoan_tat)
 -- phien_ban_luu: ghi lai cau_tra_loi.phien_ban_luu tai thoi diem cham de tai su dung diem AI khi thu lai (AT36).
 CREATE TABLE ket_qua_cham (
   id              BIGINT UNSIGNED NOT NULL AUTO_INCREMENT,
@@ -411,7 +411,7 @@ CREATE TABLE ket_qua_cham (
     OR (trang_thai <> 'hoan_tat' AND diem IS NULL))
 ) ENGINE=InnoDB;
 
--- 21. ket_qua_dau_vao (BANG MOI #2 - BCNF: trang thai phan tich AI va ket luan tong quan phien 8 cau)
+-- 21. ket_qua_dau_vao (BANG MOI #2 - 3NF: trang thai phan tich AI va ket luan tong quan phien 8 cau)
 -- Ghi chu: bai on cu the duoc de xuat luu trong bang goi_y_lo_trinh theo luot_lam_id (khong luu trung o day);
 --          viec gioi han du lieu suy ra tu so cau bo_qua / loi_ky_thuat / cap du phong.
 CREATE TABLE ket_qua_dau_vao (
@@ -426,7 +426,7 @@ CREATE TABLE ket_qua_dau_vao (
     hoan_tat_phan_tich_luc IS NULL OR bat_dau_phan_tich_luc IS NOT NULL)
 ) ENGINE=InnoDB;
 
--- 22. nhan_dinh_dau_vao (BANG MOI #3 - BCNF: nhan dinh diem manh / diem yeu theo ky nang va nhom kien thuc)
+-- 22. nhan_dinh_dau_vao (BANG MOI #3 - 3NF: nhan dinh diem manh / diem yeu theo ky nang va nhom kien thuc)
 -- ky_nang de NULL cho nhan xet tong quan khong gan rieng mot ky nang cu the.
 CREATE TABLE nhan_dinh_dau_vao (
   luot_lam_id        BIGINT UNSIGNED NOT NULL,
@@ -439,7 +439,7 @@ CREATE TABLE nhan_dinh_dau_vao (
   CONSTRAINT ck_nddv_thu_tu CHECK (thu_tu >= 1)
 ) ENGINE=InnoDB;
 
--- 23. nhan_dinh_bang_chung (BANG MOI #4 - BCNF: lien ket N-N giua nhan dinh va cau bang chung cung luot)
+-- 23. nhan_dinh_bang_chung (BANG MOI #4 - 3NF: lien ket N-N giua nhan dinh va cau bang chung cung luot)
 -- Khoa ngoai kep bao dam 100% o cap CSDL rang cau bang chung phai thuoc dung luot_lam_id cua nhan dinh (AT37, AT52).
 CREATE TABLE nhan_dinh_bang_chung (
   luot_lam_id       BIGINT UNSIGNED NOT NULL,
@@ -448,7 +448,7 @@ CREATE TABLE nhan_dinh_bang_chung (
   PRIMARY KEY (luot_lam_id, thu_tu_nhan_dinh, thu_tu_cau)
 ) ENGINE=InnoDB;
 
--- 24. lich_su_thay_cau (BANG MOI #5 - BCNF: luu vet doi cau tai cho khi loi ky thuat o AT06, AT33)
+-- 24. lich_su_thay_cau (BANG MOI #5 - 3NF: luu vet doi cau tai cho khi loi ky thuat o AT06, AT33)
 CREATE TABLE lich_su_thay_cau (
   id              BIGINT UNSIGNED NOT NULL AUTO_INCREMENT,
   luot_lam_id     BIGINT UNSIGNED NOT NULL,
@@ -462,7 +462,7 @@ CREATE TABLE lich_su_thay_cau (
   CONSTRAINT ck_lstc_khac_cau CHECK (cau_hoi_cu_id <> cau_hoi_moi_id)
 ) ENGINE=InnoDB;
 
--- 14. so_tay (BCNF)
+-- 14. so_tay (3NF)
 CREATE TABLE so_tay (
   nguoi_dung_id   BIGINT UNSIGNED NOT NULL,
   cau_hoi_goc_id  BIGINT UNSIGNED NOT NULL,
@@ -479,6 +479,7 @@ CREATE TABLE nhat_ky_thuong (
   nguoi_dung_id   BIGINT UNSIGNED NOT NULL,
   luot_lam_id     BIGINT UNSIGNED NULL,
   ly_do           ENUM('khoi_tao','nv_so_tay','nv_on_luyen','nv_thi_thu',
+                       'hoi_ngay','thang_cap_nl','hoi_so_tay','thuong_cuoi_thua',
                        'kn_bai','kn_cuoi_thua','kn_vuot_thua','kn_bat_dau_cap','kn_vuot_chang','kn_cung_co') NOT NULL,
   so_luong        SMALLINT UNSIGNED NOT NULL,
   tao_luc         DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
@@ -504,11 +505,14 @@ CREATE TABLE nhat_ky_thuong (
 ) ENGINE=InnoDB;
 CREATE UNIQUE INDEX uq_nkt_nhiem_vu_ngay
   ON nhat_ky_thuong (nguoi_dung_id, ly_do,
-     ((CASE WHEN ly_do IN ('nv_so_tay','nv_on_luyen','nv_thi_thu') THEN DATE(tao_luc) END)));
+     ((CASE WHEN ly_do IN ('nv_so_tay','nv_on_luyen','nv_thi_thu','hoi_ngay') THEN DATE(tao_luc) END)));
+CREATE UNIQUE INDEX uq_nkt_hoi_luot
+  ON nhat_ky_thuong (nguoi_dung_id, ly_do,
+     ((CASE WHEN ly_do IN ('hoi_so_tay','thuong_cuoi_thua') THEN luot_lam_id END)));
 CREATE UNIQUE INDEX uq_nkt_khoi_tao
   ON nhat_ky_thuong (nguoi_dung_id, ((CASE WHEN ly_do = 'khoi_tao' THEN 1 END)));
 
--- 16. goi_y_lo_trinh (BCNF; dung chung cho de xuat sau Danh gia dau vao va sau Thi thu)
+-- 16. goi_y_lo_trinh (3NF; dung chung cho de xuat sau Danh gia dau vao va sau Thi thu)
 CREATE TABLE goi_y_lo_trinh (
   id                 BIGINT UNSIGNED NOT NULL AUTO_INCREMENT,
   luot_lam_id        BIGINT UNSIGNED NOT NULL,
@@ -530,7 +534,7 @@ CREATE TABLE goi_y_lo_trinh (
 -- NHOM TUONG TAC (3 bang)
 -- ---------------------------------------------------------------------
 
--- 17. hoi_thoai (BCNF; chat chung luu nguoi_dung_id; chat theo cau luu cau_tra_loi_id)
+-- 17. hoi_thoai (3NF; chat chung luu nguoi_dung_id; chat theo cau luu cau_tra_loi_id)
 -- Quy tac: moi cau_tra_loi_id chi co TOI DA MOT cuoc hoi_thoai xuyen suot truoc va sau khi kiem tra
 --          (noi tiep tin nhan vao cuoc hoi thoai hien co, khong xoa de tao cuoc moi).
 CREATE TABLE hoi_thoai (
@@ -547,7 +551,7 @@ CREATE TABLE hoi_thoai (
     OR (nguoi_dung_id IS NULL AND cau_tra_loi_id IS NOT NULL))
 ) ENGINE=InnoDB;
 
--- 18. tin_nhan (BCNF)
+-- 18. tin_nhan (3NF)
 CREATE TABLE tin_nhan (
   id              BIGINT UNSIGNED NOT NULL AUTO_INCREMENT,
   hoi_thoai_id    BIGINT UNSIGNED NOT NULL,
@@ -851,7 +855,10 @@ SELECT n.id AS nguoi_dung_id,
 FROM nguoi_dung n
 LEFT JOIN (SELECT nguoi_dung_id, SUM(so_luong) AS cong
            FROM nhat_ky_thuong
-           WHERE ly_do IN ('khoi_tao','nv_so_tay','nv_on_luyen','nv_thi_thu')
+           WHERE ly_do IN (
+             'khoi_tao','nv_so_tay','nv_on_luyen','nv_thi_thu',
+             'hoi_ngay','thang_cap_nl','hoi_so_tay','thuong_cuoi_thua'
+           )
            GROUP BY nguoi_dung_id) t ON t.nguoi_dung_id = n.id
 LEFT JOIN (SELECT l.nguoi_dung_id,
                   SUM(a.nang_luong_tru) AS tru,

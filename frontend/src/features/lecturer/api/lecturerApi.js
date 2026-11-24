@@ -14,6 +14,18 @@ export const listQuestions = (token, params, signal) =>
   http.get(`/api/giang-vien/cau-hoi${query(params)}`, { token, signal });
 export const getQuestion = (token, id, signal) => http.get(`/api/giang-vien/cau-hoi/${id}`, { token, signal });
 export const createQuestion = (token, body) => http.post("/api/giang-vien/cau-hoi", body, { token });
+// Soạn câu với AI: AI soạn + tự soát lỗi; Giảng viên trao đổi, sửa và duyệt
+// Chất lượng câu hỏi (dữ liệu làm bài thật) và kiểm tra trùng lặp
+export const getItemQuality = (token, params, signal) => http.get(`/api/giang-vien/chat-luong-cau-hoi${query(params)}`, { token, signal });
+export const checkSimilar = (token, body) => http.post("/api/giang-vien/cau-hoi-trung", body, { token });
+// Trợ lý AI của Giảng viên (khung hỏi đáp ở mọi trang)
+export const askLecturerAssistant = (token, body) => http.post("/api/giang-vien/tro-ly-ai", body, { token });
+export const aiSuggestPlan = (token, body) => http.post("/api/giang-vien/cau-hoi/ai-goi-y", body, { token });
+export const aiDraftQuestions = (token, body) => http.post("/api/giang-vien/cau-hoi/ai-soan-nhap", body, { token });
+export const aiChatDraft = (token, body) => http.post("/api/giang-vien/cau-hoi/ai-trao-doi", body, { token });
+export const aiReviewDrafts = (token, items) => http.post("/api/giang-vien/cau-hoi/ai-kiem-tra", { cau_hoi: items }, { token });
+export const aiApproveDrafts = (token, items) => http.post("/api/giang-vien/cau-hoi/ai-duyet", { cau_hoi: items }, { token });
+export const listKnowledgeGroups = (token, signal) => http.get("/api/giang-vien/nhom-kien-thuc", { token, signal });
 export const updateQuestion = (token, id, body) => http.put(`/api/giang-vien/cau-hoi/${id}`, body, { token });
 export const questionAction = (token, id, action) => http.post(`/api/giang-vien/cau-hoi/${id}/${action}`, undefined, { token });
 export const deleteQuestion = (token, id) => http.delete(`/api/giang-vien/cau-hoi/${id}`, { token });
@@ -24,8 +36,37 @@ export const getExam = (token, id, signal) => http.get(`/api/giang-vien/de-thi/$
 export const createExam = (token, body) => http.post("/api/giang-vien/de-thi", body, { token });
 export const updateExam = (token, id, body) => http.put(`/api/giang-vien/de-thi/${id}`, body, { token });
 export const saveExamItems = (token, id, items) => http.put(`/api/giang-vien/de-thi/${id}/cau-hoi`, { cau_hoi: items }, { token });
+export const buildExamListeningTape = (token, id) => http.post(`/api/giang-vien/de-thi/${id}/ghep-bang-nghe`, undefined, { token });
 export const examAction = (token, id, action) => http.post(`/api/giang-vien/de-thi/${id}/${action}`, undefined, { token });
 export const deleteExam = (token, id) => http.delete(`/api/giang-vien/de-thi/${id}`, { token });
+// Ghép đề với AI: AI chọn câu đã duyệt; Giảng viên trao đổi, tạo đề nháp rồi tự Đăng
+export const aiComposeExam = (token, body) => http.post("/api/giang-vien/de-thi/ai-ghep", body, { token });
+export const aiCreateExam = (token, body) => http.post("/api/giang-vien/de-thi/ai-tao", body, { token });
+// Soạn đề mới với AI theo từng phần HSK 2.0 (kèm tạo hình, giọng đọc)
+export const getExamBlueprint = (token, capDoId, signal) =>
+  http.get(`/api/giang-vien/de-thi/ai-cau-truc${query({ cap_do_id: capDoId })}`, { token, signal });
+export const aiGeneratePart = (token, body) => http.post("/api/giang-vien/de-thi/ai-phan/soan", body, { token });
+export const aiChatPart = (token, body) => http.post("/api/giang-vien/de-thi/ai-phan/trao-doi", body, { token });
+export const aiApprovePart = (token, body) => http.post("/api/giang-vien/de-thi/ai-phan/duyet", body, { token });
+export const aiMakeImage = (token, moTa) => http.post("/api/giang-vien/de-thi/ai-tep/hinh", { mo_ta: moTa }, { token });
+// Tạo đề hoàn chỉnh với AI (chạy nền) và duyệt đề
+const JOB = "/api/giang-vien/de-thi/ai-de";
+export const listExamJobs = (token, signal) => http.get(JOB, { token, signal });
+export const createExamJob = (token, body) => http.post(JOB, body, { token });
+export const getExamJob = (token, id, signal) => http.get(`${JOB}/${id}`, { token, signal });
+export const resumeExamJob = (token, id) => http.post(`${JOB}/${id}/chay-tiep`, undefined, { token });
+export const deleteExamJob = (token, id) => http.delete(`${JOB}/${id}`, { token });
+export const markJobItem = (token, id, key, dat) => http.post(`${JOB}/${id}/muc/${key}/dat`, { dat }, { token });
+export const markJobGreen = (token, id, phan, tatCaHopLe = false) =>
+  http.post(`${JOB}/${id}/dat-xanh`, { phan: phan ?? null, tat_ca_hop_le: tatCaHopLe }, { token });
+export const fixJobItem = (token, id, key, tinNhan) => http.post(`${JOB}/${id}/muc/${key}/sua`, { tin_nhan: tinNhan }, { token });
+export const redoJobItem = (token, id, key) => http.post(`${JOB}/${id}/muc/${key}/lam-lai`, undefined, { token });
+export const jobItemFile = (token, id, key, path, duongDan = null) =>
+  http.post(`${JOB}/${id}/muc/${key}/tep`, { path, duong_dan: duongDan }, { token });
+export const assembleJobAudio = (token, id, nghi) => http.post(`${JOB}/${id}/ghep-am-thanh`, { nghi }, { token });
+export const approveExamJob = (token, id, body) => http.post(`${JOB}/${id}/duyet`, body, { token });
+export const aiMakeAudio = (token, capDoId, loiNghe) =>
+  http.post("/api/giang-vien/de-thi/ai-tep/am-thanh", { cap_do_id: capDoId, loi_nghe: loiNghe }, { token });
 
 // Tải tệp: gửi nội dung thô (không multipart); trả { duong_dan }
 export async function uploadMedia(token, kind, file) {

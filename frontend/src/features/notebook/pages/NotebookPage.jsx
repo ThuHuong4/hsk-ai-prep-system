@@ -62,7 +62,7 @@ export default function NotebookPage() {
           <p className="nb-hint">Đúng lần đầu → Chờ ôn lại (hẹn hôm sau). Đúng khi đến hạn → Đã củng cố, +1 KN. Sai → Cần ôn.</p>
           {error && <p role="alert">{error}</p>}
         </div>
-        <DailyMissions compact />
+        <DailyMissions />
       </div>
 
       <nav className="nb-tabs" aria-label="Lọc Sổ tay">

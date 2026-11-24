@@ -1,0 +1,1855 @@
+{
+ "exam": {
+  "code": "H3M10",
+  "level": "HSK3",
+  "ten": "HSK 3 – Đề 10",
+  "phut": 90,
+  "nguon": "Đề mô phỏng biên soạn chuẩn cấu trúc HSK 2.0 (HSK 三级)",
+  "audio": "exams/hsk3_h3m10/listening.mp3"
+ },
+ "plan": [
+  {
+   "part": 1,
+   "group": {
+    "dang": "ngu_lieu",
+    "ky_nang": "nghe",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "phuong_an": [
+     {
+      "tep_hinh": "exams/hsk3_h31003/img/000.jpg",
+      "la_dap_an_dung": false
+     },
+     {
+      "tep_hinh": "exams/hsk3_h31002/img/000.jpg",
+      "la_dap_an_dung": false
+     },
+     {
+      "tep_hinh": "exams/hsk3_h31001/img/g1_A.jpg",
+      "la_dap_an_dung": false
+     },
+     {
+      "tep_hinh": "exams/hsk3_h31002/img/003.jpg",
+      "la_dap_an_dung": false
+     },
+     {
+      "tep_hinh": "exams/hsk3_h31003/img/002.jpg",
+      "la_dap_an_dung": false
+     },
+     {
+      "tep_hinh": "exams/hsk3_h31002/img/004.jpg",
+      "la_dap_an_dung": false
+     }
+    ]
+   },
+   "children": [
+    [
+     {
+      "dang": "chon_bo_chung",
+      "loi_nghe": "男：喂，请问张经理在吗？\n女：他正在开会，您半个小时以后再打，好吗？",
+      "dap_an_thu_tu": 4
+     },
+     true
+    ],
+    [
+     {
+      "dang": "chon_bo_chung",
+      "loi_nghe": "女：张总，这是下个季度的销售计划表，请您过目。\n男：好，打开电脑文档给我详细讲讲。",
+      "dap_an_thu_tu": 3
+     },
+     false
+    ],
+    [
+     {
+      "dang": "chon_bo_chung",
+      "loi_nghe": "男：祝你们新婚快乐，百年好合！\n女：谢谢大家来参加我们的婚礼！",
+      "dap_an_thu_tu": 6
+     },
+     false
+    ],
+    [
+     {
+      "dang": "chon_bo_chung",
+      "loi_nghe": "女：爷爷平时退休在家有什么爱好？\n男：他最爱画花鸟画，每天上午都要画两个小时。",
+      "dap_an_thu_tu": 1
+     },
+     false
+    ],
+    [
+     {
+      "dang": "chon_bo_chung",
+      "loi_nghe": "男：刚游完泳眼睛有点儿不舒服。\n女：先滴两滴眼药水预防一下发炎吧。",
+      "dap_an_thu_tu": 5
+     },
+     false
+    ],
+    [
+     {
+      "dang": "chon_bo_chung",
+      "loi_nghe": "女：妈，我来洗碗吧，您去沙发上歇会儿。\n女：不用，就这几个碗和盘子，两分钟就冲干净了。",
+      "dap_an_thu_tu": 2
+     },
+     false
+    ]
+   ]
+  },
+  {
+   "part": 1,
+   "group": {
+    "dang": "ngu_lieu",
+    "ky_nang": "nghe",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "phuong_an": [
+     {
+      "tep_hinh": "exams/hsk3_h31002/img/008.jpg",
+      "la_dap_an_dung": false
+     },
+     {
+      "tep_hinh": "exams/hsk3_h31003/img/008.jpg",
+      "la_dap_an_dung": false
+     },
+     {
+      "tep_hinh": "exams/hsk3_h31001/img/g6_C.jpg",
+      "la_dap_an_dung": false
+     },
+     {
+      "tep_hinh": "exams/hsk3_h31003/img/010.jpg",
+      "la_dap_an_dung": false
+     },
+     {
+      "tep_hinh": "exams/hsk3_h31002/img/007.jpg",
+      "la_dap_an_dung": false
+     }
+    ]
+   },
+   "children": [
+    [
+     {
+      "dang": "chon_bo_chung",
+      "loi_nghe": "女：喂，陈经理，您已经到上海虹桥机场了吗？\n男：刚取完行李箱出来，正往出租车上车点走呢。",
+      "dap_an_thu_tu": 5
+     },
+     false
+    ],
+    [
+     {
+      "dang": "chon_bo_chung",
+      "loi_nghe": "男：这家的鸡蛋面汤真鲜，你也尝一口！\n女：确实不错，下次我们还来这儿吃。",
+      "dap_an_thu_tu": 2
+     },
+     false
+    ],
+    [
+     {
+      "dang": "chon_bo_chung",
+      "loi_nghe": "男：母亲节快乐！这是我和妹妹一起给您挑的礼物。\n女：真贴心，谢谢我的好孩子们！",
+      "dap_an_thu_tu": 1
+     },
+     false
+    ],
+    [
+     {
+      "dang": "chon_bo_chung",
+      "loi_nghe": "女：做算术题要仔细看清加减号，来，这道题再算一遍。\n男：好的妈妈，我重新算一下。",
+      "dap_an_thu_tu": 3
+     },
+     false
+    ],
+    [
+     {
+      "dang": "chon_bo_chung",
+      "loi_nghe": "男：感冒还没好利索就别去上班了，多躺着休息。\n女：嗯，今天请了一天病假，睡一觉应该就退烧了。",
+      "dap_an_thu_tu": 4
+     },
+     false
+    ]
+   ]
+  },
+  {
+   "part": 2,
+   "ex": true,
+   "q": {
+    "dang": "dung_sai",
+    "ky_nang": "nghe",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "noi_dung": "★ 他希望自己很健康。",
+    "loi_nghe": "为了让自己更健康，他每天都花一个小时去锻炼身体。\n★ 他希望自己很健康。",
+    "phuong_an": [
+     {
+      "noi_dung": "Đúng",
+      "la_dap_an_dung": true
+     },
+     {
+      "noi_dung": "Sai",
+      "la_dap_an_dung": false
+     }
+    ]
+   }
+  },
+  {
+   "part": 2,
+   "ex": true,
+   "q": {
+    "dang": "dung_sai",
+    "ky_nang": "nghe",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "noi_dung": "★ 那块儿手表不是他的。",
+    "loi_nghe": "今天我想早点儿回家。看了看手表，才五点。过了一会儿再看表，还是五点，我这才发现我的手表不走了。\n★ 那块儿手表不是他的。",
+    "phuong_an": [
+     {
+      "noi_dung": "Đúng",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "Sai",
+      "la_dap_an_dung": true
+     }
+    ]
+   }
+  },
+  {
+   "part": 2,
+   "ex": false,
+   "q": {
+    "dang": "dung_sai",
+    "ky_nang": "nghe",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "noi_dung": "★ 他今天骑自行车去上班了。",
+    "loi_nghe": "平时我都坐地铁去上班，今天春光明媚，温度正好，我就扫了一辆共享单车骑去公司，一路上心情特别好。\n★ 他今天骑自行车去上班了。",
+    "phuong_an": [
+     {
+      "noi_dung": "Đúng",
+      "la_dap_an_dung": true
+     },
+     {
+      "noi_dung": "Sai",
+      "la_dap_an_dung": false
+     }
+    ]
+   }
+  },
+  {
+   "part": 2,
+   "ex": false,
+   "q": {
+    "dang": "dung_sai",
+    "ky_nang": "nghe",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "noi_dung": "★ 超市今天没有新鲜牛肉了。",
+    "loi_nghe": "阿姨您来得真巧，这批新鲜牛肉是十分钟前刚送到的，做红烧牛肉或者炖汤都特别棒，给您切两斤？\n★ 超市今天没有新鲜牛肉了。",
+    "phuong_an": [
+     {
+      "noi_dung": "Đúng",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "Sai",
+      "la_dap_an_dung": true
+     }
+    ]
+   }
+  },
+  {
+   "part": 2,
+   "ex": false,
+   "q": {
+    "dang": "dung_sai",
+    "ky_nang": "nghe",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "noi_dung": "★ 妹妹把房间打扫得很干净。",
+    "loi_nghe": "妈妈出差三天回来，推开门一看，地板擦得亮亮的，衣服也叠得整整齐齐，没想到十四岁的妹妹把家里照顾得这么好。\n★ 妹妹把房间打扫得很干净。",
+    "phuong_an": [
+     {
+      "noi_dung": "Đúng",
+      "la_dap_an_dung": true
+     },
+     {
+      "noi_dung": "Sai",
+      "la_dap_an_dung": false
+     }
+    ]
+   }
+  },
+  {
+   "part": 2,
+   "ex": false,
+   "q": {
+    "dang": "dung_sai",
+    "ky_nang": "nghe",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "noi_dung": "★ 音乐会晚上八点开始。",
+    "loi_nghe": "请各位观众注意，今晚的新年民族音乐会将于十九点三十分准时开始，请对号入座并将手机调至静音状态。\n★ 音乐会晚上八点开始。",
+    "phuong_an": [
+     {
+      "noi_dung": "Đúng",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "Sai",
+      "la_dap_an_dung": true
+     }
+    ]
+   }
+  },
+  {
+   "part": 2,
+   "ex": false,
+   "q": {
+    "dang": "dung_sai",
+    "ky_nang": "nghe",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "noi_dung": "★ 小张以前在广州工作过。",
+    "loi_nghe": "听说公司要在广州开分公司，派小张过去负责最合适不过了，他在广州读的大学，后来又在那儿工作了三年，对当地非常熟悉。\n★ 小张以前在广州工作过。",
+    "phuong_an": [
+     {
+      "noi_dung": "Đúng",
+      "la_dap_an_dung": true
+     },
+     {
+      "noi_dung": "Sai",
+      "la_dap_an_dung": false
+     }
+    ]
+   }
+  },
+  {
+   "part": 2,
+   "ex": false,
+   "q": {
+    "dang": "dung_sai",
+    "ky_nang": "nghe",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "noi_dung": "★ 这本书他读了三遍还没懂。",
+    "loi_nghe": "这本介绍中国节日的书用词简单，还配了很多有趣的插图，我一个周末就读完了，里面的内容全都看懂了。\n★ 这本书他读了三遍还没懂。",
+    "phuong_an": [
+     {
+      "noi_dung": "Đúng",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "Sai",
+      "la_dap_an_dung": true
+     }
+    ]
+   }
+  },
+  {
+   "part": 2,
+   "ex": false,
+   "q": {
+    "dang": "dung_sai",
+    "ky_nang": "nghe",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "noi_dung": "★ 山顶上的温度比山下低。",
+    "loi_nghe": "大家准备上山前请把外套拿在手里，虽然现在山脚下有二十多度，但是爬到山顶风很大，温度比山下低七八度呢。\n★ 山顶上的温度比山下低。",
+    "phuong_an": [
+     {
+      "noi_dung": "Đúng",
+      "la_dap_an_dung": true
+     },
+     {
+      "noi_dung": "Sai",
+      "la_dap_an_dung": false
+     }
+    ]
+   }
+  },
+  {
+   "part": 2,
+   "ex": false,
+   "q": {
+    "dang": "dung_sai",
+    "ky_nang": "nghe",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "noi_dung": "★ 他忘了给植物浇水。",
+    "loi_nghe": "这盆绿萝长得真茂盛！我每个星期三和星期天都会按时给它浇一点儿水，偶尔还擦擦叶子上的灰尘。\n★ 他忘了给植物浇水。",
+    "phuong_an": [
+     {
+      "noi_dung": "Đúng",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "Sai",
+      "la_dap_an_dung": true
+     }
+    ]
+   }
+  },
+  {
+   "part": 2,
+   "ex": false,
+   "q": {
+    "dang": "dung_sai",
+    "ky_nang": "nghe",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "noi_dung": "★ 爷爷戴上新助听器听得更清楚了。",
+    "loi_nghe": "以前跟爷爷说话总得提高嗓门大声喊，上星期爸爸带他去医院配了一个小小的助听器，现在正常声音说话他都能听得清清楚楚。\n★ 爷爷戴上新助听器听得更清楚了。",
+    "phuong_an": [
+     {
+      "noi_dung": "Đúng",
+      "la_dap_an_dung": true
+     },
+     {
+      "noi_dung": "Sai",
+      "la_dap_an_dung": false
+     }
+    ]
+   }
+  },
+  {
+   "part": 2,
+   "ex": false,
+   "q": {
+    "dang": "dung_sai",
+    "ky_nang": "nghe",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "noi_dung": "★ 他们打算在饭店吃年夜饭。",
+    "loi_nghe": "往年除夕我们有时会去饭店吃年夜饭，今年大家商量好了，全家人一起在家里动手做菜、包饺子，一边看春晚一边守岁，更有过年的味道。\n★ 他们打算在饭店吃年夜饭。",
+    "phuong_an": [
+     {
+      "noi_dung": "Đúng",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "Sai",
+      "la_dap_an_dung": true
+     }
+    ]
+   }
+  },
+  {
+   "part": 3,
+   "ex": true,
+   "q": {
+    "dang": "chon_mot",
+    "ky_nang": "nghe",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "loi_nghe": "男：小王，帮我开一下门，好吗？谢谢！\n女：没问题。您去超市了？买了这么多东西。\n问：男的想让小王做什么？",
+    "phuong_an": [
+     {
+      "noi_dung": "开门",
+      "la_dap_an_dung": true
+     },
+     {
+      "noi_dung": "拿东西",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "去超市买东西",
+      "la_dap_an_dung": false
+     }
+    ]
+   }
+  },
+  {
+   "part": 3,
+   "ex": false,
+   "q": {
+    "dang": "chon_mot",
+    "ky_nang": "nghe",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "loi_nghe": "男：师傅，我这块机械表每天都要慢五分钟，能调一下吗？\n女：打开后盖洗一下油、调一下摆轮就好了，明天来拿吧。\n问：男的来这儿做什么？",
+    "phuong_an": [
+     {
+      "noi_dung": "买眼镜",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "修手表",
+      "la_dap_an_dung": true
+     },
+     {
+      "noi_dung": "配钥匙",
+      "la_dap_an_dung": false
+     }
+    ]
+   }
+  },
+  {
+   "part": 3,
+   "ex": false,
+   "q": {
+    "dang": "chon_mot",
+    "ky_nang": "nghe",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "loi_nghe": "女：晒在阳台上的被子干了吗？\n男：今天太阳这么足，晒了一天早干透了，暖烘烘的。\n问：今天天气怎么样？",
+    "phuong_an": [
+     {
+      "noi_dung": "晴天",
+      "la_dap_an_dung": true
+     },
+     {
+      "noi_dung": "阴天",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "小雨",
+      "la_dap_an_dung": false
+     }
+    ]
+   }
+  },
+  {
+   "part": 3,
+   "ex": false,
+   "q": {
+    "dang": "chon_mot",
+    "ky_nang": "nghe",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "loi_nghe": "男：一碗牛肉面二十二元，加一个卤蛋三元，再要一瓶酸奶五元。\n女：好的，一共三十元，请这边扫码。\n问：男的一共花了多少钱？",
+    "phuong_an": [
+     {
+      "noi_dung": "18元",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "25元",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "30元",
+      "la_dap_an_dung": true
+     }
+    ]
+   }
+  },
+  {
+   "part": 3,
+   "ex": false,
+   "q": {
+    "dang": "chon_mot",
+    "ky_nang": "nghe",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "loi_nghe": "女：列车进站了，先让下车的乘客下来我们再往里走。\n男：好，抓紧扶手，坐三站就换乘十号线。\n问：说话人现在在哪儿？",
+    "phuong_an": [
+     {
+      "noi_dung": "书房",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "地铁站",
+      "la_dap_an_dung": true
+     },
+     {
+      "noi_dung": "游泳馆",
+      "la_dap_an_dung": false
+     }
+    ]
+   }
+  },
+  {
+   "part": 3,
+   "ex": false,
+   "q": {
+    "dang": "chon_mot",
+    "ky_nang": "nghe",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "loi_nghe": "男：你脖子上这条真丝丝巾花色真雅致！\n女：这是我姐去苏州出差的时候特意给我带回来的礼物。\n问：丝巾是谁送给女的的？",
+    "phuong_an": [
+     {
+      "noi_dung": "姐姐",
+      "la_dap_an_dung": true
+     },
+     {
+      "noi_dung": "同事",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "房东",
+      "la_dap_an_dung": false
+     }
+    ]
+   }
+  },
+  {
+   "part": 3,
+   "ex": false,
+   "q": {
+    "dang": "chon_mot",
+    "ky_nang": "nghe",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "loi_nghe": "女：第一次尝正宗的北京炸酱面，觉得合胃口吗？\n男：太地道了！黄瓜丝和豆芽菜拌在一起又香又清爽，我还想再来半碗！\n问：男的觉得炸酱面怎么样？",
+    "phuong_an": [
+     {
+      "noi_dung": "太油腻",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "太咸了",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "非常地道",
+      "la_dap_an_dung": true
+     }
+    ]
+   }
+  },
+  {
+   "part": 3,
+   "ex": false,
+   "q": {
+    "dang": "chon_mot",
+    "ky_nang": "nghe",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "loi_nghe": "男：校医院早上八点开门挂号吗？\n女：八点开始挂号，医生八点二十分正式看诊。\n问：医生几点开始看病？",
+    "phuong_an": [
+     {
+      "noi_dung": "8点",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "8点20分",
+      "la_dap_an_dung": true
+     },
+     {
+      "noi_dung": "8点40分",
+      "la_dap_an_dung": false
+     }
+    ]
+   }
+  },
+  {
+   "part": 3,
+   "ex": false,
+   "q": {
+    "dang": "chon_mot",
+    "ky_nang": "nghe",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "loi_nghe": "女：这个星期在食堂怎么一直没碰到老刘？\n男：他上周末跟儿子踢球不小心把小腿拉伤了，请了一周假在家休养呢。\n问：老刘这周为什么没来上班？",
+    "phuong_an": [
+     {
+      "noi_dung": "腿受伤了",
+      "la_dap_an_dung": true
+     },
+     {
+      "noi_dung": "出差去了",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "调去别的部门了",
+      "la_dap_an_dung": false
+     }
+    ]
+   }
+  },
+  {
+   "part": 3,
+   "ex": false,
+   "q": {
+    "dang": "chon_mot",
+    "ky_nang": "nghe",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "loi_nghe": "男：你周末上午去文化馆报了什么兴趣班？\n女：报了个毛笔书法班，跟着老师从楷书练起，写字的时候心特别静。\n问：女的周末去学什么？",
+    "phuong_an": [
+     {
+      "noi_dung": "学英语",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "练书法",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "学做甜点",
+      "la_dap_an_dung": true
+     }
+    ]
+   }
+  },
+  {
+   "part": 3,
+   "ex": false,
+   "q": {
+    "dang": "chon_mot",
+    "ky_nang": "nghe",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "loi_nghe": "女：哎呀，菜都下锅了才发现酱油瓶空了！\n男：别急，你先把火关小，我跑去楼下便利店买一瓶，三分钟就回来！\n问：男的马上要去做什么？",
+    "phuong_an": [
+     {
+      "noi_dung": "关掉电视",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "去买酱油",
+      "la_dap_an_dung": true
+     },
+     {
+      "noi_dung": "接电话",
+      "la_dap_an_dung": false
+     }
+    ]
+   }
+  },
+  {
+   "part": 4,
+   "ex": true,
+   "q": {
+    "dang": "chon_mot",
+    "ky_nang": "nghe",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "loi_nghe": "女：晚饭做好了，准备吃饭了。\n男：等一会儿，比赛还有三分钟就结束了。\n女：快点儿吧，一起吃，菜冷了就不好吃了。\n男：你先吃，我马上就看完了。\n问：男的在做什么？",
+    "phuong_an": [
+     {
+      "noi_dung": "洗澡",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "吃饭",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "看电视",
+      "la_dap_an_dung": true
+     }
+    ]
+   }
+  },
+  {
+   "part": 4,
+   "ex": false,
+   "q": {
+    "dang": "chon_mot",
+    "ky_nang": "nghe",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "loi_nghe": "女：儿子最近看电视老爱往前凑，还总揉眼睛。\n男：是不是上学期网课上多了，有点儿近视了？\n女：有可能，趁着这周六不上课，我先在网上挂个儿童医院眼科的号。\n男：对，早点儿去查查视力，平时也要盯紧他写作业的姿势。\n问：他们周六打算带儿子去做什么？",
+    "phuong_an": [
+     {
+      "noi_dung": "买新手机",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "办健身卡",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "去眼科检查",
+      "la_dap_an_dung": true
+     }
+    ]
+   }
+  },
+  {
+   "part": 4,
+   "ex": false,
+   "q": {
+    "dang": "chon_mot",
+    "ky_nang": "nghe",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "loi_nghe": "男：您好，我是刚才坐您车在东方广场下车的乘客。\n女：哦，我想起来了，您是不是有东西落在后排座位上了？\n男：对对！一个棕色的皮公文包，里面有合同和笔记本。\n女：我刚拉客回头看到收起来了，您别急，我现在掉头给您送回东方广场北门！\n问：男的把什么落在出租车上了？",
+    "phuong_an": [
+     {
+      "noi_dung": "棕色皮包",
+      "la_dap_an_dung": true
+     },
+     {
+      "noi_dung": "黑色雨伞",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "银色水壶",
+      "la_dap_an_dung": false
+     }
+    ]
+   }
+  },
+  {
+   "part": 4,
+   "ex": false,
+   "q": {
+    "dang": "chon_mot",
+    "ky_nang": "nghe",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "loi_nghe": "女：你好，我想预订本周四晚上六点半的一个八人包间。\n男：女士您好，真不巧，周四晚上的包间已经全订满了。\n女：那大厅还有八人桌吗？\n男：有的，靠窗有一张很宽敞的八人圆桌，帮您留这张吧。\n问：女的订的是哪天晚上的座位？",
+    "phuong_an": [
+     {
+      "noi_dung": "周二",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "周四",
+      "la_dap_an_dung": true
+     },
+     {
+      "noi_dung": "周六",
+      "la_dap_an_dung": false
+     }
+    ]
+   }
+  },
+  {
+   "part": 4,
+   "ex": false,
+   "q": {
+    "dang": "chon_mot",
+    "ky_nang": "nghe",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "loi_nghe": "男：明天公司去密云水库团建，我们可以自己开车去吗？\n女：行政部通知说为了安全和环保，大家统一在公司楼下坐旅游大巴出发。\n男：几点发车呢？\n女：早上八点整发车，路上大概一个半小时。\n问：他们明天怎么去团建地点？",
+    "phuong_an": [
+     {
+      "noi_dung": "坐大巴车",
+      "la_dap_an_dung": true
+     },
+     {
+      "noi_dung": "自己开车",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "骑自行车",
+      "la_dap_an_dung": false
+     }
+    ]
+   }
+  },
+  {
+   "part": 4,
+   "ex": false,
+   "q": {
+    "dang": "chon_mot",
+    "ky_nang": "nghe",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "loi_nghe": "女：请问儿童羽毛球培训班怎么收费？\n男：单次报名是一百五十元一节课。\n女：如果一次报十节课有优惠吗？\n男：报十节课打八折，平均每节课一百二十元，上两节课算下来只要两百四十元。\n问：报十节课的话，平均两节课多少钱？",
+    "phuong_an": [
+     {
+      "noi_dung": "150元",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "200元",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "240元",
+      "la_dap_an_dung": true
+     }
+    ]
+   }
+  },
+  {
+   "part": 4,
+   "ex": false,
+   "q": {
+    "dang": "chon_mot",
+    "ky_nang": "nghe",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "loi_nghe": "男：今年寒假你们一家打算去南方暖和的地方过年吗？\n女：往年都去厦门或者云南，今年女儿非要去看真正的冰灯和大雪。\n男：那去哈尔滨最合适了，冰雪大世界漂亮极了！\n女：对，机票和厚羽绒服我们都已经买好了！\n问：他们今年寒假要去哪儿旅游？",
+    "phuong_an": [
+     {
+      "noi_dung": "云南",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "哈尔滨",
+      "la_dap_an_dung": true
+     },
+     {
+      "noi_dung": "厦门",
+      "la_dap_an_dung": false
+     }
+    ]
+   }
+  },
+  {
+   "part": 4,
+   "ex": false,
+   "q": {
+    "dang": "chon_mot",
+    "ky_nang": "nghe",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "loi_nghe": "女：赵老师，我读中文文章都能看懂，可是一写句子总是想不起汉字怎么写。\n男：这是因为现在大家用电脑和手机打字太多，手写得太少了。\n女：那我该怎么练习呢？\n男：每天挑十个学过的重点词，听着录音在本子上默写一遍，坚持一个月效果就会很明显。\n问：赵老师给女的什么学习建议？",
+    "phuong_an": [
+     {
+      "noi_dung": "多练习听写",
+      "la_dap_an_dung": true
+     },
+     {
+      "noi_dung": "每天背二十页词典",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "只看英文电影",
+      "la_dap_an_dung": false
+     }
+    ]
+   }
+  },
+  {
+   "part": 4,
+   "ex": false,
+   "q": {
+    "dang": "chon_mot",
+    "ky_nang": "nghe",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "loi_nghe": "男：丫头，快过来帮爷爷看看，手机上的字怎么突然变得这么小？\n女：爷爷，您不小心碰到缩放设置了，我帮您调成大号字体。\n男：哎，这回看新闻清楚多了，还是我孙女懂得多！\n女：以后手机有什么不会用的随时问我。\n问：说话人是什么关系？",
+    "phuong_an": [
+     {
+      "noi_dung": "同事",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "房东和租客",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "爷孙",
+      "la_dap_an_dung": true
+     }
+    ]
+   }
+  },
+  {
+   "part": 4,
+   "ex": false,
+   "q": {
+    "dang": "chon_mot",
+    "ky_nang": "nghe",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "loi_nghe": "女：咦，上个月你这盆茉莉花叶子还黄黄的，现在怎么开了这么多白花，真香啊！\n男：之前我一直把它放在书房角落里，不见阳光。\n女：后来怎么养好的？\n男：听花店老板的话，把它搬到南面阳台上晒太阳，土干了再浇水，没半个月就缓过来了。\n问：男的怎么做才让茉莉花开花的？",
+    "phuong_an": [
+     {
+      "noi_dung": "换了个新花盆",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "放到阳台上晒太阳了",
+      "la_dap_an_dung": true
+     },
+     {
+      "noi_dung": "每天浇三次水",
+      "la_dap_an_dung": false
+     }
+    ]
+   }
+  },
+  {
+   "part": 4,
+   "ex": false,
+   "q": {
+    "dang": "chon_mot",
+    "ky_nang": "nghe",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "loi_nghe": "男：李老师，今天是教师节，全班同学祝您节日快乐！\n女：呀，黑板上画了这么好看的画，讲台上还有贺卡，你们什么时候准备的？\n男：我们今天早上七点就悄悄来教室布置了！\n女：太谢谢孩子们了，这是我收到的最珍贵的礼物！\n问：李老师看到教室里的布置心情怎么样？",
+    "phuong_an": [
+     {
+      "noi_dung": "很感动",
+      "la_dap_an_dung": true
+     },
+     {
+      "noi_dung": "很生气",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "觉得太吵",
+      "la_dap_an_dung": false
+     }
+    ]
+   }
+  },
+  {
+   "part": 5,
+   "group": {
+    "dang": "ngu_lieu",
+    "ky_nang": "doc",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "phuong_an": [
+     {
+      "noi_dung": "放心吧，我已经把重要的照片都备份到移动硬盘里了。",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "那双鞋底太硬了，走远路脚会疼的。",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "挺习惯的，食堂二楼就有北方风味的面食窗口。",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "可能是空调滤网积灰太多了，拆下来洗洗就好。",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "当然。我们先坐公共汽车，然后换地铁。",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "今天周六不限行，开车去动物园更方便。",
+      "la_dap_an_dung": false
+     }
+    ]
+   },
+   "children": [
+    [
+     {
+      "dang": "chon_bo_chung",
+      "noi_dung": "你知道怎么去那儿吗？",
+      "dap_an_thu_tu": 5
+     },
+     true
+    ],
+    [
+     {
+      "dang": "chon_bo_chung",
+      "noi_dung": "儿子，去南方上大学这一个多月，吃得还习惯吗？",
+      "dap_an_thu_tu": 3
+     },
+     false
+    ],
+    [
+     {
+      "dang": "chon_bo_chung",
+      "noi_dung": "修电脑之前最好先把里面的文件存一下。",
+      "dap_an_thu_tu": 1
+     },
+     false
+    ],
+    [
+     {
+      "dang": "chon_bo_chung",
+      "noi_dung": "明天去逛植物园，我穿这双新买的皮鞋怎么样？",
+      "dap_an_thu_tu": 2
+     },
+     false
+    ],
+    [
+     {
+      "dang": "chon_bo_chung",
+      "noi_dung": "我们明天带老人孩子出门，坐公交还是自己开车？",
+      "dap_an_thu_tu": 6
+     },
+     false
+    ],
+    [
+     {
+      "dang": "chon_bo_chung",
+      "noi_dung": "奇怪，卧室的空调开了半天怎么风这么小？",
+      "dap_an_thu_tu": 4
+     },
+     false
+    ]
+   ]
+  },
+  {
+   "part": 5,
+   "group": {
+    "dang": "ngu_lieu",
+    "ky_nang": "doc",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "phuong_an": [
+     {
+      "noi_dung": "不客气，下次你想借什么书尽管跟我说。",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "在三号航站楼，千万别走错了。",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "少放点儿油，出锅前撒一把蒜末最香。",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "已经退烧了，医生让在家再观察一天。",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "七点半开始检票，我们七点到车站就行。",
+      "la_dap_an_dung": false
+     }
+    ]
+   },
+   "children": [
+    [
+     {
+      "dang": "chon_bo_chung",
+      "noi_dung": "每次你炒的青菜都又绿又好吃，有什么窍门吗？",
+      "dap_an_thu_tu": 3
+     },
+     false
+    ],
+    [
+     {
+      "dang": "chon_bo_chung",
+      "noi_dung": "明天去成都的那趟航班在哪个航站楼登机？",
+      "dap_an_thu_tu": 2
+     },
+     false
+    ],
+    [
+     {
+      "dang": "chon_bo_chung",
+      "noi_dung": "这本小说真好看，谢谢你借给我读！",
+      "dap_an_thu_tu": 1
+     },
+     false
+    ],
+    [
+     {
+      "dang": "chon_bo_chung",
+      "noi_dung": "听说小宝昨天夜里发烧了，今天好点儿了吗？",
+      "dap_an_thu_tu": 4
+     },
+     false
+    ],
+    [
+     {
+      "dang": "chon_bo_chung",
+      "noi_dung": "明早去西安的高铁几点开始检票？",
+      "dap_an_thu_tu": 5
+     },
+     false
+    ]
+   ]
+  },
+  {
+   "part": 6,
+   "group": {
+    "dang": "ngu_lieu",
+    "ky_nang": "doc",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "phuong_an": [
+     {
+      "noi_dung": "节日",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "办法",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "年轻",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "准时",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "声音",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "要求",
+      "la_dap_an_dung": false
+     }
+    ]
+   },
+   "children": [
+    [
+     {
+      "dang": "chon_bo_chung",
+      "noi_dung": "她说话的（　）多好听啊！",
+      "dap_an_thu_tu": 5
+     },
+     true
+    ],
+    [
+     {
+      "dang": "chon_bo_chung",
+      "noi_dung": "德国人以守时著称，参加约会或会议都会非常（　）。",
+      "dap_an_thu_tu": 4
+     },
+     false
+    ],
+    [
+     {
+      "dang": "chon_bo_chung",
+      "noi_dung": "王老师对学生的作业（　）很严格，写得乱的一定要重写。",
+      "dap_an_thu_tu": 6
+     },
+     false
+    ],
+    [
+     {
+      "dang": "chon_bo_chung",
+      "noi_dung": "妈妈穿这件浅粉色毛衣显得特别（　），一点儿也不像五十岁的人。",
+      "dap_an_thu_tu": 3
+     },
+     false
+    ],
+    [
+     {
+      "dang": "chon_bo_chung",
+      "noi_dung": "只要肯动脑筋，总能想出解决困难的好（　）。",
+      "dap_an_thu_tu": 2
+     },
+     false
+    ],
+    [
+     {
+      "dang": "chon_bo_chung",
+      "noi_dung": "端午节吃粽子、赛龙舟，是中国两千多年来的传统（　）习俗。",
+      "dap_an_thu_tu": 1
+     },
+     false
+    ]
+   ]
+  },
+  {
+   "part": 6,
+   "group": {
+    "dang": "ngu_lieu",
+    "ky_nang": "doc",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "phuong_an": [
+     {
+      "noi_dung": "决定",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "放心",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "疼",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "爱好",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "一共",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "还",
+      "la_dap_an_dung": false
+     }
+    ]
+   },
+   "children": [
+    [
+     {
+      "dang": "chon_bo_chung",
+      "noi_dung": "A：你有什么（　）？\nB：我喜欢体育。",
+      "dap_an_thu_tu": 4
+     },
+     true
+    ],
+    [
+     {
+      "dang": "chon_bo_chung",
+      "noi_dung": "A：你怎么走路一瘸一拐的？\nB：昨天打篮球跳下来扭了一下，右脚腕有点儿（　）。",
+      "dap_an_thu_tu": 3
+     },
+     false
+    ],
+    [
+     {
+      "dang": "chon_bo_chung",
+      "noi_dung": "A：你去哪儿？外面快下雨了。\nB：我去图书馆把这两本到期的杂志（　）了就回来。",
+      "dap_an_thu_tu": 6
+     },
+     false
+    ],
+    [
+     {
+      "dang": "chon_bo_chung",
+      "noi_dung": "A：毕业后去哪座城市发展，你考虑好了吗？\nB：跟家人商量后，我（　）留在北京找工作。",
+      "dap_an_thu_tu": 1
+     },
+     false
+    ],
+    [
+     {
+      "dang": "chon_bo_chung",
+      "noi_dung": "A：这几袋苹果和梨有多重？\nB：我刚称过，（　）六公斤。",
+      "dap_an_thu_tu": 5
+     },
+     false
+    ],
+    [
+     {
+      "dang": "chon_bo_chung",
+      "noi_dung": "A：爸妈，我已经安全到达学校宿舍了。\nB：好，接到你的电话我们就（　）了。",
+      "dap_an_thu_tu": 2
+     },
+     false
+    ]
+   ]
+  },
+  {
+   "part": 7,
+   "ex": true,
+   "q": {
+    "dang": "chon_mot",
+    "ky_nang": "doc",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "noi_dung": "您是来参加今天会议的吗？您来早了一点儿，现在才八点半。您先进来坐吧。\n★ 会议最可能几点开始？",
+    "phuong_an": [
+     {
+      "noi_dung": "8点",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "8点半",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "9点",
+      "la_dap_an_dung": true
+     }
+    ]
+   }
+  },
+  {
+   "part": 7,
+   "ex": false,
+   "q": {
+    "dang": "chon_mot",
+    "ky_nang": "doc",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "noi_dung": "不管是跑步、踢球还是游泳，在正式开始剧烈运动之前，都应该先花五到十分钟活动一下手腕、脚腕和膝盖，让身体慢慢热起来，这样可以有效避免运动受伤。\n★ 剧烈运动前应该先做什么？",
+    "phuong_an": [
+     {
+      "noi_dung": "先热身运动",
+      "la_dap_an_dung": true
+     },
+     {
+      "noi_dung": "喝一大瓶冰水",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "马上跳进深水区",
+      "la_dap_an_dung": false
+     }
+    ]
+   }
+  },
+  {
+   "part": 7,
+   "ex": false,
+   "q": {
+    "dang": "chon_mot",
+    "ky_nang": "doc",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "noi_dung": "市中心有一家特别的书店，到了夜里十二点依然灯火通明。这是一家二十四小时营业的书店，不管多晚，只要你想找个安静的角落看书，推开门总有一盏温暖的灯为你亮着。\n★ 这家书店有什么特别之处？",
+    "phuong_an": [
+     {
+      "noi_dung": "很贵",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "只卖外国书",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "24小时不关门",
+      "la_dap_an_dung": true
+     }
+    ]
+   }
+  },
+  {
+   "part": 7,
+   "ex": false,
+   "q": {
+    "dang": "chon_mot",
+    "ky_nang": "doc",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "noi_dung": "本来我每天八点半出门，九点整就能到公司。今天路上修路改道，多绕了十五分钟，到办公室打卡的时候已经九点一刻了。\n★ 他今天几点到的办公室？",
+    "phuong_an": [
+     {
+      "noi_dung": "9点",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "9点15分",
+      "la_dap_an_dung": true
+     },
+     {
+      "noi_dung": "9点30分",
+      "la_dap_an_dung": false
+     }
+    ]
+   }
+  },
+  {
+   "part": 7,
+   "ex": false,
+   "q": {
+    "dang": "chon_mot",
+    "ky_nang": "doc",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "noi_dung": "奶奶生活特别节约，平时洗菜、淘米用过的水她从来不直接倒掉，而是接在一个大塑料桶里，留着用来浇阳台上的花草或者冲拖把，一年下来能省不少水。\n★ 奶奶平时怎样节约用水？",
+    "phuong_an": [
+     {
+      "noi_dung": "用淘米水浇花",
+      "la_dap_an_dung": true
+     },
+     {
+      "noi_dung": "把洗菜水直接倒掉",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "每天洗三次车",
+      "la_dap_an_dung": false
+     }
+    ]
+   }
+  },
+  {
+   "part": 7,
+   "ex": false,
+   "q": {
+    "dang": "chon_mot",
+    "ky_nang": "doc",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "noi_dung": "父母年纪大了以后，其实并不在乎儿女给他们买多贵的营养品或者新衣服。周末抽空回趟家，陪他们吃顿家常便饭，听他们聊聊过去的故事，才是老人们最盼望的事。\n★ 老人们最盼望儿女做什么？",
+    "phuong_an": [
+     {
+      "noi_dung": "买新衣服",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "看电影",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "陪伴聊天",
+      "la_dap_an_dung": true
+     }
+    ]
+   }
+  },
+  {
+   "part": 7,
+   "ex": false,
+   "q": {
+    "dang": "chon_mot",
+    "ky_nang": "doc",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "noi_dung": "这次学校接待外国代表团，大二学生林林担任志愿者。因为她提前一个星期就把校园里每座建筑的历史、中英文名称都背得滚瓜烂熟，介绍起来自然大方，受到了代表团的一致称赞。\n★ 林林为什么能把接待工作做得这么好？",
+    "phuong_an": [
+     {
+      "noi_dung": "不爱说话",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "准备得非常充分",
+      "la_dap_an_dung": true
+     },
+     {
+      "noi_dung": "以前做过导游",
+      "la_dap_an_dung": false
+     }
+    ]
+   }
+  },
+  {
+   "part": 7,
+   "ex": false,
+   "q": {
+    "dang": "chon_mot",
+    "ky_nang": "doc",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "noi_dung": "寄往外省的普通包裹一般三到四天送达，生鲜水果建议选择航空特快专递，第二天中午前就能送到收件人手中。请不要在包裹内夹寄易燃物品及现金。\n★ 这段提示最可能出现在哪里？",
+    "phuong_an": [
+     {
+      "noi_dung": "邮局",
+      "la_dap_an_dung": true
+     },
+     {
+      "noi_dung": "药店",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "洗衣店",
+      "la_dap_an_dung": false
+     }
+    ]
+   }
+  },
+  {
+   "part": 7,
+   "ex": false,
+   "q": {
+    "dang": "chon_mot",
+    "ky_nang": "doc",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "noi_dung": "第一次学烤面包的时候，我以为把烤箱温度调高一点儿就能快点儿烤熟，结果十分钟后闻到一股糊味，打开一看，面包表面已经烤黑了，里面却还没熟。\n★ 他第一次烤面包为什么失败了？",
+    "phuong_an": [
+     {
+      "noi_dung": "太咸了",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "没放糖",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "火太大烤焦了",
+      "la_dap_an_dung": true
+     }
+    ]
+   }
+  },
+  {
+   "part": 7,
+   "ex": false,
+   "q": {
+    "dang": "chon_mot",
+    "ky_nang": "doc",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "noi_dung": "根据规定，新购买的家电产品如果出现质量问题，七天之内可以无理由退货，十四天之内可以免费更换同型号的新机，一年之内享受免费上门维修服务。\n★ 购买家电多少天内出现质量问题可以免费换新？",
+    "phuong_an": [
+     {
+      "noi_dung": "10天",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "14天",
+      "la_dap_an_dung": true
+     },
+     {
+      "noi_dung": "30天",
+      "la_dap_an_dung": false
+     }
+    ]
+   }
+  },
+  {
+   "part": 7,
+   "ex": false,
+   "q": {
+    "dang": "chon_mot",
+    "ky_nang": "doc",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "noi_dung": "跟室友合租房子，每个人的作息时间和生活习惯难免会有不同。早起的人动作轻一点儿，晚睡的人戴上耳机关好灯，遇到小问题坦诚沟通、互相体谅，大家就能相处得很愉快。\n★ 合租房子怎样才能相处愉快？",
+    "phuong_an": [
+     {
+      "noi_dung": "互相理解体谅",
+      "la_dap_an_dung": true
+     },
+     {
+      "noi_dung": "不住在一起",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "每天一起买菜",
+      "la_dap_an_dung": false
+     }
+    ]
+   }
+  },
+  {
+   "part": 8,
+   "ex": true,
+   "q": {
+    "dang": "sap_xep",
+    "ky_nang": "viet",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "noi_dung": "完成句子。",
+    "phuong_an": [
+     {
+      "noi_dung": "小船"
+     },
+     {
+      "noi_dung": "上"
+     },
+     {
+      "noi_dung": "一"
+     },
+     {
+      "noi_dung": "河"
+     },
+     {
+      "noi_dung": "条"
+     },
+     {
+      "noi_dung": "有"
+     }
+    ],
+    "dap_an_chap_nhan": [
+     "河上有一条小船。"
+    ]
+   }
+  },
+  {
+   "part": 8,
+   "ex": false,
+   "q": {
+    "dang": "sap_xep",
+    "ky_nang": "viet",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "noi_dung": "完成句子。",
+    "phuong_an": [
+     {
+      "noi_dung": "把"
+     },
+     {
+      "noi_dung": "擦得"
+     },
+     {
+      "noi_dung": "同学们"
+     },
+     {
+      "noi_dung": "干干净净"
+     },
+     {
+      "noi_dung": "黑板"
+     }
+    ],
+    "dap_an_chap_nhan": [
+     "同学们把黑板擦得干干净净。"
+    ]
+   }
+  },
+  {
+   "part": 8,
+   "ex": false,
+   "q": {
+    "dang": "sap_xep",
+    "ky_nang": "viet",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "noi_dung": "完成句子。",
+    "phuong_an": [
+     {
+      "noi_dung": "比"
+     },
+     {
+      "noi_dung": "弟弟跑得"
+     },
+     {
+      "noi_dung": "快多了"
+     },
+     {
+      "noi_dung": "以前"
+     }
+    ],
+    "dap_an_chap_nhan": [
+     "弟弟跑得比以前快多了。"
+    ]
+   }
+  },
+  {
+   "part": 8,
+   "ex": false,
+   "q": {
+    "dang": "sap_xep",
+    "ky_nang": "viet",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "noi_dung": "完成句子。",
+    "phuong_an": [
+     {
+      "noi_dung": "对"
+     },
+     {
+      "noi_dung": "这本书"
+     },
+     {
+      "noi_dung": "很有帮助"
+     },
+     {
+      "noi_dung": "提高阅读能力"
+     }
+    ],
+    "dap_an_chap_nhan": [
+     "这本书对提高阅读能力很有帮助。"
+    ]
+   }
+  },
+  {
+   "part": 8,
+   "ex": false,
+   "q": {
+    "dang": "sap_xep",
+    "ky_nang": "viet",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "noi_dung": "完成句子。",
+    "phuong_an": [
+     {
+      "noi_dung": "忘了"
+     },
+     {
+      "noi_dung": "出门的时候"
+     },
+     {
+      "noi_dung": "带雨伞"
+     },
+     {
+      "noi_dung": "姐姐"
+     }
+    ],
+    "dap_an_chap_nhan": [
+     "姐姐出门的时候忘了带雨伞。",
+     "出门的时候姐姐忘了带雨伞。"
+    ]
+   }
+  },
+  {
+   "part": 8,
+   "ex": false,
+   "q": {
+    "dang": "sap_xep",
+    "ky_nang": "viet",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "noi_dung": "完成句子。",
+    "phuong_an": [
+     {
+      "noi_dung": "连"
+     },
+     {
+      "noi_dung": "他"
+     },
+     {
+      "noi_dung": "都听得懂"
+     },
+     {
+      "noi_dung": "北京方言"
+     }
+    ],
+    "dap_an_chap_nhan": [
+     "他连北京方言都听得懂。"
+    ]
+   }
+  },
+  {
+   "part": 9,
+   "ex": true,
+   "q": {
+    "dang": "dien_chu",
+    "ky_nang": "viet",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "noi_dung": "没（ guān ）系，别难过，高兴点儿。",
+    "goi_y": "Điền chữ Hán theo pinyin trong ngoặc",
+    "dap_an_chap_nhan": [
+     "关"
+    ]
+   }
+  },
+  {
+   "part": 9,
+   "ex": false,
+   "q": {
+    "dang": "dien_chu",
+    "ky_nang": "viet",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "noi_dung": "秋天天气干（ zào ），平时要多喝水、多吃梨。",
+    "goi_y": "Điền chữ Hán theo pinyin trong ngoặc",
+    "dap_an_chap_nhan": [
+     "燥"
+    ]
+   }
+  },
+  {
+   "part": 9,
+   "ex": false,
+   "q": {
+    "dang": "dien_chu",
+    "ky_nang": "viet",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "noi_dung": "做完作业以后，他帮妈妈打（ sǎo ）客厅。",
+    "goi_y": "Điền chữ Hán theo pinyin trong ngoặc",
+    "dap_an_chap_nhan": [
+     "扫"
+    ]
+   }
+  },
+  {
+   "part": 9,
+   "ex": false,
+   "q": {
+    "dang": "dien_chu",
+    "ky_nang": "viet",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "noi_dung": "我跟王明是高中同班同（ xué ），关系一直很好。",
+    "goi_y": "Điền chữ Hán theo pinyin trong ngoặc",
+    "dap_an_chap_nhan": [
+     "学"
+    ]
+   }
+  },
+  {
+   "part": 9,
+   "ex": false,
+   "q": {
+    "dang": "dien_chu",
+    "ky_nang": "viet",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "noi_dung": "这家饭店的牛（ ròu ）面味道非常地道。",
+    "goi_y": "Điền chữ Hán theo pinyin trong ngoặc",
+    "dap_an_chap_nhan": [
+     "肉"
+    ]
+   }
+  },
+  {
+   "part": 9,
+   "ex": false,
+   "q": {
+    "dang": "dien_chu",
+    "ky_nang": "viet",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "noi_dung": "无论遇到什么困难，都要相（ xìn ）自己的能力。",
+    "goi_y": "Điền chữ Hán theo pinyin trong ngoặc",
+    "dap_an_chap_nhan": [
+     "信"
+    ]
+   }
+  }
+ ]
+}

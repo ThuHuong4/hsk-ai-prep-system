@@ -1,0 +1,1364 @@
+{
+ "exam": {
+  "code": "H2M07",
+  "level": "HSK2",
+  "ten": "HSK 2 – Đề 7",
+  "phut": 55,
+  "nguon": "Đề mô phỏng biên soạn chuẩn cấu trúc HSK 2.0 (HSK 二级)",
+  "audio": "exams/hsk2_h2m07/listening.mp3"
+ },
+ "plan": [
+  {
+   "part": 1,
+   "ex": true,
+   "q": {
+    "dang": "dung_sai",
+    "ky_nang": "nghe",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "tep_hinh": "exams/hsk2_h20902/img/000.jpg",
+    "loi_nghe": "我们家有三个人。",
+    "phuong_an": [
+     {
+      "noi_dung": "Đúng",
+      "la_dap_an_dung": true
+     },
+     {
+      "noi_dung": "Sai",
+      "la_dap_an_dung": false
+     }
+    ]
+   }
+  },
+  {
+   "part": 1,
+   "ex": true,
+   "q": {
+    "dang": "dung_sai",
+    "ky_nang": "nghe",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "tep_hinh": "exams/hsk2_h20902/img/001.jpg",
+    "loi_nghe": "我每天坐公共汽车去上班。",
+    "phuong_an": [
+     {
+      "noi_dung": "Đúng",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "Sai",
+      "la_dap_an_dung": true
+     }
+    ]
+   }
+  },
+  {
+   "part": 1,
+   "ex": false,
+   "q": {
+    "dang": "dung_sai",
+    "ky_nang": "nghe",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "tep_hinh": "exams/hsk2_h20901/img/003.jpg",
+    "loi_nghe": "她早上喜欢喝一杯热咖啡。",
+    "phuong_an": [
+     {
+      "noi_dung": "Đúng",
+      "la_dap_an_dung": true
+     },
+     {
+      "noi_dung": "Sai",
+      "la_dap_an_dung": false
+     }
+    ]
+   }
+  },
+  {
+   "part": 1,
+   "ex": false,
+   "q": {
+    "dang": "dung_sai",
+    "ky_nang": "nghe",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "tep_hinh": "exams/hsk2_h20902/img/008.jpg",
+    "loi_nghe": "这双运动鞋穿着非常舒服，适合爬山。",
+    "phuong_an": [
+     {
+      "noi_dung": "Đúng",
+      "la_dap_an_dung": true
+     },
+     {
+      "noi_dung": "Sai",
+      "la_dap_an_dung": false
+     }
+    ]
+   }
+  },
+  {
+   "part": 1,
+   "ex": false,
+   "q": {
+    "dang": "dung_sai",
+    "ky_nang": "nghe",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "tep_hinh": "exams/hsk2_h21003/img/002.jpg",
+    "loi_nghe": "今天是十月十五号。",
+    "phuong_an": [
+     {
+      "noi_dung": "Đúng",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "Sai",
+      "la_dap_an_dung": true
+     }
+    ]
+   }
+  },
+  {
+   "part": 1,
+   "ex": false,
+   "q": {
+    "dang": "dung_sai",
+    "ky_nang": "nghe",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "tep_hinh": "exams/hsk2_h20901/img/010.jpg",
+    "loi_nghe": "桌子上这么多文件，今天恐怕要很晚下班了。",
+    "phuong_an": [
+     {
+      "noi_dung": "Đúng",
+      "la_dap_an_dung": true
+     },
+     {
+      "noi_dung": "Sai",
+      "la_dap_an_dung": false
+     }
+    ]
+   }
+  },
+  {
+   "part": 1,
+   "ex": false,
+   "q": {
+    "dang": "dung_sai",
+    "ky_nang": "nghe",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "tep_hinh": "exams/hsk2_h21003/img/008.jpg",
+    "loi_nghe": "前面路口请向右转。",
+    "phuong_an": [
+     {
+      "noi_dung": "Đúng",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "Sai",
+      "la_dap_an_dung": true
+     }
+    ]
+   }
+  },
+  {
+   "part": 1,
+   "ex": false,
+   "q": {
+    "dang": "dung_sai",
+    "ky_nang": "nghe",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "tep_hinh": "exams/hsk2_h20902/img/003.jpg",
+    "loi_nghe": "您好，欢迎您来到我们公司！",
+    "phuong_an": [
+     {
+      "noi_dung": "Đúng",
+      "la_dap_an_dung": true
+     },
+     {
+      "noi_dung": "Sai",
+      "la_dap_an_dung": false
+     }
+    ]
+   }
+  },
+  {
+   "part": 1,
+   "ex": false,
+   "q": {
+    "dang": "dung_sai",
+    "ky_nang": "nghe",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "tep_hinh": "exams/hsk1_h10902/img/011.jpg",
+    "loi_nghe": "今天中午我吃了一碗白米饭。",
+    "phuong_an": [
+     {
+      "noi_dung": "Đúng",
+      "la_dap_an_dung": true
+     },
+     {
+      "noi_dung": "Sai",
+      "la_dap_an_dung": false
+     }
+    ]
+   }
+  },
+  {
+   "part": 1,
+   "ex": false,
+   "q": {
+    "dang": "dung_sai",
+    "ky_nang": "nghe",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "tep_hinh": "exams/hsk2_h21003/img/010.jpg",
+    "loi_nghe": "这次考试他没考好，心里很难过。",
+    "phuong_an": [
+     {
+      "noi_dung": "Đúng",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "Sai",
+      "la_dap_an_dung": true
+     }
+    ]
+   }
+  },
+  {
+   "part": 1,
+   "ex": false,
+   "q": {
+    "dang": "dung_sai",
+    "ky_nang": "nghe",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "tep_hinh": "exams/hsk1_h11003/img/021.jpg",
+    "loi_nghe": "周末天气很好，她们在湖边骑自行车玩儿。",
+    "phuong_an": [
+     {
+      "noi_dung": "Đúng",
+      "la_dap_an_dung": true
+     },
+     {
+      "noi_dung": "Sai",
+      "la_dap_an_dung": false
+     }
+    ]
+   }
+  },
+  {
+   "part": 1,
+   "ex": false,
+   "q": {
+    "dang": "dung_sai",
+    "ky_nang": "nghe",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "tep_hinh": "exams/hsk2_h20901/img/006.jpg",
+    "loi_nghe": "妈妈正在客厅里看电视新闻呢。",
+    "phuong_an": [
+     {
+      "noi_dung": "Đúng",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "Sai",
+      "la_dap_an_dung": true
+     }
+    ]
+   }
+  },
+  {
+   "part": 2,
+   "group": {
+    "dang": "ngu_lieu",
+    "ky_nang": "nghe",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "phuong_an": [
+     {
+      "tep_hinh": "exams/hsk2_h21003/img/014.jpg",
+      "la_dap_an_dung": false
+     },
+     {
+      "tep_hinh": "exams/hsk2_h21003/img/013.jpg",
+      "la_dap_an_dung": false
+     },
+     {
+      "tep_hinh": "exams/hsk2_h20901/img/g11_A.jpg",
+      "la_dap_an_dung": false
+     },
+     {
+      "tep_hinh": "exams/hsk2_h20902/img/015.jpg",
+      "la_dap_an_dung": false
+     },
+     {
+      "tep_hinh": "exams/hsk2_h20902/img/014.jpg",
+      "la_dap_an_dung": false
+     },
+     {
+      "tep_hinh": "exams/hsk2_h21003/img/012.jpg",
+      "la_dap_an_dung": false
+     }
+    ]
+   },
+   "children": [
+    [
+     {
+      "dang": "chon_bo_chung",
+      "loi_nghe": "男：你喜欢什么运动？\n女：我最喜欢踢足球。",
+      "dap_an_thu_tu": 4
+     },
+     true
+    ],
+    [
+     {
+      "dang": "chon_bo_chung",
+      "loi_nghe": "女：小狗好像饿了，一直跟着你跑。\n男：来，碗里有肉，快吃吧。",
+      "dap_an_thu_tu": 6
+     },
+     false
+    ],
+    [
+     {
+      "dang": "chon_bo_chung",
+      "loi_nghe": "男：这么多干净的衣服都是你上午洗的？\n女：对，今天出太阳，很快就干了。",
+      "dap_an_thu_tu": 2
+     },
+     false
+    ],
+    [
+     {
+      "dang": "chon_bo_chung",
+      "loi_nghe": "女：真倒霉，车在半路上坏了，我给修车店打个电话。\n男：好的，我们在路边等一会儿。",
+      "dap_an_thu_tu": 1
+     },
+     false
+    ],
+    [
+     {
+      "dang": "chon_bo_chung",
+      "loi_nghe": "男：今天的报纸上有那场篮球赛的消息吗？\n女：有，你看这页，北京队赢了！",
+      "dap_an_thu_tu": 5
+     },
+     false
+    ],
+    [
+     {
+      "dang": "chon_bo_chung",
+      "loi_nghe": "男：老婆，今天是我们结婚五周年的日子，送给你！\n女：谢谢你，这花真香！",
+      "dap_an_thu_tu": 3
+     },
+     false
+    ]
+   ]
+  },
+  {
+   "part": 2,
+   "group": {
+    "dang": "ngu_lieu",
+    "ky_nang": "nghe",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "phuong_an": [
+     {
+      "tep_hinh": "exams/hsk2_h21003/img/024.jpg",
+      "la_dap_an_dung": false
+     },
+     {
+      "tep_hinh": "exams/hsk2_h20901/img/g16_D.jpg",
+      "la_dap_an_dung": false
+     },
+     {
+      "tep_hinh": "exams/hsk2_h20902/img/021.jpg",
+      "la_dap_an_dung": false
+     },
+     {
+      "tep_hinh": "exams/hsk2_h20902/img/018.jpg",
+      "la_dap_an_dung": false
+     },
+     {
+      "tep_hinh": "exams/hsk2_h21003/img/019.jpg",
+      "la_dap_an_dung": false
+     }
+    ]
+   },
+   "children": [
+    [
+     {
+      "dang": "chon_bo_chung",
+      "loi_nghe": "男：服务员，买单，一共多少钱？\n女：先生您好，一共一百二十八元。",
+      "dap_an_thu_tu": 2
+     },
+     false
+    ],
+    [
+     {
+      "dang": "chon_bo_chung",
+      "loi_nghe": "男：王老师教得真认真，孩子们学得也很快。\n女：是啊，我女儿现在特别爱上舞蹈课。",
+      "dap_an_thu_tu": 5
+     },
+     false
+    ],
+    [
+     {
+      "dang": "chon_bo_chung",
+      "loi_nghe": "女：把这杯温水喝了，吃完药睡一觉就会好些。\n男：谢谢你照顾我。",
+      "dap_an_thu_tu": 3
+     },
+     false
+    ],
+    [
+     {
+      "dang": "chon_bo_chung",
+      "loi_nghe": "女：这张照片是在山上照的吗？\n男：对，我用新买的照相机拍的。",
+      "dap_an_thu_tu": 1
+     },
+     false
+    ],
+    [
+     {
+      "dang": "chon_bo_chung",
+      "loi_nghe": "男：今天外面的雪越下越大了。\n女：是啊，戴上手套和帽子还觉得冷呢。",
+      "dap_an_thu_tu": 4
+     },
+     false
+    ]
+   ]
+  },
+  {
+   "part": 3,
+   "ex": true,
+   "q": {
+    "dang": "chon_mot",
+    "ky_nang": "nghe",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "loi_nghe": "男：小王，这里有几个杯子，哪个是你的？\n女：左边那个红色的是我的。\n问：小王的杯子是什么颜色的？",
+    "phuong_an": [
+     {
+      "noi_dung": "红色 [hóngsè]",
+      "la_dap_an_dung": true
+     },
+     {
+      "noi_dung": "黑色 [hēisè]",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "白色 [báisè]",
+      "la_dap_an_dung": false
+     }
+    ]
+   }
+  },
+  {
+   "part": 3,
+   "ex": false,
+   "q": {
+    "dang": "chon_mot",
+    "ky_nang": "nghe",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "loi_nghe": "女：请问去天津的高铁票多少钱一张？\n男：八十块一张，我要两张。\n问：男的买票一共要花多少钱？",
+    "phuong_an": [
+     {
+      "noi_dung": "80 元 [80 yuán]",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "160 元 [160 yuán]",
+      "la_dap_an_dung": true
+     },
+     {
+      "noi_dung": "240 元 [240 yuán]",
+      "la_dap_an_dung": false
+     }
+    ]
+   }
+  },
+  {
+   "part": 3,
+   "ex": false,
+   "q": {
+    "dang": "chon_mot",
+    "ky_nang": "nghe",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "loi_nghe": "男：看外面的蓝天白云，今天真暖和！\n女：是啊，我们带孩子去动物园玩儿吧。\n问：今天天气怎么样？",
+    "phuong_an": [
+     {
+      "noi_dung": "晴天 [qíngtiān]",
+      "la_dap_an_dung": true
+     },
+     {
+      "noi_dung": "下雨 [xià yǔ]",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "刮大风 [guā dàfēng]",
+      "la_dap_an_dung": false
+     }
+    ]
+   }
+  },
+  {
+   "part": 3,
+   "ex": false,
+   "q": {
+    "dang": "chon_mot",
+    "ky_nang": "nghe",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "loi_nghe": "女：家里的鸡蛋和牛奶都快吃完了。\n男：那我下班路过超市的时候顺便买一些回来。\n问：男的下班后要去哪儿？",
+    "phuong_an": [
+     {
+      "noi_dung": "医院 [yīyuàn]",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "邮局 [yóujú]",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "超市 [chāoshì]",
+      "la_dap_an_dung": true
+     }
+    ]
+   }
+  },
+  {
+   "part": 3,
+   "ex": false,
+   "q": {
+    "dang": "chon_mot",
+    "ky_nang": "nghe",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "loi_nghe": "男：你在给谁选生日礼物呢？\n女：我妹妹下周过十八岁生日，我想送她一块手表。\n问：下周是谁的生日？",
+    "phuong_an": [
+     {
+      "noi_dung": "哥哥 [gēge]",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "妹妹 [mèimei]",
+      "la_dap_an_dung": true
+     },
+     {
+      "noi_dung": "同事 [tóngshì]",
+      "la_dap_an_dung": false
+     }
+    ]
+   }
+  },
+  {
+   "part": 3,
+   "ex": false,
+   "q": {
+    "dang": "chon_mot",
+    "ky_nang": "nghe",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "loi_nghe": "女：现在几点了？电影快开始了吧？\n男：现在九点十分，还有二十分钟才开始呢。\n问：现在是几点？",
+    "phuong_an": [
+     {
+      "noi_dung": "9 点 10 分 [9 diǎn 10 fēn]",
+      "la_dap_an_dung": true
+     },
+     {
+      "noi_dung": "9 点 30 分 [9 diǎn 30 fēn]",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "9 点 50 分 [9 diǎn 50 fēn]",
+      "la_dap_an_dung": false
+     }
+    ]
+   }
+  },
+  {
+   "part": 3,
+   "ex": false,
+   "q": {
+    "dang": "chon_mot",
+    "ky_nang": "nghe",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "loi_nghe": "男：奇怪，我的眼镜刚才还在这儿，怎么不见了？\n女：你摸摸自己头上，不是戴在头上吗！\n问：男的刚才在找什么？",
+    "phuong_an": [
+     {
+      "noi_dung": "看电视 [kàn diànshì]",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "洗水果 [xǐ shuǐguǒ]",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "找眼镜 [zhǎo yǎnjìng]",
+      "la_dap_an_dung": true
+     }
+    ]
+   }
+  },
+  {
+   "part": 3,
+   "ex": false,
+   "q": {
+    "dang": "chon_mot",
+    "ky_nang": "nghe",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "loi_nghe": "女：新学校离你家远不远？\n男：很近，骑自行车十分钟就到了。\n问：新学校离男的家怎么样？",
+    "phuong_an": [
+     {
+      "noi_dung": "很近 [hěn jìn]",
+      "la_dap_an_dung": true
+     },
+     {
+      "noi_dung": "非常远 [fēicháng yuǎn]",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "要坐火车 [yào zuò huǒchē]",
+      "la_dap_an_dung": false
+     }
+    ]
+   }
+  },
+  {
+   "part": 3,
+   "ex": false,
+   "q": {
+    "dang": "chon_mot",
+    "ky_nang": "nghe",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "loi_nghe": "男：门口那辆黑色的汽车是张老师的吗？\n女：对，他上个月刚买的。\n问：张老师的车是什么颜色的？",
+    "phuong_an": [
+     {
+      "noi_dung": "白色 [báisè]",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "黑色 [hēisè]",
+      "la_dap_an_dung": true
+     },
+     {
+      "noi_dung": "蓝色 [lánsè]",
+      "la_dap_an_dung": false
+     }
+    ]
+   }
+  },
+  {
+   "part": 3,
+   "ex": false,
+   "q": {
+    "dang": "chon_mot",
+    "ky_nang": "nghe",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "loi_nghe": "女：大卫，你的汉语歌唱得真好听！\n男：谢谢，我每个星期都跟中国朋友学唱一首中文歌。\n问：大卫每星期学什么？",
+    "phuong_an": [
+     {
+      "noi_dung": "学做中国菜 [xué zuò Zhōngguó cài]",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "学打太极拳 [xué dǎ tàijíquán]",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "学唱中文歌 [xué chàng Zhōngwén gē]",
+      "la_dap_an_dung": true
+     }
+    ]
+   }
+  },
+  {
+   "part": 3,
+   "ex": false,
+   "q": {
+    "dang": "chon_mot",
+    "ky_nang": "nghe",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "loi_nghe": "男：明天早上的足球赛你参加吗？\n女：我昨天跑步把脚扭了，明天只能在旁边给你们加油了。\n问：说话人明天为什么不踢球？",
+    "phuong_an": [
+     {
+      "noi_dung": "脚疼 [jiǎo téng]",
+      "la_dap_an_dung": true
+     },
+     {
+      "noi_dung": "工作忙 [gōngzuò máng]",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "天气不好 [tiānqì bù hǎo]",
+      "la_dap_an_dung": false
+     }
+    ]
+   }
+  },
+  {
+   "part": 4,
+   "ex": true,
+   "q": {
+    "dang": "chon_mot",
+    "ky_nang": "nghe",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "loi_nghe": "女：请在这儿写您的名字。\n男：是这儿吗？\n女：不是，是这儿。\n男：好，谢谢。\n问：男的要写什么？",
+    "phuong_an": [
+     {
+      "noi_dung": "名字 [míngzi]",
+      "la_dap_an_dung": true
+     },
+     {
+      "noi_dung": "时间 [shíjiān]",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "房间 号 [fángjiān hào]",
+      "la_dap_an_dung": false
+     }
+    ]
+   }
+  },
+  {
+   "part": 4,
+   "ex": false,
+   "q": {
+    "dang": "chon_mot",
+    "ky_nang": "nghe",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "loi_nghe": "女：走了这么久，我都饿了，前面有家面馆。\n男：好，我们进去吃点儿热乎的吧。\n女：他家的羊肉面最有名，你要不要尝尝？\n男：好啊，那就来两碗羊肉面！\n问：他们准备吃什么？",
+    "phuong_an": [
+     {
+      "noi_dung": "羊肉面 [yángròumiàn]",
+      "la_dap_an_dung": true
+     },
+     {
+      "noi_dung": "牛肉饺子 [niúròu jiǎozi]",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "鸡蛋炒饭 [jīdàn chǎofàn]",
+      "la_dap_an_dung": false
+     }
+    ]
+   }
+  },
+  {
+   "part": 4,
+   "ex": false,
+   "q": {
+    "dang": "chon_mot",
+    "ky_nang": "nghe",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "loi_nghe": "男：喂，小王，我是李明，这周五晚上同学们聚会，你来吗？\n女：周五晚上我要加班，真不好意思。\n男：那改成星期日中午怎么样？大家都有空。\n女：星期日中午没问题，我一定去！\n问：他们最后定在哪天聚会？",
+    "phuong_an": [
+     {
+      "noi_dung": "星期三 [xīngqīsān]",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "星期五 [xīngqīwǔ]",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "星期日 [xīngqīrì]",
+      "la_dap_an_dung": true
+     }
+    ]
+   }
+  },
+  {
+   "part": 4,
+   "ex": false,
+   "q": {
+    "dang": "chon_mot",
+    "ky_nang": "nghe",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "loi_nghe": "女：你好，请问这附近有书店吗？\n男：有，你一直往前走，到十字路口往左看，有一个中国银行。\n女：书店就在银行那儿吗？\n男：对，就在中国银行旁边，很容易找。\n问：书店在什么地方？",
+    "phuong_an": [
+     {
+      "noi_dung": "医院后面 [yīyuàn hòumiàn]",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "银行旁边 [yínháng pángbiān]",
+      "la_dap_an_dung": true
+     },
+     {
+      "noi_dung": "学校里面 [xuéxiào lǐmiàn]",
+      "la_dap_an_dung": false
+     }
+    ]
+   }
+  },
+  {
+   "part": 4,
+   "ex": false,
+   "q": {
+    "dang": "chon_mot",
+    "ky_nang": "nghe",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "loi_nghe": "男：女儿，试试爸爸给你买的这件运动服。\n女：颜色我很喜欢，不过穿在身上好像有点儿大。\n男：没关系，我留着小票呢，明天去商店换小一号的。\n女：谢谢爸爸！\n问：这件运动服怎么样？",
+    "phuong_an": [
+     {
+      "noi_dung": "太小了 [tài xiǎo le]",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "有点儿大 [yǒudiǎnr dà]",
+      "la_dap_an_dung": true
+     },
+     {
+      "noi_dung": "颜色不好 [yánsè bù hǎo]",
+      "la_dap_an_dung": false
+     }
+    ]
+   }
+  },
+  {
+   "part": 4,
+   "ex": false,
+   "q": {
+    "dang": "chon_mot",
+    "ky_nang": "nghe",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "loi_nghe": "女：你哥哥大学毕业后去哪儿工作了？\n男：他在市第一医院工作，每天要看很多病人。\n女：当医生虽然很累，但是能帮助很多人。\n男：是啊，他自己也很喜欢这份工作。\n问：男的的哥哥是做什么的？",
+    "phuong_an": [
+     {
+      "noi_dung": "老师 [lǎoshī]",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "服务员 [fúwùyuán]",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "医生 [yīshēng]",
+      "la_dap_an_dung": true
+     }
+    ]
+   }
+  },
+  {
+   "part": 5,
+   "group": {
+    "dang": "ngu_lieu",
+    "ky_nang": "doc",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "phuong_an": [
+     {
+      "tep_hinh": "exams/hsk2_h20902/img/028.jpg",
+      "la_dap_an_dung": false
+     },
+     {
+      "tep_hinh": "exams/hsk2_h21003/img/028.jpg",
+      "la_dap_an_dung": false
+     },
+     {
+      "tep_hinh": "exams/hsk2_h20901/img/g36_F.jpg",
+      "la_dap_an_dung": false
+     },
+     {
+      "tep_hinh": "exams/hsk2_h20902/img/026.jpg",
+      "la_dap_an_dung": false
+     },
+     {
+      "tep_hinh": "exams/hsk2_h20902/img/027.jpg",
+      "la_dap_an_dung": false
+     },
+     {
+      "tep_hinh": "exams/hsk2_h21003/img/023.jpg",
+      "la_dap_an_dung": false
+     }
+    ]
+   },
+   "children": [
+    [
+     {
+      "dang": "chon_bo_chung",
+      "noi_dung": "每 个 星期六， 我 都 去 打 篮球。",
+      "pinyin": "Měi ge xīngqīliù, wǒ dōu qù dǎ lánqiú.",
+      "dap_an_thu_tu": 4
+     },
+     true
+    ],
+    [
+     {
+      "dang": "chon_bo_chung",
+      "noi_dung": "王 老师 问 大家 还有 没有 不 懂 的 问题。",
+      "pinyin": "Wáng lǎoshī wèn dàjiā hái yǒu méiyǒu bù dǒng de wèntí.",
+      "dap_an_thu_tu": 5
+     },
+     false
+    ],
+    [
+     {
+      "dang": "chon_bo_chung",
+      "noi_dung": "太 好 了， 雨 不 下 了， 我们 可以 出去 玩儿 了。",
+      "pinyin": "Tài hǎo le, yǔ bú xià le, wǒmen kěyǐ chūqù wánr le.",
+      "dap_an_thu_tu": 2
+     },
+     false
+    ],
+    [
+     {
+      "dang": "chon_bo_chung",
+      "noi_dung": "她 每天 下午 五 点 都 在 公园 里 跑步。",
+      "pinyin": "Tā měi tiān xiàwǔ wǔ diǎn dōu zài gōngyuán li pǎobù.",
+      "dap_an_thu_tu": 6
+     },
+     false
+    ],
+    [
+     {
+      "dang": "chon_bo_chung",
+      "noi_dung": "儿子 发烧 了， 妈妈 正在 给 爸爸 打 电话。",
+      "pinyin": "Érzi fāshāo le, māma zhèngzài gěi bàba dǎ diànhuà.",
+      "dap_an_thu_tu": 1
+     },
+     false
+    ],
+    [
+     {
+      "dang": "chon_bo_chung",
+      "noi_dung": "张 先生， 这 位 是 我们 公司 新 来 的 小李。",
+      "pinyin": "Zhāng xiānsheng, zhè wèi shì wǒmen gōngsī xīn lái de Xiǎo Lǐ.",
+      "dap_an_thu_tu": 3
+     },
+     false
+    ]
+   ]
+  },
+  {
+   "part": 6,
+   "group": {
+    "dang": "ngu_lieu",
+    "ky_nang": "doc",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "phuong_an": [
+     {
+      "noi_dung": "送 [sòng]",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "所以 [suǒyǐ]",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "门 [mén]",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "健康 [jiànkāng]",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "贵 [guì]",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "完 [wán]",
+      "la_dap_an_dung": false
+     }
+    ]
+   },
+   "children": [
+    [
+     {
+      "dang": "chon_bo_chung",
+      "noi_dung": "这儿 的 羊肉 很 好吃， 但是 也 很 （　）。",
+      "pinyin": "Zhèr de yángròu hěn hǎochī, dànshì yě hěn ( ).",
+      "dap_an_thu_tu": 5
+     },
+     true
+    ],
+    [
+     {
+      "dang": "chon_bo_chung",
+      "noi_dung": "今天 的 报纸 你 看 （　） 了 吗？ 借 我 看看。",
+      "pinyin": "Jīntiān de bàozhǐ nǐ kàn ( ) le ma? Jiè wǒ kànkan.",
+      "dap_an_thu_tu": 6
+     },
+     false
+    ],
+    [
+     {
+      "dang": "chon_bo_chung",
+      "noi_dung": "因为 昨天 晚上 没 睡 好， （　） 今天 觉得 有点儿 累。",
+      "pinyin": "Yīnwèi zuótiān wǎnshang méi shuì hǎo, ( ) jīntiān juéde yǒudiǎnr lèi.",
+      "dap_an_thu_tu": 2
+     },
+     false
+    ],
+    [
+     {
+      "dang": "chon_bo_chung",
+      "noi_dung": "多 吃 新鲜 水果 和 蔬菜 对 身体 （　） 很 有 好处。",
+      "pinyin": "Duō chī xīnxiān shuǐguǒ hé shūcài duì shēntǐ ( ) hěn yǒu hǎochù.",
+      "dap_an_thu_tu": 4
+     },
+     false
+    ],
+    [
+     {
+      "dang": "chon_bo_chung",
+      "noi_dung": "明天 早上 我 开 车 （　） 你 去 火车站 吧。",
+      "pinyin": "Míngtiān zǎoshang wǒ kāi chē ( ) nǐ qù huǒchēzhàn ba.",
+      "dap_an_thu_tu": 1
+     },
+     false
+    ],
+    [
+     {
+      "dang": "chon_bo_chung",
+      "noi_dung": "男：谁 在 外面 敲 （　）？\n女：可能 是 送 牛奶 的 来 了。",
+      "pinyin": "Nán: Shéi zài wàimiàn qiāo ( )?\nNǚ: Kěnéng shì sòng niúnǎi de lái le.",
+      "dap_an_thu_tu": 3
+     },
+     false
+    ]
+   ]
+  },
+  {
+   "part": 7,
+   "ex": true,
+   "q": {
+    "dang": "dung_sai",
+    "ky_nang": "doc",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "noi_dung": "现在 是 11 点 30 分， 他们 已经 游了 20 分钟 了。\n★ 他们 11 点 10 分 开始 游泳。",
+    "pinyin": "Xiànzài shì 11 diǎn 30 fēn, tāmen yǐjīng yóule 20 fēnzhōng le.\n★ Tāmen 11 diǎn 10 fēn kāishǐ yóuyǒng.",
+    "phuong_an": [
+     {
+      "noi_dung": "Đúng",
+      "la_dap_an_dung": true
+     },
+     {
+      "noi_dung": "Sai",
+      "la_dap_an_dung": false
+     }
+    ]
+   }
+  },
+  {
+   "part": 7,
+   "ex": true,
+   "q": {
+    "dang": "dung_sai",
+    "ky_nang": "doc",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "noi_dung": "我 会 跳舞， 但 跳 得 不 怎么样。\n★ 我 跳 得 非常 好。",
+    "pinyin": "Wǒ huì tiàowǔ, dàn tiào de bù zěnmeyàng.\n★ Wǒ tiào de fēicháng hǎo.",
+    "phuong_an": [
+     {
+      "noi_dung": "Đúng",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "Sai",
+      "la_dap_an_dung": true
+     }
+    ]
+   }
+  },
+  {
+   "part": 7,
+   "ex": false,
+   "q": {
+    "dang": "dung_sai",
+    "ky_nang": "doc",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "noi_dung": "这家 饭馆儿 虽然 地方 不 大， 但是 做 的 鱼 非常 好吃， 而且 不 贵， 中午 来 吃 饭 的 人 特别 多。\n★ 这家 饭馆儿 的 鱼 既 好吃 又 便宜。",
+    "pinyin": "Zhè jiā fànguǎnr suīrán dìfang bú dà, dànshì zuò de yú fēicháng hǎochī, érqiě bú guì, zhōngwǔ lái chī fàn de rén tèbié duō.\n★ Zhè jiā fànguǎnr de yú jì hǎochī yòu piányi.",
+    "phuong_an": [
+     {
+      "noi_dung": "Đúng",
+      "la_dap_an_dung": true
+     },
+     {
+      "noi_dung": "Sai",
+      "la_dap_an_dung": false
+     }
+    ]
+   }
+  },
+  {
+   "part": 7,
+   "ex": false,
+   "q": {
+    "dang": "dung_sai",
+    "ky_nang": "doc",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "noi_dung": "我 本来 准备 明天 上午 九 点 坐 飞机 去 上海， 刚才 接到 通知， 航班 推迟 到 下午 两 点 了。\n★ 我 明天 上午 九 点 坐 飞机 走。",
+    "pinyin": "Wǒ běnlái zhǔnbèi míngtiān shàngwǔ jiǔ diǎn zuò fēijī qù Shànghǎi, gāngcái jiēdào tōngzhī, hángbān tuīchí dào xiàwǔ liǎng diǎn le.\n★ Wǒ míngtiān shàngwǔ jiǔ diǎn zuò fēijī zǒu.",
+    "phuong_an": [
+     {
+      "noi_dung": "Đúng",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "Sai",
+      "la_dap_an_dung": true
+     }
+    ]
+   }
+  },
+  {
+   "part": 7,
+   "ex": false,
+   "q": {
+    "dang": "dung_sai",
+    "ky_nang": "doc",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "noi_dung": "妹妹 很 喜欢 唱歌， 每 次 学校 有 演出， 她 都 会 上去 唱 一 首 中文 歌。\n★ 妹妹 会 唱 中文 歌。",
+    "pinyin": "Mèimei hěn xǐhuan chànggē, měi cì xuéxiào yǒu yǎnchū, tā dōu huì shàngqù chàng yì shǒu Zhōngwén gē.\n★ Mèimei huì chàng Zhōngwén gē.",
+    "phuong_an": [
+     {
+      "noi_dung": "Đúng",
+      "la_dap_an_dung": true
+     },
+     {
+      "noi_dung": "Sai",
+      "la_dap_an_dung": false
+     }
+    ]
+   }
+  },
+  {
+   "part": 7,
+   "ex": false,
+   "q": {
+    "dang": "dung_sai",
+    "ky_nang": "doc",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "noi_dung": "小刘 来 北京 已经 三 年 了， 但是 因为 工作 太 忙， 他 到 现在 还 没 去 过 长城。\n★ 小刘 去 过 很 多 次 长城。",
+    "pinyin": "Xiǎo Liú lái Běijīng yǐjīng sān nián le, dànshì yīnwèi gōngzuò tài máng, tā dào xiànzài hái méi qùguo Chángchéng.\n★ Xiǎo Liú qùguo hěn duō cì Chángchéng.",
+    "phuong_an": [
+     {
+      "noi_dung": "Đúng",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "Sai",
+      "la_dap_an_dung": true
+     }
+    ]
+   }
+  },
+  {
+   "part": 7,
+   "ex": false,
+   "q": {
+    "dang": "dung_sai",
+    "ky_nang": "doc",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "noi_dung": "这 本 书 是 我 从 图书馆 借 的， 下 个 星期二 要 还， 你 这 周末 看 完 给 我 就 行。\n★ 这 本 书 是 我 在 书店 买 的。",
+    "pinyin": "Zhè běn shū shì wǒ cóng túshūguǎn jiè de, xià ge xīngqī'èr yào huán, nǐ zhè zhōumò kàn wán gěi wǒ jiù xíng.\n★ Zhè běn shū shì wǒ zài shūdiàn mǎi de.",
+    "phuong_an": [
+     {
+      "noi_dung": "Đúng",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "Sai",
+      "la_dap_an_dung": true
+     }
+    ]
+   }
+  },
+  {
+   "part": 8,
+   "group": {
+    "dang": "ngu_lieu",
+    "ky_nang": "doc",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "phuong_an": [
+     {
+      "noi_dung": "好 的， 我 现在 就 去 洗 几 个 苹果。 [Hǎo de, wǒ xiànzài jiù qù xǐ jǐ ge píngguǒ.]",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "不 远， 从 这儿 走路 十 分钟 就 到。 [Bù yuǎn, cóng zhèr zǒulù shí fēnzhōng jiù dào.]",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "那 是 我 哥哥 的， 他 昨天 忘 拿 走 了。 [Nà shì wǒ gēge de, tā zuótiān wàng ná zǒu le.]",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "太 好 了， 我 早就 想 去 看看 大 熊猫 了！ [Tài hǎo le, wǒ zǎojiù xiǎng qù kànkan dà xióngmāo le!]",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "他 在 哪儿 呢？ 你 看见 他 了 吗？ [Tā zài nǎr ne? Nǐ kànjiàn tā le ma?]",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "对不起， 我 这儿 也 没有 零钱。 [Duìbuqǐ, wǒ zhèr yě méiyǒu língqián.]",
+      "la_dap_an_dung": false
+     }
+    ]
+   },
+   "children": [
+    [
+     {
+      "dang": "chon_bo_chung",
+      "noi_dung": "他 还 在 教室 里 学习。",
+      "pinyin": "Tā hái zài jiàoshì li xuéxí.",
+      "dap_an_thu_tu": 5
+     },
+     true
+    ],
+    [
+     {
+      "dang": "chon_bo_chung",
+      "noi_dung": "明天 天气 不错， 我们 带 孩子 去 动物园 吧？",
+      "pinyin": "Míngtiān tiānqì búcuò, wǒmen dài háizi qù dòngwùyuán ba?",
+      "dap_an_thu_tu": 4
+     },
+     false
+    ],
+    [
+     {
+      "dang": "chon_bo_chung",
+      "noi_dung": "椅子 上 这 把 黑色 的 伞 是 谁 的？",
+      "pinyin": "Yǐzi shang zhè bǎ hēisè de sǎn shì shéi de?",
+      "dap_an_thu_tu": 3
+     },
+     false
+    ],
+    [
+     {
+      "dang": "chon_bo_chung",
+      "noi_dung": "客人 快 到 了， 你 去 准备 一点儿 水果 吧。",
+      "pinyin": "Kèrén kuài dào le, nǐ qù zhǔnbèi yìdiǎnr shuǐguǒ ba.",
+      "dap_an_thu_tu": 1
+     },
+     false
+    ],
+    [
+     {
+      "dang": "chon_bo_chung",
+      "noi_dung": "请问， 能 帮 我 换 十 块 零钱 吗？",
+      "pinyin": "Qǐngwèn, néng bāng wǒ huàn shí kuài língqián ma?",
+      "dap_an_thu_tu": 6
+     },
+     false
+    ],
+    [
+     {
+      "dang": "chon_bo_chung",
+      "noi_dung": "请问， 第一 医院 离 这儿 远 吗？",
+      "pinyin": "Qǐngwèn, Dì-yī Yīyuàn lí zhèr yuǎn ma?",
+      "dap_an_thu_tu": 2
+     },
+     false
+    ]
+   ]
+  },
+  {
+   "part": 8,
+   "group": {
+    "dang": "ngu_lieu",
+    "ky_nang": "doc",
+    "dung_thi_thu": true,
+    "dung_on_luyen": false,
+    "phuong_an": [
+     {
+      "noi_dung": "才 八 点 半， 你 的 表 快 了 十 分钟。 [Cái bā diǎn bàn, nǐ de biǎo kuàile shí fēnzhōng.]",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "还 可以， 大概 有 四 五百 个 人 吧。 [Hái kěyǐ, dàgài yǒu sì wǔbǎi ge rén ba.]",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "不 用 了， 我 自己 坐 地铁 回去 很 方便。 [Bú yòng le, wǒ zìjǐ zuò dìtiě huíqu hěn fāngbiàn.]",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "她 去 机场 接 一 个 外国 朋友 了。 [Tā qù jīchǎng jiē yí ge wàiguó péngyou le.]",
+      "la_dap_an_dung": false
+     },
+     {
+      "noi_dung": "好 的， 医生， 我 一定 记得 按时 吃。 [Hǎo de, yīshēng, wǒ yídìng jìde ànshí chī.]",
+      "la_dap_an_dung": false
+     }
+    ]
+   },
+   "children": [
+    [
+     {
+      "dang": "chon_bo_chung",
+      "noi_dung": "天 黑 了， 我 开 车 送 你 回 家 吧？",
+      "pinyin": "Tiān hēi le, wǒ kāi chē sòng nǐ huí jiā ba?",
+      "dap_an_thu_tu": 3
+     },
+     false
+    ],
+    [
+     {
+      "dang": "chon_bo_chung",
+      "noi_dung": "这个 药 每天 饭 后 吃 一 次， 多 喝 温 水。",
+      "pinyin": "Zhège yào měi tiān fàn hòu chī yí cì, duō hē wēn shuǐ.",
+      "dap_an_thu_tu": 5
+     },
+     false
+    ],
+    [
+     {
+      "dang": "chon_bo_chung",
+      "noi_dung": "已经 八 点 四十 了， 快 走 吧！",
+      "pinyin": "Yǐjīng bā diǎn sìshí le, kuài zǒu ba!",
+      "dap_an_thu_tu": 1
+     },
+     false
+    ],
+    [
+     {
+      "dang": "chon_bo_chung",
+      "noi_dung": "今天 上午 怎么 没 看到 张 小姐？",
+      "pinyin": "Jīntiān shàngwǔ zěnme méi kàndào Zhāng xiǎojiě?",
+      "dap_an_thu_tu": 4
+     },
+     false
+    ],
+    [
+     {
+      "dang": "chon_bo_chung",
+      "noi_dung": "今天 去 参加 跑步 比赛 的 人 多 不 多？",
+      "pinyin": "Jīntiān qù cānjiā pǎobù bǐsài de rén duō bu duō?",
+      "dap_an_thu_tu": 2
+     },
+     false
+    ]
+   ]
+  }
+ ]
+}

@@ -22,8 +22,10 @@ from app.modules.grading import (
     shuffle_choice_options as _options_of,
 )
 from app.modules.mistake_notebook.services import missions
+from app.modules.practice.services import path_view
 
 REVIEW_SIZE = 10
+RECOVERY_MIN_RATIO = 0.8
 GRADABLE = "('chon_mot', 'dung_sai', 'chon_bo_chung', 'sap_xep', 'dien_chu')"
 SOURCE_SQL = """(SELECT COALESCE(b.ten, CASE l.loai_boc_cau WHEN 'vuot_thua' THEN 'Kiểm tra vượt thửa' WHEN 'so_tay' THEN 'Ôn Sổ tay'
                                        ELSE 'Bài kiểm tra' END)
@@ -143,18 +145,35 @@ def _attempt(db: Session, luot_id: int, uid: int, for_update: bool = False) -> d
 
 def _answers(db: Session, luot_id: int) -> list[dict]:
     return [dict(r) for r in db.execute(text("""
-        SELECT a.id, a.cau_hoi_id, a.thu_tu, a.seed_xao, a.phuong_an_chon_id, a.van_ban, a.xac_nhan_luc, v.diem
+        SELECT a.id, a.cau_hoi_id, a.thu_tu, a.seed_xao, a.trang_thai_thao_tac, a.muc_goi_y,
+               a.phuong_an_chon_id, a.van_ban, a.xac_nhan_luc, a.xem_loi_giai_luc, a.phien_ban_luu, v.diem
         FROM cau_tra_loi a LEFT JOIN v_ket_qua_hien_hanh v ON v.cau_tra_loi_id = a.id
         WHERE a.luot_lam_id = :l ORDER BY a.thu_tu"""), {"l": luot_id}).mappings().all()]
 
 
 def _feedback(q: dict, options: dict, a: dict, state: str | None = None) -> dict:
+    is_skipped = a.get("trang_thai_thao_tac") == "bo_qua" or (a["phuong_an_chon_id"] is None and not a["van_ban"])
+    if is_skipped:
+        return {
+            "dung": False,
+            "bo_qua": True,
+            "dap_an_id": None,
+            "dap_an_chap_nhan": [],
+            "giai_thich": None,
+            "dich_nghia": None,
+            "loi_nghe": None,
+            "goi_mo": None,
+            "trang_thai_moi": state,
+        }
     return {
         "dung": a["diem"] is not None and float(a["diem"]) >= 1,
-        "bo_qua": a["phuong_an_chon_id"] is None and not a["van_ban"],
+        "bo_qua": False,
         "dap_an_id": correct_option_id(q, options) if q["dang"] in CHOICE_TYPES else None,
         "dap_an_chap_nhan": [o["noi_dung"] for o in options[q["id"]]["chap_nhan"]],
-        "giai_thich": q["giai_thich"], "dich_nghia": q["dich_nghia"], "loi_nghe": q["loi_nghe"],
+        "giai_thich": q["giai_thich"],
+        "dich_nghia": q["dich_nghia"],
+        "loi_nghe": q["loi_nghe"],
+        "goi_mo": q.get("goi_y") or "Kiểm tra lại nghĩa từ khóa và ngữ cảnh câu trước khi đối chiếu đáp án.",
         "trang_thai_moi": state,
     }
 
@@ -186,8 +205,23 @@ def get_review(db: Session, luot_id: int, uid: int) -> dict:
     done = all(i["ket_qua"] for i in items)
     result = None
     if done:
-        result = {"so_dung": sum(1 for i in items if i["ket_qua"]["dung"]), "tong": len(items),
-                  "cung_co": sum(1 for i in items if i["ket_qua"]["trang_thai_moi"] == "da_cung_co" and i["ket_qua"]["dung"])}
+        so_dung = sum(1 for i in items if i["ket_qua"]["dung"])
+        tong = len(items)
+        got_e = int(
+            db.execute(
+                text("""SELECT COALESCE(SUM(so_luong), 0) FROM nhat_ky_thuong
+                        WHERE nguoi_dung_id = :u AND luot_lam_id = :l AND ly_do = 'hoi_so_tay'"""),
+                {"u": uid, "l": luot_id},
+            ).scalar_one()
+        )
+        result = {
+            "so_dung": so_dung,
+            "tong": tong,
+            "ti_le_dung": round(100 * so_dung / tong) if tong else 0,
+            "du_chuan_hoi": bool(tong and (so_dung / tong) >= RECOVERY_MIN_RATIO),
+            "nang_luong_hoi": got_e,
+            "cung_co": sum(1 for i in items if i["ket_qua"]["trang_thai_moi"] == "da_cung_co" and i["ket_qua"]["dung"]),
+        }
     return {"id": luot_id, "trang_thai": attempt["trang_thai"], "cau_hoi": items, "ket_qua": result,
             "nhiem_vu": missions.list_missions(db, uid)}
 
@@ -215,39 +249,94 @@ def check_answer(db: Session, luot_id: int, uid: int, body) -> dict:
         else:
             van_ban = (body.van_ban or "").strip() or None
         answer.update({"phuong_an_chon_id": option_id, "van_ban": van_ban})
-        correct = bool(_is_correct(q, answer, options))
+        is_skipped = option_id is None and van_ban is None
+        trang_thai_tt = "bo_qua" if is_skipped else "da_tra_loi"
+        correct = (not is_skipped) and bool(_is_correct(q, answer, options))
         root = q["ma_goc_id"]
         note = db.execute(text("""SELECT trang_thai, han_on <= CURDATE() AS den_han FROM so_tay
                                   WHERE nguoi_dung_id = :u AND cau_hoi_goc_id = :g FOR UPDATE"""), {"u": uid, "g": root}).mappings().first()
+        viewed_today = bool(db.execute(text("""
+            SELECT 1 FROM cau_tra_loi x
+            JOIN cau_hoi c ON c.id = x.cau_hoi_id
+            JOIN luot_lam l ON l.id = x.luot_lam_id
+            WHERE l.nguoi_dung_id = :u AND c.ma_goc_id = :g AND DATE(x.xem_loi_giai_luc) = CURDATE()
+            LIMIT 1"""), {"u": uid, "g": root}).first())
         state = note["trang_thai"] if note else "can_on"
-        if not correct:
+        if is_skipped:
+            due = None  # chủ động bỏ qua không nâng củng cố nhưng cũng không tính là sai thêm lần mới
+        elif not correct:
             state, due = "can_on", "CURDATE()"
+        elif viewed_today or int(answer.get("muc_goi_y") or 0) >= 2:
+            due = None  # vừa xem lời giải trong ngày hoặc dùng gợi ý sâu → giữ trạng thái để ôn lại lần sau
         elif state == "can_on":
             state, due = "cho_on_lai", "CURDATE() + INTERVAL 1 DAY"
         elif state == "cho_on_lai" and note and note["den_han"]:
             state, due = "da_cung_co", "NULL"
         else:
-            due = None  # ôn sớm đúng hoặc đã củng cố: giữ nguyên
+            due = None
         if due is not None:
             db.execute(text(f"""INSERT INTO so_tay (nguoi_dung_id, cau_hoi_goc_id, trang_thai, han_on, cap_nhat_luc)
                                VALUES (:u, :g, :t, {due}, NOW())
                                ON DUPLICATE KEY UPDATE trang_thai = :t, han_on = {due}, cap_nhat_luc = NOW()"""),
                        {"u": uid, "g": root, "t": state})
-        if state == "da_cung_co" and correct:
-            db.execute(text("""INSERT IGNORE INTO nhat_ky_thuong (nguoi_dung_id, ly_do, so_luong, cau_hoi_goc_id)
-                               VALUES (:u, 'kn_cung_co', 1, :g)"""), {"u": uid, "g": root})
-        db.execute(text("""UPDATE cau_tra_loi SET phuong_an_chon_id = :o, van_ban = :v, xac_nhan_luc = NOW(),
-                           phien_ban_luu = phien_ban_luu + 1 WHERE id = :id"""), {"o": option_id, "v": van_ban, "id": answer["id"]})
-        db.execute(text("INSERT INTO ket_qua_cham (cau_tra_loi_id, lan, nguon, trang_thai, diem) VALUES (:a, 1, 'code', 'hoan_tat', :d)"),
-                   {"a": answer["id"], "d": 1 if correct else 0})
-        answer.update({"diem": 1 if correct else 0, "xac_nhan_luc": True})
+        if state == "da_cung_co" and correct and due == "NULL":
+            db.execute(text("""INSERT IGNORE INTO nhat_ky_thuong (nguoi_dung_id, luot_lam_id, ly_do, so_luong, cau_hoi_goc_id)
+                               VALUES (:u, :l, 'kn_cung_co', 1, :g)"""), {"u": uid, "l": luot_id, "g": root})
+        new_pbl = int(answer.get("phien_ban_luu") or 0) + 1
+        db.execute(text("""UPDATE cau_tra_loi
+                           SET phuong_an_chon_id = :o, van_ban = :v, trang_thai_thao_tac = :tt,
+                               xac_nhan_luc = NOW(), phien_ban_luu = :pbl
+                           WHERE id = :id"""),
+                   {"o": option_id, "v": van_ban, "tt": trang_thai_tt, "pbl": new_pbl, "id": answer["id"]})
+        db.execute(text("""INSERT INTO ket_qua_cham (cau_tra_loi_id, lan, nguon, trang_thai, phien_ban_luu, diem)
+                           VALUES (:a, 1, 'code', 'hoan_tat', :pbl, :d)"""),
+                   {"a": answer["id"], "pbl": new_pbl, "d": 1 if correct else 0})
+        answer.update({"diem": 1 if correct else 0, "xac_nhan_luc": True, "trang_thai_thao_tac": trang_thai_tt})
         db.execute(text("UPDATE luot_lam SET vi_tri_hien_tai = :v WHERE id = :id"), {"v": answer["thu_tu"] + 1, "id": luot_id})
         finished = all(a["xac_nhan_luc"] is not None for a in answers)
+        energy_recovered = 0
         if finished:
             db.execute(text("UPDATE luot_lam SET trang_thai = 'da_nop', nop_luc = NOW(), ly_do_nop = 'nop_tay' WHERE id = :id"),
                        {"id": luot_id})
+            total_q = len(answers)
+            clean_right = sum(
+                1 for a in answers
+                if a["diem"] is not None and float(a["diem"]) >= 1 and a.get("xem_loi_giai_luc") is None
+            )
+            if total_q > 0 and (clean_right / total_q) >= RECOVERY_MIN_RATIO:
+                db.execute(text("SELECT id FROM nguoi_dung WHERE id = :u FOR UPDATE"), {"u": uid})
+                cur_e, max_e = path_view.sync_user_energy(db, uid, auto_commit=False)
+                if cur_e < max_e:
+                    ins_e = db.execute(
+                        text("""INSERT IGNORE INTO nhat_ky_thuong (nguoi_dung_id, luot_lam_id, ly_do, so_luong)
+                                VALUES (:u, :l, 'hoi_so_tay', 1)"""),
+                        {"u": uid, "l": luot_id},
+                    )
+                    if ins_e.rowcount:
+                        db.execute(text("UPDATE nguoi_dung SET nang_luong = nang_luong + 1 WHERE id = :u"), {"u": uid})
+                        energy_recovered = 1
         db.commit()
-        return {"ket_qua": _feedback(q, options, answer, state), "ket_thuc": finished}
+        return {"ket_qua": _feedback(q, options, answer, state), "ket_thuc": finished, "nang_luong_hoi": energy_recovered}
+    except Exception:
+        db.rollback()
+        raise
+
+
+def mark_solution_viewed(db: Session, luot_id: int, uid: int, cau_hoi_id: int) -> dict:
+    """Ghi nhận thời điểm xem lời giải trong lượt ôn Sổ tay khi học viên chủ động bấm mở (AT45)."""
+    try:
+        _attempt(db, luot_id, uid, for_update=True)
+        row = db.execute(
+            text("SELECT id, xac_nhan_luc, trang_thai_thao_tac FROM cau_tra_loi WHERE luot_lam_id = :l AND cau_hoi_id = :q"),
+            {"l": luot_id, "q": cau_hoi_id},
+        ).mappings().first()
+        if row is None:
+            raise RuleError("Câu hỏi không thuộc lượt này")
+        if row["xac_nhan_luc"] is None or row["trang_thai_thao_tac"] == "bo_qua":
+            raise ConflictError("Chỉ mở lời giải sau khi đã trả lời và kiểm tra câu hỏi")
+        db.execute(text("UPDATE cau_tra_loi SET xem_loi_giai_luc = COALESCE(xem_loi_giai_luc, NOW()) WHERE id = :id"), {"id": int(row["id"])})
+        db.commit()
+        return {"da_ghi_nhan": True}
     except Exception:
         db.rollback()
         raise

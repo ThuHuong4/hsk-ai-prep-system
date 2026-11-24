@@ -11,7 +11,7 @@ import { useTheme } from "../shared/hooks/useTheme.js";
 import "./staffShell.css";
 
 // Khung trang theo bản mô phỏng: thanh bên + thanh trên. tabs = điện thoại dùng thanh tab ở đáy (Học viên)
-export default function StaffLayout({ roleLabel, menu, badges = {}, tabs = false, variant = "", topExtra = null }) {
+export default function StaffLayout({ roleLabel, menu, badges = {}, tabs = false, variant = "", topExtra = null, floating = null }) {
   const { user, logout } = useAuth();
   const navigate = useNavigate();
   const location = useLocation();
@@ -28,6 +28,8 @@ export default function StaffLayout({ roleLabel, menu, badges = {}, tabs = false
   const current = [...menu]
     .sort((a, b) => b.to.length - a.to.length)
     .find((item) => (item.end ? location.pathname === item.to : location.pathname.startsWith(item.to)));
+  const isTopMenu = menu.some((item) => item.to === location.pathname);
+  const homePath = menu[0]?.to || "/";
   const initial = (user?.ho_ten || "?").trim().charAt(0).toUpperCase();
 
   return (
@@ -59,15 +61,20 @@ export default function StaffLayout({ roleLabel, menu, badges = {}, tabs = false
           <button type="button" className="xg-icon-btn xg-menu-btn" aria-label="Mở menu" aria-expanded={navOpen} onClick={() => setNavOpen(true)}>
             <Icon name="menu" />
           </button>
-          {location.pathname !== menu[0]?.to && <BackButton home={menu[0]?.to || "/"} className="xg-icon-btn" />}
+          {location.pathname !== homePath && (
+            <BackButton home={homePath} to={isTopMenu ? homePath : null} className="xg-icon-btn" />
+          )}
           <span className="xg-top__title">{current?.label ?? roleLabel}</span>
-          <span className="xg-top__user">{user?.ho_ten}</span>
+          <span className="xg-top__spacer" />
           {topExtra}
           <button type="button" className="xg-icon-btn" onClick={toggleTheme}
             aria-label={theme === "dark" ? "Chuyển sang giao diện sáng" : "Chuyển sang giao diện tối"}>
             <Icon name={theme === "dark" ? "sun" : "moon"} />
           </button>
-          <span className="xg-avatar" aria-hidden="true">{initial}</span>
+          <span className="xg-user-chip" title={user?.ho_ten || ""}>
+            <span className="xg-top__user">{user?.ho_ten}</span>
+            <span className="xg-avatar" aria-hidden="true">{initial}</span>
+          </span>
         </header>
         <VerifyEmailBanner />
         <main className="xg-content">
@@ -75,6 +82,7 @@ export default function StaffLayout({ roleLabel, menu, badges = {}, tabs = false
         </main>
       </div>
       <ScrollNav raised={tabs} />
+      {floating}
       {tabs && (
         <nav className="xg-tabs" aria-label={`Menu nhanh ${roleLabel}`}>
           {menu.filter((item) => item.tab).map((item) => (

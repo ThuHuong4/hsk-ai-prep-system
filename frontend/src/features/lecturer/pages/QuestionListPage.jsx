@@ -75,7 +75,10 @@ export default function QuestionListPage() {
           <h1>Ngân hàng câu hỏi</h1>
           <p>Câu hỏi dùng chung cho Thi thử, Ôn luyện và đánh giá đầu vào. Sửa câu đã đăng sẽ tạo phiên bản nháp mới.</p>
         </div>
-        <Link className="xbtn" to="/giang-vien/cau-hoi/moi"><Icon name="plus" /> Thêm câu hỏi</Link>
+        <div className="lv-actions">
+          <Link className="xbtn xbtn--ghost" to="/giang-vien/cau-hoi/ai"><Icon name="spark" /> Soạn với AI</Link>
+          <Link className="xbtn" to="/giang-vien/cau-hoi/moi"><Icon name="plus" /> Thêm câu hỏi</Link>
+        </div>
       </div>
 
       <div className="lv-filters">

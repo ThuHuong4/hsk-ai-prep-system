@@ -11,8 +11,9 @@ HSK_AI/
 ├── docs/                                   # Đặc tả chuẩn (bám sát bố cục báo cáo LVTN)
 │   ├── 01_muc_tieu_pham_vi.md              # Phạm vi HSK 1–4, phân quyền 3 vai trò, ranh giới Backend – AI
 │   ├── 02_quy_tac_nghiep_vu.md             # Quy tắc nghiệp vụ cốt lõi và luồng xử lý chi tiết
-│   ├── 03_thiet_ke_csdl.md                 # Sơ đồ CSDL, từ điển dữ liệu 24 bảng + 4 View, chuẩn hóa 3NF/BCNF
-│   └── 04_kich_ban_kiem_thu.md             # Kịch bản kiểm thử chấp nhận (AT01–AT48)
+│   ├── 03_thiet_ke_csdl.md                 # Sơ đồ CSDL, từ điển dữ liệu 24 bảng + 4 View, chuẩn hóa 3NF
+│   ├── 04_kich_ban_kiem_thu.md             # Kịch bản kiểm thử chấp nhận (AT01–AT48)
+│   └── 05_ban_do_luong_code_bao_ve_lvtn.md # Bản đồ kiến trúc & luồng xử lý mã nguồn phục vụ bảo vệ LVTN
 ├── xianglingo_schema.sql                   # Lược đồ MySQL 8.4 đầy đủ (24 bảng + 4 View + dữ liệu danh mục gốc)
 ├── backend/                                # Máy chủ API (Python, FastAPI, SQLAlchemy Core, PyMySQL)
 │   ├── app/
@@ -41,7 +42,7 @@ HSK_AI/
 │   │       ├── content_reports/            # Học viên báo lỗi câu hỏi & Giảng viên xử lý
 │   │       ├── lecturer_dashboard/         # Tổng quan số liệu nội dung cho Giảng viên
 │   │       ├── search/                     # Từ điển tra nhanh từ vựng HSK
-│   │       ├── survey/                     # Khảo sát đầu vào (đang chuyển giao sang bài đánh giá thích ứng 8 câu)
+│   │       ├── placement/                  # Bài đánh giá đầu vào thích ứng 8 câu (HSK 1–4) & phân tích năng lực 4 phần
 │   │       └── admin/                      # Quản trị tài khoản, phân quyền vai trò và nhật ký hệ thống
 │   ├── scripts/                            # Script nâng cấp CSDL và nạp dữ liệu mẫu (seed)
 │   ├── tests/                              # Kiểm thử tự động (unit/ và integration/)
@@ -82,7 +83,7 @@ HSK_AI/
    - Mọi tính năng dùng AI đều đi qua `client.py` (`chat_completion`, `json_completion`).
    - Luôn đóng hoặc `rollback()` phiên đọc MySQL **trước khi** gọi AI để không giữ kết nối CSDL trong lúc chờ mạng.
 3. **Backend giữ quyền quyết định nghiệp vụ**:
-   - Chấm câu khách quan, tính điểm, trừ năng lượng, cộng KN, kiểm tra điều kiện mở khóa cấp/thửa đều do Backend thực thi từ dữ liệu CSDL chuẩn 3NF/BCNF; AI chỉ giải thích, gợi ý phân tầng và nhận xét theo tiêu chí.
+   - Chấm câu khách quan, tính điểm, trừ năng lượng, cộng KN, kiểm tra điều kiện mở khóa cấp/thửa đều do Backend thực thi từ dữ liệu CSDL chuẩn 3NF; AI chỉ giải thích, gợi ý phân tầng và nhận xét theo tiêu chí.
 
 ---
 

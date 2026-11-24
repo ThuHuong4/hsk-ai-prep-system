@@ -11,7 +11,7 @@ from app.modules.questions.repositories.question_rows import (
 
 _PUBLIC = (
     "id", "ma_goc_id", "phien_ban", "dang", "trang_thai", "noi_dung", "tep_audio", "tep_hinh",
-    "mo_ta_hinh", "loi_nghe", "pinyin", "dich_nghia", "goi_y", "giai_thich", "dap_an_thu_tu",
+    "mo_ta_hinh", "loi_nghe", "pinyin", "dich_nghia", "goi_y", "goi_y_2", "giai_thich", "dap_an_thu_tu",
     "tu_bat_buoc", "tieu_chi_mo_ta", "diem_toi_da", "nguong_dat",
 )
 
@@ -48,6 +48,8 @@ def get_question_detail(db: Session, cau_hoi_id: int) -> dict | None:
         "dung_dau_vao": bool(row["dung_dau_vao"]),
         "tu_vung_id": row["tu_vung_id"],
         "tu_vung": _word(db, row["tu_vung_id"]),
+        "nguon_noi_dung": row["nguon_noi_dung"],
+        "nhom_kien_thuc_id": row["nhom_kien_thuc_id"],
         "tao_luc": row["tao_luc"],
         "cau_con": [_shape(c, options) for c in children],
         "phien_ban_moi_nhat": latest_version(db, row["ma_goc_id"]),

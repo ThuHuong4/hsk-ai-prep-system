@@ -146,6 +146,27 @@ def set_exam_items(db: Session, bo_de_id: int, items) -> None:
 
 
 def publish_exam(db: Session, bo_de_id: int) -> None:
+    # Nếu đề có câu Nghe mà chưa có băng Nghe liên tiếp chung, tự ghép 1 băng MP3 liên tiếp trước khi mở giao dịch đăng
+    pre = find_exam(db, bo_de_id)
+    if pre and pre["trang_thai"] == "nhap" and not pre["tep_audio_chung"]:
+        has_listen = db.execute(
+            text("""
+                SELECT EXISTS(
+                    SELECT 1 FROM bo_de_cau_hoi i
+                    JOIN cau_hoi q ON q.id = i.cau_hoi_id
+                    LEFT JOIN cau_hoi p ON p.id = q.cau_cha_id
+                    WHERE i.bo_de_id = :id AND i.la_cau_vi_du = 0 AND COALESCE(q.ky_nang, p.ky_nang) = 'nghe'
+                )
+            """),
+            {"id": bo_de_id},
+        ).scalar_one()
+        if has_listen:
+            from app.modules.exam_authoring.services import listening_audio
+            from app.modules.exam_authoring.services.ai_media_service import AiMediaError
+            try:
+                listening_audio.build_for_exam_db(db, bo_de_id)
+            except AiMediaError as err:
+                raise QuestionRuleError(err.message) from err
     try:
         exam = _load_draft(db, bo_de_id)
         if not exam["thoi_luong_phut"]:

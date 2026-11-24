@@ -1,0 +1,1112 @@
+"""Biên soạn và nạp 7 đề thi mô phỏng chuẩn cấu trúc HSK 2.0 cho cấp HSK 2:
+HSK 2 – Đề 4 (H2M04) .. HSK 2 – Đề 10 (H2M10).
+
+Mỗi đề gồm đúng 60 câu tính điểm (35 Nghe phần 1–4 + 25 Đọc phần 5–8) + 10 câu ví dụ chuẩn Hanban,
+có đầy đủ Pinyin cho phương án & phần Đọc, hình ảnh khớp nghĩa 100% và 1 băng nghe MP3 liên tục.
+"""
+from pathlib import Path
+import sys
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+
+from scripts._sim_exam_helper import LETTER, opts_paths, opts_text, save_and_seed_exams, tf
+
+P0 = lambda n: f"exams/hsk1_h10000/img/{n:03d}.jpg"
+P1 = lambda n: f"exams/hsk1_h10901/img/{n:03d}.jpg"
+P2 = lambda n: f"exams/hsk1_h10902/img/{n:03d}.jpg"
+P3 = lambda n: f"exams/hsk1_h11003/img/{n:03d}.jpg"
+K1 = lambda name: f"exams/hsk2_h20901/img/{name}.jpg"
+K2 = lambda n: f"exams/hsk2_h20902/img/{n:03d}.jpg"
+K3 = lambda n: f"exams/hsk2_h21003/img/{n:03d}.jpg"
+
+
+def make_hsk2_exam(cfg: dict) -> tuple[str, dict]:
+    code = cfg["code"]
+    slug = f"hsk2_{code.lower()}"
+    plan: list[dict] = []
+
+    # Part 1: Nghe 1–10 (2 ví dụ + 10 câu tính điểm)
+    l1_rows = [
+        (True, K2(0), True, "我们家有三个人。"),
+        (True, K2(1), False, "我每天坐公共汽车去上班。"),
+        *[(False, *r) for r in cfg["L1"]],
+    ]
+    for ex, pic, ok, said in l1_rows:
+        plan.append({
+            "part": 1, "ex": ex,
+            "q": {"dang": "dung_sai", "ky_nang": "nghe", "dung_thi_thu": True, "dung_on_luyen": False,
+                  "tep_hinh": pic, "loi_nghe": said, "phuong_an": tf(ok)},
+        })
+
+    # Part 2A: Nghe 11–15 (6 hình A–F; D = K2(15) đá bóng làm ví dụ)
+    p2a_children = [
+        [{"dang": "chon_bo_chung", "loi_nghe": "男：你喜欢什么运动？\n女：我最喜欢踢足球。", "dap_an_thu_tu": 4}, True],
+        *[[{"dang": "chon_bo_chung", "loi_nghe": said, "dap_an_thu_tu": LETTER[ans]}, False] for ans, said in cfg["L2A"]],
+    ]
+    plan.append({
+        "part": 2,
+        "group": {"dang": "ngu_lieu", "ky_nang": "nghe", "dung_thi_thu": True, "dung_on_luyen": False,
+                  "phuong_an": opts_paths(cfg["L2A_PICS"])},
+        "children": p2a_children,
+    })
+
+    # Part 2B: Nghe 16–20 (5 hình A–E)
+    plan.append({
+        "part": 2,
+        "group": {"dang": "ngu_lieu", "ky_nang": "nghe", "dung_thi_thu": True, "dung_on_luyen": False,
+                  "phuong_an": opts_paths(cfg["L2B_PICS"])},
+        "children": [
+            [{"dang": "chon_bo_chung", "loi_nghe": said, "dap_an_thu_tu": LETTER[ans]}, False]
+            for ans, said in cfg["L2B"]
+        ],
+    })
+
+    # Part 3: Nghe 21–30 (1 ví dụ + 10 câu)
+    l3_rows = [
+        (True, "A", ["红色 [hóngsè]", "黑色 [hēisè]", "白色 [báisè]"],
+         "男：小王，这里有几个杯子，哪个是你的？\n女：左边那个红色的是我的。\n问：小王的杯子是什么颜色的？"),
+        *[(False, *r) for r in cfg["L3"]],
+    ]
+    for ex, ans, ops, said in l3_rows:
+        plan.append({
+            "part": 3, "ex": ex,
+            "q": {"dang": "chon_mot", "ky_nang": "nghe", "dung_thi_thu": True, "dung_on_luyen": False,
+                  "loi_nghe": said, "phuong_an": opts_text(ops, ans)},
+        })
+
+    # Part 4: Nghe 31–35 (1 ví dụ + 5 câu)
+    l4_rows = [
+        (True, "A", ["名字 [míngzi]", "时间 [shíjiān]", "房间 号 [fángjiān hào]"],
+         "女：请在这儿写您的名字。\n男：是这儿吗？\n女：不是，是这儿。\n男：好，谢谢。\n问：男的要写什么？"),
+        *[(False, *r) for r in cfg["L4"]],
+    ]
+    for ex, ans, ops, said in l4_rows:
+        plan.append({
+            "part": 4, "ex": ex,
+            "q": {"dang": "chon_mot", "ky_nang": "nghe", "dung_thi_thu": True, "dung_on_luyen": False,
+                  "loi_nghe": said, "phuong_an": opts_text(ops, ans)},
+        })
+
+    # Part 5: Đọc 36–40 (6 hình A–F; D = K2(26) bóng rổ làm ví dụ)
+    r1_children = [
+        [{"dang": "chon_bo_chung", "noi_dung": "每 个 星期六， 我 都 去 打 篮球。",
+          "pinyin": "Měi ge xīngqīliù, wǒ dōu qù dǎ lánqiú.", "dap_an_thu_tu": 4}, True],
+        *[[{"dang": "chon_bo_chung", "noi_dung": s, "pinyin": py, "dap_an_thu_tu": LETTER[ans]}, False]
+          for ans, s, py in cfg["R1"]],
+    ]
+    plan.append({
+        "part": 5,
+        "group": {"dang": "ngu_lieu", "ky_nang": "doc", "dung_thi_thu": True, "dung_on_luyen": False,
+                  "phuong_an": opts_paths(cfg["R1_PICS"])},
+        "children": r1_children,
+    })
+
+    # Part 6: Đọc 41–45 (Điền từ A–F; E = 贵 [guì] làm ví dụ)
+    r2_children = [
+        [{"dang": "chon_bo_chung", "noi_dung": "这儿 的 羊肉 很 好吃， 但是 也 很 （　）。",
+          "pinyin": "Zhèr de yángròu hěn hǎochī, dànshì yě hěn ( ).", "dap_an_thu_tu": 5}, True],
+        *[[{"dang": "chon_bo_chung", "noi_dung": s, "pinyin": py, "dap_an_thu_tu": LETTER[ans]}, False]
+          for ans, s, py in cfg["R2"]],
+    ]
+    plan.append({
+        "part": 6,
+        "group": {"dang": "ngu_lieu", "ky_nang": "doc", "dung_thi_thu": True, "dung_on_luyen": False,
+                  "phuong_an": opts_text(cfg["R2_OPTS"])},
+        "children": r2_children,
+    })
+
+    # Part 7: Đọc 46–50 (Đúng/Sai ★; 2 ví dụ + 5 câu)
+    r3_rows = [
+        (True, True,
+         "现在 是 11 点 30 分， 他们 已经 游了 20 分钟 了。\n★ 他们 11 点 10 分 开始 游泳。",
+         "Xiànzài shì 11 diǎn 30 fēn, tāmen yǐjīng yóule 20 fēnzhōng le.\n★ Tāmen 11 diǎn 10 fēn kāishǐ yóuyǒng."),
+        (True, False,
+         "我 会 跳舞， 但 跳 得 不 怎么样。\n★ 我 跳 得 非常 好。",
+         "Wǒ huì tiàowǔ, dàn tiào de bù zěnmeyàng.\n★ Wǒ tiào de fēicháng hǎo."),
+        *[(False, *r) for r in cfg["R3"]],
+    ]
+    for ex, ok, s, py in r3_rows:
+        plan.append({
+            "part": 7, "ex": ex,
+            "q": {"dang": "dung_sai", "ky_nang": "doc", "dung_thi_thu": True, "dung_on_luyen": False,
+                  "noi_dung": s, "pinyin": py, "phuong_an": tf(ok)},
+        })
+
+    # Part 8A: Đọc 51–55 (A–F; E làm ví dụ) & Part 8B: Đọc 56–60 (A–E)
+    r4a_children = [
+        [{"dang": "chon_bo_chung", "noi_dung": "他 还 在 教室 里 学习。",
+          "pinyin": "Tā hái zài jiàoshì li xuéxí.", "dap_an_thu_tu": 5}, True],
+        *[[{"dang": "chon_bo_chung", "noi_dung": s, "pinyin": py, "dap_an_thu_tu": LETTER[ans]}, False]
+          for ans, s, py in cfg["R4A"]],
+    ]
+    plan.append({
+        "part": 8,
+        "group": {"dang": "ngu_lieu", "ky_nang": "doc", "dung_thi_thu": True, "dung_on_luyen": False,
+                  "phuong_an": opts_text(cfg["R4A_OPTS"])},
+        "children": r4a_children,
+    })
+    plan.append({
+        "part": 8,
+        "group": {"dang": "ngu_lieu", "ky_nang": "doc", "dung_thi_thu": True, "dung_on_luyen": False,
+                  "phuong_an": opts_text(cfg["R4B_OPTS"])},
+        "children": [
+            [{"dang": "chon_bo_chung", "noi_dung": s, "pinyin": py, "dap_an_thu_tu": LETTER[ans]}, False]
+            for ans, s, py in cfg["R4B"]
+        ],
+    })
+
+    return f"{slug}.json", {
+        "exam": {
+            "code": code,
+            "level": "HSK2",
+            "ten": cfg["ten"],
+            "phut": 55,
+            "nguon": "Đề mô phỏng biên soạn chuẩn cấu trúc HSK 2.0 (HSK 二级)",
+            "audio": f"exams/{slug}/listening.mp3",
+        },
+        "plan": plan,
+    }
+
+
+HSK2_CONFIGS = [
+    # ==================== HSK 2 – ĐỀ 4 (H2M04) ====================
+    {
+        "code": "H2M04",
+        "ten": "HSK 2 – Đề 4",
+        "L1": [
+            (K1("006"), True, "周末妈妈在家洗了很多衣服。"),
+            (K3(3), False, "哥哥每天下午都去游泳。"),
+            (K2(5), True, "服务员，请给我来一杯热咖啡。"),
+            (K3(8), True, "到了前面的路口，请向左走。"),
+            (K1("005"), False, "桌子上放着几个大西瓜。"),
+            (K2(13), True, "吃饭前要先去洗洗手。"),
+            (K3(10), True, "这次汉语考试他考得非常好，很高兴。"),
+            (K2(8), False, "姐姐昨天买了一件白色的衬衫。"),
+            (K3(6), True, "看电脑时间太长了，眼睛有点儿累。"),
+            (P0(40), False, "他们准备坐飞机去上海旅游。"),
+        ],
+        "L2A_PICS": [K3(23), K2(14), K3(12), K2(15), K1("g11_A"), K2(17)],
+        "L2A": [
+            ("A", "男：你每天早上都去跑步吗？\n女：对，每天跑半个小时，对身体很好。"),
+            ("E", "男：祝你生日快乐！这束红花送给你。\n女：太漂亮了，谢谢你！"),
+            ("B", "女：你在看今天的报纸吗？有什么新消息？\n男：下个星期这儿有一场足球比赛。"),
+            ("F", "女：怎么停下来了？车出什么问题了？\n男：我下去看看，可能是小问题。"),
+            ("C", "女：来，小狗饿了吧，吃一点儿东西。\n男：它跑了一上午，一定饿了。"),
+        ],
+        "L2B_PICS": [K3(24), K2(21), K1("g16_E"), K3(20), K2(18)],
+        "L2B": [
+            ("D", "女：先生，请问您想吃点儿什么菜？\n男：来一盘鱼和一碗米饭，谢谢。"),
+            ("B", "男：头还疼吗？医生开的药吃了吗？\n女：正准备吃呢，医生说一天吃三次。"),
+            ("A", "男：站好，看这儿，笑一笑！\n女：照好了吗？让我看看。"),
+            ("E", "女：今天外面的风真大，冷死了！\n男：快进房间里喝杯热水吧。"),
+            ("C", "女：你看，这两双鞋我穿哪双更好看？\n男：我觉得左手那双红色的不错。"),
+        ],
+        "L3": [
+            ("B", ["自行车 [zìxíngchē]", "出租车 [chūzūchē]", "公共汽车 [gōnggòng qìchē]"],
+             "男：快八点了，坐公共汽车可能来不及了。\n女：那我们打辆出租车去公司吧。\n问：他们准备怎么去公司？"),
+            ("C", ["15 元 [15 yuán]", "25 元 [25 yuán]", "30 元 [30 yuán]"],
+             "女：请问，这种苹果怎么卖？\n男：六块钱一斤，您这儿一共五斤。\n问：女的要给多少钱？"),
+            ("A", ["晴天 [qíngtiān]", "阴天 [yīntiān]", "下雪 [xià xuě]"],
+             "男：昨天还下大雨，今天天就晴了。\n女：是啊，下午我们可以出去打篮球了。\n问：今天天气怎么样？"),
+            ("B", ["医院 [yīyuàn]", "机场 [jīchǎng]", "书店 [shūdiàn]"],
+             "女：哥哥的飞机十点半到，你现在出发了吗？\n男：已经在路上了，再有二十分钟就到机场。\n问：男的要去哪儿？"),
+            ("C", ["黑色 [hēisè]", "黄色 [huángsè]", "白色 [báisè]"],
+             "男：你穿这件白毛衣真好看，新买的？\n女：是我妈妈上星期送给我的生日礼物。\n问：女的穿的毛衣是什么颜色的？"),
+            ("A", ["做作业 [zuò zuòyè]", "洗衣服 [xǐ yīfu]", "看电影 [kàn diànyǐng]"],
+             "女：出去玩儿一会儿吧？\n男：不行，老师今天留的题我还没做完呢。\n问：男的现在在做什么？"),
+            ("B", ["弟弟 [dìdi]", "丈夫 [zhàngfu]", "同事 [tóngshì]"],
+             "男：你们家每天是谁做晚饭？\n女：我下班晚，一般都是我丈夫做，他做的鱼特别好吃。\n问：谁经常做晚饭？"),
+            ("C", ["9 月 2 号 [9 yuè 2 hào]", "9 月 10 号 [9 yuè 10 hào]", "9 月 12 号 [9 yuè 12 hào]"],
+             "女：你们学校哪天开始上课？\n男：九月十号报名，十二号开始上课。\n问：他们哪天开始上课？"),
+            ("A", ["手机 [shǒujī]", "手表 [shǒubiǎo]", "铅笔 [qiānbǐ]"],
+             "男：糟了，我的手机怎么不在包里？\n女：别着急，刚才在饭馆吃饭时是不是放在桌子上了？\n问：男的找不到什么了？"),
+            ("B", ["太忙了 [tài máng le]", "已经看过了 [yǐjīng kànguo le]", "身体不舒服 [shēntǐ bù shūfu]"],
+             "女：听说新来的那个电影很有意思，晚上一起去看吧？\n男：我上周末和同学看过了，真的不错。\n问：男的是什么意思？"),
+        ],
+        "L4": [
+            ("B", ["去旅游 [qù lǚyóu]", "找新房子 [zhǎo xīn fángzi]", "买新车 [mǎi xīn chē]"],
+             "男：你最近周末怎么总往外跑？\n女：我现在住的地方离地铁站太远，想换个近一点儿的房子。\n男：找到了吗？\n女：昨天看了一套，环境不错，就是稍微有点儿贵。\n问：女的最近在忙什么？"),
+            ("C", ["茶 [chá]", "牛奶 [niúnǎi]", "西瓜汁 [xīguāzhī]"],
+             "女：外面真热，你想喝点儿什么？家里有热茶和牛奶。\n男：有没有凉一点儿的？\n女：冰箱里还有半个西瓜，我给你做杯西瓜汁吧。\n男：太好了，谢谢！\n问：男的最后喝什么？"),
+            ("A", ["同事 [tóngshì]", "医生和病人 [yīshēng hé bìngrén]", "老师和学生 [lǎoshī hé xuésheng]"],
+             "男：小李，刘经理让你下午两点去一下他的办公室。\n女：好的，你知道是什么事吗？\n男：可能是商量下个月去上海工作的事情。\n女：明白了，谢谢你告诉我。\n问：说话人最可能是什么关系？"),
+            ("B", ["7 点 [7 diǎn]", "7 点半 [7 diǎn bàn]", "8 点 [8 diǎn]"],
+             "女：明天早上的火车是八点半的，我们几点从家里走？\n男：去火车站路上要四十分钟，七点半走吧。\n女：好，那我明天六点四十起床做早饭。\n男：不用做了，我们在路上买点儿包子就行。\n问：他们打算几点出门？"),
+            ("C", ["唱歌 [chànggē]", "画画儿 [huà huàr]", "游泳 [yóuyǒng]"],
+             "男：你儿子今年几岁了？长得真高！\n女：十岁了。他从六岁就开始学游泳，每天都游一个小时。\n男：怪不得身体这么好！\n女：是啊，他现在游得比他爸爸还快呢。\n问：女的儿子喜欢什么运动？"),
+        ],
+        "R1_PICS": [K3(25), K2(27), K3(28), K2(26), K2(28), K1("g36_F")],
+        "R1": [
+            ("C", "雨 已经 停 了， 太阳 出来 了。", "Yǔ yǐjīng tíng le, tàiyáng chūlai le."),
+            ("E", "喂， 女儿 有点儿 发烧， 我 带 她 去 医院 看看。", "Wéi, nǚ'ér yǒudiǎnr fāshāo, wǒ dài tā qù yīyuàn kànkan."),
+            ("A", "哥哥 工作 第一 个 月， 给 自己 买了 一 个 新 手机。", "Gēge gōngzuò dì-yī ge yuè, gěi zìjǐ mǎile yí ge xīn shǒujī."),
+            ("B", "这个 问题 大 家 都 听 懂 了 吗？", "Zhège wèntí dàjiā dōu tīng dǒng le ma?"),
+            ("F", "来， 我 给 你们 两 位 介绍 一下。", "Lái, wǒ gěi nǐmen liǎng wèi jièshào yíxià."),
+        ],
+        "R2_OPTS": [
+            "帮助 [bāngzhù]", "便宜 [piányi]", "休息 [xiūxi]", "千 [qiān]", "贵 [guì]", "慢 [màn]",
+        ],
+        "R2": [
+            ("C", "工作 一 上午 了， 大 家 先 （　） 十五 分钟 吧。", "Gōngzuò yí shàngwǔ le, dàjiā xiān ( ) shíwǔ fēnzhōng ba."),
+            ("F", "外面 下 雪 了， 路 不 好 走， 你 开 车 （　） 一点儿。", "Wàimiàn xià xuě le, lù bù hǎo zǒu, nǐ kāi chē ( ) yìdiǎnr."),
+            ("A", "非常 感谢 您 这 一 年 来 对 我 的 （　）。", "Fēicháng gǎnxiè nín zhè yì nián lái duì wǒ de ( )."),
+            ("D", "他们 学校 很 大， 一共 有 三 （　） 多 个 学生。", "Tāmen xuéxiào hěn dà, yígòng yǒu sān ( ) duō ge xuésheng."),
+            ("B", "男：这 件 衣服 怎么 这么 （　）？\n女：现在 商店 做 活动， 所以 不 贵。",
+             "Nán: Zhè jiàn yīfu zěnme zhème ( )?\nNǚ: Xiànzài shāngdiàn zuò huódòng, suǒyǐ bú guì."),
+        ],
+        "R3": [
+            (True,
+             "小张 的 家 离 公司 很 近， 每天 早上 走路 十 分钟 就 到 了， 所以 他 从来 没 迟到 过。\n★ 小张 走路 去 上班。",
+             "Xiǎo Zhāng de jiā lí gōngsī hěn jìn, měi tiān zǎoshang zǒulù shí fēnzhōng jiù dào le, suǒyǐ tā cónglái méi chídào guo.\n★ Xiǎo Zhāng zǒulù qù shàngbān."),
+            (False,
+             "这 本 书 一共 有 两百 多 页， 我 已经 读 了 三 天 了， 还 有 五十 页 没 读 完。\n★ 这 本 书 他 已经 读 完 了。",
+             "Zhè běn shū yígòng yǒu liǎngbǎi duō yè, wǒ yǐjīng dúle sān tiān le, hái yǒu wǔshí yè méi dú wán.\n★ Zhè běn shū tā yǐjīng dú wán le."),
+            (True,
+             "姐姐 最 喜欢 吃 鱼， 每次 我们 去 那 家 饭馆儿， 她 都 要 点 一 盘 鱼。\n★ 姐姐 爱 吃 那 家 饭馆儿 的 鱼。",
+             "Jiějie zuì xǐhuan chī yú, měi cì wǒmen qù nà jiā fànguǎnr, tā dōu yào diǎn yì pán yú.\n★ Jiějie ài chī nà jiā fànguǎnr de yú."),
+            (False,
+             "昨天 是 妈妈 的 生日， 我 送 了 她 一 块 手表， 哥哥 送 了 她 一 件 红 衣服。\n★ 我 送 给 妈妈 一 件 红 衣服。",
+             "Zuótiān shì māma de shēngrì, wǒ sòngle tā yí kuài shǒubiǎo, gēge sòngle tā yí jiàn hóng yīfu.\n★ Wǒ sòng gěi māma yí jiàn hóng yīfu."),
+            (True,
+             "虽然 今天 是 星期日， 但是 因为 明天 有 一 个 重要 的 考试， 教室 里 学习 的 学生 还是 非常 多。\n★ 明天 学生们 要 考试。",
+             "Suīrán jīntiān shì xīngqīrì, dànshì yīnwèi míngtiān yǒu yí ge zhòngyào de kǎoshì, jiàoshì li xuéxí de xuésheng háishi fēicháng duō.\n★ Míngtiān xuéshengmen yào kǎoshì."),
+        ],
+        "R4A_OPTS": [
+            "在 桌子 上 呢， 报纸 旁边。 [Zài zhuōzi shang ne, bàozhǐ pángbiān.]",
+            "没 问题， 我 下午 四 点 有 时间。 [Méi wèntí, wǒ xiàwǔ sì diǎn yǒu shíjiān.]",
+            "还 不 错， 就是 房间 小 了 一点儿。 [Hái bú cuò, jiùshì fángjiān xiǎole yìdiǎnr.]",
+            "不 远， 坐 公共汽车 两 站 就 到。 [Bù yuǎn, zuò gōnggòng qìchē liǎng zhàn jiù dào.]",
+            "他 在 哪儿 呢？ 你 看见 他 了 吗？ [Tā zài nǎr ne? Nǐ kànjiàn tā le ma?]",
+            "医生 让 我 在 家 多 休息 两 天。 [Yīshēng ràng wǒ zài jiā duō xiūxi liǎng tiān.]",
+        ],
+        "R4A": [
+            ("D", "请问， 从 这儿 到 火车站 远 吗？", "Qǐngwèn, cóng zhèr dào huǒchēzhàn yuǎn ma?"),
+            ("A", "你 看见 我 的 黑色 手机 了 吗？", "Nǐ kànjiàn wǒ de hēisè shǒujī le ma?"),
+            ("F", "你 身体 好 些 了 吗？ 今天 去 上班 吗？", "Nǐ shēntǐ hǎo xiē le ma? Jīntiān qù shàngbān ma?"),
+            ("C", "你 新 找 的 那个 宾馆 怎么样？", "Nǐ xīn zhǎo de nàge bīnguǎn zěnmeyàng?"),
+            ("B", "你 今天 下午 能 帮 我 看 一下 电脑 吗？", "Nǐ jīntiān xiàwǔ néng bāng wǒ kàn yíxià diànnǎo ma?"),
+        ],
+        "R4B_OPTS": [
+            "太 晚 了， 明天 早上 再 喝 吧。 [Tài wǎn le, míngtiān zǎoshang zài hē ba.]",
+            "他 去 北京 出差 了， 星期五 回来。 [Tā qù Běijīng chūchāi le, xīngqīwǔ huílai.]",
+            "我 弟弟 今年 刚 来 这儿 读 大学。 [Wǒ dìdi jīnnián gāng lái zhèr dú dàxué.]",
+            "好 啊， 我 最 喜欢 吃 羊肉 了。 [Hǎo a, wǒ zuì xǐhuan chī yángròu le.]",
+            "别 笑 我 了， 我 才 学 了 两 个 月。 [Bié xiào wǒ le, wǒ cái xuéle liǎng ge yuè.]",
+        ],
+        "R4B": [
+            ("A", "晚上 喝 咖啡 会 睡 不 着 觉 的。", "Wǎnshang hē kāfēi huì shuì bù zháo jiào de."),
+            ("D", "中午 我 请 你 去 前面 那 家 饭店 吃 羊肉 吧？", "Zhōngwǔ wǒ qǐng nǐ qù qiánmiàn nà jiā fàndiàn chī yángròu ba?"),
+            ("B", "这 几 天 怎么 没 看见 王 先生？", "Zhè jǐ tiān zěnme méi kànjiàn Wáng xiānsheng?"),
+            ("E", "你 的 汉语 说 得 越来越 好 了！", "Nǐ de Hànyǔ shuō de yuèláiyuè hǎo le!"),
+            ("C", "你 认识 这个 学校 的 人？", "Nǐ rènshi zhège xuéxiào de rén?"),
+        ],
+    },
+
+    # ==================== HSK 2 – ĐỀ 5 (H2M05) ====================
+    {
+        "code": "H2M05",
+        "ten": "HSK 2 – Đề 5",
+        "L1": [
+            (K3(2), True, "今天是二十三号，星期五。"),
+            (K2(6), True, "她们两个人都非常喜欢唱歌。"),
+            (K1("001"), False, "桌子上放着两本汉语词典。"),
+            (K3(9), True, "她喜欢一边吃早饭，一边看报纸。"),
+            (K2(2), False, "这两个水果一样大。"),
+            (K1("009"), True, "这条大狗很聪明，也很听话。"),
+            (K3(5), True, "生病的时候应该躺下好好休息。"),
+            (K2(9), False, "今天中午只有他一个人在家吃饭。"),
+            (K3(11), True, "妈妈去超市买了不少新鲜的菜和水果。"),
+            (P1(4), False, "爸爸每天开车送我去学校。"),
+        ],
+        "L2A_PICS": [K3(13), K1("g11_C"), K2(12), K2(15), K3(17), K2(16)],
+        "L2A": [
+            ("B", "女：这个问题谁来回答一下？\n男：老师，我知道，让我来说吧！"),
+            ("A", "男：阳台上那些衣服都干了吗？\n女：干了，我已经都洗好收进来了。"),
+            ("F", "男：你妹妹跳舞跳得真漂亮！\n女：谢谢，她从五岁就开始学了。"),
+            ("C", "女：外面的雨停了吗？\n男：停了，不用带伞了。"),
+            ("E", "女：穿上这件大衣还觉得冷吗？\n女：暖和多了，谢谢妈妈！"),
+        ],
+        "L2B_PICS": [K2(19), K3(22), K1("g16_A"), K2(22), K3(14)],
+        "L2B": [
+            ("C", "女：快点儿，电影七点半开始，现在几点了？\n男：我看一下表，才七点零五分，来得及。"),
+            ("A", "男：今天的数学考试难不难？\n女：太难了，最后两道题我都没做出来。"),
+            ("B", "女：喂，你已经住进宾馆了吗？\n男：对，刚到房间，洗个澡就休息了。"),
+            ("E", "女：师傅，我的车在路上突然走不了了，您能来看看吗？\n男：没问题，您把位置发给我。"),
+            ("D", "男：你看，这本书上介绍的地方多美啊！\n女：那我们今年夏天就去这儿旅游吧。"),
+        ],
+        "L3": [
+            ("A", ["鸡蛋面 [jīdànmiàn]", "米饭 [mǐfàn]", "饺子 [jiǎozi]"],
+             "女：今天中午不想做饭了，简单吃碗鸡蛋面吧。\n男：好啊，多放点儿青菜。\n问：他们中午吃什么？"),
+            ("C", ["100 元 [100 yuán]", "150 元 [150 yuán]", "200 元 [200 yuán]"],
+             "男：这双运动鞋多少钱？\n女：原价三百，今天打折，两百块就可以买。\n问：现在这双鞋卖多少钱？"),
+            ("B", ["教室 [jiàoshì]", "图书馆 [túshūguǎn]", "电影院 [diànyǐngyuàn]"],
+             "女：小声点儿，这儿大家都在看书呢。\n男：对不起，我借完这两本书马上就出去。\n问：他们现在在哪儿？"),
+            ("A", ["姐姐 [jiějie]", "妹妹 [mèimei]", "妈妈 [māma]"],
+             "男：照片里穿红裙子的人是你妹妹吗？\n女：不是，那是我姐姐，她比我大三岁。\n问：穿红裙子的是谁？"),
+            ("C", ["坐船 [zuò chuán]", "坐飞机 [zuò fēijī]", "坐火车 [zuò huǒchē]"],
+             "女：去西安坐飞机太贵了，我们坐火车去怎么样？\n男：好，晚上睡一觉，第二天早上就到了。\n问：他们打算怎么去西安？"),
+            ("B", ["星期四 [xīngqīsì]", "星期五 [xīngqīwǔ]", "星期六 [xīngqīliù]"],
+             "男：明天就是周末了，晚上我们一起去唱歌吧？\n女：好主意，叫上小王一起去。\n问：今天是星期几？"),
+            ("A", ["太甜了 [tài tián le]", "太苦了 [tài kǔ le]", "太热了 [tài rè le]"],
+             "女：这杯牛奶你怎么喝了一口就不喝了？\n男：你放了太多糖，太甜了。\n问：男的为什么不喝了？"),
+            ("B", ["302", "402", "502"],
+             "男：请问，张老师住三零二房间吗？\n女：不是，她住楼上四零二。\n问：张老师住哪个房间？"),
+            ("C", ["买药 [mǎi yào]", "取钱 [qǔ qián]", "接朋友 [jiē péngyou]"],
+             "女：这么晚了，你还开车出去做什么？\n男：一个老同学从广州来，十一点到火车站，我去接他。\n问：男的出去做什么？"),
+            ("A", ["很满意 [hěn mǎnyì]", "觉得太贵 [juéde tài guì]", "不喜欢颜色 [bù xǐhuan yánsè]"],
+             "男：新买的自行车骑着怎么样？\n女：又轻又快，颜色也是我最喜欢的蓝色！\n问：女的对新自行车感觉怎么样？"),
+        ],
+        "L4": [
+            ("C", ["黑色 [hēisè]", "蓝色 [lánsè]", "咖啡色 [kāfēisè]"],
+             "女：先生，这件黑色的外套您穿很合适。\n男：黑色我已经有两件了，有别的颜色吗？\n女：那您试试这件咖啡色的吧。\n男：不错，就买这件了。\n问：男的最后买了什么颜色的外套？"),
+            ("A", ["8 点 15 分 [8 diǎn 15 fēn]", "8 点 30 分 [8 diǎn 30 fēn]", "8 点 45 分 [8 diǎn 45 fēn]"],
+             "男：会议是八点半开始吗？\n女：对，大家都要提前十五分钟到会议室。\n男：那我们八点十五分就得进去。\n女：是的，资料我已经准备好了。\n问：他们几点要到会议室？"),
+            ("B", ["看医生 [kàn yīshēng]", "学游泳 [xué yóuyǒng]", "买水果 [mǎi shuǐguǒ]"],
+             "女：暑假你打算让儿子做什么？\n男：他一直想学游泳，我准备给他报个游泳班。\n女：好啊，我女儿去年学的，现在游得可好了。\n男：是哪个体育馆？介绍一下吧。\n问：男的打算暑假让儿子做什么？"),
+            ("A", ["晴转小雨 [qíng zhuǎn xiǎoyǔ]", "一直下雪 [yìzhí xià xuě]", "大晴天 [dà qíngtiān]"],
+             "男：出门记得带把伞。\n女：现在太阳这么好，为什么要带伞？\n男：刚才电视里说，今天下午可能会下小雨。\n女：好的，那我放包里一把。\n问：今天天气怎么样？"),
+            ("C", ["2 年 [2 nián]", "5 年 [5 nián]", "8 年 [8 nián]"],
+             "女：李老师，您在这个中学教书很多年了吧？\n男：是啊，我大学毕业就来了，今年是第八年了。\n女：您教过多少学生啊？\n男：差不多有一千多个学生了。\n问：李老师在这儿工作几年了？"),
+        ],
+        "R1_PICS": [K3(27), K1("g36_A"), K2(23), K2(26), K3(19), K2(24)],
+        "R1": [
+            ("B", "我 家 的 小猫 每天 都 爱 看着 鱼 玩儿。", "Wǒ jiā de xiǎomāo měi tiān dōu ài kànzhe yú wánr."),
+            ("E", "女儿 每 星期日 上午 都 去 学习 跳舞。", "Nǚ'ér měi xīngqīrì shàngwǔ dōu qù xuéxí tiàowǔ."),
+            ("A", "欢迎 来 我们 公司， 以后 大家 就是 同事 了。", "Huānyíng lái wǒmen gōngsī, yǐhòu dàjiā jiùshì tóngshì le."),
+            ("F", "他 一边 看 手表， 一边 给 朋友 打 电话。", "Tā yìbiān kàn shǒubiǎo, yìbiān gěi péngyou dǎ diànhuà."),
+            ("C", "袋子 里 有 我 刚 买 的 苹果 和 香蕉。", "Dàizi li yǒu wǒ gāng mǎi de píngguǒ hé xiāngjiāo."),
+        ],
+        "R2_OPTS": [
+            "准备 [zhǔnbèi]", "晴 [qíng]", "件 [jiàn]", "懂 [dǒng]", "贵 [guì]", "意思 [yìsi]",
+        ],
+        "R2": [
+            ("A", "妈妈 正在 厨房 里 为 大家 （　） 晚饭 呢。", "Māma zhèngzài chúfáng li wèi dàjiā ( ) wǎnfàn ne."),
+            ("C", "商场 里 那 （　） 白色 毛衣 非常 漂亮。", "Shāngchǎng li nà ( ) báisè máoyī fēicháng piàoliang."),
+            ("D", "老师 说 得 很 慢， 学生们 都 听 （　） 了。", "Lǎoshī shuō de hěn màn, xuéshengmen dōu tīng ( ) le."),
+            ("B", "下 了 两 天 雨， 今天 天 终于 （　） 了。", "Xiàle liǎng tiān yǔ, jīntiān tiān zhōngyú ( ) le."),
+            ("F", "男：这个 词 是 什么 （　）？\n女：对不起， 我 也 不 知道， 查 一下 词典 吧。",
+             "Nán: Zhège cí shì shénme ( )?\nNǚ: Duìbuqǐ, wǒ yě bù zhīdào, chá yíxià cídiǎn ba."),
+        ],
+        "R3": [
+            (False,
+             "以前 我 每天 早上 都 喝 一 杯 咖啡， 后来 医生 说 我 晚上 睡 不 好， 最好 少 喝 咖啡， 现在 我 改 喝 牛奶 了。\n★ 我 现在 每天 早上 喝 咖啡。",
+             "Yǐqián wǒ měi tiān zǎoshang dōu hē yì bēi kāfēi, hòulái yīshēng shuō wǒ wǎnshang shuì bù hǎo, zuìhǎo shǎo hē kāfēi, xiànzài wǒ gǎi hē niúnǎi le.\n★ Wǒ xiànzài měi tiān zǎoshang hē kāfēi."),
+            (True,
+             "哥哥 比 我 大 四 岁， 我 今年 二十 岁， 在 读 大学； 他 已经 在 银行 工作 两 年 了。\n★ 哥哥 今年 二十四 岁。",
+             "Gēge bǐ wǒ dà sì suì, wǒ jīnnián èrshí suì, zài dú dàxué; tā yǐjīng zài yínháng gōngzuò liǎng nián le.\n★ Gēge jīnnián èrshísì suì."),
+            (False,
+             "这 家 书店 虽然 不 大， 但是 汉语 书 非常 多， 很多 外国 学生 都 喜欢 来 这儿 买 书。\n★ 这 家 书店 没 有 汉语 书。",
+             "Zhè jiā shūdiàn suīrán bú dà, dànshì Hànyǔ shū fēicháng duō, hěn duō wàiguó xuésheng dōu xǐhuan lái zhèr mǎi shū.\n★ Zhè jiā shūdiàn méiyǒu Hànyǔ shū."),
+            (True,
+             "从 北京 到 天津 坐 快车 只要 三十 分钟， 非常 方便， 很多 人 周末 都 会 去 天津 玩儿。\n★ 坐 快车 去 天津 很 快。",
+             "Cóng Běijīng dào Tiānjīn zuò kuàichē zhǐyào sānshí fēnzhōng, fēicháng fāngbiàn, hěn duō rén zhōumò dōu huì qù Tiānjīn wánr.\n★ Zuò kuàichē qù Tiānjīn hěn kuài."),
+            (False,
+             "小李， 电影 是 七 点 二十 的， 我 已经 到 电影院 门口 了， 你 到 哪儿 了？\n★ 他们 已经 看 完 电影 了。",
+             "Xiǎo Lǐ, diànyǐng shì qī diǎn èrshí de, wǒ yǐjīng dào diànyǐngyuàn ménkǒu le, nǐ dào nǎr le?\n★ Tāmen yǐjīng kàn wán diànyǐng le."),
+        ],
+        "R4A_OPTS": [
+            "好 的， 我 让 服务员 再 拿 两 双 筷子。 [Hǎo de, wǒ ràng fúwùyuán zài ná liǎng shuāng kuàizi.]",
+            "是 我 姐姐 送 给 我 的 生日 礼物。 [Shì wǒ jiějie sòng gěi wǒ de shēngrì lǐwù.]",
+            "没 关系， 下 一 辆 车 马上 就 来 了。 [Méi guānxi, xià yí liàng chē mǎshàng jiù lái le.]",
+            "因为 他 昨天 晚上 十一点 多 才 下班。 [Yīnwèi tā zuótiān wǎnshang shíyī diǎn duō cái xiàbān.]",
+            "他 在 哪儿 呢？ 你 看见 他 了 吗？ [Tā zài nǎr ne? Nǐ kànjiàn tā le ma?]",
+            "向 右 走 一百 米， 在 银行 旁边。 [Xiàng yòu zǒu yìbǎi mǐ, zài yínháng pángbiān.]",
+        ],
+        "R4A": [
+            ("B", "你 的 这 块 手表 真 好看， 在 哪儿 买 的？", "Nǐ de zhè kuài shǒubiǎo zhēn hǎokàn, zài nǎr mǎi de?"),
+            ("D", "哥哥 今天 早上 怎么 还没 起床？", "Gēge jīntiān zǎoshang zěnme hái méi qǐchuáng?"),
+            ("F", "请问， 附近 有 卖 水果 的 商店 吗？", "Qǐngwèn, fùjìn yǒu mǎi shuǐguǒ de shāngdiàn ma?"),
+            ("C", "真 不 好， 我们 晚 了 一 分钟， 公共汽车 开 走 了。", "Zhēn bù hǎo, wǒmen wǎnle yì fēnzhōng, gōnggòng qìchē kāi zǒu le."),
+            ("A", "王 老师 和 师母 也 来 了， 一共 六 个 人。", "Wáng lǎoshī hé shīmǔ yě lái le, yígòng liù ge rén."),
+        ],
+        "R4B_OPTS": [
+            "太 好 了， 我 正 想 去 洗 个 手 呢。 [Tài hǎo le, wǒ zhèng xiǎng qù xǐ ge shǒu ne.]",
+            "已经 好 多 了， 明天 就 能 去 学校。 [Yǐjīng hǎo duō le, míngtiān jiù néng qù xuéxiào.]",
+            "我 打算 和 妻子 去 海边 住 几 天。 [Wǒ dǎsuàn hé qīzi qù hǎibiān zhù jǐ tiān.]",
+            "不 贵， 一 斤 才 四 块 钱。 [Bú guì, yì jīn cái sì kuài qián.]",
+            "我 姓 赵， 叫 赵 明， 很 高兴 认识 您。 [Wǒ xìng Zhào, jiào Zhào Míng, hěn gāoxìng rènshi nín.]",
+        ],
+        "R4B": [
+            ("B", "听说 你 儿子 感冒 了， 现在 怎么样 了？", "Tīngshuō nǐ érzi gǎnmào le, xiànzài zěnmeyàng le?"),
+            ("C", "下 个 星期 休息， 你 有 什么 安排？", "Xià ge xīngqī xiūxi, nǐ yǒu shénme ānpái?"),
+            ("E", "您好， 请问 您 贵姓？", "Nínhǎo, qǐngwèn nín guìxìng?"),
+            ("D", "今天 的 香蕉 非常 新鲜， 贵 不 贵？", "Jīntiān de xiāngjiāo fēicháng xīnxiān, guì bú guì?"),
+            ("A", "洗手间 就 在 前面 左边。", "Xǐshǒujiān jiù zài qiánmiàn zuǒbiān."),
+        ],
+    },
+
+    # ==================== HSK 2 – ĐỀ 6 (H2M06) ====================
+    {
+        "code": "H2M06",
+        "ten": "HSK 2 – Đề 6",
+        "L1": [
+            (K2(7), True, "太好了，我在书架上找到那本书了。"),
+            (K1("004"), False, "妈妈给我买了一双黑色的鞋。"),
+            (K2(4), True, "那几个女孩子也很喜欢打篮球。"),
+            (K3(4), True, "今天您讲得太精彩了！"),
+            (K1("008"), True, "爸爸，今天别去上班了，在家陪我玩儿吧。"),
+            (K3(7), False, "桌子上只有一张电影票。"),
+            (K2(10), True, "她工作特别忙，一边拿文件一边接电话。"),
+            (P3(12), True, "妻子正在厨房里切菜做晚饭呢。"),
+            (P1(6), False, "今天外面出大太阳了，非常热。"),
+            (K2(11), True, "星期六下午，他和女朋友去商场买了不少东西。"),
+        ],
+        "L2A_PICS": [K1("g11_E"), K1("g11_F"), K3(16), K2(15), K2(13), K1("g11_B")],
+        "L2A": [
+            ("A", "女：米饭已经做好了，快来吃吧。\n男：好香啊，我正好饿了！"),
+            ("F", "男：这几件黑色西装都是你的吗？\n女：不是，是我丈夫上班穿的。"),
+            ("B", "女：这张照片上有这么多人，都是谁啊？\n男：都是我们大学班里的同学。"),
+            ("C", "男：你走慢一点儿，我跟不上了！\n女：快点儿，火车马上就要开了。"),
+            ("E", "女：刚打完球手太脏了，快去洗洗。\n男：好，洗完手我就来吃饭。"),
+        ],
+        "L2B_PICS": [K1("g16_B"), K1("g16_C"), K3(18), K3(21), K2(20)],
+        "L2B": [
+            ("A", "男：王秘书今天怎么这么忙？\n女：是啊，早上到现在电话一直没停过。"),
+            ("D", "男：请问，东方明珠在哪个方向？\n女：您看，就在前面不远的地方！"),
+            ("B", "女：地理课真有意思，我想看看中国在哪儿。\n男：来，我在这个地球仪上指给你看。"),
+            ("C", "男：你怎么不看书，在想什么事情呢？\n女：我在想星期天送妈妈什么礼物好。"),
+            ("E", "女：我们周末到底去爬山还是去游泳？\n男：别急，让我再想想。"),
+        ],
+        "L3": [
+            ("C", ["7 点 [7 diǎn]", "7 点 20 分 [7 diǎn 20 fēn]", "7 点 40 分 [7 diǎn 40 fēn]"],
+             "男：现在七点二十了，早饭做好了吗？\n女：再等二十分钟就好了。\n问：他们几点能吃早饭？"),
+            ("A", ["茶馆 [cháguǎn]", "医院 [yīyuàn]", "火车站 [huǒchēzhàn]"],
+             "女：大夫，我从昨天晚上开始就一直咳嗽。\n男：先量一下体温，看看发烧不发烧。\n问：说话人现在在哪儿？"),
+            ("B", ["红色 [hóngsè]", "黄色 [huángsè]", "绿色 [lǜsè]"],
+             "男：桌子上那个黄色的杯子是你的吗？\n女：是我的，红色的是小丽的。\n问：女的的杯子是什么颜色的？"),
+            ("C", ["去打球 [qù dǎqiú]", "去买菜 [qù mǎi cài]", "在家看书 [zài jiā kàn shū]"],
+             "女：外面风太大了，我们别出去打羽毛球了。\n男：好吧，那就在家看看书、喝喝茶。\n问：他们决定做什么？"),
+            ("A", ["哥哥 [gēge]", "爸爸 [bàba]", "老师 [lǎoshī]"],
+             "男：谁教你骑自行车的？\n女：我十岁的时候，我哥哥教我的。\n问：谁教女的骑自行车的？"),
+            ("B", ["45 元 [45 yuán]", "50 元 [50 yuán]", "95 元 [95 yuán]"],
+             "女：这条鱼四十五块，这把青菜五块。\n男：好的，一共多少钱？我给您手机支付。\n问：男的一共要付多少钱？"),
+            ("B", ["太远了 [tài yuǎn le]", "菜太咸了 [cài tài xián le]", "人太多了 [rén tài duō le]"],
+             "男：昨天你们去的那家新饭馆怎么样？\n女：环境还不错，但是菜做得太咸了，我喝了三杯水。\n问：女的觉得那家饭馆怎么样？"),
+            ("A", ["坐地铁 [zuò dìtiě]", "骑自行车 [qí zìxíngchē]", "走路 [zǒulù]"],
+             "女：上班时间路上车太多，开车太慢了。\n男：是啊，所以我现在每天坐地铁去公司。\n问：男的现在怎么去上班？"),
+            ("C", ["11 月 5 号 [11 yuè 5 hào]", "11 月 15 号 [11 yuè 15 hào]", "12 月 5 号 [12 yuè 5 hào]"],
+             "男：今天已经是十一月十五号了吧？\n女：对，再过二十天就是十二月五号，我妹妹结婚的日子。\n问：妹妹哪天结婚？"),
+            ("A", ["宾馆服务员 [bīnguǎn fúwùyuán]", "出租车司机 [chūzūchē sījī]", "中学老师 [zhōngxué lǎoshī]"],
+             "女：先生您好，这是您三零八房间的房卡，早饭在二楼。\n男：好的，请问房间里有无线网吗？\n问：女的最可能是做什么工作的？"),
+        ],
+        "L4": [
+            ("B", ["买电脑 [mǎi diànnǎo]", "借汉语书 [jiè Hànyǔ shū]", "找工作 [zhǎo gōngzuò]"],
+             "男：你下午去哪儿？\n女：我去学校图书馆借两本汉语故事书。\n男：正好我也要去还书，我们一起走吧。\n女：好啊，吃完午饭一点半在楼下见。\n问：女的下午去图书馆做什么？"),
+            ("C", ["猫 [māo]", "小鸟 [xiǎoniǎo]", "小狗 [xiǎogǒu]"],
+             "女：你看，邻居王阿姨家养了一只白色的小狗。\n男：真可爱！它叫什么名字？\n女：叫“雪球”，才三个月大。\n男：我也想养一只，周末我们去看看吧。\n问：王阿姨家养了什么动物？"),
+            ("A", ["忘带钥匙了 [wàng dài yàoshi le]", "找不到手机了 [zhǎobudào shǒujī le]", "走错房间了 [zǒu cuò fángjiān le]"],
+             "男：你怎么坐在门口不进去啊？\n女：别提了，我早上出门太急，把钥匙忘在家里了。\n男：你丈夫几点下班？\n女：他五点半就回来了，我再等十分钟吧。\n问：女的怎么了？"),
+            ("B", ["一楼 [yī lóu]", "三楼 [sān lóu]", "五楼 [wǔ lóu]"],
+             "女：请问，这儿有卖儿童衣服的吗？\n男：有，一楼是鞋帽，二楼是女装，三楼都是儿童服装。\n女：坐电梯从哪边上去？\n男：前面右转就是电梯。\n问：女的应该去几楼？"),
+            ("C", ["去爬山 [qù páshān]", "去机场接人 [qù jīchǎng jiē rén]", "在家准备考试 [zài jiā zhǔnbèi kǎoshì]"],
+             "男：明天星期六，我们去香山看红叶好不好？\n女：真不巧，下周一我有英语考试，周末得在家复习。\n男：没关系，那等考完试下个周末再去吧。\n女：好的，祝你们玩儿得开心！\n问：女的明天要做什么？"),
+        ],
+        "R1_PICS": [K1("g36_B"), K1("g36_C"), K1("g36_E"), K2(26), K3(23), K3(25)],
+        "R1": [
+            ("A", "今天 外面 零下 五 度， 出门 要 穿 厚 衣服。", "Jīntiān wàimiàn língxià wǔ dù, chūmén yào chuān hòu yīfu."),
+            ("C", "看 书 太 久 眼睛 不 舒服， 点 一点儿 眼药水 吧。", "Kàn shū tài jiǔ yǎnjing bù shūfu, diǎn yìdiǎnr yǎnyàoshuǐ ba."),
+            ("E", "为了 身体 健康， 她 每天 早上 都 坚持 慢 跑。", "Wèile shēntǐ jiànkāng, tā měi tiān zǎoshang dōu jiānchí màn pǎo."),
+            ("F", "你看 我 新 买 的 这个 手机 怎么样？", "Nǐ kàn wǒ xīn mǎi de zhège shǒujī zěnmeyàng?"),
+            ("B", "姐姐 学习 跳舞 已经 五 年 多 了。", "Jiějie xuéxí tiàowǔ yǐjīng wǔ nián duō le."),
+        ],
+        "R2_OPTS": [
+            "离 [lí]", "希望 [xīwàng]", "次 [cì]", "错 [cuò]", "贵 [guì]", "告诉 [gàosu]",
+        ],
+        "R2": [
+            ("C", "北京 我 已经 去 过 三 （　） 了， 还 想 再 去。", "Běijīng wǒ yǐjīng qùguo sān ( ) le, hái xiǎng zài qù."),
+            ("A", "我们 新 买 的 房子 （　） 地铁站 只有 三百 米。", "Wǒmen xīn mǎi de fángzi ( ) dìtiězhàn zhǐyǒu sānbǎi mǐ."),
+            ("F", "等 他 回来， 请 一定 （　） 他 给 我 回 个 电话。", "Děng tā huílai, qǐng yídìng ( ) tā gěi wǒ huí ge diànhuà."),
+            ("B", "父母 都 （　） 自己 的 孩子 健康、 快乐。", "Fùmǔ dōu ( ) zìjǐ de háizi jiànkāng, kuàilè."),
+            ("D", "女：对不起， 这个 电话 号码 我 写 （　） 了。\n男：没 关系， 重新 写 一 遍 吧。",
+             "Nǚ: Duìbuqǐ, zhège diànhuà hàomǎ wǒ xiě ( ) le.\nNán: Méi guānxi, chóngxīn xiě yí biàn ba."),
+        ],
+        "R3": [
+            (True,
+             "这 件 蓝色 衬衫 卖 一百八十 块， 旁边 那 件 白色 的 比 它 便宜 三十 块。\n★ 白色 衬衫 一百五十 块 钱。",
+             "Zhè jiàn lánsè chènshān mài yìbǎi bāshí kuài, pángbiān nà jiàn báisè de bǐ tā piányi sānshí kuài.\n★ Báisè chènshān yìbǎi wǔshí kuài qián."),
+            (False,
+             "今天 早上 我 起 晚 了， 没 吃 早饭 就 跑 去 坐 公共汽车， 到 公司 才 八 点 五十， 没 迟到。\n★ 我 今天 早上 在 家 吃 了 早饭。",
+             "Jīntiān zǎoshang wǒ qǐ wǎn le, méi chī zǎofàn jiù pǎo qù zuò gōnggòng qìchē, dào gōngsī cái bā diǎn wǔshí, méi chídào.\n★ Wǒ jīntiān zǎoshang zài jiā chīle zǎofàn."),
+            (True,
+             "小王 对 中国 历史 非常 感兴趣， 他 房间 的 书架 上 几乎 全 是 中国 历史 书。\n★ 小王 买 了 很 多 历史 书。",
+             "Xiǎo Wáng duì Zhōngguó lìshǐ fēicháng gǎn xìngqù, tā fángjiān de shūjià shang jīhū quán shì Zhōngguó lìshǐ shū.\n★ Xiǎo Wáng mǎile hěn duō lìshǐ shū."),
+            (False,
+             "虽然 现在 已经 是 四 月 了， 但是 北方 早上 和 晚上 还是 有点儿 冷， 出门 最好 穿 件 外套。\n★ 北方 四 月 晚上 非常 热。",
+             "Suīrán xiànzài yǐjīng shì sì yuè le, dànshì běifāng zǎoshang hé wǎnshang háishi yǒudiǎnr lěng, chūmén zuìhǎo chuān jiàn wàitào.\n★ Běifāng sì yuè wǎnshang fēicháng rè."),
+            (True,
+             "奶奶 今年 七十 岁 了， 每天 晚饭 后 都 要 去 公园 走 四十 分钟， 身体 一直 非常 好。\n★ 奶奶 每天 晚上 都 去 散步。",
+             "Nǎinai jīnnián qīshí suì le, měi tiān wǎnfàn hòu dōu yào qù gōngyuán zǒu sìshí fēnzhōng, shēntǐ yìzhí fēicháng hǎo.\n★ Nǎinai měi tiān wǎnshang dōu qù sànbù."),
+        ],
+        "R4A_OPTS": [
+            "太 客气 了， 快 请 进 来 坐 吧！ [Tài kèqi le, kuài qǐng jìn lai zuò ba!]",
+            "我 刚 洗 完 澡， 头发 还 没 干 呢。 [Wǒ gāng xǐ wán zǎo, tóufa hái méi gān ne.]",
+            "还 没 呢， 飞机 晚点 了 半 个 小时。 [Hái méi ne, fēijī wǎndiǎnle bàn ge xiǎoshí.]",
+            "是 吗？ 那 我 去 买 两 斤 回来 尝尝。 [Shì ma? Nà wǒ qù mǎi liǎng jīn huílai chángchang.]",
+            "他 在 哪儿 呢？ 你 看见 他 了 吗？ [Tā zài nǎr ne? Nǐ kànjiàn tā le ma?]",
+            "好 的， 写 完 这 几 个 字 我 就 关 灯。 [Hǎo de, xiě wán zhè jǐ ge zì wǒ jiù guān dēng.]",
+        ],
+        "R4A": [
+            ("A", "这 是 我 给 孩子们 带 的 一点儿 水果。", "Zhè shì wǒ gěi háizimen dài de yìdiǎnr shuǐguǒ."),
+            ("C", "姐姐 到 上海 了 吗？ 给 你 打 电话 没？", "Jiějie dào Shànghǎi le ma? Gěi nǐ dǎ diànhuà méi?"),
+            ("D", "楼下 水果店 今天 新 到 的 苹果 特别 甜。", "Lóuxià shuǐguǒdiàn jīntiān xīn dào de píngguǒ tèbié tián."),
+            ("F", "已经 十一 点 半 了， 早 点儿 睡觉 吧。", "Yǐjīng shíyī diǎn bàn le, zǎo diǎnr shuìjiào ba."),
+            ("B", "我们 现在 出门 去 超市 吧？", "Wǒmen xiànzài chūmén qù chāoshì ba?"),
+        ],
+        "R4B_OPTS": [
+            "好 啊， 听说 那儿 的 烤鸭 最 有名。 [Hǎo a, tīngshuō nàr de kǎoyā zuì yǒumíng.]",
+            "在 二 楼 左边 第一 个 房间。 [Zài èr lóu zuǒbiān dì-yī ge fángjiān.]",
+            "别 担心， 我 开 车 送 你 过去， 来得及。 [Bié dānxīn, wǒ kāi chē sòng nǐ guòqù, láidejí.]",
+            "他 是 我 大哥 的 儿子， 今年 六 岁 了。 [Tā shì wǒ dàgē de érzi, jīnnián liù suì le.]",
+            "谢谢， 我 已经 吃 饱 了， 真 吃 不 下 了。 [Xièxie, wǒ yǐjīng chī bǎo le, zhēn chī bú xià le.]",
+        ],
+        "R4B": [
+            ("E", "盘子 里 还 有 几 个 饺子， 你 吃 了 吧。", "Pánzi li hái yǒu jǐ ge jiǎozi, nǐ chīle ba."),
+            ("B", "你好， 请问 李 经理 的 办公室 在 哪儿？", "Nǐ hǎo, qǐngwèn Lǐ jīnglǐ de bàngōngshì zài nǎr?"),
+            ("C", "糟 了， 离 考试 只有 二十五 分钟 了！", "Zāo le, lí kǎoshì zhǐyǒu èrshíwǔ fēnzhōng le!"),
+            ("D", "这个 可爱 的 小 男孩儿 是 谁 啊？", "Zhège kě'ài de xiǎo nánháir shì shéi a?"),
+            ("A", "星期日 晚上 我们 去 北京 饭店 吃 晚饭 吧？", "Xīngqīrì wǎnshang wǒmen qù Běijīng Fàndiàn chī wǎnfàn ba?"),
+        ],
+    },
+
+    # ==================== HSK 2 – ĐỀ 7 (H2M07) ====================
+    {
+        "code": "H2M07",
+        "ten": "HSK 2 – Đề 7",
+        "L1": [
+            (K1("003"), True, "她早上喜欢喝一杯热咖啡。"),
+            (K2(8), True, "这双运动鞋穿着非常舒服，适合爬山。"),
+            (K3(2), False, "今天是十月十五号。"),
+            (K1("010"), True, "桌子上这么多文件，今天恐怕要很晚下班了。"),
+            (K3(8), False, "前面路口请向右转。"),
+            (K2(3), True, "您好，欢迎您来到我们公司！"),
+            (P2(11), True, "今天中午我吃了一碗白米饭。"),
+            (K3(10), False, "这次考试他没考好，心里很难过。"),
+            (P3(21), True, "周末天气很好，她们在湖边骑自行车玩儿。"),
+            (K1("006"), False, "妈妈正在客厅里看电视新闻呢。"),
+        ],
+        "L2A_PICS": [K3(14), K3(13), K1("g11_A"), K2(15), K2(14), K3(12)],
+        "L2A": [
+            ("F", "女：小狗好像饿了，一直跟着你跑。\n男：来，碗里有肉，快吃吧。"),
+            ("B", "男：这么多干净的衣服都是你上午洗的？\n女：对，今天出太阳，很快就干了。"),
+            ("A", "女：真倒霉，车在半路上坏了，我给修车店打个电话。\n男：好的，我们在路边等一会儿。"),
+            ("E", "男：今天的报纸上有那场篮球赛的消息吗？\n女：有，你看这页，北京队赢了！"),
+            ("C", "男：老婆，今天是我们结婚五周年的日子，送给你！\n女：谢谢你，这花真香！"),
+        ],
+        "L2B_PICS": [K3(24), K1("g16_D"), K2(21), K2(18), K3(19)],
+        "L2B": [
+            ("B", "男：服务员，买单，一共多少钱？\n女：先生您好，一共一百二十八元。"),
+            ("E", "男：王老师教得真认真，孩子们学得也很快。\n女：是啊，我女儿现在特别爱上舞蹈课。"),
+            ("C", "女：把这杯温水喝了，吃完药睡一觉就会好些。\n男：谢谢你照顾我。"),
+            ("A", "女：这张照片是在山上照的吗？\n男：对，我用新买的照相机拍的。"),
+            ("D", "男：今天外面的雪越下越大了。\n女：是啊，戴上手套和帽子还觉得冷呢。"),
+        ],
+        "L3": [
+            ("B", ["80 元 [80 yuán]", "160 元 [160 yuán]", "240 元 [240 yuán]"],
+             "女：请问去天津的高铁票多少钱一张？\n男：八十块一张，我要两张。\n问：男的买票一共要花多少钱？"),
+            ("A", ["晴天 [qíngtiān]", "下雨 [xià yǔ]", "刮大风 [guā dàfēng]"],
+             "男：看外面的蓝天白云，今天真暖和！\n女：是啊，我们带孩子去动物园玩儿吧。\n问：今天天气怎么样？"),
+            ("C", ["医院 [yīyuàn]", "邮局 [yóujú]", "超市 [chāoshì]"],
+             "女：家里的鸡蛋和牛奶都快吃完了。\n男：那我下班路过超市的时候顺便买一些回来。\n问：男的下班后要去哪儿？"),
+            ("B", ["哥哥 [gēge]", "妹妹 [mèimei]", "同事 [tóngshì]"],
+             "男：你在给谁选生日礼物呢？\n女：我妹妹下周过十八岁生日，我想送她一块手表。\n问：下周是谁的生日？"),
+            ("A", ["9 点 10 分 [9 diǎn 10 fēn]", "9 点 30 分 [9 diǎn 30 fēn]", "9 点 50 分 [9 diǎn 50 fēn]"],
+             "女：现在几点了？电影快开始了吧？\n男：现在九点十分，还有二十分钟才开始呢。\n问：现在是几点？"),
+            ("C", ["看电视 [kàn diànshì]", "洗水果 [xǐ shuǐguǒ]", "找眼镜 [zhǎo yǎnjìng]"],
+             "男：奇怪，我的眼镜刚才还在这儿，怎么不见了？\n女：你摸摸自己头上，不是戴在头上吗！\n问：男的刚才在找什么？"),
+            ("A", ["很近 [hěn jìn]", "非常远 [fēicháng yuǎn]", "要坐火车 [yào zuò huǒchē]"],
+             "女：新学校离你家远不远？\n男：很近，骑自行车十分钟就到了。\n问：新学校离男的家怎么样？"),
+            ("B", ["白色 [báisè]", "黑色 [hēisè]", "蓝色 [lánsè]"],
+             "男：门口那辆黑色的汽车是张老师的吗？\n女：对，他上个月刚买的。\n问：张老师的车是什么颜色的？"),
+            ("C", ["学做中国菜 [xué zuò Zhōngguó cài]", "学打太极拳 [xué dǎ tàijíquán]", "学唱中文歌 [xué chàng Zhōngwén gē]"],
+             "女：大卫，你的汉语歌唱得真好听！\n男：谢谢，我每个星期都跟中国朋友学唱一首中文歌。\n问：大卫每星期学什么？"),
+            ("A", ["脚疼 [jiǎo téng]", "工作忙 [gōngzuò máng]", "天气不好 [tiānqì bù hǎo]"],
+             "男：明天早上的足球赛你参加吗？\n女：我昨天跑步把脚扭了，明天只能在旁边给你们加油了。\n问：说话人明天为什么不踢球？"),
+        ],
+        "L4": [
+            ("A", ["羊肉面 [yángròumiàn]", "牛肉饺子 [niúròu jiǎozi]", "鸡蛋炒饭 [jīdàn chǎofàn]"],
+             "女：走了这么久，我都饿了，前面有家面馆。\n男：好，我们进去吃点儿热乎的吧。\n女：他家的羊肉面最有名，你要不要尝尝？\n男：好啊，那就来两碗羊肉面！\n问：他们准备吃什么？"),
+            ("C", ["星期三 [xīngqīsān]", "星期五 [xīngqīwǔ]", "星期日 [xīngqīrì]"],
+             "男：喂，小王，我是李明，这周五晚上同学们聚会，你来吗？\n女：周五晚上我要加班，真不好意思。\n男：那改成星期日中午怎么样？大家都有空。\n女：星期日中午没问题，我一定去！\n问：他们最后定在哪天聚会？"),
+            ("B", ["医院后面 [yīyuàn hòumiàn]", "银行旁边 [yínháng pángbiān]", "学校里面 [xuéxiào lǐmiàn]"],
+             "女：你好，请问这附近有书店吗？\n男：有，你一直往前走，到十字路口往左看，有一个中国银行。\n女：书店就在银行那儿吗？\n男：对，就在中国银行旁边，很容易找。\n问：书店在什么地方？"),
+            ("B", ["太小了 [tài xiǎo le]", "有点儿大 [yǒudiǎnr dà]", "颜色不好 [yánsè bù hǎo]"],
+             "男：女儿，试试爸爸给你买的这件运动服。\n女：颜色我很喜欢，不过穿在身上好像有点儿大。\n男：没关系，我留着小票呢，明天去商店换小一号的。\n女：谢谢爸爸！\n问：这件运动服怎么样？"),
+            ("C", ["老师 [lǎoshī]", "服务员 [fúwùyuán]", "医生 [yīshēng]"],
+             "女：你哥哥大学毕业后去哪儿工作了？\n男：他在市第一医院工作，每天要看很多病人。\n女：当医生虽然很累，但是能帮助很多人。\n男：是啊，他自己也很喜欢这份工作。\n问：男的的哥哥是做什么的？"),
+        ],
+        "R1_PICS": [K2(28), K3(28), K1("g36_F"), K2(26), K2(27), K3(23)],
+        "R1": [
+            ("E", "王 老师 问 大家 还有 没有 不 懂 的 问题。", "Wáng lǎoshī wèn dàjiā hái yǒu méiyǒu bù dǒng de wèntí."),
+            ("B", "太 好 了， 雨 不 下 了， 我们 可以 出去 玩儿 了。", "Tài hǎo le, yǔ bú xià le, wǒmen kěyǐ chūqù wánr le."),
+            ("F", "她 每天 下午 五 点 都 在 公园 里 跑步。", "Tā měi tiān xiàwǔ wǔ diǎn dōu zài gōngyuán li pǎobù."),
+            ("A", "儿子 发烧 了， 妈妈 正在 给 爸爸 打 电话。", "Érzi fāshāo le, māma zhèngzài gěi bàba dǎ diànhuà."),
+            ("C", "张 先生， 这 位 是 我们 公司 新 来 的 小李。", "Zhāng xiānsheng, zhè wèi shì wǒmen gōngsī xīn lái de Xiǎo Lǐ."),
+        ],
+        "R2_OPTS": [
+            "送 [sòng]", "所以 [suǒyǐ]", "门 [mén]", "健康 [jiànkāng]", "贵 [guì]", "完 [wán]",
+        ],
+        "R2": [
+            ("F", "今天 的 报纸 你 看 （　） 了 吗？ 借 我 看看。", "Jīntiān de bàozhǐ nǐ kàn ( ) le ma? Jiè wǒ kànkan."),
+            ("B", "因为 昨天 晚上 没 睡 好， （　） 今天 觉得 有点儿 累。", "Yīnwèi zuótiān wǎnshang méi shuì hǎo, ( ) jīntiān juéde yǒudiǎnr lèi."),
+            ("D", "多 吃 新鲜 水果 和 蔬菜 对 身体 （　） 很 有 好处。", "Duō chī xīnxiān shuǐguǒ hé shūcài duì shēntǐ ( ) hěn yǒu hǎochù."),
+            ("A", "明天 早上 我 开 车 （　） 你 去 火车站 吧。", "Míngtiān zǎoshang wǒ kāi chē ( ) nǐ qù huǒchēzhàn ba."),
+            ("C", "男：谁 在 外面 敲 （　）？\n女：可能 是 送 牛奶 的 来 了。",
+             "Nán: Shéi zài wàimiàn qiāo ( )?\nNǚ: Kěnéng shì sòng niúnǎi de lái le."),
+        ],
+        "R3": [
+            (True,
+             "这家 饭馆儿 虽然 地方 不 大， 但是 做 的 鱼 非常 好吃， 而且 不 贵， 中午 来 吃 饭 的 人 特别 多。\n★ 这家 饭馆儿 的 鱼 既 好吃 又 便宜。",
+             "Zhè jiā fànguǎnr suīrán dìfang bú dà, dànshì zuò de yú fēicháng hǎochī, érqiě bú guì, zhōngwǔ lái chī fàn de rén tèbié duō.\n★ Zhè jiā fànguǎnr de yú jì hǎochī yòu piányi."),
+            (False,
+             "我 本来 准备 明天 上午 九 点 坐 飞机 去 上海， 刚才 接到 通知， 航班 推迟 到 下午 两 点 了。\n★ 我 明天 上午 九 点 坐 飞机 走。",
+             "Wǒ běnlái zhǔnbèi míngtiān shàngwǔ jiǔ diǎn zuò fēijī qù Shànghǎi, gāngcái jiēdào tōngzhī, hángbān tuīchí dào xiàwǔ liǎng diǎn le.\n★ Wǒ míngtiān shàngwǔ jiǔ diǎn zuò fēijī zǒu."),
+            (True,
+             "妹妹 很 喜欢 唱歌， 每 次 学校 有 演出， 她 都 会 上去 唱 一 首 中文 歌。\n★ 妹妹 会 唱 中文 歌。",
+             "Mèimei hěn xǐhuan chànggē, měi cì xuéxiào yǒu yǎnchū, tā dōu huì shàngqù chàng yì shǒu Zhōngwén gē.\n★ Mèimei huì chàng Zhōngwén gē."),
+            (False,
+             "小刘 来 北京 已经 三 年 了， 但是 因为 工作 太 忙， 他 到 现在 还 没 去 过 长城。\n★ 小刘 去 过 很 多 次 长城。",
+             "Xiǎo Liú lái Běijīng yǐjīng sān nián le, dànshì yīnwèi gōngzuò tài máng, tā dào xiànzài hái méi qùguo Chángchéng.\n★ Xiǎo Liú qùguo hěn duō cì Chángchéng."),
+            (False,
+             "这 本 书 是 我 从 图书馆 借 的， 下 个 星期二 要 还， 你 这 周末 看 完 给 我 就 行。\n★ 这 本 书 是 我 在 书店 买 的。",
+             "Zhè běn shū shì wǒ cóng túshūguǎn jiè de, xià ge xīngqī'èr yào huán, nǐ zhè zhōumò kàn wán gěi wǒ jiù xíng.\n★ Zhè běn shū shì wǒ zài shūdiàn mǎi de."),
+        ],
+        "R4A_OPTS": [
+            "好 的， 我 现在 就 去 洗 几 个 苹果。 [Hǎo de, wǒ xiànzài jiù qù xǐ jǐ ge píngguǒ.]",
+            "不 远， 从 这儿 走路 十 分钟 就 到。 [Bù yuǎn, cóng zhèr zǒulù shí fēnzhōng jiù dào.]",
+            "那 是 我 哥哥 的， 他 昨天 忘 拿 走 了。 [Nà shì wǒ gēge de, tā zuótiān wàng ná zǒu le.]",
+            "太 好 了， 我 早就 想 去 看看 大 熊猫 了！ [Tài hǎo le, wǒ zǎojiù xiǎng qù kànkan dà xióngmāo le!]",
+            "他 在 哪儿 呢？ 你 看见 他 了 吗？ [Tā zài nǎr ne? Nǐ kànjiàn tā le ma?]",
+            "对不起， 我 这儿 也 没有 零钱。 [Duìbuqǐ, wǒ zhèr yě méiyǒu língqián.]",
+        ],
+        "R4A": [
+            ("D", "明天 天气 不错， 我们 带 孩子 去 动物园 吧？", "Míngtiān tiānqì búcuò, wǒmen dài háizi qù dòngwùyuán ba?"),
+            ("C", "椅子 上 这 把 黑色 的 伞 是 谁 的？", "Yǐzi shang zhè bǎ hēisè de sǎn shì shéi de?"),
+            ("A", "客人 快 到 了， 你 去 准备 一点儿 水果 吧。", "Kèrén kuài dào le, nǐ qù zhǔnbèi yìdiǎnr shuǐguǒ ba."),
+            ("F", "请问， 能 帮 我 换 十 块 零钱 吗？", "Qǐngwèn, néng bāng wǒ huàn shí kuài língqián ma?"),
+            ("B", "请问， 第一 医院 离 这儿 远 吗？", "Qǐngwèn, Dì-yī Yīyuàn lí zhèr yuǎn ma?"),
+        ],
+        "R4B_OPTS": [
+            "才 八 点 半， 你 的 表 快 了 十 分钟。 [Cái bā diǎn bàn, nǐ de biǎo kuàile shí fēnzhōng.]",
+            "还 可以， 大概 有 四 五百 个 人 吧。 [Hái kěyǐ, dàgài yǒu sì wǔbǎi ge rén ba.]",
+            "不 用 了， 我 自己 坐 地铁 回去 很 方便。 [Bú yòng le, wǒ zìjǐ zuò dìtiě huíqu hěn fāngbiàn.]",
+            "她 去 机场 接 一 个 外国 朋友 了。 [Tā qù jīchǎng jiē yí ge wàiguó péngyou le.]",
+            "好 的， 医生， 我 一定 记得 按时 吃。 [Hǎo de, yīshēng, wǒ yídìng jìde ànshí chī.]",
+        ],
+        "R4B": [
+            ("C", "天 黑 了， 我 开 车 送 你 回 家 吧？", "Tiān hēi le, wǒ kāi chē sòng nǐ huí jiā ba?"),
+            ("E", "这个 药 每天 饭 后 吃 一 次， 多 喝 温 水。", "Zhège yào měi tiān fàn hòu chī yí cì, duō hē wēn shuǐ."),
+            ("A", "已经 八 点 四十 了， 快 走 吧！", "Yǐjīng bā diǎn sìshí le, kuài zǒu ba!"),
+            ("D", "今天 上午 怎么 没 看到 张 小姐？", "Jīntiān shàngwǔ zěnme méi kàndào Zhāng xiǎojiě?"),
+            ("B", "今天 去 参加 跑步 比赛 的 人 多 不 多？", "Jīntiān qù cānjiā pǎobù bǐsài de rén duō bu duō?"),
+        ],
+    },
+
+    # ==================== HSK 2 – ĐỀ 8 (H2M08) ====================
+    {
+        "code": "H2M08",
+        "ten": "HSK 2 – Đề 8",
+        "L1": [
+            (K1("005"), True, "妈妈早上去超市买了一盒鸡蛋。"),
+            (K2(6), False, "她们两个人正在安静地看书。"),
+            (K3(6), True, "工作太久了，让眼睛休息一会儿吧。"),
+            (K1("002"), True, "别生气了，这件事是我不对，我向你道歉。"),
+            (K2(5), False, "弟弟正在操场上踢足球呢。"),
+            (K3(3), True, "姐姐每个周末都去体育馆打网球。"),
+            (K2(9), True, "晚饭做好了，一家三口高兴地在一起吃饭。"),
+            (P0(32), False, "这艘大船是从上海开来的。"),
+            (K1("007"), True, "桌子上有一杯刚泡好的热茶。"),
+            (K3(10), True, "儿子这次数学考了第一名，特别开心。"),
+        ],
+        "L2A_PICS": [K2(12), K2(16), K1("g11_E"), K2(15), K3(17), K2(17)],
+        "L2A": [
+            ("B", "男：你看小丽穿这条蓝裙子跳舞多好看！\n女：是啊，她跳得真不错。"),
+            ("C", "女：今天中午主食吃什么？\n男：我刚蒸好了白米饭，马上就可以吃了。"),
+            ("A", "男：你看，雨是不是已经停了？\n女：真的停了，把伞收起来吧。"),
+            ("F", "女：车轮胎好像没气了，怎么办？\n男：别急，我先蹲下来检查一下。"),
+            ("E", "女：外面风大，快把毯子披上，别感冒了。\n女：好，谢谢妈妈。"),
+        ],
+        "L2B_PICS": [K3(20), K3(22), K1("g16_E"), K2(19), K3(21)],
+        "L2B": [
+            ("B", "女：喂，老公，你到广州的宾馆了吗？\n男：到了，房间很干净，我正在床上给你打电话呢。"),
+            ("A", "女：您好，请问两位想点些什么饮料？\n男：来一壶菊花茶，谢谢。"),
+            ("D", "男：这道题你想出来怎么做没有？\n女：想了半个小时了，还是不会做。"),
+            ("E", "男：你看，江对面最高的那座楼就是我们公司。\n女：哇，风景真美啊！"),
+            ("C", "女：这两双高跟鞋都很漂亮，买哪双好呢？\n男：红色的更有精神，买红色的吧。"),
+        ],
+        "L3": [
+            ("C", ["6 点 30 分 [6 diǎn 30 fēn]", "6 点 45 分 [6 diǎn 45 fēn]", "7 点 [7 diǎn]"],
+             "女：你每天早上几点起床？\n男：以前六点半，现在住得近了，七点起就行。\n问：男的现在几点起床？"),
+            ("A", ["西瓜 [xīguā]", "香蕉 [xiāngjiāo]", "苹果 [píngguǒ]"],
+             "男：天太热了，我去切半个冰西瓜给大家吃。\n女：太好了，谢谢你！\n问：男的准备给大家吃什么？"),
+            ("B", ["教室 [jiàoshì]", "电影院 [diànyǐngyuàn]", "银行 [yínháng]"],
+             "女：我们坐第五排中间吧，这儿看得最清楚。\n男：好，电影马上开始了，把手机关小声吧。\n问：他们现在在哪儿？"),
+            ("C", ["坐出租车 [zuò chūzūchē]", "骑自行车 [qí zìxíngchē]", "坐公共汽车 [zuò gōnggòng qìchē]"],
+             "男：去动物园坐几路公共汽车？\n女：门口的一零八路直达动物园，非常方便。\n问：他们打算怎么去动物园？"),
+            ("A", ["白色 [báisè]", "黑色 [hēisè]", "红色 [hóngsè]"],
+             "女：你家的小猫是什么颜色的？\n男：全身都是白色的，像雪一样。\n问：男的家的小猫是什么颜色的？"),
+            ("B", ["35 元 [35 yuán]", "50 元 [50 yuán]", "85 元 [85 yuán]"],
+             "男：这本书三十五元，我给您五十元。\n女：好的，找您十五元，请拿好。\n问：男的给了售货员多少钱？"),
+            ("A", ["去过两次 [qùguo liǎng cì]", "没去过 [méi qùguo]", "下个月第一次去 [xià ge yuè dì-yī cì qù]"],
+             "女：你去过成都旅游吗？听说那儿的菜很好吃。\n男：去过两次了，我还想再去一次呢。\n问：关于男的，可以知道什么？"),
+            ("C", ["妻子 [qīzi]", "女儿 [nǚ'ér]", "妈妈 [māma]"],
+             "男：今天做的红烧鱼真好吃，跟饭店做的一样！\n女：那是当然，这是我妈今天特意过来给我们做的。\n问：红烧鱼是谁做的？"),
+            ("B", ["太累了 [tài lèi le]", "下雨了 [xià yǔ le]", "没人一起踢 [méi rén yìqǐ tī]"],
+             "女：你们今天下午怎么没去踢足球？\n男：刚到球场就下起大雨来了，只好回来了。\n问：他们今天为什么没踢成足球？"),
+            ("A", ["英语老师 [Yīngyǔ lǎoshī]", "电脑工程师 [diànnǎo gōngchéngshī]", "火车司机 [huǒchē sījī]"],
+             "男：李小姐，您的英语说得真流利！\n女：谢谢，我在中学教了六年英语了。\n问：李小姐是做什么工作的？"),
+        ],
+        "L4": [
+            ("C", ["买衣服 [mǎi yīfu]", "看病 [kànbìng]", "送机场 [sòng jīchǎng]"],
+             "女：小张，明天上午九点你有空吗？\n男：明天星期六，我休息，有什么事吗？\n女：我爸妈明早的飞机回老家，行李比较多，你能开车送一下吗？\n男：没问题，明早七点半我到你家楼下。\n问：女的请小张明天做什么？"),
+            ("B", ["茶杯破了 [chábēi pò le]", "手表慢了 [shǒubiǎo màn le]", "手机没电了 [shǒujī méi diàn le]"],
+             "男：你怎么现在才来？我们都等你二十分钟了。\n女：啊？现在不是刚十点吗？\n男：已经十点二十了！\n女：真对不起，我的手表慢了二十分钟，我都没发现。\n问：女的为什么迟到了？"),
+            ("A", ["二楼右边 [èr lóu yòubiān]", "一楼左边 [yī lóu zuǒbiān]", "三楼中间 [sān lóu zhōngjiān]"],
+             "女：同学，请问第一教室在几楼？\n男：在二楼，上楼梯以后往右边走第二个门就是。\n女：谢谢你，我是新来的学生，还不太认识路。\n男：不客气，我也去二楼上课，跟我走吧。\n问：第一教室在哪儿？"),
+            ("B", ["羊肉汤 [yángròutāng]", "西红柿鸡蛋面 [xīhóngshì jīdàn miàn]", "牛奶面包 [niúnǎi miànbāo]"],
+             "男：这么晚下班，一定饿坏了吧？\n女：是有点儿饿了，家里还有吃的吗？\n男：冰箱里有西红柿和鸡蛋，我给你煮碗面条吧，十分钟就好。\n女：太好了，辛苦你了！\n问：男的要给女的做什么吃的？"),
+            ("A", ["5 月 1 号 [5 yuè 1 hào]", "5 月 10 号 [5 yuè 10 hào]", "6 月 1 号 [6 yuè 1 hào]"],
+             "女：你们公司什么时候搬到新大楼去？\n男：五月一号放假的时候就搬过去。\n女：新大楼离你家远吗？\n男：比现在近多了，坐地铁只要三站。\n问：男的的公司哪天搬家？"),
+        ],
+        "R1_PICS": [K2(23), K3(25), K1("g36_A"), K2(26), K1("g36_B"), K2(24)],
+        "R1": [
+            ("E", "北方 的 冬天 特别 冷， 出门 要 穿 暖和 一点儿。", "Běifāng de dōngtiān tèbié lěng, chūmén yào chuān nuǎnhuo yìdiǎnr."),
+            ("F", "小王 看 了 看 手表， 边 走 边 打 电话。", "Xiǎo Wáng kànle kàn shǒubiǎo, biān zǒu biān dǎ diànhuà."),
+            ("A", "看看 我 今天 买 了 什么 好 东西 回来！", "Kànkan wǒ jīntiān mǎile shénme hǎo dōngxi huílai!"),
+            ("C", "小猫 对 鱼缸 里 的 那 条 小 金鱼 很 好奇。", "Xiǎomāo duì yúgāng li de nà tiáo xiǎo jīnyú hěn hàoqí."),
+            ("B", "生日 那 天， 爸爸 送 了 我 一 部 新 手机。", "Shēngrì nà tiān, bàba sòngle wǒ yí bù xīn shǒujī."),
+        ],
+        "R2_OPTS": [
+            "近 [jìn]", "题 [tí]", "介绍 [jièshào]", "穿 [chuān]", "贵 [guì]", "笑 [xiào]",
+        ],
+        "R2": [
+            ("F", "听到 这个 有意思 的 故事， 孩子们 都 高兴 地 （　） 了。", "Tīngdào zhège yǒu yìsi de gùshi, háizimen dōu gāoxìng de ( ) le."),
+            ("D", "今天 外面 阴天， 你 多 （　） 一 件 外套 再 出去。", "Jīntiān wàimiàn yīntiān, nǐ duō ( ) yí jiàn wàitào zài chūqù."),
+            ("A", "超市 离 我们 家 很 （　）， 买 菜 非常 方便。", "Chāoshì lí wǒmen jiā hěn ( ), mǎi cài fēicháng fāngbiàn."),
+            ("C", "这 本 书 非常 不错， 我 想 把 它 （　） 给 同学们。", "Zhè běn shū fēicháng búcuò, wǒ xiǎng bǎ tā ( ) gěi tóngxuémen."),
+            ("B", "女：今天 的 考试 一共 有 多少 道 （　）？\n男：一共 六十 道， 我 都 做 完 了。",
+             "Nǚ: Jīntiān de kǎoshì yígòng yǒu duōshao dào ( )?\nNán: Yígòng liùshí dào, wǒ dōu zuò wán le."),
+        ],
+        "R3": [
+            (True,
+             "我 弟弟 身高 一 米 八五， 最 喜欢 的 运动 是 打 篮球， 他 是 他们 大学 篮球队 的 队员。\n★ 弟弟 个子 很 高。",
+             "Wǒ dìdi shēngāo yì mǐ bāwǔ, zuì xǐhuan de yùndòng shì dǎ lánqiú, tā shì tāmen dàxué lánqiúduì de duìyuán.\n★ Dìdi gèzi hěn gāo."),
+            (False,
+             "姐姐 以前 不 会 做 饭， 结婚 以后 每 天 都 跟 妈妈 学 做 菜， 现在 她 做 的 菜 已经 非常 好吃 了。\n★ 姐姐 现在 还 不 会 做 饭。",
+             "Jiějie yǐqián bú huì zuò fàn, jiéhūn yǐhòu měi tiān dōu gēn māma xué zuò cài, xiànzài tā zuò de cài yǐjīng fēicháng hǎochī le.\n★ Jiějie xiànzài hái bú huì zuò fàn."),
+            (True,
+             "王 医生， 吃 了 您 给 我 开 的 药， 我 今天 已经 不 发烧 了， 嗓子 也 不 疼 了， 谢谢 您！\n★ 说话人 的 病 好 多 了。",
+             "Wáng yīshēng, chīle nín gěi wǒ kāi de yào, wǒ jīntiān yǐjīng bù fāshāo le, sǎngzi yě bù téng le, xièxie nín!\n★ Shuōhuàrén de bìng hǎo duō le."),
+            (False,
+             "火车票 我 已经 在 网上 买 好 了， 是 明天 下午 三 点 十五 分 的， 我们 一 点 半 从 家 出发 就 可以。\n★ 他们 还没 买 火车票。",
+             "Huǒchēpiào wǒ yǐjīng zài wǎngshang mǎi hǎo le, shì míngtiān xiàwǔ sān diǎn shíwǔ fēn de, wǒmen yì diǎn bàn cóng jiā chūfā jiù kěyǐ.\n★ Tāmen hái méi mǎi huǒchēpiào."),
+            (True,
+             "今天 商店 里 的 西瓜 卖 三 块 钱 一 斤， 比 上 个 星期 便宜 了 两 块 钱。\n★ 上 个 星期 西瓜 五 块 钱 一 斤。",
+             "Jīntiān shāngdiàn li de xīguā mài sān kuài qián yì jīn, bǐ shàng ge xīngqī piányi le liǎng kuài qián.\n★ Shàng ge xīngqī xīguā wǔ kuài qián yì jīn."),
+        ],
+        "R4A_OPTS": [
+            "好 的， 您 请 坐， 我 这 就 去 给 您 拿。 [Hǎo de, nín qǐng zuò, wǒ zhè jiù qù gěi nín ná.]",
+            "昨天 踢 球 跑 得 太 多， 腿 有点儿 疼。 [Zuótiān tī qiú pǎo de tài duō, tuǐ yǒudiǎnr téng.]",
+            "在 三 楼， 我 带 你 上去 吧。 [Zài sān lóu, wǒ dài nǐ shàngqù ba.]",
+            "不 客气， 希望 你 在 北京 玩儿 得 高兴！ [Bú kèqi, xīwàng nǐ zài Běijīng wánr de gāoxìng!]",
+            "他 在 哪儿 呢？ 你 看见 他 了 吗？ [Tā zài nǎr ne? Nǐ kànjiàn tā le ma?]",
+            "是 我 新 买 的， 两百 八十 块 钱。 [Shì wǒ xīn mǎi de, liǎngbǎi bāshí kuài qián.]",
+        ],
+        "R4A": [
+            ("B", "你 今天 走路 怎么 这么 慢？ 怎么 了？", "Nǐ jīntiān zǒulù zěnme zhème màn? Zěnme le?"),
+            ("A", "服务员， 请 再 给 我们 来 一 壶 热 茶。", "Fúwùyuán, qǐng zài gěi wǒmen lái yì hú rè chá."),
+            ("D", "这 几 天 麻烦 你 带 我 参观 了 这么 多 地方， 谢谢！", "Zhè jǐ tiān máfan nǐ dài wǒ cānguān le zhème duō dìfang, xièxie!"),
+            ("F", "门 外 那 辆 白色 的 自行车 是 谁 的？", "Mén wài nà liàng báisè de zìxíngchē shì shéi de?"),
+            ("C", "请问， 电脑 教室 在 几 楼？", "Qǐngwèn, diànnǎo jiàoshì zài jǐ lóu?"),
+        ],
+        "R4B_OPTS": [
+            "放心 吧， 我 已经 把 伞 放 进 书包 里 了。 [Fàngxīn ba, wǒ yǐjīng bǎ sǎn fàng jìn shūbāo li le.]",
+            "还 没 决定， 可能 去 云南， 也 可能 去 海南。 [Hái méi juédìng, kěnéng qù Yúnnán, yě kěnéng qù Hǎinán.]",
+            "太 贵 了， 我们 再 去 旁边 那 家 看看 吧。 [Tài guì le, wǒmen zài qù pángbiān nà jiā kànkan ba.]",
+            "他 姓 高， 是 我们 学校 新 来 的 体育 老师。 [Tā xìng Gāo, shì wǒmen xuéxiào xīn lái de tǐyù lǎoshī.]",
+            "一 个 小时 后， 大概 十一点 到。 [Yí ge xiǎoshí hòu, dàgài shíyī diǎn dào.]",
+        ],
+        "R4B": [
+            ("A", "今天 天 阴 了， 下午 可能 会 下雨。", "Jīntiān tiān yīn le, xiàwǔ kěnéng huì xià yǔ."),
+            ("E", "爸爸 坐 的 那 班 飞机 什么 时候 到？", "Bàba zuò de nà bān fēijī shénme shíhou dào?"),
+            ("B", "今年 寒假 你们 一 家 人 准备 去 哪儿 旅游？", "Jīnnián hánjià nǐmen yì jiā rén zhǔnbèi qù nǎr lǚyóu?"),
+            ("D", "操场 上 跟 学生 说话 的 那 位 老师 是 谁？", "Cāochǎng shang gēn xuésheng shuōhuà de nà wèi lǎoshī shì shéi?"),
+            ("C", "这 件 大衣 要 一千 五百 块， 你 觉得 怎么样？", "Zhè jiàn dàyī yào yìqiān wǔbǎi kuài, nǐ juéde zěnmeyàng?"),
+        ],
+    },
+
+    # ==================== HSK 2 – ĐỀ 9 (H2M09) ====================
+    {
+        "code": "H2M09",
+        "ten": "HSK 2 – Đề 9",
+        "L1": [
+            (K2(2), True, "左边那个是绿色的，右边那个更大。"),
+            (K3(9), False, "她每天早上都在公园里打篮球。"),
+            (K1("006"), True, "星期天上午，她把全家的衣服都洗干净了。"),
+            (K3(5), True, "她感冒了，头有点儿疼，正在床上休息。"),
+            (K2(8), False, "桌子上放着两本新买的杂志。"),
+            (K3(4), True, "大家觉得他的回答非常好，都在鼓掌。"),
+            (K1("001"), True, "这台笔记本电脑是我去年上大学时买的。"),
+            (K3(11), False, "篮子里一条鱼也没有，全是书本。"),
+            (K2(7), True, "找了半天，终于在书柜上面找到这本书了！"),
+            (P0(40), True, "从这儿坐火车去北京非常快，只要五个小时。"),
+        ],
+        "L2A_PICS": [K1("g11_C"), K3(23), K1("g11_F"), K2(15), K2(13), K3(14)],
+        "L2A": [
+            ("B", "男：你怎么每天精神都这么好？\n女：因为我每天早上六点半都去慢跑四十分钟。"),
+            ("A", "女：谁能用“已经”这个词说一个句子？\n男：老师，让我来试试！"),
+            ("E", "女：快把肥皂打上，手心手背都要洗干净。\n男：知道了，妈妈。"),
+            ("F", "女：喂，老公，车在半路发动不起来了，你快来帮我看看。\n男：别急，我马上打车过去。"),
+            ("C", "男：欢迎大家参加今天的班级聚会，来，看镜头！\n女：太开心了，茄子！"),
+        ],
+        "L2B_PICS": [K2(22), K1("g16_B"), K3(19), K1("g16_A"), K2(20)],
+        "L2B": [
+            ("D", "女：你的手表几点了？我的手机没电了。\n男：差五分九点，我们快进考场吧。"),
+            ("A", "男：你看这页介绍的西湖多漂亮啊！\n女：是啊，我们五一放假就去杭州玩儿吧。"),
+            ("C", "男：小姑娘跳得真好，学了多久了？\n女：跟着陈老师学了快两年了。"),
+            ("B", "男：张姐，喝口水歇一会儿吧。\n女：不行啊，今天上午客服电话一个接一个。"),
+            ("E", "女：下个月公司组织旅游，你想去海边还是去爬山？\n男：这两个地方我都想去，让我想一想。"),
+        ],
+        "L3": [
+            ("A", ["18 元 [18 yuán]", "28 元 [28 yuán]", "38 元 [38 yuán]"],
+             "女：您好，一杯热牛奶和一个鸡蛋三明治，一共十八元。\n男：好的，给您二十元。\n问：男的早饭花了多少钱？"),
+            ("B", ["红色 [hóngsè]", "蓝色 [lánsè]", "白色 [báisè]"],
+             "男：今天天真蓝，一点儿云也没有！\n女：是啊，拍照一定特别好看。\n问：今天天空是什么颜色的？"),
+            ("C", ["学校 [xuéxiào]", "机场 [jīchǎng]", "宾馆 [bīnguǎn]"],
+             "女：您好，我订了一间标准间，姓周，住三天。\n男：查到了，周先生，请出示一下您的身份证。\n问：他们最可能在哪儿？"),
+            ("A", ["弟弟 [dìdi]", "哥哥 [gēge]", "爸爸 [bàba]"],
+             "男：你家谁游泳游得最好？\n女：我弟弟，他去年还拿了市中学生比赛第一名呢。\n问：谁游泳游得最好？"),
+            ("B", ["看过了 [kànguo le]", "买不到票 [mǎibudào piào]", "要加班 [yào jiābān]"],
+             "女：周六晚上的音乐会你去听吗？\n男：我想去，可是上网一看，票早就卖完了。\n问：男的为什么去不了音乐会？"),
+            ("C", ["10 分钟 [10 fēnzhōng]", "20 分钟 [20 fēnzhōng]", "40 分钟 [40 fēnzhōng]"],
+             "男：十点十分的火车，现在才九点半，来得及吗？\n女：放心，我们已经到车站广场了，还有四十分钟呢。\n问：离火车开还有多长时间？"),
+            ("B", ["茶 [chá]", "咖啡 [kāfēi]", "苹果汁 [píngguǒzhī]"],
+             "女：下午工作容易困，你要不要来一杯黑咖啡？\n男：好啊，不加糖，谢谢你。\n问：男的要喝什么？"),
+            ("A", ["上海人 [Shànghǎirén]", "北京人 [Běijīngrén]", "广州人 [Guǎngzhōurén]"],
+             "男：王老师，听您的口音不像北方人？\n女：您猜对了，我是上海人，来北京工作五年了。\n问：王老师是哪儿人？"),
+            ("C", ["椅子下面 [yǐzi xiàmiàn]", "书包里面 [shūbāo lǐmiàn]", "电视旁边 [diànshì pángbiān]"],
+             "女：你看见家里那把剪刀了吗？\n男：刚才我用完放在客厅电视旁边了。\n问：剪刀在哪儿？"),
+            ("A", ["多穿衣服 [duō chuān yīfu]", "早点睡觉 [zǎodiǎn shuìjiào]", "少吃甜食 [shǎo chī tiánshí]"],
+             "男：明天降温，最低只有两度。\n女：那明早给儿子把羽绒服穿上吧，别冻着了。\n问：女的是什么意思？"),
+        ],
+        "L4": [
+            ("B", ["去银行 [qù yínháng]", "去买西瓜 [qù mǎi xīguā]", "去洗车 [qù xǐ chē]"],
+             "男：妈，晚饭我已经做好了，您这是要出去吗？\n女：对，今天挺热的，我去楼下水果店买个大西瓜回来。\n男：我跟您一起去吧，西瓜重，我帮您拿。\n女：好，那走吧！\n问：妈妈出去做什么？"),
+            ("A", ["星期二 [xīngqī'èr]", "星期四 [xīngqīsì]", "星期六 [xīngqīliù]"],
+             "女：小李，张经理什么时候从广州回来？\n男：他昨天星期一去的，去三天，星期四上午回来。\n女：那今天星期二，我先把报告发到他邮箱里吧。\n男：好的，他每天晚上都会看邮件。\n问：今天是星期几？"),
+            ("C", ["坐出租车 [zuò chūzūchē]", "开车 [kāi chē]", "走路 [zǒulù]"],
+             "男：吃完晚饭我们去看电影吧，电影院离这儿远吗？\n女：一点儿也不远，就在前面第二个路口。\n男：那我们不用开车了，慢慢走过去正好散散步。\n女：好主意，现在就出发吧。\n问：他们怎么去电影院？"),
+            ("B", ["3 岁 [3 suì]", "6 岁 [6 suì]", "9 岁 [9 suì]"],
+             "女：您家女儿今年上小学了吧？\n男：是啊，今年九月刚上一年级，满六岁了。\n女：在学校习惯吗？\n男：挺习惯的，认识了好几个新朋友，每天回来都可高兴了。\n问：男的的女儿今年几岁？"),
+            ("A", ["汉语词典 [Hànyǔ cídiǎn]", "新手机 [xīn shǒujī]", "运动鞋 [yùndòngxié]"],
+             "男：下周大卫过生日，我们送他什么礼物好呢？\n女：他最近正在努力准备汉语四级考试，送他一本好一点儿的词典吧？\n男：这个主意好，对他的学习最有帮助。\n女：那下课后我们一起去书店挑一本。\n问：他们准备送大卫什么生日礼物？"),
+        ],
+        "R1_PICS": [K3(27), K1("g36_E"), K1("g36_C"), K2(26), K2(28), K3(28)],
+        "R1": [
+            ("B", "眼睛 有点儿 干， 先 滴 两 滴 眼药水 休息 一下 吧。", "Yǎnjing yǒudiǎnr gān, xiān dī liǎng dī yǎnyàoshuǐ xiūxi yíxià ba."),
+            ("F", "雨 终于 停 了， 可以 把 伞 收 起来 了。", "Yǔ zhōngyú tíng le, kěyǐ bǎ sǎn shōu qǐlai le."),
+            ("A", "欢迎 加入 我们 团队， 希望 你 在 这儿 工作 愉快！", "Huānyíng jiārù wǒmen tuánduì, xīwàng nǐ zài zhèr gōngzuò yúkuài!"),
+            ("C", "她 每天 下班 后 都 会 练习 一 个 小时 舞蹈。", "Tā měi tiān xiàbān hòu dōu huì liànxí yí ge xiǎoshí wǔdǎo."),
+            ("E", "医生， 我 儿子 今天 早上 突然 发烧 了， 现在 能 过去 吗？", "Yīshēng, wǒ érzi jīntiān zǎoshang tūrán fāshāo le, xiànzài néng guòqù ma?"),
+        ],
+        "R2_OPTS": [
+            "快乐 [kuàilè]", "找 [zhǎo]", "比 [bǐ]", "可能 [kěnéng]", "贵 [guì]", "丈夫 [zhàngfu]",
+        ],
+        "R2": [
+            ("C", "今天 的 气温 （　） 昨天 高 了 五 度， 暖和 多 了。", "Jīntiān de qìwēn ( ) zuótiān gāole wǔ dù, nuǎnhuo duō le."),
+            ("A", "祝 您 新年 （　）， 身体 健康， 工作 顺利！", "Zhù nín xīnnián ( ), shēntǐ jiànkāng, gōngzuò shùnlì!"),
+            ("F", "我 和 （　） 都是 大学 老师， 在 同 一 所 学校 工作。", "Wǒ hé ( ) dōushì dàxué lǎoshī, zài tóng yì suǒ xuéxiào gōngzuò."),
+            ("B", "弟弟 大学 毕业 后， 在 上海 （　） 到 了 一 份 好 工作。", "Dìdi dàxué bìyè hòu, zài Shànghǎi ( ) dào le yí fèn hǎo gōngzuò."),
+            ("D", "女：小王 怎么 还 没 到？\n男：路上 车 多， 他 （　） 堵车 了， 再 等等 吧。",
+             "Nǚ: Xiǎo Wáng zěnme hái méi dào?\nNán: Lùshang chē duō, tā ( ) dǔchē le, zài děngdeng ba."),
+        ],
+        "R3": [
+            (False,
+             "这 家 咖啡馆 早上 八 点 开门， 晚上 十 点 关门， 里边 很 安静， 我 周末 常 来 这儿 看 书。\n★ 这 家 咖啡馆 早上 七 点 开门。",
+             "Zhè jiā kāfēiguǎn zǎoshang bā diǎn kāimén, wǎnshang shí diǎn guānmén, lǐbiān hěn ānjìng, wǒ zhōumò cháng lái zhèr kàn shū.\n★ Zhè jiā kāfēiguǎn zǎoshang qī diǎn kāimén."),
+            (True,
+             "张 阿姨 有 两 个 孩子， 儿子 在 医院 当 医生， 女儿 在 中学 教 英语， 两 个 孩子 都 很 孝顺。\n★ 张 阿姨 的 女儿 是 老师。",
+             "Zhāng āyí yǒu liǎng ge háizi, érzi zài yīyuàn dāng yīshēng, nǚ'ér zài zhōngxué jiāo Yīngyǔ, liǎng ge háizi dōu hěn xiàoshùn.\n★ Zhāng āyí de nǚ'ér shì lǎoshī."),
+            (True,
+             "这 条 白 裙子 真 好看， 就是 号码 小 了 一点儿， 请 问 有 大 一 号 的 吗？\n★ 说话人 想 试 大 一点儿 的 裙子。",
+             "Zhè tiáo bái qúnzi zhēn hǎokàn, jiùshì hàomǎ xiǎole yìdiǎnr, qǐngwèn yǒu dà yí hào de ma?\n★ Shuōhuàrén xiǎng shì dà yìdiǎnr de qúnzi."),
+            (False,
+             "我 家 离 火车站 有 二十 多 公里， 坐 公共汽车 要 一 个 多 小时， 坐 地铁 只要 三十五 分钟。\n★ 坐 公共汽车 比 坐 地铁 快。",
+             "Wǒ jiā lí huǒchēzhàn yǒu èrshí duō gōnglǐ, zuò gōnggòng qìchē yào yí ge duō xiǎoshí, zuò dìtiě zhǐyào sānshíwǔ fēnzhōng.\n★ Zuò gōnggòng qìchē bǐ zuò dìtiě kuài."),
+            (True,
+             "小李 非常 喜欢 小 动物， 家 里 养 了 一 只 白 猫 和 一 条 小 黄 狗， 他 每天 下班 都 带 小 狗 出去 散步。\n★ 小李 家 既 有 猫 又 有 狗。",
+             "Xiǎo Lǐ fēicháng xǐhuan xiǎo dòngwù, jiā li yǎngle yì zhī bái māo hé yì tiáo xiǎo huáng gǒu, tā měi tiān xiàbān dōu dài xiǎo gǒu chūqù sànbù.\n★ Xiǎo Lǐ jiā jì yǒu māo yòu yǒu gǒu."),
+        ],
+        "R4A_OPTS": [
+            "没 事， 我 休息 一会儿 就 好 了。 [Méi shì, wǒ xiūxi yíhuìr jiù hǎo le.]",
+            "在 书架 最 上面 那 一 层。 [Zài shūjià zuì shàngmiàn nà yì céng.]",
+            "好 主意， 我 去 拿 篮球！ [Hǎo zhǔyi, wǒ qù ná lánqiú!]",
+            "一共 四 块 五， 给 您 四 块 就 行 了。 [Yígòng sì kuài wǔ, gěi nín sì kuài jiù xíng le.]",
+            "他 在 哪儿 呢？ 你 看见 他 了 吗？ [Tā zài nǎr ne? Nǐ kànjiàn tā le ma?]",
+            "因为 今天 是 中秋节， 大家都 回 家 吃 团圆饭 了。 [Yīnwèi jīntiān shì Zhōngqiūjié, dàjiā dōu huí jiā chī tuányuánfàn le.]",
+        ],
+        "R4A": [
+            ("A", "你 脸色 不 太 好， 是 不 是 不 舒服？", "Nǐ liǎnsè bú tài hǎo, shì bu shì bù shūfu?"),
+            ("D", "老板， 这 两 斤 西红柿 多少 钱？", "Lǎobǎn, zhè liǎng jīn xīhóngshì duōshao qián?"),
+            ("B", "爸爸， 那 本 《中国 历史》 您 放 哪儿 了？", "Bàba, nà běn «Zhōngguó Lìshǐ» nín fàng nǎr le?"),
+            ("C", "写 完 作业 了， 我们 下 楼 运动 运动 吧？", "Xiě wán zuòyè le, wǒmen xià lóu yùndòng yùndòng ba?"),
+            ("F", "今天 晚上 街 上 的 人 怎么 这么 少？", "Jīntiān wǎnshang jiē shang de rén zěnme zhème shǎo?"),
+        ],
+        "R4B_OPTS": [
+            "好 的， 劳驾 您 在 前面 银行 门口 停 一下。 [Hǎo de, láojià nín zài qiánmiàn yínháng ménkǒu tíng yíxià.]",
+            "我 也 觉得 不错， 那 就 定 这 家 吧。 [Wǒ yě juéde búcuò, nà jiù dìng zhè jiā ba.]",
+            "不 用 着急， 下 周一 交 给 老师 就 可以。 [Bú yòng zháojí, xià zhōuyī jiāo gěi lǎoshī jiù kěyǐ.]",
+            "是 我 大学 同学 小陈， 来 北京 出差。 [Shì wǒ dàxué tóngxué Xiǎo Chén, lái Běijīng chūchāi.]",
+            "大概 九 月 下旬 吧， 那 时候 天气 最 舒服。 [Dàgài jiǔ yuè xiàxún ba, nà shíhou tiānqì zuì shūfu.]",
+        ],
+        "R4B": [
+            ("D", "刚才 跟 你 一起 喝 咖啡 的 那个 人 是 谁？", "Gāngcái gēn nǐ yìqǐ hē kāfēi de nàge rén shì shéi?"),
+            ("C", "这 篇 汉语 作文 明天 就要 交 吗？", "Zhè piān Hànyǔ zuòwén míngtiān jiù yào jiāo ma?"),
+            ("E", "你 打算 什么 时候 去 西安 旅游？", "Nǐ dǎsuàn shénme shíhou qù Xī'ān lǚyóu?"),
+            ("A", "小姐， 文化 路 已经 到 了。", "Xiǎojiě, Wénhuà Lù yǐjīng dào le."),
+            ("B", "这 家 宾馆 干净 又 安静， 离 车站 也 近。", "Zhè jiā bīnguǎn gānjìng yòu ānjìng, lí chēzhàn yě jìn."),
+        ],
+    },
+
+    # ==================== HSK 2 – ĐỀ 10 (H2M10) ====================
+    {
+        "code": "H2M10",
+        "ten": "HSK 2 – Đề 10",
+        "L1": [
+            (K2(5), True, "您好，您的热咖啡好了，请慢用。"),
+            (K3(8), True, "注意，前面路口只能向左拐。"),
+            (K1("009"), False, "我妹妹养了一只白色的小猫。"),
+            (K2(6), True, "周末晚上，我和好朋友一起去唱歌了。"),
+            (K3(2), False, "今天是八月六号。"),
+            (K1("005"), True, "做蛋糕需要用到新鲜的鸡蛋。"),
+            (K2(10), True, "对不起，我手头还有很多工作，晚点儿再打给你。"),
+            (K3(3), False, "爷爷每天早上在公园里看报纸。"),
+            (K2(11), True, "他们两个人买完东西正高高兴兴地往回走。"),
+            (P2(36), False, "弟弟正在操场上跑步呢。"),
+        ],
+        "L2A_PICS": [K3(12), K3(13), K2(17), K2(15), K1("g11_A"), K2(14)],
+        "L2A": [
+            ("F", "女：爸爸，报纸上有什么好看的新闻吗？\n男：上面说市里新开了一个海洋馆，周末带你去！"),
+            ("B", "男：辛苦你了，洗了这么多衣服。\n女：没事，趁着今天天晴，把被子也晒了晒。"),
+            ("A", "女：这只小花狗真乖，喂它什么都爱吃。\n男：是啊，孩子们每天放学第一件事就是喂它。"),
+            ("E", "男：老师，教师节快乐，这束鲜花送给您！\n女：谢谢同学们！"),
+            ("C", "女：车怎么走不动了？\n男：可能是轮胎扎破了，我来看看。"),
+        ],
+        "L2B_PICS": [K3(24), K2(21), K3(20), K2(18), K1("g16_C")],
+        "L2B": [
+            ("E", "男：长大了你想去哪些国家看看？\n女：我想环游世界，去很多国家旅游！"),
+            ("A", "女：这里的风景太美了，帮我多拍几张照片吧。\n男：好，你站在那棵大树旁边！"),
+            ("C", "女：您好，请问还需要加点儿什么菜吗？\n男：再来一盘西红柿炒鸡蛋吧，谢谢。"),
+            ("B", "男：今天好些了吗？记得把感冒药吃了。\n女：好多了，喝完这杯水就吃药。"),
+            ("D", "女：今年冬天比去年冷多了，手都冻红了。\n男：快把手套戴上，我们进商场暖和一下。"),
+        ],
+        "L3": [
+            ("B", ["7 点 45 分 [7 diǎn 45 fēn]", "8 点 [8 diǎn]", "8 点 15 分 [8 diǎn 15 fēn]"],
+             "男：快走吧，八点开始考试，现在都七点四十五了。\n女：别担心，教室就在前面，五分钟就到了。\n问：考试几点开始？"),
+            ("C", ["面条 [miàntiáo]", "包子 [bāozi]", "牛奶和鸡蛋 [niúnǎi hé jīdàn]"],
+             "女：你早上一般吃什么？\n男：我每天早上吃一个鸡蛋，喝一杯热牛奶。\n问：男的早饭吃什么？"),
+            ("A", ["书店 [shūdiàn]", "医院 [yīyuàn]", "机场 [jīchǎng]"],
+             "男：你好，请问《新汉语词典》在哪儿卖？\n女：在二楼工具书区，楼梯上去左边就是。\n问：他们现在在哪儿？"),
+            ("B", ["黑色 [hēisè]", "白色 [báisè]", "黄色 [huángsè]"],
+             "女：下雪以后，外面的树和房子都变成白色的了。\n男：真漂亮，我们下去照几张相吧！\n问：现在外面的房子是什么颜色的？"),
+            ("C", ["12 元 [12 yuán]", "20 元 [20 yuán]", "24 元 [24 yuán]"],
+             "男：苹果八块钱一斤，我买三斤。\n女：好嘞，一共二十四块，给您装好。\n问：男的买苹果花了多少钱？"),
+            ("A", ["自行车坏了 [zìxíngchē huài le]", "下大雨了 [xià dàyǔ le]", "起晚了 [qǐ wǎn le]"],
+             "女：你今天怎么没骑自行车来上班？\n男：早上出门发现车胎没气了，只好坐公共汽车来了。\n问：男的今天为什么没骑车？"),
+            ("B", ["妈妈 [māma]", "姐姐 [jiějie]", "同学 [tóngxué]"],
+             "男：你手上戴的这块表真精致！\n女：是我考上大学的时候，姐姐用第一个月工资给我买的。\n问：手表是谁给女的买的？"),
+            ("A", ["很喜欢 [hěn xǐhuan]", "觉得无聊 [juéde wúliáo]", "没听懂 [méi tīngdǒng]"],
+             "女：昨天的中国功夫表演你看了吗？\n男：看了，太精彩了，我还想再看一次！\n问：男的觉得昨天的表演怎么样？"),
+            ("C", ["周三 [zhōusān]", "周四 [zhōusì]", "周五 [zhōuwǔ]"],
+             "男：王医生周三上午出诊吗？\n女：周三他休息，您可以约周四或者周五上午。那我约周五吧。\n问：男的约了哪天看病？"),
+            ("B", ["洗碗 [xǐ wǎn]", "找猫 [zhǎo māo]", "关窗户 [guān chuānghu]"],
+             "女：奇怪，咱们家小花猫跑哪儿去了？房间里没有。\n男：你看沙发下面，它正睡得香呢。\n问：女的刚才在做什么？"),
+        ],
+        "L4": [
+            ("C", ["去游泳 [qù yóuyǒng]", "去买鞋 [qù mǎi xié]", "去接妈妈 [qù jiē māma]"],
+             "女：下午两点我们去体育馆打羽毛球吧？\n男：下午两点不行，我妈妈从老家坐火车来，两点十分到站，我得去接她。\n女：那明天上午九点呢？\n男：明天上午没问题，九点体育馆门口见！\n问：男的今天下午两点要做什么？"),
+            ("A", ["不辣的菜 [bú là de cài]", "很辣的鱼 [hěn là de yú]", "羊肉火锅 [yángròu huǒguō]"],
+             "男：今天中午我请大家吃饭，去川菜馆怎么样？\n女：小丽嗓子有点儿疼，不能吃辣的东西。\n男：那我们去旁边那家广东菜馆吧，清淡又好吃。\n女：好，大家都同意！\n问：小丽现在适合吃什么样的菜？"),
+            ("B", ["200 元 [200 yuán]", "300 元 [300 yuán]", "500 元 [500 yuán]"],
+             "女：你好，我想买两张周六晚上的话剧票。\n男：好的，有一百五一张的，也有两百五一张的，您要哪种？\n女：给我拿两张一百五的吧，位置靠中间一点儿。\n男：没问题，一共三百元。\n问：女的买票一共花了多少钱？"),
+            ("A", ["办公桌抽屉里 [bàngōngzhuō chōuti li]", "电脑包里 [diànnǎobāo li]", "汽车座位上 [qìchē zuòwèi shang]"],
+             "男：小周，昨天开会用的那份黑色文件夹你看见了吗？\n女：昨天散会后我帮您收起来了。\n男：放在哪儿了？我电脑包里没有。\n女：在您办公桌右边的第一个抽屉里。\n问：文件夹现在在哪儿？"),
+            ("C", ["半年 [bàn nián]", "一年 [yì nián]", "三年 [sān nián]"],
+             "女：安娜，你的汉字写得这么漂亮，学了很久了吧？\n男：安娜来中国之前就在自己国家学了两年，来北京又学了一年。\n女：哇，一共三年了，真不简单！\n男：她每天晚上都坚持写一页汉字呢。\n问：安娜一共学了多长时间汉语了？"),
+        ],
+        "R1_PICS": [K3(25), K2(27), K3(23), K2(26), K1("g36_F"), K2(23)],
+        "R1": [
+            ("C", "不管 晴天 还是 阴天， 她 每天 都 坚持 跑步 锻炼。", "Bùguǎn qíngtiān háishi yīntiān, tā měi tiān dōu jiānchí pǎobù duànliàn."),
+            ("F", "快 来 看看， 我 从 超市 买 了 好多 好吃 的 水果！", "Kuài lái kànkan, wǒ cóng chāoshì mǎile hǎoduō hǎochī de shuǐguǒ!"),
+            ("B", "李 老师 讲 故事 特别 有意思， 孩子们 听 得 很 认真。", "Lǐ lǎoshī jiǎng gùshi tèbié yǒu yìsi, háizimen tīng de hěn rènzhēn."),
+            ("A", "这 部 新 手机 拍照 非常 清楚， 我 很 喜欢。", "Zhè bù xīn shǒujī pāizhào fēicháng qīngchu, wǒ hěn xǐhuan."),
+            ("E", "王 经理， 我 来 给 您 介绍 一下 这 位 新 客户。", "Wáng jīnglǐ, wǒ lái gěi nín jièshào yíxià zhè wèi xīn kèhù."),
+        ],
+        "R2_OPTS": [
+            "事情 [shìqing]", "回答 [huídá]", "第一 [dì-yī]", "白色 [báisè]", "贵 [guì]", "等 [děng]",
+        ],
+        "R2": [
+            ("C", "这 是 我 （　） 次 来 中国， 对 什么 都 觉得 很 新奇。", "Zhè shì wǒ ( ) cì lái Zhōngguó, duì shénme dōu juéde hěn xīnqí."),
+            ("F", "雨 太 大 了， 你 在 地铁口 （　） 我 五 分钟， 我 去 给 你 送 伞。", "Yǔ tài dà le, nǐ zài dìtiěkǒu ( ) wǒ wǔ fēnzhōng, wǒ qù gěi nǐ sòng sǎn."),
+            ("A", "今天 公司 的 （　） 都 做 完 了， 可以 准时 下班 回 家。", "Jīntiān gōngsī de ( ) dōu zuò wán le, kěyǐ zhǔnshí xiàbān huí jiā."),
+            ("D", "医院 里 的 医生 和 护士 一般 都 穿 （　） 的 工作服。", "Yīyuàn li de yīshēng hé hùshi yìbān dōu chuān ( ) de gōngzuòfú."),
+            ("B", "男：老师 刚才 问 的 那个 问题 你 会 吗？\n女：会， 我 已经 举手 （　） 了。",
+             "Nán: Lǎoshī gāngcái wèn de nàge wèntí nǐ huì ma?\nNǚ: Huì, wǒ yǐjīng jǔshǒu ( ) le."),
+        ],
+        "R3": [
+            (True,
+             "我 爷爷 今年 七十五 岁 了， 不 爱 看 电视， 最 喜欢 每天 早上 喝 着 热 茶 看 报纸。\n★ 爷爷 喜欢 早上 看 报纸。",
+             "Wǒ yéye jīnnián qīshíwǔ suì le, bú ài kàn diànshì, zuì xǐhuan měi tiān zǎoshang hēzhe rè chá kàn bàozhǐ.\n★ Yéye xǐhuan zǎoshang kàn bàozhǐ."),
+            (False,
+             "这 双 黑色 皮鞋 虽然 样子 很 好看， 但是 我 穿 着 有点儿 小， 走 路 不 太 舒服， 还是 不 买 了。\n★ 说话人 买 了 这 双 黑 皮鞋。",
+             "Zhè shuāng hēisè píxié suīrán yàngzi hěn hǎokàn, dànshì wǒ chuānzhe yǒudiǎnr xiǎo, zǒulù bú tài shūfu, háishi bù mǎi le.\n★ Shuōhuàrén mǎile zhè shuāng hēi píxié."),
+            (True,
+             "小王 上午 十 点 的 飞机 去 广州， 从 家 去 机场 要 一 个 小时， 所以 他 七 点 半 就 出门 了。\n★ 小王 今天 去 广州。",
+             "Xiǎo Wáng shàngwǔ shí diǎn de fēijī qù Guǎngzhōu, cóng jiā qù jīchǎng yào yí ge xiǎoshí, suǒyǐ tā qī diǎn bàn jiù chūmén le.\n★ Xiǎo Wáng jīntiān qù Guǎngzhōu."),
+            (False,
+             "姐姐 和 我 都 爱 运动， 我 喜欢 踢 足球 和 打 篮球， 她 最 喜欢 游泳， 每 周 都 去 三 次。\n★ 姐姐 最 喜欢 踢 足球。",
+             "Jiějie hé wǒ dōu ài yùndòng, wǒ xǐhuan tī zúqiú hé dǎ lánqiú, tā zuì xǐhuan yóuyǒng, měi zhōu dōu qù sān cì.\n★ Jiějie zuì xǐhuan tī zúqiú."),
+            (True,
+             "这家 超市 晚上 九 点 以后， 面包 和 水果 都 会 便宜 一半， 所以 晚上 来 买 东西 的 人 也 不少。\n★ 晚上 九 点 后 这儿 的 面包 更 便宜。",
+             "Zhè jiā chāoshì wǎnshang jiǔ diǎn yǐhòu, miànbāo hé shuǐguǒ dōu huì piányi yíbàn, suǒyǐ wǎnshang lái mǎi dōngxi de rén yě bù shǎo.\n★ Wǎnshang jiǔ diǎn hòu zhèr de miànbāo gèng piányi."),
+        ],
+        "R4A_OPTS": [
+            "太 感谢 了， 我 第 一 次 来， 正 找 不 着 路 呢。 [Tài gǎnxiè le, wǒ dì-yī cì lái, zhèng zhǎobuzháo lù ne.]",
+            "在 厨房 洗 水果 呢， 马上 就 出来。 [Zài chúfáng xǐ shuǐguǒ ne, mǎshàng jiù chūlai.]",
+            "还 行， 就是 最后 两 道 大 题 没 时间 检查 了。 [Hái xíng, jiùshì zuìhòu liǎng dào dà tí méi shíjiān jiǎnchá le.]",
+            "没 问题， 您 想 要 大 杯 还是 中 杯？ [Méi wèntí, nín xiǎng yào dà bēi háishi zhōng bēi?]",
+            "他 在 哪儿 呢？ 你 看见 他 了 吗？ [Tā zài nǎr ne? Nǐ kànjiàn tā le ma?]",
+            "星期六 下午 两 点， 在 学校 体育馆。 [Xīngqīliù xiàwǔ liǎng diǎn, zài xuéxiào tǐyùguǎn.]",
+        ],
+        "R4A": [
+            ("C", "今天 上午 的 汉语 考试 你 考 得 怎么样？", "Jīntiān shàngwǔ de Hànyǔ kǎoshì nǐ kǎo de zěnmeyàng?"),
+            ("F", "你们 班 的 篮球 比赛 是 什么 时候？", "Nǐmen bān de lánqiú bǐsài shì shénme shíhou?"),
+            ("A", "我 也 去 图书馆， 我 带 你 过去 吧。", "Wǒ yě qù túshūguǎn, wǒ dài nǐ guòqù ba."),
+            ("D", "你好， 请 给 我 来 一 杯 热 牛奶。", "Nǐ hǎo, qǐng gěi wǒ lái yì bēi rè niúnǎi."),
+            ("B", "妈妈 呢？ 怎么 没 在 客厅？", "Māma ne? Zěnme méi zài kètīng?"),
+        ],
+        "R4B_OPTS": [
+            "那 我们 坐 出租车 去 吧， 别 迟到 了。 [Nà wǒmen zuò chūzūchē qù ba, bié chídào le.]",
+            "我 昨天 晚上 十一点 半 才 到 家。 [Wǒ zuótiān wǎnshang shíyī diǎn bàn cái dào jiā.]",
+            "挺 好 的， 邻居们 都 非常 热情。 [Tǐng hǎo de, línjūmen dōu fēicháng rèqíng.]",
+            "好 啊， 顺便 给 儿子 买 两 本 故事书。 [Hǎo a, shùnbiàn gěi érzi mǎi liǎng běn gùshishū.]",
+            "不 是， 那 是 我 妹妹 的， 我 的 是 黑色 的。 [Bú shì, nà shì wǒ mèimei de, wǒ de shì hēisè de.]",
+        ],
+        "R4B": [
+            ("C", "搬 到 新 家 住 得 还 习惯 吗？", "Bān dào xīn jiā zhù de hái xíguàn ma?"),
+            ("E", "门口 那 辆 红色 自行车 是 你 的 吗？", "Ménkǒu nà liàng hóngsè zìxíngchē shì nǐ de ma?"),
+            ("A", "现在 去 火车站 坐 公共汽车 怕 来不及 了。", "Xiànzài qù huǒchēzhàn zuò gōnggòng qìchē pà láibují le."),
+            ("B", "你 今天 怎么 看 上去 这么 困？", "Nǐ jīntiān zěnme kàn shàngqù zhème kùn?"),
+            ("D", "吃 完 晚饭 我们 去 商场 走走 吧？", "Chī wán wǎnfàn wǒmen qù shāngchǎng zǒuzou ba?"),
+        ],
+    },
+]
+
+
+def main() -> int:
+    specs = [make_hsk2_exam(cfg) for cfg in HSK2_CONFIGS]
+    save_and_seed_exams(specs)
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

@@ -5,6 +5,8 @@ export const getNotebook = (token, trangThai, signal) =>
 export const startNotebookReview = (token) => http.post("/api/so-tay/on", undefined, { token });
 export const getNotebookReview = (token, id, signal) => http.get(`/api/so-tay/luot/${id}`, { token, signal });
 export const checkNotebookAnswer = (token, id, body) => http.post(`/api/so-tay/luot/${id}/kiem-tra`, body, { token });
+export const markNotebookSolutionViewed = (token, id, cauHoiId) =>
+  http.post(`/api/so-tay/luot/${id}/xem-loi-giai`, { cau_hoi_id: cauHoiId }, { token });
 export const abandonNotebookReview = (token, id) => http.post(`/api/so-tay/luot/${id}/bo`, undefined, { token });
 export const askNotebookXiang = (token, id, body) => http.post(`/api/so-tay/luot/${id}/hoi-xiang`, body, { token });
 export const getMissions = (token, signal) => http.get("/api/nhiem-vu", { token, signal });

@@ -3,14 +3,14 @@ import { Link, useNavigate, useParams } from "react-router-dom";
 
 import { useAuth } from "../../auth/context/AuthContext.jsx";
 import {
-  createExam, deleteExam, examAction, getExam, getQuestion, saveExamItems, updateExam,
+  buildExamListeningTape, createExam, deleteExam, examAction, getExam, getQuestion, saveExamItems, updateExam,
 } from "../api/lecturerApi.js";
 import Icon from "../../../shared/components/Icon.jsx";
 import MediaInput from "../components/MediaInput.jsx";
 import QuestionPreview, { SharedPassage } from "../components/QuestionPreview.jsx";
 import QuestionPicker from "../components/QuestionPicker.jsx";
 import StatusBadge from "../components/StatusBadge.jsx";
-import { DANG_LABELS, SKILL_LABELS } from "../utils/labels.js";
+import { DANG_LABELS, mediaUrl, SKILL_LABELS } from "../utils/labels.js";
 import { useLevels } from "../hooks/useLevels.js";
 import "../styles/lecturer.css";
 
@@ -225,7 +225,21 @@ export default function ExamEditorPage() {
           <label htmlFor="e-source">Nguồn (nếu có)</label>
           <input id="e-source" value={info.nguon} maxLength={255} onChange={(e) => setInfo({ ...info, nguon: e.target.value })} />
         </div>
-        <MediaInput kind="audio" label="Âm thanh chung của phần Nghe (nếu cả đề dùng 1 tệp)" value={info.tep_audio_chung}
+        <MediaInput kind="audio"
+          label="Băng Nghe liên tiếp của toàn phần Nghe (chuẩn phòng thi HSK: 1 tệp phát từ câu đầu đến hết phần Nghe)"
+          value={info.tep_audio_chung}
+          onAiGenerate={
+            !isNew && editable
+              ? async () => {
+                  if (itemsDirty) await saveExamItems(token, id, itemsPayload(items));
+                  const res = await buildExamListeningTape(token, id);
+                  await reload();
+                  setNotice(res.message || "Đã ghép băng Nghe liên tiếp chuẩn HSK");
+                  return res.duong_dan;
+                }
+              : undefined
+          }
+          aiLabel="Ghép băng Nghe liên tiếp"
           onChange={(v) => setInfo({ ...info, tep_audio_chung: v })} disabled={busy || !editable} />
         {editable && (
           <div className="lv-actions">
@@ -256,7 +270,7 @@ export default function ExamEditorPage() {
                     </span>
                     <span className="lv-item__ctrl">
                       <select aria-label={`Phần của câu ${index + 1}`} value={item.phan ?? ""} onChange={(e) => updateItem(index, { phan: e.target.value })}>
-                        {[1, 2, 3, 4].map((p) => <option key={p} value={p}>Phần {p}</option>)}
+                        {[1, 2, 3, 4, 5, 6, 7, 8, 9].map((p) => <option key={p} value={p}>Phần {p}</option>)}
                       </select>
                       <label className="lv-inline">
                         <input type="checkbox" checked={item.la_cau_vi_du} onChange={(e) => updateItem(index, { la_cau_vi_du: e.target.checked })} /> Ví dụ
@@ -298,18 +312,24 @@ export default function ExamEditorPage() {
           </div>
 
           <aside className="lv-editor__preview" aria-label="Xem trước đề">
-            <h2>Xem trước</h2>
-            {info.tep_audio_chung && <p className="lv-muted">Có âm thanh chung cho phần Nghe.</p>}
+            <h2>Xem trước đề thi</h2>
+            {info.tep_audio_chung && (
+              <div className="lv-media" style={{ marginBottom: 12 }}>
+                <span className="lv-media__label">🎧 Băng Nghe liên tiếp toàn phần Nghe</span>
+                <audio controls preload="metadata" src={mediaUrl(info.tep_audio_chung)} style={{ width: "100%" }} />
+              </div>
+            )}
             {items.map((item, index) => {
               const prev = items[index - 1];
               const showPassage = item.cau_cha_id && (!prev || prev.cau_cha_id !== item.cau_cha_id) && parents[item.cau_cha_id];
               const number = item.la_cau_vi_du ? null : ++counter;
+              const useSharedTape = Boolean(info.tep_audio_chung) && item.ky_nang === "nghe";
               return (
                 <div key={item.cau_hoi_id}>
                   {(!prev || String(prev.phan) !== String(item.phan)) && <h3 className="lv-part">Phần {item.phan}</h3>}
-                  {showPassage && <SharedPassage q={parents[item.cau_cha_id]} />}
+                  {showPassage && <SharedPassage q={parents[item.cau_cha_id]} hideAudio={useSharedTape} />}
                   {item.la_cau_vi_du && <p className="lv-muted">Ví dụ</p>}
-                  <QuestionPreview q={item.cau_hoi} number={number} />
+                  <QuestionPreview q={item.cau_hoi} number={number} hideAudio={useSharedTape} />
                 </div>
               );
             })}

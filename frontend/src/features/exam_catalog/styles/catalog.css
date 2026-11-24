@@ -8,9 +8,9 @@
   --exam: #3B5794; --exam-sh: #283F6E; --on-exam: #FFFFFF; --exam-soft: #DDE3EE; --coral-btn: #BC5139; --coral-btn-sh: #8E3A27; --on-coral: #FFFFFF;
   --amber: #D9952B; --violet: #7B4FC9; --ghost-sh: #BDB6AB; --focus: #DD6E54;
   --shadow: 0 1px 3px rgba(52,44,34,.07), 0 14px 30px -16px rgba(52,44,34,.24);
-  --f-display: "Baloo 2", "Be Vietnam Pro", system-ui, sans-serif;
-  --f-body: "Be Vietnam Pro", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
-  --f-hz: "Noto Serif SC", "Noto Sans SC", "SimSun", serif;
+  --f-display: "Be Vietnam Pro", "Noto Sans SC", "Microsoft YaHei UI", system-ui, sans-serif;
+  --f-body: "Be Vietnam Pro", "Noto Sans SC", "Microsoft YaHei UI", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --f-hz: "Noto Sans SC", "Microsoft YaHei UI", "Microsoft YaHei", "PingFang SC", sans-serif;
   font-family: var(--f-body); color: var(--ink);
 }
 html[data-theme="dark"] .public-layout .xc{
@@ -20,11 +20,11 @@ html[data-theme="dark"] .public-layout .xc{
     --exam: #8DA5FF; --exam-sh: #5069C2; --on-exam: #0B1530; --exam-soft: #1C2850; --coral-btn: #FF8A72; --coral-btn-sh: #B4432F; --on-coral: #2A0E08;
     --amber: #F4B860; --violet: #B79BFF; --ghost-sh: #0A1120;
   }
-.xc { --c: var(--teal); --f-hz: "Noto Serif SC", "Noto Sans SC", "SimSun", serif; display: flex; flex-direction: column; gap: 22px; padding-bottom: 24px; }
+.xc { --c: var(--teal); --f-hz: "Noto Sans SC", "Microsoft YaHei UI", "Microsoft YaHei", "PingFang SC", sans-serif; display: flex; flex-direction: column; gap: 22px; padding-bottom: 24px; }
 .xc *, .xc *::before, .xc *::after { box-sizing: border-box; }
-.xc h1, .xc h2, .xc h3 { font-family: var(--f-display); color: var(--ink); margin: 0; line-height: 1.1; letter-spacing: -.01em; font-weight: 800; }
+.xc h1, .xc h2, .xc h3 { font-family: var(--f-display); color: var(--ink); margin: 0; line-height: 1.24; letter-spacing: -.01em; font-weight: 800; }
 .xc p { margin: 0; }
-.xc .hz { font-family: var(--f-hz); font-weight: 700; }
+.xc .hz { font-family: var(--f-hz); font-weight: 600; }
 .xc [role="alert"] { padding: 12px 16px; border-radius: 14px; background: var(--bad-soft); color: var(--bad); font-weight: 700; }
 .xc-muted { color: var(--ink-2); }
 

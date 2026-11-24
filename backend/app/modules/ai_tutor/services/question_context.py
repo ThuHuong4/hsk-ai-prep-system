@@ -7,7 +7,7 @@ from app.modules.grading import correct_option_id, load_set_items as load_items
 SKILL = {"nghe": "Nghe", "doc": "Đọc", "viet": "Viết", "tu_vung": "Từ vựng"}
 TYPE = {
     "chon_mot": "chọn một đáp án", "dung_sai": "đúng/sai", "chon_bo_chung": "chọn từ bộ phương án chung",
-    "sap_xep": "sắp xếp câu", "dien_chu": "điền chữ", "viet_mo": "viết câu",
+    "sap_xep": "sắp xếp câu", "dien_chu": "điền chữ", "viet_mo": "viết câu", "dich_cau": "dịch câu",
 }
 LETTERS = "ABCDEFGH"
 
@@ -29,7 +29,7 @@ def _attempt(db: Session, luot_id: int, uid: int) -> dict:
 
 def _answer(db: Session, luot_id: int, cau_hoi_id: int) -> dict:
     row = db.execute(
-        text("""SELECT a.phuong_an_chon_id, a.van_ban, a.xac_nhan_luc, v.diem
+        text("""SELECT a.phuong_an_chon_id, a.van_ban, a.trang_thai_thao_tac, a.xac_nhan_luc, v.diem
                 FROM cau_tra_loi a LEFT JOIN v_ket_qua_hien_hanh v ON v.cau_tra_loi_id = a.id
                 WHERE a.luot_lam_id = :l AND a.cau_hoi_id = :q"""),
         {"l": luot_id, "q": cau_hoi_id},
@@ -54,6 +54,8 @@ def build_context(db: Session, uid: int, luot_id: int, cau_hoi_id: int) -> str:
     answer = _answer(db, luot_id, cau_hoi_id)
     if practice and answer["xac_nhan_luc"] is None:
         raise ConflictError("Hãy bấm Kiểm tra trước khi hỏi Xiang về câu này")
+    if practice and answer.get("trang_thai_thao_tac") == "bo_qua":
+        raise ConflictError("Câu đã bỏ qua không mở Hỏi Xiang để tránh lộ đáp án")
     if not practice and attempt["trang_thai"] != "da_nop":
         raise ConflictError("Hỏi Xiang mở sau khi nộp bài thi")
 
@@ -97,7 +99,8 @@ def build_context(db: Session, uid: int, luot_id: int, cau_hoi_id: int) -> str:
     if answer["diem"] is None:
         lines.append("Kết quả: chưa chấm xong")
     else:
-        lines.append(f"Kết quả: {'đúng' if float(answer['diem']) >= 1 else 'sai'}")
+        pass_mark = float(q["nguong_dat"] or 6.0) if q["dang"] in ("viet_mo", "dich_cau") else 1.0
+        lines.append(f"Kết quả: {'đúng' if float(answer['diem']) >= pass_mark else 'sai'}")
     if q["dich_nghia"]:
         lines.append(f"Dịch nghĩa: {q['dich_nghia']}")
     if q["giai_thich"]:

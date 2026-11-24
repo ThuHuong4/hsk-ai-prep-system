@@ -51,12 +51,16 @@ def _below(lv: list[dict], level: dict) -> dict | None:
 
 
 def start_info(db: Session, uid: int, skill: str, level: dict, lv: list[dict]) -> dict:
-    """Thông tin nút "Bắt đầu cấp" cho một cấp đang khóa."""
+    """Thông tin nút "Bắt đầu cấp" cho một cấp đang khóa: chỉ cho phép thi lên cấp liền kề trên cấp đã mở."""
     info = {"loai": "bat_dau_cap", "so_cau": SIZE["bat_dau_cap"], "duoc_lam": False, "ly_do": None,
             "cap_kiem_tra": None, "luot_dang_lam": None}
     below = _below(lv, level)
     if below is None or below["thu_tu"] < path_view.START_ORDER[skill]:
         info["ly_do"] = "Cấp này không có kiểm tra bắt đầu cấp cho kỹ năng này"
+        return info
+    opened = path_view.opened_levels(db, uid, skill, lv)
+    if not path_view.level_open(below, skill, opened):
+        info["ly_do"] = f"Cần mở khóa {below['ten']} trước khi thi lên {level['ten']}"
         return info
     info["cap_kiem_tra"] = {"id": below["id"], "ten": below["ten"]}
     if len(_pool(db, below["id"], skill)) < SIZE["bat_dau_cap"]:

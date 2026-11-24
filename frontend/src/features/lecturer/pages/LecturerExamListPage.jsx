@@ -47,7 +47,10 @@ export default function LecturerExamListPage() {
           <h1>Đề thi thử HSK</h1>
           <p>Ghép câu đã đăng thành đề theo từng cấp. Đề đã đăng muốn sửa thì tạo bản nháp mới, bản cũ vẫn dùng đến khi đăng bản mới.</p>
         </div>
-        <Link className="xbtn" to="/giang-vien/bo-de/moi"><Icon name="plus" /> Tạo đề</Link>
+        <div className="lv-actions">
+          <Link className="xbtn xbtn--ghost" to="/giang-vien/bo-de/ai"><Icon name="spark" /> Soạn đề với AI</Link>
+          <Link className="xbtn" to="/giang-vien/bo-de/moi"><Icon name="plus" /> Tạo đề</Link>
+        </div>
       </div>
 
       <div className="lv-filters">

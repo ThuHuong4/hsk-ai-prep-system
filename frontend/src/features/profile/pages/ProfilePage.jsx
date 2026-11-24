@@ -1,16 +1,19 @@
 import { useEffect, useState } from "react";
 
-import { useAuth } from "../../auth/context/AuthContext.jsx";
 import Icon from "../../../shared/components/Icon.jsx";
 import { RANKS, rankOf } from "../../../shared/utils/rank.js";
+import { useAuth } from "../../auth/context/AuthContext.jsx";
+import { savePlacementGoal } from "../../placement/api/placementApi.js";
+import { getPersonalDashboard } from "../../practice/api/practiceApi.js";
+import MyReports from "../../reports/components/MyReports.jsx";
 import { changePassword, getProfile, saveName, saveReminder } from "../api/profileApi.js";
 import LevelUpDialog from "../components/LevelUpDialog.jsx";
 import RankBadge from "../components/RankBadge.jsx";
 import "../styles/profile.css";
 
-// Mục 3.1: Cá nhân — sửa tên, bật/tắt email nhắc, đổi mật khẩu; email chỉ hiển thị.
-// Danh hiệu theo tổng KN (chỉ để tạo động lực, không mở khóa).
+// Cá nhân: quản lý tài khoản, mục tiêu học tập cá nhân hóa (cấp HSK mục tiêu & phút/ngày), nhắc học và danh hiệu KN.
 const day = (v) => (v ? new Date(v).toLocaleDateString("vi-VN") : "");
+const MINUTE_OPTIONS = [10, 15, 30, 60];
 
 function Note({ msg }) {
   if (!msg) return null;
@@ -29,7 +32,7 @@ function NameRow({ token, user, login, value, onSaved }) {
       const res = await saveName(token, name);
       onSaved(res.ho_ten);
       setName(res.ho_ten);
-      login({ access_token: token, user: { ...user, ho_ten: res.ho_ten } }); // cập nhật tên trên thanh trên
+      login({ access_token: token, user: { ...user, ho_ten: res.ho_ten } });
       setMsg({ ok: true, text: "Đã lưu họ tên" });
     } catch (err) { setMsg({ ok: false, text: err.message }); } finally { setBusy(false); }
   }
@@ -82,6 +85,73 @@ function PasswordForm({ token }) {
         <button type="submit" className="pf-btn" disabled={busy}>{busy ? "Đang đổi..." : "Đổi mật khẩu"}</button>
         <button type="button" className="pf-btn pf-btn--plain" onClick={() => { setOpen(false); setMsg(null); }}>Hủy</button>
       </div>
+      <Note msg={msg} />
+    </form>
+  );
+}
+
+function PersonalGoalCard({ token }) {
+  const [levels, setLevels] = useState([]);
+  const [capId, setCapId] = useState("");
+  const [minutes, setMinutes] = useState("");
+  const [busy, setBusy] = useState(false);
+  const [msg, setMsg] = useState(null);
+
+  useEffect(() => {
+    const c = new AbortController();
+    getPersonalDashboard(token, c.signal)
+      .then((d) => {
+        setLevels(d.muc_tieu?.danh_sach_cap ?? []);
+        setCapId(d.muc_tieu?.cap_muc_tieu_id ? String(d.muc_tieu.cap_muc_tieu_id) : "");
+        setMinutes(d.muc_tieu?.phut_moi_ngay ? String(d.muc_tieu.phut_moi_ngay) : "");
+      })
+      .catch(() => {});
+    return () => c.abort();
+  }, [token]);
+
+  async function submit(e) {
+    e.preventDefault();
+    setBusy(true); setMsg(null);
+    try {
+      await savePlacementGoal(token, {
+        cap_do_id: capId ? Number(capId) : null,
+        phut_moi_ngay: minutes ? Number(minutes) : null,
+      });
+      setMsg({ ok: true, text: "Đã cập nhật mục tiêu cá nhân hóa. Đề xuất bài học hôm nay sẽ bám sát mục tiêu mới!" });
+    } catch (err) {
+      setMsg({ ok: false, text: err.message || "Chưa lưu được mục tiêu" });
+    } finally {
+      setBusy(false);
+    }
+  }
+
+  return (
+    <form className="pf-card" onSubmit={submit}>
+      <h2>Mục tiêu cá nhân hóa</h2>
+      <p className="pf-muted" style={{ marginBottom: 14 }}>
+        Hệ thống dùng mục tiêu này để ưu tiên chọn “Bài phù hợp với bạn hôm nay” và định hướng cấp thi thử.
+      </p>
+      <div className="pf-field">
+        <label htmlFor="pf-goal-cap">Cấp HSK mục tiêu muốn chinh phục</label>
+        <select id="pf-goal-cap" value={capId} onChange={(e) => setCapId(e.target.value)} style={{ padding: "9px 12px", borderRadius: 10, border: "1px solid var(--line, #d0d8e4)", background: "var(--paper, #fff)", color: "inherit" }}>
+          <option value="">— Chưa chọn mục tiêu cố định —</option>
+          {levels.map((lv) => (
+            <option key={lv.id} value={lv.id}>{lv.ten}</option>
+          ))}
+        </select>
+      </div>
+      <div className="pf-field">
+        <label htmlFor="pf-goal-min">Thời lượng luyện tập mỗi ngày</label>
+        <select id="pf-goal-min" value={minutes} onChange={(e) => setMinutes(e.target.value)} style={{ padding: "9px 12px", borderRadius: 10, border: "1px solid var(--line, #d0d8e4)", background: "var(--paper, #fff)", color: "inherit" }}>
+          <option value="">— Linh hoạt —</option>
+          {MINUTE_OPTIONS.map((m) => (
+            <option key={m} value={m}>{m} phút / ngày</option>
+          ))}
+        </select>
+      </div>
+      <button type="submit" className="pf-btn" disabled={busy}>
+        {busy ? "Đang lưu..." : "Lưu mục tiêu học tập"}
+      </button>
       <Note msg={msg} />
     </form>
   );
@@ -170,12 +240,30 @@ export default function ProfilePage() {
             );
           })}
         </ol>
-        <p className="pf-muted pf-road__note">Nhận KN khi hoàn thành bài mới, đạt kiểm tra cuối thửa, vượt thửa, vượt cấp và củng cố câu trong Sổ tay.</p>
+        <div
+          style={{
+            marginTop: 14,
+            padding: "12px 15px",
+            borderRadius: 14,
+            background: "var(--surface-2, rgba(0,0,0,0.03))",
+            fontSize: 13.8,
+            lineHeight: 1.6,
+          }}
+        >
+          <b style={{ display: "block", marginBottom: 4 }}>Bảng cách tính Điểm kinh nghiệm (KN):</b>
+          <div>• Hoàn thành 1 bài ôn luyện thường (đúng hết các câu, lần đầu đạt): <b>+10 KN</b></div>
+          <div>• Hoàn thành bài Kiểm tra cuối thửa (10/10 câu, lần đầu đạt): <b>+20 KN</b></div>
+          <div>• Đạt bài Kiểm tra vượt thửa / Bắt đầu cấp / Vượt chặng (lần đầu mỗi mốc): <b>+20 KN</b></div>
+          <div>• Củng cố thành công 1 câu trong Sổ tay câu sai sang trạng thái Đã củng cố: <b>+1 KN</b></div>
+          <div className="pf-muted" style={{ marginTop: 4 }}>
+            Mỗi bài/mốc chỉ thưởng KN ở lần đạt đầu tiên; ôn lại bài đã hoàn thành hoàn toàn miễn phí năng lượng và không cộng trùng KN.
+          </div>
+        </div>
       </div>
 
       <div className="pf-grid">
         <div className="pf-card">
-          <h2>Hồ sơ</h2>
+          <h2>Tài khoản</h2>
           <NameRow token={token} user={user} login={login} value={name} onSaved={setName} />
           <div className="pf-field">
             <span className="pf-label">Email</span>
@@ -190,8 +278,12 @@ export default function ProfilePage() {
             ? <PasswordForm token={token} />
             : <div className="pf-field"><span className="pf-label">Mật khẩu</span><span className="pf-value pf-muted">Tài khoản đăng nhập bằng Google, không dùng mật khẩu</span></div>}
         </div>
-        <Reminder token={token} value={data.nhan_email_nhac} verified={data.email_da_xac_minh} />
+        <div style={{ display: "grid", gap: 18, alignContent: "start" }}>
+          <PersonalGoalCard token={token} />
+          <Reminder token={token} value={data.nhan_email_nhac} verified={data.email_da_xac_minh} />
+        </div>
       </div>
+      <MyReports />
       {replay && <LevelUpDialog rank={rank} onClose={() => setReplay(false)} />}
     </section>
   );

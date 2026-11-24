@@ -12,9 +12,10 @@ export const DANG_LABELS = {
   viet_mo: "Viết mở (AI chấm)",
   dich_cau: "Dịch câu (AI chấm)",
 };
-export const TOP_TYPES = ["chon_mot", "dung_sai", "ngu_lieu", "sap_xep", "dien_chu", "viet_mo"];
-export const CHILD_TYPES = ["chon_mot", "dung_sai", "chon_bo_chung", "sap_xep", "dien_chu", "viet_mo"];
+export const TOP_TYPES = ["chon_mot", "dung_sai", "ngu_lieu", "sap_xep", "dien_chu", "viet_mo", "dich_cau"];
+export const CHILD_TYPES = ["chon_mot", "dung_sai", "chon_bo_chung", "sap_xep", "dien_chu", "viet_mo", "dich_cau"];
 
+export const SOURCE_LABELS = { tu_soan: "Tự soạn", soan_voi_ai: "Soạn với AI", nguon_duoc_phep: "Nguồn được phép dùng" };
 export const SKILL_LABELS = { nghe: "Nghe", doc: "Đọc", viet: "Viết", tu_vung: "Từ vựng" };
 export const STATUS_LABELS = { nhap: "Nháp", da_dang: "Đang đăng", da_an: "Đã ẩn" };
 

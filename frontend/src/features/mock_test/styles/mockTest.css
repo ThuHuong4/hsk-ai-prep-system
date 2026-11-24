@@ -156,12 +156,13 @@
 
 /* Chữ Hán có pinyin */
 .hz-blank { display: inline-block; min-width: 3.2em; margin: 0 .2em; border-bottom: 2px solid var(--ink-3); vertical-align: baseline; }
-.hz { display: inline-flex; flex-direction: column; gap: 2px; font-family: var(--f-hz); }
-.hz-line { line-height: 2.1; }
-.hz ruby { ruby-align: center; margin: 0 1px; }
-.hz rt { font-family: var(--f-body); font-size: .5em; color: var(--ink-3); font-weight: 500; letter-spacing: 0; }
-.hz-line--stack { display: flex; flex-direction: column; line-height: 1.4; }
-.hz-py { font-family: var(--f-body); font-size: .55em; color: var(--ink-3); }
+.hz { font-family: var(--f-hz); }
+.hz:has(> .hz-line) { display: inline-flex; flex-direction: column; gap: 4px; }
+.hz-line { line-height: 2.15; }
+.hz ruby { ruby-align: center; margin: 0 3px; }
+.hz rt { font-family: var(--f-body); font-size: .5em; line-height: 1.35; padding: 0 3px; color: var(--ink-3); font-weight: 600; letter-spacing: 0; }
+.hz-line--stack { display: flex; flex-direction: column; gap: 2px; line-height: 1.35; }
+.hz-py { font-family: var(--f-body); font-size: .52em; line-height: 1.35; font-weight: 600; color: var(--ink-3); }
 .xp-choice.is-selected rt, .xp-choice.is-correct rt, .xp-choice.is-wrong rt { color: inherit; opacity: .8; }
 
 @media (max-width: 640px) {
@@ -175,4 +176,1754 @@
   .xp-row__word { font-size: 22px; }
   .xp-choices--img, .xp-bank--img { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .xp-explain { margin-left: 0; }
+}
+
+
+/* ==========================================================================
+   Chuẩn Phòng thi HSK trên máy tính (HSK iBT / 机考) — Phòng chờ & Màn thi
+   ========================================================================== */
+
+.ibt-lobby {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.ibt-lobby__banner {
+  padding: 28px 30px;
+  border-radius: 26px;
+  color: #f4f8fc;
+  background:
+    radial-gradient(60% 70% at 88% 15%, rgba(141, 165, 255, 0.22), transparent 70%),
+    linear-gradient(155deg, #1b2f52, #111f38);
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.ibt-lobby__kicker {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.ibt-seal-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 12px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  font-family: var(--f-hz);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: #dbe7ff;
+}
+
+.xg .ibt-hist-link,
+.ibt-hist-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 13px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.14);
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  color: #ffffff;
+  font-size: 13.5px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.xg .ibt-hist-link:hover,
+.ibt-hist-link:hover {
+  background: rgba(255, 255, 255, 0.22);
+  color: #ffffff;
+}
+
+.xc .ibt-lobby__banner h1 {
+  color: #ffffff;
+  font-size: clamp(26px, 3.2vw, 36px);
+}
+
+.ibt-lobby__banner p {
+  max-width: 740px;
+  color: rgba(232, 240, 252, 0.86);
+  font-size: 15px;
+  line-height: 1.55;
+}
+
+.ibt-lobby__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  align-items: stretch;
+}
+
+@media (min-width: 880px) {
+  .ibt-lobby__grid {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.08fr);
+  }
+}
+
+.ibt-pass-card,
+.ibt-rules-card {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 24px 26px;
+  border-radius: 24px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow);
+}
+
+.ibt-pass-card__head {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  color: var(--exam);
+}
+
+.ibt-pass-card__head h2,
+.ibt-rules-card h2 {
+  font-size: 21px;
+}
+
+.ibt-meta-list {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.ibt-meta-list > div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 6px 12px;
+  padding-bottom: 10px;
+  border-bottom: 1px dashed var(--line);
+  font-size: 14.5px;
+}
+
+.ibt-meta-list dt {
+  color: var(--ink-2);
+  font-weight: 600;
+}
+
+.ibt-meta-list dd {
+  margin: 0;
+  font-weight: 800;
+  color: var(--ink);
+  text-align: right;
+}
+
+.ibt-audio-check {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 14px 16px;
+  border-radius: 16px;
+  background: var(--bg);
+  border: 1px solid var(--line);
+}
+
+.ibt-audio-check.is-ok {
+  border-color: color-mix(in srgb, var(--good) 45%, transparent);
+  background: color-mix(in srgb, var(--good-soft) 50%, var(--surface));
+}
+
+.ibt-audio-check strong {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 14.5px;
+  color: var(--ink);
+}
+
+.ibt-audio-check p {
+  margin-top: 3px;
+  font-size: 13px;
+  line-height: 1.45;
+  color: var(--ink-2);
+}
+
+.ibt-resume-alert {
+  padding: 13px 15px;
+  border-radius: 15px;
+  background: var(--coral-soft);
+  border-left: 4px solid var(--coral);
+  color: var(--ink);
+}
+
+.ibt-resume-alert strong {
+  display: block;
+  color: var(--coral-ink);
+  margin-bottom: 3px;
+}
+
+.ibt-resume-alert p {
+  font-size: 13.5px;
+}
+
+.ibt-start-box {
+  margin-top: auto;
+  padding-top: 8px;
+}
+
+/* ==========================================================================
+   TRẠM THI HSK MÁY TÍNH TOÀN MÀN HÌNH (`HSK机考 / ChineseTest Workstation`)
+   ========================================================================== */
+
+.xg.xt.xt--workstation {
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background: var(--bg);
+}
+
+/* Điều chỉnh cỡ chữ Hán linh hoạt (`A / A+ / A++`) chuẩn phần mềm HSK机考 */
+.xt--font-md { --ibt-hz-scale: 1; }
+.xt--font-lg { --ibt-hz-scale: 1.18; }
+.xt--font-xl { --ibt-hz-scale: 1.36; }
+
+/* ---------- 1. Thanh Đỉnh Trạm Thi (`ibt-ws-top`) ---------- */
+.ibt-ws-top {
+  flex: 0 0 auto;
+  min-height: 60px;
+  padding: 8px 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  background: linear-gradient(90deg, #162642 0%, #1d3358 100%);
+  color: #f4f7fc;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  z-index: 40;
+}
+
+.ibt-ws-candidate {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+}
+
+.ibt-ws-avatar {
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.14);
+  border: 1.5px solid rgba(255, 255, 255, 0.28);
+  flex-shrink: 0;
+}
+
+.ibt-ws-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.ibt-ws-candidate__meta {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  line-height: 1.25;
+}
+
+.ibt-ws-candidate__meta strong {
+  font-size: 14px;
+  font-weight: 800;
+  color: #ffffff;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.ibt-ws-candidate__meta span {
+  font-size: 11.8px;
+  color: rgba(226, 236, 252, 0.8);
+  white-space: nowrap;
+}
+
+.ibt-ws-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 0;
+}
+
+.ibt-ws-title {
+  font-weight: 800;
+  font-size: 15px;
+  color: #ffffff;
+}
+
+.ibt-ws-steps {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: nowrap;
+}
+
+.ibt-ws-step-wrap {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.ibt-ws-step-sep {
+  color: rgba(255, 255, 255, 0.35);
+  font-size: 12px;
+}
+
+.ibt-ws-step {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 5px 11px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  color: rgba(232, 240, 252, 0.72);
+  font-size: 13px;
+  white-space: nowrap;
+}
+
+.ibt-ws-step b {
+  font-family: var(--f-hz);
+  font-weight: 800;
+}
+
+.ibt-ws-step small {
+  padding: 1px 6px;
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.22);
+  font-size: 11.5px;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+
+.ibt-ws-step.is-active {
+  background: #ffffff;
+  border-color: #ffffff;
+  color: #162642;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.18);
+}
+
+.ibt-ws-step.is-active small {
+  background: #e4ecfb;
+  color: #1d3b72;
+}
+
+.ibt-ws-step.is-done {
+  opacity: 0.65;
+}
+
+.ibt-ws-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+.ibt-ws-font {
+  display: inline-flex;
+  padding: 2px;
+  border-radius: 9px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+}
+
+.ibt-ws-font__btn {
+  padding: 4px 8px;
+  border: 0;
+  border-radius: 7px;
+  background: transparent;
+  color: rgba(236, 242, 252, 0.82);
+  font: 800 12px/1 var(--f-body);
+  cursor: pointer;
+}
+
+.ibt-ws-font__btn.is-on {
+  background: #ffffff;
+  color: #162642;
+}
+
+.ibt-ws-timer {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 6px;
+  padding: 5px 12px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.13);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  color: #ffffff;
+  font-variant-numeric: tabular-nums;
+}
+
+.ibt-ws-timer small {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  opacity: 0.82;
+}
+
+.ibt-ws-timer strong {
+  font-family: var(--f-display);
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.ibt-ws-timer.is-low {
+  background: #dc2626;
+  border-color: #fca5a5;
+  color: #ffffff;
+  animation: ibtPulseUrgent 1.2s ease-in-out infinite;
+}
+
+@keyframes ibtPulseUrgent {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.03); }
+}
+
+.ibt-ws-submitbtn {
+  height: 38px;
+  padding: 0 14px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  background: #2a958e;
+  color: #ffffff;
+  font: 800 13.5px/1 var(--f-body);
+  white-space: nowrap;
+  cursor: pointer;
+  transition: filter 0.15s ease;
+}
+
+.ibt-ws-submitbtn:hover:not(:disabled) {
+  filter: brightness(1.08);
+}
+
+.ibt-ws-submitbtn--final {
+  background: #dd6e54;
+  border-color: rgba(255, 255, 255, 0.35);
+}
+
+.ibt-ws-submitbtn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.ibt-ws-iconbtn {
+  width: 36px;
+  height: 36px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.08);
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.ibt-ws-iconbtn:hover {
+  background: rgba(255, 255, 255, 0.16);
+}
+
+/* ---------- 2. Thân Trạm Thi 2 Cột (`Cột trái Bảng câu · Cột phải Đề thi`) ---------- */
+.ibt-ws-body {
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow: hidden;
+}
+
+.ibt-ws-grid {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 274px minmax(0, 1fr);
+  overflow: hidden;
+}
+
+/* Cột TRÁI cố định: Bảng số câu (`题号导航`) */
+.ibt-ws-palette {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: var(--surface);
+  border-right: 1px solid var(--line);
+  overflow: hidden;
+}
+
+.ibt-ws-palette__head {
+  flex: 0 0 auto;
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--line);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ibt-ws-palette__head strong {
+  display: block;
+  font-size: 14.5px;
+  font-weight: 800;
+  color: var(--ink);
+}
+
+.ibt-ws-palette__head span {
+  font-size: 12.5px;
+  color: var(--ink-2);
+}
+
+.ibt-ws-palette__close {
+  display: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 8px;
+  border: 1px solid var(--line);
+  background: var(--surface-2);
+  color: var(--ink);
+  cursor: pointer;
+}
+
+.ibt-ws-palette__scroll {
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow-y: auto;
+  padding: 14px 14px;
+}
+
+.ibt-ws-palette__foot {
+  flex: 0 0 auto;
+  padding: 10px 14px 12px;
+  border-top: 1px solid var(--line);
+  background: var(--surface-2);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.ibt-ws-flag-summary {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--coral-ink);
+}
+
+.ibt-sheet-sec {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  padding-bottom: 10px;
+  border-bottom: 1px dashed var(--line);
+}
+
+.ibt-sheet-sec:last-child {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+.ibt-sheet-sec__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 6px;
+  font-size: 12.2px;
+  font-weight: 800;
+  color: var(--ink-2);
+}
+
+.ibt-sheet-sec.is-locked {
+  opacity: 0.62;
+}
+
+.xg .xt-nav__btn:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.ibt-legend {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 5px 10px;
+  font-size: 11.8px;
+  color: var(--ink-2);
+}
+
+.ibt-legend span {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.ibt-legend i {
+  width: 11px;
+  height: 11px;
+  border-radius: 3px;
+  border: 1px solid var(--line-2);
+  background: var(--surface);
+  flex-shrink: 0;
+}
+
+.ibt-legend i.lg-ans {
+  background: var(--teal-soft);
+  border-color: var(--teal);
+}
+
+.ibt-legend i.lg-cur {
+  background: var(--exam-soft);
+  border-color: var(--exam);
+}
+
+.ibt-legend i.lg-flg {
+  background: #fff3cd;
+  border-color: #d9952b;
+}
+
+.ibt-shortcut-hint {
+  margin: 0;
+  font-size: 11.5px;
+  line-height: 1.45;
+  color: var(--ink-3);
+  padding-top: 5px;
+  border-top: 1px dashed var(--line);
+}
+
+/* ---------- 3. Vùng Chính Bên Phải (`ibt-ws-stage`) ---------- */
+.ibt-ws-stage {
+  height: 100%;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background: var(--bg);
+}
+
+.ibt-ws-audiobar {
+  flex: 0 0 auto;
+  padding: 8px 22px;
+  background: var(--exam-soft);
+  border-bottom: 1px solid color-mix(in srgb, var(--exam) 26%, transparent);
+}
+
+.ibt-ws-lowbanner,
+.ibt-ws-errbanner {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 7px 22px;
+  font-size: 13px;
+}
+
+.ibt-ws-lowbanner {
+  background: #fef3c7;
+  color: #92400e;
+  border-bottom: 1px solid #fcd34d;
+}
+
+.ibt-ws-errbanner {
+  background: var(--bad-soft);
+  color: var(--bad);
+  border-bottom: 1px solid color-mix(in srgb, var(--bad) 30%, transparent);
+}
+
+.ibt-ws-lowbanner button,
+.ibt-ws-errbanner button {
+  padding: 3px 10px;
+  border-radius: 6px;
+  border: 1px solid currentColor;
+  background: transparent;
+  color: inherit;
+  font: 700 12px/1.2 var(--f-body);
+  cursor: pointer;
+}
+
+.ibt-ws-qhead {
+  flex: 0 0 auto;
+  padding: 11px 24px;
+  background: var(--surface);
+  border-bottom: 1px solid var(--line);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.ibt-ws-qhead__left,
+.ibt-ws-qhead__right {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+
+.ibt-ws-mobile-navbtn {
+  display: none;
+  padding: 5px 11px;
+  border-radius: 9px;
+  border: 1px solid var(--line-2);
+  background: var(--surface-2);
+  color: var(--ink);
+  font: 800 12.5px/1.2 var(--f-body);
+  cursor: pointer;
+}
+
+.ibt-part-pill {
+  padding: 4px 11px;
+  border-radius: 8px;
+  background: var(--exam-soft);
+  color: var(--exam);
+  font-family: var(--f-hz);
+  font-weight: 800;
+  font-size: 14px;
+}
+
+.ibt-stage-head__range {
+  font-size: 13.5px;
+  font-weight: 700;
+  color: var(--ink-2);
+}
+
+.ibt-ws-qbadge {
+  padding: 4px 11px;
+  border-radius: 8px;
+  background: var(--teal-soft);
+  color: var(--teal-ink);
+  font-weight: 800;
+  font-size: 13.5px;
+}
+
+.ibt-example-toggle {
+  padding: 5px 12px;
+  border-radius: 9px;
+  border: 1px solid var(--line-2);
+  background: var(--surface-2);
+  color: var(--ink-2);
+  font: 700 12.8px/1.2 var(--f-body);
+  cursor: pointer;
+}
+
+.ibt-example-toggle:hover,
+.ibt-example-toggle.is-open {
+  border-color: var(--teal);
+  background: var(--teal-soft);
+  color: var(--teal-ink);
+}
+
+.ibt-ws-secstat {
+  font-size: 13px;
+  color: var(--ink-2);
+}
+
+/* Vùng trung tâm trình bày Câu hỏi */
+.ibt-ws-canvas {
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow-y: auto;
+  padding: 22px 26px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.ibt-example-box {
+  max-width: 960px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 14px 18px;
+  border-radius: 16px;
+  background: var(--surface);
+  border: 1.5px dashed var(--teal);
+  box-shadow: var(--shadow-sm);
+}
+
+.ibt-example-box__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.ibt-example-box__tag {
+  font-size: 12.5px;
+  font-weight: 800;
+  color: var(--teal-ink);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.ibt-example-box__close {
+  padding: 3px 9px;
+  border-radius: 7px;
+  border: 1px solid var(--line);
+  background: var(--surface-2);
+  color: var(--ink-2);
+  font: 700 12px/1.2 var(--f-body);
+  cursor: pointer;
+}
+
+.ibt-ws-question-card {
+  max-width: 1020px;
+  width: 100%;
+  margin: auto;
+  padding: 28px 32px;
+  border-radius: 22px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow-sm);
+}
+
+/* Bố cục Câu đơn chính diện chuẩn HSK机考 */
+.xp-ibt-single--tf {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  padding: 8px 0;
+}
+
+.xp-ibt-stimulus {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+  text-align: center;
+}
+
+.xp-ibt-stimulus__img {
+  max-width: min(360px, 78vw);
+  max-height: 250px;
+  object-fit: contain;
+  border-radius: 16px;
+  background: #ffffff;
+  border: 1px solid var(--line);
+  padding: 8px;
+}
+
+.xp-ibt-stimulus__text {
+  font-family: var(--f-hz);
+  font-size: calc(28px * var(--ibt-hz-scale, 1));
+  line-height: 1.8;
+}
+
+.xp-tf--ibt {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(150px, 210px));
+  gap: 16px;
+  justify-content: center;
+}
+
+.xg .xp-tf--ibt .xp-tf__btn {
+  width: 100%;
+  height: 60px;
+  padding: 0 18px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border-radius: 14px;
+  font-size: 17px;
+}
+
+.xp-tf__sign {
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.xp-tf__label {
+  font-family: var(--f-body);
+  font-size: 15.5px;
+  font-weight: 800;
+}
+
+.xp-tf__kbd {
+  margin-left: auto;
+  padding: 2px 6px;
+  border-radius: 5px;
+  background: var(--surface-2);
+  border: 1px solid var(--line);
+  font-size: 11.5px;
+  font-weight: 700;
+  color: var(--ink-3);
+}
+
+.xp-row--ibt {
+  padding: 4px 0;
+  border-bottom: 0;
+}
+
+.xp-row--ibt .xp-stem {
+  font-size: calc(23px * var(--ibt-hz-scale, 1));
+  margin-bottom: 8px;
+}
+
+.xp-row--ibt .xp-stem img {
+  max-width: 280px;
+  max-height: 220px;
+  object-fit: contain;
+}
+
+.xp-choices--stack {
+  grid-template-columns: 1fr;
+  gap: 11px;
+}
+
+.xp-row--ibt .xp-choice {
+  font-size: calc(20px * var(--ibt-hz-scale, 1));
+  min-height: 58px;
+  padding: 10px 16px;
+}
+
+.xp-write-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.xp-char-count {
+  align-self: flex-end;
+  font-size: 12.5px;
+  font-weight: 700;
+  color: var(--ink-3);
+}
+
+/* Chia đôi 2 cột (`左材料 · 右题目`) cho Nhóm câu có Đoạn văn / Bảng từ A–F */
+@media (min-width: 920px) {
+  .xp-group--split {
+    display: grid;
+    grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr);
+    gap: 24px;
+    align-items: start;
+  }
+
+  .xp-group--split .xp-group__stimulus {
+    position: sticky;
+    top: 0;
+    padding-right: 18px;
+    border-right: 1px solid var(--line);
+  }
+}
+
+.xp-stem--passage {
+  font-size: calc(20px * var(--ibt-hz-scale, 1));
+  line-height: 1.95;
+  margin-bottom: 12px;
+}
+
+.xp-group__questions {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.xp-row--match.is-active-sub {
+  background: color-mix(in srgb, var(--exam-soft) 55%, var(--surface));
+  border-radius: 12px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/* ---------- 4. Thanh Điều Hướng Ghim Đáy (`ibt-ws-foot`) ---------- */
+.ibt-ws-foot {
+  flex: 0 0 auto;
+  padding: 11px 24px;
+  background: var(--surface);
+  border-top: 1px solid var(--line);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.ibt-ws-foot__flags {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+
+.ibt-ws-flagbtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  height: 38px;
+  padding: 0 14px;
+  border-radius: 10px;
+  border: 1.5px dashed var(--line-2);
+  background: var(--surface);
+  color: var(--ink-2);
+  font: 700 13.5px/1 var(--f-body);
+  cursor: pointer;
+}
+
+.ibt-ws-flagbtn span {
+  color: var(--coral);
+  font-size: 15px;
+}
+
+.ibt-ws-flagbtn:hover {
+  border-color: var(--coral);
+  color: var(--coral-ink);
+}
+
+.ibt-ws-flagbtn.is-on {
+  border-style: solid;
+  border-color: var(--coral);
+  background: var(--coral-soft);
+  color: var(--coral-ink);
+}
+
+.ibt-ws-foot__nav {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: auto;
+}
+
+/* ---------- Cam kết Quy chế ở Lobby & Bộ phát Audio không tua ---------- */
+.ibt-agree-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 12px 14px;
+  margin-bottom: 12px;
+  border-radius: 14px;
+  background: var(--surface-2);
+  border: 1px solid var(--line);
+  font-size: 13.8px;
+  font-weight: 700;
+  color: var(--ink);
+  cursor: pointer;
+}
+
+.ibt-agree-row input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  margin-top: 2px;
+  accent-color: var(--exam);
+  flex-shrink: 0;
+  cursor: pointer;
+}
+
+.ibt-proctor-audio {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px 16px;
+}
+
+.ibt-proctor-audio--bar {
+  max-width: 1020px;
+  margin: 0 auto;
+}
+
+.ibt-proctor-audio--item {
+  width: 100%;
+  padding: 9px 14px;
+  border-radius: 12px;
+  background: var(--surface-2);
+  border: 1px solid var(--line);
+}
+
+.ibt-proctor-audio__main {
+  flex: 1 1 280px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px 14px;
+}
+
+.ibt-audio-live-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 4px 11px;
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--exam);
+  font-size: 12.8px;
+  font-weight: 800;
+}
+
+.ibt-audio-done-pill {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 11px;
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--ink-2);
+  font-size: 12.5px;
+  font-weight: 700;
+}
+
+.ibt-proctor-audio__track {
+  flex: 1 1 140px;
+  height: 8px;
+  border-radius: 999px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.ibt-proctor-audio__track > i {
+  display: block;
+  height: 100%;
+  border-radius: 999px;
+  background: var(--exam);
+  transition: width 0.25s linear;
+}
+
+.ibt-proctor-audio__clock {
+  font-size: 12.5px;
+  font-weight: 800;
+  color: var(--ink-2);
+  font-variant-numeric: tabular-nums;
+}
+
+.ibt-proctor-audio__vol {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--ink-2);
+}
+
+.ibt-proctor-audio__vol input[type="range"] {
+  width: 78px;
+  accent-color: var(--exam);
+  cursor: pointer;
+}
+
+/* ---------- Đáp ứng màn hình nhỏ / máy tính bảng (< 960px) ---------- */
+@media (max-width: 960px) {
+  .ibt-ws-center {
+    display: none;
+  }
+
+  .ibt-ws-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ibt-ws-mobile-navbtn {
+    display: inline-flex;
+  }
+
+  .ibt-ws-palette {
+    position: fixed;
+    inset: 0 auto 0 0;
+    width: min(310px, 88vw);
+    z-index: 90;
+    box-shadow: var(--shadow);
+    transform: translateX(-104%);
+    transition: transform 0.2s ease;
+  }
+
+  .ibt-ws-palette.is-open {
+    transform: translateX(0);
+  }
+
+  .ibt-ws-palette__close {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .ibt-ws-canvas {
+    padding: 16px;
+  }
+
+  .ibt-ws-question-card {
+    padding: 18px 16px;
+  }
+
+  .ibt-ws-proctor-pill {
+    display: none;
+  }
+}
+
+/* ---------- Huy hiệu Giám sát Rời màn hình & Thanh Nhắc Toàn màn hình ---------- */
+.ibt-ws-proctor-pill {
+  display: inline-flex;
+  align-items: center;
+  padding: 5px 10px;
+  border-radius: 999px;
+  background: rgba(42, 149, 142, 0.22);
+  border: 1px solid rgba(94, 234, 212, 0.35);
+  color: #ccfbf1;
+  font-size: 12px;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+.ibt-ws-proctor-pill.is-warn {
+  background: rgba(220, 38, 38, 0.32);
+  border-color: #fca5a5;
+  color: #fee2e2;
+}
+
+.ibt-ws-fsbanner {
+  flex: 0 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 6px 22px;
+  background: #eff6ff;
+  border-bottom: 1px solid #bfdbfe;
+  color: #1e3a8a;
+  font-size: 12.8px;
+}
+
+.xg[data-theme="dark"] .ibt-ws-fsbanner {
+  background: #172554;
+  border-bottom-color: #1e40af;
+  color: #dbeafe;
+}
+
+.ibt-ws-fsbanner button {
+  padding: 4px 11px;
+  border-radius: 7px;
+  border: 1px solid currentColor;
+  background: transparent;
+  color: inherit;
+  font: 800 12px/1.2 var(--f-body);
+  cursor: pointer;
+}
+
+/* ==========================================================================
+   PHIẾU BÁO ĐIỂM KỲ THI THỬ HSK (`HSK成绩报告单` — ExamResultPage)
+   ========================================================================== */
+
+.ibt-cert {
+  border-radius: 24px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+}
+
+.ibt-cert__banner {
+  padding: 20px 26px;
+  background: linear-gradient(120deg, #162642 0%, #203a64 100%);
+  color: #ffffff;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.ibt-cert__seal {
+  display: block;
+  font-family: var(--f-hz);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: rgba(219, 234, 254, 0.85);
+  margin-bottom: 4px;
+}
+
+.ibt-cert__banner h1 {
+  margin: 0;
+  font-family: var(--f-display);
+  font-size: clamp(20px, 2.4vw, 25px);
+  color: #ffffff;
+}
+
+.ibt-cert__badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.03em;
+}
+
+.ibt-cert__badge.is-pass {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.ibt-cert__badge.is-fail {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.ibt-cert__badge.is-pending {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.ibt-cert__meta {
+  margin: 0;
+  padding: 14px 26px;
+  background: var(--surface-2);
+  border-bottom: 1px solid var(--line);
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px 18px;
+}
+
+@media (min-width: 760px) {
+  .ibt-cert__meta {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+.ibt-cert__meta dt {
+  font-size: 11.8px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--ink-3);
+  margin-bottom: 2px;
+}
+
+.ibt-cert__meta dd {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 800;
+  color: var(--ink);
+}
+
+.ibt-cert__promo {
+  padding: 13px 26px;
+  font-size: 14px;
+  line-height: 1.5;
+  border-bottom: 1px solid var(--line);
+}
+
+.ibt-cert__promo.is-up {
+  background: var(--good-soft);
+  color: var(--good);
+}
+
+.ibt-cert__promo.is-goal {
+  background: var(--teal-soft);
+  color: var(--teal-ink);
+}
+
+.ibt-cert__body {
+  padding: 24px 26px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+  align-items: stretch;
+}
+
+@media (min-width: 720px) {
+  .ibt-cert__body {
+    grid-template-columns: 220px minmax(0, 1fr);
+  }
+}
+
+.ibt-cert__total {
+  padding: 20px 16px;
+  border-radius: 20px;
+  background: var(--coral-soft);
+  border: 1px solid color-mix(in srgb, var(--coral) 32%, transparent);
+  color: var(--coral-ink);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 4px;
+}
+
+.ibt-cert.is-pass .ibt-cert__total {
+  background: var(--good-soft);
+  border-color: color-mix(in srgb, var(--good) 35%, transparent);
+  color: var(--good);
+}
+
+.ibt-cert__total-cap {
+  font-size: 11.5px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  opacity: 0.9;
+}
+
+.ibt-cert__total-num {
+  font-family: var(--f-display);
+  font-size: 54px;
+  font-weight: 800;
+  line-height: 1.02;
+}
+
+.ibt-cert__total-max {
+  font-size: 13.5px;
+  font-weight: 700;
+  opacity: 0.85;
+}
+
+.ibt-cert__acc-pill {
+  margin-top: 8px;
+  padding: 4px 11px;
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--ink);
+  font-size: 12.2px;
+  font-weight: 800;
+}
+
+.ibt-cert__skills {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  min-width: 0;
+}
+
+.ibt-cert__skills-head {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--ink-3);
+  padding-bottom: 6px;
+  border-bottom: 1px dashed var(--line);
+}
+
+.ibt-cert__skill-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.ibt-cert__skill-row {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.ibt-cert__skill-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 10px;
+}
+
+.ibt-cert__skill-name b {
+  font-size: 15px;
+  color: var(--ink);
+}
+
+.ibt-cert__skill-name small {
+  font-family: var(--f-hz);
+  font-size: 13px;
+  color: var(--ink-3);
+}
+
+.ibt-cert__skill-score {
+  font-variant-numeric: tabular-nums;
+}
+
+.ibt-cert__skill-score strong {
+  font-family: var(--f-display);
+  font-size: 19px;
+  color: var(--ink);
+}
+
+.ibt-cert__skill-score small {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--ink-3);
+}
+
+.ibt-cert__bar {
+  height: 10px;
+  border-radius: 999px;
+  background: var(--surface-2);
+  border: 1px solid var(--line);
+  overflow: hidden;
+}
+
+.ibt-cert__bar > i {
+  display: block;
+  height: 100%;
+  border-radius: 999px;
+  background: var(--teal);
+}
+
+.ibt-cert__bar > i.is-good {
+  background: var(--good);
+}
+
+.ibt-cert__bar > i.is-low {
+  background: var(--coral);
+}
+
+.ibt-cert__skill-sub {
+  font-size: 12.5px;
+  color: var(--ink-3);
+}
+
+.ibt-cert__actions {
+  margin-top: auto;
+  padding-top: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+/* ---------- Thanh Bộ Lọc Xem Lại Đề & Lời Giải (`ibt-review-bar`) ---------- */
+.ibt-review-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px 16px;
+  padding: 18px 22px;
+  border-radius: 20px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+}
+
+.ibt-review-bar h2 {
+  margin: 0;
+  font-family: var(--f-display);
+  font-size: 19px;
+  color: var(--ink);
+}
+
+.ibt-review-bar p {
+  margin: 2px 0 0;
+  font-size: 13.5px;
+  color: var(--ink-2);
+}
+
+.ibt-review-tabs {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  padding: 4px;
+  border-radius: 12px;
+  background: var(--surface-2);
+  border: 1px solid var(--line);
+}
+
+.ibt-review-tab {
+  padding: 7px 13px;
+  border-radius: 9px;
+  border: 0;
+  background: transparent;
+  color: var(--ink-2);
+  font: 800 13px/1.2 var(--f-body);
+  cursor: pointer;
+}
+
+.ibt-review-tab.is-active {
+  background: var(--surface);
+  color: var(--ink);
+  box-shadow: var(--shadow-sm);
+}
+
+.ibt-review-tab--bad.is-active {
+  background: var(--bad-soft);
+  color: var(--bad);
+}
+
+/* ---------- Nút Tiện Ích Tròn Nổi Hiện Đại (FAB Icons + Vòng Tiến Độ Cuộn + Tooltip) ---------- */
+.ibt-icon-tip {
+  position: relative;
+}
+
+.ibt-icon-tip::after {
+  content: attr(data-tip);
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 50%;
+  transform: translateX(-50%) translateY(-4px);
+  padding: 5px 10px;
+  border-radius: 8px;
+  background: #162642;
+  color: #ffffff;
+  font: 700 12px/1.2 var(--f-body);
+  white-space: nowrap;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.16s ease, transform 0.16s ease;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.18);
+  z-index: 70;
+}
+
+.ibt-icon-tip:hover::after {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+.ibt-res-jumpnav {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 3px;
+  border-radius: 12px;
+  background: var(--surface-2);
+  border: 1px solid var(--line);
+}
+
+.ibt-res-jumpnav button {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px 11px;
+  border-radius: 9px;
+  border: 0;
+  background: transparent;
+  color: var(--ink-2);
+  font: 700 12.8px/1.2 var(--f-body);
+  white-space: nowrap;
+  cursor: pointer;
+  transition: all 0.14s ease;
+}
+
+.ibt-res-jumpnav button:hover {
+  color: var(--teal-ink);
+  background: var(--surface);
+  box-shadow: var(--shadow-sm);
+}
+
+@media (max-width: 780px) {
+  .ibt-res-jumpnav {
+    display: none;
+  }
+}
+
+@media (min-width: 1000px) {
+  .xt-side__card {
+    max-height: calc(100dvh - 110px);
+    overflow-y: auto;
+  }
+}
+
+.ibt-fab-stack {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  z-index: 65;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  pointer-events: none;
+}
+
+.xg .ibt-fab {
+  position: relative;
+  width: 44px;
+  height: 44px;
+  min-height: 0;
+  padding: 0;
+  border-radius: 50%;
+  border: 1px solid var(--line-2);
+  background: color-mix(in srgb, var(--surface) 94%, transparent);
+  backdrop-filter: blur(12px);
+  color: var(--ink);
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.14);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  opacity: 0;
+  transform: translateY(10px) scale(0.92);
+  pointer-events: none;
+  transition: opacity 0.2s ease, transform 0.2s ease, color 0.15s ease, border-color 0.15s ease;
+}
+
+.xg .ibt-fab.is-visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  pointer-events: auto;
+}
+
+.xg .ibt-fab:hover {
+  color: var(--teal-ink);
+  border-color: var(--teal);
+  transform: translateY(-2px) scale(1.04);
+}
+
+.ibt-fab__ring {
+  position: absolute;
+  inset: -1px;
+  width: calc(100% + 2px);
+  height: calc(100% + 2px);
+  transform: rotate(-90deg);
+  pointer-events: none;
+}
+
+.ibt-fab__ring-bg {
+  fill: none;
+  stroke: transparent;
+  stroke-width: 2.2;
+}
+
+.ibt-fab__ring-fg {
+  fill: none;
+  stroke: var(--teal);
+  stroke-width: 2.4;
+  stroke-linecap: round;
+  transition: stroke-dashoffset 0.12s linear;
+}
+
+/* Tooltip nổi bên trái khi di chuột vào nút tròn giống các nền tảng web hiện đại */
+.ibt-fab::before {
+  content: attr(data-tip);
+  position: absolute;
+  right: calc(100% + 10px);
+  top: 50%;
+  transform: translateY(-50%) translateX(4px);
+  padding: 5px 10px;
+  border-radius: 8px;
+  background: #162642;
+  color: #ffffff;
+  font: 700 12px/1.2 var(--f-body);
+  white-space: nowrap;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.16s ease, transform 0.16s ease;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.18);
+}
+
+.ibt-fab:hover::before {
+  opacity: 1;
+  transform: translateY(-50%) translateX(0);
+}
+
+@media (max-width: 640px) {
+  .ibt-fab-stack {
+    right: 14px;
+    bottom: 16px;
+    gap: 8px;
+  }
+
+  .xg .ibt-fab {
+    width: 40px;
+    height: 40px;
+  }
+
+  .ibt-fab::before {
+    display: none;
+  }
 }
