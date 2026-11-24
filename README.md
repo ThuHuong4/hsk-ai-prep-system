@@ -1,4 +1,4 @@
-# Xianglingo — Hệ thống luyện thi chứng chỉ HSK 1–4 tích hợp trợ giảng AI
+# Xianglingo — Hệ thống luyện thi chứng chỉ HSK tích hợpAI
 
 Dự án Luận văn tốt nghiệp xây dựng nền tảng học tập, ôn luyện theo lộ trình và thi thử HSK 1–4 với trợ giảng AI **Xiang**.
 
